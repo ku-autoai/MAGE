@@ -1,0 +1,74 @@
+{
+  "id": "e528b65e-1107-4b8c-8988-490e4fece599",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Please help me make the first letter of each word to uppercase.\n\nRelevant procedure\n1. Select the text you want to change by clicking and dragging over it, or pressing Ctrl+A to select all text.\n2. Click on the \"Format\" menu at the top of the window.\n3. Hover over \"Text\" in the dropdown menu to open the submenu.\n4. Click on \"Change Case\" in the submenu.\n5. Select \"Capitalize Every Word\" from the options that appear.",
+  "source": "https://www.youtube.com/watch?v=l25Evu4ohKg",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/e528b65e-1107-4b8c-8988-490e4fece599/Geography_And_Magical_Realism.docx",
+            "path": "/home/user/Desktop/Geography_And_Magical_Realism.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Geography_And_Magical_Realism.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Geography_And_Magical_Realism.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": "compare_docx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/e528b65e-1107-4b8c-8988-490e4fece599/Geography_And_Magical_Realism_Gold.docx",
+      "dest": "Geography_And_Magical_Realism_Gold.docx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Geography_And_Magical_Realism.docx",
+      "dest": "Geography_And_Magical_Realism.docx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure\n1. Select the text you want to change by clicking and dragging over it, or pressing Ctrl+A to select all text.\n2. Click on the \"Format\" menu at the top of the window.\n3. Hover over \"Text\" in the dropdown menu to open the submenu.\n4. Click on \"Change Case\" in the submenu.\n5. Select \"Capitalize Every Word\" from the options that appear.",
+  "instruction_with_evidence": "Please help me make the first letter of each word to uppercase.\n\nRelevant procedure\n1. Select the text you want to change by clicking and dragging over it, or pressing Ctrl+A to select all text.\n2. Click on the \"Format\" menu at the top of the window.\n3. Hover over \"Text\" in the dropdown menu to open the submenu.\n4. Click on \"Change Case\" in the submenu.\n5. Select \"Capitalize Every Word\" from the options that appear."
+}

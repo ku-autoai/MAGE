@@ -1,0 +1,72 @@
+{
+  "id": "77b8ab4d-994f-43ac-8930-8ca087d7c4b4",
+  "snapshot": "gimp",
+  "instruction": "Could you assist me in placing my photo on the desktop and renaming it to export.jpg?\n\nRelevant procedure\n1. Click the \"Export As...\" option in the open File menu (keyboard shortcut: Shift+Ctrl+E).\n2. In the File Name field at the top of the dialog, type `export.jpg`.\n3. In the left sidebar under \"Places\", click \"Desktop\" to navigate to the desktop folder.\n4. Click the \"Export\" button on the bottom right.\n5. If a secondary \"Export Image as JPEG\" options dialog appears, click \"Export\" again to confirm.",
+  "source": "https://superuser.com/questions/1636113/how-to-get-gimp-to-recognize-images-or-pictures-folder-as-the-default-folder-for",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/77b8ab4d-994f-43ac-8930-8ca087d7c4b4/The_Lost_River_Of_Dreams.jpg",
+            "path": "/home/user/Desktop/The_Lost_River_Of_Dreams.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/The_Lost_River_Of_Dreams.jpg"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "check_file_exists_and_structure_sim",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/77b8ab4d-994f-43ac-8930-8ca087d7c4b4/The_Lost_River_Of_Dreams.jpg",
+      "dest": "The_Lost_River_Of_Dreams.jpg"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/export.jpg",
+      "dest": "export.jpg"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Export As...\" option in the open File menu (keyboard shortcut: Shift+Ctrl+E).\n2. In the File Name field at the top of the dialog, type `export.jpg`.\n3. In the left sidebar under \"Places\", click \"Desktop\" to navigate to the desktop folder.\n4. Click the \"Export\" button on the bottom right.\n5. If a secondary \"Export Image as JPEG\" options dialog appears, click \"Export\" again to confirm.",
+  "retrieved_page_ranges": [
+    [
+      "5.4. Export File",
+      "5.4. Export File"
+    ],
+    [
+      "2.13. Export… and Overwrite…",
+      "2.13. Export… and Overwrite…"
+    ],
+    [
+      "5.3. Save File",
+      "5.3. Save File"
+    ],
+    [
+      "5.3. Save File",
+      "5.3. Save File"
+    ],
+    [
+      "2.2. New…",
+      "2.2. New…"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/77b8ab4d-994f-43ac-8930-8ca087d7c4b4/step_1.png"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell C2 in column C (labeled \"Names\").\n2. Type the formula `=IF(COUNTIF(B$2:B2,B2)=1,B2,\"\")` into the formula bar or directly into cell C2.\n3. Press Enter to apply the formula.\n4. Click and drag the fill handle (small square at the bottom-right corner of cell C2) down to the last row with data in column B (row 18), or double-click it to auto-fill.\n5. Verify that unique names appear in column C in their original order of first occurrence, with duplicates left blank.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell C2 in column C (labeled \"Names\").\n2. Type the formula `=IF(COUNTIF(B$2:B2,B2)=1,B2,\"\")` into the formula bar or directly into cell C2.\n3. Press Enter to apply the formula.\n4. Click and drag the fill handle (small square at the bottom-right corner of cell C2) down to the last row with data in column B (row 18), or double-click it to auto-fill.\n5. Verify that unique names appear in column C in their original order of first occurrence, with duplicates left blank.",
+  "retrieved_page_ranges": [
+    [
+      234,
+      234
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/step_1.png"
+}

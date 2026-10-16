@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on the column header of the \"Date\" column (e.g., Column A) to select the entire column.\n2. Hold the left mouse button and drag the selected column to the leftmost position in the spreadsheet.\n3. Click on the column header of the \"First Name\" column to select it.\n4. Drag the selected \"First Name\" column to the position immediately to the right of the \"Date\" column.\n5. Click on the column header of the \"Last Name\" column to select it.\n6. Drag the selected \"Last Name\" column to the position immediately to the right of the \"First Name\" column.\n7. Click on the column header of the \"Order ID\" column to select it.\n8. Drag the selected \"Order ID\" column to the position immediately to the right of the \"Last Name\" column.\n9. Click on the column header of the \"Sales\" column to select it.\n10. Drag the selected \"Sales\" column to the position immediately to the right of the \"Order ID\" column.\n11. Verify that the column order is now \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".\n12. Click on a neutral cell or area outside the data table to finish the work.",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the column header of the \"Date\" column (e.g., Column A) to select the entire column.\n2. Hold the left mouse button and drag the selected column to the leftmost position in the spreadsheet.\n3. Click on the column header of the \"First Name\" column to select it.\n4. Drag the selected \"First Name\" column to the position immediately to the right of the \"Date\" column.\n5. Click on the column header of the \"Last Name\" column to select it.\n6. Drag the selected \"Last Name\" column to the position immediately to the right of the \"First Name\" column.\n7. Click on the column header of the \"Order ID\" column to select it.\n8. Drag the selected \"Order ID\" column to the position immediately to the right of the \"Last Name\" column.\n9. Click on the column header of the \"Sales\" column to select it.\n10. Drag the selected \"Sales\" column to the position immediately to the right of the \"Order ID\" column.\n11. Verify that the column order is now \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".\n12. Click on a neutral cell or area outside the data table to finish the work.",
+  "retrieved_page_ranges": [
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      302,
+      302
+    ]
+  ],
+  "first_screen_image_path": null
+}

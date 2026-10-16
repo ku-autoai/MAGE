@@ -1,0 +1,109 @@
+{
+  "id": "04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In a new sheet (\"Sheet2\") with 4 headers \"Year\", \"CA changes\", \"FA changes\", and \"OA changes\", calculate the percentage annual changes compared to last year in 2015 to 2019 for the Current Assets, Fixed Assets, and Other Assets columns.\n\nRelevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the window to ensure the new sheet is active. If \"Sheet2\" does not exist, right-click an existing sheet tab, select \"Insert Sheet\", name it \"Sheet2\", and click OK.\n2. Click cell A1. Type \"Year\" and press Enter.\n3. Click cell B1. Type \"CA changes\" and press Enter.\n4. Click cell C1. Type \"FA changes\" and press Enter.\n5. Click cell D1. Type \"OA changes\" and press Enter.\n6. Click cell A2. Type \"2015\" and press Enter.\n7. Click cell A3. Type \"2016\" and press Enter.\n8. Click cell A4. Type \"2017\" and press Enter.\n9. Click cell A5. Type \"2018\" and press Enter.\n10. Click cell A6. Type \"2019\" and press Enter.\n11. Click cell B2. Assume the source data for Current Assets (CA), Fixed Assets (FA), and Other Assets (OA) for 2014 and 2015 are located in cells A2 and A3 of \"Sheet1\" (adjust references based on actual data location). Enter the formula `=(Sheet1.A3-Sheet1.A2)/Sheet1.A2` (replace Sheet1.A3 and Sheet1.A2 with the actual cell references for 2015 CA and 2014 CA respectively). Press Enter.\n    * *Note: If the exact cell references for the source data are unknown, navigate to the sheet containing the raw financial data, identify the cell containing the Current Asset value for 2015 and the Current Asset value for 2014, and construct the formula using those specific references.*\n12. Format the result in cell B2 as a percentage: Right-click cell B2, select \"Format Cells\", choose the \"Percent\" category, and click OK.\n13. Click cell B2 to select it. Drag the fill handle (small square at the bottom-right corner of the cell) down to cell B6 to copy the formula for years 2016 through 2019. Adjust the formula references manually for each year if automatic filling does not correctly point to the subsequent year's",
+  "source": "SheetCopilot@168",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/SmallBalanceSheet.xlsx",
+            "path": "/home/user/SmallBalanceSheet.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SmallBalanceSheet.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SmallBalanceSheet.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/4_SmallBalanceSheet_gt1.xlsx",
+      "dest": "4_SmallBalanceSheet_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SmallBalanceSheet.xlsx",
+      "dest": "SmallBalanceSheet.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the window to ensure the new sheet is active. If \"Sheet2\" does not exist, right-click an existing sheet tab, select \"Insert Sheet\", name it \"Sheet2\", and click OK.\n2. Click cell A1. Type \"Year\" and press Enter.\n3. Click cell B1. Type \"CA changes\" and press Enter.\n4. Click cell C1. Type \"FA changes\" and press Enter.\n5. Click cell D1. Type \"OA changes\" and press Enter.\n6. Click cell A2. Type \"2015\" and press Enter.\n7. Click cell A3. Type \"2016\" and press Enter.\n8. Click cell A4. Type \"2017\" and press Enter.\n9. Click cell A5. Type \"2018\" and press Enter.\n10. Click cell A6. Type \"2019\" and press Enter.\n11. Click cell B2. Assume the source data for Current Assets (CA), Fixed Assets (FA), and Other Assets (OA) for 2014 and 2015 are located in cells A2 and A3 of \"Sheet1\" (adjust references based on actual data location). Enter the formula `=(Sheet1.A3-Sheet1.A2)/Sheet1.A2` (replace Sheet1.A3 and Sheet1.A2 with the actual cell references for 2015 CA and 2014 CA respectively). Press Enter.\n    * *Note: If the exact cell references for the source data are unknown, navigate to the sheet containing the raw financial data, identify the cell containing the Current Asset value for 2015 and the Current Asset value for 2014, and construct the formula using those specific references.*\n12. Format the result in cell B2 as a percentage: Right-click cell B2, select \"Format Cells\", choose the \"Percent\" category, and click OK.\n13. Click cell B2 to select it. Drag the fill handle (small square at the bottom-right corner of the cell) down to cell B6 to copy the formula for years 2016 through 2019. Adjust the formula references manually for each year if automatic filling does not correctly point to the subsequent year's",
+  "retrieved_page_ranges": [
+    [
+      375,
+      376
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      184,
+      185
+    ],
+    [
+      265,
+      269
+    ]
+  ],
+  "first_screen_image_path": null
+}

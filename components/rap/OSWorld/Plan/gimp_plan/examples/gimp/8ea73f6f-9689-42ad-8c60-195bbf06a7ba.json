@@ -1,0 +1,62 @@
+{
+  "id": "8ea73f6f-9689-42ad-8c60-195bbf06a7ba",
+  "snapshot": "gimp",
+  "instruction": "Can you enhance this low-resolution photo to high-resolution without increasing the file size?\n\nRelevant procedure\n1. Click the \"Image\" menu in the top menu bar.\n2. Hover over \"Scale Image...\" to open the Scale Image dialog.\n3. In the dialog, increase the Width and Height values to the desired high-resolution dimensions while keeping the chain link icon active to maintain aspect ratio.\n4. In the \"Interpolation\" dropdown, select \"LoHali-5\" (or the best available option) for higher quality upscaling.\n5. Click \"Scale\" to apply the resolution enhancement.\n6. Click the \"File\" menu and select \"Export As...\" to open the export dialog.\n7. Keep the filename unchanged and ensure the format is JPEG (or use \"Save As...\" for XCF format).\n8. In the export options dialog that appears, adjust the Quality slider downward until the estimated file size (shown at the bottom) matches or is lower than the original 10.2 MB.\n9. Click \"Export\" to save the enhanced, high-resolution image without increasing the file size.",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/8ea73f6f-9689-42ad-8c60-195bbf06a7ba/low_resolution.jpeg",
+            "path": "/home/user/Desktop/low_resolution.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/low_resolution.jpeg"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Image\" menu in the top menu bar.\n2. Hover over \"Scale Image...\" to open the Scale Image dialog.\n3. In the dialog, increase the Width and Height values to the desired high-resolution dimensions while keeping the chain link icon active to maintain aspect ratio.\n4. In the \"Interpolation\" dropdown, select \"LoHali-5\" (or the best available option) for higher quality upscaling.\n5. Click \"Scale\" to apply the resolution enhancement.\n6. Click the \"File\" menu and select \"Export As...\" to open the export dialog.\n7. Keep the filename unchanged and ensure the format is JPEG (or use \"Save As...\" for XCF format).\n8. In the export options dialog that appears, adjust the Quality slider downward until the estimated file size (shown at the bottom) matches or is lower than the original 10.2 MB.\n9. Click \"Export\" to save the enhanced, high-resolution image without increasing the file size.",
+  "retrieved_page_ranges": [
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "7.54. Layers to Image Size",
+      "7.54. Layers to Image Size"
+    ],
+    [
+      "5.5. Zoom",
+      "5.5. Zoom"
+    ],
+    [
+      "2.21. Close All",
+      "2.21. Close All"
+    ],
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/8ea73f6f-9689-42ad-8c60-195bbf06a7ba/step_1.png"
+}

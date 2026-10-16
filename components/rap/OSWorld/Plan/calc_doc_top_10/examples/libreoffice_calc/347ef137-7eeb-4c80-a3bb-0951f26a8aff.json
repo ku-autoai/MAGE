@@ -1,0 +1,138 @@
+{
+  "id": "347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!\n\nRelevant procedure\n\n1. Select the first data range by clicking and dragging from cell **A1** to **J14** (includes title, categories, values, and total row for 2019).\n2. Click the **Insert** menu in the top menu bar.\n3. Click **Chart** in the dropdown menu to open the Chart Wizard.\n4. In the Chart Wizard, ensure the **Chart Type** is set to **Column** and click **Next**.\n5. On the **Data Range** page, ensure the range `$Sheet1.$A$1:$J$14` is selected. Check the boxes for **First column as label** and **First row as label**. Click **Next**.\n6. On the **Data Series** page, check the boxes for **Categories**, **Data series in columns**, and **First column as label**. Click **Next**.\n7. On the **Chart Elements** page, enter a title (e.g., \"2019 Personal Costs\"). You can keep default settings for axes. Click **Finish**.\n8. Select the second data range by clicking and dragging from cell **A17** to **J31** (includes title, categories, values, and total row for 2020).\n9. Click the **Insert** menu in the top menu bar.\n10. Click **Chart** in the dropdown menu.\n11. In the Chart Wizard, ensure the **Chart Type** is **Column** and click **Next**.\n12. On the **Data Range** page, ensure the range `$Sheet1.$A$17:$J$31` is selected. Check the boxes for **First column as label** and **First row as label**. Click **Next**.\n13. On the **Data Series** page, check the boxes for **Categories**, **Data series in columns**, and **First column as label**. Click **Next**.\n14. On the **Chart Elements** page, enter a title (e.g., \"2020 Personal Costs\") and click **Finish**.",
+  "source": "https://www.youtube.com/watch?v=bgO40-CjYNY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics.xlsx",
+            "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Create_column_charts_using_statistics.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Create_column_charts_using_statistics.xlsx",
+      "dest": "Create_column_charts_using_statistics.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics_gold.xlsx",
+      "dest": "Create_column_charts_using_statistics_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "direction"
+          ]
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Select the first data range by clicking and dragging from cell **A1** to **J14** (includes title, categories, values, and total row for 2019).\n2. Click the **Insert** menu in the top menu bar.\n3. Click **Chart** in the dropdown menu to open the Chart Wizard.\n4. In the Chart Wizard, ensure the **Chart Type** is set to **Column** and click **Next**.\n5. On the **Data Range** page, ensure the range `$Sheet1.$A$1:$J$14` is selected. Check the boxes for **First column as label** and **First row as label**. Click **Next**.\n6. On the **Data Series** page, check the boxes for **Categories**, **Data series in columns**, and **First column as label**. Click **Next**.\n7. On the **Chart Elements** page, enter a title (e.g., \"2019 Personal Costs\"). You can keep default settings for axes. Click **Finish**.\n8. Select the second data range by clicking and dragging from cell **A17** to **J31** (includes title, categories, values, and total row for 2020).\n9. Click the **Insert** menu in the top menu bar.\n10. Click **Chart** in the dropdown menu.\n11. In the Chart Wizard, ensure the **Chart Type** is **Column** and click **Next**.\n12. On the **Data Range** page, ensure the range `$Sheet1.$A$17:$J$31` is selected. Check the boxes for **First column as label** and **First row as label**. Click **Next**.\n13. On the **Data Series** page, check the boxes for **Categories**, **Data series in columns**, and **First column as label**. Click **Next**.\n14. On the **Chart Elements** page, enter a title (e.g., \"2020 Personal Costs\") and click **Finish**.",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      181,
+      181
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      182,
+      183
+    ],
+    [
+      83,
+      84
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      177,
+      180
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/step_1.png"
+}

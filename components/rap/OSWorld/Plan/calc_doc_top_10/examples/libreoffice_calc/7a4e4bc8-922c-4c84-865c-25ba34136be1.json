@@ -1,0 +1,129 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Click the column header 'E' (labeled \"Date\") at the top of the spreadsheet to select the entire column.\n2. Right-click the selected column header 'E'.\n3. In the context menu, click \"Cut\".\n4. Click the column header 'A' (labeled \"First Name\") at the top of the spreadsheet.\n5. Right-click the selected column header 'A'.\n6. In the context menu, click \"Insert Columns Before and Move Selection\". The \"Date\" column will now appear at the beginning.\n7. Click the column header 'A' (now labeled \"First Name\") to select it.\n8. Right-click the selected column header 'A'.\n9. In the context menu, click \"Cut\".\n10. Click the column header 'C' (labeled \"Last Name\") to select it.\n11. Right-click the selected column header 'C'.\n12. In the context menu, click \"Insert Columns Before and Move Selection\". The \"First Name\" column will move to position B.\n13. Click the column header 'A' (labeled \"Last Name\") to select it.\n14. Right-click the selected column header 'A'.\n15. In the context menu, click \"Cut\".\n16. Click the column header 'D' (labeled \"Order ID\") to select it.\n17. Right-click the selected column header 'D'.\n18. In the context menu, click \"Insert Columns Before and Move Selection\". The \"Last Name\" column will move to position C.\n19. The columns are now reordered to \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the column header 'E' (labeled \"Date\") at the top of the spreadsheet to select the entire column.\n2. Right-click the selected column header 'E'.\n3. In the context menu, click \"Cut\".\n4. Click the column header 'A' (labeled \"First Name\") at the top of the spreadsheet.\n5. Right-click the selected column header 'A'.\n6. In the context menu, click \"Insert Columns Before and Move Selection\". The \"Date\" column will now appear at the beginning.\n7. Click the column header 'A' (now labeled \"First Name\") to select it.\n8. Right-click the selected column header 'A'.\n9. In the context menu, click \"Cut\".\n10. Click the column header 'C' (labeled \"Last Name\") to select it.\n11. Right-click the selected column header 'C'.\n12. In the context menu, click \"Insert Columns Before and Move Selection\". The \"First Name\" column will move to position B.\n13. Click the column header 'A' (labeled \"Last Name\") to select it.\n14. Right-click the selected column header 'A'.\n15. In the context menu, click \"Cut\".\n16. Click the column header 'D' (labeled \"Order ID\") to select it.\n17. Right-click the selected column header 'D'.\n18. In the context menu, click \"Insert Columns Before and Move Selection\". The \"Last Name\" column will move to position C.\n19. The columns are now reordered to \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".",
+  "retrieved_page_ranges": [
+    [
+      309,
+      310
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      310,
+      311
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      302,
+      302
+    ],
+    [
+      265,
+      269
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

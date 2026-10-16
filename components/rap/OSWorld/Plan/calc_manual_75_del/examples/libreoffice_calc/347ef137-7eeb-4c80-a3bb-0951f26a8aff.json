@@ -1,0 +1,118 @@
+{
+  "id": "347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!\n\nRelevant procedure\n\n1. Select the data range for the first year (e.g., 2019), including the month labels in the first column and the cost values.\n2. Click the **Insert** menu at the top of the window, then select **Chart**.\n3. In the Chart Wizard dialog, ensure **Column** is selected under Chart Type.\n4. If prompted, ensure the data range and series orientation are correct (Months as categories, Costs as values), then click **Next**.\n5. Fill in the **Chart Title** (e.g., \"2019 Costs\") and axis labels if desired, then click **Finish** to insert the first chart.\n6. Resize and move the newly created chart to a suitable location on the sheet.\n7. Repeat steps 1–5 for the second year's data (e.g., 2020), selecting the corresponding month labels and cost values to create the second column bar chart.",
+  "source": "https://www.youtube.com/watch?v=bgO40-CjYNY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics.xlsx",
+            "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Create_column_charts_using_statistics.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Create_column_charts_using_statistics.xlsx",
+      "dest": "Create_column_charts_using_statistics.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics_gold.xlsx",
+      "dest": "Create_column_charts_using_statistics_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "direction"
+          ]
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Select the data range for the first year (e.g., 2019), including the month labels in the first column and the cost values.\n2. Click the **Insert** menu at the top of the window, then select **Chart**.\n3. In the Chart Wizard dialog, ensure **Column** is selected under Chart Type.\n4. If prompted, ensure the data range and series orientation are correct (Months as categories, Costs as values), then click **Next**.\n5. Fill in the **Chart Title** (e.g., \"2019 Costs\") and axis labels if desired, then click **Finish** to insert the first chart.\n6. Resize and move the newly created chart to a suitable location on the sheet.\n7. Repeat steps 1–5 for the second year's data (e.g., 2020), selecting the corresponding month labels and cost values to create the second column bar chart.",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      182,
+      183
+    ],
+    [
+      168,
+      169
+    ],
+    [
+      316,
+      317
+    ]
+  ],
+  "first_screen_image_path": null
+}

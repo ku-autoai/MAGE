@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n\n1. Identify the column in the spreadsheet containing the mixed data (e.g., Column A).\n2. Insert new columns to the right of the mixed data column to accommodate \"First Name\", \"Last Name\", and \"Rank\".\n3. Select the cell in the newly inserted column adjacent to the first data entry (e.g., B2) to enter the First Name formula.\n4. Type a formula to extract the First Name based on the delimiter (usually a space). For example, if the data is in A2, type `=LEFT(A2,FIND(\" \",A2)-1)` and press Enter.\n5. Select the cell in the next column (e.g., C2) to enter the Last Name formula.\n6. Type a formula to extract the Last Name, which is often the last word or the word before the rank. If the Rank is at the end, you may use `=MID(A2,FIND(\" \",A2)+1, FIND(\" \",A2,FIND(\" \",A2)+1)-FIND(\" \",A2)-1)` or similar depending on the exact structure.\n7. Select the cell in the final new column (e.g., D2) to enter the Rank formula.\n8. Type a formula to extract the Rank, which is typically the last word. For example, `=TRIM(RIGHT(SUBSTITUTE(A2,\" \",REPT(\" \",99)),99))` to get the last space-separated item.\n9. Select the range of cells with the formulas (B2:D2).\n10. Drag the fill handle (small square at the bottom-right corner of the selection) down to apply the formulas to all rows containing data.\n11. Verify that the data is correctly split into First Name, Last Name, and Rank columns.\n12. Copy the calculated columns (B, C, D).\n13. Right-click on the pasted data and select \"Paste Special\" > \"Values Only\" to convert formulas to static text if required by the final output format.\n14. Ensure the original mixed data column remains untouched.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Identify the column in the spreadsheet containing the mixed data (e.g., Column A).\n2. Insert new columns to the right of the mixed data column to accommodate \"First Name\", \"Last Name\", and \"Rank\".\n3. Select the cell in the newly inserted column adjacent to the first data entry (e.g., B2) to enter the First Name formula.\n4. Type a formula to extract the First Name based on the delimiter (usually a space). For example, if the data is in A2, type `=LEFT(A2,FIND(\" \",A2)-1)` and press Enter.\n5. Select the cell in the next column (e.g., C2) to enter the Last Name formula.\n6. Type a formula to extract the Last Name, which is often the last word or the word before the rank. If the Rank is at the end, you may use `=MID(A2,FIND(\" \",A2)+1, FIND(\" \",A2,FIND(\" \",A2)+1)-FIND(\" \",A2)-1)` or similar depending on the exact structure.\n7. Select the cell in the final new column (e.g., D2) to enter the Rank formula.\n8. Type a formula to extract the Rank, which is typically the last word. For example, `=TRIM(RIGHT(SUBSTITUTE(A2,\" \",REPT(\" \",99)),99))` to get the last space-separated item.\n9. Select the range of cells with the formulas (B2:D2).\n10. Drag the fill handle (small square at the bottom-right corner of the selection) down to apply the formulas to all rows containing data.\n11. Verify that the data is correctly split into First Name, Last Name, and Rank columns.\n12. Copy the calculated columns (B, C, D).\n13. Right-click on the pasted data and select \"Paste Special\" > \"Values Only\" to convert formulas to static text if required by the final output format.\n14. Ensure the original mixed data column remains untouched.",
+  "retrieved_page_ranges": [
+    [
+      59,
+      60
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      298,
+      302
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      90,
+      90
+    ]
+  ],
+  "first_screen_image_path": null
+}

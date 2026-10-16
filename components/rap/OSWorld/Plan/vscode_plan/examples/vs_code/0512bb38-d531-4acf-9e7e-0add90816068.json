@@ -1,0 +1,84 @@
+{
+  "id": "0512bb38-d531-4acf-9e7e-0add90816068",
+  "snapshot": "vscode",
+  "instruction": "Please help me install an extension in VS Code from a local VSIX file \"/home/user/test.vsix\".\n\nRelevant procedure:\n1. Click the “Extensions” icon on the left Activity Bar (four-square icon), or press Ctrl+Shift+X to open the Extensions view.\n2. Click the ellipsis (“…”) menu in the Extensions view header (top-right of the Extensions panel).\n3. In the dropdown, click “Install from VSIX…”.\n4. In the file chooser dialog, navigate to /home/user/test.vsix:\n   - Use the sidebar to select “Home” > “user” if needed, or paste “/home/user/test.vsix” into the location/address bar and press Enter.\n5. Select test.vsix and click the “Open” (or “Select”) button to begin installation.",
+  "source": "https://download.microsoft.com/download/8/A/4/8A48E46A-C355-4E5C-8417-E6ACD8A207D4/VisualStudioCode-TipsAndTricks-Vol.1.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/0512bb38-d531-4acf-9e7e-0add90816068/test.vsix",
+            "path": "/home/user/test.vsix"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "is_extension_installed",
+    "result": {
+      "type": "vm_command_line",
+      "command": [
+        "code",
+        "--list-extensions",
+        "|",
+        "grep",
+        "undefined_publisher.test"
+      ]
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type": "contain",
+        "expected": "undefined_publisher.test"
+      }
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the “Extensions” icon on the left Activity Bar (four-square icon), or press Ctrl+Shift+X to open the Extensions view.\n2. Click the ellipsis (“…”) menu in the Extensions view header (top-right of the Extensions panel).\n3. In the dropdown, click “Install from VSIX…”.\n4. In the file chooser dialog, navigate to /home/user/test.vsix:\n   - Use the sidebar to select “Home” > “user” if needed, or paste “/home/user/test.vsix” into the location/address bar and press Enter.\n5. Select test.vsix and click the “Open” (or “Select”) button to begin installation.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/0512bb38-d531-4acf-9e7e-0add90816068/step_1.png"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "9d425400-e9b2-4424-9a4b-d4c7abac4140",
+  "snapshot": "vscode",
+  "instruction": "I want to make the tabs wrapped over multiple lines when exceeding available space, please help modify the setting of VS Code.\n\nRelevant procedure\n\n1. Click inside the search input field at the top of the Settings view (currently displaying \"workspace trust enabled\").\n2. Clear the existing text and type \"editor tab wrapping\" to filter the settings.\n3. Look for the setting titled \"Workbench › Editor: Wrap Tabs\" in the results list.\n4. If the setting is not immediately visible, scroll down slightly.\n5. Click the checkbox next to \"Workbench › Editor: Wrap Tabs\" to enable it.\n6. Alternatively, click the dropdown menu next to the setting and select \"on\" if it provides that option.\n7. The editor tabs will now wrap to multiple lines when they exceed the available space.",
+  "source": "https://superuser.com/questions/1466771/is-there-a-way-to-make-editor-tabs-stack-in-vs-code",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_settings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "workbench.editor.wrapTabs": true
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/settings.json",
+      "dest": "settings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click inside the search input field at the top of the Settings view (currently displaying \"workspace trust enabled\").\n2. Clear the existing text and type \"editor tab wrapping\" to filter the settings.\n3. Look for the setting titled \"Workbench › Editor: Wrap Tabs\" in the results list.\n4. If the setting is not immediately visible, scroll down slightly.\n5. Click the checkbox next to \"Workbench › Editor: Wrap Tabs\" to enable it.\n6. Alternatively, click the dropdown menu next to the setting and select \"on\" if it provides that option.\n7. The editor tabs will now wrap to multiple lines when they exceed the available space.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/9d425400-e9b2-4424-9a4b-d4c7abac4140/step_1.png"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "ec71221e-ac43-46f9-89b8-ee7d80f7e1c5",
+  "snapshot": "vscode",
+  "instruction": "Please help me increase the indent of line 2 to line 10 by one tab.\n\nRelevant procedure\n1. Click on the line number \"2\" on the left gutter to place the cursor at the start of line 2.\n2. Hold down the `Shift` key and click on the line number \"10\" on the left gutter to extend the selection and highlight lines 2 through 10.\n3. Press the `Tab` key to increase the indent of the selected lines.",
+  "source": "https://stackoverflow.com/questions/47903209/how-to-shift-a-block-of-code-left-right-by-one-space-in-vscode",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5/test.py",
+            "path": "/home/user/Desktop/test.py"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code",
+          "/home/user/Desktop/test.py"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "test.py - Visual Studio Code"
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey(\"ctrl\", \"s\"); time.sleep(0.5); "
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_text_file",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5/test_gold.py",
+      "dest": "test_gold.py"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/test.py",
+      "dest": "test.py"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the line number \"2\" on the left gutter to place the cursor at the start of line 2.\n2. Hold down the `Shift` key and click on the line number \"10\" on the left gutter to extend the selection and highlight lines 2 through 10.\n3. Press the `Tab` key to increase the indent of the selected lines.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/ec71221e-ac43-46f9-89b8-ee7d80f7e1c5/step_1.png"
+}

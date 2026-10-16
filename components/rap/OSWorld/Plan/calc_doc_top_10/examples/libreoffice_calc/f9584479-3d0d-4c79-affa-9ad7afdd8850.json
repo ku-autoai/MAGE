@@ -1,0 +1,129 @@
+{
+  "id": "f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the missing rows and columns which show the total value\n\nRelevant procedure\n\n1. Click on cell **B2** (\"Product\" in the Zone 1 section).\n2. Click on the cell **F6** (\"Total\" for the last product row in Zone 1). The selection will now cover the data range for Zone 1 (B2 to F6).\n3. Hold the mouse cursor on the small square handle at the bottom-right corner of the selection box (the fill handle) until it changes to a thin cross.\n4. Click and drag the handle downwards to **F10** (to copy the structure to Zone 2) and then again down to **F14** (to copy to Zone 3), releasing the mouse when the selection covers rows 2 through 20.\n5. Click on cell **B3** (first data row \"Khehra Salt\").\n6. Click and drag the selection handle at the bottom-right of this selection downwards to **B20** to fill in the missing row numbers or product labels if they are empty.\n7. Click on cell **E3** (Q4 value for first item).\n8. Click and drag the fill handle to **F5** to select the first row's quarterly data and the empty Total cell.\n9. With this row selected, click the **Sum** icon ($\\Sigma$) in the toolbar or type `=SUM(B3:E3)` into cell F3 and press Enter.\n10. Click cell **F3** again, then click and drag the fill handle down to **F20** to apply the sum formula to all other rows in the \"Total\" column.",
+  "source": "https://youtube.com/shorts/feldd-Pn48c?si=9xJiem2uAHm6Jshb",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone.xlsx",
+            "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Quarterly_Product_Sales_by_Zone.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone_gold.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **B2** (\"Product\" in the Zone 1 section).\n2. Click on the cell **F6** (\"Total\" for the last product row in Zone 1). The selection will now cover the data range for Zone 1 (B2 to F6).\n3. Hold the mouse cursor on the small square handle at the bottom-right corner of the selection box (the fill handle) until it changes to a thin cross.\n4. Click and drag the handle downwards to **F10** (to copy the structure to Zone 2) and then again down to **F14** (to copy to Zone 3), releasing the mouse when the selection covers rows 2 through 20.\n5. Click on cell **B3** (first data row \"Khehra Salt\").\n6. Click and drag the selection handle at the bottom-right of this selection downwards to **B20** to fill in the missing row numbers or product labels if they are empty.\n7. Click on cell **E3** (Q4 value for first item).\n8. Click and drag the fill handle to **F5** to select the first row's quarterly data and the empty Total cell.\n9. With this row selected, click the **Sum** icon ($\\Sigma$) in the toolbar or type `=SUM(B3:E3)` into cell F3 and press Enter.\n10. Click cell **F3** again, then click and drag the fill handle down to **F20** to apply the sum formula to all other rows in the \"Total\" column.",
+  "retrieved_page_ranges": [
+    [
+      56,
+      57
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      55,
+      55
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      293,
+      295
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      254,
+      254
+    ],
+    [
+      313,
+      313
+    ],
+    [
+      85,
+      85
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/step_1.png"
+}

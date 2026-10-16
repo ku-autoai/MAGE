@@ -1,0 +1,106 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n1) Click the **Sheet1** tab at the bottom of the window to switch to the data sheet.\n2) Locate the column headers in **Sheet1** to identify the columns for:\n   - Actual Sale (Sales after deducting returns)\n   - Discounts\n   - Allowances\n   - Material and labor charges\n   - Overhead\n   *(Note: Since specific column letters are not visible, you must identify them visually from the header row.)*\n3) Select the first empty cell in the **Gross Profit** column (corresponding to the first data row, e.g., row 2).\n4) Type a formula to calculate Gross Profit: `=` followed by the **Actual Sale** cell, minus the **Discounts** cell, minus the **Allowances** cell, minus the **Material and labor charges** cell, and minus the **Overhead** cell.\n   - Example: `=D2-E2-F2-G2-H2` (replace letters with the actual column letters identified in step 2).\n5) Press **Enter** to confirm the formula.\n6) Click the cell containing the Gross Profit formula to select it.\n7) Drag the fill handle (the small square at the bottom-right corner of the selected cell) down to copy the formula to all remaining rows in the dataset.\n8) Click the **Sheet2** tab at the bottom of the window to switch to the new sheet.\n9) Select cell **A1** and type the header text `Year_Profit`, then press **Enter**.\n10) Select cell **A2**.\n11) Type a formula to concatenate the Year from Sheet1 and the integer part of the Gross Profit from Sheet1.\n    - Assuming the **Year** is in column A and the **Gross Profit** calculated in step 4 is in column K in Sheet1, and row 2 is the first data row, type:\n      `=\"Year_Profit\" & TEXT(Sheet1.A2, \"0\") & \"_\" & INT(Sheet1.K2)`\n      *(Adjust the column references `A2` and `K2` to match the actual \"Year\" and \"Gross Profit\" columns in Sheet1.)*\n    - *Alternative simple format if \"Year\" column contains just the year number:* `=TEXT(Sheet1.A2, \"0\") & \"_\" & INT(Sheet1",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1) Click the **Sheet1** tab at the bottom of the window to switch to the data sheet.\n2) Locate the column headers in **Sheet1** to identify the columns for:\n   - Actual Sale (Sales after deducting returns)\n   - Discounts\n   - Allowances\n   - Material and labor charges\n   - Overhead\n   *(Note: Since specific column letters are not visible, you must identify them visually from the header row.)*\n3) Select the first empty cell in the **Gross Profit** column (corresponding to the first data row, e.g., row 2).\n4) Type a formula to calculate Gross Profit: `=` followed by the **Actual Sale** cell, minus the **Discounts** cell, minus the **Allowances** cell, minus the **Material and labor charges** cell, and minus the **Overhead** cell.\n   - Example: `=D2-E2-F2-G2-H2` (replace letters with the actual column letters identified in step 2).\n5) Press **Enter** to confirm the formula.\n6) Click the cell containing the Gross Profit formula to select it.\n7) Drag the fill handle (the small square at the bottom-right corner of the selected cell) down to copy the formula to all remaining rows in the dataset.\n8) Click the **Sheet2** tab at the bottom of the window to switch to the new sheet.\n9) Select cell **A1** and type the header text `Year_Profit`, then press **Enter**.\n10) Select cell **A2**.\n11) Type a formula to concatenate the Year from Sheet1 and the integer part of the Gross Profit from Sheet1.\n    - Assuming the **Year** is in column A and the **Gross Profit** calculated in step 4 is in column K in Sheet1, and row 2 is the first data row, type:\n      `=\"Year_Profit\" & TEXT(Sheet1.A2, \"0\") & \"_\" & INT(Sheet1.K2)`\n      *(Adjust the column references `A2` and `K2` to match the actual \"Year\" and \"Gross Profit\" columns in Sheet1.)*\n    - *Alternative simple format if \"Year\" column contains just the year number:* `=TEXT(Sheet1.A2, \"0\") & \"_\" & INT(Sheet1",
+  "retrieved_page_ranges": [
+    [
+      85,
+      85
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      240,
+      241
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/step_1.png"
+}

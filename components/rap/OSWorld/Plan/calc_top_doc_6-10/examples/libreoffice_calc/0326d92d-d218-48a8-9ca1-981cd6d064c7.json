@@ -1,0 +1,118 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A12 (the first empty row below the data table in column A).\n2. Type \"Total\" and press Enter to create the row label.\n3. Click cell B12 (under \"Jan\").\n4. Type the formula `=SUM(B2:B11)` and press Enter.\n5. With B12 selected, use Ctrl+C to copy the cell.\n6. Select the range C12:G12 and press Ctrl+V to paste the SUM formula across Feb through Jun.\n7. Click cell A13.\n8. Type \"Growth\" and press Enter.\n9. Click cell C13 (under \"Feb\").\n10. Type the formula `=(C12-B12)/B12` and press Enter.\n11. With C13 selected, use Ctrl+C to copy the cell.\n12. Select the range D13:G13 and press Ctrl+V to paste the growth formula across Mar through Jun.\n13. Right-click cell C13, select Format Cells, choose Percentage, set decimal places (e.g., 2), and click OK.\n14. Select D13:G13, right-click, choose Format Cells → Percentage, set decimal places, and click OK.\n15. Select the range A12:B12, then while holding Ctrl, select C12:G12 to include B12:G12 with header row A12:B12.\n16. Click Insert > Chart to open the Chart Wizard.\n17. In Step 1, ensure Chart Type is Column (Normal 2D) and Series are in Rows if needed.\n18. In Step 2, confirm data ranges include B12:G12 with categories from Jan:Jun; ensure Series names use row header from A12.\n19. In Step 3, set Chart Title to \"Total\".\n20. In Step 4, choose \"As object in\" Sheet1 and click Finish to insert the Total bar chart.\n21. Select the range C1:C13 and D1:D13 (to include Feb:Jun headers and Growth row values) by selecting C1:G1 and then C13:G13 (or select C1:G1 and C13:",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A12 (the first empty row below the data table in column A).\n2. Type \"Total\" and press Enter to create the row label.\n3. Click cell B12 (under \"Jan\").\n4. Type the formula `=SUM(B2:B11)` and press Enter.\n5. With B12 selected, use Ctrl+C to copy the cell.\n6. Select the range C12:G12 and press Ctrl+V to paste the SUM formula across Feb through Jun.\n7. Click cell A13.\n8. Type \"Growth\" and press Enter.\n9. Click cell C13 (under \"Feb\").\n10. Type the formula `=(C12-B12)/B12` and press Enter.\n11. With C13 selected, use Ctrl+C to copy the cell.\n12. Select the range D13:G13 and press Ctrl+V to paste the growth formula across Mar through Jun.\n13. Right-click cell C13, select Format Cells, choose Percentage, set decimal places (e.g., 2), and click OK.\n14. Select D13:G13, right-click, choose Format Cells → Percentage, set decimal places, and click OK.\n15. Select the range A12:B12, then while holding Ctrl, select C12:G12 to include B12:G12 with header row A12:B12.\n16. Click Insert > Chart to open the Chart Wizard.\n17. In Step 1, ensure Chart Type is Column (Normal 2D) and Series are in Rows if needed.\n18. In Step 2, confirm data ranges include B12:G12 with categories from Jan:Jun; ensure Series names use row header from A12.\n19. In Step 3, set Chart Title to \"Total\".\n20. In Step 4, choose \"As object in\" Sheet1 and click Finish to insert the Total bar chart.\n21. Select the range C1:C13 and D1:D13 (to include Feb:Jun headers and Growth row values) by selecting C1:G1 and then C13:G13 (or select C1:G1 and C13:",
+  "retrieved_page_ranges": [
+    [
+      370,
+      370
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      183,
+      183
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/step_1.png"
+}

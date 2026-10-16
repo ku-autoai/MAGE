@@ -1,0 +1,138 @@
+{
+  "id": "30e3e107-1cfb-46ee-a755-2cd080d7ba6a",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please create a new sheet. Keep its sheet name as \"Sheet2\". Merge cells A1:C1 in the new sheet and write \"Demographic Profile\" with blue (#0000ff) fill and bold white text. Then I want to create three pivot tables to show the percentage of Sex, Civil Status, and Highest Educational Attainment. They should be stacked one by one in Sheet2, each separated with a blank line.\n\nRelevant procedure\n1. Click \"Insert Sheet...\" in the context menu currently open on the sheet tab.\n2. Click \"OK\" in the Insert Sheet dialog to create the new sheet.\n3. In the new sheet, select cells A1:C1 by clicking A1 and dragging to C1.\n4. Click the \"Merge and Center Cells\" button in the toolbar (the icon with a merged cell symbol, typically located in the Alignment group).\n5. In cell A1, type: Demographic Profile\n6. With cell A1 selected, open the Background Color dropdown in the toolbar (the paint bucket icon) and select the blue color (#0000ff).\n7. Click the Font Color dropdown in the toolbar (the \"A\" with a color bar) and select white as the text color.\n8. Click the \"B\" (Bold) button in the toolbar to apply bold formatting.\n9. Press Enter or click outside the cell to confirm the formatting.\n10. Press the Down Arrow key to move to row 2, then press the Down Arrow key again to move to row 3.\n11. Navigate back to \"Sheet1\" by clicking the sheet tab at the bottom left.\n12. Select the entire data range including headers by clicking cell A1 and dragging to D30 (or press Ctrl+Shift+End to select all data).\n13. Click \"Data\" in the menu bar, then select \"Pivot Table\" > \"Create\".\n14. In the dialog that appears, confirm the range and click \"OK\" to open the Pivot Table Layout dialog.\n15. In the Pivot Table Layout dialog:\n    a. Drag \"Sex\" from the \"Field names\" list to the \"Row Fields\" area.\n    b. Drag \"Sex\" again to the \"Data Fields\" area.\n    c. Double-click the \"Sex\" field in the \"Data Fields\" area to open the settings.\n    d. Change the \"Function\" to \"Count\" and check the \"Show values as % of\" option, selecting \"Total\" if available (or set calculation to Percentage of Total).\n    e. Click \"OK\" in the settings dialog.\n16. In the \"Insert into\" section of the Pivot Table Layout dialog, change the location to \"$Sheet2.$A$3\" and click \"OK\".\n17. Go to Sheet",
+  "source": "SheetCopilot@9",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/30e3e107-1cfb-46ee-a755-2cd080d7ba6a/DemographicProfile.xlsx",
+            "path": "/home/user/DemographicProfile.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/DemographicProfile.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/30e3e107-1cfb-46ee-a755-2cd080d7ba6a",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "DemographicProfile.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/30e3e107-1cfb-46ee-a755-2cd080d7ba6a/1_DemographicProfile_gt1.xlsx",
+      "dest": "1_DemographicProfile_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/DemographicProfile.xlsx",
+      "dest": "DemographicProfile.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A1",
+          "props": {
+            "bgcolor": {
+              "method": "eq",
+              "ref": "FF0000FF"
+            },
+            "font_color": {
+              "method": "eq",
+              "ref": "FFFFFFFF"
+            },
+            "font_bold": {
+              "method": "eq",
+              "ref": true
+            },
+            "value": {
+              "method": "eq",
+              "ref": "Demographic Profile"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click \"Insert Sheet...\" in the context menu currently open on the sheet tab.\n2. Click \"OK\" in the Insert Sheet dialog to create the new sheet.\n3. In the new sheet, select cells A1:C1 by clicking A1 and dragging to C1.\n4. Click the \"Merge and Center Cells\" button in the toolbar (the icon with a merged cell symbol, typically located in the Alignment group).\n5. In cell A1, type: Demographic Profile\n6. With cell A1 selected, open the Background Color dropdown in the toolbar (the paint bucket icon) and select the blue color (#0000ff).\n7. Click the Font Color dropdown in the toolbar (the \"A\" with a color bar) and select white as the text color.\n8. Click the \"B\" (Bold) button in the toolbar to apply bold formatting.\n9. Press Enter or click outside the cell to confirm the formatting.\n10. Press the Down Arrow key to move to row 2, then press the Down Arrow key again to move to row 3.\n11. Navigate back to \"Sheet1\" by clicking the sheet tab at the bottom left.\n12. Select the entire data range including headers by clicking cell A1 and dragging to D30 (or press Ctrl+Shift+End to select all data).\n13. Click \"Data\" in the menu bar, then select \"Pivot Table\" > \"Create\".\n14. In the dialog that appears, confirm the range and click \"OK\" to open the Pivot Table Layout dialog.\n15. In the Pivot Table Layout dialog:\n    a. Drag \"Sex\" from the \"Field names\" list to the \"Row Fields\" area.\n    b. Drag \"Sex\" again to the \"Data Fields\" area.\n    c. Double-click the \"Sex\" field in the \"Data Fields\" area to open the settings.\n    d. Change the \"Function\" to \"Count\" and check the \"Show values as % of\" option, selecting \"Total\" if available (or set calculation to Percentage of Total).\n    e. Click \"OK\" in the settings dialog.\n16. In the \"Insert into\" section of the Pivot Table Layout dialog, change the location to \"$Sheet2.$A$3\" and click \"OK\".\n17. Go to Sheet",
+  "retrieved_page_ranges": [
+    [
+      136,
+      136
+    ],
+    [
+      213,
+      213
+    ],
+    [
+      417,
+      420
+    ],
+    [
+      93,
+      93
+    ],
+    [
+      132,
+      133
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/30e3e107-1cfb-46ee-a755-2cd080d7ba6a/step_1.png"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!\n\nRelevant procedure\n1. Select the data range for the first year (2019), including the month headers and cost values.\n2. Click the \"Insert\" menu at the top of the window and select \"Chart\", or click the \"Insert Chart\" icon on the Standard toolbar.\n3. In the Chart Wizard, ensure the \"Column\" chart type is selected. If necessary, choose the \"Normal\" variant to show bars side-by-side.\n4. Click \"Next\" to proceed to the Data Range and Data Series steps, verifying that months are categories and costs are values.\n5. Click \"Next\" again to reach the Elements step, where you can add a chart title (e.g., \"2019 Monthly Costs\") and axis labels.\n6. Click \"Finish\" to insert the first chart into the spreadsheet.\n7. Position the first chart by dragging it to a suitable location (e.g., above or below the data tables).\n8. Select the data range for the second year (2020), including the month headers and cost values.\n9. Click the \"Insert\" menu and select \"Chart\", or click the \"Insert Chart\" icon.\n10. In the Chart Wizard, select the \"Column\" chart type and the \"Normal\" variant.\n11. Click \"Next\" through the Data Range and Data Series steps to confirm correct data mapping.\n12. Click \"Next\" to reach the Elements step, add a chart title (e.g., \"2020 Monthly Costs\"), and configure axis labels if needed.\n13. Click \"Finish\" to insert the second chart.\n14. Position the second chart next to or below the first chart to display both column bar charts clearly.",
+  "source": "https://www.youtube.com/watch?v=bgO40-CjYNY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics.xlsx",
+            "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Create_column_charts_using_statistics.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Create_column_charts_using_statistics.xlsx",
+      "dest": "Create_column_charts_using_statistics.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics_gold.xlsx",
+      "dest": "Create_column_charts_using_statistics_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "direction"
+          ]
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the data range for the first year (2019), including the month headers and cost values.\n2. Click the \"Insert\" menu at the top of the window and select \"Chart\", or click the \"Insert Chart\" icon on the Standard toolbar.\n3. In the Chart Wizard, ensure the \"Column\" chart type is selected. If necessary, choose the \"Normal\" variant to show bars side-by-side.\n4. Click \"Next\" to proceed to the Data Range and Data Series steps, verifying that months are categories and costs are values.\n5. Click \"Next\" again to reach the Elements step, where you can add a chart title (e.g., \"2019 Monthly Costs\") and axis labels.\n6. Click \"Finish\" to insert the first chart into the spreadsheet.\n7. Position the first chart by dragging it to a suitable location (e.g., above or below the data tables).\n8. Select the data range for the second year (2020), including the month headers and cost values.\n9. Click the \"Insert\" menu and select \"Chart\", or click the \"Insert Chart\" icon.\n10. In the Chart Wizard, select the \"Column\" chart type and the \"Normal\" variant.\n11. Click \"Next\" through the Data Range and Data Series steps to confirm correct data mapping.\n12. Click \"Next\" to reach the Elements step, add a chart title (e.g., \"2020 Monthly Costs\"), and configure axis labels if needed.\n13. Click \"Finish\" to insert the second chart.\n14. Position the second chart next to or below the first chart to display both column bar charts clearly.",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      182,
+      183
+    ]
+  ],
+  "first_screen_image_path": null
+}

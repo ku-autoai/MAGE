@@ -1,0 +1,118 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A7 (or the first empty row below the monthly sales data) and type \"Total\".\n2. Select the range of cells in row 7 corresponding to the months (e.g., B7:G7).\n3. Enter the formula `=SUM(B2:B6)` in cell B7 and press Enter.\n4. Drag the fill handle of cell B7 across to G7 to calculate totals for all months.\n5. Click cell A8 and type \"Growth\".\n6. Select cell B8 (corresponding to February) and enter the formula `=(B7-B6)/B6`. Press Enter.\n7. Format cell B8 as a Percentage by clicking the '%' icon in the toolbar or via Format > Cells.\n8. Drag the fill handle of cell B8 across to G8 to calculate growth for Mar, Apr, May, and Jun.\n9. Leave cell A8 blank or ensure cell B8 corresponds to Feb in the chart series; specifically, for the chart, we will select data excluding Jan.\n10. Select the range A6:G6 (Total row headers and values) and A7:G7 (Total values) to prepare the first chart. *Correction*: The task asks for bars for Total sales. Select the range containing \"Total\" label and its values (e.g., A6:G6 if row 6 is labels, but typically A7:G7 contains the calculated totals). Let's assume Row 1 has Months, Rows 2-6 have data, Row 7 is Total. Select A7:G7.\n11. Go to Insert > Chart.\n12. In the Chart Type dialog, ensure \"Column\" is selected as the chart type.\n13. Click Next, then Next. In the Chart Elements step, ensure \"Total\" is used as the title or edit the chart title later to \"Total\".\n14. Finish the chart creation.\n15. Right-click the chart title and select \"Edit Title\", then type \"Total\".\n16. Select the range for Growth: B8:G8 (Feb to Jun values). *Note*: Jan (B column? No, Jan is usually column B if A is labels. If A is labels, B is Jan, C is Feb. Let's assume standard: Col A=Labels, Col B=Jan, Col C=Feb.",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A7 (or the first empty row below the monthly sales data) and type \"Total\".\n2. Select the range of cells in row 7 corresponding to the months (e.g., B7:G7).\n3. Enter the formula `=SUM(B2:B6)` in cell B7 and press Enter.\n4. Drag the fill handle of cell B7 across to G7 to calculate totals for all months.\n5. Click cell A8 and type \"Growth\".\n6. Select cell B8 (corresponding to February) and enter the formula `=(B7-B6)/B6`. Press Enter.\n7. Format cell B8 as a Percentage by clicking the '%' icon in the toolbar or via Format > Cells.\n8. Drag the fill handle of cell B8 across to G8 to calculate growth for Mar, Apr, May, and Jun.\n9. Leave cell A8 blank or ensure cell B8 corresponds to Feb in the chart series; specifically, for the chart, we will select data excluding Jan.\n10. Select the range A6:G6 (Total row headers and values) and A7:G7 (Total values) to prepare the first chart. *Correction*: The task asks for bars for Total sales. Select the range containing \"Total\" label and its values (e.g., A6:G6 if row 6 is labels, but typically A7:G7 contains the calculated totals). Let's assume Row 1 has Months, Rows 2-6 have data, Row 7 is Total. Select A7:G7.\n11. Go to Insert > Chart.\n12. In the Chart Type dialog, ensure \"Column\" is selected as the chart type.\n13. Click Next, then Next. In the Chart Elements step, ensure \"Total\" is used as the title or edit the chart title later to \"Total\".\n14. Finish the chart creation.\n15. Right-click the chart title and select \"Edit Title\", then type \"Total\".\n16. Select the range for Growth: B8:G8 (Feb to Jun values). *Note*: Jan (B column? No, Jan is usually column B if A is labels. If A is labels, B is Jan, C is Feb. Let's assume standard: Col A=Labels, Col B=Jan, Col C=Feb.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      83,
+      84
+    ],
+    [
+      169,
+      171
+    ]
+  ],
+  "first_screen_image_path": null
+}

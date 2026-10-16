@@ -1,0 +1,109 @@
+{
+  "id": "f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the missing rows and columns which show the total value\n\nRelevant procedure\n1. Click on cell F3 (Total column for Zone 1) to select it.\n2. Enter the formula `=SUM(B3:E3)` and press Enter.\n3. Click on cell F4 (next row under Total in Zone 1) to select it.\n4. Enter the formula `=SUM(B4:E4)` and press Enter.\n5. Click on cell F5 (next row under Total in Zone 1) to select it.\n6. Enter the formula `=SUM(B5:E5)` and press Enter.\n7. Click on cell F6 (Total row in Zone 1) to select it.\n8. Enter the formula `=SUM(B6:E6)` and press Enter.\n9. Click on cell F10 (Total column for Zone 2) to select it.\n10. Enter the formula `=SUM(B10:E10)` and press Enter.\n11. Click on cell F11 (next row under Total in Zone 2) to select it.\n12. Enter the formula `=SUM(B11:E11)` and press Enter.\n13. Click on cell F12 (next row under Total in Zone 2) to select it.\n14. Enter the formula `=SUM(B12:E12)` and press Enter.\n15. Click on cell F13 (Total row in Zone 2) to select it.\n16. Enter the formula `=SUM(B13:E13)` and press Enter.\n17. Click on cell F17 (Total column for Zone 3) to select it.\n18. Enter the formula `=SUM(B17:E17)` and press Enter.\n19. Click on cell F18 (next row under Total in Zone 3) to select it.\n20. Enter the formula `=SUM(B18:E18)` and press Enter.\n21. Click on cell F19 (next row under Total in Zone 3) to select it.\n22. Enter the formula `=SUM(B19:E19)` and press Enter.\n23. Click on cell F20 (Total row in Zone 3) to select it.\n24. Enter the formula `=SUM(B20:E20)` and press Enter.",
+  "source": "https://youtube.com/shorts/feldd-Pn48c?si=9xJiem2uAHm6Jshb",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone.xlsx",
+            "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Quarterly_Product_Sales_by_Zone.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone_gold.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell F3 (Total column for Zone 1) to select it.\n2. Enter the formula `=SUM(B3:E3)` and press Enter.\n3. Click on cell F4 (next row under Total in Zone 1) to select it.\n4. Enter the formula `=SUM(B4:E4)` and press Enter.\n5. Click on cell F5 (next row under Total in Zone 1) to select it.\n6. Enter the formula `=SUM(B5:E5)` and press Enter.\n7. Click on cell F6 (Total row in Zone 1) to select it.\n8. Enter the formula `=SUM(B6:E6)` and press Enter.\n9. Click on cell F10 (Total column for Zone 2) to select it.\n10. Enter the formula `=SUM(B10:E10)` and press Enter.\n11. Click on cell F11 (next row under Total in Zone 2) to select it.\n12. Enter the formula `=SUM(B11:E11)` and press Enter.\n13. Click on cell F12 (next row under Total in Zone 2) to select it.\n14. Enter the formula `=SUM(B12:E12)` and press Enter.\n15. Click on cell F13 (Total row in Zone 2) to select it.\n16. Enter the formula `=SUM(B13:E13)` and press Enter.\n17. Click on cell F17 (Total column for Zone 3) to select it.\n18. Enter the formula `=SUM(B17:E17)` and press Enter.\n19. Click on cell F18 (next row under Total in Zone 3) to select it.\n20. Enter the formula `=SUM(B18:E18)` and press Enter.\n21. Click on cell F19 (next row under Total in Zone 3) to select it.\n22. Enter the formula `=SUM(B19:E19)` and press Enter.\n23. Click on cell F20 (Total row in Zone 3) to select it.\n24. Enter the formula `=SUM(B20:E20)` and press Enter.",
+  "retrieved_page_ranges": [
+    [
+      25,
+      25
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      16,
+      16
+    ],
+    [
+      41,
+      41
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/step_1.png"
+}

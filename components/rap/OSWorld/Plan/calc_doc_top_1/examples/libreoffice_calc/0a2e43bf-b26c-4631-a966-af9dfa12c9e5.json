@@ -1,0 +1,101 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure:\n\n1. Click on cell **A12** to select it.\n2. Type the text **Total** and press **Enter**.\n3. Click on cell **B12** to select it.\n4. Type the formula `=SUM(B2:B11)` and press **Enter**.\n5. Click on cell **B12** again.\n6. Hover over the bottom-right corner of the cell border until the cursor changes to a crosshair (fill handle).\n7. Click and drag the fill handle to the right until you reach cell **G12**, then release.\n8. Click and drag to select the range of cells from **B1** to **G12** (including the month headers and the total values).\n9. Click on the **Insert** menu in the top toolbar.\n10. Click on **Chart...** in the dropdown menu.\n11. In the Chart Wizard window, select **Line** from the list of Chart Types on the left.\n12. Click the **Next >** button.\n13. Ensure the **First row** and **First column** checkboxes are checked under the \"Data Series\" tab.\n14. Click **Finish** to create the chart.",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n\n1. Click on cell **A12** to select it.\n2. Type the text **Total** and press **Enter**.\n3. Click on cell **B12** to select it.\n4. Type the formula `=SUM(B2:B11)` and press **Enter**.\n5. Click on cell **B12** again.\n6. Hover over the bottom-right corner of the cell border until the cursor changes to a crosshair (fill handle).\n7. Click and drag the fill handle to the right until you reach cell **G12**, then release.\n8. Click and drag to select the range of cells from **B1** to **G12** (including the month headers and the total values).\n9. Click on the **Insert** menu in the top toolbar.\n10. Click on **Chart...** in the dropdown menu.\n11. In the Chart Wizard window, select **Line** from the list of Chart Types on the left.\n12. Click the **Next >** button.\n13. Ensure the **First row** and **First column** checkboxes are checked under the \"Data Series\" tab.\n14. Click **Finish** to create the chart.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/step_1.png"
+}

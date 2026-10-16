@@ -1,0 +1,69 @@
+{
+  "id": "3ef2b351-8a84-4ff2-8724-d86eae9b842e",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Help me center align the heading in LibreOffice.\n\nRelevant procedure:\n1. Click on the heading text \"Guidelines on drawing up a Constitution\" to place the cursor within it.\n2. Click the center align button in the formatting toolbar (the icon with horizontal lines centered, located among the alignment options).\n\nAlternative: If the center align button isn't immediately visible, use the Format menu → Align → Center.",
+  "source": "https://askubuntu.com/questions/1066351/how-do-you-center-align-in-libreoffice#:~:text=Ctrl%20%2B%20e%20will%20Center%20align%20the%20cursor%20for%20you.",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/3ef2b351-8a84-4ff2-8724-d86eae9b842e/Constitution_Template_With_Guidelines.docx",
+            "path": "/home/user/Desktop/Constitution_Template_With_Guidelines.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Constitution_Template_With_Guidelines.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Constitution_Template_With_Guidelines.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": "is_first_line_centered",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Constitution_Template_With_Guidelines.docx",
+      "dest": "Constitution_Template_With_Guidelines.docx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure:\n1. Click on the heading text \"Guidelines on drawing up a Constitution\" to place the cursor within it.\n2. Click the center align button in the formatting toolbar (the icon with horizontal lines centered, located among the alignment options).\n\nAlternative: If the center align button isn't immediately visible, use the Format menu → Align → Center.",
+  "instruction_with_evidence": "Help me center align the heading in LibreOffice.\n\nRelevant procedure:\n1. Click on the heading text \"Guidelines on drawing up a Constitution\" to place the cursor within it.\n2. Click the center align button in the formatting toolbar (the icon with horizontal lines centered, located among the alignment options).\n\nAlternative: If the center align button isn't immediately visible, use the Format menu → Align → Center."
+}

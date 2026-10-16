@@ -1,0 +1,62 @@
+{
+  "id": "045bf3ff-9077-4b86-b483-a1040a949cff",
+  "snapshot": "gimp",
+  "instruction": "Could you turn my image into CYMK mode within GIMP ?\n\nRelevant procedure\n\n1. Click the **Convert** button in the \"Convert to RGB Working Space?\" dialog box to proceed.\n2. Click the **Image** menu in the top menu bar.\n3. Hover over the **Mode** submenu option.\n4. If the **CMYK** option is not visible in the list, select **Components** from the submenu.\n5. Click **Decompose...** to open the Decompose dialog.\n6. Select the **CMYK** radio button from the Color Model list.\n7. Click the **Decompose** button to convert the image into a CMYK layer structure.",
+  "source": "https://www.makeuseof.com/tag/can-photoshop-gimp-cant/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/045bf3ff-9077-4b86-b483-a1040a949cff/gate.jpeg",
+            "path": "/home/user/Desktop/gate.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/gate.jpeg"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **Convert** button in the \"Convert to RGB Working Space?\" dialog box to proceed.\n2. Click the **Image** menu in the top menu bar.\n3. Hover over the **Mode** submenu option.\n4. If the **CMYK** option is not visible in the list, select **Components** from the submenu.\n5. Click **Decompose...** to open the Decompose dialog.\n6. Select the **CMYK** radio button from the Color Model list.\n7. Click the **Decompose** button to convert the image into a CMYK layer structure.",
+  "retrieved_page_ranges": [
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "6.5. Grayscale mode",
+      "6.5. Grayscale mode"
+    ],
+    [
+      "8.25. Compose",
+      "8.25. Compose"
+    ],
+    [
+      "6.4. RGB mode",
+      "6.4. RGB mode"
+    ],
+    [
+      "5.13. Color Management",
+      "5.13. Color Management"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/045bf3ff-9077-4b86-b483-a1040a949cff/step_1.png"
+}

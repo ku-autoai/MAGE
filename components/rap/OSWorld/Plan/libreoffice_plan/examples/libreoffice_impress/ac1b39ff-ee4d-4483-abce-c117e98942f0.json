@@ -1,0 +1,103 @@
+{
+  "id": "ac1b39ff-ee4d-4483-abce-c117e98942f0",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Move the table on Page 3 to the bottom of the slide.\n\nRelevant procedure\n1. Navigate to the Slide Sorter view or use the slide thumbnails pane to locate and select Page 3.\n2. Ensure the slide is active and in editing mode (click on the slide content area if necessary).\n3. Click on the table object to select it (a bounding box with handles should appear around the table).\n4. Click and hold the mouse button on the selected table.\n5. Drag the table downwards until it is positioned at the bottom of the slide.\n6. Release the mouse button to drop the table in its new position.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/ac1b39ff-ee4d-4483-abce-c117e98942f0/55_10.pptx",
+            "path": "/home/user/Desktop/55_10.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/55_10.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "55_10.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/ac1b39ff-ee4d-4483-abce-c117e98942f0/55_10_Original.pptx",
+      "dest": "55_10_Original.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/55_10.pptx",
+      "dest": "55_10.pptx"
+    },
+    "options": {
+      "examine_table_bottom_position": true,
+      "examine_shape": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Navigate to the Slide Sorter view or use the slide thumbnails pane to locate and select Page 3.\n2. Ensure the slide is active and in editing mode (click on the slide content area if necessary).\n3. Click on the table object to select it (a bounding box with handles should appear around the table).\n4. Click and hold the mouse button on the selected table.\n5. Drag the table downwards until it is positioned at the bottom of the slide.\n6. Release the mouse button to drop the table in its new position.",
+  "retrieved_page_ranges": [
+    [
+      350,
+      354
+    ],
+    [
+      346,
+      350
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      346,
+      350
+    ],
+    [
+      72,
+      86
+    ]
+  ]
+}

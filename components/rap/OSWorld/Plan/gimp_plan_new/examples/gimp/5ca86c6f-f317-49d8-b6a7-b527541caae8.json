@@ -1,0 +1,41 @@
+{
+  "id": "5ca86c6f-f317-49d8-b6a7-b527541caae8",
+  "snapshot": "gimp",
+  "instruction": "Could you help me download the logo of the University of Hong Kong in '.png' format using only GIMP's built-in features, without launching a separate web browser?\n\nRelevant procedure:\n\n1. Click the GIMP icon (Wilber mascot) in the left sidebar to launch the application.\n2. Click the **File** menu at the top-left corner of the GIMP window.\n3. Select **Create** from the dropdown menu, then choose **By URL…** from the sub-menu.\n4. In the \"Create Image From URL\" dialog box that appears, type the direct URL of the HKU logo into the \"URL:\" text field (e.g., search for the direct link to the HKU logo image online and paste it here).\n5. Click the **OK** button.\n6. Once the image loads, click **File** > **Export As...** in the top menu.\n7. In the filename field, type `hku_logo.png` (ensuring the extension is `.png`).\n8. Click the **Export** button.\n9. If the \"Export Image as PNG\" dialog appears, click **Export** again to confirm and save the file.",
+  "source": "",
+  "config": [],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n\n1. Click the GIMP icon (Wilber mascot) in the left sidebar to launch the application.\n2. Click the **File** menu at the top-left corner of the GIMP window.\n3. Select **Create** from the dropdown menu, then choose **By URL…** from the sub-menu.\n4. In the \"Create Image From URL\" dialog box that appears, type the direct URL of the HKU logo into the \"URL:\" text field (e.g., search for the direct link to the HKU logo image online and paste it here).\n5. Click the **OK** button.\n6. Once the image loads, click **File** > **Export As...** in the top menu.\n7. In the filename field, type `hku_logo.png` (ensuring the extension is `.png`).\n8. Click the **Export** button.\n9. If the \"Export Image as PNG\" dialog appears, click **Export** again to confirm and save the file.",
+  "retrieved_page_ranges": [
+    [
+      "2.17. Send by Email",
+      "2.17. Send by Email"
+    ],
+    [
+      "5.42. Export Image as PNM, PAM, PBM, PGM, PPM",
+      "5.42. Export Image as PNM, PAM, PBM, PGM, PPM"
+    ],
+    [
+      "5.57. Export Image as X PixMap",
+      "5.57. Export Image as X PixMap"
+    ],
+    [
+      "2.16. Print",
+      "2.16. Print"
+    ],
+    [
+      "16.5. Playback",
+      "16.5. Playback"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/5ca86c6f-f317-49d8-b6a7-b527541caae8/step_1.png"
+}

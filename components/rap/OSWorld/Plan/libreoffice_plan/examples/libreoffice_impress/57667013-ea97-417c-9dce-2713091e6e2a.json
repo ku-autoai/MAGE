@@ -1,0 +1,117 @@
+{
+  "id": "57667013-ea97-417c-9dce-2713091e6e2a",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Navigate to slide 5 and set the font color of all textboxes to yellow. Use exactly 'yellow'—no variations such as light yellow, dark yellow, or any other color.\n\nRelevant procedure\n1. Locate the slide navigation panel (typically on the left side of the window) and click on the thumbnail for slide 5 to select it.\n2. Click on the first visible textbox on slide 5 to select it.\n3. With the textbox selected, press `Ctrl + A` (or `Cmd + A` on Mac) to select all text within that box.\n4. Locate the font color tool in the formatting toolbar (often represented by an 'A' with a colored underline or a color square). Click the dropdown arrow next to it.\n5. In the color palette that appears, select the standard \"Yellow\" color. Avoid custom hues or shades labeled as \"Light Yellow\" or \"Dark Yellow\".\n6. Click outside the current textbox to deselect it, then click on the next textbox on slide 5.\n7. Press `Ctrl + A` (or `Cmd + A`) to select all text within this new box.\n8. Click the font color dropdown again and select the standard \"Yellow\" color.\n9. Repeat steps 6-8 for every remaining textbox on slide 5 until all text is yellow.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/57667013-ea97-417c-9dce-2713091e6e2a/1_2.pptx",
+            "path": "/home/user/Desktop/1_2.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/1_2.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "1_2.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": [
+      "compare_pptx_files",
+      "compare_pptx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/57667013-ea97-417c-9dce-2713091e6e2a/1_2_Gold.pptx",
+        "dest": "1_2_Gold.pptx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/57667013-ea97-417c-9dce-2713091e6e2a/1_2_Gold_all_fonts.pptx",
+        "dest": "1_2_Gold_all_fonts.pptx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/1_2.pptx",
+        "dest": "1_2.pptx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/1_2.pptx",
+        "dest": "1_2.pptx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Locate the slide navigation panel (typically on the left side of the window) and click on the thumbnail for slide 5 to select it.\n2. Click on the first visible textbox on slide 5 to select it.\n3. With the textbox selected, press `Ctrl + A` (or `Cmd + A` on Mac) to select all text within that box.\n4. Locate the font color tool in the formatting toolbar (often represented by an 'A' with a colored underline or a color square). Click the dropdown arrow next to it.\n5. In the color palette that appears, select the standard \"Yellow\" color. Avoid custom hues or shades labeled as \"Light Yellow\" or \"Dark Yellow\".\n6. Click outside the current textbox to deselect it, then click on the next textbox on slide 5.\n7. Press `Ctrl + A` (or `Cmd + A`) to select all text within this new box.\n8. Click the font color dropdown again and select the standard \"Yellow\" color.\n9. Repeat steps 6-8 for every remaining textbox on slide 5 until all text is yellow.",
+  "retrieved_page_ranges": [
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      42,
+      60
+    ],
+    [
+      101,
+      110
+    ],
+    [
+      72,
+      86
+    ]
+  ]
+}

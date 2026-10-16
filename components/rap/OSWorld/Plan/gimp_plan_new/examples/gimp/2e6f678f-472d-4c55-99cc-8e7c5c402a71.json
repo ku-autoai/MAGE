@@ -1,0 +1,69 @@
+{
+  "id": "2e6f678f-472d-4c55-99cc-8e7c5c402a71",
+  "snapshot": "gimp",
+  "instruction": "Please batch process all images on the desktop by increasing their brightness to 50, instead of adjusting them individually within GIMP.\n\nRelevant procedure\n1. Locate and open the file manager application (Files) from the left dock.\n2. Navigate to the \"Desktop\" directory and verify that the target image files are present.\n3. Open the command line terminal.\n4. Execute the following command to batch process all images on the desktop: `mogrify -path ~/Desktop -path ~/Desktop +path ~/Desktop -brightness-contrast 50x0 ~/Desktop/*.jpg` (Assuming JPEGs; replace extension if different, or use `~/Desktop/*.{png,jpg,jpeg}` to catch common formats).\n5. Close the terminal.\n6. Open the \"Files\" application to verify the changes in the processed images.",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/squirrel.jpeg",
+            "path": "/home/user/Desktop/squirrel.jpeg"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/panda.jpeg",
+            "path": "/home/user/Desktop/panda.jpeg"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/heron.jpeg",
+            "path": "/home/user/Desktop/heron.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Locate and open the file manager application (Files) from the left dock.\n2. Navigate to the \"Desktop\" directory and verify that the target image files are present.\n3. Open the command line terminal.\n4. Execute the following command to batch process all images on the desktop: `mogrify -path ~/Desktop -path ~/Desktop +path ~/Desktop -brightness-contrast 50x0 ~/Desktop/*.jpg` (Assuming JPEGs; replace extension if different, or use `~/Desktop/*.{png,jpg,jpeg}` to catch common formats).\n5. Close the terminal.\n6. Open the \"Files\" application to verify the changes in the processed images.",
+  "retrieved_page_ranges": [
+    [
+      "8.16. Equalize",
+      "8.16. Equalize"
+    ],
+    [
+      "2.21. Close All",
+      "2.21. Close All"
+    ],
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "8.6. Saturation",
+      "8.6. Saturation"
+    ],
+    [
+      "8.20. Color Enhance",
+      "8.20. Color Enhance"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/step_1.png"
+}

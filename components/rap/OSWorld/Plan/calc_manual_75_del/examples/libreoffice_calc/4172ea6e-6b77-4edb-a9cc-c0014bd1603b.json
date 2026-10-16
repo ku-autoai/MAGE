@@ -1,0 +1,109 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure\n1. Click on the empty cell in the first row of the column immediately to the right of the existing loan data (e.g., cell E1 if D is the last data column) to create the new column header.\n2. Type \"Maturity Date\" into the selected cell and press Enter.\n3. Click on the cell in the second row of the new \"Maturity Date\" column (e.g., E2) to begin entering the formula.\n4. Identify the cells in the current row containing the \"Loan Start Date\" (or similar start date field) and \"Loan Term\" (duration in years/months). For this example, assume Start Date is in column A and Term (in years) is in column B.\n5. Type a formula to calculate the maturity date. A common formula is `=EDATE(A2, B2*12)` if the term is in years, or `=EDATE(A2, B2)` if the term is in months. Adjust the cell references (A2, B2) to match the actual column letters of your start date and loan term.\n6. Press Enter to confirm the formula.\n7. With the result cell still selected, locate the fill handle (the small square at the bottom-right corner of the cell selection border).\n8. Click and drag the fill handle down to the last row of loan data to copy the formula to all rows.\n9. If the resulting dates appear as numbers, select the entire \"Maturity Date\" column, right-click, and choose \"Format Cells\". In the \"Numbers\" tab, select \"Date\" from the Category list, choose a desired format, and click OK.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the empty cell in the first row of the column immediately to the right of the existing loan data (e.g., cell E1 if D is the last data column) to create the new column header.\n2. Type \"Maturity Date\" into the selected cell and press Enter.\n3. Click on the cell in the second row of the new \"Maturity Date\" column (e.g., E2) to begin entering the formula.\n4. Identify the cells in the current row containing the \"Loan Start Date\" (or similar start date field) and \"Loan Term\" (duration in years/months). For this example, assume Start Date is in column A and Term (in years) is in column B.\n5. Type a formula to calculate the maturity date. A common formula is `=EDATE(A2, B2*12)` if the term is in years, or `=EDATE(A2, B2)` if the term is in months. Adjust the cell references (A2, B2) to match the actual column letters of your start date and loan term.\n6. Press Enter to confirm the formula.\n7. With the result cell still selected, locate the fill handle (the small square at the bottom-right corner of the cell selection border).\n8. Click and drag the fill handle down to the last row of loan data to copy the formula to all rows.\n9. If the resulting dates appear as numbers, select the entire \"Maturity Date\" column, right-click, and choose \"Format Cells\". In the \"Numbers\" tab, select \"Date\" from the Category list, choose a desired format, and click OK.",
+  "retrieved_page_ranges": [
+    [
+      316,
+      317
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      241,
+      241
+    ],
+    [
+      51,
+      52
+    ]
+  ],
+  "first_screen_image_path": null
+}

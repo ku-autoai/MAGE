@@ -1,0 +1,118 @@
+{
+  "id": "347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!\n\nRelevant procedure\n1. Click cell A1 to deselect any existing selection.\n2. Click cell A3 to start selecting the 2019 data range.\n3. Hold Shift and click cell I14 to select the entire 2019 table (A3:I14).\n4. Click the \"Insert\" menu in the top menu bar.\n5. Click \"Chart...\" from the Insert menu dropdown.\n6. In the Chart Wizard, ensure the chart type is set to \"Column\" (default).\n7. Click \"Next\" to proceed to the Data Range step.\n8. In the Data Range section, ensure the range is \"A3:I14\" and click \"Next\".\n9. In the Data Series step, verify that \"Series in columns\" is selected and \"First row as label\" and \"First column as label\" are checked, then click \"Next\".\n10. In the Chart Elements step, enter \"2019 Monthly Total Costs\" in the Title field.\n11. Ensure the Legend position is set appropriately (e.g., Right or None, since it's a single series), then click \"Finish\".\n12. The chart will be inserted into the spreadsheet. Click outside the chart to deselect it.\n13. Click cell A20 to start selecting the 2020 data range.\n14. Hold Shift and click cell I31 to select the entire 2020 table (A20:I31).\n15. Click the \"Insert\" menu in the top menu bar.\n16. Click \"Chart...\" from the Insert menu dropdown.\n17. In the Chart Wizard, ensure the chart type is set to \"Column\" (default).\n18. Click \"Next\" to proceed to the Data Range step.\n19. In the Data Range section, ensure the range is \"A20:I31\" and click \"Next\".\n20. In the Data Series step, verify that \"Series in columns\" is selected and \"First row as label\" and \"First column as label\" are checked, then click \"Next\".\n21. In the Chart Elements step, enter \"2020 Monthly Total Costs\" in the Title field.\n22. Ensure the Legend position is set appropriately (e.g., Right or None, since it's a single series), then click \"Finish\".",
+  "source": "https://www.youtube.com/watch?v=bgO40-CjYNY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics.xlsx",
+            "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Create_column_charts_using_statistics.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Create_column_charts_using_statistics.xlsx",
+      "dest": "Create_column_charts_using_statistics.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics_gold.xlsx",
+      "dest": "Create_column_charts_using_statistics_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "direction"
+          ]
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A1 to deselect any existing selection.\n2. Click cell A3 to start selecting the 2019 data range.\n3. Hold Shift and click cell I14 to select the entire 2019 table (A3:I14).\n4. Click the \"Insert\" menu in the top menu bar.\n5. Click \"Chart...\" from the Insert menu dropdown.\n6. In the Chart Wizard, ensure the chart type is set to \"Column\" (default).\n7. Click \"Next\" to proceed to the Data Range step.\n8. In the Data Range section, ensure the range is \"A3:I14\" and click \"Next\".\n9. In the Data Series step, verify that \"Series in columns\" is selected and \"First row as label\" and \"First column as label\" are checked, then click \"Next\".\n10. In the Chart Elements step, enter \"2019 Monthly Total Costs\" in the Title field.\n11. Ensure the Legend position is set appropriately (e.g., Right or None, since it's a single series), then click \"Finish\".\n12. The chart will be inserted into the spreadsheet. Click outside the chart to deselect it.\n13. Click cell A20 to start selecting the 2020 data range.\n14. Hold Shift and click cell I31 to select the entire 2020 table (A20:I31).\n15. Click the \"Insert\" menu in the top menu bar.\n16. Click \"Chart...\" from the Insert menu dropdown.\n17. In the Chart Wizard, ensure the chart type is set to \"Column\" (default).\n18. Click \"Next\" to proceed to the Data Range step.\n19. In the Data Range section, ensure the range is \"A20:I31\" and click \"Next\".\n20. In the Data Series step, verify that \"Series in columns\" is selected and \"First row as label\" and \"First column as label\" are checked, then click \"Next\".\n21. In the Chart Elements step, enter \"2020 Monthly Total Costs\" in the Title field.\n22. Ensure the Legend position is set appropriately (e.g., Right or None, since it's a single series), then click \"Finish\".",
+  "retrieved_page_ranges": [
+    [
+      288,
+      288
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      181,
+      181
+    ],
+    [
+      83,
+      83
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/step_1.png"
+}

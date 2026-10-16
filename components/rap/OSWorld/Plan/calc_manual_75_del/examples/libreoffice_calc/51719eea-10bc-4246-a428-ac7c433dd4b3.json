@@ -1,0 +1,115 @@
+{
+  "id": "51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate revenue in a new column according to the Retail Price sheet (consider product price and quantity and discount), and generate a Pivot Table in a new sheet (Sheet2) that summarizes the revenue of each product.\n\nRelevant procedure\n1. Click the \"Retail Price\" sheet tab at the bottom of the window to switch to the source data sheet.\n2. Click the header of the first empty column to the right of the existing data (e.g., Column E) to select it.\n3. Type \"Revenue\" in the first cell of this new column (e.g., E1) to create the header.\n4. Click the first data cell below the header (e.g., E2).\n5. Enter the formula to calculate revenue based on Price, Quantity, and Discount. Assuming columns for Price, Quantity, and Discount are adjacent or identifiable (e.g., if Price is C, Quantity is D, and Discount is B), type: `=C2*D2*(1-B2)` (adjust cell references to match the actual column positions of Price, Quantity, and Discount). Press Enter.\n6. Click cell E2 again to select it, then drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to apply the formula to all products.\n7. Select the entire data range including the new Revenue column (e.g., A1:E_last_row).\n8. Go to the menu bar and click **Insert**, then select **Pivot Table**.\n9. In the Pivot Table - Step 1 dialog, ensure \"Create new sheet\" is selected. In the \"Target range\" field, verify or change the name to \"Sheet2\". Click **OK**.\n10. In the Pivot Table Layout dialog, locate the \"Product\" field in the \"Available fields\" list.\n11. Drag the \"Product\" field into the **Row Fields** area.\n12. Locate the \"Revenue\" field in the \"Available fields\" list.\n13. Drag the \"Revenue\" field into the **Data Fields** area.\n14. Ensure the function for the Revenue field in the Data Fields area is set to \"Sum\" (this is usually the default).\n15. Click **OK** to generate the Pivot Table in Sheet2.",
+  "source": "SheetCopilot@7",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/8_BoomerangSales_gt1.xlsx",
+      "dest": "8_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Retail Price\" sheet tab at the bottom of the window to switch to the source data sheet.\n2. Click the header of the first empty column to the right of the existing data (e.g., Column E) to select it.\n3. Type \"Revenue\" in the first cell of this new column (e.g., E1) to create the header.\n4. Click the first data cell below the header (e.g., E2).\n5. Enter the formula to calculate revenue based on Price, Quantity, and Discount. Assuming columns for Price, Quantity, and Discount are adjacent or identifiable (e.g., if Price is C, Quantity is D, and Discount is B), type: `=C2*D2*(1-B2)` (adjust cell references to match the actual column positions of Price, Quantity, and Discount). Press Enter.\n6. Click cell E2 again to select it, then drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to apply the formula to all products.\n7. Select the entire data range including the new Revenue column (e.g., A1:E_last_row).\n8. Go to the menu bar and click **Insert**, then select **Pivot Table**.\n9. In the Pivot Table - Step 1 dialog, ensure \"Create new sheet\" is selected. In the \"Target range\" field, verify or change the name to \"Sheet2\". Click **OK**.\n10. In the Pivot Table Layout dialog, locate the \"Product\" field in the \"Available fields\" list.\n11. Drag the \"Product\" field into the **Row Fields** area.\n12. Locate the \"Revenue\" field in the \"Available fields\" list.\n13. Drag the \"Revenue\" field into the **Data Fields** area.\n14. Ensure the function for the Revenue field in the Data Fields area is set to \"Sum\" (this is usually the default).\n15. Click **OK** to generate the Pivot Table in Sheet2.",
+  "retrieved_page_ranges": [
+    [
+      316,
+      317
+    ],
+    [
+      298,
+      302
+    ],
+    [
+      319,
+      320
+    ],
+    [
+      320,
+      320
+    ],
+    [
+      88,
+      89
+    ]
+  ],
+  "first_screen_image_path": null
+}

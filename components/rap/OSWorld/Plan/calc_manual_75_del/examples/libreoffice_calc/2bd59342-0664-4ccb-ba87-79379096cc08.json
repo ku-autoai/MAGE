@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Click cell **D2** (the first empty cell in the \"Chart\" column for Order ID 1).\n2. From the menu bar, click **Insert** > **Function** > **Other** (or type `=SPARKLINE(` if available, or use **Insert** > **Chart** if Sparkline function is not supported, but standard Calc procedure for inline charts usually implies the SPARKLINE function or inserting a chart object). *Note: In LibreOffice Calc, native \"sparklines\" are not a single cell formula like Excel. The standard way to achieve \"sparkline charts... in the Chart column\" is often to insert a **Line Chart** object anchored to the cell or use a macro. However, assuming the user wants a visual trend in that specific cell/column area, the most reliable GUI action is to insert a chart anchored to the cell.*\n   *Correction for standard LibreOffice Calc UI:* LibreOffice Calc does not have a native `SPARKLINE` function. To achieve a sparkline-like visual in a column, you typically insert a **Line Chart** and format it to be small and embedded in the cell, or you create a column of charts. Given the instruction \"Make sparkline charts... in the 'Chart' column\", the most direct interpretation for a GUI agent is to insert a chart object anchored to the cell.\n   \n   *Revised Step 2 for LibreOffice Calc context:* \n   Select the data range for Order ID 1, which is **B2:D2** (Jan to Mar data).\n3. From the menu bar, click **Insert** > **Chart**.\n4. In the Chart Wizard, ensure the **Chart type** is set to **Line**.\n5. Select the **Lines Only** or **Points and Lines** variant (preferably **Lines Only** for a sparkline look).\n6. Click **Next**, then **Next**, and then **Finish** to insert the chart.\n7. Right-click the newly created chart and select **Anchor** > **To Cell** (or **In Cell** if available, otherwise position it manually inside cell D2).\n8. Resize the chart to fit within cell **D2** by dragging its borders.\n9. Right-click the chart, select **Format Data Series** (or double-click the line).\n10. In the **Data Series** dialog, go to the **Lines** tab. Set the line",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell **D2** (the first empty cell in the \"Chart\" column for Order ID 1).\n2. From the menu bar, click **Insert** > **Function** > **Other** (or type `=SPARKLINE(` if available, or use **Insert** > **Chart** if Sparkline function is not supported, but standard Calc procedure for inline charts usually implies the SPARKLINE function or inserting a chart object). *Note: In LibreOffice Calc, native \"sparklines\" are not a single cell formula like Excel. The standard way to achieve \"sparkline charts... in the Chart column\" is often to insert a **Line Chart** object anchored to the cell or use a macro. However, assuming the user wants a visual trend in that specific cell/column area, the most reliable GUI action is to insert a chart anchored to the cell.*\n   *Correction for standard LibreOffice Calc UI:* LibreOffice Calc does not have a native `SPARKLINE` function. To achieve a sparkline-like visual in a column, you typically insert a **Line Chart** and format it to be small and embedded in the cell, or you create a column of charts. Given the instruction \"Make sparkline charts... in the 'Chart' column\", the most direct interpretation for a GUI agent is to insert a chart object anchored to the cell.\n   \n   *Revised Step 2 for LibreOffice Calc context:* \n   Select the data range for Order ID 1, which is **B2:D2** (Jan to Mar data).\n3. From the menu bar, click **Insert** > **Chart**.\n4. In the Chart Wizard, ensure the **Chart type** is set to **Line**.\n5. Select the **Lines Only** or **Points and Lines** variant (preferably **Lines Only** for a sparkline look).\n6. Click **Next**, then **Next**, and then **Finish** to insert the chart.\n7. Right-click the newly created chart and select **Anchor** > **To Cell** (or **In Cell** if available, otherwise position it manually inside cell D2).\n8. Resize the chart to fit within cell **D2** by dragging its borders.\n9. Right-click the chart, select **Format Data Series** (or double-click the line).\n10. In the **Data Series** dialog, go to the **Lines** tab. Set the line",
+  "retrieved_page_ranges": [
+    [
+      169,
+      171
+    ],
+    [
+      173,
+      174
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": null
+}

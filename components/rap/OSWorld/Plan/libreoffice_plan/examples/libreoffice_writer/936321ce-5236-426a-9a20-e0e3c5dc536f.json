@@ -1,0 +1,92 @@
+{
+  "id": "936321ce-5236-426a-9a20-e0e3c5dc536f",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Could you help me convert the text seperated by commas to a table?\n\nRelevant procedure\n\n1. Click on the \"Insert\" menu at the top toolbar\n2. Select \"Table\" from the dropdown menu\n3. In the dialog box, set the number of columns (3) and rows as needed\n4. Click \"OK\" to create an empty table\n5. Locate the comma-separated text: \"Sound-Letter Pattern,Grapheme,Example Grapheme,Example Word\"\n6. Select and copy this text\n7. Position your cursor in the first cell of the newly created table\n8. Type/paste the first field (before the first comma)\n9. Press Tab to move to the next cell\n10. Type/paste the second field (between first and second comma)\n11. Continue pressing Tab and typing each comma-separated field into successive cells\n12. Repeat steps 5-11 for all rows of comma-separated data\n13. Format the table as desired using the table tools that appear when the table is selected",
+  "source": "https://www.youtube.com/watch?v=l25Evu4ohKg",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/936321ce-5236-426a-9a20-e0e3c5dc536f/Graphemes_Sound_Letter_Patterns.docx",
+            "path": "/home/user/Desktop/Graphemes_Sound_Letter_Patterns.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Graphemes_Sound_Letter_Patterns.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Graphemes_Sound_Letter_Patterns_Gold.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(2); "
+          ]
+        }
+      }
+    ],
+    "func": [
+      "compare_docx_tables",
+      "compare_docx_tables"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/936321ce-5236-426a-9a20-e0e3c5dc536f/Graphemes_Sound_Letter_Patterns_Gold.docx",
+        "dest": "Graphemes_Sound_Letter_Patterns_Gold.docx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/936321ce-5236-426a-9a20-e0e3c5dc536f/Graphemes_Sound_Letter_Patterns_Gold_2.docx",
+        "dest": "Graphemes_Sound_Letter_Patterns_Gold_2.docx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/Graphemes_Sound_Letter_Patterns.docx",
+        "dest": "Graphemes_Sound_Letter_Patterns.docx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/Graphemes_Sound_Letter_Patterns.docx",
+        "dest": "Graphemes_Sound_Letter_Patterns.docx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on the \"Insert\" menu at the top toolbar\n2. Select \"Table\" from the dropdown menu\n3. In the dialog box, set the number of columns (3) and rows as needed\n4. Click \"OK\" to create an empty table\n5. Locate the comma-separated text: \"Sound-Letter Pattern,Grapheme,Example Grapheme,Example Word\"\n6. Select and copy this text\n7. Position your cursor in the first cell of the newly created table\n8. Type/paste the first field (before the first comma)\n9. Press Tab to move to the next cell\n10. Type/paste the second field (between first and second comma)\n11. Continue pressing Tab and typing each comma-separated field into successive cells\n12. Repeat steps 5-11 for all rows of comma-separated data\n13. Format the table as desired using the table tools that appear when the table is selected",
+  "instruction_with_evidence": "Could you help me convert the text seperated by commas to a table?\n\nRelevant procedure\n\n1. Click on the \"Insert\" menu at the top toolbar\n2. Select \"Table\" from the dropdown menu\n3. In the dialog box, set the number of columns (3) and rows as needed\n4. Click \"OK\" to create an empty table\n5. Locate the comma-separated text: \"Sound-Letter Pattern,Grapheme,Example Grapheme,Example Word\"\n6. Select and copy this text\n7. Position your cursor in the first cell of the newly created table\n8. Type/paste the first field (before the first comma)\n9. Press Tab to move to the next cell\n10. Type/paste the second field (between first and second comma)\n11. Continue pressing Tab and typing each comma-separated field into successive cells\n12. Repeat steps 5-11 for all rows of comma-separated data\n13. Format the table as desired using the table tools that appear when the table is selected"
+}

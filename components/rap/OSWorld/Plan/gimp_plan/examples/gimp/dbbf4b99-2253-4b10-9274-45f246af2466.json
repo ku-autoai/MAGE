@@ -1,0 +1,62 @@
+{
+  "id": "dbbf4b99-2253-4b10-9274-45f246af2466",
+  "snapshot": "gimp",
+  "instruction": "Use GIMP only to convert my new RAW image into a JPEG file.\n\nRelevant procedure\n1. Click the File menu in the GIMP menu bar and choose Open…\n2. In the Open Image dialog, navigate to and select your RAW image file, then click Open.\n3. If a RAW import dialog appears (e.g., DCRAW or similar), click OK to accept the defaults and import the image.\n4. If a color profile dialog appears, choose Keep the Embedded Working Space (or the recommended option) and click OK.\n5. With the imported image active, click File > Export As…\n6. In the Export Image dialog, change the file name extension to .jpg (or .jpeg) and click Export.\n7. In the Export as JPEG options dialog, adjust Quality (default 90 is fine), then click Export to save the JPEG file.",
+  "source": "https://www.makeuseof.com/tag/can-photoshop-gimp-cant/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/dbbf4b99-2253-4b10-9274-45f246af2466/yicun.raw",
+            "path": "/home/user/Desktop/yicun.raw"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/yicun.raw"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the File menu in the GIMP menu bar and choose Open…\n2. In the Open Image dialog, navigate to and select your RAW image file, then click Open.\n3. If a RAW import dialog appears (e.g., DCRAW or similar), click OK to accept the defaults and import the image.\n4. If a color profile dialog appears, choose Keep the Embedded Working Space (or the recommended option) and click OK.\n5. With the imported image active, click File > Export As…\n6. In the Export Image dialog, change the file name extension to .jpg (or .jpeg) and click Export.\n7. In the Export as JPEG options dialog, adjust Quality (default 90 is fine), then click Export to save the JPEG file.",
+  "retrieved_page_ranges": [
+    [
+      "6.11. Convert to Color Profile",
+      "6.11. Convert to Color Profile"
+    ],
+    [
+      "5.48. Export Image as SGI",
+      "5.48. Export Image as SGI"
+    ],
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ],
+    [
+      "5. File related Dialogs",
+      "5. File related Dialogs"
+    ],
+    [
+      "5.9. Export Image as BMP",
+      "5.9. Export Image as BMP"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/dbbf4b99-2253-4b10-9274-45f246af2466/step_1.png"
+}

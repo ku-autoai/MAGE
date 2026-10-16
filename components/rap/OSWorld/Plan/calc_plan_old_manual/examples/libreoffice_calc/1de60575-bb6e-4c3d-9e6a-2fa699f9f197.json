@@ -1,0 +1,115 @@
+{
+  "id": "1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Summarize the total revenue for each promotion type in a new sheet (Sheet2) with the promotion names as the column headers using the Pivot Table feature.\n\nRelevant procedure\n1. Click the \"Sheet1\" tab at the bottom of the Calc window to switch to the sheet containing your data.\n2. Click on any cell within the data range (e.g., A1) to ensure the data is selected.\n3. Go to the **Insert** menu in the top menu bar.\n4. Select **Pivot Table...** from the dropdown menu.\n5. In the **Create Pivot Table** dialog box, ensure \"New sheet\" is selected for the location and verify the data range is correct.\n6. Click **OK** to create the pivot table in Sheet2.\n7. In the Pivot Table Fields pane on the right, locate the field for the promotion type (e.g., \"Promotion\") and drag it to the **Column Fields** area.\n8. Locate the field for revenue (e.g., \"Revenue\" or \"Amount\") and drag it to the **Data Fields** area.\n9. Verify that the data field is set to \"Sum\" (double-click the field in the Data Fields area to check the function if necessary).\n10. If prompted with a dialog to confirm layout or settings, click **OK** to finalize the pivot table.",
+  "source": "SheetCopilot@55",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/EntireSummerSales.xlsx",
+            "path": "/home/user/EntireSummerSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/EntireSummerSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "EntireSummerSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 3.0
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/6_EntireSummerSales_gt1.xlsx",
+      "dest": "6_EntireSummerSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/EntireSummerSales.xlsx",
+      "dest": "EntireSummerSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet1\" tab at the bottom of the Calc window to switch to the sheet containing your data.\n2. Click on any cell within the data range (e.g., A1) to ensure the data is selected.\n3. Go to the **Insert** menu in the top menu bar.\n4. Select **Pivot Table...** from the dropdown menu.\n5. In the **Create Pivot Table** dialog box, ensure \"New sheet\" is selected for the location and verify the data range is correct.\n6. Click **OK** to create the pivot table in Sheet2.\n7. In the Pivot Table Fields pane on the right, locate the field for the promotion type (e.g., \"Promotion\") and drag it to the **Column Fields** area.\n8. Locate the field for revenue (e.g., \"Revenue\" or \"Amount\") and drag it to the **Data Fields** area.\n9. Verify that the data field is set to \"Sum\" (double-click the field in the Data Fields area to check the function if necessary).\n10. If prompted with a dialog to confirm layout or settings, click **OK** to finalize the pivot table.",
+  "retrieved_page_ranges": [
+    [
+      5,
+      5
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      38,
+      39
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/step_1.png"
+}

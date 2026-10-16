@@ -1,0 +1,109 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n\n1. Click cell C1.\n2. Type `Period Rate (%)` and press Enter.\n3. Click cell C2.\n4. Type `=A2/B2` and press Enter.\n5. Click cell C2.\n6. Drag the fill handle (small square at bottom-right of C2) down to the last row with data (row 25), then release.\n7. Select the range C2:C25 by clicking C2, holding Shift, and clicking C25.\n8. Right-click the selected range and choose \"Convert Text to Numbers\" (if available). If not, go to Edit > Fill > Convert Text to Numbers.\n9. With C2:C25 still selected, go to Format > Conditional > Condition.\n10. In the dialog, set:\n    - Cell value is: Equal to\n    - Value: `=MAX(C2:C25)`\n    - Click the Style dropdown or \"Style...\" button, then choose Font Color and set it to `#00ff00`.\n    - Click OK.\n11. Close the Conditional Formatting dialog by clicking OK.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell C1.\n2. Type `Period Rate (%)` and press Enter.\n3. Click cell C2.\n4. Type `=A2/B2` and press Enter.\n5. Click cell C2.\n6. Drag the fill handle (small square at bottom-right of C2) down to the last row with data (row 25), then release.\n7. Select the range C2:C25 by clicking C2, holding Shift, and clicking C25.\n8. Right-click the selected range and choose \"Convert Text to Numbers\" (if available). If not, go to Edit > Fill > Convert Text to Numbers.\n9. With C2:C25 still selected, go to Format > Conditional > Condition.\n10. In the dialog, set:\n    - Cell value is: Equal to\n    - Value: `=MAX(C2:C25)`\n    - Click the Style dropdown or \"Style...\" button, then choose Font Color and set it to `#00ff00`.\n    - Click OK.\n11. Close the Conditional Formatting dialog by clicking OK.",
+  "retrieved_page_ranges": [
+    [
+      83,
+      84
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      125,
+      126
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/step_1.png"
+}

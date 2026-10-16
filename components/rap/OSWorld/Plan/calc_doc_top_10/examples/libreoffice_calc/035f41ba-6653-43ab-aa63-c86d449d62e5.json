@@ -1,0 +1,134 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n\n1. Click the **Sheet1** tab at the bottom left of the window to navigate to the sheet containing the source data.\n2. Locate the column headers for **Sale**, **Returns**, and various **expenses** (Discounts, Allowances, Material, Labor, Overhead) in row 1 (or the relevant header row) to identify their column letters (e.g., Sale in B, Returns in C, etc.).\n3. Click the cell in the **Gross profit** column corresponding to the first data row (e.g., cell E2).\n4. Type the formula: `=(B2-C2)-(D2+E2+F2+G2)` (replace cell references like B2, C2, etc., with the actual cell addresses for Actual Sale, Returns, and respective expenses based on the visible columns).\n5. Press **Enter** to confirm the calculation.\n6. Click the calculated Gross profit cell again, then click and drag the **fill handle** (small square at the bottom-right corner of the selection) down to apply the formula to all subsequent data rows.\n7. Click the **Sheet2** tab at the bottom of the window to switch to the new sheet.\n8. Click cell **A1** and type `Year_Profit`, then press **Enter**.\n9. Click cell **A2**. Type a formula to concatenate the Year value from Sheet1 with an underscore and the integer part of the Gross Profit from Sheet1. The formula syntax is: `=Sheet1.A2 & \"_\" & INT(Sheet1.E2)` (replace `A2` with the actual cell containing the Year and `E2` with the calculated Gross profit cell reference from Sheet1).\n10. Press **Enter** to confirm.\n11. Click the fill handle of cell **A2** and drag down to fill the formula for all corresponding rows.",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **Sheet1** tab at the bottom left of the window to navigate to the sheet containing the source data.\n2. Locate the column headers for **Sale**, **Returns**, and various **expenses** (Discounts, Allowances, Material, Labor, Overhead) in row 1 (or the relevant header row) to identify their column letters (e.g., Sale in B, Returns in C, etc.).\n3. Click the cell in the **Gross profit** column corresponding to the first data row (e.g., cell E2).\n4. Type the formula: `=(B2-C2)-(D2+E2+F2+G2)` (replace cell references like B2, C2, etc., with the actual cell addresses for Actual Sale, Returns, and respective expenses based on the visible columns).\n5. Press **Enter** to confirm the calculation.\n6. Click the calculated Gross profit cell again, then click and drag the **fill handle** (small square at the bottom-right corner of the selection) down to apply the formula to all subsequent data rows.\n7. Click the **Sheet2** tab at the bottom of the window to switch to the new sheet.\n8. Click cell **A1** and type `Year_Profit`, then press **Enter**.\n9. Click cell **A2**. Type a formula to concatenate the Year value from Sheet1 with an underscore and the integer part of the Gross Profit from Sheet1. The formula syntax is: `=Sheet1.A2 & \"_\" & INT(Sheet1.E2)` (replace `A2` with the actual cell containing the Year and `E2` with the calculated Gross profit cell reference from Sheet1).\n10. Press **Enter** to confirm.\n11. Click the fill handle of cell **A2** and drag down to fill the formula for all corresponding rows.",
+  "retrieved_page_ranges": [
+    [
+      85,
+      85
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      523,
+      523
+    ],
+    [
+      435,
+      437
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      265,
+      269
+    ],
+    [
+      263,
+      265
+    ],
+    [
+      314,
+      314
+    ],
+    [
+      51,
+      51
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/step_1.png"
+}

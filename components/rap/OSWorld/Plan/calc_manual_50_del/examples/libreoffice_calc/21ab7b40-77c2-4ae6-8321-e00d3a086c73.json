@@ -1,0 +1,117 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n\n1. Click on the empty cell immediately to the right of the header row (e.g., if data ends in column C, click D1) and type \"Period Rate (%)\" to create the new header.\n2. Press Enter to confirm the header.\n3. Click the first empty cell in the \"Period Rate (%)\" column (e.g., D2).\n4. Type the formula to calculate the period rate. Assuming the data structure involves a \"New Value\" column (e.g., B) and an \"Old Value\" column (e.g., A), type `=(B2-A2)/A2*100`. If the specific columns differ, adjust the cell references accordingly based on the visible headers (e.g., `=(Current-Previous)/Previous*100`).\n5. Press Enter to calculate the first result.\n6. Click the cell containing the formula (D2) to select it.\n7. Hover over the bottom-right corner of the selected cell until the cursor turns into a small black cross (fill handle).\n8. Click and drag the fill handle down to the last row of data to copy the formula to all relevant cells.\n9. Select the entire range of calculated values in the \"Period Rate (%)\" column (excluding the header).\n10. Go to the \"Format\" menu, hover over \"Conditional\", and click \"Condition...\" to open the Conditional Formatting dialog.\n11. In the dialog, ensure \"Cell value is\" is selected in the first dropdown.\n12. Change the second dropdown to \"equal to\".\n13. Change the third dropdown to \"Maximum\" (or manually enter `=MAX(D2:D[n])` if \"Maximum\" is not available, ensuring absolute references if dragging). *Note: In many spreadsheet applications, selecting \"Cell value is\" > \"Maximum\" automatically highlights the highest value. If this option is not present, use a custom formula:*\n    *   Set Condition to \"Formula is\".\n    *   Enter `=D2=MAX($D$2:$D$[last_row])`.\n14. Click the \"Style\" button (or \"Apply Style\" dropdown > \"New Style\") to define the formatting.\n15. In the Cell Style dialog, go to the \"Font\" tab.\n16. Click the \"Color\" button and select green (#00ff00). If the specific hex",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on the empty cell immediately to the right of the header row (e.g., if data ends in column C, click D1) and type \"Period Rate (%)\" to create the new header.\n2. Press Enter to confirm the header.\n3. Click the first empty cell in the \"Period Rate (%)\" column (e.g., D2).\n4. Type the formula to calculate the period rate. Assuming the data structure involves a \"New Value\" column (e.g., B) and an \"Old Value\" column (e.g., A), type `=(B2-A2)/A2*100`. If the specific columns differ, adjust the cell references accordingly based on the visible headers (e.g., `=(Current-Previous)/Previous*100`).\n5. Press Enter to calculate the first result.\n6. Click the cell containing the formula (D2) to select it.\n7. Hover over the bottom-right corner of the selected cell until the cursor turns into a small black cross (fill handle).\n8. Click and drag the fill handle down to the last row of data to copy the formula to all relevant cells.\n9. Select the entire range of calculated values in the \"Period Rate (%)\" column (excluding the header).\n10. Go to the \"Format\" menu, hover over \"Conditional\", and click \"Condition...\" to open the Conditional Formatting dialog.\n11. In the dialog, ensure \"Cell value is\" is selected in the first dropdown.\n12. Change the second dropdown to \"equal to\".\n13. Change the third dropdown to \"Maximum\" (or manually enter `=MAX(D2:D[n])` if \"Maximum\" is not available, ensuring absolute references if dragging). *Note: In many spreadsheet applications, selecting \"Cell value is\" > \"Maximum\" automatically highlights the highest value. If this option is not present, use a custom formula:*\n    *   Set Condition to \"Formula is\".\n    *   Enter `=D2=MAX($D$2:$D$[last_row])`.\n14. Click the \"Style\" button (or \"Apply Style\" dropdown > \"New Style\") to define the formatting.\n15. In the Cell Style dialog, go to the \"Font\" tab.\n16. Click the \"Color\" button and select green (#00ff00). If the specific hex",
+  "retrieved_page_ranges": [
+    [
+      83,
+      83
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      128,
+      129
+    ],
+    [
+      84,
+      85
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,110 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n\n1. Click cell **A12** (the first empty row below the dataset).\n2. Type `Total` and press **Enter**.\n3. Click cell **B12**.\n4. Type the formula `=SUM(B2:B11)` and press **Enter** to calculate the total for January.\n5. Select cell **B12**, then drag the fill handle (small square at the bottom-right corner) to the right until cell **G12** to auto-fill the sum formulas for Feb through Jun.\n6. Click cell **A13**.\n7. Type `Growth` and press **Enter**.\n8. Click cell **B13** (Feb growth) and type the formula `=(B12-B11)/B11` to calculate the month-on-month growth for February relative to January's total.\n9. Press **Enter**.\n10. Select cell **C13** (Mar growth) and type the formula `=(C12-B12)/B12` to calculate the growth for March relative to February.\n11. Press **Enter**.\n12. Select cells **B13:C13**, drag the fill handle to the right until cell **G13** to auto-fill the growth formulas for the remaining months.\n13. Select the range **A1:G12** (Sales data and Total row).\n14. Go to the menu bar, click **Insert**, and select **Chart**.\n15. In the Chart Type dialog, select **Column** and choose the **Normal** variant (first option). Click **Next**.\n16. Ensure the Data Range is correct. Click **Next**.\n17. In the Chart Elements step, under **Data Series**, ensure titles are enabled. If \"Total\" does not appear as a series name, check the **Data Series** tab, select the \"Total\" series, and manually enter the title \"Total\" if needed. Click **Next**.\n18. In the Title step, enter `Total Sales` as the Title. Click **Finish**.\n19. Click the **Chart Area** to ensure it is selected, then drag the chart to position it appropriately (e.g., below the data or in a new sheet if preferred, though typically kept in the sheet for this task).\n20. Select the range **A13:G",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell **A12** (the first empty row below the dataset).\n2. Type `Total` and press **Enter**.\n3. Click cell **B12**.\n4. Type the formula `=SUM(B2:B11)` and press **Enter** to calculate the total for January.\n5. Select cell **B12**, then drag the fill handle (small square at the bottom-right corner) to the right until cell **G12** to auto-fill the sum formulas for Feb through Jun.\n6. Click cell **A13**.\n7. Type `Growth` and press **Enter**.\n8. Click cell **B13** (Feb growth) and type the formula `=(B12-B11)/B11` to calculate the month-on-month growth for February relative to January's total.\n9. Press **Enter**.\n10. Select cell **C13** (Mar growth) and type the formula `=(C12-B12)/B12` to calculate the growth for March relative to February.\n11. Press **Enter**.\n12. Select cells **B13:C13**, drag the fill handle to the right until cell **G13** to auto-fill the growth formulas for the remaining months.\n13. Select the range **A1:G12** (Sales data and Total row).\n14. Go to the menu bar, click **Insert**, and select **Chart**.\n15. In the Chart Type dialog, select **Column** and choose the **Normal** variant (first option). Click **Next**.\n16. Ensure the Data Range is correct. Click **Next**.\n17. In the Chart Elements step, under **Data Series**, ensure titles are enabled. If \"Total\" does not appear as a series name, check the **Data Series** tab, select the \"Total\" series, and manually enter the title \"Total\" if needed. Click **Next**.\n18. In the Title step, enter `Total Sales` as the Title. Click **Finish**.\n19. Click the **Chart Area** to ensure it is selected, then drag the chart to position it appropriately (e.g., below the data or in a new sheet if preferred, though typically kept in the sheet for this task).\n20. Select the range **A13:G",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      164,
+      165
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/step_1.png"
+}

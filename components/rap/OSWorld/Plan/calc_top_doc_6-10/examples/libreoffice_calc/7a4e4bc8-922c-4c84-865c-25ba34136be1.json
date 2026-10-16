@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the column header \"E\" (containing \"Date\") to select the entire Date column.\n2. Right-click on the selected column E header and select \"Cut\" from the context menu.\n3. Click the column header \"B\" (containing \"First Name\") to select it.\n4. Right-click on the selected column B header and choose \"Insert Columns Before\".\n5. Right-click on the inserted blank column B and select \"Paste\".\n6. Click the column header \"C\" (containing \"Order ID\") to select the entire Order ID column.\n7. Right-click on the selected column C header and select \"Cut\" from the context menu.\n8. Click the column header \"F\" (the empty column between Sales and the end of the data) to select it.\n9. Right-click on the selected column F header and choose \"Insert Columns Before\".\n10. Right-click on the inserted blank column F and select \"Paste\".\n11. Click the column header \"A\" (containing \"First Name\") to select the entire First Name column.\n12. Right-click on the selected column A header and select \"Cut\" from the context menu.\n13. Click the column header \"B\" (which is now empty or holds old data) to select it.\n14. Right-click on the selected column B header and choose \"Insert Columns Before\".\n15. Right-click on the inserted blank column B and select \"Paste\".\n16. Click the column header \"C\" (containing \"Last Name\") to select the entire Last Name column.\n17. Right-click on the selected column C header and select \"Cut\" from the context menu.\n18. Click the column header \"D\" (empty column or holding old data) to select it.\n19. Right-click on the selected column D header and choose \"Insert Columns Before\".\n20. Right-click on the inserted blank column D and select \"Paste\".",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header \"E\" (containing \"Date\") to select the entire Date column.\n2. Right-click on the selected column E header and select \"Cut\" from the context menu.\n3. Click the column header \"B\" (containing \"First Name\") to select it.\n4. Right-click on the selected column B header and choose \"Insert Columns Before\".\n5. Right-click on the inserted blank column B and select \"Paste\".\n6. Click the column header \"C\" (containing \"Order ID\") to select the entire Order ID column.\n7. Right-click on the selected column C header and select \"Cut\" from the context menu.\n8. Click the column header \"F\" (the empty column between Sales and the end of the data) to select it.\n9. Right-click on the selected column F header and choose \"Insert Columns Before\".\n10. Right-click on the inserted blank column F and select \"Paste\".\n11. Click the column header \"A\" (containing \"First Name\") to select the entire First Name column.\n12. Right-click on the selected column A header and select \"Cut\" from the context menu.\n13. Click the column header \"B\" (which is now empty or holds old data) to select it.\n14. Right-click on the selected column B header and choose \"Insert Columns Before\".\n15. Right-click on the inserted blank column B and select \"Paste\".\n16. Click the column header \"C\" (containing \"Last Name\") to select the entire Last Name column.\n17. Right-click on the selected column C header and select \"Cut\" from the context menu.\n18. Click the column header \"D\" (empty column or holding old data) to select it.\n19. Right-click on the selected column D header and choose \"Insert Columns Before\".\n20. Right-click on the inserted blank column D and select \"Paste\".",
+  "retrieved_page_ranges": [
+    [
+      408,
+      408
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      447,
+      447
+    ],
+    [
+      94,
+      95
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

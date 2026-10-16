@@ -1,0 +1,85 @@
+{
+  "id": "6f81754e-285d-4ce0-b59e-af7edb02d108",
+  "snapshot": "libreoffice_writer",
+  "instruction": "A certain railway company in Hong Kong uses a signaling system to keep track of trains in its railway system. Each line in the docx file represents a train calling at a station from 0600 to 1200 on 2022-09-22, and has the following format: time_HH:MM:SS, train_id, station_id, platform_no.. I want to remove duplicated train ids in order to know how many different trains are running from 0600 to 1200. Could you help me on this? I am doing it manually and it is very inefficient.\n\nRelevant procedure\n\n1. Close the \"Find and Replace\" dialog box by clicking the \"Close\" button or the X icon in the top-right corner of the dialog.\n\n2. Click on the \"Tools\" menu in the main toolbar.\n\n3. Select \"Sort\" from the Tools dropdown menu.\n\n4. In the Sort dialog that appears:\n   - Check the box for \"Key 1\" and select \"Paragraph\" from the dropdown\n   - Check the box for \"Type\" and select \"Alphanumeric\"\n\n5. Click \"OK\" to sort the document by train IDs.\n\n6. After sorting, manually identify and delete duplicate train IDs using the following method:\n   - Scroll through the document from top to bottom\n   - When you see a train ID that matches the previous line's train ID (they will be adjacent after sorting), delete the entire line containing the duplicate train ID\n\n7. To make the process easier:\n   - Use Ctrl+H to open Find and Replace\n   - In the \"Find\" field, enter each unique train ID you've identified as appearing multiple times\n   - In the \"Replace\" field, leave it empty\n   - Click \"Replace\" until it finds no more matches for that train ID\n   - Repeat for each duplicate train ID\n\n8. Save the document with Ctrl+S when finished.",
+  "source": "https://superuser.com/questions/789473/remove-duplicate-lines-in-libreoffice-openoffice-writer",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/6f81754e-285d-4ce0-b59e-af7edb02d108/HK_train_record.docx",
+            "path": "/home/user/Desktop/HK_train_record.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/HK_train_record.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "HK_train_record.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": "compare_unique_train_records",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/HK_train_record.docx",
+      "dest": "HK_train_record.docx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/6f81754e-285d-4ce0-b59e-af7edb02d108/HK_train_record_Gold.docx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/6f81754e-285d-4ce0-b59e-af7edb02d108/HK_train_record.docx"
+      ],
+      "dest": [
+        "HK_train_record_Gold.docx",
+        "HK_train_record_Original.docx"
+      ],
+      "multi": true,
+      "gives": [
+        0,
+        1
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure\n\n1. Close the \"Find and Replace\" dialog box by clicking the \"Close\" button or the X icon in the top-right corner of the dialog.\n\n2. Click on the \"Tools\" menu in the main toolbar.\n\n3. Select \"Sort\" from the Tools dropdown menu.\n\n4. In the Sort dialog that appears:\n   - Check the box for \"Key 1\" and select \"Paragraph\" from the dropdown\n   - Check the box for \"Type\" and select \"Alphanumeric\"\n\n5. Click \"OK\" to sort the document by train IDs.\n\n6. After sorting, manually identify and delete duplicate train IDs using the following method:\n   - Scroll through the document from top to bottom\n   - When you see a train ID that matches the previous line's train ID (they will be adjacent after sorting), delete the entire line containing the duplicate train ID\n\n7. To make the process easier:\n   - Use Ctrl+H to open Find and Replace\n   - In the \"Find\" field, enter each unique train ID you've identified as appearing multiple times\n   - In the \"Replace\" field, leave it empty\n   - Click \"Replace\" until it finds no more matches for that train ID\n   - Repeat for each duplicate train ID\n\n8. Save the document with Ctrl+S when finished.",
+  "instruction_with_evidence": "A certain railway company in Hong Kong uses a signaling system to keep track of trains in its railway system. Each line in the docx file represents a train calling at a station from 0600 to 1200 on 2022-09-22, and has the following format: time_HH:MM:SS, train_id, station_id, platform_no.. I want to remove duplicated train ids in order to know how many different trains are running from 0600 to 1200. Could you help me on this? I am doing it manually and it is very inefficient.\n\nRelevant procedure\n\n1. Close the \"Find and Replace\" dialog box by clicking the \"Close\" button or the X icon in the top-right corner of the dialog.\n\n2. Click on the \"Tools\" menu in the main toolbar.\n\n3. Select \"Sort\" from the Tools dropdown menu.\n\n4. In the Sort dialog that appears:\n   - Check the box for \"Key 1\" and select \"Paragraph\" from the dropdown\n   - Check the box for \"Type\" and select \"Alphanumeric\"\n\n5. Click \"OK\" to sort the document by train IDs.\n\n6. After sorting, manually identify and delete duplicate train IDs using the following method:\n   - Scroll through the document from top to bottom\n   - When you see a train ID that matches the previous line's train ID (they will be adjacent after sorting), delete the entire line containing the duplicate train ID\n\n7. To make the process easier:\n   - Use Ctrl+H to open Find and Replace\n   - In the \"Find\" field, enter each unique train ID you've identified as appearing multiple times\n   - In the \"Replace\" field, leave it empty\n   - Click \"Replace\" until it finds no more matches for that train ID\n   - Repeat for each duplicate train ID\n\n8. Save the document with Ctrl+S when finished."
+}

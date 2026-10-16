@@ -1,0 +1,109 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click cell D2 in column \"Names\".\n2. Type `=B2` and press Enter.\n3. Click cell D3.\n4. Type `=IF(COUNTIF($D$2:D2,B3)=0,B3,\"\")` and press Enter.\n5. Drag the fill handle (small square at the bottom-right corner of cell D3) down to cell D18 to copy the formula through all rows containing duplicates.\n6. Select the range D2:D18.\n7. Press Ctrl+C to copy.\n8. Select the range D2:D18 again.\n9. Press Ctrl+Shift+V to open Paste Special.\n10. Select \"Values\" and click OK to paste as static values.\n11. Select rows 2 through 18 in column D.\n12. Filter out blank cells by:\n    a. Click any cell in column D.\n    b. Open the Data menu.\n    c. Select AutoFilter.\n    d. Click the filter button in cell D1.\n    e. Uncheck \"(Blanks)\" and click OK.\n13. Select the visible cells in D2:D18 (use Ctrl+Shift+↓ or click and drag).\n14. Press Ctrl+C to copy.\n15. Click cell D2 and press Ctrl+Shift+V.\n16. Select \"Values\" and click OK.\n17. Remove the filter by clicking Data > AutoFilter again.\n18. Clear any remaining blank cells in D19 and below if they were inadvertently included, ensuring only unique names remain in order.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell D2 in column \"Names\".\n2. Type `=B2` and press Enter.\n3. Click cell D3.\n4. Type `=IF(COUNTIF($D$2:D2,B3)=0,B3,\"\")` and press Enter.\n5. Drag the fill handle (small square at the bottom-right corner of cell D3) down to cell D18 to copy the formula through all rows containing duplicates.\n6. Select the range D2:D18.\n7. Press Ctrl+C to copy.\n8. Select the range D2:D18 again.\n9. Press Ctrl+Shift+V to open Paste Special.\n10. Select \"Values\" and click OK to paste as static values.\n11. Select rows 2 through 18 in column D.\n12. Filter out blank cells by:\n    a. Click any cell in column D.\n    b. Open the Data menu.\n    c. Select AutoFilter.\n    d. Click the filter button in cell D1.\n    e. Uncheck \"(Blanks)\" and click OK.\n13. Select the visible cells in D2:D18 (use Ctrl+Shift+↓ or click and drag).\n14. Press Ctrl+C to copy.\n15. Click cell D2 and press Ctrl+Shift+V.\n16. Select \"Values\" and click OK.\n17. Remove the filter by clicking Data > AutoFilter again.\n18. Clear any remaining blank cells in D19 and below if they were inadvertently included, ensuring only unique names remain in order.",
+  "retrieved_page_ranges": [
+    [
+      184,
+      184
+    ],
+    [
+      315,
+      315
+    ],
+    [
+      212,
+      213
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      513,
+      516
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/step_1.png"
+}

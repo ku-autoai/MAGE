@@ -1,0 +1,69 @@
+{
+  "id": "9439a27b-18ae-42d8-9778-5f68f891805e",
+  "snapshot": "vscode",
+  "instruction": "Please help me modify the setting of VS Code to keep my cursor focused on the debug console when debugging in VS Code, instead of automatically focusing back on the Editor.\n\nRelevant procedure\n1. Click the \"Settings\" tab in the top editor area (if it is not currently active).\n2. Click inside the \"Search settings\" text input box at the top of the settings pane.\n3. Delete any existing text and type \"debug console focus\" to filter the settings.\n4. Locate the setting labeled **Debug: Console Focus** (under the *Workbench > Debugging* section).\n5. Click the dropdown menu for this setting (which likely says \"Preserve\" or \"Always\") and select **Preserve**.\n6. Alternatively, if the dropdown is not immediately visible, click the \"Edit in settings.json\" link located under the setting title and add `\"debug.consoleFocus\": \"preserve\"` to the configuration object.",
+  "source": "https://stackoverflow.com/questions/75832474/how-to-keep-cursor-in-debug-console-when-debugging-in-visual-studio-code",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_settings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "debug.focusEditorOnBreak": false
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/settings.json",
+      "dest": "settings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Settings\" tab in the top editor area (if it is not currently active).\n2. Click inside the \"Search settings\" text input box at the top of the settings pane.\n3. Delete any existing text and type \"debug console focus\" to filter the settings.\n4. Locate the setting labeled **Debug: Console Focus** (under the *Workbench > Debugging* section).\n5. Click the dropdown menu for this setting (which likely says \"Preserve\" or \"Always\") and select **Preserve**.\n6. Alternatively, if the dropdown is not immediately visible, click the \"Edit in settings.json\" link located under the setting title and add `\"debug.consoleFocus\": \"preserve\"` to the configuration object.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/9439a27b-18ae-42d8-9778-5f68f891805e/step_1.png"
+}

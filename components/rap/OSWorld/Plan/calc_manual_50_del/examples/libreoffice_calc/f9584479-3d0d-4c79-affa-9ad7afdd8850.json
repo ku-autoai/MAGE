@@ -1,0 +1,109 @@
+{
+  "id": "f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the missing rows and columns which show the total value\n\nRelevant procedure\n1. Click the cell at the bottom of the first data column (e.g., cell B6) to enter the column total.\n2. Type the formula `=SUM(B2:B5)` and press Enter to calculate the sum of the values in that column.\n3. Click the cell at the right of the first data row (e.g., cell C2) to enter the row total.\n4. Type the formula `=SUM(B2:C2)` (adjusting the range to include all data columns for that row) and press Enter.\n5. Select the cell containing the row total formula (e.g., C2).\n6. Click and drag the fill handle (the small square at the bottom-right corner of the selected cell) down to the last row (e.g., C6) to copy the row total formula to all rows.\n7. Select the cell containing the column total formula (e.g., B6).\n8. Click and drag the fill handle to the right (e.g., to C6) to copy the column total formula to all columns, ensuring the final cell (C6) calculates the grand total correctly.",
+  "source": "https://youtube.com/shorts/feldd-Pn48c?si=9xJiem2uAHm6Jshb",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone.xlsx",
+            "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Quarterly_Product_Sales_by_Zone.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone_gold.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the cell at the bottom of the first data column (e.g., cell B6) to enter the column total.\n2. Type the formula `=SUM(B2:B5)` and press Enter to calculate the sum of the values in that column.\n3. Click the cell at the right of the first data row (e.g., cell C2) to enter the row total.\n4. Type the formula `=SUM(B2:C2)` (adjusting the range to include all data columns for that row) and press Enter.\n5. Select the cell containing the row total formula (e.g., C2).\n6. Click and drag the fill handle (the small square at the bottom-right corner of the selected cell) down to the last row (e.g., C6) to copy the row total formula to all rows.\n7. Select the cell containing the column total formula (e.g., B6).\n8. Click and drag the fill handle to the right (e.g., to C6) to copy the column total formula to all columns, ensuring the final cell (C6) calculates the grand total correctly.",
+  "retrieved_page_ranges": [
+    [
+      59,
+      60
+    ],
+    [
+      254,
+      254
+    ],
+    [
+      313,
+      313
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      313,
+      314
+    ]
+  ],
+  "first_screen_image_path": null
+}

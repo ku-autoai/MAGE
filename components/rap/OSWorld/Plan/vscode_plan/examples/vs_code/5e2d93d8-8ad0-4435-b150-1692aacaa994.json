@@ -1,0 +1,103 @@
+{
+  "id": "5e2d93d8-8ad0-4435-b150-1692aacaa994",
+  "snapshot": "vscode",
+  "instruction": "Please help me save current project as workspace \"project\" at \"/home/user/\".\n\nRelevant procedure\n1. Click the \"File\" menu in the top-left corner of the Visual Studio Code window.\n2. Click on \"Save Workspace As...\" from the dropdown menu.\n3. In the file dialog that appears, navigate to the \"/home/user/\" directory (or simply type \"/home/user/\" in the location bar if available).\n4. In the filename field, type \"project\".\n5. Click the \"Save\" button to save the workspace file.",
+  "source": "https://www.youtube.com/watch?v=B-s71n0dHUk",
+  "config": [
+    {
+      "type": "command",
+      "parameters": {
+        "command": [
+          "mkdir",
+          "-p",
+          "/home/user/project/.vscode"
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/5e2d93d8-8ad0-4435-b150-1692aacaa994/main.py",
+            "path": "/home/user/project/main.py"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/5e2d93d8-8ad0-4435-b150-1692aacaa994/README.md",
+            "path": "/home/user/project/README.md"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/5e2d93d8-8ad0-4435-b150-1692aacaa994/settings.json",
+            "path": "/home/user/project/.vscode/settings.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code",
+          "/home/user/project/"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "is_extension_installed",
+    "result": {
+      "type": "vm_command_line",
+      "command": [
+        "ls",
+        "/home/user/project/",
+        "|",
+        "grep",
+        "project.code-workspace"
+      ]
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type": "contain",
+        "expected": "project.code-workspace"
+      }
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"File\" menu in the top-left corner of the Visual Studio Code window.\n2. Click on \"Save Workspace As...\" from the dropdown menu.\n3. In the file dialog that appears, navigate to the \"/home/user/\" directory (or simply type \"/home/user/\" in the location bar if available).\n4. In the filename field, type \"project\".\n5. Click the \"Save\" button to save the workspace file.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/5e2d93d8-8ad0-4435-b150-1692aacaa994/step_1.png"
+}

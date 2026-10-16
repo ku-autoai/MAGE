@@ -1,0 +1,109 @@
+{
+  "id": "51b11269-2ca8-4b2a-9163-f21758420e78",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Could you help me to sort the records accoring to the amounts ascendingly?\n\nRelevant procedure\n1) Click the cell A1 (the \"Date\" header).\n2) Select the full data range A1:D19 (click D19 while holding Shift), ensuring all rows including the header are included.\n3) Click the \"Data\" menu at the top toolbar.\n4) Click \"Sort…\" in the Data menu to open the Sort dialog.\n5) In the Sort dialog, set Sort Key 1 to \"Amount\".\n6) Set the order for Sort Key 1 to \"Ascending\".\n7) Ensure the \"Range contains column labels\" option is checked.\n8) Click OK to apply the sort.",
+  "source": "https://www.reddit.com/r/LibreOfficeCalc/comments/186pcc6/how_to_arrange_numbers_in_a_column_from_minimum/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max.xlsx",
+            "path": "/home/user/Arrang_Value_min_to_max.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Arrang_Value_min_to_max.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51b11269-2ca8-4b2a-9163-f21758420e78",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Arrang_Value_min_to_max.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max_gold.xlsx",
+      "dest": "Arrang_Value_min_to_max_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Arrang_Value_min_to_max.xlsx",
+      "dest": "Arrang_Value_min_to_max.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1) Click the cell A1 (the \"Date\" header).\n2) Select the full data range A1:D19 (click D19 while holding Shift), ensuring all rows including the header are included.\n3) Click the \"Data\" menu at the top toolbar.\n4) Click \"Sort…\" in the Data menu to open the Sort dialog.\n5) In the Sort dialog, set Sort Key 1 to \"Amount\".\n6) Set the order for Sort Key 1 to \"Ascending\".\n7) Ensure the \"Range contains column labels\" option is checked.\n8) Click OK to apply the sort.",
+  "retrieved_page_ranges": [
+    [
+      35,
+      35
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      25,
+      25
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      21,
+      21
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/step_1.png"
+}

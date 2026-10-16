@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the column header \"B\" to select the entire First Name column.\n2. Click the column header \"C\" to add the Order ID column to the selection.\n3. Click the column header \"D\" to add the Last Name column to the selection.\n4. Click the column header \"E\" to add the Date column to the selection.\n5. Right-click on the selected columns (B through E).\n6. From the context menu, click \"Delete Columns\".\n7. Right-click on the column header \"A\" and select \"Insert Columns before\" from the context menu.\n8. Type \"Date\" in cell A1.\n9. Click in cell A2 and type the formula `=E2`.\n10. Press Enter to confirm the formula in A2.\n11. Click on cell A2 to select it, then drag the fill handle down to cell A23 to copy the formula to all data rows.\n12. Right-click on the column header \"B\" and select \"Insert Columns before\" from the context menu.\n13. Type \"First Name\" in cell B1.\n14. Click in cell B2 and type the formula `=A2`.\n15. Press Enter to confirm the formula in B2.\n16. Click on cell B2 to select it, then drag the fill handle down to cell B23 to copy the formula to all data rows.\n17. Right-click on the column header \"C\" and select \"Insert Columns before\" from the context menu.\n18. Type \"Last Name\" in cell C1.\n19. Click in cell C2 and type the formula `=C2`.\n20. Press Enter to confirm the formula in C2.\n21. Click on cell C2 to select it, then drag the fill handle down to cell C23 to copy the formula to all data rows.\n22. Type \"Order ID\" in cell D1.\n23. Click in cell D2 and type the formula `=B2`.\n24. Press Enter to confirm the formula in D2.\n25. Click on cell D2 to select it, then drag the fill handle down to cell D23 to copy the formula to all data rows.\n26. Type \"Sales\" in cell E1.\n27. Click",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header \"B\" to select the entire First Name column.\n2. Click the column header \"C\" to add the Order ID column to the selection.\n3. Click the column header \"D\" to add the Last Name column to the selection.\n4. Click the column header \"E\" to add the Date column to the selection.\n5. Right-click on the selected columns (B through E).\n6. From the context menu, click \"Delete Columns\".\n7. Right-click on the column header \"A\" and select \"Insert Columns before\" from the context menu.\n8. Type \"Date\" in cell A1.\n9. Click in cell A2 and type the formula `=E2`.\n10. Press Enter to confirm the formula in A2.\n11. Click on cell A2 to select it, then drag the fill handle down to cell A23 to copy the formula to all data rows.\n12. Right-click on the column header \"B\" and select \"Insert Columns before\" from the context menu.\n13. Type \"First Name\" in cell B1.\n14. Click in cell B2 and type the formula `=A2`.\n15. Press Enter to confirm the formula in B2.\n16. Click on cell B2 to select it, then drag the fill handle down to cell B23 to copy the formula to all data rows.\n17. Right-click on the column header \"C\" and select \"Insert Columns before\" from the context menu.\n18. Type \"Last Name\" in cell C1.\n19. Click in cell C2 and type the formula `=C2`.\n20. Press Enter to confirm the formula in C2.\n21. Click on cell C2 to select it, then drag the fill handle down to cell C23 to copy the formula to all data rows.\n22. Type \"Order ID\" in cell D1.\n23. Click in cell D2 and type the formula `=B2`.\n24. Press Enter to confirm the formula in D2.\n25. Click on cell D2 to select it, then drag the fill handle down to cell D23 to copy the formula to all data rows.\n26. Type \"Sales\" in cell E1.\n27. Click",
+  "retrieved_page_ranges": [
+    [
+      35,
+      35
+    ],
+    [
+      16,
+      16
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click cell B2 (the first empty cell under the \"First Name\" header).\n2. In the \"Data\" menu at the top, click \"Text to Columns\".\n3. In the dialog that appears, ensure \"Fixed width\" is selected (or \"Delimited\" if spaces separate the fields), then click \"Next\".\n4. If \"Fixed width\" is used, click on the ruler line between the first name and the rest of the text to add a split marker. Then click between the last name and the rank to add another split marker. Click \"Next\".\n5. Ensure the output range is set to start at $B$2 (so it fills columns B, C, and D). Click \"Finish\".\n6. The data in the first row should now be split into First Name, Last Name, and Rank.\n7. Copy cell B2 by right-clicking it and selecting \"Copy\" (or pressing Ctrl+C).\n8. Select the range B3:D22 (or drag down to the last row with data in column A).\n9. Right-click the selected range and choose \"Paste Special\".\n10. In the Paste Special dialog, select \"All except borders\" or just \"Values\" if available, then click \"OK\" to fill down the formula/result pattern if applicable, OR simply drag the fill handle from cell D2 down to D22 to apply the split logic to all rows (if the text-to-columns created a formula or consistent split). *Note: Text to Columns is a one-time action. A more robust method for all rows:*\n    *Alternative robust path:*\n    1. Copy the entire range A2:A22.\n    2. Paste it into B2.\n    3. Select B2:D22.\n    4. Go to Data > Text to Columns.\n    5. Choose \"Delimited\" -> Next -> Check \"Space\" -> Next -> Finish.\n    6. This will split all rows at once.\n    7. Verify the data is correctly separated in columns B, C, and D.\n    8. Delete the temporary copy in column B if needed, but since the instruction says \"don't touch original data\", and we pasted into B, we should have used a helper column or just split directly. Let's refine:\n    \n    *Corrected Robust Path:*",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 (the first empty cell under the \"First Name\" header).\n2. In the \"Data\" menu at the top, click \"Text to Columns\".\n3. In the dialog that appears, ensure \"Fixed width\" is selected (or \"Delimited\" if spaces separate the fields), then click \"Next\".\n4. If \"Fixed width\" is used, click on the ruler line between the first name and the rest of the text to add a split marker. Then click between the last name and the rank to add another split marker. Click \"Next\".\n5. Ensure the output range is set to start at $B$2 (so it fills columns B, C, and D). Click \"Finish\".\n6. The data in the first row should now be split into First Name, Last Name, and Rank.\n7. Copy cell B2 by right-clicking it and selecting \"Copy\" (or pressing Ctrl+C).\n8. Select the range B3:D22 (or drag down to the last row with data in column A).\n9. Right-click the selected range and choose \"Paste Special\".\n10. In the Paste Special dialog, select \"All except borders\" or just \"Values\" if available, then click \"OK\" to fill down the formula/result pattern if applicable, OR simply drag the fill handle from cell D2 down to D22 to apply the split logic to all rows (if the text-to-columns created a formula or consistent split). *Note: Text to Columns is a one-time action. A more robust method for all rows:*\n    *Alternative robust path:*\n    1. Copy the entire range A2:A22.\n    2. Paste it into B2.\n    3. Select B2:D22.\n    4. Go to Data > Text to Columns.\n    5. Choose \"Delimited\" -> Next -> Check \"Space\" -> Next -> Finish.\n    6. This will split all rows at once.\n    7. Verify the data is correctly separated in columns B, C, and D.\n    8. Delete the temporary copy in column B if needed, but since the instruction says \"don't touch original data\", and we pasted into B, we should have used a helper column or just split directly. Let's refine:\n    \n    *Corrected Robust Path:*\n",
+  "retrieved_page_ranges": [
+    [
+      58,
+      59
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

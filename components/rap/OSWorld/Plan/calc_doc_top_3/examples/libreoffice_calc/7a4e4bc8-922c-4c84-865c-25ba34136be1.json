@@ -1,0 +1,101 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1.  Select the column header **E** (Date).\n2.  Hold `Ctrl` and select the column headers **A**, **B**, **C**, and **F** (First Name, Last Name, Order ID, Sales) to highlight all data columns.\n3.  Right-click on the selected columns and choose **Cut** (or press `Ctrl+X`).\n4.  Click the column header **A** to set the insertion point at the first column.\n5.  Right-click the column header **A** and choose **Delete Cut Cells** (or use **Insert** > **Cut Cells** > **Shift cells right** depending on version; essentially pasting the data back starting at column A). *Note: A safer approach in LibreOffice Calc without deleting structure is often: Copy columns -> Insert Columns -> Paste -> Delete Old.* Let's stick to the cut/paste logic or Cut/Insert.\n    *Alternative robust method:*\n    1. Click cell **E1** (Date header).\n    2. Copy (`Ctrl+C`) the entire column **E** (or select E1:E23, copy).\n    3. Click cell **A1**.\n    4. Right-click > **Insert Cells** > **Shift cells right** (This pushes current A-F to B-G). *Wait, this shifts everything. Better to just move columns directly.*\n\n    *Corrected Robust Procedure using Cut/Paste:*\n    1.  Click the column header **E** to select the entire Date column.\n    2.  Press `Ctrl+X` to Cut the Date column.\n    3.  Click the column header **A** to select the first column.\n    4.  Press `Ctrl+V` to Paste. The Date column is now at A. The original columns have shifted right (B-F are now B-F? No, cutting removes it. So B became A, C became B... wait. If I cut E, E disappears. A,B,C,D remain. F becomes E. I want Date at A.)\n    \n    *Let's restart with a precise Cut/Paste sequence for reordering:*\n    1.  Click the column header **E** (Date).\n    2.  Press `Ctrl+X` to Cut the Date column. (The column disappears).\n    3.  Click the",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  Select the column header **E** (Date).\n2.  Hold `Ctrl` and select the column headers **A**, **B**, **C**, and **F** (First Name, Last Name, Order ID, Sales) to highlight all data columns.\n3.  Right-click on the selected columns and choose **Cut** (or press `Ctrl+X`).\n4.  Click the column header **A** to set the insertion point at the first column.\n5.  Right-click the column header **A** and choose **Delete Cut Cells** (or use **Insert** > **Cut Cells** > **Shift cells right** depending on version; essentially pasting the data back starting at column A). *Note: A safer approach in LibreOffice Calc without deleting structure is often: Copy columns -> Insert Columns -> Paste -> Delete Old.* Let's stick to the cut/paste logic or Cut/Insert.\n    *Alternative robust method:*\n    1. Click cell **E1** (Date header).\n    2. Copy (`Ctrl+C`) the entire column **E** (or select E1:E23, copy).\n    3. Click cell **A1**.\n    4. Right-click > **Insert Cells** > **Shift cells right** (This pushes current A-F to B-G). *Wait, this shifts everything. Better to just move columns directly.*\n\n    *Corrected Robust Procedure using Cut/Paste:*\n    1.  Click the column header **E** to select the entire Date column.\n    2.  Press `Ctrl+X` to Cut the Date column.\n    3.  Click the column header **A** to select the first column.\n    4.  Press `Ctrl+V` to Paste. The Date column is now at A. The original columns have shifted right (B-F are now B-F? No, cutting removes it. So B became A, C became B... wait. If I cut E, E disappears. A,B,C,D remain. F becomes E. I want Date at A.)\n    \n    *Let's restart with a precise Cut/Paste sequence for reordering:*\n    1.  Click the column header **E** (Date).\n    2.  Press `Ctrl+X` to Cut the Date column. (The column disappears).\n    3.  Click the",
+  "retrieved_page_ranges": [
+    [
+      309,
+      310
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

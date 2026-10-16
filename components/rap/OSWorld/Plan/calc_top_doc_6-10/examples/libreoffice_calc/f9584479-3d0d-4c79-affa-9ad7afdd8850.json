@@ -1,0 +1,109 @@
+{
+  "id": "f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the missing rows and columns which show the total value\n\nRelevant procedure\n1. Click cell F3.\n2. Type `=SUM(B3:E3)`.\n3. Press Enter to confirm the formula.\n4. Click cell F3 again to select it.\n5. Click and drag the fill handle (small square at the bottom-right of the cell border) down to cell F5 to copy the formula to F4 and F5.\n6. Click cell B6 to select it.\n7. Type `=SUM(B3:B5)`.\n8. Press Enter to confirm the formula.\n9. Click cell B6 again.\n10. Click and drag the fill handle from B6 right to F6 to copy the formula across to calculate column totals.\n11. Click cell F13 (the Total cell for Zone 2).\n12. Type `=SUM(B10:D13)` (assuming the data range is B10 to E12 and F13 is the total cell for the Zone 2 section). *Correction based on screenshot: The structure is Product | Q1 | Q2 | Q3 | Q4 | Total. Rows 10-12 contain data. Row 13 is Total. Columns B-E are quarters. So F13 should sum B10:E12.*\n13. Let's re-examine Zone 2: Rows 10, 11, 12 have products. Row 13 is \"Total\". Columns B, C, D, E are Q1-Q4. Column F is Total.\n14. Click cell F10.\n15. Type `=SUM(B10:E10)`.\n16. Press Enter.\n17. Select F10, drag fill handle down to F12.\n18. Click cell B13.\n19. Type `=SUM(B10:B12)`.\n20. Press Enter.\n21. Select B13, drag fill handle right to F13.\n22. Repeat for Zone 3 (Rows 17-19 data, Row 20 Total).\n23. Click cell F17.\n24. Type `=SUM(B17:E17)`.\n25. Press Enter.\n26. Select F17, drag fill handle down to F19.\n27.",
+  "source": "https://youtube.com/shorts/feldd-Pn48c?si=9xJiem2uAHm6Jshb",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone.xlsx",
+            "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Quarterly_Product_Sales_by_Zone.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone_gold.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell F3.\n2. Type `=SUM(B3:E3)`.\n3. Press Enter to confirm the formula.\n4. Click cell F3 again to select it.\n5. Click and drag the fill handle (small square at the bottom-right of the cell border) down to cell F5 to copy the formula to F4 and F5.\n6. Click cell B6 to select it.\n7. Type `=SUM(B3:B5)`.\n8. Press Enter to confirm the formula.\n9. Click cell B6 again.\n10. Click and drag the fill handle from B6 right to F6 to copy the formula across to calculate column totals.\n11. Click cell F13 (the Total cell for Zone 2).\n12. Type `=SUM(B10:D13)` (assuming the data range is B10 to E12 and F13 is the total cell for the Zone 2 section). *Correction based on screenshot: The structure is Product | Q1 | Q2 | Q3 | Q4 | Total. Rows 10-12 contain data. Row 13 is Total. Columns B-E are quarters. So F13 should sum B10:E12.*\n13. Let's re-examine Zone 2: Rows 10, 11, 12 have products. Row 13 is \"Total\". Columns B, C, D, E are Q1-Q4. Column F is Total.\n14. Click cell F10.\n15. Type `=SUM(B10:E10)`.\n16. Press Enter.\n17. Select F10, drag fill handle down to F12.\n18. Click cell B13.\n19. Type `=SUM(B10:B12)`.\n20. Press Enter.\n21. Select B13, drag fill handle right to F13.\n22. Repeat for Zone 3 (Rows 17-19 data, Row 20 Total).\n23. Click cell F17.\n24. Type `=SUM(B17:E17)`.\n25. Press Enter.\n26. Select F17, drag fill handle down to F19.\n27.",
+  "retrieved_page_ranges": [
+    [
+      56,
+      57
+    ],
+    [
+      518,
+      518
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      15,
+      15
+    ],
+    [
+      253,
+      253
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/step_1.png"
+}

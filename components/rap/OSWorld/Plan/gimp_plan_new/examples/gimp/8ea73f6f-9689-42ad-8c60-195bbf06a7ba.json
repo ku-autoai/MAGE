@@ -1,0 +1,62 @@
+{
+  "id": "8ea73f6f-9689-42ad-8c60-195bbf06a7ba",
+  "snapshot": "gimp",
+  "instruction": "Can you enhance this low-resolution photo to high-resolution without increasing the file size?\n\nRelevant procedure\n\n1. Click the \"Image\" menu in the top toolbar.\n2. Click the \"Scale Image...\" option in the dropdown menu.\n3. In the \"Scale Image\" dialog that appears, locate the \"Size\" section.\n4. Locate the \"Resolution\" section and verify the X and Y values. To keep the file size low, ensure these values (likely 72 or 96 dpi) are not increased.\n5. In the \"Image Size\" section (Width/Height), enter the desired larger pixel dimensions for high resolution. Ensure the chain link icon next to the width and height is clicked/active to maintain the aspect ratio.\n6. Click the \"Scale\" button to apply the change.\n7. Go to the \"File\" menu and select \"Export As...\" to save the image.\n8. In the export dialog, set the compression quality slider to a moderate level (e.g., 75-85) to manage the file size, and click \"Export\".",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/8ea73f6f-9689-42ad-8c60-195bbf06a7ba/low_resolution.jpeg",
+            "path": "/home/user/Desktop/low_resolution.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/low_resolution.jpeg"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the \"Image\" menu in the top toolbar.\n2. Click the \"Scale Image...\" option in the dropdown menu.\n3. In the \"Scale Image\" dialog that appears, locate the \"Size\" section.\n4. Locate the \"Resolution\" section and verify the X and Y values. To keep the file size low, ensure these values (likely 72 or 96 dpi) are not increased.\n5. In the \"Image Size\" section (Width/Height), enter the desired larger pixel dimensions for high resolution. Ensure the chain link icon next to the width and height is clicked/active to maintain the aspect ratio.\n6. Click the \"Scale\" button to apply the change.\n7. Go to the \"File\" menu and select \"Export As...\" to save the image.\n8. In the export dialog, set the compression quality slider to a moderate level (e.g., 75-85) to manage the file size, and click \"Export\".",
+  "retrieved_page_ranges": [
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "7.54. Layers to Image Size",
+      "7.54. Layers to Image Size"
+    ],
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "5.5. Zoom",
+      "5.5. Zoom"
+    ],
+    [
+      "6.23. Print Size",
+      "6.23. Print Size"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/8ea73f6f-9689-42ad-8c60-195bbf06a7ba/step_1.png"
+}

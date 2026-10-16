@@ -1,0 +1,109 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Click on cell **B2** (the first empty cell in the \"Unique Names\" column, directly below the header).\n2. Type the following formula to keep the first occurrence of each name while maintaining the original order:\n   `=IF(COUNTIF($A$2:A2,A2)=1,A2,\"\")`\n   *(Note: Assuming \"Names with duplicates\" is in Column A starting at A2. Adjust the range `$A$2:A2` and `A2` if the column/row indices differ.)*\n3. Press **Enter** to confirm the formula.\n4. Click back on cell **B2** to ensure it is selected.\n5. Hover over the small green square at the bottom-right corner of the cell (the Fill Handle) until the cursor changes to a black cross.\n6. Click and drag the Fill Handle down to the last row containing data in column A (e.g., if data ends at A10, drag down to B10).\n7. Alternatively, to auto-fill: Double-click the Fill Handle, or copy cell B2 (`Ctrl+C`), select the range B3 to the last row (`Ctrl+V` or paste), then copy the resulting range and use **Paste Special > Values** to remove formulas if required (though usually leaving formulas is acceptable unless specified otherwise).\n8. Stop interaction once the unique names are populated in column B. Do not edit any other cells.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **B2** (the first empty cell in the \"Unique Names\" column, directly below the header).\n2. Type the following formula to keep the first occurrence of each name while maintaining the original order:\n   `=IF(COUNTIF($A$2:A2,A2)=1,A2,\"\")`\n   *(Note: Assuming \"Names with duplicates\" is in Column A starting at A2. Adjust the range `$A$2:A2` and `A2` if the column/row indices differ.)*\n3. Press **Enter** to confirm the formula.\n4. Click back on cell **B2** to ensure it is selected.\n5. Hover over the small green square at the bottom-right corner of the cell (the Fill Handle) until the cursor changes to a black cross.\n6. Click and drag the Fill Handle down to the last row containing data in column A (e.g., if data ends at A10, drag down to B10).\n7. Alternatively, to auto-fill: Double-click the Fill Handle, or copy cell B2 (`Ctrl+C`), select the range B3 to the last row (`Ctrl+V` or paste), then copy the resulting range and use **Paste Special > Values** to remove formulas if required (though usually leaving formulas is acceptable unless specified otherwise).\n8. Stop interaction once the unique names are populated in column B. Do not edit any other cells.",
+  "retrieved_page_ranges": [
+    [
+      234,
+      234
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      64,
+      64
+    ]
+  ],
+  "first_screen_image_path": null
+}

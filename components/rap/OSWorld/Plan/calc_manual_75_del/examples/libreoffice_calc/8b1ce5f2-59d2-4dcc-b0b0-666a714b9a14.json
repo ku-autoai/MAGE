@@ -1,0 +1,117 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1.  **Identify Weekend Columns**: Locate the columns in the calendar grid that correspond to Saturday and Sunday. Based on standard calendar layouts, these are typically the last two columns (e.g., Column G and H if starting with Monday, or Column F and G if starting with Sunday). Verify the day headers in the first row.\n2.  **Select Saturday Column Range**: Click the column header letter for the Saturday column (e.g., if it's the 7th column, click 'G'). This selects the entire column. To restrict selection to only the calendar area (avoiding blank rows below), click the first cell in the Saturday column (e.g., G2 if header is G1), hold `Shift`, and click the last used cell in that column (e.g., G32 or however many rows the calendar has).\n3.  **Open Format Cells Dialog**: Right-click on any selected cell within the Saturday range and choose **Format Cells...** from the context menu. Alternatively, press `Ctrl` + `1`.\n4.  **Set Background to Red**: In the Format Cells dialog, click the **Background** tab.\n5.  **Select Color**: Click the color palette area. If red (`#ff0000`) is not immediately visible in the standard palette, click the button to define a custom color (often labeled \"Other...\" or similar) and enter `ff0000` in the hex field. If standard red is available, select it. Click **OK**.\n6.  **Select Sunday Column Range**: Repeat the selection process for the Sunday column. Click the first cell in the Sunday column, hold `Shift`, and click the last used cell in that column.\n7.  **Open Format Cells Dialog**: Right-click on any selected cell within the Sunday range and choose **Format Cells...** (or press `Ctrl` + `1`).\n8.  **Set Background to Red**: In the Format Cells dialog, click the **Background** tab. Select the same red color (`#ff0000`) as used for Saturday. Click **OK**.\n9.  **Verify**: Ensure only the Saturday and Sunday cells in the calendar grid are red. Click on any other cell (e.g., Monday) to deselect and confirm the formatting is applied correctly.",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  **Identify Weekend Columns**: Locate the columns in the calendar grid that correspond to Saturday and Sunday. Based on standard calendar layouts, these are typically the last two columns (e.g., Column G and H if starting with Monday, or Column F and G if starting with Sunday). Verify the day headers in the first row.\n2.  **Select Saturday Column Range**: Click the column header letter for the Saturday column (e.g., if it's the 7th column, click 'G'). This selects the entire column. To restrict selection to only the calendar area (avoiding blank rows below), click the first cell in the Saturday column (e.g., G2 if header is G1), hold `Shift`, and click the last used cell in that column (e.g., G32 or however many rows the calendar has).\n3.  **Open Format Cells Dialog**: Right-click on any selected cell within the Saturday range and choose **Format Cells...** from the context menu. Alternatively, press `Ctrl` + `1`.\n4.  **Set Background to Red**: In the Format Cells dialog, click the **Background** tab.\n5.  **Select Color**: Click the color palette area. If red (`#ff0000`) is not immediately visible in the standard palette, click the button to define a custom color (often labeled \"Other...\" or similar) and enter `ff0000` in the hex field. If standard red is available, select it. Click **OK**.\n6.  **Select Sunday Column Range**: Repeat the selection process for the Sunday column. Click the first cell in the Sunday column, hold `Shift`, and click the last used cell in that column.\n7.  **Open Format Cells Dialog**: Right-click on any selected cell within the Sunday range and choose **Format Cells...** (or press `Ctrl` + `1`).\n8.  **Set Background to Red**: In the Format Cells dialog, click the **Background** tab. Select the same red color (`#ff0000`) as used for Saturday. Click **OK**.\n9.  **Verify**: Ensure only the Saturday and Sunday cells in the calendar grid are red. Click on any other cell (e.g., Monday) to deselect and confirm the formatting is applied correctly.",
+  "retrieved_page_ranges": [
+    [
+      78,
+      78
+    ],
+    [
+      82,
+      83
+    ],
+    [
+      184,
+      185
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      523,
+      523
+    ]
+  ],
+  "first_screen_image_path": null
+}

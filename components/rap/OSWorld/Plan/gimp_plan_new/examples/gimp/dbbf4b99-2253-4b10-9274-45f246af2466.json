@@ -1,0 +1,62 @@
+{
+  "id": "dbbf4b99-2253-4b10-9274-45f246af2466",
+  "snapshot": "gimp",
+  "instruction": "Use GIMP only to convert my new RAW image into a JPEG file.\n\nRelevant procedure\n1. Click the \"OK\" button on the \"GIMP Message\" dialog to close the error message.\n2. Click the \"File\" menu at the top-left of the window.\n3. Click \"Open...\" in the dropdown menu (or press Ctrl+O).\n4. In the \"Open Image\" dialog, navigate to the file manager sidebar (e.g., click \"Desktop\" or the folder containing your image).\n5. Click on the RAW image file you wish to convert to select it.\n6. Click the \"Open\" button in the bottom-right corner.\n7. *Note: If GIMP fails to open the file again due to missing RAW loaders, you may need to install a plugin like 'gimp-plugin-rawtherapee' or 'dcraw' via terminal, or use a different method to convert the RAW file externally before importing to GIMP.*\n8. Once the image is open in GIMP, click the \"File\" menu.\n9. Click \"Export As...\" (or press Shift+Ctrl+E).\n10. In the \"Export Image\" dialog, change the filename extension from `.xcf` (or the original format) to `.jpg` or `.jpeg`.\n11. Click the \"Export\" button.\n12. In the \"Export Image as JPEG\" options dialog, adjust quality settings if desired (default is usually fine).\n13. Click the \"Export\" button again to save the file.",
+  "source": "https://www.makeuseof.com/tag/can-photoshop-gimp-cant/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/dbbf4b99-2253-4b10-9274-45f246af2466/yicun.raw",
+            "path": "/home/user/Desktop/yicun.raw"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/yicun.raw"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"OK\" button on the \"GIMP Message\" dialog to close the error message.\n2. Click the \"File\" menu at the top-left of the window.\n3. Click \"Open...\" in the dropdown menu (or press Ctrl+O).\n4. In the \"Open Image\" dialog, navigate to the file manager sidebar (e.g., click \"Desktop\" or the folder containing your image).\n5. Click on the RAW image file you wish to convert to select it.\n6. Click the \"Open\" button in the bottom-right corner.\n7. *Note: If GIMP fails to open the file again due to missing RAW loaders, you may need to install a plugin like 'gimp-plugin-rawtherapee' or 'dcraw' via terminal, or use a different method to convert the RAW file externally before importing to GIMP.*\n8. Once the image is open in GIMP, click the \"File\" menu.\n9. Click \"Export As...\" (or press Shift+Ctrl+E).\n10. In the \"Export Image\" dialog, change the filename extension from `.xcf` (or the original format) to `.jpg` or `.jpeg`.\n11. Click the \"Export\" button.\n12. In the \"Export Image as JPEG\" options dialog, adjust quality settings if desired (default is usually fine).\n13. Click the \"Export\" button again to save the file.",
+  "retrieved_page_ranges": [
+    [
+      "6.11. Convert to Color Profile",
+      "6.11. Convert to Color Profile"
+    ],
+    [
+      "6.11. Convert to Color Profile",
+      "6.11. Convert to Color Profile"
+    ],
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "5.4. Export File",
+      "5.4. Export File"
+    ],
+    [
+      "5.48. Export Image as SGI",
+      "5.48. Export Image as SGI"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/dbbf4b99-2253-4b10-9274-45f246af2466/step_1.png"
+}

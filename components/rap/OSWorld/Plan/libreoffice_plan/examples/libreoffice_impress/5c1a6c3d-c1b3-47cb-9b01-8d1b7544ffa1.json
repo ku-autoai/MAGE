@@ -1,0 +1,117 @@
+{
+  "id": "5c1a6c3d-c1b3-47cb-9b01-8d1b7544ffa1",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Bold the text on slide 1. Make the title of size 44pt and underline it on slide 1.\n\nRelevant procedure\n1. Ensure Slide 1 is selected in the slide pane on the left.\n2. Click inside the main text content area to activate the text box.\n3. Press `Ctrl + A` (or `Cmd + A` on Mac) to select all text within the active text box.\n4. Click the **Bold** button (B) in the formatting toolbar or press `Ctrl + B` to apply bold formatting to all text.\n5. Click inside the title text box at the top of the slide.\n6. Press `Ctrl + A` (or `Cmd + A`) to select all text in the title.\n7. Locate the font size dropdown in the toolbar and change the value to **44**.\n8. Click the **Underline** button (U) in the formatting toolbar or press `Ctrl + U` to underline the title text.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5c1a6c3d-c1b3-47cb-9b01-8d1b7544ffa1/39_2.pptx",
+            "path": "/home/user/Desktop/39_2.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/39_2.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "39_2.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": [
+      "compare_pptx_files",
+      "compare_pptx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5c1a6c3d-c1b3-47cb-9b01-8d1b7544ffa1/39_2_Gold.pptx",
+        "dest": "39_2_Gold.pptx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5c1a6c3d-c1b3-47cb-9b01-8d1b7544ffa1/39_2_Gold_all_fonts.pptx",
+        "dest": "39_2_Gold_all_fonts.pptx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/39_2.pptx",
+        "dest": "39_2.pptx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/39_2.pptx",
+        "dest": "39_2.pptx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Ensure Slide 1 is selected in the slide pane on the left.\n2. Click inside the main text content area to activate the text box.\n3. Press `Ctrl + A` (or `Cmd + A` on Mac) to select all text within the active text box.\n4. Click the **Bold** button (B) in the formatting toolbar or press `Ctrl + B` to apply bold formatting to all text.\n5. Click inside the title text box at the top of the slide.\n6. Press `Ctrl + A` (or `Cmd + A`) to select all text in the title.\n7. Locate the font size dropdown in the toolbar and change the value to **44**.\n8. Click the **Underline** button (U) in the formatting toolbar or press `Ctrl + U` to underline the title text.",
+  "retrieved_page_ranges": [
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      42,
+      60
+    ],
+    [
+      72,
+      86
+    ]
+  ]
+}

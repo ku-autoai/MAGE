@@ -1,0 +1,143 @@
+{
+  "id": "21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Change the representation of column \"Parameter\" to show in Millions (M) in Column B and Billions (B) in Column C. The numbers should be rounded to one decimal place, and half should be rounded up. Then remember to place a white space between the digits and the unit.\n\nRelevant procedure\n1. Select the range of cells in Column B containing the numerical data to be formatted.\n2. Right-click the selected cells and choose \"Format Cells...\" from the context menu (or press Ctrl+1).\n3. In the \"Format Cells\" dialog, ensure the \"Numbers\" tab is selected.\n4. In the \"Category\" list on the left, select \"Custom\".\n5. In the \"Format code\" field, type the following custom format code: `[>9999999.99]\"#,##0.0\"M\";\"#,##0.0\"M`\n   *Note: This code handles rounding to one decimal place and appends \"M\". If specific rounding logic (half up) is not default, standard Calc rounding usually applies. To ensure space, verify the format code includes a space before \"M\", e.g., `#,##0.0 \"M\"`. For numbers that might not be millions, a more robust code is `#,##0.0 \"M\";#,##0.0 \"M\"`. However, since the task implies the values are large enough to be millions/billions, dividing by 1,000,000 is often required in the formula or via a specific custom format if the raw numbers are not already scaled. Assuming the user wants to *display* raw numbers as Millions, use: `0.0E+0` is scientific. To force Millions display from raw numbers:\n   *Correction*: Standard custom formats cannot change the value magnitude (e.g., 1,000,000 to 1.0). They only change appearance. To show 1,000,000 as \"1.0 M\", you typically need a formula or a specific custom format code that doesn't exist natively for division.\n   *Alternative Interpretation*: If the task implies using formulas:\n   1. In an adjacent helper column or overwriting, use a formula like `=ROUND(A2/1000000, 1)` for Millions.\n   2. Then format the result as Text with \" M\".\n   \n   *Let's stick to the most direct GUI formatting capability if possible, or use formulas if formatting alone is insufficient. Custom formats like `#,##0` do not divide. So, we must use formulas or the \"Number\" format with \"Thousands\" separator, but that",
+  "source": "https://www.youtube.com/watch?v=p5C4V_AO1UU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions.xlsx",
+            "path": "/home/user/Represent_in_millions_billions.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Represent_in_millions_billions.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Represent_in_millions_billions.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Represent_in_millions_billions.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Represent_in_millions_billions.xlsx",
+        "/home/user/Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions.xlsx",
+        "Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions_gold.xlsx",
+        "Represent_in_millions_billions_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "ignore_case": true
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the range of cells in Column B containing the numerical data to be formatted.\n2. Right-click the selected cells and choose \"Format Cells...\" from the context menu (or press Ctrl+1).\n3. In the \"Format Cells\" dialog, ensure the \"Numbers\" tab is selected.\n4. In the \"Category\" list on the left, select \"Custom\".\n5. In the \"Format code\" field, type the following custom format code: `[>9999999.99]\"#,##0.0\"M\";\"#,##0.0\"M`\n   *Note: This code handles rounding to one decimal place and appends \"M\". If specific rounding logic (half up) is not default, standard Calc rounding usually applies. To ensure space, verify the format code includes a space before \"M\", e.g., `#,##0.0 \"M\"`. For numbers that might not be millions, a more robust code is `#,##0.0 \"M\";#,##0.0 \"M\"`. However, since the task implies the values are large enough to be millions/billions, dividing by 1,000,000 is often required in the formula or via a specific custom format if the raw numbers are not already scaled. Assuming the user wants to *display* raw numbers as Millions, use: `0.0E+0` is scientific. To force Millions display from raw numbers:\n   *Correction*: Standard custom formats cannot change the value magnitude (e.g., 1,000,000 to 1.0). They only change appearance. To show 1,000,000 as \"1.0 M\", you typically need a formula or a specific custom format code that doesn't exist natively for division.\n   *Alternative Interpretation*: If the task implies using formulas:\n   1. In an adjacent helper column or overwriting, use a formula like `=ROUND(A2/1000000, 1)` for Millions.\n   2. Then format the result as Text with \" M\".\n   \n   *Let's stick to the most direct GUI formatting capability if possible, or use formulas if formatting alone is insufficient. Custom formats like `#,##0` do not divide. So, we must use formulas or the \"Number\" format with \"Thousands\" separator, but that",
+  "retrieved_page_ranges": [
+    [
+      51,
+      52
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      78,
+      78
+    ]
+  ],
+  "first_screen_image_path": null
+}

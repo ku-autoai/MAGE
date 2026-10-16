@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Click the first empty cell in the \"Chart\" column corresponding to the first Order ID (e.g., cell E2 if Order IDs are in column A and months Jan–Mar are in columns B, C, D).\n2. Type the formula `=SPARKLINE(B2:D2)` to create a sparkline using the data from January to March for that order. Press Enter.\n3. Click the cell where the sparkline was just created.\n4. Drag the fill handle (the small square at the bottom-right corner of the selected cell) down to the last row containing Order IDs to apply the sparkline to all orders.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the first empty cell in the \"Chart\" column corresponding to the first Order ID (e.g., cell E2 if Order IDs are in column A and months Jan–Mar are in columns B, C, D).\n2. Type the formula `=SPARKLINE(B2:D2)` to create a sparkline using the data from January to March for that order. Press Enter.\n3. Click the cell where the sparkline was just created.\n4. Drag the fill handle (the small square at the bottom-right corner of the selected cell) down to the last row containing Order IDs to apply the sparkline to all orders.",
+  "retrieved_page_ranges": [
+    [
+      172,
+      173
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      173,
+      174
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,117 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure\n1. Locate the first empty row immediately below the sales data table (e.g., if data ends in row 12, select row 13).\n2. In the first column of this new row (e.g., cell A13), type \"Total\" to label the row.\n3. In the second column cell corresponding to the first month (e.g., B13), enter the SUM formula for that month's sales data (e.g., `=SUM(B2:B12)`).\n4. Press Enter to confirm the formula.\n5. Select the cell containing the new SUM formula and drag the fill handle across to the right to copy the formula to all subsequent month columns, calculating the total sales for each month.\n6. Click and drag to select the range containing the \"Total\" label and all the calculated total sales values (e.g., A13 to L13).\n7. Go to the **Insert** menu at the top toolbar and select **Chart**.\n8. In the Chart Wizard dialog, if the chart type is not already set to **Line**, select **Line** from the chart type options on the left.\n9. Ensure the **First row as labels** option is selected (or ensure the X-axis data source is correctly set to the Month names) so that the Months appear on the x-axis. *Note: If the Chart Wizard uses the selected \"Total\" row for X-axis labels, you may need to go to the 'Data Series' step and edit the X-axis labels to point to the header row containing the Month names.*\n10. Click **Finish** to create the line chart showing the monthly total sales trends.",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Locate the first empty row immediately below the sales data table (e.g., if data ends in row 12, select row 13).\n2. In the first column of this new row (e.g., cell A13), type \"Total\" to label the row.\n3. In the second column cell corresponding to the first month (e.g., B13), enter the SUM formula for that month's sales data (e.g., `=SUM(B2:B12)`).\n4. Press Enter to confirm the formula.\n5. Select the cell containing the new SUM formula and drag the fill handle across to the right to copy the formula to all subsequent month columns, calculating the total sales for each month.\n6. Click and drag to select the range containing the \"Total\" label and all the calculated total sales values (e.g., A13 to L13).\n7. Go to the **Insert** menu at the top toolbar and select **Chart**.\n8. In the Chart Wizard dialog, if the chart type is not already set to **Line**, select **Line** from the chart type options on the left.\n9. Ensure the **First row as labels** option is selected (or ensure the X-axis data source is correctly set to the Month names) so that the Months appear on the x-axis. *Note: If the Chart Wizard uses the selected \"Total\" row for X-axis labels, you may need to go to the 'Data Series' step and edit the X-axis labels to point to the header row containing the Month names.*\n10. Click **Finish** to create the line chart showing the monthly total sales trends.",
+  "retrieved_page_ranges": [
+    [
+      169,
+      171
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      151,
+      151
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": null
+}

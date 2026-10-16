@@ -1,0 +1,3 @@
+# Docker client-side Python runtime reuses the same LAM pipeline modules
+# as components/Episode_generator.
+-r ../components/requirements.txt

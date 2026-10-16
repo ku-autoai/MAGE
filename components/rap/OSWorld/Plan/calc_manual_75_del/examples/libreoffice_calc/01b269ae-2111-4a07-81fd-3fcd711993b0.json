@@ -1,0 +1,109 @@
+{
+  "id": "01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill all the blank cells in B1:E30 with the value in the cell above it. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select cell **A1**.\n2. Drag the selection from **A1** down to **E30** to select the range **A1:E30**. (Note: The instruction specifies filling B1:E30 based on the cell above. Assuming the values are in column A or the row above, standard \"Fill Down\" logic usually implies copying from the top-most row of the selected area. However, to fill B1:E30 with the value *above* it, we must look at row 1 for B2:E30 and potentially row 0 for B1 which doesn't exist. A common interpretation of \"fill blank cells with value above\" in a block like B1:E30 implies the source data is in B1:E1 and we need to fill B2:E30. But B1 is blank too. Let's look at the standard Excel/Calc behavior. Usually, you select the range including the source. If B1:E1 has data, you select B1:E30. If A1:A30 has data and we want to copy to B, that's different. Given \"value in the cell above it\", it implies vertical filling. Let's assume the source values are in the first row (B1:E1) or that the user wants to propagate values downwards. Wait, if B1 is blank, there is no cell above it. Perhaps the task implies filling B2:E30 based on B1:E1? Or maybe the data is in Column A? \"Fill all the blank cells in B1:E30 with the value in the cell above it.\" This phrasing is slightly ambiguous for B1. However, a robust way to fill blanks with the value above in a specific range B1:E30 is often done by selecting the range, using Find & Replace or a specific Fill Down command. In LibreOffice/Excel, if you select B1:E30 and press Ctrl+D, it fills down from the top row. If B1:E1 are blank, this does nothing. Let's assume there are values in B1:E1 or the task implies a specific pattern. Let's look at the screenshot context (not provided, but general knowledge). A common trick to fill blanks with the value above is: Select range -> Edit > Fill > Down? No, that just duplicates the top row. To fill *blanks* specifically with the value *above* them (handling",
+  "source": "https://www.youtube.com/shorts/VrUzPTIwQ04",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank.xlsx",
+            "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Student_Level_Fill_Blank.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank_gold.xlsx",
+      "dest": "Student_Level_Fill_Blank_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Student_Level_Fill_Blank.xlsx",
+      "dest": "Student_Level_Fill_Blank.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select cell **A1**.\n2. Drag the selection from **A1** down to **E30** to select the range **A1:E30**. (Note: The instruction specifies filling B1:E30 based on the cell above. Assuming the values are in column A or the row above, standard \"Fill Down\" logic usually implies copying from the top-most row of the selected area. However, to fill B1:E30 with the value *above* it, we must look at row 1 for B2:E30 and potentially row 0 for B1 which doesn't exist. A common interpretation of \"fill blank cells with value above\" in a block like B1:E30 implies the source data is in B1:E1 and we need to fill B2:E30. But B1 is blank too. Let's look at the standard Excel/Calc behavior. Usually, you select the range including the source. If B1:E1 has data, you select B1:E30. If A1:A30 has data and we want to copy to B, that's different. Given \"value in the cell above it\", it implies vertical filling. Let's assume the source values are in the first row (B1:E1) or that the user wants to propagate values downwards. Wait, if B1 is blank, there is no cell above it. Perhaps the task implies filling B2:E30 based on B1:E1? Or maybe the data is in Column A? \"Fill all the blank cells in B1:E30 with the value in the cell above it.\" This phrasing is slightly ambiguous for B1. However, a robust way to fill blanks with the value above in a specific range B1:E30 is often done by selecting the range, using Find & Replace or a specific Fill Down command. In LibreOffice/Excel, if you select B1:E30 and press Ctrl+D, it fills down from the top row. If B1:E1 are blank, this does nothing. Let's assume there are values in B1:E1 or the task implies a specific pattern. Let's look at the screenshot context (not provided, but general knowledge). A common trick to fill blanks with the value above is: Select range -> Edit > Fill > Down? No, that just duplicates the top row. To fill *blanks* specifically with the value *above* them (handling",
+  "retrieved_page_ranges": [
+    [
+      67,
+      68
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      68,
+      68
+    ],
+    [
+      64,
+      64
+    ]
+  ],
+  "first_screen_image_path": null
+}

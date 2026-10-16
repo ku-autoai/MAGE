@@ -1,0 +1,75 @@
+{
+  "id": "0e763496-b6bb-4508-a427-fad0b6c3e195",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Change the font to \"Times New Roman\" throughout the text.\n\nRelevant procedure:\n1. Click on the \"Format\" menu in the top toolbar.\n2. Click on \"Text\" from the dropdown menu.\n3. Click on \"Character...\" from the submenu that appears.\n4. In the Character dialog box, click on the \"Font\" tab if not already selected.\n5. In the \"Font\" section, click on the font family dropdown menu.\n6. Scroll down in the font family list and select \"Times New Roman\".\n7. Make sure \"All text\" is selected in the \"Apply to:\" dropdown (usually at the bottom of the dialog).\n8. Click \"OK\" to apply the font change to all text in the document.\n\nIf the \"Format\" menu approach doesn't work:\n1. Select all text by pressing Ctrl+A (or click Edit > Select All).\n2. Click on the font family dropdown in the formatting toolbar (currently shows \"Liberation Serif\" or similar).\n3. Type \"Times New Roman\" in the font dropdown or scroll to find it in the list.\n4. Press Enter to apply the font change to all selected text.",
+  "source": "https://ask.libreoffice.org/t/how-do-i-change-the-font-for-the-whole-document-in-writer/9220",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/0e763496-b6bb-4508-a427-fad0b6c3e195/Dublin_Zoo_Intro.docx",
+            "path": "/home/user/Desktop/Dublin_Zoo_Intro.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Dublin_Zoo_Intro.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Dublin_Zoo_Intro.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": "compare_font_names",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "font_name": "Times New Roman"
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Dublin_Zoo_Intro.docx",
+      "dest": "Dublin_Zoo_Intro.docx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure:\n1. Click on the \"Format\" menu in the top toolbar.\n2. Click on \"Text\" from the dropdown menu.\n3. Click on \"Character...\" from the submenu that appears.\n4. In the Character dialog box, click on the \"Font\" tab if not already selected.\n5. In the \"Font\" section, click on the font family dropdown menu.\n6. Scroll down in the font family list and select \"Times New Roman\".\n7. Make sure \"All text\" is selected in the \"Apply to:\" dropdown (usually at the bottom of the dialog).\n8. Click \"OK\" to apply the font change to all text in the document.\n\nIf the \"Format\" menu approach doesn't work:\n1. Select all text by pressing Ctrl+A (or click Edit > Select All).\n2. Click on the font family dropdown in the formatting toolbar (currently shows \"Liberation Serif\" or similar).\n3. Type \"Times New Roman\" in the font dropdown or scroll to find it in the list.\n4. Press Enter to apply the font change to all selected text.",
+  "instruction_with_evidence": "Change the font to \"Times New Roman\" throughout the text.\n\nRelevant procedure:\n1. Click on the \"Format\" menu in the top toolbar.\n2. Click on \"Text\" from the dropdown menu.\n3. Click on \"Character...\" from the submenu that appears.\n4. In the Character dialog box, click on the \"Font\" tab if not already selected.\n5. In the \"Font\" section, click on the font family dropdown menu.\n6. Scroll down in the font family list and select \"Times New Roman\".\n7. Make sure \"All text\" is selected in the \"Apply to:\" dropdown (usually at the bottom of the dialog).\n8. Click \"OK\" to apply the font change to all text in the document.\n\nIf the \"Format\" menu approach doesn't work:\n1. Select all text by pressing Ctrl+A (or click Edit > Select All).\n2. Click on the font family dropdown in the formatting toolbar (currently shows \"Liberation Serif\" or similar).\n3. Type \"Times New Roman\" in the font dropdown or scroll to find it in the list.\n4. Press Enter to apply the font change to all selected text."
+}

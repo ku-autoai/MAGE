@@ -1,0 +1,117 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click cell B3 in the spreadsheet to start selecting the weekend cells in the June column.\n2. Hold Ctrl and click cells B5, B12, B19, B26 to select all Sunday dates in June (first day of June 2022 is Saturday, so 6/5, 6/12, 6/19, 6/26 are Sundays; 6/4, 6/11, 6/18, 6/25, 6/30 are Saturdays).\n3. Add to selection by Ctrl+clicking cells B4, B11, B18, B25, B30 to select all Saturday dates in June.\n4. Hold Ctrl and click cell C3 to add the first Sunday in July to the selection.\n5. Hold Ctrl and click cells C4, C11, C18, C25, C32 to select all other Sunday dates in July.\n6. Hold Ctrl and click cells C5, C12, C19, C26 to select all Saturday dates in July.\n7. Hold Ctrl and click cell D3 to add the first Saturday in August to the selection.\n8. Hold Ctrl and click cells D4, D11, D18, D25 to select all other Saturday dates in August.\n9. Hold Ctrl and click cells D5, D12, D19, D26, D30 to select all Sunday dates in August.\n10. Hold Ctrl and click cell E3 to add the first Sunday in September to the selection.\n11. Hold Ctrl and click cells E4, E11, E18, E25 to select all other Sunday dates in September.\n12. Hold Ctrl and click cells E5, E12, E19, E26, E30 to select all Saturday dates in September.\n13. With all weekend cells selected, click the \"Format\" menu at the top of the window.\n14. Select \"Cells\" from the Format menu to open the Format Cells dialog.\n15. Click the \"Background\" tab in the Format Cells dialog.\n16. Click the color selector button in the Background tab to open the color picker.\n17. In the color picker, click on the custom",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B3 in the spreadsheet to start selecting the weekend cells in the June column.\n2. Hold Ctrl and click cells B5, B12, B19, B26 to select all Sunday dates in June (first day of June 2022 is Saturday, so 6/5, 6/12, 6/19, 6/26 are Sundays; 6/4, 6/11, 6/18, 6/25, 6/30 are Saturdays).\n3. Add to selection by Ctrl+clicking cells B4, B11, B18, B25, B30 to select all Saturday dates in June.\n4. Hold Ctrl and click cell C3 to add the first Sunday in July to the selection.\n5. Hold Ctrl and click cells C4, C11, C18, C25, C32 to select all other Sunday dates in July.\n6. Hold Ctrl and click cells C5, C12, C19, C26 to select all Saturday dates in July.\n7. Hold Ctrl and click cell D3 to add the first Saturday in August to the selection.\n8. Hold Ctrl and click cells D4, D11, D18, D25 to select all other Saturday dates in August.\n9. Hold Ctrl and click cells D5, D12, D19, D26, D30 to select all Sunday dates in August.\n10. Hold Ctrl and click cell E3 to add the first Sunday in September to the selection.\n11. Hold Ctrl and click cells E4, E11, E18, E25 to select all other Sunday dates in September.\n12. Hold Ctrl and click cells E5, E12, E19, E26, E30 to select all Saturday dates in September.\n13. With all weekend cells selected, click the \"Format\" menu at the top of the window.\n14. Select \"Cells\" from the Format menu to open the Format Cells dialog.\n15. Click the \"Background\" tab in the Format Cells dialog.\n16. Click the color selector button in the Background tab to open the color picker.\n17. In the color picker, click on the custom",
+  "retrieved_page_ranges": [
+    [
+      408,
+      408
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      78,
+      79
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      481,
+      483
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/step_1.png"
+}

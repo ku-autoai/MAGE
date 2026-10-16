@@ -1,0 +1,109 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n1. Click cell B3 to select it.\n2. Type the formula: =-2.20462*A3+C3\n3. Press Enter to execute the formula.\n4. Click cell B2 to select it.\n5. Right-click cell B2, choose \"Copy\" from the context menu.\n6. Select the range B3:B30 by clicking B3 and dragging down to B30 (or clicking B3, holding Shift, and clicking B30).\n7. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).\n8. Click cell D3 to select it.\n9. Type the formula: =-2.20462*C3+A3\n10. Press Enter to execute the formula.\n11. Click cell D2 to select it.\n12. Right-click cell D2, choose \"Copy\".\n13. Select the range D3:D30 by clicking D3 and dragging down to D30 (or clicking D3, holding Shift, and clicking D30).\n14. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).\n15. Click cell E1 to select it.\n16. Type \"Combined Data\" and press Enter.\n17. Click cell E2 to select it.\n18. Type the following formula:\n    =A$1&\": \"&TEXT(A2,\"0.00\")&\", \"&B$1&\": \"&TEXT(B2,\"0.00\")&\", \"&C$1&\": \"&TEXT(C2,\"0.00\")&\", \"&D$1&\": \"&TEXT(D2,\"0.00\")\n19. Press Enter to execute the formula.\n20. Click cell E2 to select it.\n21. Right-click cell E2 and choose \"Copy\".\n22. Select the range E3:E30 by clicking E3 and dragging down to E30 (or clicking E3, holding Shift, and clicking E30).\n23. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B3 to select it.\n2. Type the formula: =-2.20462*A3+C3\n3. Press Enter to execute the formula.\n4. Click cell B2 to select it.\n5. Right-click cell B2, choose \"Copy\" from the context menu.\n6. Select the range B3:B30 by clicking B3 and dragging down to B30 (or clicking B3, holding Shift, and clicking B30).\n7. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).\n8. Click cell D3 to select it.\n9. Type the formula: =-2.20462*C3+A3\n10. Press Enter to execute the formula.\n11. Click cell D2 to select it.\n12. Right-click cell D2, choose \"Copy\".\n13. Select the range D3:D30 by clicking D3 and dragging down to D30 (or clicking D3, holding Shift, and clicking D30).\n14. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).\n15. Click cell E1 to select it.\n16. Type \"Combined Data\" and press Enter.\n17. Click cell E2 to select it.\n18. Type the following formula:\n    =A$1&\": \"&TEXT(A2,\"0.00\")&\", \"&B$1&\": \"&TEXT(B2,\"0.00\")&\", \"&C$1&\": \"&TEXT(C2,\"0.00\")&\", \"&D$1&\": \"&TEXT(D2,\"0.00\")\n19. Press Enter to execute the formula.\n20. Click cell E2 to select it.\n21. Right-click cell E2 and choose \"Copy\".\n22. Select the range E3:E30 by clicking E3 and dragging down to E30 (or clicking E3, holding Shift, and clicking E30).\n23. Right-click the selection and choose \"Paste Special\" > \"All\" (or simply press Ctrl+V).",
+  "retrieved_page_ranges": [
+    [
+      16,
+      16
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/step_1.png"
+}

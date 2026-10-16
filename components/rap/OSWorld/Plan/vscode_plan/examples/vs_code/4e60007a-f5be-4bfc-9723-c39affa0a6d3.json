@@ -1,0 +1,73 @@
+{
+  "id": "4e60007a-f5be-4bfc-9723-c39affa0a6d3",
+  "snapshot": "vscode",
+  "instruction": "Please help me install the autoDocstring extension in VS Code.\n\nRelevant procedure\n1. Click the Extensions icon on the left vertical activity bar (the icon resembling a grid of four squares).\n2. In the \"Extensions: Marketplace\" view, ensure the \"Search Extensions in Marketplace\" input field is selected.\n3. Type \"autoDocstring\" into the search field.\n4. Locate the \"autoDocstring\" extension by **Nils Meister** in the search results list.\n5. Click the **Install** button next to the extension name.",
+  "source": "https://campbell-muscle-lab.github.io/howtos_Python/pages/documentation/best_practices/vscode_docstring_extension/vscode_docstring_extension.html#:~:text=Type%2C%20Ctrl%20%2B%20Shift%20%2B%20P,select%20the%20NumPy%20docstring%20format.",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4e60007a-f5be-4bfc-9723-c39affa0a6d3",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "is_extension_installed",
+    "result": {
+      "type": "vm_command_line",
+      "command": [
+        "code",
+        "--list-extensions",
+        "|",
+        "grep",
+        "njpwerner.autodocstring"
+      ]
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type": "contain",
+        "expected": "njpwerner.autodocstring"
+      }
+    }
+  },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the Extensions icon on the left vertical activity bar (the icon resembling a grid of four squares).\n2. In the \"Extensions: Marketplace\" view, ensure the \"Search Extensions in Marketplace\" input field is selected.\n3. Type \"autoDocstring\" into the search field.\n4. Locate the \"autoDocstring\" extension by **Nils Meister** in the search results list.\n5. Click the **Install** button next to the extension name.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/4e60007a-f5be-4bfc-9723-c39affa0a6d3/step_1.png"
+}

@@ -1,0 +1,329 @@
+[
+    {
+        "id": 0,
+        "setup_task": "(Setup) Create sample text with multiple words and paragraphs",
+        "setup_steps": [
+            "Type \"Alpha Beta Gamma\" and press Enter.",
+            "Type \"Delta Epsilon Zeta\" and press Enter.",
+            "Type \"Eta Theta Iota\"."
+        ],
+        "main_task": "Show formatting marks in the document",
+        "main_steps": [
+            "Click the View menu.",
+            "Click Formatting Marks."
+        ],
+        "source_segment": 0,
+        "source_original_id": 0
+    },
+    {
+        "id": 1,
+        "setup_task": "(Setup) Create text with two separate paragraphs",
+        "setup_steps": [
+            "Type \"This paragraph is for testing language settings.\"",
+            "Press Enter.",
+            "Type \"https://example.com should not be spell checked.\""
+        ],
+        "main_task": "Set the second paragraph to None (Do not check spelling) using Tools > Language",
+        "main_steps": [
+            "Click anywhere in the second paragraph.",
+            "Click the Tools menu.",
+            "Point to Language.",
+            "Point to For Paragraph.",
+            "Click \"None (Do not check spelling)\"."
+        ],
+        "source_segment": 1,
+        "source_original_id": 28
+    },
+    {
+        "id": 2,
+        "setup_task": "(Setup) Create a tracked change that can be rejected",
+        "setup_steps": [
+            "Type \"Budget draft\" in the document.",
+            "Click Edit > Track Changes > Record.",
+            "Click at the end of the text and type \" updated\"."
+        ],
+        "main_task": "Reject the tracked change from the context menu",
+        "main_steps": [
+            "Click Edit > Track Changes > Show.",
+            "Right-click the changed text.",
+            "Click Reject Change."
+        ],
+        "source_segment": 2,
+        "source_original_id": 43
+    },
+    {
+        "id": 3,
+        "setup_task": "(Setup) Create a numbered list with a nested subpoint",
+        "setup_steps": [
+            "Type \"Morning tasks\" and press Enter.",
+            "Type \"Check email\" and press Enter.",
+            "Type \"Team meeting\".",
+            "Select the three paragraphs.",
+            "Click the Toggle Ordered List button on the toolbar.",
+            "Click View > Toolbars > Bullets and Numbering.",
+            "Click in the second numbered item \"Check email\".",
+            "Click the Demote One Level button on the Bullets and Numbering toolbar."
+        ],
+        "main_task": "Move the nested item back to the top level using the keyboard shortcut",
+        "main_steps": [
+            "Click at the beginning of the text in the second list item, after its number.",
+            "Press Shift+Tab."
+        ],
+        "source_segment": 3,
+        "source_original_id": 81
+    },
+    {
+        "id": 4,
+        "setup_task": "(Setup) Create a document with enough pages to show page numbering",
+        "setup_steps": [
+            "Type \"First paragraph\" in the blank document.",
+            "Press Enter.",
+            "Type \"Second paragraph\".",
+            "Press Ctrl+Enter.",
+            "Type \"Third page text\"."
+        ],
+        "main_task": "Start the first page number at 3",
+        "main_steps": [
+            "Click in the first paragraph on the first page.",
+            "Click Insert > Page Number.",
+            "Click in the first paragraph in the text area.",
+            "Click Format > Paragraph.",
+            "Click the Text Flow tab.",
+            "In the Breaks section, check Insert.",
+            "Set Type to Page.",
+            "Check With page style.",
+            "Leave the first page's current page style selected.",
+            "Check Page number.",
+            "Type 3 in the Page number field.",
+            "Click OK."
+        ],
+        "source_segment": 4,
+        "source_original_id": 94
+    },
+    {
+        "id": 5,
+        "setup_task": "(Setup) Create a multi-page Writer document for brochure printing preview",
+        "setup_steps": [
+            "Type \"Page 1\" in the blank document.",
+            "Open the Insert menu and click Page Break.",
+            "Type \"Page 2\" on the new page.",
+            "Open the Insert menu and click Page Break.",
+            "Type \"Page 3\" on the new page.",
+            "Open the Insert menu and click Page Break.",
+            "Type \"Page 4\" on the new page."
+        ],
+        "main_task": "Set the document to brochure printing and show only even pages in the Print dialog",
+        "main_steps": [
+            "Open the File menu and click Print.",
+            "If the Print dialog shows a General tab, open it.",
+            "In the Page Layout section, click more.",
+            "Select Brochure.",
+            "In the Range and Copies section, open the Include or Pages to Print drop-down list.",
+            "Select Even pages."
+        ],
+        "source_segment": 5,
+        "source_original_id": 111
+    },
+    {
+        "id": 6,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert a signature line with the signer details shown in the example dialog",
+        "main_steps": [
+            "Click Insert.",
+            "Click Signature Line.",
+            "In the Name field, type \"John Doe\".",
+            "In the Title field, type \"Director\".",
+            "In the Email field, type \"john.doe@example.org\".",
+            "Leave the checkboxes \"Signer can add comments\" and \"Show sign date in signature line\" checked.",
+            "Click OK."
+        ],
+        "source_segment": 6,
+        "source_original_id": 128
+    },
+    {
+        "id": 7,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Create a new Gallery theme named \"Project Logos\"",
+        "main_steps": [
+            "Show the Gallery in the Sidebar.",
+            "Click the New button below the list of themes.",
+            "In the Properties of New Theme dialog, click the General tab.",
+            "Click the theme name field.",
+            "Type \"Project Logos\".",
+            "Click OK."
+        ],
+        "source_segment": 7,
+        "source_original_id": 166
+    },
+    {
+        "id": 8,
+        "setup_task": "(Setup) Create a small table to prepare for inserting columns",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Choose Table > Insert Table.",
+            "Set Columns to 3.",
+            "Set Rows to 2.",
+            "Click OK."
+        ],
+        "main_task": "Insert 2 columns after the selected column",
+        "main_steps": [
+            "Click in the second column of the table.",
+            "Choose Table > Insert > Columns.",
+            "In the dialog, set Number to 2.",
+            "Set Position to After.",
+            "Click OK."
+        ],
+        "source_segment": 8,
+        "source_original_id": 187
+    },
+    {
+        "id": 9,
+        "setup_task": "Create a table for deleting a column",
+        "setup_steps": [
+            "Click in the blank Writer document.",
+            "Open the Table menu and choose Insert Table.",
+            "Set the table to 3 columns and 3 rows.",
+            "Click OK."
+        ],
+        "main_task": "Delete the middle column of the table using the context menu",
+        "main_steps": [
+            "Select all cells in the second column.",
+            "Right-click the selected column.",
+            "Choose Delete > Columns."
+        ],
+        "source_segment": 9,
+        "source_original_id": 189
+    },
+    {
+        "id": 10,
+        "setup_task": "(Setup) Create a document with headings, insert a table of contents, and then add another heading",
+        "setup_steps": [
+            "Type “Main Title” on the first line.",
+            "Select “Main Title”.",
+            "Open the paragraph style list and choose “Heading 1”.",
+            "Press Enter.",
+            "Type “Section One”.",
+            "Select “Section One”.",
+            "Open the paragraph style list and choose “Heading 1”.",
+            "Press Enter.",
+            "Type “Section Two”.",
+            "Select “Section Two”.",
+            "Open the paragraph style list and choose “Heading 1”.",
+            "Press Enter.",
+            "Press Enter.",
+            "Open the Insert menu.",
+            "Choose Table of Contents and Index.",
+            "Choose Table of Contents, Index or Bibliography.",
+            "Click OK.",
+            "Click after the table of contents.",
+            "Press Enter.",
+            "Type “Section Three”.",
+            "Select “Section Three”.",
+            "Open the paragraph style list and choose “Heading 1”."
+        ],
+        "main_task": "Update the table of contents so the new heading appears in it",
+        "main_steps": [
+            "Right-click anywhere inside the table of contents.",
+            "Click “Update Index”."
+        ],
+        "source_segment": 10,
+        "source_original_id": 218
+    },
+    {
+        "id": 11,
+        "setup_task": "(Setup) Insert a bibliography so the bibliography paragraph style can be modified",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Open the Insert menu.",
+            "Point to Table of Contents and Index.",
+            "Click Table of Contents, Index or Bibliography.",
+            "In the dialog, set Type to Bibliography.",
+            "Click OK."
+        ],
+        "main_task": "Create a list style named Bibliography with square brackets and 1.00 cm indentation, then apply it to the Bibliography 1 paragraph style",
+        "main_steps": [
+            "Open the Styles deck in the sidebar.",
+            "Click the List Styles icon.",
+            "Right-click Numbering 123.",
+            "Click New.",
+            "In the Organizer tab, type Bibliography in the name field.",
+            "Click the Customize tab.",
+            "Type [ in the Before box.",
+            "Type ] in the After box.",
+            "Delete any other punctuation from the After box.",
+            "Click the Position tab.",
+            "Type 1.00 cm in the Tab stop at box.",
+            "Type 1.00 cm in the Indent at box.",
+            "Click OK.",
+            "In the Styles deck, click the Paragraph Styles icon.",
+            "Choose All Styles from the list at the bottom of the Styles deck.",
+            "Right-click Bibliography 1.",
+            "Click Modify.",
+            "In the Paragraph Style dialog, click the Outline & List tab.",
+            "Open the List style drop-down.",
+            "Select Bibliography.",
+            "Click OK."
+        ],
+        "source_segment": 11,
+        "source_original_id": 241
+    },
+    {
+        "id": 12,
+        "setup_task": "(Setup) Create a paragraph that can be turned into a hidden paragraph",
+        "setup_steps": [
+            "Type \"This paragraph is hidden when the condition is true.\""
+        ],
+        "main_task": "Apply a hidden paragraph condition to the paragraph",
+        "main_steps": [
+            "Click anywhere in the paragraph.",
+            "Open the Fields dialog.",
+            "Click the \"Functions\" tab.",
+            "Select \"Hidden Paragraph\" in the Type list.",
+            "Click the Condition box.",
+            "Type \"ProLite EQ \\\"Lite\\\"\".",
+            "Click \"Insert\"."
+        ],
+        "source_segment": 12,
+        "source_original_id": 259
+    },
+    {
+        "id": 13,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change the default text document save format to Word 2007–365 and set the ODF version to 1.2 Extended",
+        "main_steps": [
+            "Click Tools.",
+            "Click Options.",
+            "In the left pane, click the expansion control next to Load/Save.",
+            "Click General under Load/Save.",
+            "In Default File Format and ODF Settings, open the ODF format version list.",
+            "Select 1.2 Extended (compatibility mode).",
+            "Verify Document type is Text document.",
+            "Open the Always save as list.",
+            "Select Word 2007–365.",
+            "Click OK."
+        ],
+        "source_segment": 13,
+        "source_original_id": 274
+    },
+    {
+        "id": 14,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Add the “About LibreOffice” command to the File menu in Writer",
+        "main_steps": [
+            "Click Tools.",
+            "Click Customize.",
+            "In the Customize dialog, click the Menus tab.",
+            "Open the Scope drop-down and select LibreOffice Writer.",
+            "Open the Target drop-down and select File.",
+            "In the Available Commands list, click About LibreOffice.",
+            "Click the large right arrow to add it to the File menu.",
+            "Click OK."
+        ],
+        "source_segment": 14,
+        "source_original_id": 294
+    }
+]

@@ -1,0 +1,135 @@
+{
+  "id": "51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate revenue in a new column according to the Retail Price sheet (consider product price and quantity and discount), and generate a Pivot Table in a new sheet (Sheet2) that summarizes the revenue of each product.\n\nRelevant procedure:\n1. Click cell G1 in the current sheet.\n2. Type \"Revenue\" and press Enter to create the header.\n3. Click cell G2.\n4. Type the formula: =E2*F2*(1-F2)\n5. Press Enter.\n6. Double-click the fill handle (small square) at the bottom-right corner of cell G2 to fill the formula down to the last row with data.\n7. Click on the sheet tab labeled \"Retail Price\" at the bottom of the window.\n8. Click cell A1, then hold Shift and click the last used cell (e.g., A37 or further down) to select the data range including headers.\n9. Click the \"Insert\" menu at the top of the window.\n10. Select \"Pivot Table\" from the dropdown menu.\n11. In the \"Select Source\" dialog, ensure \"Current selection\" is chosen, then click OK.\n12. In the \"Pivot Table Layout\" dialog, under \"Destination\", select \"New sheet\".\n13. In the \"Sheet name\" field, type \"Sheet2\" (or accept the default if already set, but ensure it targets a new sheet).\n14. In the \"Available Fields\" list, select \"Product\" and drag it to the \"Row Fields\" area.\n15. Select \"Revenue\" from \"Available Fields\" and drag it to the \"Data Fields\" area.\n16. Ensure the aggregation for Revenue is set to \"Sum\" (default).\n17. Click OK to generate the Pivot Table.",
+  "source": "SheetCopilot@7",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/8_BoomerangSales_gt1.xlsx",
+      "dest": "8_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click cell G1 in the current sheet.\n2. Type \"Revenue\" and press Enter to create the header.\n3. Click cell G2.\n4. Type the formula: =E2*F2*(1-F2)\n5. Press Enter.\n6. Double-click the fill handle (small square) at the bottom-right corner of cell G2 to fill the formula down to the last row with data.\n7. Click on the sheet tab labeled \"Retail Price\" at the bottom of the window.\n8. Click cell A1, then hold Shift and click the last used cell (e.g., A37 or further down) to select the data range including headers.\n9. Click the \"Insert\" menu at the top of the window.\n10. Select \"Pivot Table\" from the dropdown menu.\n11. In the \"Select Source\" dialog, ensure \"Current selection\" is chosen, then click OK.\n12. In the \"Pivot Table Layout\" dialog, under \"Destination\", select \"New sheet\".\n13. In the \"Sheet name\" field, type \"Sheet2\" (or accept the default if already set, but ensure it targets a new sheet).\n14. In the \"Available Fields\" list, select \"Product\" and drag it to the \"Row Fields\" area.\n15. Select \"Revenue\" from \"Available Fields\" and drag it to the \"Data Fields\" area.\n16. Ensure the aggregation for Revenue is set to \"Sum\" (default).\n17. Click OK to generate the Pivot Table.",
+  "retrieved_page_ranges": [
+    [
+      290,
+      290
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      295,
+      298
+    ],
+    [
+      181,
+      181
+    ],
+    [
+      315,
+      316
+    ],
+    [
+      314,
+      315
+    ],
+    [
+      315,
+      315
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      314,
+      314
+    ],
+    [
+      317,
+      318
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/step_1.png"
+}

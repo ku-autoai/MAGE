@@ -1,0 +1,88 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nRelevant procedure\n1. Click the **Format** menu in the top menu bar.\n2. Select **Page Style** from the dropdown menu to open the Page Style dialog.\n3. In the Page Style dialog, click the **Sheet** tab.\n4. Locate the **Printing** section and select the radio button **Fit print range(s) to width/height**.\n5. Ensure the **Width** is set to `1` and the **Height** is set to `1` (or auto) to constrain the content to a single page.\n6. Click **OK** to apply the page scaling settings.\n7. Click the **File** menu in the top menu bar.\n8. Select **Export as PDF...** from the menu.\n9. In the \"PDF Options\" dialog that appears, click the **Export** button (you can keep default settings unless specific security or link options are required).\n10. In the file save dialog, navigate to your **Home** directory (usually represented by a house icon or labeled \"Home\").\n11. In the **Name** field, ensure the filename matches the current spreadsheet name (remove the extension if present, e.g., change `project.ods` to `project`).\n12. Click **Save** to export the file.",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the **Format** menu in the top menu bar.\n2. Select **Page Style** from the dropdown menu to open the Page Style dialog.\n3. In the Page Style dialog, click the **Sheet** tab.\n4. Locate the **Printing** section and select the radio button **Fit print range(s) to width/height**.\n5. Ensure the **Width** is set to `1` and the **Height** is set to `1` (or auto) to constrain the content to a single page.\n6. Click **OK** to apply the page scaling settings.\n7. Click the **File** menu in the top menu bar.\n8. Select **Export as PDF...** from the menu.\n9. In the \"PDF Options\" dialog that appears, click the **Export** button (you can keep default settings unless specific security or link options are required).\n10. In the file save dialog, navigate to your **Home** directory (usually represented by a house icon or labeled \"Home\").\n11. In the **Name** field, ensure the filename matches the current spreadsheet name (remove the extension if present, e.g., change `project.ods` to `project`).\n12. Click **Save** to export the file.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      245,
+      246
+    ],
+    [
+      234,
+      234
+    ],
+    [
+      246,
+      248
+    ]
+  ],
+  "first_screen_image_path": null
+}

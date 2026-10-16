@@ -1,0 +1,138 @@
+{
+  "id": "30e3e107-1cfb-46ee-a755-2cd080d7ba6a",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please create a new sheet. Keep its sheet name as \"Sheet2\". Merge cells A1:C1 in the new sheet and write \"Demographic Profile\" with blue (#0000ff) fill and bold white text. Then I want to create three pivot tables to show the percentage of Sex, Civil Status, and Highest Educational Attainment. They should be stacked one by one in Sheet2, each separated with a blank line.\n\nRelevant procedure\n1. Click the \"New Sheet\" button (usually a plus icon next to the sheet tabs at the bottom) or right-click any existing sheet tab and select \"Insert Sheet\" to create a new sheet.\n2. If a dialog appears, ensure the name is \"Sheet2\" and click OK. If not, double-click the new sheet tab, rename it to \"Sheet2\", and press Enter.\n3. Click cell A1, hold Shift, and click cell C1 to select the range A1:C1.\n4. Right-click the selected range and choose \"Merge Cells\" (or click the \"Merge Cells\" icon in the toolbar).\n5. Type \"Demographic Profile\" into the merged cell A1.\n6. With cell A1 still selected, click the \"Background Color\" icon in the toolbar and select the blue color (hex #0000ff) from the palette.\n7. Click the \"Font Color\" icon in the toolbar and select white for the text color.\n8. Click the \"Bold\" icon (or press Ctrl+B) to make the text bold.\n9. Go to the sheet containing the source data (e.g., \"Sheet1\") and click any cell within the data table.\n10. Select \"Insert\" > \"Pivot Table\" from the menu bar (or \"Data\" > \"Pivot Table\" > \"Insert or Edit\").\n11. In the \"Select Source\" dialog, ensure \"Current selection\" is chosen and click OK.\n12. In the \"Pivot Table Layout\" dialog, change the destination to \"Insert in current document\" and set the cell reference to \"Sheet2.$A$3\" (ensuring a blank line below the header). Click OK.\n13. In the layout dialog for the first pivot table: Drag \"Sex\" to \"Row Fields\". Drag \"Sex\" (again, or a unique ID field) to \"Data Fields\".\n14. Double-click the field in \"Data Fields\" (e.g., \"Count – Sex\") and change the operation to \"Count\" if not already. To show percentage: Right-click the data field in the layout or go to \"Fields\" > \"Sex\" > \"Count of Sex\" > \"Fields\" > \"Layout and Print\" or use the \"Data\" menu options to display as \"% of Grand Total\". Alternatively, after creation, right-click the pivot table data",
+  "source": "SheetCopilot@9",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/30e3e107-1cfb-46ee-a755-2cd080d7ba6a/DemographicProfile.xlsx",
+            "path": "/home/user/DemographicProfile.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/DemographicProfile.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/30e3e107-1cfb-46ee-a755-2cd080d7ba6a",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "DemographicProfile.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/30e3e107-1cfb-46ee-a755-2cd080d7ba6a/1_DemographicProfile_gt1.xlsx",
+      "dest": "1_DemographicProfile_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/DemographicProfile.xlsx",
+      "dest": "DemographicProfile.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A1",
+          "props": {
+            "bgcolor": {
+              "method": "eq",
+              "ref": "FF0000FF"
+            },
+            "font_color": {
+              "method": "eq",
+              "ref": "FFFFFFFF"
+            },
+            "font_bold": {
+              "method": "eq",
+              "ref": true
+            },
+            "value": {
+              "method": "eq",
+              "ref": "Demographic Profile"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"New Sheet\" button (usually a plus icon next to the sheet tabs at the bottom) or right-click any existing sheet tab and select \"Insert Sheet\" to create a new sheet.\n2. If a dialog appears, ensure the name is \"Sheet2\" and click OK. If not, double-click the new sheet tab, rename it to \"Sheet2\", and press Enter.\n3. Click cell A1, hold Shift, and click cell C1 to select the range A1:C1.\n4. Right-click the selected range and choose \"Merge Cells\" (or click the \"Merge Cells\" icon in the toolbar).\n5. Type \"Demographic Profile\" into the merged cell A1.\n6. With cell A1 still selected, click the \"Background Color\" icon in the toolbar and select the blue color (hex #0000ff) from the palette.\n7. Click the \"Font Color\" icon in the toolbar and select white for the text color.\n8. Click the \"Bold\" icon (or press Ctrl+B) to make the text bold.\n9. Go to the sheet containing the source data (e.g., \"Sheet1\") and click any cell within the data table.\n10. Select \"Insert\" > \"Pivot Table\" from the menu bar (or \"Data\" > \"Pivot Table\" > \"Insert or Edit\").\n11. In the \"Select Source\" dialog, ensure \"Current selection\" is chosen and click OK.\n12. In the \"Pivot Table Layout\" dialog, change the destination to \"Insert in current document\" and set the cell reference to \"Sheet2.$A$3\" (ensuring a blank line below the header). Click OK.\n13. In the layout dialog for the first pivot table: Drag \"Sex\" to \"Row Fields\". Drag \"Sex\" (again, or a unique ID field) to \"Data Fields\".\n14. Double-click the field in \"Data Fields\" (e.g., \"Count – Sex\") and change the operation to \"Count\" if not already. To show percentage: Right-click the data field in the layout or go to \"Fields\" > \"Sex\" > \"Count of Sex\" > \"Fields\" > \"Layout and Print\" or use the \"Data\" menu options to display as \"% of Grand Total\". Alternatively, after creation, right-click the pivot table data",
+  "retrieved_page_ranges": [
+    [
+      313,
+      314
+    ],
+    [
+      313,
+      313
+    ],
+    [
+      291,
+      293
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      290,
+      290
+    ]
+  ],
+  "first_screen_image_path": null
+}

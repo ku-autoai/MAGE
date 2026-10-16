@@ -1,0 +1,117 @@
+{
+  "id": "9ec204e4-f0a3-42f8-8458-b772a6797cab",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Please duplicate the last two slides and insert the copies in alternating order, so the sequence becomes: original slide A, original slide B, then duplicated slide A, duplicated slide B.\n\nRelevant procedure\n\n1. Navigate to the **Slide Sorter** view or the **Slides** pane to see all slides as thumbnails.\n2. Identify the last slide in the presentation (let's call this Slide B) and the second-to-last slide (let's call this Slide A).\n3. Click on the thumbnail for the last slide (Slide B) to select it.\n4. Right-click on the selected Slide B thumbnail and choose **Duplicate Slide** from the context menu. The duplicate of Slide B will be inserted immediately after the original Slide B.\n5. Click on the thumbnail for the second-to-last slide (original Slide A) to select it.\n6. Right-click on the selected Slide A thumbnail and choose **Duplicate Slide** from the context menu. The duplicate of Slide A will be inserted immediately after the original Slide A, placing it before the previously duplicated Slide B.\n7. Verify the final sequence: Original Slide A, Original Slide B, Duplicated Slide A, Duplicated Slide B.",
+  "source": "https://www.tiktok.com/@lil.d1rt_/video/7247574148887629083",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/9ec204e4-f0a3-42f8-8458-b772a6797cab/MLA_Workshop_061X_Works_Cited.pptx",
+            "path": "/home/user/Desktop/MLA_Workshop_061X_Works_Cited.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/MLA_Workshop_061X_Works_Cited.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MLA_Workshop_061X_Works_Cited.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": [
+      "compare_pptx_files",
+      "compare_pptx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/9ec204e4-f0a3-42f8-8458-b772a6797cab/MLA_Workshop_061X_Works_Cited_Gold.pptx",
+        "dest": "MLA_Workshop_061X_Works_Cited_Gold.pptx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/9ec204e4-f0a3-42f8-8458-b772a6797cab/MLA_Workshop_061X_Works_Cited_Gold_all_fonts.pptx",
+        "dest": "MLA_Workshop_061X_Works_Cited_Gold_all_fonts.pptx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/MLA_Workshop_061X_Works_Cited.pptx",
+        "dest": "MLA_Workshop_061X_Works_Cited.pptx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/MLA_Workshop_061X_Works_Cited.pptx",
+        "dest": "MLA_Workshop_061X_Works_Cited.pptx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Navigate to the **Slide Sorter** view or the **Slides** pane to see all slides as thumbnails.\n2. Identify the last slide in the presentation (let's call this Slide B) and the second-to-last slide (let's call this Slide A).\n3. Click on the thumbnail for the last slide (Slide B) to select it.\n4. Right-click on the selected Slide B thumbnail and choose **Duplicate Slide** from the context menu. The duplicate of Slide B will be inserted immediately after the original Slide B.\n5. Click on the thumbnail for the second-to-last slide (original Slide A) to select it.\n6. Right-click on the selected Slide A thumbnail and choose **Duplicate Slide** from the context menu. The duplicate of Slide A will be inserted immediately after the original Slide A, placing it before the previously duplicated Slide B.\n7. Verify the final sequence: Original Slide A, Original Slide B, Duplicated Slide A, Duplicated Slide B.",
+  "retrieved_page_ranges": [
+    [
+      249,
+      254
+    ],
+    [
+      29,
+      37
+    ],
+    [
+      346,
+      350
+    ],
+    [
+      300,
+      311
+    ],
+    [
+      273,
+      279
+    ]
+  ]
+}

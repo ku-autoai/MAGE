@@ -1,0 +1,203 @@
+{
+  "id": "1d17d234-e39d-4ed7-b46f-4417922a4e7c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a new sheet named \"Sheet2\" and merge cells A1:C1 to write the header \"Investment Summary\". Beneath that, merge cells A2:B2 to write \"High Interest Rate\" and merge cells C2:D2 to form \"Low Interest Rate\".\n\nRelevant procedure\n1) Click the \"Sheet2\" tab at the bottom of the window to ensure the second sheet is active.\n2) Right-click the \"Sheet2\" tab and select \"Rename Sheet...\".\n3) Type \"Sheet2\" as the sheet name and press Enter.\n4) Select the range A1:C1 by clicking cell A1 and dragging to C1.\n5) Click the \"Merge and center cells\" button in the toolbar.\n6) Type \"Investment Summary\" and press Enter.\n7) Select the range A2:B2 by clicking cell A2 and dragging to B2.\n8) Click the \"Merge and center cells\" button in the toolbar.\n9) Type \"High Interest Rate\" and press Enter.\n10) Select the range C2:D2 by clicking cell C2 and dragging to D2.\n11) Click the \"Merge and center cells\" button in the toolbar.\n12) Type \"Low Interest Rate\" and press Enter.",
+  "source": "SheetCopilot@73",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/FutureValue.xlsx",
+            "path": "/home/user/FutureValue.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/FutureValue.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1d17d234-e39d-4ed7-b46f-4417922a4e7c",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "FutureValue.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/5_FutureValue_gt1.xlsx",
+      "dest": "5_FutureValue_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/FutureValue.xlsx",
+      "dest": "FutureValue.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A1",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Investment Summary"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "High Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Low Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "E2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1) Click the \"Sheet2\" tab at the bottom of the window to ensure the second sheet is active.\n2) Right-click the \"Sheet2\" tab and select \"Rename Sheet...\".\n3) Type \"Sheet2\" as the sheet name and press Enter.\n4) Select the range A1:C1 by clicking cell A1 and dragging to C1.\n5) Click the \"Merge and center cells\" button in the toolbar.\n6) Type \"Investment Summary\" and press Enter.\n7) Select the range A2:B2 by clicking cell A2 and dragging to B2.\n8) Click the \"Merge and center cells\" button in the toolbar.\n9) Type \"High Interest Rate\" and press Enter.\n10) Select the range C2:D2 by clicking cell C2 and dragging to D2.\n11) Click the \"Merge and center cells\" button in the toolbar.\n12) Type \"Low Interest Rate\" and press Enter.",
+  "retrieved_page_ranges": [
+    [
+      183,
+      183
+    ],
+    [
+      371,
+      372
+    ],
+    [
+      374,
+      375
+    ],
+    [
+      451,
+      452
+    ],
+    [
+      372,
+      374
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/step_1.png"
+}

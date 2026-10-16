@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click cell B2 to select it.\n2. Type the formula: `=LEFT(A2;FIND(\" \";A2)-1)` to extract the first name from cell A2.\n3. Press Enter.\n4. Click cell C2 to select it.\n5. Type the formula: `=TRIM(MID(A2;FIND(\" \";A2);FIND(\" \";A2;FIND(\" \";A2)+1)-FIND(\" \";A2)))` to extract the last name from cell A2.\n6. Press Enter.\n7. Click cell D2 to select it.\n8. Type the formula: `=TRIM(RIGHT(A2;LEN(A2)-FIND(\" \";A2;FIND(\" \";A2)+1)))` to extract the rank from cell A2.\n9. Press Enter.\n10. Select the range B2:D2 by clicking and dragging across the three cells.\n11. Copy the selection using Ctrl+C.\n12. Select the range B3:D22 by clicking cell B3 and dragging down to D22.\n13. Paste the formulas using Ctrl+V.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 to select it.\n2. Type the formula: `=LEFT(A2;FIND(\" \";A2)-1)` to extract the first name from cell A2.\n3. Press Enter.\n4. Click cell C2 to select it.\n5. Type the formula: `=TRIM(MID(A2;FIND(\" \";A2);FIND(\" \";A2;FIND(\" \";A2)+1)-FIND(\" \";A2)))` to extract the last name from cell A2.\n6. Press Enter.\n7. Click cell D2 to select it.\n8. Type the formula: `=TRIM(RIGHT(A2;LEN(A2)-FIND(\" \";A2;FIND(\" \";A2)+1)))` to extract the rank from cell A2.\n9. Press Enter.\n10. Select the range B2:D2 by clicking and dragging across the three cells.\n11. Copy the selection using Ctrl+C.\n12. Select the range B3:D22 by clicking cell B3 and dragging down to D22.\n13. Paste the formulas using Ctrl+V.",
+  "retrieved_page_ranges": [
+    [
+      59,
+      60
+    ],
+    [
+      212,
+      213
+    ],
+    [
+      509,
+      510
+    ],
+    [
+      9,
+      9
+    ],
+    [
+      508,
+      509
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

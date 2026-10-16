@@ -1,0 +1,117 @@
+{
+  "id": "3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Sort the data according to column A in an ascending order and then create a line chart with the \"Date Time\" column on the X-axis and quantity on the Y-axis.\n\nRelevant procedure\n1. Click cell A1 to position the cursor in the data range.\n2. Select the menu item **Data** at the top menu bar.\n3. In the dropdown menu, select **Sort...** to open the Sort dialog.\n4. In the Sort dialog, ensure **Sort By** is set to **Column A** and the order is **Ascending**.\n5. Click **OK** to apply the sorting.\n6. Click and drag to select the range **A1:A36** (Date Time header and data).\n7. Hold **Ctrl** and drag to extend the selection to include **E1:E36** (Quantity header and data), ensuring headers are included.\n8. Select the menu item **Insert** at the top menu bar.\n9. Select **Chart...** from the dropdown.\n10. In the Chart Wizard, ensure **Chart Type** is set to **Line**.\n11. Click **Next**.\n12. If necessary, go to the **Data Series** step and verify that \"Date Time\" is assigned to Categories and \"Quantity\" is assigned to Y Values.\n13. Click **Finish**.",
+  "source": "SheetCopilot@5",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/6_BoomerangSales_gt1.xlsx",
+      "dest": "6_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A1 to position the cursor in the data range.\n2. Select the menu item **Data** at the top menu bar.\n3. In the dropdown menu, select **Sort...** to open the Sort dialog.\n4. In the Sort dialog, ensure **Sort By** is set to **Column A** and the order is **Ascending**.\n5. Click **OK** to apply the sorting.\n6. Click and drag to select the range **A1:A36** (Date Time header and data).\n7. Hold **Ctrl** and drag to extend the selection to include **E1:E36** (Quantity header and data), ensuring headers are included.\n8. Select the menu item **Insert** at the top menu bar.\n9. Select **Chart...** from the dropdown.\n10. In the Chart Wizard, ensure **Chart Type** is set to **Line**.\n11. Click **Next**.\n12. If necessary, go to the **Data Series** step and verify that \"Date Time\" is assigned to Categories and \"Quantity\" is assigned to Y Values.\n13. Click **Finish**.",
+  "retrieved_page_ranges": [
+    [
+      105,
+      106
+    ],
+    [
+      209,
+      209
+    ],
+    [
+      48,
+      49
+    ],
+    [
+      184,
+      184
+    ],
+    [
+      127,
+      128
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/step_1.png"
+}

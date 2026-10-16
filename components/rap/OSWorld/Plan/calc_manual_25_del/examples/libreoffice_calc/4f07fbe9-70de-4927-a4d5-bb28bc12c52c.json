@@ -1,0 +1,142 @@
+{
+  "id": "4f07fbe9-70de-4927-a4d5-bb28bc12c52c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here I want to use the numerical value from a cell in the text. I can set its number of decimal digits to 2 in the original value cell but don't know how to fix it in the text as well. Please help me to do this. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the cell that contains the text formula referencing the numerical value (e.g., a cell containing `=\"Value is \" & A1`).\n2. Press `F2` or click in the Formula Bar to enter edit mode for this cell.\n3. Locate the cell reference (e.g., `A1`) within the formula.\n4. Wrap the cell reference with the `TEXT` function and specify the format code for two decimal places. For example, change `A1` to `TEXT(A1; \"0.00\")`.\n   - If the existing formula is `=\"Label \" & A1`, change it to `=\"Label \" & TEXT(A1; \"0.00\")`.\n   - Ensure the separator between arguments is the one used in your locale (usually a semicolon `;` or comma `,`).\n5. Press `Enter` to confirm the change and apply the formatting.",
+  "source": "https://superuser.com/questions/1081048/libreoffice-calc-how-to-pad-number-to-fixed-decimals-when-used-within-formula",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular.xlsx",
+            "path": "/home/user/Padding_Decimals_In_Formular.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Padding_Decimals_In_Formular.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4f07fbe9-70de-4927-a4d5-bb28bc12c52c",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Padding_Decimals_In_Formular.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Padding_Decimals_In_Formular.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Padding_Decimals_In_Formular.xlsx",
+        "/home/user/Padding_Decimals_In_Formular-Sheet1.csv"
+      ],
+      "dest": [
+        "Padding_Decimals_In_Formular.xlsx",
+        "Padding_Decimals_In_Formular-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular_gold-Sheet1.csv"
+      ],
+      "dest": [
+        "Padding_Decimals_In_Formular_gold.xlsx",
+        "Padding_Decimals_In_Formular_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the cell that contains the text formula referencing the numerical value (e.g., a cell containing `=\"Value is \" & A1`).\n2. Press `F2` or click in the Formula Bar to enter edit mode for this cell.\n3. Locate the cell reference (e.g., `A1`) within the formula.\n4. Wrap the cell reference with the `TEXT` function and specify the format code for two decimal places. For example, change `A1` to `TEXT(A1; \"0.00\")`.\n   - If the existing formula is `=\"Label \" & A1`, change it to `=\"Label \" & TEXT(A1; \"0.00\")`.\n   - Ensure the separator between arguments is the one used in your locale (usually a semicolon `;` or comma `,`).\n5. Press `Enter` to confirm the change and apply the formatting.",
+  "retrieved_page_ranges": [
+    [
+      51,
+      51
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      71,
+      71
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      66,
+      66
+    ]
+  ],
+  "first_screen_image_path": null
+}

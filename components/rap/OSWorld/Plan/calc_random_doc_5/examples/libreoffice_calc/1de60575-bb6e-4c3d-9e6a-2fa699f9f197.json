@@ -1,0 +1,115 @@
+{
+  "id": "1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Summarize the total revenue for each promotion type in a new sheet (Sheet2) with the promotion names as the column headers using the Pivot Table feature.\n\nRelevant procedure\n1. Click the \"Sheet1\" tab at the bottom of the screen to switch to the source data sheet.\n2. Click the cell at the intersection of the first row and first column (A1) to set the starting point for data selection.\n3. Press and hold `Ctrl`, then press `Shift` and `End` to select the entire data range from A1 to the last used cell in the sheet.\n4. Move the mouse cursor to the top menu bar and click the \"Insert\" menu.\n5. In the dropdown menu, click \"Pivot Table...\".\n6. In the \"Create Pivot Table\" dialog that appears, ensure the radio button for \"New sheet\" is selected.\n7. Click the \"OK\" button to generate the pivot table on the new sheet.\n8. In the pivot table editor that opens, click and drag the \"Promotion Type\" field (the one containing the names like \"Buy One Get One\") from the field list on the left into the **Column Fields** area.\n9. Click and drag the \"Revenue\" field from the field list into the **Data Fields** area.\n10. Verify that the summary function for Revenue is set to \"Sum\" (if it defaults to Count, double-click the field in the Data Fields area or use the context menu to change it to Sum).\n11. Click the \"OK\" button in the pivot table editor to finalize the table.\n12. Ensure the sheet tab is labeled \"Sheet2\" (rename if necessary by double-clicking the tab at the bottom) so the result matches the requirement.",
+  "source": "SheetCopilot@55",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/EntireSummerSales.xlsx",
+            "path": "/home/user/EntireSummerSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/EntireSummerSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "EntireSummerSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 3.0
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/6_EntireSummerSales_gt1.xlsx",
+      "dest": "6_EntireSummerSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/EntireSummerSales.xlsx",
+      "dest": "EntireSummerSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet1\" tab at the bottom of the screen to switch to the source data sheet.\n2. Click the cell at the intersection of the first row and first column (A1) to set the starting point for data selection.\n3. Press and hold `Ctrl`, then press `Shift` and `End` to select the entire data range from A1 to the last used cell in the sheet.\n4. Move the mouse cursor to the top menu bar and click the \"Insert\" menu.\n5. In the dropdown menu, click \"Pivot Table...\".\n6. In the \"Create Pivot Table\" dialog that appears, ensure the radio button for \"New sheet\" is selected.\n7. Click the \"OK\" button to generate the pivot table on the new sheet.\n8. In the pivot table editor that opens, click and drag the \"Promotion Type\" field (the one containing the names like \"Buy One Get One\") from the field list on the left into the **Column Fields** area.\n9. Click and drag the \"Revenue\" field from the field list into the **Data Fields** area.\n10. Verify that the summary function for Revenue is set to \"Sum\" (if it defaults to Count, double-click the field in the Data Fields area or use the context menu to change it to Sum).\n11. Click the \"OK\" button in the pivot table editor to finalize the table.\n12. Ensure the sheet tab is labeled \"Sheet2\" (rename if necessary by double-clicking the tab at the bottom) so the result matches the requirement.",
+  "retrieved_page_ranges": [
+    [
+      471,
+      472
+    ],
+    [
+      478,
+      478
+    ],
+    [
+      90,
+      92
+    ],
+    [
+      108,
+      109
+    ],
+    [
+      116,
+      116
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/step_1.png"
+}

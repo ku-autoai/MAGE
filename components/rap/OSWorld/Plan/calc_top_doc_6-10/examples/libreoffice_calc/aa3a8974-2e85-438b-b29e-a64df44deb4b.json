@@ -1,0 +1,88 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nRelevant procedure\n1. Click the \"Format\" menu in the top menu bar.\n2. Select \"Page Style...\" from the dropdown menu.\n3. In the dialog that opens, click the \"Sheet\" tab.\n4. Check the box next to \"Fit to number of pages\".\n5. Set the Width to 1 and the Height to 1.\n6. Click \"OK\" to apply the changes.\n7. Click the \"File\" menu in the top menu bar.\n8. Select \"Export as\" > \"Export as PDF...\".\n9. In the save dialog that appears, verify that the filename is \"Resize_Cells_Fit_Page.pdf\".\n10. Navigate to the Home folder.\n11. Click \"Save\".",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Format\" menu in the top menu bar.\n2. Select \"Page Style...\" from the dropdown menu.\n3. In the dialog that opens, click the \"Sheet\" tab.\n4. Check the box next to \"Fit to number of pages\".\n5. Set the Width to 1 and the Height to 1.\n6. Click \"OK\" to apply the changes.\n7. Click the \"File\" menu in the top menu bar.\n8. Select \"Export as\" > \"Export as PDF...\".\n9. In the save dialog that appears, verify that the filename is \"Resize_Cells_Fit_Page.pdf\".\n10. Navigate to the Home folder.\n11. Click \"Save\".",
+  "retrieved_page_ranges": [
+    [
+      245,
+      246
+    ],
+    [
+      234,
+      234
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      246,
+      248
+    ],
+    [
+      243,
+      244
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/step_1.png"
+}

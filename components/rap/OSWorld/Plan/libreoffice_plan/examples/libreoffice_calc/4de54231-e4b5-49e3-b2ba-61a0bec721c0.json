@@ -1,0 +1,108 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n\n1. Click on cell **B2** to ensure the formula for column B is selected.\n2. Press **Ctrl + C** to copy the cell.\n3. Select the range **B3:B30** (click B3, hold Shift, and click B30) and press **Ctrl + V** to paste the formula into the rest of the column.\n4. Click on cell **D2** to select the formula for column D.\n5. Press **Ctrl + C** to copy the cell.\n6. Select the range **D3:D30** and press **Ctrl + V** to paste the formula.\n7. Click on cell **E1** to create the header for the new column.\n8. Type **Combined Data** and press Enter.\n9. Click on cell **E2**.\n10. Type the following formula exactly:\n    `=\"Hanging mass (kilogram): \" & ROUND(A2,2) & \", Acceleration of Block up Ramp: \" & ROUND(B2,2) & \", Hanging mass (kilogram): \" & ROUND(C2,2) & \", Acceleration of Block down Ramp: \" & ROUND(D2,2)`\n11. Press **Enter**.\n12. Click back on cell **E2**.\n13. Select the range **E3:E30** and press **Ctrl + V** to fill down the concatenation for all data rows.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **B2** to ensure the formula for column B is selected.\n2. Press **Ctrl + C** to copy the cell.\n3. Select the range **B3:B30** (click B3, hold Shift, and click B30) and press **Ctrl + V** to paste the formula into the rest of the column.\n4. Click on cell **D2** to select the formula for column D.\n5. Press **Ctrl + C** to copy the cell.\n6. Select the range **D3:D30** and press **Ctrl + V** to paste the formula.\n7. Click on cell **E1** to create the header for the new column.\n8. Type **Combined Data** and press Enter.\n9. Click on cell **E2**.\n10. Type the following formula exactly:\n    `=\"Hanging mass (kilogram): \" & ROUND(A2,2) & \", Acceleration of Block up Ramp: \" & ROUND(B2,2) & \", Hanging mass (kilogram): \" & ROUND(C2,2) & \", Acceleration of Block down Ramp: \" & ROUND(D2,2)`\n11. Press **Enter**.\n12. Click back on cell **E2**.\n13. Select the range **E3:E30** and press **Ctrl + V** to fill down the concatenation for all data rows.",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      322,
+      322
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      321,
+      322
+    ],
+    [
+      338,
+      340
+    ]
+  ]
+}

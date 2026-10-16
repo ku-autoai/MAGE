@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Adaptation of Computer Use Agents to New Software with User Manuals"
+authors:
+  - name: "Anonymous"
+year: 2026
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "Adaptation of Computer Use Agents to New Software with User Manuals"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  notes: "Preprint"

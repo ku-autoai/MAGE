@@ -1,0 +1,137 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nBased on the screenshot and standard LibreOffice Calc operations, here is the procedure to highlight weekends (Saturday and Sunday) in red.\n\n**Relevant procedure**\n\n1.  **Select the data range**: Click on cell **B3** (top-left date) and drag to select all cells containing dates down to column F and row 33 (or the last row with data). Alternatively, click **B3**, hold **Shift**, and click the last cell with a date to select the range.\n2.  **Open Conditional Formatting**: In the top menu bar, click **Format**, then hover over **Conditional**, and select **Condition...**\n3.  **Add a new condition**: In the dialog box that appears, click the **Add** button to create a new rule.\n4.  **Set the first condition (Saturday)**:\n    *   In the dropdown menus on the left, change the first dropdown to **Day of Week** and the second to **is**.\n    *   In the right dropdown menu, select **Saturday** (or enter `6` if using a number format, but \"Saturday\" is safer if available).\n    *   In the **Apply Style** dropdown on the right, select **New Style...**\n5.  **Define the Red Style**:\n    *   In the **Cell Style** dialog, go to the **Background** tab.\n    *   Click the **Color** button and select the red color with hex code **#ff0000** (standard red).\n    *   Click **OK** to save the style.\n    *   Back in the Conditional Formatting dialog, click **OK** to save the condition.\n6.  **Add a second condition (Sunday)**:\n    *   In the Conditional Formatting dialog, click **Add** again.\n    *   Set the condition to **Day of Week** **is** **Sunday**.\n    *   In the **Apply Style** dropdown, select the red style you just created (it might be named something like \"Default\" or the name you gave it, usually it retains the default name if not specified, but check the list for the red background style). If you didn't name it, select **New Style...** again and repeat step 5 to ensure it is red.\n    *   Click **OK** to save the second condition.\n7.  **Finish**: Click **OK** in the main Conditional Formatting dialog to apply",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the screenshot and standard LibreOffice Calc operations, here is the procedure to highlight weekends (Saturday and Sunday) in red.\n\n**Relevant procedure**\n\n1.  **Select the data range**: Click on cell **B3** (top-left date) and drag to select all cells containing dates down to column F and row 33 (or the last row with data). Alternatively, click **B3**, hold **Shift**, and click the last cell with a date to select the range.\n2.  **Open Conditional Formatting**: In the top menu bar, click **Format**, then hover over **Conditional**, and select **Condition...**\n3.  **Add a new condition**: In the dialog box that appears, click the **Add** button to create a new rule.\n4.  **Set the first condition (Saturday)**:\n    *   In the dropdown menus on the left, change the first dropdown to **Day of Week** and the second to **is**.\n    *   In the right dropdown menu, select **Saturday** (or enter `6` if using a number format, but \"Saturday\" is safer if available).\n    *   In the **Apply Style** dropdown on the right, select **New Style...**\n5.  **Define the Red Style**:\n    *   In the **Cell Style** dialog, go to the **Background** tab.\n    *   Click the **Color** button and select the red color with hex code **#ff0000** (standard red).\n    *   Click **OK** to save the style.\n    *   Back in the Conditional Formatting dialog, click **OK** to save the condition.\n6.  **Add a second condition (Sunday)**:\n    *   In the Conditional Formatting dialog, click **Add** again.\n    *   Set the condition to **Day of Week** **is** **Sunday**.\n    *   In the **Apply Style** dropdown, select the red style you just created (it might be named something like \"Default\" or the name you gave it, usually it retains the default name if not specified, but check the list for the red background style). If you didn't name it, select **New Style...** again and repeat step 5 to ensure it is red.\n    *   Click **OK** to save the second condition.\n7.  **Finish**: Click **OK** in the main Conditional Formatting dialog to apply",
+  "retrieved_page_ranges": [
+    [
+      196,
+      196
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      78,
+      79
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      196,
+      197
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      82,
+      82
+    ],
+    [
+      79,
+      82
+    ],
+    [
+      185,
+      186
+    ],
+    [
+      185,
+      185
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/step_1.png"
+}

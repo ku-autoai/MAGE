@@ -1,0 +1,118 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click on the cell directly below the last month's sales figure in the first data row (e.g., if sales are in B2:F2, click B3) to begin the \"Total\" row.\n2. Type \"Total\" in the first cell of this row (e.g., A3) to label it.\n3. In the corresponding data cell (e.g., B3), type the formula `=SUM(B$2)` (adjusting the row reference to match the sales data row) to calculate the total for January. Press Enter.\n4. Select cell B3 and drag the fill handle across to the last month's column (e.g., F3) to copy the total formula for all months.\n5. Click on the cell directly below the \"Total\" row (e.g., B4) to begin the \"Growth\" row.\n6. Type \"Growth\" in the first cell of this row (e.g., A4).\n7. Leave the January cell (e.g., B4) empty or type a placeholder like \"-\" as January has no previous month for growth calculation.\n8. In the February cell (e.g., C4), type the formula `=(C3-B3)/B3` to calculate the month-on-month growth percentage. Press Enter.\n9. Format cell C4 as a Percentage by selecting the cell, going to Format > Cells, choosing the Percentage category, and clicking OK.\n10. Select cell C4 and drag the fill handle across to the June cell (e.g., F4) to copy the growth formula for Feb through Jun.\n11. Select the range containing the \"Total\" row headers and values (e.g., A3:F3) to prepare for the first chart.\n12. Go to Insert > Chart to open the Chart Wizard.\n13. In Step 1 of the Chart Wizard, ensure \"Column\" is selected as the chart type. Click Next.\n14. In Step 2, ensure \"Series in columns\" is selected if necessary, or adjust so that months are categories and \"Total\" is the series. Click Next.\n15. In Step 3 (Titles), enter \"Total\" in the \"Title\" field for the chart title. Click Next.\n16. In Step 4, choose a location for the chart (e.g., New sheet or Object in sheet) and click",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the cell directly below the last month's sales figure in the first data row (e.g., if sales are in B2:F2, click B3) to begin the \"Total\" row.\n2. Type \"Total\" in the first cell of this row (e.g., A3) to label it.\n3. In the corresponding data cell (e.g., B3), type the formula `=SUM(B$2)` (adjusting the row reference to match the sales data row) to calculate the total for January. Press Enter.\n4. Select cell B3 and drag the fill handle across to the last month's column (e.g., F3) to copy the total formula for all months.\n5. Click on the cell directly below the \"Total\" row (e.g., B4) to begin the \"Growth\" row.\n6. Type \"Growth\" in the first cell of this row (e.g., A4).\n7. Leave the January cell (e.g., B4) empty or type a placeholder like \"-\" as January has no previous month for growth calculation.\n8. In the February cell (e.g., C4), type the formula `=(C3-B3)/B3` to calculate the month-on-month growth percentage. Press Enter.\n9. Format cell C4 as a Percentage by selecting the cell, going to Format > Cells, choosing the Percentage category, and clicking OK.\n10. Select cell C4 and drag the fill handle across to the June cell (e.g., F4) to copy the growth formula for Feb through Jun.\n11. Select the range containing the \"Total\" row headers and values (e.g., A3:F3) to prepare for the first chart.\n12. Go to Insert > Chart to open the Chart Wizard.\n13. In Step 1 of the Chart Wizard, ensure \"Column\" is selected as the chart type. Click Next.\n14. In Step 2, ensure \"Series in columns\" is selected if necessary, or adjust so that months are categories and \"Total\" is the series. Click Next.\n15. In Step 3 (Titles), enter \"Total\" in the \"Title\" field for the chart title. Click Next.\n16. In Step 4, choose a location for the chart (e.g., New sheet or Object in sheet) and click",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      113,
+      114
+    ]
+  ],
+  "first_screen_image_path": null
+}

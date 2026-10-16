@@ -1,0 +1,101 @@
+{
+  "id": "edb61b14-a854-4bf5-a075-c8075c11293a",
+  "snapshot": "libreoffice_impress",
+  "instruction": "In the last slide, make the font style \"Times New Roman\"\n\nRelevant procedure\n1. Navigate to the last slide of the presentation using the slide sorter view or by scrolling to the end of the slide deck.\n2. Select all text on the slide. This can be done by clicking inside any text box and pressing Ctrl+A (or Cmd+A on Mac) to select all text within that box, then repeating for other text boxes, or by pressing Ctrl+A twice if the application supports selecting all objects and their contents simultaneously. Alternatively, select specific text boxes individually if global selection is not available.\n3. Locate the font family dropdown menu in the formatting toolbar or the \"Properties\" sidebar (usually located on the left or top of the interface).\n4. Click the font family dropdown menu to reveal the list of available fonts.\n5. Type \"Times New Roman\" into the font search bar (if available) or scroll to find \"Times New Roman\" in the list.\n6. Click on \"Times New Roman\" to apply it to the selected text.\n7. Verify that the font style has changed to Times New Roman for all selected text elements.",
+  "hint": "The input is case sensitive.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/edb61b14-a854-4bf5-a075-c8075c11293a/24_8.pptx",
+            "path": "/home/user/Desktop/24_8.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/24_8.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "24_8.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/edb61b14-a854-4bf5-a075-c8075c11293a/24_8_Gold.pptx",
+      "dest": "24_8_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/24_8.pptx",
+      "dest": "24_8.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Navigate to the last slide of the presentation using the slide sorter view or by scrolling to the end of the slide deck.\n2. Select all text on the slide. This can be done by clicking inside any text box and pressing Ctrl+A (or Cmd+A on Mac) to select all text within that box, then repeating for other text boxes, or by pressing Ctrl+A twice if the application supports selecting all objects and their contents simultaneously. Alternatively, select specific text boxes individually if global selection is not available.\n3. Locate the font family dropdown menu in the formatting toolbar or the \"Properties\" sidebar (usually located on the left or top of the interface).\n4. Click the font family dropdown menu to reveal the list of available fonts.\n5. Type \"Times New Roman\" into the font search bar (if available) or scroll to find \"Times New Roman\" in the list.\n6. Click on \"Times New Roman\" to apply it to the selected text.\n7. Verify that the font style has changed to Times New Roman for all selected text elements.",
+  "retrieved_page_ranges": [
+    [
+      101,
+      110
+    ],
+    [
+      175,
+      178
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      110,
+      111
+    ],
+    [
+      101,
+      110
+    ]
+  ]
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Set your Slack status to \"In a meeting\" with the 📅 emoji."
+  },
+  {
+    "setup_task": "Set any custom Slack status.",
+    "setup_steps": [
+      "Click your profile picture.",
+      "Click Update your status.",
+      "Enter the text \"Busy\".",
+      "Click Save."
+    ],
+    "main_task": "Clear the current Slack status."
+  },
+  {
+    "setup_task": "Create a file for uploading.",
+    "setup_steps": [
+      "Create a text file named meeting_notes.txt.",
+      "Write \"Weekly meeting notes\" in the file.",
+      "Save the file on the Desktop."
+    ],
+    "main_task": "Upload meeting_notes.txt to the #general channel."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Star the direct message conversation with Alex."
+  },
+  {
+    "setup_task": "Post a message that can be saved for later.",
+    "setup_steps": [
+      "Open the #general channel.",
+      "Enter the message \"Review the benchmark results tomorrow.\".",
+      "Press Enter to send the message."
+    ],
+    "main_task": "Save the message \"Review the benchmark results tomorrow.\" for later."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a reminder saying \"Review proposal\" for tomorrow at 9:00 AM."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change the topic of #general to \"Weekly project discussion\"."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change the description of #general to \"Main workspace for project updates\"."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Mute notifications for the #general channel."
+  },
+  {
+    "setup_task": "Create unread messages in #general.",
+    "setup_steps": [
+      "Open the #general channel.",
+      "Enter the message \"Unread Test Message 1\".",
+      "Press Enter.",
+      "Enter the message \"Unread Test Message 2\".",
+      "Press Enter.",
+      "Enter the message \"Unread Test Message 3\".",
+      "Press Enter.",
+      "Open the direct message conversation with Alex."
+    ],
+    "main_task": "Mark every message in #general as read."
+  },
+  {
+    "setup_task": "Create multiple searchable messages containing the same keyword.",
+    "setup_steps": [
+      "Open the #general channel.",
+      "Enter the message \"proposal alpha\".",
+      "Press Enter.",
+      "Enter the message \"proposal beta\".",
+      "Press Enter.",
+      "Enter the message \"proposal gamma\".",
+      "Press Enter."
+    ],
+    "main_task": "Search for \"proposal\" and open the newest matching message."
+  },
+  {
+    "setup_task": "Post a uniquely identifiable message in #general.",
+    "setup_steps": [
+      "Open the #general channel.",
+      "Enter the message \"slack-search-target-2026\".",
+      "Press Enter to send the message.",
+      "Open the direct message conversation with Alex."
+    ],
+    "main_task": "Search for \"slack-search-target-2026\" and open the matching message in #general."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change your display name to \"Research Assistant\"."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Switch Slack to Dark mode."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change the Slack sidebar theme to a color different from the current color."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a bookmark in #general titled \"OpenAI\" pointing to https://openai.com."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Start a Huddle in the #general channel."
+  },
+  {
+    "setup_task": "Create a public channel that can be left.",
+    "setup_steps": [
+      "Click the plus button next to Channels.",
+      "Click Create a channel.",
+      "Enter the channel name \"leave-test-channel\".",
+      "Set the channel visibility to Public.",
+      "Click Create."
+    ],
+    "main_task": "Leave the #leave-test-channel channel."
+  },
+  {
+    "setup_task": "Create a public channel that can be archived.",
+    "setup_steps": [
+      "Click the plus button next to Channels.",
+      "Click Create a channel.",
+      "Enter the channel name \"archive-test-channel\".",
+      "Set the channel visibility to Public.",
+      "Click Create."
+    ],
+    "main_task": "Archive the #archive-test-channel channel."
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a Canvas in #general titled \"Meeting Notes\"."
+  }
+]

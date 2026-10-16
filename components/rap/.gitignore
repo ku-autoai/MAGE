@@ -1,0 +1,9 @@
+# Private machine configuration and newly generated artifacts
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+**/outputs/
+OSWorld/first_screen_images/
+Slack/output/

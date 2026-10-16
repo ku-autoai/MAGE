@@ -1,0 +1,5698 @@
+[
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open a new presentation and insert a title slide with a title and subtitle",
+    "main_steps": [
+      "Click the New dropdown arrow.",
+      "Click Presentation.",
+      "Select the Title Slide layout.",
+      "Click the title text box and type “Designing a presentation”.",
+      "Click the subtitle text box and type “Master slides and styles”."
+    ],
+    "id": 0,
+    "section_title": "Designing a presentation",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Designing a presentation"
+    ],
+    "section_start_page": 41,
+    "section_end_page": 41,
+    "relevant_procedure": "Relevant procedure:\n1. Open a new presentation by going to File > New > Presentation.\n2. Ensure the presentation is in Normal view.\n3. Select the first slide (which will be the title slide) in the Slides pane.\n4. Go to Slide > New Slide on the Menu bar to insert a new slide after the selected slide.\n5. In the Slide Layout panel on the Sidebar, select \"Title Slide\" to apply the appropriate layout with space for a title and subtitle.\n6. Click on the title text box to enter the title, then type the title text.\n7. Click on the subtitle text box to enter the subtitle, then type the subtitle text.",
+    "retrieved_page_ranges": [
+      [
+        249,
+        254
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        17,
+        17
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      41,
+      41
+    ],
+    "is_hit": false
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Master Slides deck in the Sidebar",
+    "main_steps": [
+      "Click the Sidebar toggle if the Sidebar is not visible.",
+      "Click the Master Slides deck icon in the Sidebar."
+    ],
+    "id": 0,
+    "section_title": "What are master slides?",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "What are master slides?"
+    ],
+    "section_start_page": 41,
+    "section_end_page": 42,
+    "relevant_procedure": "Relevant procedure:\n1. Click on Master Slides in the Sidebar to open the Master Slides deck.",
+    "retrieved_page_ranges": [
+      [
+        19,
+        26
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        256,
+        262
+      ]
+    ],
+    "source_page_range": [
+      41,
+      42
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a new master slide and rename it to “Company Master”",
+    "main_steps": [
+      "Click View on the menu bar.",
+      "Click Master Slide.",
+      "Click New Master on the Master View toolbar.",
+      "Click Rename Master on the Master View toolbar.",
+      "Type Company Master in the Name text box.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with master slides",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with master slides"
+    ],
+    "section_start_page": 42,
+    "section_end_page": 60,
+    "relevant_procedure": "Relevant procedure:\n1) Go to View > Master Slide on the Menu bar to open Master View and the Master View toolbar.  \n2) Click on New Master in the Master View toolbar to create a new master slide.  \n3) Right-click on the new master slide in the Slides pane and select Rename Master from the context menu.  \n4) Enter \"Company Master\" in the Name text box and click OK to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        42,
+        60
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        256,
+        262
+      ],
+      [
+        29,
+        37
+      ]
+    ],
+    "source_page_range": [
+      42,
+      60
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a selected drawing object to use for creating a custom style",
+    "setup_steps": [
+      "Insert a rectangle onto the blank slide.",
+      "Resize the rectangle so it is clearly visible.",
+      "Click the rectangle to select it."
+    ],
+    "main_task": "Create a new custom drawing style from the selected object",
+    "main_steps": [
+      "Open the Styles deck on the Sidebar.",
+      "Click Drawing Styles at the top left of the Styles deck.",
+      "Click New Style from Selection at the top right of the Styles deck.",
+      "Click the Enter new style name text box.",
+      "Type “Blue Box”.",
+      "Click OK."
+    ],
+    "id": 1,
+    "section_title": "Working with styles",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with styles"
+    ],
+    "section_start_page": 60,
+    "section_end_page": 65,
+    "relevant_procedure": "Relevant procedure:\n1) Select an object in the presentation.\n2) Open the Styles deck on the Sidebar by clicking on Styles or using the keyboard shortcut F11 (macOS ⌘+T).\n3) Click on Drawing Styles in the Styles title bar to open the Drawing Styles panel.\n4) Click on New Style from Selection on the right of the Styles deck title bar to open the New Style from Selection dialog.\n5) Enter a name for the new drawing style in the Enter new style name text box.\n6) Click OK to save the new drawing style and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        220,
+        224
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        187,
+        194
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        60,
+        65
+      ]
+    ],
+    "source_page_range": [
+      60,
+      65
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Templates dialog and set a presentation template as the default template",
+    "main_steps": [
+      "Click File on the menu bar.",
+      "Click New.",
+      "Click Templates.",
+      "Select a presentation template in the Templates dialog.",
+      "Right-click the selected template.",
+      "Click Set as Default.",
+      "Click Open."
+    ],
+    "id": 0,
+    "section_title": "Working with templates",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with templates"
+    ],
+    "section_start_page": 65,
+    "section_end_page": 71,
+    "relevant_procedure": "Relevant procedure:\n1. Go to File > New > Templates to open the Templates dialog.  \n2. Select Presentations from the Filter drop-down list.  \n3. Right-click on the desired presentation template in the dialog.  \n4. Select Set as Default from the context menu.  \n5. Click Open to confirm and create a new presentation using the new default template.",
+    "retrieved_page_ranges": [
+      [
+        65,
+        71
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        300,
+        311
+      ]
+    ],
+    "source_page_range": [
+      65,
+      71
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a horizontal text box using the keyboard shortcut F2",
+    "main_steps": [
+      "Press F2.",
+      "Click on the blank slide canvas.",
+      "Type “Sample text box”."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Introduction"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 72,
+    "relevant_procedure": "Relevant procedure:\nUse the keyboard shortcut F2 to create a horizontal text box.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      72,
+      72
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a text box and apply a visible border, then set its text to two columns",
+    "main_steps": [
+      "Click the Insert Text Box tool on the Standard toolbar.",
+      "Click and drag on the slide to draw a text box.",
+      "Type the text “If you are using a vertical text box, it is the height that will increase as a single line when you enter text. If you click and drag using vertical text box, you set the height of the text box and the width of the text box automatically increases creating multiple vertical lines.”",
+      "Click the text box border to select it.",
+      "Right-click the text box border and click Line.",
+      "Select a visible line style.",
+      "Enter a line width greater than 0.35 cm.",
+      "Click OK.",
+      "Right-click inside the text box and click Text Attributes.",
+      "Click Text Columns.",
+      "Set Number of columns to 2.",
+      "Set Spacing to 0.50 cm.",
+      "Click OK.",
+      "Click outside the text box."
+    ],
+    "id": 0,
+    "section_title": "Working with text boxes",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Working with text boxes"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 86,
+    "relevant_procedure": "Relevant procedure:\n1. Click on Insert Text Box on the Standard or Drawing toolbar to create a text box.  \n2. Click and drag within the text box to set its width and height, or click in the slide to create a single-line text box and type text.  \n3. Click on the text box to select it; the border will appear.  \n4. Go to Format > Text Box and Shape > Line to open the Line dialog.  \n5. In the Line dialog, select a line style, enter a width for the border, and choose a color.  \n6. Click OK to apply the border.  \n7. Right-click in the text box and select Text Attributes to open the Text dialog.  \n8. Click on Text Columns in the Text dialog.  \n9. Enter the number of columns required in the Number of columns box.  \n10. Enter the spacing between columns in the Spacing box.  \n11. Click OK to apply the two-column text layout.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        101,
+        110
+      ]
+    ],
+    "source_page_range": [
+      72,
+      86
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a special character into a text box",
+    "main_steps": [
+      "Create a text box on the slide.",
+      "Click inside the text box so the text cursor is visible.",
+      "Type the text “Price ”.",
+      "Place the cursor after the space.",
+      "Click Insert on the menu bar.",
+      "Click Special Character.",
+      "Select the character “€” in the special characters dialog.",
+      "Click Insert."
+    ],
+    "id": 0,
+    "section_title": "Inserting text",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Inserting text"
+    ],
+    "section_start_page": 86,
+    "section_end_page": 89,
+    "relevant_procedure": "Relevant procedure:\n1. Click at the position in the text where the special character is to be inserted.  \n2. Go to Insert > Special Character on the Menu bar.  \n3. Select the font and character subset from the Font and Character drop-down lists.  \n4. Locate and select the desired special character from the available characters; the character appears in the preview box.  \n5. Click Insert to add the character at the cursor position.  \nAlternatively, double-click the selected special character to insert it and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        86,
+        89
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        89,
+        94
+      ]
+    ],
+    "source_page_range": [
+      86,
+      89
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a text box containing a sample paragraph",
+    "setup_steps": [
+      "Insert a new text box on the blank slide.",
+      "Type the text \"Direct formatting can be applied to characters words and sentences.\" into the text box."
+    ],
+    "main_task": "Open the Character dialog and apply character formatting to the word “characters”",
+    "main_steps": [
+      "Select the word “characters” in the text box.",
+      "Go to Format > Character.",
+      "In the Character dialog, open the Fonts page if needed.",
+      "Change the font size to 32 pt.",
+      "Click OK.",
+      "Click outside the text box."
+    ],
+    "id": 0,
+    "section_title": "Formatting text",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Formatting text"
+    ],
+    "section_start_page": 89,
+    "section_end_page": 94,
+    "relevant_procedure": "Relevant procedure:\n1) Select the word \"characters\" in the text box.  \n2) Open the Character dialog by right-clicking on the selected text and choosing Character from the context menu.  \n3) Use the formatting options in the Character dialog to apply desired character formatting (e.g., font, size, color, etc.).  \n4) Click OK to save the changes and close the dialog.  \n5) Click outside the text box to deselect it.",
+    "retrieved_page_ranges": [
+      [
+        94,
+        99
+      ],
+      [
+        89,
+        94
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      89,
+      94
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a bulleted list in a text box and change one list point to a lower outline level",
+    "main_steps": [
+      "Create a new text box on the slide.",
+      "Click inside the text box.",
+      "Click Toggle Unordered List on the Text Formatting toolbar.",
+      "Type “First item”.",
+      "Press Enter.",
+      "Type “Second item”.",
+      "Press Enter.",
+      "Type “Third item”.",
+      "Press Shift and Tab at the same time to decrease the indent level of the third list point."
+    ],
+    "id": 1,
+    "section_title": "Creating lists",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Creating lists"
+    ],
+    "section_start_page": 94,
+    "section_end_page": 99,
+    "relevant_procedure": "Relevant procedure:\n1. Click on the text box to select it.  \n2. Press Enter to create a new list point and start typing the first list item.  \n3. After completing the first list point, press Enter again to create a new list point.  \n4. Click on the Tab key to increase the indent level of a list point (demote it to a lower outline level).  \n5. Click outside the text box to deselect it.",
+    "retrieved_page_ranges": [
+      [
+        94,
+        99
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        72,
+        72
+      ]
+    ],
+    "source_page_range": [
+      94,
+      99
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a horizontal text callout and enter text in it",
+    "main_steps": [
+      "Click the Callouts for horizontal text tool on the Text toolbar.",
+      "Click and drag on the slide to draw a callout.",
+      "Double-click inside the callout box.",
+      "Type Horizontal text callout.",
+      "Click a blank area on the slide."
+    ],
+    "id": 0,
+    "section_title": "Text callouts",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Text callouts"
+    ],
+    "section_start_page": 99,
+    "section_end_page": 101,
+    "relevant_procedure": "Relevant procedure:\n1. Click on \"Callouts for horizontal text\" on the Text toolbar.  \n2. Click and drag on the slide to create the callout.  \n3. Double-click inside the callout box to enter text mode.  \n4. Type the desired text.  \n5. Click in a blank area of the slide to save the changes and exit text mode.",
+    "retrieved_page_ranges": [
+      [
+        99,
+        101
+      ],
+      [
+        101,
+        110
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        94,
+        99
+      ]
+    ],
+    "source_page_range": [
+      99,
+      101
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a fixed date field into the slide",
+    "main_steps": [
+      "Click the slide workspace.",
+      "Open the Insert menu.",
+      "Hover over Field.",
+      "Click Date (fixed)."
+    ],
+    "id": 0,
+    "section_title": "Tables",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Tables"
+    ],
+    "section_start_page": 101,
+    "section_end_page": 110,
+    "relevant_procedure": "Relevant procedure:\n1) Go to View > Master Slide to open Master View and enter master slide editing mode.  \n2) Click on Insert > Field on the menu bar.  \n3) Select \"Date (fixed)\" from the field options to insert a fixed date field.  \n4) Position and resize the field text box using the selection handles or by accessing the Position and Size dialog (via Format > Text Box and Shape > Position and Size or keyboard shortcut F4).  \n5) Click outside the field to exit edit mode and return to Normal View.",
+    "retrieved_page_ranges": [
+      [
+        110,
+        111
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        111,
+        115
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        29,
+        37
+      ]
+    ],
+    "source_page_range": [
+      101,
+      110
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a blank slide with a text box containing a web address",
+    "setup_steps": [
+      "Insert a new text box on the slide.",
+      "Type “https://example.com” into the text box."
+    ],
+    "main_task": "Create a hyperlink from the web address using the keyboard shortcut Ctrl+K",
+    "main_steps": [
+      "Select the text “https://example.com” in the text box.",
+      "Press Ctrl and K at the same time.",
+      "In the Hyperlink dialog, keep the web type selected and click Apply.",
+      "Click Close."
+    ],
+    "id": 0,
+    "section_title": "Using fields",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Using fields"
+    ],
+    "section_start_page": 110,
+    "section_end_page": 111,
+    "relevant_procedure": "Relevant procedure:\nPress Ctrl+K to open the Hyperlink dialog. Enter the web address in the URL text box and optionally enter a display text in the Text text box. Click Apply to insert the hyperlink into the slide. Close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        111,
+        115
+      ],
+      [
+        345,
+        345
+      ],
+      [
+        354,
+        359
+      ],
+      [
+        345,
+        346
+      ],
+      [
+        346,
+        350
+      ]
+    ],
+    "source_page_range": [
+      110,
+      111
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a document hyperlink into the current slide",
+    "main_steps": [
+      "Open the Hyperlink dialog with Ctrl+K.",
+      "Click the Document type on the left side.",
+      "Click the Path text box and type /tmp/example.odt.",
+      "Click the Target text box and type Slide 2.",
+      "Click the Text text box and type Open document.",
+      "Click Apply.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using hyperlinks",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Using hyperlinks"
+    ],
+    "section_start_page": 111,
+    "section_end_page": 115,
+    "relevant_procedure": "Relevant procedure:\n1) Select the slide where the hyperlink is to be inserted.  \n2) Go to Insert > Hyperlinks on the menu bar or press Ctrl+K (⌘+K on macOS) to open the Hyperlink dialog.  \n3) On the left side of the dialog, select the type of hyperlink (e.g., Internet, Document, Mail).  \n4) Enter the required details (e.g., URL, file path, recipient email, subject) in the appropriate fields.  \n5) Click Apply to insert the hyperlink into the slide. The hyperlink is placed in a text box.  \n6) Click Close or OK to close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        111,
+        115
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        249,
+        254
+      ],
+      [
+        270,
+        272
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      111,
+      115
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert an image into the presentation using the Insert Image file browser",
+    "main_steps": [
+      "Click the Insert menu.",
+      "Click Image.",
+      "In the file browser, navigate to the directory containing the image file.",
+      "Select an image file.",
+      "If Preview is not selected, click Preview.",
+      "Click Open."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Introduction"
+    ],
+    "section_start_page": 116,
+    "section_end_page": 116,
+    "relevant_procedure": "Relevant procedure:\n1) Select a slide in the presentation or insert a new slide.  \n2) Go to Insert > Image on the Menu bar.  \n3) Navigate to the directory containing the image file and select the image file.  \n4) If needed, click Preview to view a thumbnail of the selected image.  \n5) Click Open to place the image in the center of the slide and close the file browser.",
+    "retrieved_page_ranges": [
+      [
+        116,
+        116
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        247,
+        248
+      ],
+      [
+        118,
+        120
+      ],
+      [
+        249,
+        254
+      ]
+    ],
+    "source_page_range": [
+      116,
+      116
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a gallery image onto the slide",
+    "main_steps": [
+      "Click Insert on the menu bar.",
+      "Point to Media.",
+      "Click Gallery.",
+      "Click the Diagrams theme in the Gallery deck.",
+      "Click and drag the top-left diagram image onto the slide.",
+      "Release the mouse button."
+    ],
+    "id": 0,
+    "section_title": "Images",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Images"
+    ],
+    "section_start_page": 116,
+    "section_end_page": 118,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Gallery in the Sidebar.  \n2) Select a theme from the available themes.  \n3) Scroll through the images and select the required image.  \n4) Click, hold, and drag the image onto the slide. Release the hold to insert the image centrally.",
+    "retrieved_page_ranges": [
+      [
+        118,
+        120
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        116,
+        116
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        293,
+        298
+      ]
+    ],
+    "source_page_range": [
+      116,
+      118
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a new Gallery theme named “New Theme 1”",
+    "main_steps": [
+      "Click Insert on the menu bar.",
+      "Point to Media.",
+      "Click Gallery.",
+      "Click New at the bottom of the Gallery deck.",
+      "Click the General tab.",
+      "Click in the theme name text box.",
+      "Type New Theme 1.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Gallery themes",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Gallery themes"
+    ],
+    "section_start_page": 118,
+    "section_end_page": 120,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Gallery in the Sidebar.\n2) Click New at the bottom of the Gallery deck.\n3) Click on General in the Properties of New Theme dialog.\n4) Type \"New Theme 1\" in the text box.\n5) Click OK to save the new theme and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        118,
+        120
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        65,
+        71
+      ]
+    ],
+    "source_page_range": [
+      118,
+      120
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Crop the selected image using the Crop dialog and restore it with Original Size",
+    "main_steps": [
+      "Click the image to select it.",
+      "Click Format on the menu bar.",
+      "Point to Image.",
+      "Click Crop Dialog.",
+      "Click in the Left value box.",
+      "Type 1.00 cm.",
+      "Click in the Top value box.",
+      "Type 0.50 cm.",
+      "Click Original Size.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Formatting images",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Formatting images"
+    ],
+    "section_start_page": 120,
+    "section_end_page": 132,
+    "relevant_procedure": "Relevant procedure:\n1. Select the image to crop.  \n2. Go to Format > Image > Crop Dialog to open the Crop dialog.  \n3. In the Crop dialog, click on Original Size to restore the image to its original size.  \n4. Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        120,
+        132
+      ],
+      [
+        132,
+        135
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        149,
+        153
+      ],
+      [
+        153,
+        158
+      ]
+    ],
+    "source_page_range": [
+      120,
+      132
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the ImageMap dialog for a selected image and apply a hotspot link",
+    "main_steps": [
+      "Insert an image onto the slide and select it.",
+      "Click Tools on the menu bar.",
+      "Click ImageMap.",
+      "Click the Rectangle hotspot tool.",
+      "Drag on the image to draw a hotspot.",
+      "Click in the Address field and type \"https://example.com\".",
+      "Click in the Text field and type \"Example link\".",
+      "Click the Frame drop-down and select \"_self\".",
+      "Click Apply.",
+      "Click Save.",
+      "Type \"imagemap\" as the file name.",
+      "Click Save in the file browser.",
+      "Click Close."
+    ],
+    "id": 0,
+    "section_title": "Creating image maps",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Creating image maps"
+    ],
+    "section_start_page": 132,
+    "section_end_page": 135,
+    "relevant_procedure": "Relevant procedure:\n1. Select an image on a slide.  \n2. Go to Tools > ImageMap to open the ImageMap dialog.  \n3. Use the Rectangle, Ellipse, Polygon, or FreeForm Polygon tools to draw a hotspot on the image.  \n4. Click on the hotspot to select it.  \n5. In the Address field, enter a URL or an anchor address (e.g., file:///<path>/document_name#anchor_name).  \n6. In the Text field, enter text that appears when the cursor hovers over the hotspot.  \n7. In the Frame field, select the target frame (e.g., _self for default behavior).  \n8. Click Apply to save the hotspot settings.  \n9. Click Save to save the image map to a file and navigate to the desired folder.  \n10. Enter a name for the image map and click Save.  \n11. Click Close to exit the dialog.",
+    "retrieved_page_ranges": [
+      [
+        132,
+        135
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        354,
+        359
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      132,
+      135
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Show the Drawing toolbar in Impress",
+    "main_steps": [
+      "Click the View menu.",
+      "Click Toolbars.",
+      "Click Drawing."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Introduction"
+    ],
+    "section_start_page": 136,
+    "section_end_page": 136,
+    "relevant_procedure": "Relevant procedure:\n1. Select View > Toolbars > Drawing from the Menu bar.",
+    "retrieved_page_ranges": [
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        360,
+        363
+      ],
+      [
+        360,
+        360
+      ]
+    ],
+    "source_page_range": [
+      136,
+      136
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Show the Drawing toolbar",
+    "main_steps": [
+      "Click the View menu.",
+      "Click Toolbars.",
+      "Click Drawing."
+    ],
+    "id": 0,
+    "section_title": "Drawing toolbar",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Drawing toolbar"
+    ],
+    "section_start_page": 136,
+    "section_end_page": 142,
+    "relevant_procedure": "Relevant procedure:\n1. Select View > Toolbars from the Menu bar.  \n2. Click on \"Drawing\" in the list of toolbars to display it.",
+    "retrieved_page_ranges": [
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        360,
+        363
+      ],
+      [
+        360,
+        360
+      ]
+    ],
+    "source_page_range": [
+      136,
+      142
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Draw a freeform line on the slide",
+    "main_steps": [
+      "Click the triangle next to Curves and Polygons on the Drawing toolbar.",
+      "Click Freeform Line.",
+      "Click and hold on the slide.",
+      "Drag to draw a freeform line.",
+      "Release the mouse button to complete the drawing."
+    ],
+    "id": 0,
+    "section_title": "Creating lines and shapes",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Creating lines and shapes"
+    ],
+    "section_start_page": 142,
+    "section_end_page": 147,
+    "relevant_procedure": "Relevant procedure:\n1) Click the triangle ▼ next to Curves and Polygons on the Drawing toolbar to open the Curves and Polygons sub-toolbar.  \n2) Select Freeform Line or Freeform Line Filled.  \n3) Click and hold the cursor on the slide, then drag to draw the desired freeform line.  \n4) Release the cursor to complete the line.",
+    "retrieved_page_ranges": [
+      [
+        187,
+        194
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      142,
+      147
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with three separate shapes",
+    "setup_steps": [
+      "Open a new blank slide.",
+      "Insert a rectangle on the left side of the slide.",
+      "Insert an ellipse on the upper right side of the slide.",
+      "Insert a diamond below the other two shapes."
+    ],
+    "main_task": "Group the three shapes into one object",
+    "main_steps": [
+      "Hold down the Shift key and click the rectangle.",
+      "Hold down the Shift key and click the ellipse.",
+      "Hold down the Shift key and click the diamond.",
+      "Open the Format menu.",
+      "Point to Group.",
+      "Click Group."
+    ],
+    "id": 0,
+    "section_title": "Grouping objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Grouping objects"
+    ],
+    "section_start_page": 147,
+    "section_end_page": 149,
+    "relevant_procedure": "Relevant procedure:\n1. Select the three shapes on the slide.  \n2. Go to Format > Group > Group.  \n3. Alternatively, use the keyboard shortcut Ctrl+Shift+G.  \n4. The three shapes are now grouped into one object.",
+    "retrieved_page_ranges": [
+      [
+        173,
+        174
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        147,
+        149
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        149,
+        153
+      ]
+    ],
+    "source_page_range": [
+      147,
+      149
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Rotate a selected graphic object using the quick rotation handles",
+    "main_steps": [
+      "Click any graphic object on the slide to select it.",
+      "On the Line and Filling toolbar, click the triangle next to Transformations.",
+      "Click Rotate on the Transformations sub-toolbar.",
+      "Move the pointer over a corner selection handle.",
+      "Click and drag the corner handle to rotate the object.",
+      "Release the mouse button to finish the rotation."
+    ],
+    "id": 1,
+    "section_title": "Positioning and resizing graphic objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Positioning and resizing graphic objects"
+    ],
+    "section_start_page": 149,
+    "section_end_page": 153,
+    "relevant_procedure": "Relevant procedure:\n1) Select the graphic object to rotate.  \n2) On the Line and Filling toolbar, click the triangle ▼ next to Transformations, then click Rotate.  \n3) Move the cursor over one of the corner selection handles; the cursor shape changes to indicate movement direction.  \n4) Click and hold on a corner selection handle, then move in the desired direction to rotate the object.  \n5) Release the mouse button when the desired rotation is achieved.",
+    "retrieved_page_ranges": [
+      [
+        153,
+        158
+      ],
+      [
+        149,
+        153
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      149,
+      153
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with one rectangle",
+    "setup_steps": [
+      "Insert a rectangle on the blank slide."
+    ],
+    "main_task": "Open the Transformations toolbar and distort the rectangle with the Distort tool",
+    "main_steps": [
+      "Click the rectangle to select it.",
+      "Go to View > Toolbars > Transformations.",
+      "Click Distort on the Transformations toolbar.",
+      "Click Yes in the conversion dialog.",
+      "Drag a corner selection handle to distort the rectangle."
+    ],
+    "id": 0,
+    "section_title": "Applying special effects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Applying special effects"
+    ],
+    "section_start_page": 153,
+    "section_end_page": 158,
+    "relevant_procedure": "Relevant procedure:\n1) Select the rectangle on the slide.  \n2) Go to View > Toolbars > Transformations to open the Transformations toolbar.  \n3) Click on Distort in the Transformations toolbar.  \n4) Click Yes to convert the object to a curve if prompted.  \n5) Click and drag a corner selection handle to distort the object using the opposite corner as an anchor point.",
+    "retrieved_page_ranges": [
+      [
+        153,
+        158
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        379,
+        379
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        142,
+        147
+      ]
+    ],
+    "source_page_range": [
+      153,
+      158
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "Create two selectable objects on a blank slide",
+    "setup_steps": [
+      "Insert a new blank slide.",
+      "Draw two separate rectangle objects on the slide."
+    ],
+    "main_task": "Align the two rectangles to the left",
+    "main_steps": [
+      "Select both rectangles.",
+      "Click the triangle next to the Align Objects button.",
+      "Click Left."
+    ],
+    "id": 0,
+    "section_title": "Aligning objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Aligning objects"
+    ],
+    "section_start_page": 158,
+    "section_end_page": 158,
+    "relevant_procedure": "Relevant procedure:\n1. Select both rectangles.\n2. Click on the \"Left\" button on the Align Objects toolbar or click on the triangle ▼ next to \"Align Objects\" on the Line and Filling toolbar and select \"Left\" from the dropdown menu.",
+    "retrieved_page_ranges": [
+      [
+        158,
+        158
+      ],
+      [
+        158,
+        163
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        72,
+        86
+      ]
+    ],
+    "source_page_range": [
+      158,
+      158
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two simple shapes on a blank slide",
+    "setup_steps": [
+      "Insert a rectangle shape on the slide.",
+      "Insert a second rectangle shape on the slide."
+    ],
+    "main_task": "Align the two rectangles to the left",
+    "main_steps": [
+      "Select both rectangle shapes.",
+      "Open the Align Objects options.",
+      "Choose the Left alignment option."
+    ],
+    "id": 0,
+    "section_title": "Using grid or snap functions",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using grid or snap functions"
+    ],
+    "section_start_page": 158,
+    "section_end_page": 163,
+    "relevant_procedure": "Relevant procedure:\n1. Select both rectangles.\n2. Click on the \"Left\" button on the Align Objects toolbar or click on the triangle ▼ next to \"Align Objects\" on the Line and Filling toolbar and select \"Left\" from the dropdown menu.",
+    "retrieved_page_ranges": [
+      [
+        158,
+        158
+      ],
+      [
+        158,
+        163
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        72,
+        86
+      ]
+    ],
+    "source_page_range": [
+      158,
+      163
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two overlapping shapes on a blank slide",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle shape on the slide.",
+      "Insert a circle shape so that it overlaps the rectangle."
+    ],
+    "main_task": "Move the overlapping shapes backward or forward using Arrange",
+    "main_steps": [
+      "Select the front shape.",
+      "Open Format > Arrange on the menu bar.",
+      "Click an arrange option that changes the selected shape's stack level."
+    ],
+    "id": 0,
+    "section_title": "Using Helplines",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using Helplines"
+    ],
+    "section_start_page": 163,
+    "section_end_page": 164,
+    "relevant_procedure": "Relevant procedure:\n1. Select the shape(s) that are overlapping.  \n2. Right-click on the selected shape(s) and choose \"Arrange\" from the context menu.  \n3. Choose one of the following options to move the shape backward or forward:  \n   - \"Bring Forward\" to move the selected shape one level up in the stack.  \n   - \"Send Backward\" to move the selected shape one level down in the stack.  \n   - \"Bring to Front\" to move the selected shape in front of all other objects.  \n   - \"Send to Back\" to move the selected shape behind all other objects.  \n4. Alternatively, use the keyboard shortcuts:  \n   - Ctrl+Shift++ (macOS ⌘+Shift++) to bring to front.  \n   - Ctrl++ (macOS ⌘++) to bring forward.  \n   - Ctrl+– (macOS ⌘+–) to send backward.  \n   - Ctrl+Shift+– (macOS ⌘+Shift+–) to send to back.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        158,
+        158
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        147,
+        149
+      ]
+    ],
+    "source_page_range": [
+      163,
+      164
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Move a selected object behind all other objects using the Arrange menu",
+    "main_steps": [
+      "Insert two overlapping shapes on the slide.",
+      "Click the front shape to select it.",
+      "Open the Format menu.",
+      "Point to Arrange.",
+      "Click Send to Back."
+    ],
+    "id": 0,
+    "section_title": "Arranging objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Arranging objects"
+    ],
+    "section_start_page": 164,
+    "section_end_page": 165,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object to move behind all other objects.  \n2. Go to Format > Arrange on the menu bar.  \n3. Choose \"Send to Back\" from the dropdown menu.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        149,
+        153
+      ],
+      [
+        158,
+        158
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      164,
+      165
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two overlapping objects on a blank slide",
+    "setup_steps": [
+      "Insert a rectangle on the slide.",
+      "Insert a second rectangle that overlaps the first rectangle."
+    ],
+    "main_task": "Move the selected rectangle in front of all other objects",
+    "main_steps": [
+      "Click the back rectangle to select it.",
+      "Press Ctrl, Shift, and + at the same time."
+    ],
+    "id": 0,
+    "section_title": "Connectors and gluepoints",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Connectors and gluepoints"
+    ],
+    "section_start_page": 165,
+    "section_end_page": 171,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle.  \n2. Go to Format > Arrange > Bring to Front.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        153,
+        158
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        149,
+        153
+      ]
+    ],
+    "source_page_range": [
+      165,
+      171
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a simple drawing object to convert",
+    "setup_steps": [
+      "Click the rectangle tool on the Drawing toolbar.",
+      "Draw a rectangle on the slide."
+    ],
+    "main_task": "Convert the rectangle to a 3D object",
+    "main_steps": [
+      "Click the rectangle to select it.",
+      "Go to Format > Convert on the menu bar.",
+      "Click To 3-D."
+    ],
+    "id": 0,
+    "section_title": "Working with 3D objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Working with 3D objects"
+    ],
+    "section_start_page": 171,
+    "section_end_page": 173,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle on the slide.  \n2. Right-click on the rectangle and select Convert > To 3D from the context menu.  \n3. The rectangle is converted to a 3D object.",
+    "retrieved_page_ranges": [
+      [
+        173,
+        174
+      ],
+      [
+        171,
+        173
+      ],
+      [
+        153,
+        158
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        165,
+        171
+      ]
+    ],
+    "source_page_range": [
+      171,
+      173
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Assign a slide interaction to an object",
+    "main_steps": [
+      "Draw a simple shape on the blank slide.",
+      "Select the shape.",
+      "Open the Interaction dialog from the Format menu.",
+      "Click the Action at mouse click drop-down.",
+      "Select Go to next slide.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Converting objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Converting objects"
+    ],
+    "section_start_page": 173,
+    "section_end_page": 174,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object on the slide to which you want to assign an interaction.  \n2. Right-click on the object and select \"Interaction\" from the context menu, or go to Format > Interaction on the Menu bar to open the Interaction dialog.  \n3. Select an interaction from the \"Action at mouse click\" drop-down list.  \n4. Click OK to save the changes and close the Interaction dialog.",
+    "retrieved_page_ranges": [
+      [
+        288,
+        289
+      ],
+      [
+        174,
+        175
+      ],
+      [
+        289,
+        293
+      ],
+      [
+        281,
+        288
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      173,
+      174
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a Fontwork object and replace its default text with \"Hello\"",
+    "main_steps": [
+      "Click the Insert menu.",
+      "Click Fontwork.",
+      "Select a Fontwork style in the gallery.",
+      "Click OK.",
+      "Double-click the Fontwork text object.",
+      "Type Hello.",
+      "Press Esc."
+    ],
+    "id": 1,
+    "section_title": "Interaction with objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Interaction with objects"
+    ],
+    "section_start_page": 174,
+    "section_end_page": 175,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Insert > Fontwork on the menu bar to open the Fontwork Gallery dialog.  \n2) Select a Fontwork style from the dialog and click OK. The selected Fontwork appears centrally on the slide.  \n3) Double-click on the Fontwork text graphic to switch to editing mode.  \n4) Type \"Hello\" in the text field to replace the default text.  \n5) Press the Esc key or click outside the Fontwork graphic to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        175,
+        178
+      ],
+      [
+        174,
+        175
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        197,
+        213
+      ]
+    ],
+    "source_page_range": [
+      174,
+      175
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a text object for Fontwork",
+    "setup_steps": [
+      "Insert a new text box on the blank slide.",
+      "Type “Impress Guide 7.5” into the text box."
+    ],
+    "main_task": "Convert the text into Fontwork using the selected style and replace the default text with the prepared text",
+    "main_steps": [
+      "Select the text box.",
+      "Click Insert on the menu bar.",
+      "Click Fontwork.",
+      "Select the Fontwork style labeled “Simple”.",
+      "Click OK.",
+      "Double-click the Fontwork text graphic.",
+      "Press Ctrl and A at the same time.",
+      "Type “Impress Guide 7.5”.",
+      "Press the Esc key."
+    ],
+    "id": 0,
+    "section_title": "Fontwork",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Fontwork"
+    ],
+    "section_start_page": 175,
+    "section_end_page": 178,
+    "relevant_procedure": "Relevant procedure:\n1. Go to Insert > Fontwork on the Menu bar to open the Fontwork Gallery dialog.  \n2. Select a Fontwork style from the dialog and click OK. The selected Fontwork appears centrally on the slide.  \n3. Double-click on the Fontwork text graphic to switch to editing mode.  \n4. Type the prepared text to replace the default text in the Fontwork graphic.  \n5. Press the Esc key or click outside the Fontwork graphic to finalize the replacement.",
+    "retrieved_page_ranges": [
+      [
+        175,
+        178
+      ],
+      [
+        89,
+        94
+      ],
+      [
+        60,
+        65
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        72,
+        86
+      ]
+    ],
+    "source_page_range": [
+      175,
+      178
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a title and a text object for animation",
+    "setup_steps": [
+      "Open a new blank presentation slide.",
+      "Insert a text box on the slide.",
+      "Type “Animated Text” in the text box."
+    ],
+    "main_task": "Apply an animation effect to the text box and preview it",
+    "main_steps": [
+      "Click the text box to select it.",
+      "Open the Animation deck on the Sidebar.",
+      "Click Add Effect.",
+      "Select a category from the Category drop-down list.",
+      "Select an animation effect from the Effects list.",
+      "Set Start to On click.",
+      "Enter 2 in the Duration box.",
+      "Enter 1 in the Delay box.",
+      "Click Play to preview the animation."
+    ],
+    "id": 0,
+    "section_title": "Animations",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Animations"
+    ],
+    "section_start_page": 178,
+    "section_end_page": 186,
+    "relevant_procedure": "Relevant procedure:\n1) Click on a text box to select it.  \n2) Right-click on the text box and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Animation in the Text dialog.  \n4) Select an animation effect from the available options in the Effect drop-down list (e.g., Blink, Scroll Through, Scroll Back and Forth, Scroll In).  \n5) Set the Direction of the animation using one of the four arrow options.  \n6) Select Start inside to begin the animation from within the text box.  \n7) Set the Animation cycles to Continuous or specify a number of cycles.  \n8) Enter a Delay value in seconds if needed.  \n9) Click OK to save the animation effect and close the dialog.  \n10) Click outside the text box to exit edit mode.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        175,
+        178
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        178,
+        186
+      ]
+    ],
+    "source_page_range": [
+      178,
+      186
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a line on a blank slide",
+    "setup_steps": [
+      "Click the Line tool.",
+      "Drag on the slide to draw a straight line."
+    ],
+    "main_task": "Format the selected line using the Line and Filling toolbar",
+    "main_steps": [
+      "Click the line to select it.",
+      "Open the Line Style drop-down list and choose a dashed style.",
+      "Click the Line Width text box and type 0.05 cm.",
+      "Click the triangle to the right of Line Color and select a green color.",
+      "Open the left Arrow Style drop-down list and select an arrowhead.",
+      "Open the right Arrow Style drop-down list and select an arrowhead.",
+      "Click Shadow to turn on the shadow.",
+      "Click on an empty area of the slide to deselect the line."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Introduction"
+    ],
+    "section_start_page": 187,
+    "section_end_page": 187,
+    "relevant_procedure": "Relevant procedure:\n1) Ensure a line is selected on the slide.  \n2) Click on the Line Style drop-down list and select a line style.  \n3) Type a line width in the Line Width text box or use the up and down arrows to adjust the width.  \n4) Click on the triangle ▼ to the right of Line Color and select a color from the available palettes.  \n5) If needed, select an arrowhead style from the Arrow Style drop-down list: choose the left list to add an arrowhead to the start of the line, or the right list to add one to the end.  \n6) If desired, click on Shadow to apply a shadow to the line.  \n7) Deselect the line to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        187,
+        194
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        197,
+        213
+      ]
+    ],
+    "source_page_range": [
+      187,
+      187
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a new line style named “MyLineStyle” in the Line dialog",
+    "main_steps": [
+      "Draw a line on the slide.",
+      "Right-click the line.",
+      "Click “Line”.",
+      "Click the “Line Styles” tab.",
+      "Click “Add”.",
+      "Type “MyLineStyle” in the name dialog.",
+      "Click “OK”.",
+      "Select “Dots” in both Type drop-down lists.",
+      "Set Number to “3” in both Number fields.",
+      "Set Spacing to “20” in both Spacing fields.",
+      "Click “OK”.",
+      "Deselect the line."
+    ],
+    "id": 0,
+    "section_title": "Working with lines",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with lines"
+    ],
+    "section_start_page": 187,
+    "section_end_page": 194,
+    "relevant_procedure": "Relevant procedure:\n1) Open the Line dialog using one of the following methods:  \n   - Go to Format > Text Box and Shape > Line  \n   - Right-click on a line and select Line from the context menu  \n   - Click on Line Styles in the Line dialog to open the Line Styles page  \n\n2) In the Line dialog, click on Line Styles to open the Line Styles page.  \n\n3) Select a predefined line style from the Line style drop-down list that is similar to the desired style.  \n\n4) Click Add.  \n\n5) Type \"MyLineStyle\" in the Name dialog that opens, then click OK.  \n\n6) In the Type drop-down lists, select Dots or Dash. For lines with only dots or dashes, select the same type in both Type boxes.  \n\n7) In Number, specify the number of dots or dashes required. For different sized groups of dots or dashes, set a different quantity number in each Number box.  \n\n8) In Length, specify the length percentage for dashes. Length is not available if Dots has been selected for Type.  \n\n9) In Spacing, set a spacing percentage between the dots and/or dashes.  \n\n10) If necessary, select Fit to line width so that the new style fits the width of the selected line.  \n\n11) Click OK to save any changes and close the Line dialog.",
+    "retrieved_page_ranges": [
+      [
+        187,
+        194
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        220,
+        224
+      ],
+      [
+        197,
+        213
+      ]
+    ],
+    "source_page_range": [
+      187,
+      194
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a rectangle to format with an area fill",
+    "setup_steps": [
+      "Insert a rectangle on the blank slide."
+    ],
+    "main_task": "Apply a solid color area fill to the rectangle using the Area dialog",
+    "main_steps": [
+      "Select the rectangle.",
+      "Open the Area dialog from Format > Text Box and Shape > Area.",
+      "Click the Area tab if it is not already open.",
+      "Click Color.",
+      "Open the Palette drop-down list and select libreoffice.",
+      "Click a blue color swatch in the palette.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using area fills",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Using area fills"
+    ],
+    "section_start_page": 194,
+    "section_end_page": 197,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle so that the selection handles are displayed.  \n2. Open the Area dialog by right-clicking on the rectangle and selecting \"Area\" from the context menu.  \n3. Click on \"Area\" to open the Area page.  \n4. Click on \"Color\" to open the color fill options.  \n5. In the Palette dropdown, select a color palette and choose a color from the available colors.  \n6. Alternatively, enter RGB or Hex values in the appropriate text box, or click \"Pick\" to select a color using the Pick a Color dialog.  \n7. Click OK to close the Area dialog and save the changes.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        213,
+        215
+      ],
+      [
+        187,
+        194
+      ]
+    ],
+    "source_page_range": [
+      194,
+      197
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply a background image fill to the selected object",
+    "main_steps": [
+      "Insert a shape onto the blank slide and select it.",
+      "Open the Area dialog.",
+      "Click the Area tab.",
+      "Click Use Background.",
+      "Click OK.",
+      "Click anywhere outside the object to deselect it."
+    ],
+    "id": 1,
+    "section_title": "Working with area fill types",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with area fill types"
+    ],
+    "section_start_page": 197,
+    "section_end_page": 213,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object where you want to apply the background image fill.\n2. Open the Area dialog by clicking on \"More Options\" in the Area panel of the Properties deck on the Sidebar, or by right-clicking the object and selecting \"Area\".\n3. In the Area dialog, click on \"Image\" to open the image fill options.\n4. Select the desired image from the list of available images in the Image section, or click \"Add/Import\" to browse and select an image file.\n5. Click OK to save the changes and close the Area dialog. The background image fill will now be applied to the selected object.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      197,
+      213
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "Create a simple shape to format",
+    "setup_steps": [
+      "Insert a rectangle on the blank slide.",
+      "Keep the rectangle selected."
+    ],
+    "main_task": "Apply a shadow to the selected rectangle using the Area dialog",
+    "main_steps": [
+      "Open the Area dialog.",
+      "Click the Shadow tab.",
+      "Select the Use shadow checkbox.",
+      "Click the bottom-right point in the position grid.",
+      "Open the Color drop-down list and select Blue Accent.",
+      "Click in the Distance box and type 5.50 mm.",
+      "Click in the Blur box and type 0 pt.",
+      "Click in the Transparency box and type 0%.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with shadows",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with shadows"
+    ],
+    "section_start_page": 213,
+    "section_end_page": 215,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle to which a shadow will be applied.  \n2. Open the Area dialog by clicking on Format > Text Box and Shape > Area.  \n3. Click on the Shadow page in the Area dialog.  \n4. Select the option \"Use shadow\" to enable the shadow.  \n5. Choose a direction for the shadow from one of the nine points in the Position grid.  \n6. Select a color for the shadow from the available color palettes in the Color field.  \n7. Enter a distance value in the Distance field to set the offset between the rectangle and its shadow.  \n8. Enter a blur value in the Blur field to soften the shadow edges (0 for sharp, higher values for softer).  \n9. Enter a transparency percentage in the Transparency field (0% for opaque, 100% for fully transparent).  \n10. Click OK to apply and save the shadow settings.",
+    "retrieved_page_ranges": [
+      [
+        213,
+        215
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        194,
+        197
+      ]
+    ],
+    "source_page_range": [
+      213,
+      215
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a rectangle object on the slide",
+    "setup_steps": [
+      "Click the rectangle drawing tool.",
+      "Drag on the blank slide to draw one rectangle."
+    ],
+    "main_task": "Apply a shadow to the rectangle using the Line and Filling toolbar",
+    "main_steps": [
+      "Click the rectangle to select it.",
+      "Click Shadow on the Line and Filling toolbar.",
+      "Click on a blank area of the slide to deselect the rectangle."
+    ],
+    "id": 0,
+    "section_title": "Working with transparencies",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with transparencies"
+    ],
+    "section_start_page": 215,
+    "section_end_page": 216,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle object.  \n2. Click on Shadow in the Line and Filling toolbar.  \n3. Deselect the rectangle to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        213,
+        215
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        187,
+        194
+      ]
+    ],
+    "source_page_range": [
+      215,
+      216
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a text-containing object",
+    "setup_steps": [
+      "Insert a text box on the slide.",
+      "Type the text “Sample text” in the text box.",
+      "Click outside the text box."
+    ],
+    "main_task": "Set the text columns for the object to 2 columns with 0.5 cm spacing",
+    "main_steps": [
+      "Select the text box.",
+      "Open Format > Text Box and Shape > Text Attributes.",
+      "Click the Text Columns tab.",
+      "Type 2 in the Number of columns box.",
+      "Type 0.5 cm in the Spacing box.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Text in objects",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Text in objects"
+    ],
+    "section_start_page": 216,
+    "section_end_page": 219,
+    "relevant_procedure": "Relevant procedure:\n1) Click in the text box to select it so that the selection handles are displayed.  \n2) Right-click in the text box and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Columns to open the Text Columns page in the Text dialog.  \n4) Enter 2 in the Number of columns text box.  \n5) Enter 0.5 in the Spacing text box.  \n6) Click OK to save the changes and close the Text dialog.  \n7) Click outside the text box to deselect it.",
+    "retrieved_page_ranges": [
+      [
+        219,
+        220
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        89,
+        94
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        101,
+        110
+      ]
+    ],
+    "source_page_range": [
+      216,
+      219
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Add text columns to the selected object",
+    "main_steps": [
+      "Select the object that contains text.",
+      "Open the Text dialog.",
+      "Click the Text Columns tab.",
+      "Enter 2 in the Number of columns box.",
+      "Enter 0.50 cm in the Spacing box.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Formatting connectors",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Formatting connectors"
+    ],
+    "section_start_page": 219,
+    "section_end_page": 220,
+    "relevant_procedure": "Relevant procedure:\n1) Select the object where text columns are to be added.  \n2) Right-click on the object and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Columns in the Text dialog to open the Text Columns page.  \n4) Enter the number of columns required in the Number of columns box.  \n5) Enter the spacing between columns in the Spacing box.  \n6) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        216,
+        219
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      219,
+      220
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Connector dialog and set connector spacing options",
+    "main_steps": [
+      "Create a connector on the slide.",
+      "Right-click the connector.",
+      "Click Connector.",
+      "Open the Type drop-down list and select the first connector type shown.",
+      "Click the Line Skew field and type 0.",
+      "Click the Line Spacing field and type 0.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with drawing styles",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with drawing styles"
+    ],
+    "section_start_page": 220,
+    "section_end_page": 224,
+    "relevant_procedure": "Relevant procedure:\n1) Right-click on a connector and select Connector from the context menu to open the Connector dialog.  \n2) In the Connector dialog, set the Line Spacing value under the Line Spacing section to define the horizontal and vertical space between the connector and the object at each end.  \n3) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        165,
+        171
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        164,
+        165
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        163,
+        164
+      ]
+    ],
+    "source_page_range": [
+      220,
+      224
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open Slide Sorter view and the Slide Show Settings dialog",
+    "main_steps": [
+      "Click the View menu.",
+      "Click Slide Sorter.",
+      "Click the Slide Show menu.",
+      "Click Slide Show Settings."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Introduction"
+    ],
+    "section_start_page": 273,
+    "section_end_page": 273,
+    "relevant_procedure": "Relevant procedure:\n1) Click on the Slide Sorter tab at the top of the Workspace to open Slide Sorter view.  \n2) Go to Slide Show > Slide Show Settings on the Menu bar to open the Slide Show Settings dialog.",
+    "retrieved_page_ranges": [
+      [
+        273,
+        273
+      ],
+      [
+        273,
+        279
+      ],
+      [
+        350,
+        354
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        19,
+        26
+      ]
+    ],
+    "source_page_range": [
+      273,
+      273
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a custom slide show named “Demo Show” from the existing slides and start it",
+    "main_steps": [
+      "Click the Slide Show menu.",
+      "Click Custom Slide Show.",
+      "Click New.",
+      "Click the Name text box.",
+      "Type “Demo Show”.",
+      "In the Existing slides list, click the first slide.",
+      "Hold Shift and click the last slide.",
+      "Click the >> button.",
+      "Click OK.",
+      "Click Start.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Creating slide shows",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Creating slide shows"
+    ],
+    "section_start_page": 273,
+    "section_end_page": 279,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Slide Show > Custom Slide Show on the menu bar to open the Custom Slide Shows dialog.  \n2) Click on New to open the Define Custom Slide Show dialog.  \n3) Enter \"Demo Show\" in the Name text box.  \n4) In the Existing slides box, select the slides to include in the custom slide show by clicking on individual slides or using Ctrl (or Cmd on macOS) to select multiple non-consecutive slides.  \n5) Click on >> to move the selected slides to the Selected slides box.  \n6) Rearrange the slide order in the Selected slides box by dragging a slide to a new position.  \n7) Click OK to close the Define Custom Slide Show dialog.  \n8) Click on Start in the Custom Slide Shows dialog to test the custom slide show.  \n9) Click OK to save the custom slide show and close the Custom Slide Shows dialog.  \n10) Click on Start in the Custom Slide Shows dialog again to begin the slide show named \"Demo Show\".",
+    "retrieved_page_ranges": [
+      [
+        273,
+        279
+      ],
+      [
+        273,
+        273
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        289,
+        293
+      ],
+      [
+        249,
+        254
+      ]
+    ],
+    "source_page_range": [
+      273,
+      279
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply a slide transition to the selected slide and set it to advance automatically after 1.00 second",
+    "main_steps": [
+      "Click the Slide Transition icon in the Sidebar.",
+      "Click the slide thumbnail in the Slides pane to select it.",
+      "Click the Fade transition in the Slide Transition list.",
+      "Click the After option in Advance Slide.",
+      "Click in the After time box.",
+      "Type 1.00",
+      "Press Enter.",
+      "Click the Automatic Preview checkbox."
+    ],
+    "id": 0,
+    "section_title": "Slide transitions",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Slide transitions"
+    ],
+    "section_start_page": 279,
+    "section_end_page": 281,
+    "relevant_procedure": "Relevant procedure:\n1. Click on Slide Transition in the Sidebar to open the Slide Transition deck.  \n2. In the Slides pane or Slide Sorter view, select the slide to which you want to apply the transition.  \n3. Click on a transition effect from the list in the Slide Transition deck to apply it to the selected slide.  \n4. In the Modify Transition section, select a duration from the drop-down list and set it to 1.00 second.  \n5. In the Advance Slide section, select \"After\" and enter 1.00 in the time field to advance the slide automatically after 1.00 second.  \n6. Click on Play in the Advance Slide section to preview how the transition looks.",
+    "retrieved_page_ranges": [
+      [
+        279,
+        281
+      ],
+      [
+        281,
+        288
+      ],
+      [
+        37,
+        40
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        29,
+        37
+      ]
+    ],
+    "source_page_range": [
+      279,
+      281
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Set an animation effect on a slide element and open the timing options",
+    "main_steps": [
+      "Click the Normal tab at the top of the workspace.",
+      "Click Animation in the Sidebar.",
+      "Click a slide element on the slide.",
+      "Click Add Effect in the Animation deck.",
+      "Open the Category drop-down list and select Entrance.",
+      "Open the Effect drop-down list and select Venetian Blinds.",
+      "Open the Start drop-down list and select On click.",
+      "Open the Direction drop-down list and select Vertical.",
+      "Click the Timing tab in the Effect Options dialog.",
+      "Set Delay to 3.0 sec.",
+      "Set Duration to 0.50 sec.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Animations",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Animations"
+    ],
+    "section_start_page": 281,
+    "section_end_page": 288,
+    "relevant_procedure": "Relevant procedure:\n1. Go to View > Normal to open Normal view.  \n2. Select the slide containing the element to animate.  \n3. On the Sidebar, select Animation to open the Animation deck.  \n4. Select the slide element to animate.  \n5. Click on Add Effect to open the animation options.  \n6. In the Category drop-down list, select Entrance.  \n7. In the Effect drop-down list, select the desired animation effect.  \n8. Set the Start option (e.g., On click or After previous).  \n9. Set the Direction option as required.  \n10. Enter the Duration in seconds in the Duration box.  \n11. Enter the Delay in seconds in the Delay box.  \n12. Click on Play to preview the animation.  \n13. Open the Timing options by clicking on Options to the right of the Direction drop-down list, then navigate to the Timing page to adjust Start, Delay, Duration, and Repeat settings as needed.",
+    "retrieved_page_ranges": [
+      [
+        288,
+        289
+      ],
+      [
+        281,
+        288
+      ],
+      [
+        178,
+        186
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        279,
+        281
+      ]
+    ],
+    "source_page_range": [
+      281,
+      288
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Interaction dialog for a selected object and set an interaction action",
+    "main_steps": [
+      "Open the View menu and choose Normal.",
+      "Select a slide in the workspace.",
+      "Click an object on the slide.",
+      "Right-click the object.",
+      "Click Interaction.",
+      "Open the Action at mouse click drop-down list.",
+      "Select an interaction option from the list.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using interactions",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Using interactions"
+    ],
+    "section_start_page": 288,
+    "section_end_page": 289,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object to which you want to assign an interaction.  \n2. Right-click on the object and select \"Interaction\" from the context menu.  \n3. In the Interaction dialog, select the desired interaction from the \"Action at mouse click\" options.  \n4. If applicable, configure any parameters (e.g., target, document, sound file, or program).  \n5. Click OK to save the interaction and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        174,
+        175
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        289,
+        293
+      ],
+      [
+        173,
+        174
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      288,
+      289
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Photo Album dialog from the menu bar",
+    "main_steps": [
+      "Click the Insert menu.",
+      "Hover over Media.",
+      "Click Photo Album."
+    ],
+    "id": 0,
+    "section_title": "Slide shows",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Slide shows"
+    ],
+    "section_start_page": 289,
+    "section_end_page": 293,
+    "relevant_procedure": "Relevant procedure:\nGo to Insert > Media > Photo Album on the Menu bar.",
+    "retrieved_page_ranges": [
+      [
+        293,
+        298
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        118,
+        120
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        354,
+        359
+      ]
+    ],
+    "source_page_range": [
+      289,
+      293
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply a soft frame to the selected photo in the photo album",
+    "main_steps": [
+      "Click the slide containing the photo to select it.",
+      "In the Sidebar, expand the Effect panel.",
+      "In the Glow section, click the Radius value box and enter 6 pt.",
+      "In the Glow section, open the Color drop-down list and select Red.",
+      "In the Glow section, click the Transparency value box and enter 0%.",
+      "In the Soft Edge section, click the Radius value box and enter 0 pt."
+    ],
+    "id": 0,
+    "section_title": "Photo albums",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Photo albums"
+    ],
+    "section_start_page": 293,
+    "section_end_page": 298,
+    "relevant_procedure": "Relevant procedure:\n1) Select a slide in the photo album containing the photo to which you want to apply a soft frame.  \n2) Open the Sidebar and navigate to the Properties deck.  \n3) In the Properties deck, click on the Image panel to access image formatting options.  \n4) Click on the Effect panel in the Properties deck.  \n5) In the Effect panel, adjust the following settings to apply a soft frame:  \n   - Set the Glow Radius to a desired value to create a soft outer glow.  \n   - Select a Glow Color from the available color palettes.  \n   - Enter a Glow Transparency value (e.g., 50%) to adjust how visible the soft frame is.  \n   - Adjust the Soft Edge Radius to reduce the internal width of the soft frame and make the photo appear smaller.  \n6) Click outside the image to deselect it and save the presentation.",
+    "retrieved_page_ranges": [
+      [
+        120,
+        132
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      293,
+      298
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Open the LibreOffice Options dialog on the User Data page",
+    "setup_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Click the expansion marker next to LibreOffice in the left pane.",
+      "Click User Data."
+    ],
+    "main_task": "Edit the User Data details and confirm the changes",
+    "main_steps": [
+      "Click the First/last name field and type \"Peter\".",
+      "Click the Last name field and type \"Schofield\".",
+      "Click the Initials field and type \"PS\".",
+      "Click the Company field and type \"The Document Foundation\".",
+      "Click the Title/position field and type \"Technical Writer\".",
+      "Click the adjacent field to the right of Title/position and type \"LO Documentation Team\".",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Introduction"
+    ],
+    "section_start_page": 322,
+    "section_end_page": 322,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options on the menu bar to open the Options LibreOffice dialog.  \n2) Click the expansion marker next to LibreOffice and select User Data.  \n3) Edit the first name, last name, and initials in the User Data section.  \n4) Click OK to save the changes and close the Options dialog.",
+    "retrieved_page_ranges": [
+      [
+        322,
+        322
+      ],
+      [
+        227,
+        238
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        197,
+        213
+      ]
+    ],
+    "source_page_range": [
+      322,
+      322
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change the LibreOffice application color for Impress grid points",
+    "main_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Click the expansion marker next to LibreOffice in the left panel.",
+      "Click Application Colors.",
+      "Scroll down in Custom Colors to Drawing/Presentation.",
+      "Click the color setting drop-down for Grid.",
+      "Select a color from the list.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "LibreOffice options",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "LibreOffice options"
+    ],
+    "section_start_page": 322,
+    "section_end_page": 327,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options on the menu bar to open the Options LibreOffice dialog.  \n2) Click on the expansion marker next to LibreOffice and select Application Colors.  \n3) In the Custom Colors section, scroll down to the Drawing/Presentation category.  \n4) Select a color from the available color palettes to use for the grid points.  \n5) Click OK to save the changes and close the Options dialog.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      322,
+      327
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Impress options dialog, switch to the Grid page, and enable Visible grid",
+    "main_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Click the expansion marker next to LibreOffice Impress in the left pane.",
+      "Click Grid.",
+      "Click the Visible grid checkbox.",
+      "Click OK."
+    ],
+    "id": 1,
+    "section_title": "Impress options",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Impress options"
+    ],
+    "section_start_page": 327,
+    "section_end_page": 332,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options on the Menu bar to open the Options LibreOffice dialog.  \n2) Click the expansion marker next to LibreOffice Impress on the left-hand side to open the list of sections.  \n3) Select Grid from the list of sections to switch to the Grid page.  \n4) Check the box for Visible grid to enable it.  \n5) Click OK to save the changes and close the Options LibreOffice dialog.",
+    "retrieved_page_ranges": [
+      [
+        327,
+        332
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        332,
+        333
+      ],
+      [
+        335,
+        335
+      ]
+    ],
+    "source_page_range": [
+      327,
+      332
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Impress print page options and enable printing hidden pages and the page name",
+    "main_steps": [
+      "Open the LibreOffice Impress Options dialog.",
+      "In the left pane, click “LibreOffice Impress” and then click “Print”.",
+      "In the Print section, click the checkbox for “Page name”.",
+      "In the Print section, click the checkbox for “Hidden pages”."
+    ],
+    "id": 0,
+    "section_title": "Customizing user interface",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Customizing user interface"
+    ],
+    "section_start_page": 332,
+    "section_end_page": 333,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options (macOS LibreOffice > Preferences) to open the Options LibreOffice dialog.  \n2) Click the expansion marker next to LibreOffice Impress and select Print.  \n3) In the Print page, ensure the \"Hidden pages\" option is checked to print hidden pages.  \n4) Ensure the \"Page name\" option is checked to print the page name.  \n5) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        332,
+        333
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        311,
+        313
+      ],
+      [
+        322,
+        322
+      ]
+    ],
+    "source_page_range": [
+      332,
+      333
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the LibreOffice extension repository website",
+    "main_steps": [
+      "Click the address bar.",
+      "Type \"https://extensions.libreoffice.org/\".",
+      "Press Enter."
+    ],
+    "id": 0,
+    "section_title": "Adding extensions",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Adding extensions"
+    ],
+    "section_start_page": 333,
+    "section_end_page": 334,
+    "relevant_procedure": "Relevant procedure:\nOpen a web browser and navigate to https://extensions.libreoffice.org/",
+    "retrieved_page_ranges": [
+      [
+        333,
+        334
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    "source_page_range": [
+      333,
+      334
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a presentation with two master slides and make a visible style change on one of them",
+    "main_steps": [
+      "Open the master slide view in Impress.",
+      "Create a second master slide.",
+      "Change the background color of the second master slide.",
+      "Apply a different text formatting style on the second master slide."
+    ],
+    "id": 0,
+    "section_title": "Designing a presentation",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Designing a presentation"
+    ],
+    "section_start_page": 41,
+    "section_end_page": 41,
+    "relevant_procedure": "Relevant procedure:\n1. Go to View > Master Slide to open Master View and the Master View toolbar.\n2. Click on New Master in the Master View toolbar to create a new master slide.\n3. Click on Rename Master in the Master View toolbar to open the Rename Master Slide dialog.\n4. Enter a name for the new master slide in the Name text box, then click OK.\n5. Click on New Master again to create a second master slide.\n6. Click on Rename Master to open the Rename Master Slide dialog.\n7. Enter a name for the second master slide in the Name text box, then click OK.\n8. Select the first master slide in the Slides pane to edit it.\n9. Go to Slide > Slide Properties to open the Slide Properties dialog.\n10. Click on the Background tab to open the Background page.\n11. Select a background type (e.g., Color, Gradient, or Image) and configure its settings.\n12. Click OK to save the changes and close the dialog.\n13. Return to Normal view by clicking on Close Master View in the Master View toolbar or going to View > Normal.",
+    "retrieved_page_ranges": [
+      [
+        41,
+        42
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        256,
+        262
+      ]
+    ],
+    "source_page_range": [
+      41,
+      41
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Master Slides deck and show the available master slide thumbnails",
+    "main_steps": [
+      "Open the Sidebar if it is not already visible.",
+      "Click the Master Slides deck icon on the Sidebar.",
+      "Click the expand marker next to “Available for Use”."
+    ],
+    "id": 0,
+    "section_title": "What are master slides?",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "What are master slides?"
+    ],
+    "section_start_page": 41,
+    "section_end_page": 42,
+    "relevant_procedure": "Relevant procedure:\n1. Click on Master Slides in the Sidebar to open the Master Slides deck.  \n2. Click the expand marker next to the \"Available for Use\" panel to show master slide thumbnails.",
+    "retrieved_page_ranges": [
+      [
+        19,
+        26
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        256,
+        262
+      ],
+      [
+        41,
+        41
+      ]
+    ],
+    "source_page_range": [
+      41,
+      42
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a master slide color theme with specific names",
+    "main_steps": [
+      "Select View > Master Slide on the Menu bar.",
+      "Select the default master slide in the Slides pane.",
+      "Go to Slide > Slide Properties on the Menu bar.",
+      "Click the Theme tab.",
+      "Click in the General Name text box and type \"Practice Theme\".",
+      "Click in the Color Set Name text box and type \"Practice Colors\".",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with master slides",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with master slides"
+    ],
+    "section_start_page": 42,
+    "section_end_page": 60,
+    "relevant_procedure": "Relevant procedure:\n1. Select View > Master Slide to open Master View and the Master View toolbar.  \n2. Click on New Master in the Master View toolbar to create a new master slide.  \n3. Right-click on the new master slide in the Slides pane and select Rename Master from the context menu.  \n4. Enter a specific name for the master slide in the Name text box, then click OK.  \n5. In the Slide Properties dialog, click on the Theme tab.  \n6. In the General section, enter a name for the color theme in the Name text box.  \n7. In the Color Set section, enter a name for the color set in the Name text box.  \n8. Click on the triangle ▼ and select a color from the available palettes or create custom colors for Background, Text, Accent, Hyperlink, and Followed Hyperlink.  \n9. Click OK to save the color theme and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        41,
+        42
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        256,
+        262
+      ],
+      [
+        60,
+        65
+      ]
+    ],
+    "source_page_range": [
+      42,
+      60
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a custom drawing style from a selected object",
+    "main_steps": [
+      "Insert a rectangle on the slide.",
+      "Select the rectangle.",
+      "Open the Styles deck in the Sidebar.",
+      "Click Drawing Styles at the top left of the Styles deck.",
+      "Click New Style from Selection at the top right of the Styles deck.",
+      "Type “Orange Box” in the Enter new style name text box.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with styles",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with styles"
+    ],
+    "section_start_page": 60,
+    "section_end_page": 65,
+    "relevant_procedure": "Relevant procedure:\n1) Select an object in the presentation.  \n2) Open the Styles deck on the Sidebar by clicking on Styles, then click on Drawing Styles to open the Drawing Styles panel.  \n3) Click on New Style from Selection on the right of the Styles deck title bar to open the New Style from Selection dialog.  \n4) Enter a name for the new drawing style in the Enter new style name text box.  \n5) Click OK to save the new drawing style and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        220,
+        224
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        187,
+        194
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        136,
+        142
+      ]
+    ],
+    "source_page_range": [
+      60,
+      65
+    ],
+    "is_hit": false
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Templates dialog and import a template into a category",
+    "main_steps": [
+      "Click File on the menu bar.",
+      "Click New.",
+      "Click Templates.",
+      "Click Manage at the top right of the Templates dialog.",
+      "Click Import.",
+      "Select a category from the Select Category dialog.",
+      "Click OK.",
+      "In the file browser window, navigate to a folder containing a template file.",
+      "Select a template file.",
+      "Click Open."
+    ],
+    "id": 1,
+    "section_title": "Working with templates",
+    "section_path": [
+      "Chapter 2, Master Slides, Styles, and Templates",
+      "Working with templates"
+    ],
+    "section_start_page": 65,
+    "section_end_page": 71,
+    "relevant_procedure": "Relevant procedure:\n1. Go to File > New > Templates to open the Templates dialog.  \n2. Click on Manage at the top right of the Templates dialog.  \n3. Select Import from the context menu.  \n4. Select a category from the displayed list or choose Create a New Category.  \n5. In the file browser window, navigate to the folder containing the template file.  \n6. Select the template file and click Open.  \n7. The template appears in the selected category.",
+    "retrieved_page_ranges": [
+      [
+        65,
+        71
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        118,
+        120
+      ]
+    ],
+    "source_page_range": [
+      65,
+      71
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a horizontal text box using the F2 shortcut",
+    "main_steps": [
+      "Open a new blank Impress presentation.",
+      "Press F2.",
+      "Click on the slide canvas.",
+      "Type \"Sample text\"."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Introduction"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 72,
+    "relevant_procedure": "Relevant procedure:\nPress the F2 shortcut to create a horizontal text box.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      72,
+      72
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a text box containing sample text",
+    "setup_steps": [
+      "Open a new blank presentation.",
+      "Click the Insert Text Box tool.",
+      "Click and drag on the slide to draw a text box.",
+      "Type “This text will be split into columns.”"
+    ],
+    "main_task": "Apply two text columns to the text box",
+    "main_steps": [
+      "Click inside the text box to select it.",
+      "Right-click inside the text box.",
+      "Click Text Attributes.",
+      "Click Text Columns.",
+      "Set the number of columns to 2.",
+      "Click OK.",
+      "Click outside the text box."
+    ],
+    "id": 0,
+    "section_title": "Working with text boxes",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Working with text boxes"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 86,
+    "relevant_procedure": "Relevant procedure:\n1) Click in the text box to select it so that the selection handles are displayed.  \n2) Right-click in the text box and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Columns to open the Text Columns page.  \n4) Enter the number of columns required in the Number of columns box.  \n5) Enter the spacing between columns in the Spacing box.  \n6) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        219,
+        220
+      ]
+    ],
+    "source_page_range": [
+      72,
+      86
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a text box with sample text",
+    "setup_steps": [
+      "Click the Text Box tool.",
+      "Drag on the slide to draw a text box.",
+      "Type “Sample text” inside the text box."
+    ],
+    "main_task": "Insert a special character into the sample text",
+    "main_steps": [
+      "Click in the text box after the word “Sample”.",
+      "Go to Insert > Special Character on the menu bar.",
+      "Select the font dropdown and choose “Liberation Sans”.",
+      "Select the character block dropdown and choose “Latin-1”.",
+      "Double-click the character “½”."
+    ],
+    "id": 0,
+    "section_title": "Inserting text",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Inserting text"
+    ],
+    "section_start_page": 86,
+    "section_end_page": 89,
+    "relevant_procedure": "Relevant procedure:\n1. Click at the position in the text where the special character is to be inserted.  \n2. Go to Insert > Special Character on the Menu bar to open the Special Characters dialog.  \n3. Select the font and character subset from the Font and Character drop-down lists.  \n4. Locate and select the desired special character from the list; the character appears in the preview box.  \n5. Click Insert to add the character at the cursor position and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        86,
+        89
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        89,
+        94
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        227,
+        238
+      ]
+    ],
+    "source_page_range": [
+      86,
+      89
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a text box with sample text",
+    "setup_steps": [
+      "Insert a text box on the blank slide.",
+      "Type “Direct formatting applies to selected text.”"
+    ],
+    "main_task": "Apply character formatting to the selected words using the Character dialog",
+    "main_steps": [
+      "Double-click the word “selected” in the text box.",
+      "Right-click the selected word.",
+      "Click “Character” in the context menu.",
+      "Click the “Font Effects” tab.",
+      "Set the font color to a visible red color.",
+      "Click “OK”.",
+      "Click outside the text box."
+    ],
+    "id": 0,
+    "section_title": "Formatting text",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Formatting text"
+    ],
+    "section_start_page": 89,
+    "section_end_page": 94,
+    "relevant_procedure": "Relevant procedure:\n1) Select the words to format in the text box.  \n2) Right-click on the selected text and choose Character from the context menu.  \n3) Use the formatting options in the Character dialog to apply desired character formatting.  \n4) Click OK to save the changes and close the dialog.  \n5) Click outside the text box to deselect it.",
+    "retrieved_page_ranges": [
+      [
+        94,
+        99
+      ],
+      [
+        89,
+        94
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        120,
+        132
+      ]
+    ],
+    "source_page_range": [
+      89,
+      94
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a text box containing list items",
+    "setup_steps": [
+      "Create a new presentation.",
+      "Select Normal view.",
+      "Insert a text box on the slide.",
+      "Type \"Item 1\".",
+      "Press Enter.",
+      "Type \"Item 2\".",
+      "Press Enter.",
+      "Type \"Item 3\"."
+    ],
+    "main_task": "Convert the text box content into an unordered list and demote the second item",
+    "main_steps": [
+      "Select all text in the text box.",
+      "Click the Toggle Unordered List control on the Text Formatting toolbar.",
+      "Click at the start of the second list item.",
+      "Press Tab."
+    ],
+    "id": 0,
+    "section_title": "Creating lists",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Creating lists"
+    ],
+    "section_start_page": 94,
+    "section_end_page": 99,
+    "relevant_procedure": "Relevant procedure:\n1. Click in the text box to select it.  \n2. Press Enter to create a new list item after the first item.  \n3. Position the cursor on the second list item.  \n4. Press Tab to demote the second item to a lower outline level.",
+    "retrieved_page_ranges": [
+      [
+        94,
+        99
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        86,
+        89
+      ]
+    ],
+    "source_page_range": [
+      94,
+      99
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a blank slide with a horizontal text callout and sample text",
+    "setup_steps": [
+      "Open a new blank presentation slide.",
+      "Click the Text toolbar control for Callouts for horizontal text.",
+      "Click and drag on the slide to draw a callout box.",
+      "Double click inside the callout box.",
+      "Type Horizontal text callout.",
+      "Click a blank area on the slide."
+    ],
+    "main_task": "Change the callout style and spacing in the Position and Size dialog",
+    "main_steps": [
+      "Select the text callout.",
+      "Open the Position and Size dialog.",
+      "Click the Callout tab.",
+      "Select Angled Connector Line.",
+      "Click in the Spacing box.",
+      "Type 0.50.",
+      "Click the Extension drop-down and select Horizontal.",
+      "Click the Position drop-down and select Middle.",
+      "Click the Optimal checkbox to clear it.",
+      "Click a blank area on the slide."
+    ],
+    "id": 0,
+    "section_title": "Text callouts",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Text callouts"
+    ],
+    "section_start_page": 99,
+    "section_end_page": 101,
+    "relevant_procedure": "Relevant procedure:\n1. Select a text callout on the slide.  \n2. Go to Format > Position and Size on the Menu bar, or use the keyboard shortcut F4.  \n3. Click on the Callout tab in the Position and Size dialog.  \n4. Select a callout style from Straight Line, Angled Line, or Angled Connector Line.  \n5. Enter the desired spacing in the Spacing field to set the distance between the end of the callout line and the callout box.  \n6. Select an extension type from the drop-down list in the Extension field.  \n7. In the By text box, enter a distance value to set the space between the start point of the connector line and the callout box.  \n8. In the Position text box, select Top, Middle, or Bottom to position the start point of the connector line on the callout box.  \n9. Enter a length value in the Length field to set the length of the callout line segment from the callout box to the angle point, if Angled Connector Line is selected and Optimal is not checked.  \n10. Check the Optimal option to position the angle point at an optimal distance from the callout box.  \n11. Click in a blank space on the slide to save the changes and deselect the callout.",
+    "retrieved_page_ranges": [
+      [
+        101,
+        110
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        94,
+        99
+      ]
+    ],
+    "source_page_range": [
+      99,
+      101
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "Create a table on a blank slide",
+    "setup_steps": [
+      "Click the slide workspace.",
+      "Open Insert > Table from the menu bar.",
+      "Enter 3 in Number of columns.",
+      "Enter 2 in Number of rows.",
+      "Click OK."
+    ],
+    "main_task": "Open the Table Properties dialog for the table using F4",
+    "main_steps": [
+      "Click the table to select it.",
+      "Press F4."
+    ],
+    "id": 0,
+    "section_title": "Tables",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Tables"
+    ],
+    "section_start_page": 101,
+    "section_end_page": 110,
+    "relevant_procedure": "Relevant procedure:\nUse the keyboard shortcut F4 to open the Table Properties dialog for the selected table.",
+    "retrieved_page_ranges": [
+      [
+        101,
+        110
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        342,
+        342
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        342,
+        343
+      ]
+    ],
+    "source_page_range": [
+      101,
+      110
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a fixed date field into the slide",
+    "main_steps": [
+      "Select the slide in the workspace.",
+      "Click Insert on the menu bar.",
+      "Click Field.",
+      "Click Date (fixed) in the submenu."
+    ],
+    "id": 0,
+    "section_title": "Using fields",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Using fields"
+    ],
+    "section_start_page": 110,
+    "section_end_page": 111,
+    "relevant_procedure": "Relevant procedure:\n1) Go to View > Master Slide to open Master View and enter master slide editing mode.  \n2) Click on Insert > Field on the menu bar.  \n3) Select \"Date (fixed)\" from the field options to insert a fixed date field.  \n4) Reposition the field text box by clicking and dragging it to the desired location on the master slide.  \n5) Click outside the field to exit editing mode and return to Normal View.",
+    "retrieved_page_ranges": [
+      [
+        110,
+        111
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        111,
+        115
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        29,
+        37
+      ]
+    ],
+    "source_page_range": [
+      110,
+      111
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert a document hyperlink on the current slide",
+    "main_steps": [
+      "Click the slide workspace.",
+      "Press Ctrl and K at the same time.",
+      "Click Document in the left panel.",
+      "Click the Path text box.",
+      "Type a document path.",
+      "Click the Target text box.",
+      "Type a target name.",
+      "Click the Text text box.",
+      "Type the hyperlink text.",
+      "Click Apply.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using hyperlinks",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Using hyperlinks"
+    ],
+    "section_start_page": 111,
+    "section_end_page": 115,
+    "relevant_procedure": "Relevant procedure:\n1) Select the slide where the hyperlink is to be inserted.  \n2) Go to Insert > Hyperlinks on the menu bar or press Ctrl+K (Mac: ⌘+K) to open the Hyperlink dialog.  \n3) On the left side, select the type of hyperlink (e.g., Internet, Document, Mail).  \n4) Enter the destination details (e.g., URL, file path, email address, or target slide name) in the appropriate fields.  \n5) Type the visible text for the hyperlink in the Text field.  \n6) Click Apply to insert the hyperlink into the slide.  \n7) Click Close or OK to exit the dialog.",
+    "retrieved_page_ranges": [
+      [
+        111,
+        115
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        249,
+        254
+      ],
+      [
+        270,
+        272
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      111,
+      115
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Insert an image from a file into a new slide",
+    "main_steps": [
+      "Click the New Slide button to insert a new slide.",
+      "Click the slide layout button and select a layout.",
+      "Click Insert on the menu bar.",
+      "Click Image.",
+      "Navigate to the folder containing the image file.",
+      "Select the image file.",
+      "Click Open."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Introduction"
+    ],
+    "section_start_page": 116,
+    "section_end_page": 116,
+    "relevant_procedure": "Relevant procedure:\n1) Open the presentation and select Normal view.  \n2) Go to Slide > New Slide on the Menu bar to insert a new slide.  \n3) Go to Insert > Image on the Menu bar.  \n4) Navigate to the directory containing the image file and select the file.  \n5) If needed, click Preview to see a thumbnail of the image.  \n6) Click Open to place the image in the center of the slide and close the file browser.",
+    "retrieved_page_ranges": [
+      [
+        116,
+        116
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        249,
+        254
+      ],
+      [
+        118,
+        120
+      ],
+      [
+        247,
+        248
+      ]
+    ],
+    "source_page_range": [
+      116,
+      116
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a blank presentation with one new slide",
+    "setup_steps": [
+      "Open a new presentation.",
+      "Insert a new slide."
+    ],
+    "main_task": "Insert an image from a file into the slide",
+    "main_steps": [
+      "Click the slide thumbnail.",
+      "Open Insert > Image on the menu bar.",
+      "Navigate to a folder containing an image file.",
+      "Select one image file.",
+      "Click the Preview option if it is not already selected.",
+      "Click Open."
+    ],
+    "id": 1,
+    "section_title": "Images",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Images"
+    ],
+    "section_start_page": 116,
+    "section_end_page": 118,
+    "relevant_procedure": "Relevant procedure:\n1) Select a slide in the presentation.  \n2) Go to Insert > Image on the Menu bar.  \n3) Navigate to the directory containing the image file and select the file.  \n4) If needed, click Preview to see a thumbnail of the image.  \n5) Click Open to place the image in the center of the slide and close the file browser.",
+    "retrieved_page_ranges": [
+      [
+        116,
+        116
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        249,
+        254
+      ],
+      [
+        118,
+        120
+      ],
+      [
+        247,
+        248
+      ]
+    ],
+    "source_page_range": [
+      116,
+      118
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Gallery deck and insert an image from a theme onto the slide",
+    "main_steps": [
+      "Click Insert on the menu bar.",
+      "Click Media.",
+      "Click Gallery.",
+      "Click the Arrows theme in the Gallery deck.",
+      "Scroll through the displayed images if needed.",
+      "Click and hold one image thumbnail.",
+      "Drag the image onto the slide.",
+      "Release the mouse button in the middle of the slide."
+    ],
+    "id": 0,
+    "section_title": "Gallery themes",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Gallery themes"
+    ],
+    "section_start_page": 118,
+    "section_end_page": 120,
+    "relevant_procedure": "Relevant procedure:\n1) Open the Gallery deck in the Sidebar by clicking on \"Gallery\" in the Sidebar.  \n2) Select a theme from the available themes to view its images.  \n3) Scroll through the images in the selected theme and select the required image.  \n4) Click, hold, and drag the selected image onto the slide. Release the hold to insert the image centrally on the slide.",
+    "retrieved_page_ranges": [
+      [
+        118,
+        120
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        116,
+        116
+      ],
+      [
+        293,
+        298
+      ]
+    ],
+    "source_page_range": [
+      118,
+      120
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Crop a selected image using the Crop dialog",
+    "main_steps": [
+      "Click an image to select it.",
+      "Click Format on the menu bar.",
+      "Point to Image.",
+      "Click Crop Dialog.",
+      "Click the Keep scale option.",
+      "Type 1.00 cm in the Left box.",
+      "Type 1.00 cm in the Right box.",
+      "Type 1.00 cm in the Top box.",
+      "Type 1.00 cm in the Bottom box.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Formatting images",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Formatting images"
+    ],
+    "section_start_page": 120,
+    "section_end_page": 132,
+    "relevant_procedure": "Relevant procedure:\n1) Select the image to crop.  \n2) Go to Format > Image > Crop Dialog to open the Crop dialog.  \n3) Adjust the crop size and type using the options in the dialog:  \n   - Enter a positive value to trim the left, right, top, or bottom edge of the image.  \n   - Enter a negative value to add white space to the respective edge.  \n   - Select \"Keep scale\" to maintain the original image proportions during cropping.  \n   - Select \"Keep image size\" to change the image scale instead.  \n4) Use the \"Original Size\" button to restore the image to its original dimensions.  \n5) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        132,
+        135
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        142,
+        147
+      ]
+    ],
+    "source_page_range": [
+      120,
+      132
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the ImageMap dialog for the selected image and create a hotspot link",
+    "main_steps": [
+      "Insert an image onto the slide and select it.",
+      "Click Tools on the menu bar.",
+      "Click ImageMap.",
+      "Click the Rectangle hotspot tool.",
+      "Drag on the image to draw a hotspot.",
+      "Click in the Address field and type \"https://example.com\".",
+      "Click in the Text field and type \"Example link\".",
+      "Click the Frame dropdown and select \"_self\".",
+      "Click Apply.",
+      "Click Close."
+    ],
+    "id": 0,
+    "section_title": "Creating image maps",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Creating image maps"
+    ],
+    "section_start_page": 132,
+    "section_end_page": 135,
+    "relevant_procedure": "Relevant procedure:\n1. Select the image on the slide.  \n2. Go to Tools > ImageMap to open the ImageMap dialog.  \n3. In the ImageMap dialog, use the Rectangle, Ellipse, Polygon, or FreeForm Polygon tools to draw a hotspot on the image.  \n4. Click on the hotspot to select it.  \n5. In the Properties section, enter a URL in the Address field to link the hotspot.  \n6. Optionally, enter text in the Text field to display when hovering over the hotspot.  \n7. Set the Frame option to _self (default) or another value as needed.  \n8. Click Apply to save the hotspot settings.  \n9. Click Save to save the image map to a file and navigate to the desired folder.  \n10. Enter a name for the image map and click Save.  \n11. Click Close to exit the dialog.",
+    "retrieved_page_ranges": [
+      [
+        132,
+        135
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        354,
+        359
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      132,
+      135
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Show the Drawing toolbar in Impress",
+    "main_steps": [
+      "Click the View menu.",
+      "Click Toolbars.",
+      "Click Drawing."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Introduction"
+    ],
+    "section_start_page": 136,
+    "section_end_page": 136,
+    "relevant_procedure": "Relevant procedure:\n1. Select View > Toolbars > Drawing from the Menu bar.",
+    "retrieved_page_ranges": [
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        360,
+        363
+      ],
+      [
+        360,
+        360
+      ]
+    ],
+    "source_page_range": [
+      136,
+      136
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Show the Drawing toolbar",
+    "main_steps": [
+      "Click the View menu.",
+      "Point to Toolbars.",
+      "Click Drawing."
+    ],
+    "id": 0,
+    "section_title": "Drawing toolbar",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Drawing toolbar"
+    ],
+    "section_start_page": 136,
+    "section_end_page": 142,
+    "relevant_procedure": "Relevant procedure:\n1. Select View > Toolbars from the Menu bar.  \n2. Click on \"Drawing\" in the list of toolbars to display the Drawing toolbar.",
+    "retrieved_page_ranges": [
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        360,
+        363
+      ],
+      [
+        360,
+        360
+      ]
+    ],
+    "source_page_range": [
+      136,
+      142
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Draw a freeform filled line on the slide",
+    "main_steps": [
+      "Click the triangle next to Curves and Polygons on the Drawing toolbar.",
+      "Click Freeform Line Filled.",
+      "Click and hold on the slide.",
+      "Drag the pointer to create a freeform shape.",
+      "Release the mouse button."
+    ],
+    "id": 0,
+    "section_title": "Creating lines and shapes",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Creating lines and shapes"
+    ],
+    "section_start_page": 142,
+    "section_end_page": 147,
+    "relevant_procedure": "Relevant procedure:\n1) Click the triangle ▼ next to Curves and Polygons on the Drawing toolbar to open the Curves and Polygons sub-toolbar.  \n2) Select Freeform Line or Freeform Line Filled.  \n3) Click and hold the cursor to draw the freeform line on the slide.  \n4) Release the cursor to complete the line.  \n5) If Freeform Line Filled was selected, the area between the start and end points is automatically filled with the default fill color.",
+    "retrieved_page_ranges": [
+      [
+        187,
+        194
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        194,
+        197
+      ]
+    ],
+    "source_page_range": [
+      142,
+      147
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create three overlapping shapes on a blank slide",
+    "setup_steps": [
+      "Insert a rectangle on the slide.",
+      "Insert an ellipse on the slide.",
+      "Insert a diamond on the slide.",
+      "Position the three shapes so they overlap slightly."
+    ],
+    "main_task": "Group the three shapes into one object and then ungroup them",
+    "main_steps": [
+      "Click the rectangle.",
+      "Hold Shift and click the ellipse.",
+      "Hold Shift and click the diamond.",
+      "Press Ctrl+Shift+G.",
+      "Press Ctrl+Alt+Shift+G."
+    ],
+    "id": 0,
+    "section_title": "Grouping objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Grouping objects"
+    ],
+    "section_start_page": 147,
+    "section_end_page": 149,
+    "relevant_procedure": "Relevant procedure:\n1) Click on any one of the three shapes to select the group.  \n2) Go to Format > Group > Ungroup on the Menu bar.",
+    "retrieved_page_ranges": [
+      [
+        173,
+        174
+      ],
+      [
+        149,
+        153
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        147,
+        149
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      147,
+      149
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Rotate a selected graphic object using the quick rotation handles",
+    "main_steps": [
+      "Click a graphic object on the slide to select it.",
+      "Click the triangle next to Transformations on the Line and Filling toolbar.",
+      "Click Rotate on the Transformations sub-toolbar.",
+      "Move the pointer over a corner selection handle.",
+      "Click and drag the corner handle to rotate the object.",
+      "Release the mouse button."
+    ],
+    "id": 0,
+    "section_title": "Positioning and resizing graphic objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Positioning and resizing graphic objects"
+    ],
+    "section_start_page": 149,
+    "section_end_page": 153,
+    "relevant_procedure": "Relevant procedure:\n1) Select the graphic object to rotate.  \n2) On the Line and Filling toolbar, click the triangle ▼ next to Transformations, then click Rotate.  \n3) Move the cursor over one of the corner selection handles; the cursor shape changes to indicate movement direction.  \n4) Click and hold on a corner selection handle, then move in the desired direction to rotate the object.  \n5) Release the mouse button when the desired rotation is achieved.",
+    "retrieved_page_ranges": [
+      [
+        153,
+        158
+      ],
+      [
+        149,
+        153
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        136,
+        136
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      149,
+      153
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two simple objects on the slide",
+    "setup_steps": [
+      "Insert a rectangle on the slide.",
+      "Insert a second rectangle on the slide.",
+      "Place the two rectangles at different horizontal positions."
+    ],
+    "main_task": "Align the two objects to the top",
+    "main_steps": [
+      "Select both rectangles.",
+      "Open the Align Objects toolbar from View > Toolbars > Align Objects.",
+      "Click Top on the Align Objects toolbar."
+    ],
+    "id": 1,
+    "section_title": "Applying special effects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Applying special effects"
+    ],
+    "section_start_page": 153,
+    "section_end_page": 158,
+    "relevant_procedure": "Relevant procedure:\n1. Select both objects to be aligned.  \n2. Click on the triangle ▼ next to \"Align Objects\" on the Line and Filling toolbar.  \n3. Choose \"Top\" from the alignment options to align the top edges of the two objects.",
+    "retrieved_page_ranges": [
+      [
+        158,
+        158
+      ],
+      [
+        158,
+        163
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        164,
+        165
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      153,
+      158
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Grid options dialog in LibreOffice Impress",
+    "main_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Click LibreOffice Impress.",
+      "Click Grid."
+    ],
+    "id": 0,
+    "section_title": "Aligning objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Aligning objects"
+    ],
+    "section_start_page": 158,
+    "section_end_page": 158,
+    "relevant_procedure": "Relevant procedure:\n1. Go to Tools > Options (on macOS: Preferences).  \n2. Click the expansion marker next to LibreOffice Impress on the left-hand side.  \n3. Select Grid from the list of sections.",
+    "retrieved_page_ranges": [
+      [
+        327,
+        332
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        332,
+        333
+      ],
+      [
+        354,
+        359
+      ]
+    ],
+    "source_page_range": [
+      158,
+      158
+    ],
+    "is_hit": false
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Grid settings and set the snap range to 5 pixels",
+    "main_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Expand LibreOffice Impress.",
+      "Click Grid.",
+      "Click the Snap range text box.",
+      "Type 5.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using grid or snap functions",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using grid or snap functions"
+    ],
+    "section_start_page": 158,
+    "section_end_page": 163,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options > LibreOffice Impress > Grid on the Menu bar to open the Grid dialog.  \n2) Enter 5 in the Snap range text box.  \n3) Click OK to set the new snap range and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        163,
+        164
+      ],
+      [
+        158,
+        163
+      ],
+      [
+        158,
+        158
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        322,
+        327
+      ]
+    ],
+    "source_page_range": [
+      158,
+      163
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two overlapping shapes for arranging",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle on the slide.",
+      "Insert a second shape and place it so it overlaps the rectangle."
+    ],
+    "main_task": "Bring the selected shape to the front using the Arrange menu",
+    "main_steps": [
+      "Click the shape that is currently behind the other shape.",
+      "Open the Format menu.",
+      "Point to Arrange.",
+      "Click Bring to Front."
+    ],
+    "id": 0,
+    "section_title": "Using Helplines",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using Helplines"
+    ],
+    "section_start_page": 163,
+    "section_end_page": 164,
+    "relevant_procedure": "Relevant procedure:\n1. Select the shape to be brought to the front.  \n2. Go to Format > Arrange > Bring to Front.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        147,
+        149
+      ]
+    ],
+    "source_page_range": [
+      163,
+      164
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Turn on helplines while moving from the Options dialog",
+    "main_steps": [
+      "Click Tools on the menu bar.",
+      "Click Options.",
+      "Click LibreOffice Impress in the left panel.",
+      "Click View.",
+      "Click the Helplines while moving checkbox.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Arranging objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Arranging objects"
+    ],
+    "section_start_page": 164,
+    "section_end_page": 165,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Helplines While Moving on the Options toolbar.",
+    "retrieved_page_ranges": [
+      [
+        163,
+        164
+      ],
+      [
+        164,
+        165
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        354,
+        359
+      ]
+    ],
+    "source_page_range": [
+      164,
+      165
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create two connected rectangles on a blank slide",
+    "setup_steps": [
+      "Insert two rectangles on the slide.",
+      "Place one rectangle on the left and the other rectangle on the right.",
+      "Open the Connectors sub-toolbar from the Drawing toolbar.",
+      "Select a straight connector.",
+      "Drag a connector from a gluepoint on the left rectangle to a gluepoint on the right rectangle."
+    ],
+    "main_task": "Insert a new gluepoint into one rectangle and set its exit direction to the right",
+    "main_steps": [
+      "Open the Gluepoints toolbar.",
+      "Select the left rectangle.",
+      "Click Insert Gluepoint on the Gluepoints toolbar.",
+      "Click inside the left rectangle near its center to insert a gluepoint.",
+      "Double-click the new gluepoint to select it for customization.",
+      "Click Exit Direction Right on the Gluepoints toolbar."
+    ],
+    "id": 0,
+    "section_title": "Connectors and gluepoints",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Connectors and gluepoints"
+    ],
+    "section_start_page": 165,
+    "section_end_page": 171,
+    "relevant_procedure": "Relevant procedure:\n1. Click on Show Gluepoint Functions on the Drawing toolbar to display the Gluepoints toolbar.  \n2. Select the rectangle object on the slide.  \n3. Click on Insert Gluepoint on the Gluepoints toolbar to insert a new gluepoint into the rectangle.  \n4. Double-click on the newly inserted gluepoint to select it for customization.  \n5. Select Exit Direction Right from the Gluepoints toolbar to set the connector's exit direction to the right.  \n6. Deselect Insert Gluepoint on the Gluepoints toolbar to complete the operation.",
+    "retrieved_page_ranges": [
+      [
+        171,
+        173
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        163,
+        164
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        197,
+        213
+      ]
+    ],
+    "source_page_range": [
+      165,
+      171
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a simple shape to convert to 3D",
+    "setup_steps": [
+      "Draw a basic shape on the slide.",
+      "Click the shape to select it."
+    ],
+    "main_task": "Convert the selected shape to a 3D object",
+    "main_steps": [
+      "Right-click the selected shape.",
+      "Point to Convert in the context menu.",
+      "Click To 3D."
+    ],
+    "id": 0,
+    "section_title": "Working with 3D objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Working with 3D objects"
+    ],
+    "section_start_page": 171,
+    "section_end_page": 173,
+    "relevant_procedure": "Relevant procedure:\n1. Select the shape to convert.\n2. Right-click on the selected shape and choose \"Convert\" from the context menu.\n3. Select \"To 3–D\" from the conversion options.",
+    "retrieved_page_ranges": [
+      [
+        173,
+        174
+      ],
+      [
+        171,
+        173
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        165,
+        171
+      ]
+    ],
+    "source_page_range": [
+      171,
+      173
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Convert a selected object to a bitmap",
+    "main_steps": [
+      "Select an object on the canvas.",
+      "Open the Format menu.",
+      "Point to Convert.",
+      "Click To Bitmap."
+    ],
+    "id": 1,
+    "section_title": "Converting objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Converting objects"
+    ],
+    "section_start_page": 173,
+    "section_end_page": 174,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object to convert.  \n2. Go to Format > Convert on the menu bar.  \n3. Choose \"To Bitmap\" from the conversion options.",
+    "retrieved_page_ranges": [
+      [
+        173,
+        174
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        136,
+        136
+      ],
+      [
+        153,
+        158
+      ]
+    ],
+    "source_page_range": [
+      173,
+      174
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide object to apply an interaction to",
+    "setup_steps": [
+      "Insert a rectangle on the slide."
+    ],
+    "main_task": "Assign the rectangle a 'Go to next slide' interaction",
+    "main_steps": [
+      "Select the rectangle.",
+      "Open the Interaction dialog using Format > Interaction.",
+      "Open the Action at mouse click drop-down.",
+      "Select Go to next slide.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Interaction with objects",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Interaction with objects"
+    ],
+    "section_start_page": 174,
+    "section_end_page": 175,
+    "relevant_procedure": "Relevant procedure:\n1) Select the rectangle on the slide.  \n2) Right-click on the rectangle and select Interaction from the context menu.  \n3) In the Interaction dialog, select \"Go to next slide\" from the Action at mouse click drop-down list.  \n4) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        288,
+        289
+      ],
+      [
+        289,
+        293
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        281,
+        288
+      ]
+    ],
+    "source_page_range": [
+      174,
+      175
+    ],
+    "is_hit": false
+  },
+  {
+    "setup_task": "(Setup) Create a slide containing a Fontwork object and a text object",
+    "setup_steps": [
+      "Open a new blank presentation.",
+      "Click the slide canvas.",
+      "Use Insert > Fontwork.",
+      "Select the first Fontwork style in the Fontwork Gallery dialog and click OK.",
+      "Double-click the Fontwork object.",
+      "Select the default Fontwork text.",
+      "Type \"Fontwork Demo\".",
+      "Press Esc.",
+      "Insert a text box on the slide.",
+      "Type \"Animation Demo\"."
+    ],
+    "main_task": "Apply an animation effect to the text box and preview it",
+    "main_steps": [
+      "Click the text box containing \"Animation Demo\".",
+      "Open the Animation deck.",
+      "Click Add Effect.",
+      "Open the Category drop-down list.",
+      "Select an animation category.",
+      "Open the Effects list.",
+      "Select an animation effect.",
+      "Open the Start drop-down list.",
+      "Select an animation start option.",
+      "Open the Direction drop-down list.",
+      "Select an animation direction.",
+      "Click in the Duration box.",
+      "Type \"2\".",
+      "Click in the Delay box.",
+      "Type \"1\".",
+      "Click Play."
+    ],
+    "id": 0,
+    "section_title": "Fontwork",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Fontwork"
+    ],
+    "section_start_page": 175,
+    "section_end_page": 178,
+    "relevant_procedure": "Relevant procedure:\n1) Click on a text box to select it.  \n2) Right-click on the text box and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Animation in the Text dialog.  \n4) Select an animation effect from the Effect drop-down list (e.g., Blink, Scroll Through, Scroll Back and Forth, Scroll In).  \n5) Set the Direction of the animation using the arrow options.  \n6) Select Start inside or another option in the Properties section.  \n7) Set the Animation cycles (e.g., Continuous or a specific number of cycles).  \n8) Set the Increment value (in pixels or distance) if needed.  \n9) Set the Delay (in seconds) if needed.  \n10) Click OK to save the animation effect and close the dialog.  \n11) Click outside the text box to exit edit mode.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        175,
+        178
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        178,
+        186
+      ]
+    ],
+    "source_page_range": [
+      175,
+      178
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with a title and a graphic object",
+    "setup_steps": [
+      "Create a new blank presentation slide.",
+      "Insert a text box on the slide and type “Green Bright”.",
+      "Insert a second object on the slide as a graphic or shape."
+    ],
+    "main_task": "Add an animation effect to the selected object",
+    "main_steps": [
+      "Select the graphic object on the slide.",
+      "Open the Animation deck on the Sidebar.",
+      "Click Add Effect.",
+      "Open the Category drop-down list and select an animation category.",
+      "Open the Effects list and select an animation effect.",
+      "Open the Start drop-down list and select On click.",
+      "Enter 2 in the Duration box.",
+      "Enter 1 in the Delay box.",
+      "Click Play."
+    ],
+    "id": 0,
+    "section_title": "Animations",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Animations"
+    ],
+    "section_start_page": 178,
+    "section_end_page": 186,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object on the slide.  \n2. Click on the Animation deck on the Sidebar.  \n3. Click on Add Effect to add the selected object to the Animation preview box.  \n4. Select a category from the Category drop-down list.  \n5. Select an animation effect from the Effects list.  \n6. Choose how the animation starts from the Start drop-down list.  \n7. Select the direction of the animation from the Direction drop-down list.  \n8. Enter a duration in seconds in the Duration box.  \n9. Enter a delay in seconds in the Delay box.  \n10. Click on Options to open the Effect Options dialog, make any necessary adjustments, then click OK.  \n11. Click on Play to preview the animation effect.",
+    "retrieved_page_ranges": [
+      [
+        178,
+        186
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        175,
+        178
+      ],
+      [
+        281,
+        288
+      ]
+    ],
+    "source_page_range": [
+      178,
+      186
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change a selected line using the Line and Filling toolbar",
+    "main_steps": [
+      "Insert a line on the slide.",
+      "Click the line to select it.",
+      "Open the Line Style drop-down list and choose a dashed line style.",
+      "Click the Line Width box and type 0.10 cm.",
+      "Click the arrow next to Line Color and choose a visible color.",
+      "Open the left Arrow Style drop-down list and choose an arrowhead style.",
+      "Open the right Arrow Style drop-down list and choose an arrowhead style.",
+      "Click outside the line to deselect it."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Introduction"
+    ],
+    "section_start_page": 187,
+    "section_end_page": 187,
+    "relevant_procedure": "Relevant procedure:\n1. Select the line or shape to be modified using the Line and Filling toolbar.  \n2. Click on the Area Style/Filling drop-down list in the Line and Filling toolbar.  \n3. Choose the desired area fill type from the options: Color, Gradient, Pattern, Hatch, Image, or None.  \n4. If a specific fill type is selected (e.g., Gradient, Pattern, Hatch), click on the corresponding option in the drop-down to open detailed settings.  \n5. For color fills: select a color palette and a color from the available options, or enter RGB/Hex values or use the Pick a Color dialog.  \n6. For gradient fills: select a gradient type, adjust From Color and To Color, and modify settings such as Angle, Increment, or Border as needed.  \n7. For pattern or hatch fills: select a predefined pattern or hatch, or create a custom one by adjusting settings in the dialog.  \n8. Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        187,
+        194
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      187,
+      187
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a line object to format",
+    "setup_steps": [
+      "Draw a straight line on the blank slide."
+    ],
+    "main_task": "Open the Line dialog and create a new line style named Triangle unfilled",
+    "main_steps": [
+      "Select the line.",
+      "Go to Format > Text Box and Shape > Line.",
+      "Click the Line Styles tab.",
+      "Select a predefined line style from the Line style drop-down list.",
+      "Click Add.",
+      "Type Triangle unfilled in the Name dialog.",
+      "Click OK.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with lines",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with lines"
+    ],
+    "section_start_page": 187,
+    "section_end_page": 194,
+    "relevant_procedure": "Relevant procedure:\n1) Open the Line dialog using one of the following methods:  \n   - Go to Format > Text Box and Shape > Line on the Menu bar  \n   - Right-click on a line and select Line from the context menu  \n   - Click on Line Styles to open the Line Styles page in the Line dialog  \n2) In the Line Styles page, click on Add.  \n3) Type \"Triangle unfilled\" in the Name dialog that opens.  \n4) Click OK to confirm and save the new line style.  \n5) Click OK to close the Line dialog.",
+    "retrieved_page_ranges": [
+      [
+        187,
+        194
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        187,
+        187
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        220,
+        224
+      ]
+    ],
+    "source_page_range": [
+      187,
+      194
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a rectangle to format",
+    "setup_steps": [
+      "Draw a rectangle on the blank slide."
+    ],
+    "main_task": "Apply a solid color area fill to the rectangle using the Area dialog",
+    "main_steps": [
+      "Select the rectangle.",
+      "Go to Format > Text Box and Shape > Area.",
+      "Click the Area tab if needed.",
+      "Click Color.",
+      "Open the Palette drop-down list and select LibreOffice.",
+      "Click the blue color swatch in the palette.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Using area fills",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Using area fills"
+    ],
+    "section_start_page": 194,
+    "section_end_page": 197,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle so that the selection handles are displayed.  \n2. Open the Area dialog by right-clicking on the rectangle and selecting \"Area\" from the context menu.  \n3. Click on \"Area\" to open the Area page.  \n4. Click on \"Color\" to open the color fill options.  \n5. In the Palette dropdown, select a color palette and choose a color from the available colors.  \n6. Alternatively, enter RGB or Hex values in the appropriate text box, or click \"Pick\" to select a color using the Pick a Color dialog.  \n7. Click OK to close the Area dialog and save the changes.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        213,
+        215
+      ],
+      [
+        187,
+        194
+      ]
+    ],
+    "source_page_range": [
+      194,
+      197
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a slide with two overlapping rectangles for a background image fill exercise",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle.",
+      "Insert a second rectangle.",
+      "Move the second rectangle so it overlaps the first rectangle.",
+      "Select the top rectangle."
+    ],
+    "main_task": "Apply the slide background as the fill of the selected top rectangle",
+    "main_steps": [
+      "Open the Area dialog.",
+      "Click the Area page.",
+      "Select Use Background.",
+      "Click OK.",
+      "Click on the slide to deselect the rectangle."
+    ],
+    "id": 0,
+    "section_title": "Working with area fill types",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with area fill types"
+    ],
+    "section_start_page": 197,
+    "section_end_page": 213,
+    "relevant_procedure": "Relevant procedure:\n1) Select the top rectangle on the slide.  \n2) Open the Area dialog by clicking on Area in the Line and Filling toolbar.  \n3) Click on Fill to open the Fill page, then select Slide Background from the options available.  \n4) Click OK to apply the slide background as the fill of the selected top rectangle.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        256,
+        262
+      ]
+    ],
+    "source_page_range": [
+      197,
+      213
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a single shape to format",
+    "setup_steps": [
+      "Insert a rectangle on the slide."
+    ],
+    "main_task": "Apply a shadow to the rectangle using the Area dialog",
+    "main_steps": [
+      "Select the rectangle.",
+      "Open the Area dialog.",
+      "Click the Shadow tab.",
+      "Check Use shadow.",
+      "Click the center-right point in the position grid.",
+      "Open the Color drop-down and select Blue Accent.",
+      "Enter 5.50 mm in Distance.",
+      "Enter 0 pt in Blur.",
+      "Enter 0% in Transparency.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with shadows",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with shadows"
+    ],
+    "section_start_page": 213,
+    "section_end_page": 215,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle where a shadow is to be applied.  \n2. Open the Area dialog by going to Format > Text Box and Shape > Area.  \n3. Click on the Shadow page in the Area dialog.  \n4. Select the option \"Use shadow\" to enable the shadow.  \n5. Choose a position from the nine grid points in the Position grid to set the direction of the shadow.  \n6. Select a shadow color from the available color palettes in the Color dropdown.  \n7. Enter a distance value in the Distance field to set the offset between the rectangle and its shadow.  \n8. Enter a blur value in the Blur field to soften the shadow edges (0 for sharp, higher values for softer).  \n9. Enter a transparency percentage in the Transparency field (0% for opaque, 100% for transparent).  \n10. Click OK to apply and save the shadow settings.",
+    "retrieved_page_ranges": [
+      [
+        213,
+        215
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        194,
+        197
+      ]
+    ],
+    "source_page_range": [
+      213,
+      215
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a simple shape to format",
+    "setup_steps": [
+      "Open a blank Impress slide.",
+      "Insert a rectangle on the slide."
+    ],
+    "main_task": "Apply a shadow to the rectangle and deselect it",
+    "main_steps": [
+      "Click the rectangle to select it.",
+      "Click the Shadow button on the Line and Filling toolbar.",
+      "Click outside the rectangle to deselect it."
+    ],
+    "id": 0,
+    "section_title": "Working with transparencies",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with transparencies"
+    ],
+    "section_start_page": 215,
+    "section_end_page": 216,
+    "relevant_procedure": "Relevant procedure:\n1. Select the rectangle.\n2. Click on Shadow in the Line and Filling toolbar to apply a shadow using the settings from the Shadow page in the Area dialog.\n3. Deselect the rectangle to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        213,
+        215
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        142,
+        147
+      ],
+      [
+        120,
+        132
+      ]
+    ],
+    "source_page_range": [
+      215,
+      216
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Add text to a selected object and close text mode",
+    "main_steps": [
+      "Insert a shape onto the blank slide.",
+      "Double-click the shape to enter text mode.",
+      "Type “Sample text”.",
+      "Click outside the shape to exit text mode."
+    ],
+    "id": 0,
+    "section_title": "Text in objects",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Text in objects"
+    ],
+    "section_start_page": 216,
+    "section_end_page": 219,
+    "relevant_procedure": "Relevant procedure:\n1) Select the object where text is to be added.  \n2) Put the selected object into text mode by double-clicking on it or using the keyboard shortcut F2.  \n3) Type the required text into the object.  \n4) Click outside the object or press Esc to exit text mode and close text mode.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        216,
+        219
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        227,
+        238
+      ]
+    ],
+    "source_page_range": [
+      216,
+      219
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Text Columns page for a text object and set it to 2 columns with 0.50 spacing",
+    "main_steps": [
+      "Select a text object.",
+      "Open the Text dialog.",
+      "Click the Text Columns tab.",
+      "Click the Number of columns text box and type 2.",
+      "Click the Spacing text box and type 0.50.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Formatting connectors",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Formatting connectors"
+    ],
+    "section_start_page": 219,
+    "section_end_page": 220,
+    "relevant_procedure": "Relevant procedure:\n1) Select the text object containing the text.  \n2) Right-click on the text object and select Text Attributes from the context menu to open the Text dialog.  \n3) Click on Text Columns to open the Text Columns page.  \n4) Enter 2 in the Number of columns text box.  \n5) Enter 0.50 in the Spacing text box.  \n6) Click OK to save the changes and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        219,
+        220
+      ],
+      [
+        72,
+        86
+      ],
+      [
+        216,
+        219
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        101,
+        110
+      ]
+    ],
+    "source_page_range": [
+      219,
+      220
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a new custom drawing style from the Sidebar and leave it unlinked",
+    "main_steps": [
+      "Create a new graphic object on the slide.",
+      "Open the Styles deck on the Sidebar.",
+      "Click Drawing Styles in the Styles title bar.",
+      "Right-click a selected drawing style in the list.",
+      "Click New on the context menu.",
+      "Click Organizer.",
+      "Click the Name text box and type Untitled1.",
+      "Click the Inherit from drop-down list and select None.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Working with drawing styles",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with drawing styles"
+    ],
+    "section_start_page": 220,
+    "section_end_page": 224,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Styles in the Sidebar to open the Styles deck.\n2) Click on Drawing Styles in the Styles title bar to open the Drawing Styles panel.\n3) Right-click on a drawing style in the list and select New from the context menu to open the Graphic Styles dialog.\n4) Click on Organizer to open the Organizer page.\n5) Enter a name for the new drawing style in the Name text box.\n6) In the Inherit from text box, select None from the drop-down list to ensure the style is not linked.\n7) Use the various pages in the Graphic Styles dialog to format the new style (e.g., Line, Area, Shadowing, Transparency).\n8) Click OK to save and close the Graphic Styles dialog.",
+    "retrieved_page_ranges": [
+      [
+        220,
+        224
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        60,
+        65
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      220,
+      224
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open Slide Sorter view and the Slide Show Settings dialog",
+    "main_steps": [
+      "Click the View menu.",
+      "Click Slide Sorter.",
+      "Click the Slide Show menu.",
+      "Click Slide Show Settings."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Introduction"
+    ],
+    "section_start_page": 273,
+    "section_end_page": 273,
+    "relevant_procedure": "Relevant procedure:\n1) Click on the Slide Sorter tab at the top of the Workspace to open Slide Sorter view.  \n2) Go to Slide Show > Slide Show Settings on the Menu bar to open the Slide Show Settings dialog.",
+    "retrieved_page_ranges": [
+      [
+        273,
+        273
+      ],
+      [
+        273,
+        279
+      ],
+      [
+        350,
+        354
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        19,
+        26
+      ]
+    ],
+    "source_page_range": [
+      273,
+      273
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a custom slide show with the name “Demo Show” and add the first two slides in order",
+    "main_steps": [
+      "Click the Slide Show menu.",
+      "Click Custom Slide Show.",
+      "Click New.",
+      "Click the Name text box.",
+      "Type “Demo Show”.",
+      "In the Existing slides box, click the first slide.",
+      "Hold Shift and click the second slide.",
+      "Click >>.",
+      "Click OK.",
+      "Click Start.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Creating slide shows",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Creating slide shows"
+    ],
+    "section_start_page": 273,
+    "section_end_page": 279,
+    "relevant_procedure": "Relevant procedure:\n1) Open the Slide Sorter view by going to View > Slide Sorter or clicking the Slide Sorter tab at the top of the Workspace.  \n2) Go to Slide Show > Custom Slide Show on the Menu bar to open the Custom Slide Shows dialog.  \n3) Click on New to open the Define Custom Slide Show dialog.  \n4) Enter \"Demo Show\" in the Name text box.  \n5) In the Existing slides box, click on the first slide and hold down the Ctrl key (macOS ⌘) and click on the second slide to select them.  \n6) Click on >> to move the selected slides into the Selected slides box.  \n7) Click OK to close the Define Custom Slide Show dialog.  \n8) Click on Start in the Custom Slide Shows dialog to test the custom slide show.  \n9) Click OK to save the custom slide show and close the Custom Slide Shows dialog.",
+    "retrieved_page_ranges": [
+      [
+        273,
+        279
+      ],
+      [
+        273,
+        273
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        289,
+        293
+      ]
+    ],
+    "source_page_range": [
+      273,
+      279
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a simple presentation with two slides",
+    "setup_steps": [
+      "Click the new presentation option to start a blank presentation.",
+      "Insert a second slide."
+    ],
+    "main_task": "Apply a slide transition to the first slide and preview it",
+    "main_steps": [
+      "Click the first slide in the Slides pane.",
+      "Click the Slide Transition deck in the Sidebar.",
+      "Click the transition labeled “Wipe”.",
+      "Select the Variant drop-down list and choose the first available option.",
+      "Click the Sound drop-down list and select “No sound”.",
+      "Select the On mouse click option under Advance Slide.",
+      "Click the Play button."
+    ],
+    "id": 0,
+    "section_title": "Slide transitions",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Slide transitions"
+    ],
+    "section_start_page": 279,
+    "section_end_page": 281,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Slide Transition in the Sidebar to open the Slide Transition deck.  \n2) In the Slides pane or Slide Sorter view, select the first slide.  \n3) Click on a transition from the list in the Slide Transition deck to apply it to the selected slide.  \n4) In Modify Transition, select a duration and optionally a sound.  \n5) In Advance Slide, select Automatic Preview to preview the transition as it applies to the slide.",
+    "retrieved_page_ranges": [
+      [
+        279,
+        281
+      ],
+      [
+        37,
+        40
+      ],
+      [
+        281,
+        288
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        273,
+        273
+      ]
+    ],
+    "source_page_range": [
+      279,
+      281
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply and then remove an animation on a selected slide object",
+    "main_steps": [
+      "Click View on the menu bar.",
+      "Click Normal.",
+      "Click Animation in the Sidebar.",
+      "Select a slide element on the slide.",
+      "Click Add Effect.",
+      "Select Entrance in the Category drop-down list.",
+      "Select Venetian Blinds in the Effect drop-down list.",
+      "Select On click in the Start drop-down list.",
+      "Select Vertical in the Direction drop-down list.",
+      "Enter 0.50 sec in the Duration box.",
+      "Enter 3.0 sec in the Delay box.",
+      "Click OK.",
+      "Click Remove Effect."
+    ],
+    "id": 0,
+    "section_title": "Animations",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Animations"
+    ],
+    "section_start_page": 281,
+    "section_end_page": 288,
+    "relevant_procedure": "Relevant procedure:\n1. Open Normal view by clicking on the Normal tab at the top of the Workspace.  \n2. Select the slide containing the object to animate.  \n3. On the Sidebar, click on Animation to open the Animation deck.  \n4. Select the object on the slide that will have the animation applied.  \n5. Click on Add Effect to add the object to the Animation preview box.  \n6. In the Animation deck, select an animation effect from the Effect list.  \n7. Set the Start, Direction, Duration, and Delay as needed.  \n8. Click on Play to preview the animation.  \n9. Once satisfied, click on the Remove Effect button in the Animation deck to remove the animation from the selected object.",
+    "retrieved_page_ranges": [
+      [
+        281,
+        288
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        178,
+        186
+      ],
+      [
+        279,
+        281
+      ],
+      [
+        29,
+        37
+      ]
+    ],
+    "source_page_range": [
+      281,
+      288
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply the specified entrance animations to two selected objects and rehearse the timings",
+    "main_steps": [
+      "Select the first object on the slide.",
+      "Hold Shift and select the second object on the slide.",
+      "Click Add Effect to open the animation options.",
+      "Select the first element (Shape 1) in the Animation deck.",
+      "Open the Category drop-down list and select Entrance.",
+      "Set Effect to Venetian Blinds.",
+      "Set Start to On click.",
+      "Set Direction to Vertical.",
+      "Set Duration to 0.50 sec.",
+      "Set Delay to 3.0 sec.",
+      "Select the second element (Shape 3) in the Animation deck.",
+      "Open the Category drop-down list and select Entrance.",
+      "Set Effect to Appear.",
+      "Set Start to After previous.",
+      "Set Delay to 3.00 sec.",
+      "Click Slide Show on the menu bar.",
+      "Click Rehearse Timings."
+    ],
+    "id": 0,
+    "section_title": "Using interactions",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Using interactions"
+    ],
+    "section_start_page": 288,
+    "section_end_page": 289,
+    "relevant_procedure": "Relevant procedure:\n1. Go to View > Normal to open Normal view.  \n2. Select the slide containing the two objects to animate.  \n3. On the Sidebar, click on Animation to open the Animation deck.  \n4. Select the two objects on the slide and click Add Effect to add them to the Animation preview box.  \n5. Select Entrance from the Category drop-down list.  \n6. For the first object, set:  \n   - Effect: Venetian Blinds  \n   - Start: On click  \n   - Direction: Vertical  \n   - Duration: 0.50 sec  \n   - Delay: 3.0 sec  \n7. For the second object, set:  \n   - Effect: Appear  \n   - Start: After previous  \n   - Delay: 3.00 sec  \n8. Go to Slide Show > Rehearse Timings to check the animation timings of the two objects.",
+    "retrieved_page_ranges": [
+      [
+        288,
+        289
+      ],
+      [
+        178,
+        186
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        281,
+        288
+      ],
+      [
+        175,
+        178
+      ]
+    ],
+    "source_page_range": [
+      288,
+      289
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a photo album from the first slide",
+    "main_steps": [
+      "Click the first slide in the presentation.",
+      "Open the Insert menu.",
+      "Point to Media.",
+      "Click Photo Album."
+    ],
+    "id": 0,
+    "section_title": "Slide shows",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Slide shows"
+    ],
+    "section_start_page": 289,
+    "section_end_page": 293,
+    "relevant_procedure": "Relevant procedure:\n1) Select the first slide in the presentation.  \n2) Go to Insert > Media > Photo Album.  \n3) Click Add to open the file browser.  \n4) Navigate to the folder containing the photographs and select the images.  \n5) Click Open to close the file browser and add the images to the photo album dialog.  \n6) Select the number of images per slide in the Slide layout drop-down list.  \n7) Click Insert Slides to create the slides with the selected photographs.",
+    "retrieved_page_ranges": [
+      [
+        293,
+        298
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        118,
+        120
+      ],
+      [
+        273,
+        273
+      ],
+      [
+        120,
+        132
+      ]
+    ],
+    "source_page_range": [
+      289,
+      293
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "(Setup) Create a presentation with one photo album slide",
+    "setup_steps": [
+      "Open a new presentation.",
+      "Click the first slide.",
+      "Click Insert on the menu bar.",
+      "Click Media.",
+      "Click Photo Album.",
+      "Click Add.",
+      "Select one photograph file in the file browser.",
+      "Click Open.",
+      "Click Insert Slides."
+    ],
+    "main_task": "Add a soft frame to the photograph using the Effect panel",
+    "main_steps": [
+      "Click the photo on the slide.",
+      "Open the Properties deck on the Sidebar.",
+      "Click Effect.",
+      "In Glow, click the Radius box.",
+      "Type 0.",
+      "In Glow, click the Color drop-down list.",
+      "Select Black.",
+      "In Glow, click the Transparency box.",
+      "Type 0.",
+      "In Soft Edge, click the Radius box.",
+      "Type 0."
+    ],
+    "id": 0,
+    "section_title": "Photo albums",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Photo albums"
+    ],
+    "section_start_page": 293,
+    "section_end_page": 298,
+    "relevant_procedure": "Relevant procedure:\n1. Select the photograph in the slide.\n2. Open the Properties deck on the Sidebar and navigate to the Effect panel.\n3. In the Effect panel, adjust the Glow Radius to apply a soft frame around the photograph.\n4. Select a color for the soft frame from the available color palettes in the Glow Color option.\n5. Enter a transparency value in the Glow Transparency box to adjust the opacity of the soft frame.\n6. Adjust the Soft Edge Radius to reduce the internal width of the soft frame and make the photograph appear smaller.\n7. Click OK to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        142,
+        147
+      ]
+    ],
+    "source_page_range": [
+      293,
+      298
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the LibreOffice Options dialog and show the User Data page",
+    "main_steps": [
+      "Click Tools on the menu bar.",
+      "Click Options.",
+      "Click the expansion marker next to LibreOffice in the left pane.",
+      "Click User Data."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Introduction"
+    ],
+    "section_start_page": 322,
+    "section_end_page": 322,
+    "relevant_procedure": "Relevant procedure:\n1) Click Tools > Options (or Tools > Preferences on macOS) to open the Options LibreOffice dialog.  \n2) Click the expansion marker next to LibreOffice on the left-hand side.  \n3) Select User Data from the list of available pages.",
+    "retrieved_page_ranges": [
+      [
+        322,
+        322
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        335,
+        335
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        335,
+        336
+      ]
+    ],
+    "source_page_range": [
+      322,
+      322
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Change the LibreOffice print options to print transparency warnings",
+    "main_steps": [
+      "Open the Tools menu and click Options.",
+      "In the left panel, expand LibreOffice and click Print.",
+      "In Warnings, click the Transparency checkbox.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "LibreOffice options",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "LibreOffice options"
+    ],
+    "section_start_page": 322,
+    "section_end_page": 327,
+    "relevant_procedure": "Relevant procedure:\n1) Go to Tools > Options (macOS LibreOffice > Preferences) on the menu bar to open the Options LibreOffice dialog.  \n2) Click the expansion marker next to LibreOffice on the left-hand side and select Print to open the print options page.  \n3) In the Print settings, locate the \"Warnings\" section and check the box next to \"Transparency\" to enable a warning when transparencies are contained in the document.  \n4) Click OK to save the changes and close the Options LibreOffice dialog.",
+    "retrieved_page_ranges": [
+      [
+        322,
+        327
+      ],
+      [
+        332,
+        333
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        322,
+        322
+      ],
+      [
+        311,
+        313
+      ]
+    ],
+    "source_page_range": [
+      322,
+      327
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the LibreOffice Impress options dialog and enable grid display settings",
+    "main_steps": [
+      "Click the Tools menu.",
+      "Click Options.",
+      "Click the expansion marker next to LibreOffice Impress in the left-hand pane.",
+      "Click Grid.",
+      "Click the Visible grid checkbox.",
+      "Click the Synchronize axes checkbox.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Impress options",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Impress options"
+    ],
+    "section_start_page": 327,
+    "section_end_page": 332,
+    "relevant_procedure": "Relevant procedure:\n1. Go to Tools > Options (on macOS, use Tools > Preferences).  \n2. Click the expansion marker next to LibreOffice Impress on the left-hand side.  \n3. Select Grid from the list of sections.  \n4. Ensure that the \"Visible grid\" option is checked to enable grid display.  \n5. Click OK to save the changes and close the Options dialog.",
+    "retrieved_page_ranges": [
+      [
+        327,
+        332
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        322,
+        322
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        332,
+        333
+      ]
+    ],
+    "source_page_range": [
+      327,
+      332
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Impress print settings and enable Hidden pages with Black & white quality",
+    "main_steps": [
+      "Open the LibreOffice Impress Options dialog.",
+      "In the left pane, click \"LibreOffice Impress\".",
+      "Click \"Print\".",
+      "Under Print, click the checkbox for \"Hidden pages\".",
+      "Under Quality, click \"Black & white\"."
+    ],
+    "id": 0,
+    "section_title": "Customizing user interface",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Customizing user interface"
+    ],
+    "section_start_page": 332,
+    "section_end_page": 333,
+    "relevant_procedure": "Relevant procedure:\n1. Go to Tools > Options (on macOS, use Tools > Preferences).  \n2. In the left-hand menu, click the expansion marker next to LibreOffice and select Print.  \n3. In the Print page, ensure the \"Hidden pages\" option is selected.  \n4. Under the \"Quality\" section, select \"Black & white\".  \n5. Click OK to save the settings and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        332,
+        333
+      ],
+      [
+        322,
+        327
+      ],
+      [
+        327,
+        332
+      ],
+      [
+        311,
+        313
+      ],
+      [
+        322,
+        322
+      ]
+    ],
+    "source_page_range": [
+      332,
+      333
+    ],
+    "is_hit": true
+  },
+  {
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the LibreOffice extension repository website",
+    "main_steps": [
+      "Click the address bar.",
+      "Type \"https://extensions.libreoffice.org/\".",
+      "Press Enter."
+    ],
+    "id": 0,
+    "section_title": "Adding extensions",
+    "section_path": [
+      "Chapter 11, Setting Up and Customizing Impress",
+      "Adding extensions"
+    ],
+    "section_start_page": 333,
+    "section_end_page": 334,
+    "relevant_procedure": "Relevant procedure:\nOpen a web browser and navigate to https://extensions.libreoffice.org/",
+    "retrieved_page_ranges": [
+      [
+        333,
+        334
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    "source_page_range": [
+      333,
+      334
+    ],
+    "is_hit": true
+  }
+]

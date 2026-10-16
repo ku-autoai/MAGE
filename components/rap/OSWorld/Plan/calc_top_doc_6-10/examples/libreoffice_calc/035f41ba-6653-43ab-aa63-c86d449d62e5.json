@@ -1,0 +1,114 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n1. Click on cell J2 (first cell under the \"Gross Profit\" column).\n2. Enter the formula: `=B2-C2-D2-F2-G2-H2`\n3. Press Enter to confirm the formula.\n4. Click on cell J2 again to select it.\n5. Hover over the small square at the bottom-right corner of cell J2 (the fill handle) until the cursor changes to a plus sign, then click and drag down to cell J10.\n6. Release the mouse to copy the formula to cells J3 through J10.\n7. Right-click on the \"Sheet1\" tab at the bottom of the screen.\n8. Select \"Insert Sheet...\" from the context menu.\n9. In the dialog that appears, type \"Sheet2\" as the sheet name and click OK.\n10. Click on cell A1 in Sheet2.\n11. Type \"Year_Profit\" and press Enter.\n12. Click on cell A2 in Sheet2.\n13. Enter the formula: `=Sheet1.A2 & \"_\" & INT(Sheet1.J2)`\n14. Press Enter to confirm the formula.\n15. Click on cell A2 to select it.\n16. Hover over the fill handle (small square at bottom-right of cell A2) until the cursor becomes a plus sign, then click and drag down to cell A10.\n17. Release the mouse to copy the formula to cells A3 through A10.",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell J2 (first cell under the \"Gross Profit\" column).\n2. Enter the formula: `=B2-C2-D2-F2-G2-H2`\n3. Press Enter to confirm the formula.\n4. Click on cell J2 again to select it.\n5. Hover over the small square at the bottom-right corner of cell J2 (the fill handle) until the cursor changes to a plus sign, then click and drag down to cell J10.\n6. Release the mouse to copy the formula to cells J3 through J10.\n7. Right-click on the \"Sheet1\" tab at the bottom of the screen.\n8. Select \"Insert Sheet...\" from the context menu.\n9. In the dialog that appears, type \"Sheet2\" as the sheet name and click OK.\n10. Click on cell A1 in Sheet2.\n11. Type \"Year_Profit\" and press Enter.\n12. Click on cell A2 in Sheet2.\n13. Enter the formula: `=Sheet1.A2 & \"_\" & INT(Sheet1.J2)`\n14. Press Enter to confirm the formula.\n15. Click on cell A2 to select it.\n16. Hover over the fill handle (small square at bottom-right of cell A2) until the cursor becomes a plus sign, then click and drag down to cell A10.\n17. Release the mouse to copy the formula to cells A3 through A10.",
+  "retrieved_page_ranges": [
+    [
+      408,
+      408
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      253,
+      253
+    ],
+    [
+      340,
+      341
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/step_1.png"
+}

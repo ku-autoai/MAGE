@@ -1,0 +1,99 @@
+{
+  "id": "51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate revenue in a new column according to the Retail Price sheet (consider product price and quantity and discount), and generate a Pivot Table in a new sheet (Sheet2) that summarizes the revenue of each product.\n\nRelevant procedure:\n1. Click cell F1 in the current sheet.\n2. Type Revenue as the header and press Enter.\n3. Click the “Retail Price” sheet tab at the bottom.\n4. If cell A1 is not selected, click cell A1 on the Retail Price sheet.\n5. In the name box (left of the formula bar), type ProductPrices, then press Enter to define the named range for the price list.\n6. Click the “Sheet1” tab to return to the sales data sheet.\n7. Click cell F2.\n8. Enter the formula: =E2*(1-F2)*VLOOKUP(C2, ProductPrices, 2, FALSE) and press Enter.\n9. Click cell F2 again.\n10. Copy the cell (Ctrl+C).\n11. Select the range F3:F36 by clicking F3, holding Shift, and clicking F36 (or selecting through the last row with data).\n12. Paste (Ctrl+V) to apply the formula to all sales rows.\n13. Press Esc to deselect the pasted range.\n14. Select the entire data range by clicking A1, then Shift+click the last filled cell in the Revenue column (e.g., F36).\n15. From the menu bar, choose Insert > Pivot Table.\n16. In the dialog, choose Create a new sheet, ensure the selected range is correct, and confirm to create the pivot table on a new sheet (Sheet2).\n17. In the Pivot Table Fields pane on the new sheet, drag Product (from the list) to the Row area.\n18. Drag Revenue to the Data area; ensure its operation is set to Sum.\n19. Close the Pivot Table Fields pane.\n20. Verify that Sheet2 displays product names in rows with their corresponding Sum of Revenue values.",
+  "source": "SheetCopilot@7",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/8_BoomerangSales_gt1.xlsx",
+      "dest": "8_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click cell F1 in the current sheet.\n2. Type Revenue as the header and press Enter.\n3. Click the “Retail Price” sheet tab at the bottom.\n4. If cell A1 is not selected, click cell A1 on the Retail Price sheet.\n5. In the name box (left of the formula bar), type ProductPrices, then press Enter to define the named range for the price list.\n6. Click the “Sheet1” tab to return to the sales data sheet.\n7. Click cell F2.\n8. Enter the formula: =E2*(1-F2)*VLOOKUP(C2, ProductPrices, 2, FALSE) and press Enter.\n9. Click cell F2 again.\n10. Copy the cell (Ctrl+C).\n11. Select the range F3:F36 by clicking F3, holding Shift, and clicking F36 (or selecting through the last row with data).\n12. Paste (Ctrl+V) to apply the formula to all sales rows.\n13. Press Esc to deselect the pasted range.\n14. Select the entire data range by clicking A1, then Shift+click the last filled cell in the Revenue column (e.g., F36).\n15. From the menu bar, choose Insert > Pivot Table.\n16. In the dialog, choose Create a new sheet, ensure the selected range is correct, and confirm to create the pivot table on a new sheet (Sheet2).\n17. In the Pivot Table Fields pane on the new sheet, drag Product (from the list) to the Row area.\n18. Drag Revenue to the Data area; ensure its operation is set to Sum.\n19. Close the Pivot Table Fields pane.\n20. Verify that Sheet2 displays product names in rows with their corresponding Sum of Revenue values.",
+  "retrieved_page_ranges": [
+    [
+      290,
+      290
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/step_1.png"
+}

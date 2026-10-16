@@ -1,0 +1,92 @@
+{
+  "id": "0810415c-bde4-4443-9047-d5f70165a697",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Make the line spacing of first two paragraph into double line spacing\n\nRelevant procedure:\n\n1. Click at the beginning of the first paragraph (the one that starts with \"Compared to a short story...\").\n2. Hold down the Shift key and click at the end of the second paragraph (the one that ends with \"...highest peaks at the end.\") to select both paragraphs.\n3. Click the \"Format\" menu at the top toolbar.\n4. In the dropdown menu, click on \"Paragraph...\".\n5. In the \"Paragraph\" dialog box, go to the \"Indents & Spacing\" tab if it is not already selected.\n6. In the \"Line spacing\" section, click the dropdown menu next to \"Line spacing\".\n7. Select \"Double\" from the dropdown list.\n8. Click the \"OK\" button to apply the changes.",
+  "source": "https://www.youtube.com/watch?v=Q_AaL6ljudU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697/Novels_Intro_Packet.docx",
+            "path": "/home/user/Desktop/Novels_Intro_Packet.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Novels_Intro_Packet.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Novels_Intro_Packet.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": [
+      "compare_line_spacing",
+      "compare_line_spacing"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697/Novels_Intro_Packet_Gold.docx",
+        "dest": "Novels_Intro_Packet_Gold.docx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/0810415c-bde4-4443-9047-d5f70165a697/Novels_Intro_Packet_Gold_2.docx",
+        "dest": "Novels_Intro_Packet_Gold_2.docx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/Novels_Intro_Packet.docx",
+        "dest": "Novels_Intro_Packet.docx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/Novels_Intro_Packet.docx",
+        "dest": "Novels_Intro_Packet.docx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure:\n\n1. Click at the beginning of the first paragraph (the one that starts with \"Compared to a short story...\").\n2. Hold down the Shift key and click at the end of the second paragraph (the one that ends with \"...highest peaks at the end.\") to select both paragraphs.\n3. Click the \"Format\" menu at the top toolbar.\n4. In the dropdown menu, click on \"Paragraph...\".\n5. In the \"Paragraph\" dialog box, go to the \"Indents & Spacing\" tab if it is not already selected.\n6. In the \"Line spacing\" section, click the dropdown menu next to \"Line spacing\".\n7. Select \"Double\" from the dropdown list.\n8. Click the \"OK\" button to apply the changes.",
+  "instruction_with_evidence": "Make the line spacing of first two paragraph into double line spacing\n\nRelevant procedure:\n\n1. Click at the beginning of the first paragraph (the one that starts with \"Compared to a short story...\").\n2. Hold down the Shift key and click at the end of the second paragraph (the one that ends with \"...highest peaks at the end.\") to select both paragraphs.\n3. Click the \"Format\" menu at the top toolbar.\n4. In the dropdown menu, click on \"Paragraph...\".\n5. In the \"Paragraph\" dialog box, go to the \"Indents & Spacing\" tab if it is not already selected.\n6. In the \"Line spacing\" section, click the dropdown menu next to \"Line spacing\".\n7. Select \"Double\" from the dropdown list.\n8. Click the \"OK\" button to apply the changes."
+}

@@ -1,0 +1,98 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure:\n\n1. Click the \"Sheet1\" tab at the bottom of the window to switch to the data sheet.\n2. Locate the column containing \"Actual Sale\" values and identify the first data row (assuming row 2).\n3. Locate the columns containing \"Returns\", \"Discounts\", \"Allowances\", \"Material charges\", \"Labor charges\", and \"Overhead\" values in row 2.\n4. Click cell B2 (or the appropriate cell for the first data entry under \"Gross profit\").\n5. Type the formula: `=(Actual_Sale_Cell - Returns_Cell - Discounts_Cell - Allowances_Cell - Material_Cell - Labor_Cell - Overhead_Cell)`. Replace cell references with the actual column letters from Sheet1. For example, if Actual Sale is in column F, Returns in G, Discounts in H, Allowances in I, Material in J, Labor in K, and Overhead in L, type: `=(F2-G2-H2-I2-J2-K2-L2)`.\n6. Press Enter to calculate the Gross Profit for the first row.\n7. Click cell B2 again, then drag the fill handle (small square at the bottom-right corner of the cell) down to copy the formula to all other data rows.\n8. Click the \"Sheet2\" tab at the bottom of the window to switch to the new sheet.\n9. Click cell A1 in Sheet2.\n10. Type \"Year_Profit\" and press Enter.\n11. Click cell A2 in Sheet2.\n12. Type the formula: `=Sheet1.A2 & \"_\" & INT(Sheet1.B2)`. Adjust the cell references if the Year column in Sheet1 is not in column A or if Gross Profit is not in column B. This formula concatenates the Year value from Sheet1's column A with an underscore and the integer part of the Gross Profit from Sheet1's column B.\n13. Press Enter to display the Year_Profit for the first row.\n14. Click cell A2 again, then drag the fill handle down to copy the formula to all other data rows corresponding to Sheet1's data.",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n\n1. Click the \"Sheet1\" tab at the bottom of the window to switch to the data sheet.\n2. Locate the column containing \"Actual Sale\" values and identify the first data row (assuming row 2).\n3. Locate the columns containing \"Returns\", \"Discounts\", \"Allowances\", \"Material charges\", \"Labor charges\", and \"Overhead\" values in row 2.\n4. Click cell B2 (or the appropriate cell for the first data entry under \"Gross profit\").\n5. Type the formula: `=(Actual_Sale_Cell - Returns_Cell - Discounts_Cell - Allowances_Cell - Material_Cell - Labor_Cell - Overhead_Cell)`. Replace cell references with the actual column letters from Sheet1. For example, if Actual Sale is in column F, Returns in G, Discounts in H, Allowances in I, Material in J, Labor in K, and Overhead in L, type: `=(F2-G2-H2-I2-J2-K2-L2)`.\n6. Press Enter to calculate the Gross Profit for the first row.\n7. Click cell B2 again, then drag the fill handle (small square at the bottom-right corner of the cell) down to copy the formula to all other data rows.\n8. Click the \"Sheet2\" tab at the bottom of the window to switch to the new sheet.\n9. Click cell A1 in Sheet2.\n10. Type \"Year_Profit\" and press Enter.\n11. Click cell A2 in Sheet2.\n12. Type the formula: `=Sheet1.A2 & \"_\" & INT(Sheet1.B2)`. Adjust the cell references if the Year column in Sheet1 is not in column A or if Gross Profit is not in column B. This formula concatenates the Year value from Sheet1's column A with an underscore and the integer part of the Gross Profit from Sheet1's column B.\n13. Press Enter to display the Year_Profit for the first row.\n14. Click cell A2 again, then drag the fill handle down to copy the formula to all other data rows corresponding to Sheet1's data.",
+  "retrieved_page_ranges": [
+    [
+      85,
+      85
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/step_1.png"
+}

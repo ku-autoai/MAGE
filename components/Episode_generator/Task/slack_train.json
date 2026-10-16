@@ -1,0 +1,975 @@
+[
+  {
+    "id": 0,
+    "main_task": "Pre-approve the app “Google Calendar” for workspace members",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Apps and workflows in the menu that appears.",
+      "Click Browse in the top-right corner of the Slack Marketplace window.",
+      "Click the search field at the top, type Google Calendar, and press Enter.",
+      "Click the Google Calendar app in the search results.",
+      "On the app page, click the Approve button.",
+      "In the confirmation dialog, click Approve to finish."
+    ]
+  },
+  {
+    "id": 1,
+    "main_task": "Create a personal reminder that will notify you in 5 minutes",
+    "main_steps": [
+      "Click the message field at the bottom of the currently open channel.",
+      "Type \"/remind me \\\"Review project plan\\\" in 5 minutes\" (without the outer quotes).",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 2,
+    "main_task": "Configure Slack to send notifications only on weekdays from 9:00 AM to 5:00 PM",
+    "main_steps": [
+      "Click your profile picture in the Slack sidebar.",
+      "Click Preferences in the menu that appears.",
+      "Scroll to the Notification schedule section.",
+      "Click the Allow notifications drop-down list.",
+      "Select Weekdays.",
+      "Click the Start time field and choose 9:00 AM.",
+      "Click the End time field and choose 5:00 PM.",
+      "Click the close icon at the top-right of the Preferences window."
+    ]
+  },
+  {
+    "id": 3,
+    "setup_task": "(Setup) Start a Huddle in the #general channel",
+    "setup_steps": [
+      "Click the “#general” channel in the left sidebar.",
+      "Click the headphones “Start a huddle” icon in the channel header.",
+      "Click the “Start huddle” button in the dialog."
+    ],
+    "main_task": "Open the Huddle canvas for taking meeting notes",
+    "main_steps": [
+      "Locate the huddle controls at the bottom right of the huddle window.",
+      "Click the canvas icon (a square with a pencil) to open the notes canvas."
+    ]
+  },
+  {
+    "id": 4,
+    "main_task": "Create a custom view that shows only unread mentions and threads from the #general channel",
+    "main_steps": [
+      "Click Activity in the left sidebar.",
+      "Click the plus (+) icon at the top of the Activity pane.",
+      "Click Create a custom view.",
+      "In the Title field, type Important Unreads.",
+      "Click the radio button for Detailed layout.",
+      "Click the Only show unreads toggle so it is on.",
+      "Check the box next to Mentions & reactions.",
+      "Check the box next to Threads.",
+      "Click the Select channels or sections drop-down.",
+      "Click #general in the list.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 5,
+    "main_task": "Display the Channels analytics for the last 30 days",
+    "main_steps": [
+      "Click the organization name in the Slack sidebar.",
+      "Click Tools & settings in the menu.",
+      "Click Workspace analytics.",
+      "Click the Channels tab at the top of the analytics window.",
+      "Click the date range button that shows Last 28 days.",
+      "Select Last 30 days from the drop-down list."
+    ]
+  },
+  {
+    "id": 6,
+    "setup_task": "(Setup) Create a private channel that will later be converted to public",
+    "setup_steps": [
+      "Click the   +   button next to Channels in the left sidebar.",
+      "Select Create a channel.",
+      "In the Channel name field, type test-private.",
+      "Turn on the Make private toggle so it is enabled.",
+      "Click Create.",
+      "Click Skip for now if invited members are requested."
+    ],
+    "main_task": "Convert the “test-private” channel from private to public",
+    "main_steps": [
+      "Click the test-private channel in the left sidebar.",
+      "Click the channel name test-private at the top of the conversation header.",
+      "Click the Settings tab in the channel details window.",
+      "Scroll (if necessary) and click Change to a public channel.",
+      "In the confirmation dialog, click Convert to Public."
+    ]
+  },
+  {
+    "id": 7,
+    "main_task": "Remove the “#general” channel from the list of default channels",
+    "main_steps": [
+      "Click the workspace name at the top of the left sidebar.",
+      "Click Tools & settings.",
+      "Click Workspace settings.",
+      "Next to Default Channels, click Expand.",
+      "Click the small white x to the right of “#general”.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 8,
+    "setup_task": "(Setup) Create a sample automation rule named “Temp Rule”",
+    "setup_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Apps and workflows from the menu.",
+      "In the Slack Marketplace window, click Requests in the left sidebar.",
+      "Click Automation rules.",
+      "Click Create rule.",
+      "In the Rule name field, type Temp Rule.",
+      "Click Save.",
+      "Click Done to finish creating the rule."
+    ],
+    "main_task": "Remove the “Temp Rule” automation rule",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Apps and workflows.",
+      "In the Slack Marketplace window, click Requests in the left sidebar.",
+      "Click Automation rules to view the list of rules.",
+      "Click the three dots icon next to the Temp Rule.",
+      "Click Remove.",
+      "In the confirmation dialog, click Remove to confirm."
+    ]
+  },
+  {
+    "id": 9,
+    "setup_task": "(Setup) Generate a Slack Connect direct message invitation that appears in your primary workspace",
+    "setup_steps": [
+      "Click the workspace name in the top-left corner of Slack.",
+      "Click Sign in to another workspace.",
+      "Enter the sign-in details for a second workspace you have access to and click Continue.",
+      "In the second workspace, click the plus (+) icon next to Direct Messages in the sidebar.",
+      "Click Slack Connect.",
+      "In the email field, type the email address that belongs to your primary workspace and press Enter.",
+      "Click Invite.",
+      "Click Done to finish sending the invitation.",
+      "Click the workspace switcher in the top-left corner and select your primary workspace to return to it.",
+      "Wait a moment until the Slack Connect invitation banner appears or refresh the Home view if necessary."
+    ],
+    "main_task": "Block all future Slack Connect invitations from the sender of the newly received invitation",
+    "main_steps": [
+      "Click Home in the sidebar to make sure you are on the workspace’s home screen.",
+      "Click Directories near the top of the page.",
+      "Click the External tab at the top of the Directories page.",
+      "Find the pending invitation in the list and click Ignore to the right of it.",
+      "In the dialog that opens, click Block invitations from this person.",
+      "Click Block Invitations to confirm."
+    ]
+  },
+  {
+    "id": 10,
+    "setup_task": "(Setup) Open the #general channel so its conversation header is visible",
+    "setup_steps": [
+      "In the left sidebar, click Channels to expand the list if it is collapsed.",
+      "Click the channel named #general."
+    ],
+    "main_task": "Hide the “Files” tab from the #general channel header",
+    "main_steps": [
+      "Click the plus (+) icon at the right end of the header tabs row.",
+      "Click Edit tabs.",
+      "Hover the mouse pointer over the tab labeled Files in the list that appears.",
+      "Click the eye icon beside Files to hide the tab.",
+      "Click Done."
+    ]
+  },
+  {
+    "id": 11,
+    "setup_task": "(Setup) Create a canvas called “Q1 Goals” inside the #general channel",
+    "setup_steps": [
+      "Click the “#general” channel in the left sidebar.",
+      "Click the plus (+) button to the left of the message field.",
+      "In the menu that appears, click “Canvas”.",
+      "In the Title field, type Q1 Goals.",
+      "Click the Create button.",
+      "Click the Close (×) button in the upper-right corner of the canvas window to return to the channel view."
+    ],
+    "main_task": "Add a new tab named “Goals” that features the “Q1 Goals” canvas",
+    "main_steps": [
+      "In the channel header, click the + (Add a tab) button to the right of the existing tabs.",
+      "Click “Canvas or list”.",
+      "Click the radio button next to the canvas titled Q1 Goals.",
+      "Click Next.",
+      "In the Tab name box, type Goals.",
+      "Click Add."
+    ]
+  },
+  {
+    "id": 12,
+    "setup_task": "(Setup) Create a sample icon file for upload",
+    "setup_steps": [
+      "Press the Windows key.",
+      "Type Paint and press Enter.",
+      "Click the rectangle tool in the toolbar.",
+      "Drag on the blank canvas to draw a small square.",
+      "Press Ctrl+S.",
+      "In the Save As dialog, click Desktop in the left pane.",
+      "In the File name box, type OrgIcon.png.",
+      "Click the Save button.",
+      "Click the Close button to exit Paint."
+    ],
+    "main_task": "Upload the created “OrgIcon.png” as the organization icon",
+    "main_steps": [
+      "In Slack, click your organization name at the top of the left sidebar.",
+      "Click Tools & settings in the menu that appears.",
+      "Click Customize in the submenu.",
+      "In the left sidebar of the Customize window, click Settings.",
+      "Click Organization Info.",
+      "Next to the Details section, click Edit.",
+      "Under Icon, click Choose File.",
+      "In the file dialog, click Desktop.",
+      "Double-click OrgIcon.png.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 13,
+    "setup_task": "(Setup) Create a folder named “Drafts” in the #general channel",
+    "setup_steps": [
+      "Click the #general channel in the left sidebar to open it.",
+      "At the top of the conversation, click the + icon labeled “Add bookmark”.",
+      "Click New folder.",
+      "Type Drafts.",
+      "Press Enter."
+    ],
+    "main_task": "Rename the “Drafts” folder to “Final Drafts”",
+    "main_steps": [
+      "In the bookmarks bar, click the folder named Drafts to open it.",
+      "Click the three dots icon in the top-right corner of the folder view.",
+      "Click Rename folder.",
+      "Type Final Drafts.",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 14,
+    "main_task": "Revoke the first pending external invitation",
+    "main_steps": [
+      "Click Directories in the left-hand sidebar on the Home screen.",
+      "Click External at the top of the Directory page.",
+      "Click View invitations.",
+      "Hover the mouse pointer over the first invitation in the list.",
+      "Click the revoke icon that appears on the right of that invitation row.",
+      "In the confirmation dialog, click Revoke."
+    ]
+  },
+  {
+    "id": 15,
+    "setup_task": "(Setup) Create a new channel that you manage",
+    "setup_steps": [
+      "Click the “+” button next to “Channels” in the left sidebar.",
+      "Click “Create a channel”.",
+      "Type “demo-permissions” in the Channel Name field.",
+      "Click “Create”.",
+      "Click “Skip for now” if invited members are prompted."
+    ],
+    "main_task": "Restrict tab editing to only Channel Managers in the “demo-permissions” channel",
+    "main_steps": [
+      "Click “demo-permissions” in the left sidebar to open the channel.",
+      "Click the channel name “demo-permissions” at the top of the conversation header.",
+      "Click “Settings”.",
+      "Click the drop-down menu below “Choose who can add, remove, and reorder tabs”.",
+      "Select “Only Channel Managers”.",
+      "Click the “✕” close icon in the upper-right of the dialog."
+    ]
+  },
+  {
+    "id": 16,
+    "main_task": "Open the list of blocked Slack Connect invitations",
+    "main_steps": [
+      "Click your profile picture in the left sidebar.",
+      "Click Preferences in the menu that appears.",
+      "In the Preferences window, click Privacy & visibility in the left pane.",
+      "Scroll to the section labeled Invitations you’ve blocked."
+    ]
+  },
+  {
+    "id": 17,
+    "setup_task": "(Setup) Create a new public channel named “team-huddle” that includes you and “Alex”",
+    "setup_steps": [
+      "Click the “+” button next to “Channels” in the left sidebar.",
+      "Click “Create a channel”.",
+      "In the “Name” field, type team-huddle.",
+      "Click “Create”.",
+      "In the “Add people” field, type Alex.",
+      "Click Alex in the dropdown list.",
+      "Click “Add”.",
+      "Click “Done”."
+    ],
+    "main_task": "Start a huddle in the channel and invite Alex to it",
+    "main_steps": [
+      "Click the channel team-huddle in the left sidebar.",
+      "In the channel header, click the headphones icon labeled “Start a huddle”.",
+      "Click the person-plus (Add people) button in the huddle controls bar.",
+      "Type Alex in the search box.",
+      "Click Alex in the list.",
+      "Click “Invite”."
+    ]
+  },
+  {
+    "id": 18,
+    "main_task": "Record a video clip in the #general channel with background blur enabled and send it with a generated transcript",
+    "main_steps": [
+      "Click the #general channel in the sidebar.",
+      "Click the message field at the bottom.",
+      "Click the plus (+) icon next to the message field.",
+      "Click \"Record a video clip\" in the menu.",
+      "In the recording window, click the Blur background button to enable it.",
+      "Click the Record button to start recording.",
+      "Click the Record button again to stop recording.",
+      "Click Use Video.",
+      "Click Generate transcript below the clip preview.",
+      "Click the paper plane icon to send the clip."
+    ]
+  },
+  {
+    "id": 19,
+    "main_task": "Hide the “Phone number” profile field and publish the change",
+    "main_steps": [
+      "Click the workspace name at the top of the left sidebar.",
+      "Hover over Tools & settings.",
+      "Click Workspace settings.",
+      "Click Menu at the top of the settings page.",
+      "Click Profiles in the left sidebar.",
+      "Locate the “Phone number” field in the list of profile fields.",
+      "Click the toggle next to “Phone number” to switch it off.",
+      "Click Publish Changes in the upper-right corner."
+    ]
+  },
+  {
+    "id": 20,
+    "setup_task": "(Setup) Join a Salesforce channel and create a custom section to move it into",
+    "setup_steps": [
+      "Click the “+” button next to Channels in the left sidebar.",
+      "Type “acme-corp” in the search field.",
+      "Click the result named “acme-corp” that displays the Salesforce cloud icon.",
+      "Click the Join button to join the channel.",
+      "Scroll to the bottom of the channel list in the sidebar and click Add section.",
+      "Type “Key Accounts” in the section name field.",
+      "Press Enter to create the new custom section."
+    ],
+    "main_task": "Move the “acme-corp” Salesforce channel from the Salesforce channels section to the “Key Accounts” custom section",
+    "main_steps": [
+      "Locate the “acme-corp” channel under the Salesforce channels section in the sidebar.",
+      "Click and hold the “acme-corp” channel name.",
+      "Drag the channel into the “Key Accounts” section until the section highlights.",
+      "Release the mouse button to drop the channel into the section."
+    ]
+  },
+  {
+    "id": 21,
+    "main_task": "Notify all members in the #general channel about an emergency drill using @everyone",
+    "main_steps": [
+      "Click the “general” channel in the left sidebar.",
+      "Click the message input field at the bottom of the channel.",
+      "Type \"@everyone Please note that there will be an emergency evacuation drill at 3 PM.\"",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 22,
+    "main_task": "Accept a pending external invitation",
+    "main_steps": [
+      "Click Home in the left sidebar.",
+      "Click Directories near the top of the Home view.",
+      "Click External at the top of the Directories page.",
+      "Click Accept to the right of the pending invitation entry.",
+      "Review the invitation details.",
+      "Click Accept Invitation."
+    ]
+  },
+  {
+    "id": 23,
+    "main_task": "Send a message that notifies only currently active members using @here",
+    "main_steps": [
+      "Click the channel named “general” in the left sidebar.",
+      "Click into the message input box at the bottom.",
+      "Type “@here Lunch in 5 minutes.”",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 24,
+    "setup_task": "(Setup) Post a sample message to react to",
+    "setup_steps": [
+      "Click the message input field at the bottom of the #general channel.",
+      "Type \"Sample message for emoji reaction\".",
+      "Press Enter."
+    ],
+    "main_task": "Add a 👍 (thumbs up) emoji reaction to the posted message",
+    "main_steps": [
+      "Hover the cursor over the \"Sample message for emoji reaction\" message until the action icons appear.",
+      "Click the Add reaction (smiley face with a plus) icon.",
+      "Type \"thumbsup\" in the emoji search field.",
+      "Click the 👍 emoji from the search results."
+    ]
+  },
+  {
+    "id": 25,
+    "setup_task": "(Setup) Build a workflow named “Demo Workflow” that posts a greeting in #general when triggered",
+    "setup_steps": [
+      "Click the workspace name at the top of the left sidebar.",
+      "Click Tools.",
+      "Click Workflow Builder.",
+      "In the Workflow Builder window, click Create in the upper-right corner.",
+      "In the Name field, type Demo Workflow.",
+      "Click Next.",
+      "Under Select a trigger, click Shortcut.",
+      "Click Next.",
+      "Click Add step.",
+      "Click Send a message.",
+      "Open the Channel drop-down and click #general.",
+      "Click in the message text box and type Hello from workflow!.",
+      "Click Save.",
+      "Click Publish in the upper-right corner.",
+      "Click Done to close Workflow Builder."
+    ],
+    "main_task": "Trigger the “Demo Workflow” from the shortcut menu",
+    "main_steps": [
+      "Click the lightning bolt icon to the left of the message box at the bottom of Slack.",
+      "Type Demo Workflow.",
+      "Click Demo Workflow in the list that appears."
+    ]
+  },
+  {
+    "id": 26,
+    "setup_task": "(Setup) Post the URL allowlist link so it can be opened from Slack",
+    "setup_steps": [
+      "Click the Direct messages section to expand it if it is collapsed.",
+      "Click your own name to open a DM with yourself.",
+      "Click inside the message field at the bottom of the window.",
+      "Type \"https://my.slack.com/help/urls\".",
+      "Press Enter to send the message."
+    ],
+    "main_task": "Open Slack’s allowlist URLs help page",
+    "main_steps": [
+      "Click the link \"https://my.slack.com/help/urls\" that you just posted."
+    ]
+  },
+  {
+    "id": 27,
+    "setup_task": "(Setup) Install the Google Calendar app so it appears in the Installed Apps list",
+    "setup_steps": [
+      "Click Apps in the left sidebar.",
+      "Click Add apps at the top of the Apps view.",
+      "In the search field at the top of the Slack Marketplace window, type Google Calendar.",
+      "Press Enter.",
+      "Click Google Calendar in the search results.",
+      "Click the Add to Slack button.",
+      "Click Allow on the permission page to complete the installation."
+    ],
+    "main_task": "Reinstall the Google Calendar app to rotate its token",
+    "main_steps": [
+      "Click Apps in the left sidebar.",
+      "Click Add apps.",
+      "Click Manage in the upper-right corner of the Slack Marketplace window.",
+      "Click Installed Apps in the left panel.",
+      "In the search box, type Google Calendar.",
+      "Click Google Calendar in the results.",
+      "Click the Configuration tab on the app page.",
+      "Scroll to the bottom and click Remove App.",
+      "Click Remove App in the confirmation dialog.",
+      "Wait until the Install button appears, then click Install.",
+      "Click Allow on the permission page to finish reinstalling the app."
+    ]
+  },
+  {
+    "id": 28,
+    "main_task": "Install the “Zoom” calling app from the Slack Marketplace",
+    "main_steps": [
+      "Click the “Apps” icon in the left sidebar.",
+      "Click “Add apps”.",
+      "Click the search field at the top of the App Directory window.",
+      "Type Zoom and press Enter.",
+      "Click the app labeled “Zoom”.",
+      "Click the “Add to Slack” or “Install” button.",
+      "Click “Add” to confirm."
+    ]
+  },
+  {
+    "id": 29,
+    "setup_task": "(Setup) Create a Salesforce-linked Slack channel named “salesforce-deal-update”",
+    "setup_steps": [
+      "Click the + icon next to Channels in the left sidebar.",
+      "Click Create a channel.",
+      "In the Name field, type salesforce-deal-update.",
+      "Click the Public option.",
+      "Click Create.",
+      "If an Add people window appears, click Skip for now."
+    ],
+    "main_task": "Post an update message in the “salesforce-deal-update” channel so it syncs with the connected Salesforce record",
+    "main_steps": [
+      "Click the salesforce-deal-update channel in the left sidebar.",
+      "Click inside the message field at the bottom of the window.",
+      "Type Budget updated to $500k.",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 30,
+    "main_task": "Restrict the use of @channel and @here mentions to Workspace Owners only",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings in the menu that appears.",
+      "Click Roles & permissions.",
+      "On the Account types page, locate the row labeled “Use @channel and @here in channels”.",
+      "Click the three dots icon at the end of that row.",
+      "Click Edit permission.",
+      "In the permission dropdown, click Workspace Owners only.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 31,
+    "setup_task": "(Setup) Create a new public channel named “announcements-test”",
+    "setup_steps": [
+      "Click the plus (+) button next to “Channels” in the left sidebar.",
+      "Click “Create a channel”.",
+      "In the Channel name field, type announcements-test.",
+      "Click “Create”.",
+      "If an invite dialog appears, click “Skip for now”."
+    ],
+    "main_task": "Restrict posting in “announcements-test” so only owners and admins can post messages",
+    "main_steps": [
+      "Click the channel “announcements-test” in the sidebar.",
+      "Click the channel name “announcements-test” at the top of the conversation header.",
+      "In the channel details pane, click the “Settings” tab.",
+      "Next to “Posting permissions”, click “Edit”.",
+      "Select the option “Only owners and admins can post”.",
+      "Click “Save Changes”."
+    ]
+  },
+  {
+    "id": 32,
+    "main_task": "Create a custom display name guideline policy that requires members to use their full legal first and last name",
+    "main_steps": [
+      "Click the organization name in the sidebar.",
+      "Click Tools & settings.",
+      "Click Organization settings.",
+      "In the left column, click Settings.",
+      "Click Organization Policies.",
+      "Click Display name guidelines.",
+      "Click Add policy.",
+      "Click the radio button labeled Custom Guidelines.",
+      "Type All members must use their full legal first and last name.",
+      "Click Save Policy.",
+      "Click Create Policy to confirm."
+    ]
+  },
+  {
+    "id": 33,
+    "main_task": "Disallow message editing for all members in the organization",
+    "main_steps": [
+      "Click the organization name in the left sidebar.",
+      "Click Tools & settings in the menu that appears.",
+      "Click Organization settings.",
+      "In the left sidebar, click Settings.",
+      "Select Organization Policies.",
+      "Click the Permissions tab.",
+      "Next to Message Editing, click Add Policy or Edit.",
+      "Select Never in the options for when members can edit messages.",
+      "Click Save Policy."
+    ]
+  },
+  {
+    "id": 34,
+    "main_task": "Restrict channel posting permission changes to Workspace Owners only",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings in the menu.",
+      "Click Roles & permissions.",
+      "On the Account types page, click the three dots icon next to Edit channel posting permissions.",
+      "Click Edit permission.",
+      "Select Workspace Owners from the list of roles.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 35,
+    "setup_task": "(Setup) Create a new channel to use for generating an email address",
+    "setup_steps": [
+      "Click the + icon next to Channels in the left sidebar.",
+      "Click “Create a channel”.",
+      "In the Name field, type “project-email”.",
+      "Click “Create”."
+    ],
+    "main_task": "Generate an email address for the #project-email channel",
+    "main_steps": [
+      "Click the “#project-email” channel in the sidebar.",
+      "Click the channel name in the header to open Channel details.",
+      "Click the “Integrations” tab in the Channel details pane.",
+      "Next to Email, click “Create email address”.",
+      "In the confirmation window, click “Create email address” again.",
+      "Wait until the unique email address appears on the screen."
+    ]
+  },
+  {
+    "id": 36,
+    "main_task": "Set “Zoom” as the default third-party calling app in Slack",
+    "main_steps": [
+      "Click your workspace name in the top-left corner of the Slack window.",
+      "Click Preferences in the drop-down menu.",
+      "Click Advanced in the left sidebar of the Preferences window.",
+      "In the Calling section, click the drop-down menu next to “When placing calls, use”.",
+      "Click Zoom from the list of options.",
+      "Press Esc to close the Preferences window."
+    ]
+  },
+  {
+    "id": 37,
+    "setup_task": "(Setup) Draft a stand-up reminder message",
+    "setup_steps": [
+      "Click the “general” channel in the left sidebar.",
+      "Click inside the message field at the bottom of the channel.",
+      "Type “Daily stand-up will start in 10 minutes.”"
+    ],
+    "main_task": "Notify the entire channel by adding an @channel mention and sending the message",
+    "main_steps": [
+      "Click at the beginning of the draft message in the message field.",
+      "Type “@channel ”.",
+      "Press Enter to send the message."
+    ]
+  },
+  {
+    "id": 38,
+    "main_task": "Change the workspace message retention setting to delete messages older than 90 days",
+    "main_steps": [
+      "Click the workspace name at the top of the left sidebar.",
+      "Click \"Tools & settings\" in the menu that appears.",
+      "Click \"Workspace settings\".",
+      "Next to \"Data retention\", click \"Expand\".",
+      "Click the message retention drop-down menu.",
+      "Select \"Delete messages older than 90 days\".",
+      "Click \"Save\".",
+      "In the confirmation window, click \"Save\" again."
+    ]
+  },
+  {
+    "id": 39,
+    "setup_task": "(Setup) Populate the Start date profile field with a value",
+    "setup_steps": [
+      "Click the workspace name in the top-left corner of the Slack window.",
+      "Click View profile.",
+      "Click Edit profile.",
+      "Click the Start date field.",
+      "Type January 15, 2018.",
+      "Click Save changes."
+    ],
+    "main_task": "Enable profile celebrations for the Start date field",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings from the menu that opens.",
+      "Click Profiles.",
+      "Below About me, click Edit to the right of Start date.",
+      "Click the toggle next to Celebration events to turn it on.",
+      "Click Publish Changes."
+    ]
+  },
+  {
+    "id": 40,
+    "setup_task": "(Setup) Create a thread to later manage its notifications",
+    "setup_steps": [
+      "Click inside the message field at the bottom of the default #general channel.",
+      "Type \"Hello team\" and press Enter.",
+      "Hover over the message you just sent and click the \"Reply in thread\" speech-bubble icon.",
+      "In the thread pane on the right, click the reply field, type \"First reply\" and press Enter."
+    ],
+    "main_task": "Turn off notifications for replies in the created thread",
+    "main_steps": [
+      "Hover over the original \"Hello team\" message in the channel.",
+      "Click the three dots \"More actions\" icon that appears.",
+      "Select \"Turn off notifications for replies\" from the menu."
+    ]
+  },
+  {
+    "id": 41,
+    "setup_task": "(Setup) Insert a date into a new canvas for testing reminder creation",
+    "setup_steps": [
+      "Click the plus (+) icon next to “Canvas” in the left sidebar.",
+      "Click “New canvas”.",
+      "Type “December 31st” in the blank canvas.",
+      "Press Enter."
+    ],
+    "main_task": "Add a custom 3:00 PM reminder to the “December 31st” date in the canvas",
+    "main_steps": [
+      "Click the text “December 31st” to highlight the recognized date.",
+      "Hover the mouse pointer over the highlighted date.",
+      "Click the Add reminder (bell) icon that appears above the date.",
+      "Click “Custom time”.",
+      "Type 3:00 in the time field.",
+      "Select “PM” if needed.",
+      "Click “Set reminder”."
+    ]
+  },
+  {
+    "id": 42,
+    "main_task": "Open the Slack Support contact form to request a message retention override policy",
+    "main_steps": [
+      "Click the question-mark Help icon in the top-right corner of the Slack window.",
+      "In the Help menu that appears, click “Contact Us”.",
+      "Wait for the Slack Support contact form to open in a new browser tab or window."
+    ]
+  },
+  {
+    "id": 43,
+    "main_task": "Send a message to notify only active members in #general using @here",
+    "main_steps": [
+      "Click the “#general” channel in the left sidebar.",
+      "Click inside the message input field at the bottom.",
+      "Type “@here Hello team, meeting starts in 5 minutes.”",
+      "Press Enter."
+    ]
+  },
+  {
+    "id": 44,
+    "main_task": "Add an emoji alias named \":goodjob:\" for the existing 👍 (thumbsup) emoji and send a message with it",
+    "main_steps": [
+      "Click the #general channel in the left sidebar.",
+      "Click the smiley face emoji icon at the right side of the message field to open the emoji picker.",
+      "Click the \"Add Emoji\" button at the bottom of the picker.",
+      "Click the \"Alias\" tab at the top of the Add Emoji window.",
+      "Click the \"Choose emoji\" field, type \"thumbsup\", and select the 👍 emoji from the results.",
+      "Click the \"Enter alias\" field and type \"goodjob\" (without colons).",
+      "Click the \"Save\" button.",
+      "In the message field, type \":goodjob:\".",
+      "Press Enter to send the message and show the 👍 emoji in the channel."
+    ]
+  },
+  {
+    "id": 45,
+    "main_task": "Enable canvas version history and allow restoration for the workspace",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings in the menu that appears.",
+      "Scroll to the Canvases section and click Expand next to it.",
+      "Click the checkbox labeled Show canvas version history and allow restoration to add a checkmark.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 46,
+    "main_task": "Set the workspace’s message editing permission to “Never”",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Select Workspace settings from the dropdown menu.",
+      "Click the Permissions tab at the top of the settings window.",
+      "Locate Message Editing and click the Expand button next to it.",
+      "Open the drop-down menu under ‘Allow members to edit messages’.",
+      "Click Never in the list.",
+      "Click Save at the bottom of the section."
+    ]
+  },
+  {
+    "id": 47,
+    "setup_task": "(Setup) Post a sample message to start a thread",
+    "setup_steps": [
+      "Click the #general channel in the left sidebar.",
+      "Click the message input field at the bottom of the channel view.",
+      "Type \"Project update is scheduled for tomorrow.\"",
+      "Press Enter to send the message."
+    ],
+    "main_task": "Reply to the posted message in a thread and send the reply back to the channel",
+    "main_steps": [
+      "Hover the mouse over the message \"Project update is scheduled for tomorrow.\"",
+      "Click the Reply in thread icon that appears.",
+      "Click the thread reply input field on the right side.",
+      "Type \"Looking forward to the details.\"",
+      "Click the checkbox labeled Also send to #general (or Send to channel).",
+      "Press Enter to send the reply."
+    ]
+  },
+  {
+    "id": 48,
+    "main_task": "Create an app approval rule that sends internal app requests for review",
+    "main_steps": [
+      "Click the workspace name in the top-left corner of Slack.",
+      "Click \"Settings & administration\".",
+      "Click \"Manage apps\".",
+      "In the left sidebar, click \"App Approvals\".",
+      "Click the \"Create rule\" button.",
+      "Open the first dropdown that starts with \"If app requested is\".",
+      "Select \"Internal app\" from the list.",
+      "Open the action dropdown that starts with \"then\".",
+      "Select \"Send for review\".",
+      "Click \"Create\" (or \"Save\") to add the rule."
+    ]
+  },
+  {
+    "id": 49,
+    "main_task": "Promote a workspace member from Regular Member to Workspace Admin",
+    "main_steps": [
+      "Click your organization name in the Slack sidebar.",
+      "Click Tools & settings in the menu.",
+      "Click Manage members.",
+      "If a workspace list appears, click the workspace you want to manage.",
+      "Locate the first member listed under your own name in the Members table.",
+      "Click the three dots icon on the right of that member’s row.",
+      "Click Change account type.",
+      "Select Workspace Admin.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 50,
+    "main_task": "Disable two-factor authentication for the first member in the workspace list",
+    "main_steps": [
+      "Click the workspace name in the sidebar.",
+      "Hover over Tools & settings.",
+      "Click Manage members.",
+      "Click the three dots icon to the right of the first member in the list.",
+      "Click Disable two-factor authentication.",
+      "In the confirmation dialog, click Disable."
+    ]
+  },
+  {
+    "id": 51,
+    "main_task": "Install the Google Authenticator app from the Google Play Store as recommended for Android",
+    "main_steps": [
+      "Tap the Play Store icon on the home screen.",
+      "Tap the search bar at the top.",
+      "Type \"Google Authenticator\" and press the search key.",
+      "Tap the app titled \"Google Authenticator\" by Google LLC in the search results.",
+      "Tap the \"Install\" button.",
+      "Wait until the download finishes and the \"Open\" button appears."
+    ]
+  },
+  {
+    "id": 52,
+    "setup_task": "(Setup) Add a sample domain to prepare for verification",
+    "setup_steps": [
+      "Click Apps in the left sidebar.",
+      "Type OneDrive and SharePoint into the search field.",
+      "Click the OneDrive and SharePoint app from the results.",
+      "Click Add to Slack.",
+      "When the app window opens, click the Home tab if it is not already selected.",
+      "Click Admin Settings.",
+      "Click Add Domain.",
+      "Type example.com in the domain field.",
+      "Click Add to save the domain."
+    ],
+    "main_task": "Verify ownership of the “example.com” domain",
+    "main_steps": [
+      "In the OneDrive and SharePoint window, stay on the Home tab and click Admin Settings again if needed.",
+      "Find the row containing example.com.",
+      "Click the verification URL shown under the domain.",
+      "On the Microsoft permissions page, click the checkbox confirming Slack’s access to members’ OneDrive and SharePoint accounts.",
+      "Click Accept.",
+      "Click Open Slack.",
+      "Observe that the domain status next to example.com now shows Verified."
+    ]
+  },
+  {
+    "id": 53,
+    "setup_task": "(Setup) Add a Salesforce channel configuration for the Opportunity record type with the default privacy set to Public",
+    "setup_steps": [
+      "Click Admin in the Slack sidebar.",
+      "Click Manage Salesforce Organizations.",
+      "Click to select the desired Salesforce org in the list.",
+      "Click the Channel configurations tab.",
+      "Click the New configuration button.",
+      "Open the Record type drop-down and click Opportunity.",
+      "Make sure Channel privacy shows Public.",
+      "Click Save."
+    ],
+    "main_task": "Change the default privacy of the Opportunity Salesforce channel configuration from Public to Private",
+    "main_steps": [
+      "In the Channel configurations tab, find the row for the Opportunity record type.",
+      "Click the three dots icon on the right side of that row.",
+      "Click Edit default preferences.",
+      "Click the Channel privacy drop-down.",
+      "Select Private.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 54,
+    "main_task": "Restrict the permission to create public channels to Workspace Owners only",
+    "main_steps": [
+      "Click the workspace name at the top of the left sidebar.",
+      "Hover the pointer over \"Tools & settings\".",
+      "Click \"Workspace settings\" from the menu that appears.",
+      "If a workspace selection box opens, click the current workspace name to proceed.",
+      "In the left sidebar under Administration, click \"Manage permissions\".",
+      "Click \"Account Types\" near the top of the permissions page.",
+      "Locate the row labeled \"Create public channels\" and click the three-dots icon at the right end of that row.",
+      "Click \"Edit permission\" in the drop-down menu.",
+      "Select the radio button \"Workspace Owners only\".",
+      "Click \"Save\"."
+    ]
+  },
+  {
+    "id": 55,
+    "main_task": "Create a rule that automatically approves internal apps",
+    "main_steps": [
+      "Click the workspace name in the top-left corner of Slack.",
+      "Click Settings & administration.",
+      "Click Manage apps.",
+      "In the Apps Management window, click the Request rules tab.",
+      "Click New rule.",
+      "Open the Component menu and select App distribution.",
+      "Open the Condition menu and select Is.",
+      "Open the Comparison menu and select Internal app.",
+      "Open the Resolution menu and select Approve.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 56,
+    "main_task": "Change the default privacy of a Salesforce channel configuration to Limited access for Record owners only",
+    "main_steps": [
+      "Click Admin in the Slack sidebar.",
+      "Click Manage Salesforce Organizations.",
+      "Click a Salesforce org in the list.",
+      "Click the Channel configurations tab.",
+      "Click the three dots icon on the right side of an existing Salesforce channel configuration.",
+      "Click Edit default preferences.",
+      "Under Channel privacy, click the drop-down and select Limited access.",
+      "Click the drop-down that appears for permission level and select Record owners.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 57,
+    "setup_task": "(Setup) Post a message that contains a link preview",
+    "setup_steps": [
+      "Click the channel named “#general” in the sidebar.",
+      "Click the message input field at the bottom.",
+      "Type “https://www.youtube.com/watch?v=dQw4w9WgXcQ”.",
+      "Press Enter to send the message.",
+      "Wait until the link preview (unfurl) appears below the sent message."
+    ],
+    "main_task": "Remove the link preview from the posted message",
+    "main_steps": [
+      "Move the mouse cursor over the visible link preview.",
+      "Click the x icon that appears on the left side of the preview."
+    ]
+  },
+  {
+    "id": 59,
+    "main_task": "Allow Multi-Channel Guests to delete their own messages",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings in the menu that appears.",
+      "In the left sidebar, click Roles & Permissions.",
+      "Locate the Delete own messages permission, then click the three dots icon to its right.",
+      "Click Edit permission.",
+      "Check the box for Multi-Channel Guests.",
+      "Click Save."
+    ]
+  },
+  {
+    "id": 58,
+    "main_task": "Enable mandatory two-factor authentication for all workspace members and restrict it to authenticator apps only",
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Workspace settings.",
+      "Click Security in the settings window.",
+      "Click Edit next to Two-factor authentication for email sign-in.",
+      "Click the checkbox labeled Require members to have 2FA set up.",
+      "Click the option Authenticator apps only.",
+      "Click Save."
+    ]
+  }
+]

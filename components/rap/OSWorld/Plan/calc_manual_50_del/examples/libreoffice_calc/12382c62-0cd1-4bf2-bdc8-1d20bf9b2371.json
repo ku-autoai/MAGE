@@ -1,0 +1,113 @@
+{
+  "id": "12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a clustered column chart showing the Sales and COGS data for each week in a new sheet named \"Sheet2\". Set the chart title as \"Sales & COGS\".\n\nRelevant procedure\n\n1. Locate the sheet tab bar at the bottom of the window and click the **Sheet1** tab if not already active.\n2. Select the data range containing \"Week\", \"Sales\", and \"COGS\" headers and their corresponding values (e.g., click and drag from the \"Week\" header to the last value in the \"COGS\" column).\n3. Click the **Insert** menu in the top menu bar.\n4. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n5. In the Chart Wizard dialog, ensure **Column** is selected under Chart Type.\n6. Under Variants, select **Normal** to create a clustered column chart (ensure \"3D Look\" is unchecked if visible).\n7. Click the **Next** button to proceed to the Data Range step.\n8. Verify the Data Range text box contains the correct cell selection. Ensure \"Series in columns\" and \"First row as labels\" are selected (adjust if necessary based on your data layout).\n9. Click the **Next** button to proceed to the Data Series step.\n10. Verify that two data series (\"Sales\" and \"COGS\") are listed. If incorrect, use the Name/Values fields to correct the ranges.\n11. Click the **Next** button to proceed to Chart Elements.\n12. In the **Title** field, type **Sales & COGS**.\n13. Click the **Finish** button to insert the chart.\n14. The chart will appear on the current sheet. Click the border of the sheet tab area (right-click in the empty space next to existing tabs) or use the **Sheet** menu > **Insert Sheet...**\n15. In the Insert Sheet dialog, ensure the position is set to insert a new sheet, and click **OK**. (Alternatively, if a \"Sheet2\" tab already exists or is created by default, proceed to step 16).\n16. If the new sheet is not named \"Sheet2\", right-click the new sheet tab and select **Rename Sheet**, then type **Sheet2** and press Enter.\n17. Cut the chart from the original sheet (Click the chart, then **Ctrl+X**).\n18. Click on the **Sheet2** tab to switch to the new sheet.\n19. Paste the chart into Sheet2 (**Ctrl+V**).",
+  "source": "SheetCopilot@210",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/WeeklySales.xlsx",
+            "path": "/home/user/WeeklySales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/WeeklySales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "WeeklySales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371/13_WeeklySales_gt1.xlsx",
+      "dest": "13_WeeklySales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/WeeklySales.xlsx",
+      "dest": "WeeklySales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Locate the sheet tab bar at the bottom of the window and click the **Sheet1** tab if not already active.\n2. Select the data range containing \"Week\", \"Sales\", and \"COGS\" headers and their corresponding values (e.g., click and drag from the \"Week\" header to the last value in the \"COGS\" column).\n3. Click the **Insert** menu in the top menu bar.\n4. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n5. In the Chart Wizard dialog, ensure **Column** is selected under Chart Type.\n6. Under Variants, select **Normal** to create a clustered column chart (ensure \"3D Look\" is unchecked if visible).\n7. Click the **Next** button to proceed to the Data Range step.\n8. Verify the Data Range text box contains the correct cell selection. Ensure \"Series in columns\" and \"First row as labels\" are selected (adjust if necessary based on your data layout).\n9. Click the **Next** button to proceed to the Data Series step.\n10. Verify that two data series (\"Sales\" and \"COGS\") are listed. If incorrect, use the Name/Values fields to correct the ranges.\n11. Click the **Next** button to proceed to Chart Elements.\n12. In the **Title** field, type **Sales & COGS**.\n13. Click the **Finish** button to insert the chart.\n14. The chart will appear on the current sheet. Click the border of the sheet tab area (right-click in the empty space next to existing tabs) or use the **Sheet** menu > **Insert Sheet...**\n15. In the Insert Sheet dialog, ensure the position is set to insert a new sheet, and click **OK**. (Alternatively, if a \"Sheet2\" tab already exists or is created by default, proceed to step 16).\n16. If the new sheet is not named \"Sheet2\", right-click the new sheet tab and select **Rename Sheet**, then type **Sheet2** and press Enter.\n17. Cut the chart from the original sheet (Click the chart, then **Ctrl+X**).\n18. Click on the **Sheet2** tab to switch to the new sheet.\n19. Paste the chart into Sheet2 (**Ctrl+V**).",
+  "retrieved_page_ranges": [
+    [
+      104,
+      105
+    ],
+    [
+      102,
+      102
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      105,
+      105
+    ]
+  ],
+  "first_screen_image_path": null
+}

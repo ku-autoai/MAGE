@@ -1,0 +1,109 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n\n1.  Click cell **B2** to select it, then locate the small square fill handle at the bottom-right corner of the cell border.\n2.  Click and drag the fill handle down to the last row containing data in column A (e.g., B5) to copy the acceleration formula to the remaining rows in column B. Release the mouse button.\n3.  Repeat the previous step for column D: Click cell **D2**, then drag its fill handle down to the last row to fill the formulas for the remaining rows in column D.\n4.  Click cell **E1** to select it.\n5.  Type `Combined Data` and press **Enter** to create the new column header.\n6.  Click cell **E2** to select it.\n7.  Type the following formula to concatenate headers and values with 2 decimal places: `=\"A: \" & ROUND(A2,2) & \", B: \" & ROUND(B2,2) & \", C: \" & ROUND(C2,2) & \", D: \" & ROUND(D2,2)` and press **Enter**.\n    *   *Note: If columns C or other columns contain text rather than numbers, remove the `ROUND(...,2)` wrapper for those specific columns in the formula (e.g., use `& C2 &` instead of `& ROUND(C2,2) &`).*\n8.  Click cell **E2** again to ensure it is selected.\n9.  Click and drag the fill handle at the bottom-right corner of cell E2 down to the last row containing data to apply the concatenation formula to all rows.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  Click cell **B2** to select it, then locate the small square fill handle at the bottom-right corner of the cell border.\n2.  Click and drag the fill handle down to the last row containing data in column A (e.g., B5) to copy the acceleration formula to the remaining rows in column B. Release the mouse button.\n3.  Repeat the previous step for column D: Click cell **D2**, then drag its fill handle down to the last row to fill the formulas for the remaining rows in column D.\n4.  Click cell **E1** to select it.\n5.  Type `Combined Data` and press **Enter** to create the new column header.\n6.  Click cell **E2** to select it.\n7.  Type the following formula to concatenate headers and values with 2 decimal places: `=\"A: \" & ROUND(A2,2) & \", B: \" & ROUND(B2,2) & \", C: \" & ROUND(C2,2) & \", D: \" & ROUND(D2,2)` and press **Enter**.\n    *   *Note: If columns C or other columns contain text rather than numbers, remove the `ROUND(...,2)` wrapper for those specific columns in the formula (e.g., use `& C2 &` instead of `& ROUND(C2,2) &`).*\n8.  Click cell **E2** again to ensure it is selected.\n9.  Click and drag the fill handle at the bottom-right corner of cell E2 down to the last row containing data to apply the concatenation formula to all rows.",
+  "retrieved_page_ranges": [
+    [
+      55,
+      55
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      51,
+      51
+    ],
+    [
+      277,
+      278
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,74 @@
+{
+  "id": "d53ff5ee-3b1a-431e-b2be-30ed2673079b",
+  "snapshot": "libreoffice_writer",
+  "instruction": "I am currently engaged in text processing and require assistance in converting all uppercase text to lowercase within my document. This precision is critical for maintaining a uniform and polished presentation. Could you help me on this?\n\nRelevant procedure\n\n1. Click the \"Format\" menu in the top menu bar\n2. Select \"Text\" from the dropdown menu\n3. Click on \"Change Case\" from the submenu\n4. Select \"lowercase\" from the change case options\n5. If the change case option is not immediately visible, look for \"Character\" or \"Formatting\" submenu and then find the change case option there\n6. The entire selected text or all text in the document will be converted to lowercase",
+  "source": "https://ask.libreoffice.org/t/how-to-convert-all-uppercase-to-lowercase/53341",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/d53ff5ee-3b1a-431e-b2be-30ed2673079b/presentation_instruction_2023_Feb.docx",
+            "path": "/home/user/Desktop/presentation_instruction_2023_Feb.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/presentation_instruction_2023_Feb.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "func": "compare_docx_files",
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "presentation_instruction_2023_Feb.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/d53ff5ee-3b1a-431e-b2be-30ed2673079b/presentation_instruction_2023_Feb_Gold.docx",
+      "dest": "presentation_instruction_2023_Feb_Gold.docx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/presentation_instruction_2023_Feb.docx",
+      "dest": "presentation_instruction_2023_Feb.docx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the \"Format\" menu in the top menu bar\n2. Select \"Text\" from the dropdown menu\n3. Click on \"Change Case\" from the submenu\n4. Select \"lowercase\" from the change case options\n5. If the change case option is not immediately visible, look for \"Character\" or \"Formatting\" submenu and then find the change case option there\n6. The entire selected text or all text in the document will be converted to lowercase",
+  "instruction_with_evidence": "I am currently engaged in text processing and require assistance in converting all uppercase text to lowercase within my document. This precision is critical for maintaining a uniform and polished presentation. Could you help me on this?\n\nRelevant procedure\n\n1. Click the \"Format\" menu in the top menu bar\n2. Select \"Text\" from the dropdown menu\n3. Click on \"Change Case\" from the submenu\n4. Select \"lowercase\" from the change case options\n5. If the change case option is not immediately visible, look for \"Character\" or \"Formatting\" submenu and then find the change case option there\n6. The entire selected text or all text in the document will be converted to lowercase"
+}

@@ -1,0 +1,2254 @@
+[
+    {
+        "id": 0,
+        "setup_task": "(Setup) Create text with multiple paragraphs for selection practice",
+        "setup_steps": [
+            "Type \"Alpha beta gamma.\" and press Enter.",
+            "Type \"Delta epsilon zeta.\" and press Enter.",
+            "Type \"Eta theta iota.\""
+        ],
+        "main_task": "Display formatting marks in the document",
+        "main_steps": [
+            "Click View on the menu bar.",
+            "Click Formatting Marks."
+        ],
+        "source_segment": 0,
+        "source_original_id": 2
+    },
+    {
+        "id": 1,
+        "setup_task": "(Setup) Create text with separate words for non-consecutive selection",
+        "setup_steps": [
+            "Type \"Apple Banana Cherry\"."
+        ],
+        "main_task": "Select two non-consecutive words using Ctrl and the mouse",
+        "main_steps": [
+            "Drag over the word \"Apple\" to select it.",
+            "Hold down Ctrl.",
+            "Drag over the word \"Cherry\" to add it to the selection.",
+            "Release Ctrl."
+        ],
+        "source_segment": 1,
+        "source_original_id": 3
+    },
+    {
+        "id": 2,
+        "setup_task": "(Setup) Create repeated text for searching with the Find toolbar",
+        "setup_steps": [
+            "Type \"apple banana apple\".",
+            "Press Enter.",
+            "Type \"APPLE apple Banana\"."
+        ],
+        "main_task": "Use the Find toolbar to select all lowercase \"apple\" instances with Match Case enabled",
+        "main_steps": [
+            "Press Ctrl+F.",
+            "Click in the Find toolbar search box.",
+            "Type \"apple\".",
+            "Select the \"Match Case\" checkbox.",
+            "Click the \"Find All\" button."
+        ],
+        "source_segment": 2,
+        "source_original_id": 6
+    },
+    {
+        "id": 3,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert an em dash using the Special Characters dialog",
+        "main_steps": [
+            "Click in the blank document.",
+            "Click Insert.",
+            "Click Special Character.",
+            "In the subset list, choose \"General punctuation\".",
+            "Select the character \"U+2014\".",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "source_segment": 3,
+        "source_original_id": 11
+    },
+    {
+        "id": 4,
+        "setup_task": "(Setup) Create text with a misspelled word for the Spelling dialog",
+        "setup_steps": [
+            "Type \"powerxful\" in the blank document."
+        ],
+        "main_task": "Correct the misspelled word through the Spelling dialog",
+        "main_steps": [
+            "Press F7.",
+            "In the Suggestions list, click \"powerful\".",
+            "Click Correct."
+        ],
+        "source_segment": 4,
+        "source_original_id": 13
+    },
+    {
+        "id": 5,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open English sentence checking options and enable the Possible mistakes rule",
+        "main_steps": [
+            "Click Tools.",
+            "Click Options.",
+            "In the options tree, click Language Settings.",
+            "Click English sentence checking.",
+            "Click the checkbox for \"Possible mistakes\".",
+            "Click OK."
+        ],
+        "source_segment": 5,
+        "source_original_id": 15
+    },
+    {
+        "id": 6,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Turn on automatic hyphenation for the Default Paragraph Style",
+        "main_steps": [
+            "Open the Styles deck in the Sidebar.",
+            "In Paragraph Styles, right-click Default Paragraph Style.",
+            "Click Modify.",
+            "In the Paragraph Style dialog, click the Text Flow tab.",
+            "Under Hyphenation, select Automatically.",
+            "Click OK."
+        ],
+        "source_segment": 6,
+        "source_original_id": 18
+    },
+    {
+        "id": 7,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Add a new AutoCorrect replacement and use it in the document",
+        "main_steps": [
+            "Open the Tools menu.",
+            "Point to AutoCorrect.",
+            "Click AutoCorrect Options.",
+            "In the Replace tab, click the Replace box.",
+            "Type “hw”.",
+            "Click the With box.",
+            "Type “Hello world”.",
+            "Click New.",
+            "Click OK.",
+            "Type “hw ” in the document."
+        ],
+        "source_segment": 7,
+        "source_original_id": 21
+    },
+    {
+        "id": 8,
+        "setup_task": "(Setup) Create text to change its case",
+        "setup_steps": [
+            "Type “annual budget review” in the blank document.",
+            "Select the entire text."
+        ],
+        "main_task": "Change the selected text to Capitalize Every Word using the Format menu",
+        "main_steps": [
+            "Click Format on the menu bar.",
+            "Point to Text.",
+            "Click Capitalize Every Word."
+        ],
+        "source_segment": 8,
+        "source_original_id": 26
+    },
+    {
+        "id": 9,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Generate a separate document listing the current AutoText entries",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Point to Macros.",
+            "Point to Organize Macros.",
+            "Click Basic.",
+            "In the Macro From list, find and expand Gimmicks.",
+            "Click AutoText.",
+            "Click Run."
+        ],
+        "source_segment": 9,
+        "source_original_id": 27
+    },
+    {
+        "id": 10,
+        "setup_task": "(Setup) Create two paragraphs to use for paragraph language changes",
+        "setup_steps": [
+            "Type “This is the first paragraph.”",
+            "Press Enter.",
+            "Type “This is the second paragraph.”"
+        ],
+        "main_task": "Change only the second paragraph to English (UK) using the Status bar language control",
+        "main_steps": [
+            "Click anywhere in the second paragraph.",
+            "Click the language indicator on the Status bar.",
+            "Point to “Set Language for Paragraph”.",
+            "Click “English (UK)”."
+        ],
+        "source_segment": 10,
+        "source_original_id": 32
+    },
+    {
+        "id": 11,
+        "setup_task": "(Setup) Create sample text containing repeated words to reformat with Find and Replace",
+        "setup_steps": [
+            "Type \"Note text\" on the first line.",
+            "Press Enter.",
+            "Type \"Another Note here\" on the second line.",
+            "Press Enter.",
+            "Type \"Final Note\" on the third line."
+        ],
+        "main_task": "Change every occurrence of the word \"Note\" to italic while keeping the same word",
+        "main_steps": [
+            "Open the Find and Replace dialog.",
+            "Click \"Other options\".",
+            "Click inside the Find box.",
+            "Click \"No Format\".",
+            "Click inside the Replace box.",
+            "Click \"No Format\".",
+            "Type \"Note\" in the Find box.",
+            "Type \"Note\" in the Replace box.",
+            "Click inside the Replace box.",
+            "Click the \"Format\" button.",
+            "In the Search for Formatting dialog, choose the Italic format.",
+            "Confirm the formatting dialog.",
+            "Click \"Replace All\"."
+        ],
+        "source_segment": 11,
+        "source_original_id": 35
+    },
+    {
+        "id": 12,
+        "setup_task": "(Setup) Create a short document to use for review preparation",
+        "setup_steps": [
+            "Type “This document is ready for review.” in the blank document."
+        ],
+        "main_task": "Turn on change recording and protect tracked changes with a password",
+        "main_steps": [
+            "Click Edit.",
+            "Point to Track Changes.",
+            "Click Record.",
+            "Click Edit.",
+            "Point to Track Changes.",
+            "Click Protect.",
+            "In the password field, type “Review123”.",
+            "In the confirmation field, type “Review123”.",
+            "Click OK."
+        ],
+        "source_segment": 12,
+        "source_original_id": 38
+    },
+    {
+        "id": 13,
+        "setup_task": "(Setup) Create text that can be modified while recording changes",
+        "setup_steps": [
+            "Type “First draft line” in the blank document.",
+            "Press Enter.",
+            "Type “Second draft line” on the next line."
+        ],
+        "main_task": "Record a text change and show the tracked change marks",
+        "main_steps": [
+            "Click Edit.",
+            "Point to Track Changes.",
+            "Click Record.",
+            "Drag across the words “First draft”.",
+            "Type “Updated”.",
+            "Click Edit.",
+            "Point to Track Changes.",
+            "Click Show."
+        ],
+        "source_segment": 13,
+        "source_original_id": 39
+    },
+    {
+        "id": 14,
+        "setup_task": "(Setup) Create text to attach a comment to",
+        "setup_steps": [
+            "Type “Project timeline needs review.” in the blank document."
+        ],
+        "main_task": "Insert a comment on the text so the comment box appears on the right side of the page",
+        "main_steps": [
+            "Drag across the words “timeline needs review”.",
+            "Press Ctrl+Alt+C.",
+            "Type “Check dates with the team.” in the comment box.",
+            "Click in the document area outside the comment box."
+        ],
+        "source_segment": 14,
+        "source_original_id": 44
+    },
+    {
+        "id": 15,
+        "setup_task": "(Setup) Create text for inserting a footnote",
+        "setup_steps": [
+            "Type “LibreOffice footnotes example” in the blank document.",
+            "Click at the end of the word “example”."
+        ],
+        "main_task": "Insert a footnote and add footnote text",
+        "main_steps": [
+            "Open the Insert menu.",
+            "Point to “Footnote and Endnote”.",
+            "Click “Footnote”.",
+            "Type “This is a footnote.” in the footnote area."
+        ],
+        "source_segment": 15,
+        "source_original_id": 46
+    },
+    {
+        "id": 16,
+        "setup_task": "(Setup) Create a heading and a place for a cross-reference",
+        "setup_steps": [
+            "Type \"Introduction\" on the first line.",
+            "Press Enter.",
+            "Type \"See \" on the second line."
+        ],
+        "main_task": "Insert a cross-reference to the heading so the heading text appears after \"See\"",
+        "main_steps": [
+            "Select the text \"Introduction\".",
+            "Open the paragraph style list and choose \"Heading 1\".",
+            "Click at the end of \"See \" on the second line.",
+            "Open the Insert menu.",
+            "Click \"Cross-reference\".",
+            "In the cross-reference dialog, choose the type for headings.",
+            "Select the heading \"Introduction\" from the list.",
+            "Choose the reference format that inserts the heading text.",
+            "Click \"Insert\".",
+            "Click \"Close\"."
+        ],
+        "source_segment": 16,
+        "source_original_id": 48
+    },
+    {
+        "id": 17,
+        "setup_task": "(Setup) Create a hyperlink that can be edited",
+        "setup_steps": [
+            "Type “https://example.com”.",
+            "Press Space."
+        ],
+        "main_task": "Edit the hyperlink using the Hyperlink dialog and apply the change",
+        "main_steps": [
+            "Click anywhere inside the hyperlink text.",
+            "Right-click the hyperlink.",
+            "Click “Edit Hyperlink” in the context menu.",
+            "Select the URL field in the Hyperlink dialog.",
+            "Press Ctrl+A in the URL field.",
+            "Type “https://www.libreoffice.org”.",
+            "Click “Apply”.",
+            "Click “Close”."
+        ],
+        "source_segment": 17,
+        "source_original_id": 51
+    },
+    {
+        "id": 18,
+        "setup_task": "(Setup) Create a short document with multiple paragraphs for line numbering",
+        "setup_steps": [
+            "Type \"Line numbering puts line numbers in the margin.\" and press Enter.",
+            "Type \"These numbers are often used in legal documents.\" and press Enter.",
+            "Type \"They are also useful for poetry and programming code.\" and press Enter.",
+            "Type \"Writer can number every line or selected lines.\" and press Enter.",
+            "Type \"Line numbers can appear in the left margin.\" and press Enter.",
+            "Type \"They are included when the document is printed.\" and press Enter.",
+            "Type \"Separators can also be added between line numbers.\""
+        ],
+        "main_task": "Show line numbering for the entire document",
+        "main_steps": [
+            "Click Tools.",
+            "Click Line Numbering.",
+            "In the Line Numbering dialog, check Show numbering.",
+            "Click OK."
+        ],
+        "source_segment": 18,
+        "source_original_id": 54
+    },
+    {
+        "id": 19,
+        "setup_task": "(Setup) Create multiple paragraphs for direct paragraph formatting",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Type “First item”.",
+            "Press Enter.",
+            "Type “Second item”.",
+            "Press Enter.",
+            "Type “Third item”."
+        ],
+        "main_task": "Turn the three paragraphs into an unordered list using the Formatting toolbar",
+        "main_steps": [
+            "Drag across the three paragraphs to select them.",
+            "Click the Toggle Unordered List button on the Formatting toolbar."
+        ],
+        "source_segment": 19,
+        "source_original_id": 57
+    },
+    {
+        "id": 20,
+        "setup_task": "(Setup) Create one paragraph to demonstrate centered alignment",
+        "setup_steps": [
+            "Type \"This paragraph will be centered in the document window.\""
+        ],
+        "main_task": "Center-align the paragraph using the Paragraph panel in the Sidebar",
+        "main_steps": [
+            "Open the Sidebar if it is not visible.",
+            "Open the Properties deck in the Sidebar.",
+            "Place the cursor in the paragraph.",
+            "In the Paragraph panel, click the Align Center button."
+        ],
+        "source_segment": 20,
+        "source_original_id": 60
+    },
+    {
+        "id": 21,
+        "setup_task": "(Setup) Create one paragraph to prepare for applying a paragraph border",
+        "setup_steps": [
+            "Type \"Bordered note paragraph\"."
+        ],
+        "main_task": "Add a bottom border and a shadow to the paragraph",
+        "main_steps": [
+            "Click inside the paragraph.",
+            "Open the Paragraph dialog.",
+            "Click the Borders tab.",
+            "Click the preset for a bottom border only.",
+            "Open the Style dropdown and select \"Solid\".",
+            "Open the Color dropdown and select \"Black\".",
+            "Set Width to \"0.05 pt\".",
+            "In Shadow Style, click the first position option.",
+            "Click OK."
+        ],
+        "source_segment": 21,
+        "source_original_id": 65
+    },
+    {
+        "id": 22,
+        "setup_task": "(Setup) Create one paragraph to format with custom tab stops",
+        "setup_steps": [
+            "Type “Name”.",
+            "Press the Tab key.",
+            "Type “Role”.",
+            "Press the Tab key.",
+            "Type “Location”."
+        ],
+        "main_task": "Add custom tab stops with a fill character to the paragraph",
+        "main_steps": [
+            "Select the entire paragraph.",
+            "Right-click the selected paragraph.",
+            "Click “Paragraph”.",
+            "Click the “Tabs” tab.",
+            "Type “5.00 cm” in the Position field.",
+            "Select “Left” under Type.",
+            "Select the dotted fill character option.",
+            "Click “New”.",
+            "Type “10.00 cm” in the Position field.",
+            "Select “Left” under Type.",
+            "Select the dotted fill character option.",
+            "Click “New”.",
+            "Click “OK”."
+        ],
+        "source_segment": 22,
+        "source_original_id": 68
+    },
+    {
+        "id": 23,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change the horizontal ruler measurement unit to centimeters",
+        "main_steps": [
+            "Right-click the horizontal ruler.",
+            "Click “Centimeter”."
+        ],
+        "source_segment": 23,
+        "source_original_id": 69
+    },
+    {
+        "id": 24,
+        "setup_task": "(Setup) Create text to format with the Position tab",
+        "setup_steps": [
+            "Type \"H2O\" in the blank document.",
+            "Select the character \"2\"."
+        ],
+        "main_task": "Format the selected character as subscript using the Character dialog Position tab",
+        "main_steps": [
+            "Open the Character dialog.",
+            "Click the \"Position\" tab.",
+            "Select \"Subscript\" in the Position section.",
+            "Click \"OK\"."
+        ],
+        "source_segment": 24,
+        "source_original_id": 74
+    },
+    {
+        "id": 25,
+        "setup_task": "(Setup) Create text to format with highlighting",
+        "setup_steps": [
+            "Type \"Important\" in the blank document.",
+            "Select the word \"Important\"."
+        ],
+        "main_task": "Apply character highlighting to the selected word using the Character dialog",
+        "main_steps": [
+            "Open the Character dialog.",
+            "Click the \"Highlighting\" tab.",
+            "Choose a highlight color.",
+            "Click \"OK\"."
+        ],
+        "source_segment": 25,
+        "source_original_id": 75
+    },
+    {
+        "id": 26,
+        "setup_task": "(Setup) Create a simple ordered list for toolbar practice",
+        "setup_steps": [
+            "Type \"Plan trip\" and press Enter.",
+            "Type \"Book hotel\" and press Enter.",
+            "Type \"Pack bags\".",
+            "Select the three paragraphs.",
+            "Click the Toggle Ordered List button on the toolbar."
+        ],
+        "main_task": "Display the Bullets and Numbering toolbar and demote the second list item to create a nested subpoint",
+        "main_steps": [
+            "Click View > Toolbars > Bullets and Numbering.",
+            "Click in the second numbered item \"Book hotel\".",
+            "Click the Demote One Level button on the Bullets and Numbering toolbar."
+        ],
+        "source_segment": 26,
+        "source_original_id": 80
+    },
+    {
+        "id": 27,
+        "setup_task": "(Setup) Create text with straight quotation marks for automatic replacement while typing",
+        "setup_steps": [
+            "Click Tools.",
+            "Point to AutoCorrect.",
+            "Click AutoCorrect Options.",
+            "Click the Localized Options tab.",
+            "In the Single Quotes section, check Replace.",
+            "In the Double Quotes section, check Replace.",
+            "Click OK."
+        ],
+        "main_task": "Turn on AutoCorrect while typing and create smart quotes as you type",
+        "main_steps": [
+            "Click Tools.",
+            "Point to AutoCorrect.",
+            "Click While Typing.",
+            "Type \"LibreOffice\" and press Space.",
+            "Type 'Writer' and press Space."
+        ],
+        "source_segment": 27,
+        "source_original_id": 83
+    },
+    {
+        "id": 28,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change the page margins to specific values in the Page Style dialog",
+        "main_steps": [
+            "Right-click anywhere on the page.",
+            "Click \"Page Style\".",
+            "In the \"Page\" tab, click the \"Top\" margin box and enter \"2.00 cm\".",
+            "Click the \"Bottom\" margin box and enter \"2.00 cm\".",
+            "Click the \"Left\" or \"Inner\" margin box and enter \"2.50 cm\".",
+            "Click the \"Right\" or \"Outer\" margin box and enter \"1.80 cm\".",
+            "Click the \"Gutter\" box and enter \"0.00 cm\".",
+            "Click \"OK\"."
+        ],
+        "source_segment": 28,
+        "source_original_id": 86
+    },
+    {
+        "id": 29,
+        "setup_task": "(Setup) Create text with the cursor positioned where a styled new page should begin",
+        "setup_steps": [
+            "Type \"Cover page text\".",
+            "Press Enter.",
+            "Type \"Styled next page\".",
+            "Click at the start of the line \"Styled next page\"."
+        ],
+        "main_task": "Insert a manual page break and assign the next page a different page style",
+        "main_steps": [
+            "Open the Insert menu.",
+            "Point to \"More Breaks\".",
+            "Click \"Manual Break\".",
+            "In the Style drop-down list, select \"Left Page\".",
+            "Verify that \"Change page number\" is not selected.",
+            "Click \"OK\"."
+        ],
+        "source_segment": 29,
+        "source_original_id": 89
+    },
+    {
+        "id": 30,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Add a footer on the Default page style and insert a page number field",
+        "main_steps": [
+            "Click Insert.",
+            "Point to Header and Footer.",
+            "Point to Footer.",
+            "Click Default Page Style.",
+            "Click inside the footer area at the bottom of the page.",
+            "Click Insert.",
+            "Click Page Number."
+        ],
+        "source_segment": 30,
+        "source_original_id": 91
+    },
+    {
+        "id": 31,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert a page number in the header and change its format to lowercase Roman numerals",
+        "main_steps": [
+            "Open the Insert menu.",
+            "Point to Header and Footer.",
+            "Point to Header.",
+            "Click Default Page Style.",
+            "Click inside the header area at the top of the page.",
+            "Open the Insert menu.",
+            "Click Page Number.",
+            "Right-click in the main text area of the page.",
+            "Click Page Style.",
+            "On the Page tab, open the Page numbers drop-down list.",
+            "Select i, ii, iii, ....",
+            "Click OK."
+        ],
+        "source_segment": 31,
+        "source_original_id": 93
+    },
+    {
+        "id": 32,
+        "setup_task": "(Setup) Create a document with a heading and a header page number",
+        "setup_steps": [
+            "Type “Chapter One” on the first line.",
+            "Select “Chapter One”.",
+            "Open the paragraph style list and choose Heading 1.",
+            "Press Enter.",
+            "Type a long paragraph and repeat it until the document spans more than one page.",
+            "Open the Insert menu, choose Header and Footer, choose Header, and click Default Page Style.",
+            "Click in the header area.",
+            "Open the Insert menu and click Page Number."
+        ],
+        "main_task": "Display chapter-numbered page numbering in the header",
+        "main_steps": [
+            "Open the Tools menu and click Chapter Numbering.",
+            "In the Chapter Numbering dialog, select level 1.",
+            "Set Number to “1, 2, 3, ...”.",
+            "Set Paragraph style to “Heading 1”.",
+            "Click OK.",
+            "Click in the header immediately before the page number field.",
+            "Open the Insert menu, choose Field, and click More Fields.",
+            "In the Fields dialog, open the Document tab.",
+            "Select “Chapter” in the Type list.",
+            "Select “Chapter number” in the Format list.",
+            "Set Level to 1.",
+            "Click Insert.",
+            "Click Close.",
+            "Type “-”."
+        ],
+        "source_segment": 32,
+        "source_original_id": 97
+    },
+    {
+        "id": 33,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Show the Print Directly button on the Standard toolbar",
+        "main_steps": [
+            "Right-click an empty area of the Standard toolbar.",
+            "Point to Visible Buttons.",
+            "Click Print Directly."
+        ],
+        "source_segment": 33,
+        "source_original_id": 101
+    },
+    {
+        "id": 34,
+        "setup_task": "(Setup) Create a two-page document for print preview",
+        "setup_steps": [
+            "Type \"Page 1\" in the blank document.",
+            "Press Ctrl+Enter to insert a page break.",
+            "Type \"Page 2\" on the second page."
+        ],
+        "main_task": "Show only page 2 in the Print dialog preview by selecting an individual page to print",
+        "main_steps": [
+            "Open the File menu and click Print.",
+            "In the Range and Copies section, select the Pages option.",
+            "Click in the page number box.",
+            "Type \"2\"."
+        ],
+        "source_segment": 34,
+        "source_original_id": 103
+    },
+    {
+        "id": 35,
+        "setup_task": "(Setup) Create a multi-page document so a specific page can be selected in Print",
+        "setup_steps": [
+            "Type \"Page 1\" in the blank document.",
+            "Insert a manual page break.",
+            "Type \"Page 2\" on the new page.",
+            "Insert another manual page break.",
+            "Type \"Page 3\" on the new page."
+        ],
+        "main_task": "Show only page 2 in the Print dialog preview by selecting an individual page",
+        "main_steps": [
+            "Open the Print dialog.",
+            "In the Range and Copies section on the General tab, select the \"Pages\" option.",
+            "Click in the page number box.",
+            "Type \"2\".",
+            "Observe that the preview updates to show page 2."
+        ],
+        "source_segment": 35,
+        "source_original_id": 105
+    },
+    {
+        "id": 36,
+        "setup_task": "(Setup) Create content to make LibreOffice Writer print options available",
+        "setup_steps": [
+            "Type \"Visible text\" in the blank document.",
+            "Press Enter.",
+            "Type \"Placeholder line\".",
+            "Press Enter.",
+            "Type \"Form line\"."
+        ],
+        "main_task": "Open the Print dialog, switch to the LibreOffice Writer page, and change content print options",
+        "main_steps": [
+            "Open the File menu and choose Print.",
+            "Open the pages drop-down menu below the upper part of the dialog.",
+            "Select LibreOffice Writer.",
+            "Clear the checkbox for Images and other graphic objects.",
+            "Select the checkbox for Text placeholders.",
+            "Select the checkbox for Form controls."
+        ],
+        "source_segment": 36,
+        "source_original_id": 108
+    },
+    {
+        "id": 37,
+        "setup_task": "(Setup) Create a two-page document for print preview",
+        "setup_steps": [
+            "Type \"Page 1\" in the blank document.",
+            "Press Ctrl+Enter to insert a page break.",
+            "Type \"Page 2\" on the second page."
+        ],
+        "main_task": "Open Print Preview and switch to Two Pages Preview",
+        "main_steps": [
+            "Choose File > Print Preview.",
+            "Click the Two Pages Preview icon on the Print Preview toolbar."
+        ],
+        "source_segment": 37,
+        "source_original_id": 113
+    },
+    {
+        "id": 38,
+        "setup_task": "(Setup) Create a two-page document for previewing facing pages",
+        "setup_steps": [
+            "Type \"Page 1\" in the blank document.",
+            "Press Ctrl+Enter to insert a page break.",
+            "Type \"Page 2\" on the second page."
+        ],
+        "main_task": "Preview the document in Book Preview mode",
+        "main_steps": [
+            "Choose File > Print Preview.",
+            "Click the Book Preview icon on the Print Preview toolbar."
+        ],
+        "source_segment": 38,
+        "source_original_id": 115
+    },
+    {
+        "id": 39,
+        "setup_task": "(Setup) Create a one-page Writer document for watermark PDF export",
+        "setup_steps": [
+            "Type \"Quarterly Report\" in the blank document."
+        ],
+        "main_task": "Export the document to PDF with a watermark that says DRAFT",
+        "main_steps": [
+            "Open File > Export as > Export as PDF.",
+            "In the PDF Options dialog, keep the General tab selected.",
+            "Enable Sign with Watermark.",
+            "Click the watermark text box.",
+            "Type \"DRAFT\".",
+            "Enable View PDF after export.",
+            "Click Export.",
+            "In the file save dialog, type \"draft_watermark.pdf\" as the file name.",
+            "Click Save or Export."
+        ],
+        "source_segment": 39,
+        "source_original_id": 118
+    },
+    {
+        "id": 40,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the PDF Options dialog to the Links tab and enable named destinations while setting cross-document links to open with the PDF reader application",
+        "main_steps": [
+            "Click File.",
+            "Click Export as.",
+            "Click Export as PDF.",
+            "In the PDF Options dialog, click the Links tab.",
+            "Click the checkbox for “Export outlines as named destinations”.",
+            "Click the radio button for “Open with PDF reader application”."
+        ],
+        "source_segment": 40,
+        "source_original_id": 121
+    },
+    {
+        "id": 41,
+        "setup_task": "(Setup) Create a document so the PDF Options dialog can be opened",
+        "setup_steps": [
+            "Type “Digital signature test document” in the blank Writer document."
+        ],
+        "main_task": "Open the PDF Options dialog and display the Digital Signatures tab",
+        "main_steps": [
+            "Click File.",
+            "Click Export as PDF.",
+            "In the PDF Options dialog, click the Digital Signatures tab."
+        ],
+        "source_segment": 41,
+        "source_original_id": 123
+    },
+    {
+        "id": 42,
+        "setup_task": "(Setup) Create a document to use for sending as an email attachment",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Type \"Quarterly report draft\"."
+        ],
+        "main_task": "Open a new email with the current document attached as an OpenDocument Text file",
+        "main_steps": [
+            "Click File.",
+            "Point to Send.",
+            "Click Email as OpenDocument Text."
+        ],
+        "source_segment": 42,
+        "source_original_id": 126
+    },
+    {
+        "id": 43,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the Automatic Redaction dialog and add a text redaction target with whole words only enabled",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Click Auto-Redact.",
+            "In the Automatic Redaction dialog, click Add Target.",
+            "In the Name field, type RedactName.",
+            "Leave Type set to Text.",
+            "Click the Content field.",
+            "Type Alice.",
+            "Check the Whole Words Only box.",
+            "Click OK."
+        ],
+        "source_segment": 43,
+        "source_original_id": 130
+    },
+    {
+        "id": 44,
+        "setup_task": "(Setup) Insert a bitmap image into the Writer document",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Choose Image.",
+            "In the file picker, select a JPG, PNG, GIF, or BMP image file.",
+            "Click Open."
+        ],
+        "main_task": "Change the inserted image to grayscale",
+        "main_steps": [
+            "Click the inserted image to select it.",
+            "Open the image properties or formatting options for the selected image.",
+            "Find the image mode setting.",
+            "Select Grayscale."
+        ],
+        "source_segment": 44,
+        "source_original_id": 132
+    },
+    {
+        "id": 45,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert an image into the Writer document by using the Insert Image dialog with Preview enabled",
+        "main_steps": [
+            "Click in the blank Writer document.",
+            "Choose Insert > Image.",
+            "In the Insert Image dialog, navigate to a folder that contains an image file.",
+            "Click an image file.",
+            "Select Preview.",
+            "Click Open."
+        ],
+        "source_segment": 45,
+        "source_original_id": 135
+    },
+    {
+        "id": 46,
+        "setup_task": "(Setup) Insert one embedded image into the Writer document",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Choose Image.",
+            "In the file picker, select an image file.",
+            "Make sure the Link option is not enabled.",
+            "Click Open."
+        ],
+        "main_task": "Change the embedded image to a linked image through the Image properties dialog",
+        "main_steps": [
+            "Click the inserted image to select it.",
+            "Right-click the image.",
+            "Choose Properties.",
+            "In the Image dialog, click the Image tab.",
+            "Click Browse next to the Link File name field.",
+            "In the file picker, select the same image file.",
+            "Click Open.",
+            "Click OK."
+        ],
+        "source_segment": 46,
+        "source_original_id": 139
+    },
+    {
+        "id": 47,
+        "setup_task": "(Setup) Insert two overlapping shapes into the document",
+        "setup_steps": [
+            "Open the Insert menu and choose Shape > Basic Shapes > Rectangle.",
+            "Drag in the upper part of the page to draw a medium rectangle.",
+            "Open the Insert menu and choose Shape > Basic Shapes > Ellipse.",
+            "Drag so the ellipse overlaps part of the rectangle."
+        ],
+        "main_task": "Send the ellipse behind the rectangle",
+        "main_steps": [
+            "Click the ellipse to select it.",
+            "Right-click the ellipse.",
+            "Choose Arrange > Send to Back."
+        ],
+        "source_segment": 47,
+        "source_original_id": 141
+    },
+    {
+        "id": 48,
+        "setup_task": "(Setup) Insert an image into the blank Writer document",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Click Image.",
+            "Select an available image file from the file picker.",
+            "Click Open."
+        ],
+        "main_task": "Add a caption to the image with the Caption dialog using Figure numbering and a colon separator",
+        "main_steps": [
+            "Click the inserted image to select it.",
+            "Open the Insert menu.",
+            "Click Caption.",
+            "Click the Caption box at the top of the dialog.",
+            "Type \"An example caption for an image\".",
+            "Open the Category drop-down.",
+            "Select \"Figure\".",
+            "Open the Numbering drop-down.",
+            "Select \"Arabic (1 2 3)\".",
+            "Click the Separator field.",
+            "Type \":\".",
+            "Click OK."
+        ],
+        "source_segment": 48,
+        "source_original_id": 145
+    },
+    {
+        "id": 49,
+        "setup_task": "(Setup) Insert an image and create a caption paragraph",
+        "setup_steps": [
+            "Open the Insert menu and choose Image.",
+            "Select any available image file and click Open.",
+            "Click the image.",
+            "Set the image anchor to \"As Character\".",
+            "Press End.",
+            "Press Enter.",
+            "Type \"Figure \"."
+        ],
+        "main_task": "Insert an automatic figure number into the caption paragraph and finish the caption text",
+        "main_steps": [
+            "Open the Insert menu and choose Field > More Fields.",
+            "In the dialog, select the Variables tab.",
+            "In the Type list, select \"Number range\".",
+            "In the Select list, select \"Figure\".",
+            "Open the Format drop-down and select \"Arabic (1 2 3)\".",
+            "Click Insert.",
+            "Close the dialog.",
+            "Type \"An example caption for an image\"."
+        ],
+        "source_segment": 49,
+        "source_original_id": 148
+    },
+    {
+        "id": 50,
+        "setup_task": "(Setup) Insert an image into the blank Writer document",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Click Image.",
+            "In the file picker, select a local image file.",
+            "Click Open."
+        ],
+        "main_task": "Crop part of the inserted image with the Crop tool",
+        "main_steps": [
+            "Right-click the image.",
+            "Click Crop.",
+            "Drag the top middle cropping handle downward.",
+            "Click outside the image."
+        ],
+        "source_segment": 50,
+        "source_original_id": 152
+    },
+    {
+        "id": 51,
+        "setup_task": "(Setup) Insert an image into the blank Writer document",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Click Image.",
+            "Select any available image file from the file picker.",
+            "Click Open."
+        ],
+        "main_task": "Open the image properties and switch to the Crop tab",
+        "main_steps": [
+            "Right-click the image.",
+            "Click Properties.",
+            "Click the Crop tab."
+        ],
+        "source_segment": 51,
+        "source_original_id": 154
+    },
+    {
+        "id": 52,
+        "setup_task": "(Setup) Insert an image into the document",
+        "setup_steps": [
+            "Click Insert in the menu bar.",
+            "Click Image.",
+            "Click the source option for inserting an image from a file.",
+            "Select a local image file.",
+            "Click Open."
+        ],
+        "main_task": "Rotate the inserted image to 30 degrees using the Image dialog",
+        "main_steps": [
+            "Right-click the image.",
+            "Click Properties.",
+            "Click the Image tab.",
+            "Click the Angle field in the Rotation Angle section.",
+            "Type 30.",
+            "Click OK."
+        ],
+        "source_segment": 52,
+        "source_original_id": 156
+    },
+    {
+        "id": 53,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Display the Drawing toolbar and draw a rectangle in the document",
+        "main_steps": [
+            "Click View.",
+            "Point to Toolbars.",
+            "Click Drawing.",
+            "Click in the blank document page.",
+            "Click the Rectangle tool on the Drawing toolbar.",
+            "Click and drag on the page to create a rectangle.",
+            "Release the mouse button.",
+            "Press Esc."
+        ],
+        "source_segment": 53,
+        "source_original_id": 161
+    },
+    {
+        "id": 54,
+        "setup_task": "(Setup) Create a drawing object to rotate",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Choose Shape, then choose Basic Shapes, then select Rectangle.",
+            "Click and drag in the document to draw a rectangle."
+        ],
+        "main_task": "Rotate the rectangle to 30 degrees using the Position and Size dialog",
+        "main_steps": [
+            "Right-click the rectangle.",
+            "Click Position and Size.",
+            "Click the Rotation tab.",
+            "Click in the Angle field under Rotation Angle.",
+            "Type 30.",
+            "Click OK."
+        ],
+        "source_segment": 54,
+        "source_original_id": 163
+    },
+    {
+        "id": 55,
+        "setup_task": "(Setup) Create a custom Gallery theme and a sample image file",
+        "setup_steps": [
+            "Open the Gallery sidebar or Gallery window.",
+            "Right-click in the list of Gallery themes.",
+            "Click New Theme.",
+            "In the theme dialog, type \"My Theme\" as the theme name.",
+            "Click OK.",
+            "Return to the blank Writer document.",
+            "Open the Insert menu.",
+            "Click Shape, then click Rectangle.",
+            "Drag in the document to draw a rectangle so it is visible on the page.",
+            "Open the File menu.",
+            "Click Export.",
+            "In the file name box, type \"gallery_sample.png\".",
+            "Choose a folder you can reopen in a file picker.",
+            "Click Save."
+        ],
+        "main_task": "Add the exported image file to the custom Gallery theme",
+        "main_steps": [
+            "Open the Gallery sidebar or Gallery window.",
+            "Right-click the theme named \"My Theme\".",
+            "Click Properties.",
+            "Click the Files tab.",
+            "Click Add.",
+            "In the file browser, navigate to the folder containing \"gallery_sample.png\".",
+            "Select \"gallery_sample.png\".",
+            "Click Open.",
+            "Click OK in the Properties dialog."
+        ],
+        "source_segment": 55,
+        "source_original_id": 167
+    },
+    {
+        "id": 56,
+        "setup_task": "(Setup) Ensure the custom Gallery theme contains one image",
+        "setup_steps": [
+            "Open the Gallery sidebar or Gallery window.",
+            "Right-click in the list of Gallery themes.",
+            "Click New Theme.",
+            "In the theme dialog, type \"Delete Test Theme\" as the theme name.",
+            "Click OK.",
+            "Return to the blank Writer document.",
+            "Open the Insert menu.",
+            "Click Shape, then click Rectangle.",
+            "Drag in the document to draw a rectangle so it is visible on the page.",
+            "Open the File menu.",
+            "Click Export.",
+            "In the file name box, type \"delete_sample.png\".",
+            "Choose a folder you can reopen in a file picker.",
+            "Click Save.",
+            "Open the Gallery sidebar or Gallery window.",
+            "Right-click the theme named \"Delete Test Theme\".",
+            "Click Properties.",
+            "Click the Files tab.",
+            "Click Add.",
+            "In the file browser, navigate to the folder containing \"delete_sample.png\".",
+            "Select \"delete_sample.png\".",
+            "Click Open.",
+            "Click OK in the Properties dialog."
+        ],
+        "main_task": "Delete the image from the custom Gallery theme",
+        "main_steps": [
+            "In the Gallery, select the theme named \"Delete Test Theme\".",
+            "Right-click the image thumbnail or its file name.",
+            "Click Delete.",
+            "In the confirmation message, click Yes."
+        ],
+        "source_segment": 56,
+        "source_original_id": 168
+    },
+    {
+        "id": 57,
+        "setup_task": "Create a Fontwork object for 3D conversion",
+        "setup_steps": [
+            "Click the Fontwork Gallery button on the Drawing toolbar.",
+            "In the Fontwork Gallery dialog, click the first Fontwork style.",
+            "Click OK.",
+            "Double-click the inserted Fontwork object.",
+            "Press Ctrl+A to select the existing Fontwork text.",
+            "Type PLAN.",
+            "Press Esc."
+        ],
+        "main_task": "Convert the Fontwork object to 3D and enlarge it proportionally",
+        "main_steps": [
+            "Click the Fontwork object to select it.",
+            "If the Fontwork toolbar is not visible, click View, point to Toolbars, and click Fontwork.",
+            "Click the Toggle Extrusion button.",
+            "Hold Shift.",
+            "Drag a corner handle outward to enlarge the object.",
+            "Release the mouse button.",
+            "Release Shift."
+        ],
+        "source_segment": 57,
+        "source_original_id": 172
+    },
+    {
+        "id": 58,
+        "setup_task": "(Setup) Generate an initial QR code to edit",
+        "setup_steps": [
+            "Click Insert on the menu bar.",
+            "Point to Object.",
+            "Click QR and Barcode.",
+            "Click the URL/Text field.",
+            "Type www.libreoffice.org.",
+            "Select Low for error correction.",
+            "Set Margin to 1.",
+            "Open the Type drop-down.",
+            "Select QR Code.",
+            "Click OK."
+        ],
+        "main_task": "Edit the generated code and change it to an ISBN barcode",
+        "main_steps": [
+            "Right-click inside the QR code.",
+            "Click Edit Barcode.",
+            "Select the text in the URL/Text field.",
+            "Type 9181921320743.",
+            "Select Low for error correction.",
+            "Set Margin to 1.",
+            "Open the Type drop-down.",
+            "Select Barcode.",
+            "Click OK."
+        ],
+        "source_segment": 58,
+        "source_original_id": 174
+    },
+    {
+        "id": 59,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Create a nested table by inserting a table inside a cell of another table",
+        "main_steps": [
+            "Open the Table menu and choose Insert Table.",
+            "Set Columns to 3.",
+            "Set Rows to 2.",
+            "Click Insert.",
+            "Click inside the top-left cell of the table.",
+            "Open the Table menu and choose Insert Table.",
+            "Set Columns to 2.",
+            "Set Rows to 2.",
+            "Click Insert."
+        ],
+        "source_segment": 59,
+        "source_original_id": 179
+    },
+    {
+        "id": 60,
+        "setup_task": "(Setup) Enter semicolon-separated text for table conversion",
+        "setup_steps": [
+            "Type \"Row 1 Column 1; Row 1 Column 2; Row 1 Column 3\".",
+            "Press Enter.",
+            "Type \"Row 2 Column 1; Row 2 Column 2; Row 2 Column 3\"."
+        ],
+        "main_task": "Convert the semicolon-separated text into a 2-by-3 table",
+        "main_steps": [
+            "Drag to select both lines of text.",
+            "Click Table on the menu bar.",
+            "Click Convert.",
+            "Click Text to Table.",
+            "In the Convert Text to Table dialog, select Semicolons.",
+            "Click OK."
+        ],
+        "source_segment": 60,
+        "source_original_id": 181
+    },
+    {
+        "id": 61,
+        "setup_task": "(Setup) Create a paragraph and a table for changing table alignment",
+        "setup_steps": [
+            "Type \"Quarterly report\".",
+            "Press Enter.",
+            "Open the Insert menu and choose Table.",
+            "Set the table to 2 columns and 2 rows.",
+            "Confirm the dialog to insert the table.",
+            "Type \"Q1\" in the first cell.",
+            "Press Tab.",
+            "Type \"120\" in the second cell.",
+            "Press Tab.",
+            "Type \"Q2\" in the third cell.",
+            "Press Tab.",
+            "Type \"150\" in the fourth cell."
+        ],
+        "main_task": "Center the table and set a custom table width",
+        "main_steps": [
+            "Click inside the table.",
+            "Open the Table menu and choose Properties.",
+            "On the Table tab, select \"Center\" alignment.",
+            "In the Width field, enter \"4\".",
+            "Confirm the dialog."
+        ],
+        "source_segment": 61,
+        "source_original_id": 185
+    },
+    {
+        "id": 62,
+        "setup_task": "(Setup) Create a small table to prepare for merging and splitting cells",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Choose Table > Insert Table.",
+            "Set Columns to 2.",
+            "Set Rows to 2.",
+            "Click OK."
+        ],
+        "main_task": "Merge the top row into one cell, then split it into 2 vertical cells",
+        "main_steps": [
+            "Drag across the two cells in the first row to select them.",
+            "Choose Table > Merge Cells.",
+            "Click inside the merged top cell.",
+            "Choose Table > Split Cells.",
+            "In the dialog, set Split cell into to 2.",
+            "Select Vertically.",
+            "Click OK."
+        ],
+        "source_segment": 62,
+        "source_original_id": 188
+    },
+    {
+        "id": 63,
+        "setup_task": "Create a table for merging and splitting cells",
+        "setup_steps": [
+            "Click in the blank Writer document.",
+            "Open the Table menu and choose Insert Table.",
+            "Set the table to 3 columns and 2 rows.",
+            "Click OK."
+        ],
+        "main_task": "Merge the first row into one cell and then split it vertically into 2 cells",
+        "main_steps": [
+            "Select all three cells in the first row.",
+            "Open the Table menu and choose Merge Cells.",
+            "Click inside the merged cell in the first row.",
+            "Open the Table menu and choose Split Cells.",
+            "In the Split Cells dialog, set the number of cells to 2.",
+            "Select Vertically.",
+            "Click OK."
+        ],
+        "source_segment": 63,
+        "source_original_id": 190
+    },
+    {
+        "id": 64,
+        "setup_task": "(Setup) Create a simple table to prepare for changing a table background color",
+        "setup_steps": [
+            "Open the Table menu and choose Insert Table.",
+            "Set the table to 2 columns and 2 rows.",
+            "Click OK."
+        ],
+        "main_task": "Set a background color for the entire table using Table Properties",
+        "main_steps": [
+            "Click inside the table.",
+            "Open the Table menu and choose Properties.",
+            "In the Table Properties dialog, click the Background tab.",
+            "Select “Table” as the area to apply the background to.",
+            "Click the Color button.",
+            "Select a color.",
+            "Click OK."
+        ],
+        "source_segment": 64,
+        "source_original_id": 194
+    },
+    {
+        "id": 65,
+        "setup_task": "(Setup) Create and format a sample table for saving as a table style",
+        "setup_steps": [
+            "Open the Table menu and choose Insert Table.",
+            "Set the table to 3 columns and 3 rows and confirm.",
+            "Type “Item” in the first cell.",
+            "Press Tab and type “Qty”.",
+            "Press Tab and type “Price”.",
+            "Press Tab and type “Pen”.",
+            "Press Tab and type “2”.",
+            "Press Tab and type “1.50”.",
+            "Press Tab and type “Notebook”.",
+            "Press Tab and type “4”.",
+            "Press Tab and type “3.25”.",
+            "Select the first row of the table.",
+            "Click the Bold button on the formatting toolbar.",
+            "With the first row still selected, click the Center alignment button.",
+            "Select the entire table.",
+            "Open the Table menu and choose Number Format.",
+            "In the Category list, select “Currency”.",
+            "Choose a currency format from the Format list.",
+            "Click OK."
+        ],
+        "main_task": "Create a new table style from the formatted table using AutoFormat",
+        "main_steps": [
+            "Click inside the table.",
+            "Open the Table menu and choose AutoFormat Styles.",
+            "In the AutoFormat dialog, leave the formatting feature checkboxes selected.",
+            "Click Add.",
+            "Type “PracticeStyle1” as the style name.",
+            "Click OK."
+        ],
+        "source_segment": 65,
+        "source_original_id": 195
+    },
+    {
+        "id": 66,
+        "setup_task": "(Setup) Create a table with unsorted data",
+        "setup_steps": [
+            "Open the Table menu.",
+            "Click Insert Table.",
+            "Set the number of columns to 2.",
+            "Set the number of rows to 4.",
+            "Click OK.",
+            "Type Name in the first cell.",
+            "Press the Tab key.",
+            "Type Age.",
+            "Press the Tab key.",
+            "Type Bob.",
+            "Press the Tab key.",
+            "Type 30.",
+            "Press the Tab key.",
+            "Type Alice.",
+            "Press the Tab key.",
+            "Type 25.",
+            "Press the Tab key.",
+            "Type Carol.",
+            "Press the Tab key.",
+            "Type 28."
+        ],
+        "main_task": "Sort the table rows by the Age column in ascending numeric order",
+        "main_steps": [
+            "Select the entire table.",
+            "Open the Table menu.",
+            "Click Sort.",
+            "Keep the sort direction set to rows.",
+            "Set the first sort key to column 2.",
+            "Set the first sort type to Numeric.",
+            "Set the first sort order to Ascending.",
+            "Click OK."
+        ],
+        "source_segment": 66,
+        "source_original_id": 200
+    },
+    {
+        "id": 67,
+        "setup_task": "(Setup) Create a 2-column by 2-row table with numbers for a cell-reference formula",
+        "setup_steps": [
+            "Open the Table menu and choose Insert Table.",
+            "Set Columns to 2 and Rows to 2.",
+            "Click OK.",
+            "Click the top-right cell.",
+            "Type 4.",
+            "Click the bottom-right cell.",
+            "Type 5."
+        ],
+        "main_task": "Calculate the sum of the values in the top-right and bottom-right cells and show the result in the top-left cell",
+        "main_steps": [
+            "Click the top-left cell.",
+            "Press the = key.",
+            "Click the top-right cell.",
+            "Press the + key.",
+            "Click the bottom-right cell.",
+            "Press Enter."
+        ],
+        "source_segment": 67,
+        "source_original_id": 201
+    },
+    {
+        "id": 68,
+        "setup_task": "(Setup) Create a table and split it into two tables",
+        "setup_steps": [
+            "Open the Table menu and choose Insert Table.",
+            "Set Columns to 2.",
+            "Set Rows to 3.",
+            "Click OK.",
+            "Type \"A1\" in the first cell.",
+            "Press Tab.",
+            "Type \"A2\".",
+            "Press Tab.",
+            "Type \"B1\".",
+            "Press Tab.",
+            "Type \"B2\".",
+            "Press Tab.",
+            "Type \"C1\".",
+            "Press Tab.",
+            "Type \"C2\".",
+            "Click in the cell containing \"C1\".",
+            "Open the Table menu and choose Split Table.",
+            "Click OK."
+        ],
+        "main_task": "Merge the two tables back into a single table",
+        "main_steps": [
+            "Open the View menu and choose Formatting Marks.",
+            "Click in the blank paragraph between the two tables.",
+            "Press Delete.",
+            "Click any cell in one of the tables.",
+            "Open the Table menu and choose Merge Table."
+        ],
+        "source_segment": 68,
+        "source_original_id": 204
+    },
+    {
+        "id": 69,
+        "setup_task": "(Setup) Create a document with headings for a table of contents",
+        "setup_steps": [
+            "Type “Chapter One” on the first line.",
+            "Select “Chapter One”.",
+            "Apply the paragraph style “Heading 1”.",
+            "Press Enter.",
+            "Type “Section One” on the next line.",
+            "Select “Section One”.",
+            "Apply the paragraph style “Heading 2”.",
+            "Press Enter.",
+            "Type “Section Two” on the next line.",
+            "Select “Section Two”.",
+            "Apply the paragraph style “Heading 2”.",
+            "Press Enter.",
+            "Type “Chapter Two” on the next line.",
+            "Select “Chapter Two”.",
+            "Apply the paragraph style “Heading 1”."
+        ],
+        "main_task": "Insert a table of contents from the document headings",
+        "main_steps": [
+            "Click at the beginning of the document before “Chapter One”.",
+            "Open the Insert menu.",
+            "Point to Table of Contents and Index.",
+            "Click Table of Contents, Index or Bibliography.",
+            "Accept the default settings in the dialog.",
+            "Click OK."
+        ],
+        "source_segment": 69,
+        "source_original_id": 209
+    },
+    {
+        "id": 70,
+        "setup_task": "(Setup) Create a document with a table of contents and headings",
+        "setup_steps": [
+            "Type “Chapter One” on the first line.",
+            "Select “Chapter One”.",
+            "Apply the paragraph style “Heading 1”.",
+            "Press Enter.",
+            "Type “Section One” on the next line.",
+            "Select “Section One”.",
+            "Apply the paragraph style “Heading 2”.",
+            "Click at the beginning of the document before “Chapter One”.",
+            "Open the Insert menu.",
+            "Point to Table of Contents and Index.",
+            "Click Table of Contents, Index or Bibliography.",
+            "Accept the default settings in the dialog.",
+            "Click OK."
+        ],
+        "main_task": "Update the table of contents after changing a heading",
+        "main_steps": [
+            "Click in the heading text “Section One” in the document body.",
+            "Select “Section One”.",
+            "Type “Section 1 Updated”.",
+            "Right-click anywhere inside the table of contents.",
+            "Click Update Index."
+        ],
+        "source_segment": 70,
+        "source_original_id": 210
+    },
+    {
+        "id": 71,
+        "setup_task": "(Setup) Create headings and insert a default table of contents",
+        "setup_steps": [
+            "Type “Chapter One” on the blank page.",
+            "Select “Chapter One”.",
+            "Apply the paragraph style “Heading 1”.",
+            "Press Enter.",
+            "Type “Section One”.",
+            "Select “Section One”.",
+            "Apply the paragraph style “Heading 2”.",
+            "Press Enter.",
+            "Type “Section Two”.",
+            "Select “Section Two”.",
+            "Apply the paragraph style “Heading 2”.",
+            "Press Ctrl+Home.",
+            "Click where you want the table of contents to appear at the top of the document.",
+            "Open the Insert menu.",
+            "Point to “Table of Contents and Index”.",
+            "Click “Table of Contents, Index or Bibliography”.",
+            "Click “OK”."
+        ],
+        "main_task": "Add the text “Chapter ” before the entry text for all table of contents levels",
+        "main_steps": [
+            "Right-click the table of contents.",
+            "Click “Edit Index”.",
+            "Click the “Entries” tab.",
+            "Click level “1” in the Level list.",
+            "Click the white field immediately before the “E” icon in the Structure line.",
+            "Type “Chapter ”.",
+            "Click the “All” button.",
+            "Click “OK”."
+        ],
+        "source_segment": 71,
+        "source_original_id": 214
+    },
+    {
+        "id": 72,
+        "setup_task": "(Setup) Create a document with a table of contents",
+        "setup_steps": [
+            "Type \"Chapter One\" on the first line.",
+            "Select \"Chapter One\".",
+            "Apply the paragraph style \"Heading 1\".",
+            "Press Enter.",
+            "Type \"First paragraph.\".",
+            "Press Enter.",
+            "Type \"Chapter Two\" on a new line.",
+            "Select \"Chapter Two\".",
+            "Apply the paragraph style \"Heading 1\".",
+            "Click at the beginning of the document.",
+            "Open the Insert menu.",
+            "Point to \"Table of Contents and Index\".",
+            "Click \"Table of Contents, Index or Bibliography\".",
+            "Click OK."
+        ],
+        "main_task": "Remove the paragraph style assignment from Level 1 in the table of contents",
+        "main_steps": [
+            "Right-click the table of contents.",
+            "Click \"Edit Index\".",
+            "Click the \"Styles\" tab.",
+            "Click \"Level 1\" in the Levels list.",
+            "Click \"Default\".",
+            "Click OK."
+        ],
+        "source_segment": 72,
+        "source_original_id": 216
+    },
+    {
+        "id": 73,
+        "setup_task": "(Setup) Create text that can be indexed under a first key",
+        "setup_steps": [
+            "Type \"Writer\" in the blank document."
+        ],
+        "main_task": "Add an index entry so Writer appears under the first key LibreOffice",
+        "main_steps": [
+            "Select the word \"Writer\".",
+            "Open the Insert Index Entry dialog.",
+            "Type \"Writer\" in the Entry box.",
+            "Type \"LibreOffice\" in the 1st key box.",
+            "Confirm the dialog to insert the index entry."
+        ],
+        "source_segment": 73,
+        "source_original_id": 219
+    },
+    {
+        "id": 74,
+        "setup_task": "(Setup) Create a document with an alphabetical index",
+        "setup_steps": [
+            "Type “Apple banana”.",
+            "Select the word “Apple”.",
+            "Open the Insert menu and choose Table of Contents and Index, then Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Select the word “banana”.",
+            "Open the Insert menu and choose Table of Contents and Index, then Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Press Enter twice.",
+            "Open the Insert menu and choose Table of Contents and Index, then Table of Contents, Index or Bibliography.",
+            "Set Type to “Alphabetical Index”.",
+            "Click OK."
+        ],
+        "main_task": "Customize the alphabetical index on the Entries tab by enabling alphabetical letter headings",
+        "main_steps": [
+            "Right-click anywhere inside the alphabetical index.",
+            "Choose “Edit Index”.",
+            "Click the Entries tab.",
+            "In the Level list, click “S”.",
+            "Select “Alphabetical delimiter”.",
+            "Click OK."
+        ],
+        "source_segment": 74,
+        "source_original_id": 222
+    },
+    {
+        "id": 75,
+        "setup_task": "(Setup) Create a short document and insert an alphabetical index",
+        "setup_steps": [
+            "Type \"Apple\" on the first line and press Enter.",
+            "Type \"Author\" on the second line and press Enter.",
+            "Type \"Break\" on the third line and press Enter.",
+            "Type \"Bus\" on the fourth line.",
+            "Select the word \"Apple\".",
+            "Open Insert > Table of Contents and Index > Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Select the word \"Author\".",
+            "Open Insert > Table of Contents and Index > Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Select the word \"Break\".",
+            "Open Insert > Table of Contents and Index > Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Select the word \"Bus\".",
+            "Open Insert > Table of Contents and Index > Index Entry.",
+            "Click Insert.",
+            "Click Close.",
+            "Press Ctrl+End.",
+            "Press Enter.",
+            "Open Insert > Table of Contents and Index > Table of Contents, Index or Bibliography.",
+            "Set the type to \"Alphabetical Index\".",
+            "Click OK."
+        ],
+        "main_task": "Edit the alphabetical index to use two manual-width columns with a separator line",
+        "main_steps": [
+            "Right-click inside the index.",
+            "Click \"Edit Index\".",
+            "Click the \"Columns\" tab.",
+            "Set \"Columns\" to 2.",
+            "Uncheck \"AutoWidth\".",
+            "Set the spacing between the columns to \"0.50 cm\".",
+            "Open the \"Style\" list in the \"Separator Line\" section.",
+            "Select a line style that is not \"None\".",
+            "Set \"Width\" to \"0.25 pt\".",
+            "Set \"Color\" to \"Black\".",
+            "Set \"Height\" to \"100%\".",
+            "Click OK."
+        ],
+        "source_segment": 75,
+        "source_original_id": 226
+    },
+    {
+        "id": 76,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the Choose Data Source dialog from the Bibliography Database window",
+        "main_steps": [
+            "Open the bibliography database window.",
+            "Click the Data menu.",
+            "Click Choose Data Source."
+        ],
+        "source_segment": 76,
+        "source_original_id": 229
+    },
+    {
+        "id": 77,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the bibliography database in the data source view and open its database file for editing",
+        "main_steps": [
+            "Press Shift+Ctrl+F4.",
+            "In the data source pane, expand “Bibliography” if it is collapsed.",
+            "Expand “Tables” under “Bibliography”.",
+            "Right-click “biblio”.",
+            "Click “Edit Database File”.",
+            "In the opened database window, click “Tables” in the left pane if it is not already selected."
+        ],
+        "source_segment": 77,
+        "source_original_id": 232
+    },
+    {
+        "id": 78,
+        "setup_task": "(Setup) Create a bibliography entry in the document",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Open Insert > Table of Contents and Index > Bibliography Entry.",
+            "In the Insert Bibliography Entry dialog, select Document Content.",
+            "Click New.",
+            "In the Define Bibliography Entry dialog, type \"RefA\" in the Short name box.",
+            "Open the Type drop-down and select Article.",
+            "Click OK.",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "main_task": "Edit the inserted bibliography entry so the short name changes on screen",
+        "main_steps": [
+            "Right-click the bibliography entry in the document.",
+            "Select Bibliography Entry.",
+            "Click the Short name box in the Edit Bibliography Entry dialog.",
+            "Replace the current text with \"RefB\".",
+            "Click Apply."
+        ],
+        "source_segment": 78,
+        "source_original_id": 236
+    },
+    {
+        "id": 79,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert a bibliography with a title and numbered entries in square brackets",
+        "main_steps": [
+            "Open the Insert menu.",
+            "Select Table of Contents and Index.",
+            "Select Table of Contents, Index or Bibliography.",
+            "Set Type to \"Bibliography\".",
+            "Click the Title field and type \"Bibliography\".",
+            "Select the \"Number entries\" checkbox.",
+            "Set Brackets to square brackets \"[]\".",
+            "Click OK."
+        ],
+        "source_segment": 79,
+        "source_original_id": 238
+    },
+    {
+        "id": 80,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Create a list style named Bibliography that shows numbers in square brackets",
+        "main_steps": [
+            "Open the Styles deck in the sidebar.",
+            "Click the List Styles icon.",
+            "Right-click Numbering 123.",
+            "Click New.",
+            "Click the Organizer tab.",
+            "In the name field, type \"Bibliography\".",
+            "Click the Customize tab.",
+            "Click the Before box and type \"[\".",
+            "Click the After box, remove any existing punctuation, and type \"]\".",
+            "Click OK."
+        ],
+        "source_segment": 80,
+        "source_original_id": 240
+    },
+    {
+        "id": 81,
+        "setup_task": "(Setup) Create a title field placeholder in the document",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Type \"Document title: \".",
+            "Open the Insert menu.",
+            "Point to Field.",
+            "Click Title."
+        ],
+        "main_task": "Set the document Title property so the inserted Title field shows the new title in the document",
+        "main_steps": [
+            "Open the File menu.",
+            "Click Properties.",
+            "Click the Description tab.",
+            "Click the Title box.",
+            "Type \"Project Phoenix\".",
+            "Click OK."
+        ],
+        "source_segment": 81,
+        "source_original_id": 244
+    },
+    {
+        "id": 82,
+        "setup_task": "(Setup) Insert a File name field to use for an AutoText entry",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Open Insert > Field > More Fields.",
+            "In the Fields dialog, click the Document tab.",
+            "In the Type list, click File name.",
+            "In the Format list, click File name.",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "main_task": "Create an AutoText entry from the inserted field and insert it again with F3",
+        "main_steps": [
+            "Click the inserted field to select it.",
+            "Open Tools > AutoText.",
+            "In the AutoText dialog, click the My AutoText group.",
+            "Click in the Name box and type FileNameField.",
+            "Click in the Shortcut box and type fnf.",
+            "Click the AutoText button.",
+            "Click New.",
+            "Click Close.",
+            "Press the Right Arrow key.",
+            "Press Enter.",
+            "Type fnf.",
+            "Press F3."
+        ],
+        "source_segment": 82,
+        "source_original_id": 247
+    },
+    {
+        "id": 83,
+        "setup_task": "Create a number range variable named Step for later reuse",
+        "setup_steps": [
+            "Click in the blank document.",
+            "Press Ctrl+F2.",
+            "Click the Variables tab.",
+            "In the Type list, click Number range.",
+            "In the Format list, click Arabic (1 2 3).",
+            "Click the Name field.",
+            "Type Step.",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "main_task": "Delete the inserted number and insert the Step number range again in a new place",
+        "main_steps": [
+            "Click directly after the number 1 in the document.",
+            "Press Backspace.",
+            "Press Ctrl+F2.",
+            "Click the Variables tab.",
+            "In the Type list, click Number range.",
+            "In the Selection list, click Step.",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "source_segment": 83,
+        "source_original_id": 249
+    },
+    {
+        "id": 84,
+        "setup_task": "(Setup) Create a heading and enable a footer for inserting a chapter field",
+        "setup_steps": [
+            "Type “Chapter One”.",
+            "Select the text “Chapter One”.",
+            "Open the paragraph style list and apply “Heading 1”.",
+            "Press Enter.",
+            "Type “This is the first page of the chapter.”",
+            "Choose Insert > Footer > Default Page Style."
+        ],
+        "main_task": "Insert the current chapter name into the footer",
+        "main_steps": [
+            "Click in the footer area.",
+            "Choose Insert > Field > More Fields.",
+            "In the Fields dialog, click the “Document” tab.",
+            "In the Type list, select “Chapter”.",
+            "In the Format list, select “Chapter name”.",
+            "Ensure the Level box shows “1”.",
+            "Click “Insert”.",
+            "Click “Close”."
+        ],
+        "source_segment": 84,
+        "source_original_id": 254
+    },
+    {
+        "id": 85,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Insert an invisible user-defined variable field named ProLite with the value Lite",
+        "main_steps": [
+            "Click in the blank document.",
+            "Open the Insert menu and choose Field, then More Fields.",
+            "Click the Variables tab in the Fields dialog.",
+            "Select Set variable in the Type list.",
+            "Select Text in the Format list.",
+            "Click the Name box and type ProLite.",
+            "Click the Value box and type Lite.",
+            "Select the Invisible option.",
+            "Click Insert.",
+            "Click Close."
+        ],
+        "source_segment": 85,
+        "source_original_id": 256
+    },
+    {
+        "id": 86,
+        "setup_task": "(Setup) Create text for a conditional section",
+        "setup_steps": [
+            "Type \"Section text to be hidden when the condition is true.\"",
+            "Select the entire sentence."
+        ],
+        "main_task": "Create a hidden section from the selected text",
+        "main_steps": [
+            "Choose Insert > Section.",
+            "In the Insert Section dialog, go to the \"Section\" tab.",
+            "Type \"Section1\" in the section name field.",
+            "Select the \"Hide\" option.",
+            "Click the \"With Condition\" box.",
+            "Type \"ProLite EQ \\\"Lite\\\"\".",
+            "Click \"Insert\"."
+        ],
+        "source_segment": 86,
+        "source_original_id": 260
+    },
+    {
+        "id": 87,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Show the TSCP Classification toolbar in Writer",
+        "main_steps": [
+            "Click View in the menu bar.",
+            "Point to Toolbars.",
+            "Click TSCP Classification."
+        ],
+        "source_segment": 87,
+        "source_original_id": 263
+    },
+    {
+        "id": 88,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the document properties custom properties tab after enabling document classification tools",
+        "main_steps": [
+            "Click View.",
+            "Point to Toolbars.",
+            "Click TSCP Classification.",
+            "Click File.",
+            "Click Properties.",
+            "Click the Custom Properties tab."
+        ],
+        "source_segment": 88,
+        "source_original_id": 266
+    },
+    {
+        "id": 89,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Enter user information in LibreOffice user data and turn off using it for document properties",
+        "main_steps": [
+            "Click Tools in the menu bar.",
+            "Click Options.",
+            "In the left pane, expand LibreOffice.",
+            "Click User Data.",
+            "Click the First name field and type \"Alex\".",
+            "Click the Last name field and type \"Morgan\".",
+            "Click the Initials field and type \"AM\".",
+            "Click the Company field and type \"Northwind Press\".",
+            "Clear the checkbox labeled \"Use data for document properties\".",
+            "Click OK."
+        ],
+        "source_segment": 89,
+        "source_original_id": 267
+    },
+    {
+        "id": 90,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change the color of text boundaries and save it as a color scheme",
+        "main_steps": [
+            "Click Tools > Options.",
+            "In the Options dialog, click LibreOffice > Application Colors.",
+            "In the Custom Colors list, find Text boundaries.",
+            "Select the checkbox in the On column for Text boundaries.",
+            "Open the Color setting drop-down for Text boundaries.",
+            "Select Blue.",
+            "Click Save.",
+            "Type BoundaryBlue in the Scheme box.",
+            "Click OK in the scheme dialog.",
+            "Click OK in the Options dialog."
+        ],
+        "source_segment": 90,
+        "source_original_id": 272
+    },
+    {
+        "id": 91,
+        "setup_task": "(Setup) Insert a drawing object to prepare for testing helplines while moving",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Point to Shape.",
+            "Select Rectangle.",
+            "Click and drag in the document to draw a rectangle near the upper-left area of the page."
+        ],
+        "main_task": "Enable Helplines While Moving and move the rectangle so the guide lines appear across the page",
+        "main_steps": [
+            "Open the Tools menu.",
+            "Click Options.",
+            "In the left pane, expand LibreOffice Writer if needed.",
+            "Click View.",
+            "Select the Helplines While Moving checkbox.",
+            "Click OK.",
+            "Click the rectangle to select it.",
+            "Drag the rectangle to a different position on the page."
+        ],
+        "source_segment": 91,
+        "source_original_id": 275
+    },
+    {
+        "id": 92,
+        "setup_task": "(Setup) Insert an image to prepare for changing Writer view display options",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Click Image.",
+            "Select any available image file and confirm the insertion so the image appears in the document."
+        ],
+        "main_task": "Hide images and objects in Writer so the inserted image is no longer shown in the document view",
+        "main_steps": [
+            "Open the Tools menu.",
+            "Click Options.",
+            "In the left pane, expand LibreOffice Writer if needed.",
+            "Click View.",
+            "Clear the Images and objects checkbox.",
+            "Click OK."
+        ],
+        "source_segment": 92,
+        "source_original_id": 276
+    },
+    {
+        "id": 93,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change Writer’s default print settings to print only right pages and print text in black",
+        "main_steps": [
+            "Click Tools.",
+            "Click Options.",
+            "In the Options dialog, expand LibreOffice Writer if needed.",
+            "Click Print under LibreOffice Writer.",
+            "Click the checkbox for Print text in black.",
+            "Click the checkbox for Left pages to clear it.",
+            "Leave Right pages selected.",
+            "Click OK."
+        ],
+        "source_segment": 93,
+        "source_original_id": 281
+    },
+    {
+        "id": 94,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Change the comparison options to compare by word and take the random number into account when comparing",
+        "main_steps": [
+            "Open the Tools menu and select Options.",
+            "In the Options window, expand LibreOffice Writer.",
+            "Click Comparison.",
+            "Select the By word option in the Compare Documents section.",
+            "Check Take it into account when comparing in the Random number to improve accuracy of document comparison section.",
+            "Click OK."
+        ],
+        "source_segment": 94,
+        "source_original_id": 284
+    },
+    {
+        "id": 95,
+        "setup_task": "(Setup) Create an image object in the document for testing automatic captions",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Click Image.",
+            "Select any available image file and confirm the insertion."
+        ],
+        "main_task": "Enable automatic captions for Writer images and set the caption category to Figure",
+        "main_steps": [
+            "Open the Tools menu.",
+            "Click Options.",
+            "In the options tree, expand LibreOffice Writer.",
+            "Click AutoCaption.",
+            "In the list of objects, click LibreOffice Writer Image.",
+            "Select the checkbox for LibreOffice Writer Image if it is not already selected.",
+            "Click in the Category box.",
+            "Replace the current text with Figure.",
+            "Click OK."
+        ],
+        "source_segment": 95,
+        "source_original_id": 285
+    },
+    {
+        "id": 96,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the Language Settings - Languages options page and enable document-only language settings",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Click Options.",
+            "In the left pane, expand Language Settings.",
+            "Click Languages.",
+            "On the right side, check For the current document only."
+        ],
+        "source_segment": 96,
+        "source_original_id": 288
+    },
+    {
+        "id": 97,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open English sentence checking options from Extension Manager and enable an additional grammar check",
+        "main_steps": [
+            "Open the Tools menu.",
+            "Click Extension Manager.",
+            "In the list of extensions, select English spelling dictionaries.",
+            "Click Options.",
+            "In the English Sentence Checking options, select one unchecked optional feature.",
+            "Confirm the options dialog.",
+            "Close the Extension Manager."
+        ],
+        "source_segment": 97,
+        "source_original_id": 292
+    },
+    {
+        "id": 98,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Create a new menu named Favorites and move it upward in the menu order",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Click Customize.",
+            "Click the Menus tab.",
+            "Click the button next to Target.",
+            "Click Add.",
+            "Type Favorites in the Menu name box.",
+            "Click the up arrow once in the New Menu dialog.",
+            "Click OK.",
+            "Click OK."
+        ],
+        "source_segment": 98,
+        "source_original_id": 295
+    },
+    {
+        "id": 99,
+        "setup_task": "Create a new toolbar to customize",
+        "setup_steps": [
+            "Click Tools on the menu bar.",
+            "Click Customize.",
+            "Click the Toolbars tab.",
+            "Click the button next to the Target drop-down.",
+            "Click Add.",
+            "In the Name dialog, type IconPractice.",
+            "Open the Save In drop-down.",
+            "Select LibreOffice Writer.",
+            "Click OK."
+        ],
+        "main_task": "Open the Change Icon dialog for the IconPractice toolbar and assign an icon to a selected command",
+        "main_steps": [
+            "Open the Target drop-down.",
+            "Select IconPractice.",
+            "In the Available Commands list, click a command that shows an icon in the list.",
+            "Click the right-arrow button to add the selected command to the Assigned Commands list.",
+            "In the Assigned Commands list, click the command you added.",
+            "Click Modify.",
+            "Click Change Icon.",
+            "In the Change Icon dialog, click the first icon in the icon grid.",
+            "Click OK."
+        ],
+        "source_segment": 99,
+        "source_original_id": 298
+    },
+    {
+        "id": 100,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Switch Writer to the Tabbed user interface and hide one Notebookbar command",
+        "main_steps": [
+            "Click the View menu.",
+            "Click User Interface.",
+            "Select Tabbed.",
+            "Click Apply to Writer.",
+            "Click OK.",
+            "Click the Tools menu.",
+            "Click Customize.",
+            "Click the Notebookbar tab.",
+            "In the Assigned Commands list, expand File Tab | File if it is collapsed.",
+            "Clear the checkbox for Open.",
+            "Click OK."
+        ],
+        "source_segment": 100,
+        "source_original_id": 299
+    },
+    {
+        "id": 101,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the Customize dialog and reset keyboard shortcuts to their default values",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Click Customize.",
+            "In the Customize dialog, click the Keyboard tab.",
+            "Click Reset."
+        ],
+        "source_segment": 101,
+        "source_original_id": 302
+    },
+    {
+        "id": 102,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Open the Extension Manager and start checking for extension updates",
+        "main_steps": [
+            "Click Tools on the menu bar.",
+            "Click Extension Manager.",
+            "In the Extension Manager dialog, click Check for Updates."
+        ],
+        "source_segment": 102,
+        "source_original_id": 303
+    },
+    {
+        "id": 103,
+        "setup_task": "",
+        "setup_steps": [],
+        "main_task": "Disable an installed extension in the Extension Manager so its button changes to Enable",
+        "main_steps": [
+            "Click the Tools menu.",
+            "Click Extension Manager.",
+            "Click an extension listed under Installed for current user or Installed for all users.",
+            "Click Disable."
+        ],
+        "source_segment": 103,
+        "source_original_id": 305
+    },
+    {
+        "id": 104,
+        "setup_task": "Create a drawing object that can be used to open the Area dialog",
+        "setup_steps": [
+            "Open the Insert menu.",
+            "Point to Shape.",
+            "Select Basic Shapes.",
+            "Click Rectangle.",
+            "Click and drag in the document to draw a rectangle."
+        ],
+        "main_task": "Add a custom color to a palette by entering Hex notation",
+        "main_steps": [
+            "Right-click the rectangle.",
+            "Click Area.",
+            "Click the Color tab.",
+            "Open the Palette drop-down and select standard.",
+            "Click the Hex field under New.",
+            "Type 166f37.",
+            "Click Add.",
+            "Type CorpGreen.",
+            "Click OK.",
+            "Click OK."
+        ],
+        "source_segment": 104,
+        "source_original_id": 307
+    }
+]

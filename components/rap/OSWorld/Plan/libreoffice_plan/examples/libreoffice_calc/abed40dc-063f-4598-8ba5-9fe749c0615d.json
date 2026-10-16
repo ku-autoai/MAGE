@@ -1,0 +1,108 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell **B2** to select the first name in the \"Duplicates\" column.\n2. Select the data range **B2:B18** by clicking and dragging down to the last name (\"Jonah Mountain\"). Alternatively, press `Ctrl` + `Shift` + `End` if the cursor is at the last entry.\n3. Click on the **Data** menu in the top menu bar.\n4. Select **More Filters** and then choose **Standard Filter...** from the submenu.\n5. In the Standard Filter dialog, locate the **Criteria 1** section.\n6. Ensure the **Field 1** dropdown is set to **Duplicates**.\n7. In the **Condition** dropdown (next to Field 1), select **\"not equal to\"**.\n8. In the **Value 1** dropdown, select **Duplicates** (to exclude the header) or leave it blank if filtering only data, but typically you want to exclude blanks and duplicates.\n   *Correction for uniqueness*: LibreOffice doesn't have a simple \"Unique\" checkbox in Standard Filter. To get unique values in order manually or via formula is better, but the task implies using spreadsheet features.\n   *Alternative robust path using Formula*:\n   Since \"Standard Filter\" alone doesn't extract unique values to a *new* column while keeping order easily without sorting or advanced filtering steps, let's use a formula approach which is more reliable for \"keeping original order\" and \"putting in column Unique Names\".\n\n**Revised Relevant Procedure (Formula Approach):**\n1. Click on cell **D2** (the first cell under \"Unique Names\").\n2. Type the following formula to extract the first unique name: `=IFERROR(INDEX($B$2:$B$18, MATCH(0, COUNTIF($D$1:D1, $B$2:$B$18), 0)), \"\")`\n   *Wait, that's complex for an agent to type perfectly. Let's look for a simpler GUI method.*\n\n**Revised Relevant Procedure (Advanced Filter Approach - Best for GUI Agents):**\nLibreOffice Calc's \"Advanced Filter\" can copy results to another location and has a \"No duplicate records\" option.\n\n1. Select the entire data range including the header in the source column: Click cell **B1** (\"Duplicates\"), then drag to select down to **B18** (or the last filled cell",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell **B2** to select the first name in the \"Duplicates\" column.\n2. Select the data range **B2:B18** by clicking and dragging down to the last name (\"Jonah Mountain\"). Alternatively, press `Ctrl` + `Shift` + `End` if the cursor is at the last entry.\n3. Click on the **Data** menu in the top menu bar.\n4. Select **More Filters** and then choose **Standard Filter...** from the submenu.\n5. In the Standard Filter dialog, locate the **Criteria 1** section.\n6. Ensure the **Field 1** dropdown is set to **Duplicates**.\n7. In the **Condition** dropdown (next to Field 1), select **\"not equal to\"**.\n8. In the **Value 1** dropdown, select **Duplicates** (to exclude the header) or leave it blank if filtering only data, but typically you want to exclude blanks and duplicates.\n   *Correction for uniqueness*: LibreOffice doesn't have a simple \"Unique\" checkbox in Standard Filter. To get unique values in order manually or via formula is better, but the task implies using spreadsheet features.\n   *Alternative robust path using Formula*:\n   Since \"Standard Filter\" alone doesn't extract unique values to a *new* column while keeping order easily without sorting or advanced filtering steps, let's use a formula approach which is more reliable for \"keeping original order\" and \"putting in column Unique Names\".\n\n**Revised Relevant Procedure (Formula Approach):**\n1. Click on cell **D2** (the first cell under \"Unique Names\").\n2. Type the following formula to extract the first unique name: `=IFERROR(INDEX($B$2:$B$18, MATCH(0, COUNTIF($D$1:D1, $B$2:$B$18), 0)), \"\")`\n   *Wait, that's complex for an agent to type perfectly. Let's look for a simpler GUI method.*\n\n**Revised Relevant Procedure (Advanced Filter Approach - Best for GUI Agents):**\nLibreOffice Calc's \"Advanced Filter\" can copy results to another location and has a \"No duplicate records\" option.\n\n1. Select the entire data range including the header in the source column: Click cell **B1** (\"Duplicates\"), then drag to select down to **B18** (or the last filled cell",
+  "retrieved_page_ranges": [
+    [
+      452,
+      455
+    ],
+    [
+      451,
+      452
+    ],
+    [
+      234,
+      234
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      375,
+      376
+    ]
+  ]
+}

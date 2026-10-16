@@ -1,0 +1,142 @@
+{
+  "id": "a01fbce3-2793-461f-ab86-43680ccbae25",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I need to set the decimal separator as a comma (,) for localized data representation and clarity in visualization. Can you help me to update all the numbers in the sheet? Also please keep the decimal numbers as-is.\n\nRelevant procedure\n1. Click the \"Tools\" menu at the top toolbar.\n2. Select \"Options\" from the Tools dropdown menu.\n3. In the Options dialog, click the arrow next to \"Language Settings\" to expand the section.\n4. Click on \"Languages\" within the expanded Language Settings.\n5. In the \"Locale\" field, change the current locale to a region that uses comma as decimal separator (e.g., \"German (Germany)\" or any locale showing \", .\" as decimal/separator).\n6. Click \"OK\" to apply the changes.\n7. Select all cells containing numbers by clicking the rectangle at the top-left corner of the sheet (between row numbers and column letters).\n8. Right-click on the selected cells and choose \"Format Cells\" from the context menu.\n9. In the Format Cells dialog, go to the \"Numbers\" tab.\n10. Click \"Decimal Number\" in the Category list on the left.\n11. Ensure the decimal places setting remains unchanged to preserve existing decimal values.\n12. Click \"OK\" to apply the new number formatting with comma as the decimal separator.",
+  "source": "https://superuser.com/questions/1250677/how-to-set-decimal-separator-in-libre-office-calc",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot.xlsx",
+            "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/a01fbce3-2793-461f-ab86-43680ccbae25",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Set_Decimal_Separator_Dot.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Set_Decimal_Separator_Dot.xlsx",
+        "/home/user/Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot.xlsx",
+        "Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot_gold.xlsx",
+        "Set_Decimal_Separator_Dot_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Tools\" menu at the top toolbar.\n2. Select \"Options\" from the Tools dropdown menu.\n3. In the Options dialog, click the arrow next to \"Language Settings\" to expand the section.\n4. Click on \"Languages\" within the expanded Language Settings.\n5. In the \"Locale\" field, change the current locale to a region that uses comma as decimal separator (e.g., \"German (Germany)\" or any locale showing \", .\" as decimal/separator).\n6. Click \"OK\" to apply the changes.\n7. Select all cells containing numbers by clicking the rectangle at the top-left corner of the sheet (between row numbers and column letters).\n8. Right-click on the selected cells and choose \"Format Cells\" from the context menu.\n9. In the Format Cells dialog, go to the \"Numbers\" tab.\n10. Click \"Decimal Number\" in the Category list on the left.\n11. Ensure the decimal places setting remains unchanged to preserve existing decimal values.\n12. Click \"OK\" to apply the new number formatting with comma as the decimal separator.",
+  "retrieved_page_ranges": [
+    [
+      22,
+      22
+    ],
+    [
+      22,
+      22
+    ],
+    [
+      22,
+      22
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      22,
+      23
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/step_1.png"
+}

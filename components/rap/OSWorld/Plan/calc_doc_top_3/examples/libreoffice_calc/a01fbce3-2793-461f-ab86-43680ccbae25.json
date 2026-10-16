@@ -1,0 +1,134 @@
+{
+  "id": "a01fbce3-2793-461f-ab86-43680ccbae25",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I need to set the decimal separator as a comma (,) for localized data representation and clarity in visualization. Can you help me to update all the numbers in the sheet? Also please keep the decimal numbers as-is.\n\nTo achieve the goal of displaying numbers with a comma as the decimal separator (e.g., `0,1`) while keeping the underlying values intact, the most reliable method is to apply a custom number format to the data range. This changes the display without altering the actual numeric data.\n\n**Relevant procedure**\n\n1.  **Select the data range**: Click on cell **A2**, then drag the cursor down to cell **B20** to select all the numbers in columns A and B that need formatting. (Alternatively, click the \"A\" column header and \"B\" column header to select the entire columns if more data exists below).\n2.  **Open Format Cells**: Right-click anywhere within the selected area and choose **Format Cells...** from the context menu.\n3.  **Navigate to Custom Formatting**: In the **Format Cells** dialog box, ensure the **Numbers** tab is selected. From the **Category** list on the left, select **Custom**.\n4.  **Enter Custom Format**: In the **Format Code** input field on the right, type the following format string exactly: `0.0` -> wait, no. To use a comma as a decimal separator in the *display* regardless of locale settings, you often need to use a specific custom format code. However, LibreOffice Calc's custom format syntax uses `.` for decimal and `,` for thousands by default in many locales, or vice versa depending on the Locale setting.\n    *   *Correction*: The standard way to force a comma as a decimal separator visually is to set the Locale for the cell to one that uses it (like German or French), or use a custom format if the current locale uses dots.\n    *   Let's use the **Locale** method which is safer for \"keeping numbers as-is\" and standard localization.\n    *   Go back to the **Numbers** tab.\n    *   Select **Number** from the **Category** list.\n    *   Look for the **Locale** dropdown menu (usually at the bottom or top of the pane). Click it and change the Locale to a region that uses commas for decimals, such as **Germany (German)** or **France (French)**.\n    *   Ensure the **Decimals** field is set to `1` (to match the current data precision like 0.1, 0.2).\n5.  **Apply Changes**: Click **OK**. The numbers should now display with commas",
+  "source": "https://superuser.com/questions/1250677/how-to-set-decimal-separator-in-libre-office-calc",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot.xlsx",
+            "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/a01fbce3-2793-461f-ab86-43680ccbae25",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Set_Decimal_Separator_Dot.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Set_Decimal_Separator_Dot.xlsx",
+        "/home/user/Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot.xlsx",
+        "Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot_gold.xlsx",
+        "Set_Decimal_Separator_Dot_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "To achieve the goal of displaying numbers with a comma as the decimal separator (e.g., `0,1`) while keeping the underlying values intact, the most reliable method is to apply a custom number format to the data range. This changes the display without altering the actual numeric data.\n\n**Relevant procedure**\n\n1.  **Select the data range**: Click on cell **A2**, then drag the cursor down to cell **B20** to select all the numbers in columns A and B that need formatting. (Alternatively, click the \"A\" column header and \"B\" column header to select the entire columns if more data exists below).\n2.  **Open Format Cells**: Right-click anywhere within the selected area and choose **Format Cells...** from the context menu.\n3.  **Navigate to Custom Formatting**: In the **Format Cells** dialog box, ensure the **Numbers** tab is selected. From the **Category** list on the left, select **Custom**.\n4.  **Enter Custom Format**: In the **Format Code** input field on the right, type the following format string exactly: `0.0` -> wait, no. To use a comma as a decimal separator in the *display* regardless of locale settings, you often need to use a specific custom format code. However, LibreOffice Calc's custom format syntax uses `.` for decimal and `,` for thousands by default in many locales, or vice versa depending on the Locale setting.\n    *   *Correction*: The standard way to force a comma as a decimal separator visually is to set the Locale for the cell to one that uses it (like German or French), or use a custom format if the current locale uses dots.\n    *   Let's use the **Locale** method which is safer for \"keeping numbers as-is\" and standard localization.\n    *   Go back to the **Numbers** tab.\n    *   Select **Number** from the **Category** list.\n    *   Look for the **Locale** dropdown menu (usually at the bottom or top of the pane). Click it and change the Locale to a region that uses commas for decimals, such as **Germany (German)** or **France (French)**.\n    *   Ensure the **Decimals** field is set to `1` (to match the current data precision like 0.1, 0.2).\n5.  **Apply Changes**: Click **OK**. The numbers should now display with commas",
+  "retrieved_page_ranges": [
+    [
+      51,
+      52
+    ],
+    [
+      51,
+      51
+    ],
+    [
+      105,
+      105
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/step_1.png"
+}

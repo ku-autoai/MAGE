@@ -1,0 +1,138 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n\n1. Click cell **A12**.\n2. Type **Total** and press **Tab** to move to cell B12.\n3. Type `=SUM(B2:B11)` and press **Enter**.\n4. Click cell **B12**, hold **Shift** and press **Right Arrow** six times to select the range **B12:G12** (or click B12 and drag to G12).\n5. Go to **Insert** > **Chart**.\n6. In the Chart Wizard, ensure **Column** is selected in the Chart Type section.\n7. Ensure **Data series in rows** is selected on the Data Range page.\n8. Click **Finish** to create the column chart.\n9. Click cell **A13**.\n10. Type **Growth** and press **Tab** to move to cell B13. Leave this cell empty (do not enter a value).\n11. Click cell **C13**. Type `=(C2-B2)/B2` and press **Enter**.\n12. Click cell **C13**, hold **Shift** and press **Right Arrow** four times to select **C13:G13**.\n13. Go to **Insert** > **Chart**.\n14. In the Chart Wizard, select **Line** in the Chart Type section.\n15. In the Data Range page, select **Data series in rows**.\n16. In the Data Series page, ensure **Categories** refers to the month headers (e.g., `Sheet1.C1:G1`). If it includes the \"Sales Rep\" or empty cells incorrectly, click the range selector next to Categories and select cells **C1:G1** manually.\n17. Click **Next** to go to the Chart Elements page.\n18. Enter **Growth** in the Title field.\n19. Click **Finish** to create the line chart.",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell **A12**.\n2. Type **Total** and press **Tab** to move to cell B12.\n3. Type `=SUM(B2:B11)` and press **Enter**.\n4. Click cell **B12**, hold **Shift** and press **Right Arrow** six times to select the range **B12:G12** (or click B12 and drag to G12).\n5. Go to **Insert** > **Chart**.\n6. In the Chart Wizard, ensure **Column** is selected in the Chart Type section.\n7. Ensure **Data series in rows** is selected on the Data Range page.\n8. Click **Finish** to create the column chart.\n9. Click cell **A13**.\n10. Type **Growth** and press **Tab** to move to cell B13. Leave this cell empty (do not enter a value).\n11. Click cell **C13**. Type `=(C2-B2)/B2` and press **Enter**.\n12. Click cell **C13**, hold **Shift** and press **Right Arrow** four times to select **C13:G13**.\n13. Go to **Insert** > **Chart**.\n14. In the Chart Wizard, select **Line** in the Chart Type section.\n15. In the Data Range page, select **Data series in rows**.\n16. In the Data Series page, ensure **Categories** refers to the month headers (e.g., `Sheet1.C1:G1`). If it includes the \"Sales Rep\" or empty cells incorrectly, click the range selector next to Categories and select cells **C1:G1** manually.\n17. Click **Next** to go to the Chart Elements page.\n18. Enter **Growth** in the Title field.\n19. Click **Finish** to create the line chart.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      169,
+      169
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      83,
+      84
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      181,
+      181
+    ],
+    [
+      103,
+      104
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/step_1.png"
+}

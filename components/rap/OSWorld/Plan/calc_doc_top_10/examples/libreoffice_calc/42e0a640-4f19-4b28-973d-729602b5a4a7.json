@@ -1,0 +1,129 @@
+{
+  "id": "42e0a640-4f19-4b28-973d-729602b5a4a7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Compute the sum of \"Revenue\" and \"Total Expenses\" and put the results under two columns named \"Total Revenue\" and \"Total Expenses\" of a new sheet (Sheet2)\n\nRelevant procedure\n1. Click the empty space in the menu bar (e.g., near the top center) to dismiss the currently open context menu on the sheet tab.\n2. Right-click on the \"Sheet1\" tab located at the bottom-left of the window.\n3. Select \"Insert Sheet...\" from the context menu.\n4. In the Name field of the Insert Sheet dialog, type `Sheet2`.\n5. Click the \"OK\" button.\n6. Click on cell A1 in the new sheet.\n7. Type `Total Revenue` and press Enter.\n8. Click on cell B1.\n9. Type `Total Expenses` and press Enter.\n10. Click on cell A2.\n11. Type `=SUM(Sheet1.A2:A21)` and press Enter.\n12. Click on cell B2.\n13. Type `=SUM(Sheet1.B2:B21)` and press Enter.",
+  "source": "SheetCopilot@122",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1273e544-688f-496b-8d89-3e0f40aa0606/NetIncome.xlsx",
+            "path": "/home/user/NetIncome.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/NetIncome.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/42e0a640-4f19-4b28-973d-729602b5a4a7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "NetIncome.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/42e0a640-4f19-4b28-973d-729602b5a4a7/2_NetIncome_gt1.xlsx",
+      "dest": "2_NetIncome_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/NetIncome.xlsx",
+      "dest": "NetIncome.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the empty space in the menu bar (e.g., near the top center) to dismiss the currently open context menu on the sheet tab.\n2. Right-click on the \"Sheet1\" tab located at the bottom-left of the window.\n3. Select \"Insert Sheet...\" from the context menu.\n4. In the Name field of the Insert Sheet dialog, type `Sheet2`.\n5. Click the \"OK\" button.\n6. Click on cell A1 in the new sheet.\n7. Type `Total Revenue` and press Enter.\n8. Click on cell B1.\n9. Type `Total Expenses` and press Enter.\n10. Click on cell A2.\n11. Type `=SUM(Sheet1.A2:A21)` and press Enter.\n12. Click on cell B2.\n13. Type `=SUM(Sheet1.B2:B21)` and press Enter.",
+  "retrieved_page_ranges": [
+    [
+      375,
+      376
+    ],
+    [
+      371,
+      372
+    ],
+    [
+      371,
+      371
+    ],
+    [
+      265,
+      269
+    ],
+    [
+      374,
+      375
+    ],
+    [
+      263,
+      265
+    ],
+    [
+      372,
+      374
+    ],
+    [
+      254,
+      254
+    ],
+    [
+      376,
+      377
+    ],
+    [
+      59,
+      59
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/42e0a640-4f19-4b28-973d-729602b5a4a7/step_1.png"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "7efeb4b1-3d19-4762-b163-63328d66303b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the Sequence Numbers as \"No. #\" in the \"Seq No.\" column. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the first empty cell in the \"Seq No.\" column (immediately below the header or existing data).\n2. Type `No. 1` into the cell and press Enter.\n3. Click the cell containing `No. 1` to select it.\n4. Hover the cursor over the small square handle (Fill Handle) at the bottom-right corner of the selected cell until the cursor changes to a black cross.\n5. Click and drag the Fill Handle downwards to the last row of data in the table.\n6. Release the mouse button to fill the series with `No. 2`, `No. 3`, etc.\n7. Click anywhere outside the \"Seq No.\" column to deselect the range and finish the task.",
+  "source": "https://www.youtube.com/shorts/4jzXfZNhfmk",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23.xlsx",
+            "path": "/home/user/Order_Sales_Serial#.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Sales_Serial#.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Sales_Serial#.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23_gold.xlsx",
+      "dest": "Order_Sales_Serial#_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Sales_Serial#.xlsx",
+      "dest": "Order_Sales_Serial#.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the first empty cell in the \"Seq No.\" column (immediately below the header or existing data).\n2. Type `No. 1` into the cell and press Enter.\n3. Click the cell containing `No. 1` to select it.\n4. Hover the cursor over the small square handle (Fill Handle) at the bottom-right corner of the selected cell until the cursor changes to a black cross.\n5. Click and drag the Fill Handle downwards to the last row of data in the table.\n6. Release the mouse button to fill the series with `No. 2`, `No. 3`, etc.\n7. Click anywhere outside the \"Seq No.\" column to deselect the range and finish the task.",
+  "retrieved_page_ranges": [
+    [
+      56,
+      57
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      51,
+      51
+    ],
+    [
+      71,
+      71
+    ],
+    [
+      51,
+      52
+    ]
+  ],
+  "first_screen_image_path": null
+}

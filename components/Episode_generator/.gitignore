@@ -1,0 +1,24 @@
+**/__pycache__/
+test
+tree_raw.xml
+
+# Runtime outputs
+Tables/data/
+Tables/local/kb/
+check/
+*.log
+
+# Training artifacts
+ckpt/
+model/
+**/tb_logs/
+**/events.out.tfevents.*
+
+# Large checkpoint / weights
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Python cache
+*.pyc

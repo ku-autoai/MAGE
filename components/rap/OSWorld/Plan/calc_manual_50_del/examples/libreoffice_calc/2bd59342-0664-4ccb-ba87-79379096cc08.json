@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Click cell **F2** (the first cell in the \"Chart\" column corresponding to the first Order ID).\n2. Select the data range **B2:D2** (January to March values for the first Order ID).\n3. Insert a **Line Chart** using the chart wizard or toolbar, ensuring the variant is set to **\"Lines Only\"** or **\"Points and Lines\"** as preferred for a sparkline look.\n4. Resize and position the generated chart so that it fits entirely within cell **F2**.\n5. Remove unnecessary chart elements (titles, axes, gridlines, legend) by right-clicking the chart, selecting **Format Chart Area** or specific element menus, and setting visibility to hidden or removing them, to create a clean \"sparkline\" appearance.\n6. Copy cell **F2** (including the chart object).\n7. Select the range **F3:F[n]** (where n is the last row with Order ID data) to cover all remaining Order IDs.\n8. Paste the copied content to apply the sparkline format to each row, ensuring the data source updates automatically for each row (B3:D3, B4:D4, etc.).",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell **F2** (the first cell in the \"Chart\" column corresponding to the first Order ID).\n2. Select the data range **B2:D2** (January to March values for the first Order ID).\n3. Insert a **Line Chart** using the chart wizard or toolbar, ensuring the variant is set to **\"Lines Only\"** or **\"Points and Lines\"** as preferred for a sparkline look.\n4. Resize and position the generated chart so that it fits entirely within cell **F2**.\n5. Remove unnecessary chart elements (titles, axes, gridlines, legend) by right-clicking the chart, selecting **Format Chart Area** or specific element menus, and setting visibility to hidden or removing them, to create a clean \"sparkline\" appearance.\n6. Copy cell **F2** (including the chart object).\n7. Select the range **F3:F[n]** (where n is the last row with Order ID data) to cover all remaining Order IDs.\n8. Paste the copied content to apply the sparkline format to each row, ensuring the data source updates automatically for each row (B3:D3, B4:D4, etc.).",
+  "retrieved_page_ranges": [
+    [
+      172,
+      173
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      173,
+      174
+    ],
+    [
+      164,
+      165
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,534 @@
+[
+  {
+    "plan_index": 5,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a horizontal text box using the keyboard shortcut F2",
+    "main_steps": [
+      "Press F2.",
+      "Click on the blank slide canvas.",
+      "Type “Sample text box”."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Introduction"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 72,
+    "relevant_procedure": "Relevant procedure:\nUse the keyboard shortcut F2 to create a horizontal text box.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      72,
+      72
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 16,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a new Gallery theme named “New Theme 1”",
+    "main_steps": [
+      "Click Insert on the menu bar.",
+      "Point to Media.",
+      "Click Gallery.",
+      "Click New at the bottom of the Gallery deck.",
+      "Click the General tab.",
+      "Click in the theme name text box.",
+      "Type New Theme 1.",
+      "Click OK."
+    ],
+    "id": 0,
+    "section_title": "Gallery themes",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Gallery themes"
+    ],
+    "section_start_page": 118,
+    "section_end_page": 120,
+    "relevant_procedure": "Relevant procedure:\n1) Click on Gallery in the Sidebar.\n2) Click New at the bottom of the Gallery deck.\n3) Click on General in the Properties of New Theme dialog.\n4) Type \"New Theme 1\" in the text box.\n5) Click OK to save the new theme and close the dialog.",
+    "retrieved_page_ranges": [
+      [
+        118,
+        120
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        65,
+        71
+      ]
+    ],
+    "source_page_range": [
+      118,
+      120
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 27,
+    "split": "validation",
+    "setup_task": "(Setup) Create two overlapping shapes on a blank slide",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle shape on the slide.",
+      "Insert a circle shape so that it overlaps the rectangle."
+    ],
+    "main_task": "Move the overlapping shapes backward or forward using Arrange",
+    "main_steps": [
+      "Select the front shape.",
+      "Open Format > Arrange on the menu bar.",
+      "Click an arrange option that changes the selected shape's stack level."
+    ],
+    "id": 0,
+    "section_title": "Using Helplines",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using Helplines"
+    ],
+    "section_start_page": 163,
+    "section_end_page": 164,
+    "relevant_procedure": "Relevant procedure:\n1. Select the shape(s) that are overlapping.  \n2. Right-click on the selected shape(s) and choose \"Arrange\" from the context menu.  \n3. Choose one of the following options to move the shape backward or forward:  \n   - \"Bring Forward\" to move the selected shape one level up in the stack.  \n   - \"Send Backward\" to move the selected shape one level down in the stack.  \n   - \"Bring to Front\" to move the selected shape in front of all other objects.  \n   - \"Send to Back\" to move the selected shape behind all other objects.  \n4. Alternatively, use the keyboard shortcuts:  \n   - Ctrl+Shift++ (macOS ⌘+Shift++) to bring to front.  \n   - Ctrl++ (macOS ⌘++) to bring forward.  \n   - Ctrl+– (macOS ⌘+–) to send backward.  \n   - Ctrl+Shift+– (macOS ⌘+Shift+–) to send to back.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        158,
+        158
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        147,
+        149
+      ]
+    ],
+    "source_page_range": [
+      163,
+      164
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 38,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply a background image fill to the selected object",
+    "main_steps": [
+      "Insert a shape onto the blank slide and select it.",
+      "Open the Area dialog.",
+      "Click the Area tab.",
+      "Click Use Background.",
+      "Click OK.",
+      "Click anywhere outside the object to deselect it."
+    ],
+    "id": 1,
+    "section_title": "Working with area fill types",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with area fill types"
+    ],
+    "section_start_page": 197,
+    "section_end_page": 213,
+    "relevant_procedure": "Relevant procedure:\n1. Select the object where you want to apply the background image fill.\n2. Open the Area dialog by clicking on \"More Options\" in the Area panel of the Properties deck on the Sidebar, or by right-clicking the object and selecting \"Area\".\n3. In the Area dialog, click on \"Image\" to open the image fill options.\n4. Select the desired image from the list of available images in the Image section, or click \"Add/Import\" to browse and select an image file.\n5. Click OK to save the changes and close the Area dialog. The background image fill will now be applied to the selected object.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        42,
+        60
+      ]
+    ],
+    "source_page_range": [
+      197,
+      213
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 50,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Apply a soft frame to the selected photo in the photo album",
+    "main_steps": [
+      "Click the slide containing the photo to select it.",
+      "In the Sidebar, expand the Effect panel.",
+      "In the Glow section, click the Radius value box and enter 6 pt.",
+      "In the Glow section, open the Color drop-down list and select Red.",
+      "In the Glow section, click the Transparency value box and enter 0%.",
+      "In the Soft Edge section, click the Radius value box and enter 0 pt."
+    ],
+    "id": 0,
+    "section_title": "Photo albums",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Photo albums"
+    ],
+    "section_start_page": 293,
+    "section_end_page": 298,
+    "relevant_procedure": "Relevant procedure:\n1) Select a slide in the photo album containing the photo to which you want to apply a soft frame.  \n2) Open the Sidebar and navigate to the Properties deck.  \n3) In the Properties deck, click on the Image panel to access image formatting options.  \n4) Click on the Effect panel in the Properties deck.  \n5) In the Effect panel, adjust the following settings to apply a soft frame:  \n   - Set the Glow Radius to a desired value to create a soft outer glow.  \n   - Select a Glow Color from the available color palettes.  \n   - Enter a Glow Transparency value (e.g., 50%) to adjust how visible the soft frame is.  \n   - Adjust the Soft Edge Radius to reduce the internal width of the soft frame and make the photo appear smaller.  \n6) Click outside the image to deselect it and save the presentation.",
+    "retrieved_page_ranges": [
+      [
+        120,
+        132
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      293,
+      298
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 61,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Create a horizontal text box using the F2 shortcut",
+    "main_steps": [
+      "Open a new blank Impress presentation.",
+      "Press F2.",
+      "Click on the slide canvas.",
+      "Type \"Sample text\"."
+    ],
+    "id": 0,
+    "section_title": "Introduction",
+    "section_path": [
+      "Chapter 3, Adding and Formatting Text",
+      "Introduction"
+    ],
+    "section_start_page": 72,
+    "section_end_page": 72,
+    "relevant_procedure": "Relevant procedure:\nPress the F2 shortcut to create a horizontal text box.",
+    "retrieved_page_ranges": [
+      [
+        72,
+        86
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        86,
+        89
+      ],
+      [
+        363,
+        379
+      ]
+    ],
+    "source_page_range": [
+      72,
+      72
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 72,
+    "split": "validation",
+    "setup_task": "",
+    "setup_steps": [],
+    "main_task": "Open the Gallery deck and insert an image from a theme onto the slide",
+    "main_steps": [
+      "Click Insert on the menu bar.",
+      "Click Media.",
+      "Click Gallery.",
+      "Click the Arrows theme in the Gallery deck.",
+      "Scroll through the displayed images if needed.",
+      "Click and hold one image thumbnail.",
+      "Drag the image onto the slide.",
+      "Release the mouse button in the middle of the slide."
+    ],
+    "id": 0,
+    "section_title": "Gallery themes",
+    "section_path": [
+      "Chapter 4, Adding and Formatting Images",
+      "Gallery themes"
+    ],
+    "section_start_page": 118,
+    "section_end_page": 120,
+    "relevant_procedure": "Relevant procedure:\n1) Open the Gallery deck in the Sidebar by clicking on \"Gallery\" in the Sidebar.  \n2) Select a theme from the available themes to view its images.  \n3) Scroll through the images in the selected theme and select the required image.  \n4) Click, hold, and drag the selected image onto the slide. Release the hold to insert the image centrally on the slide.",
+    "retrieved_page_ranges": [
+      [
+        118,
+        120
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        116,
+        118
+      ],
+      [
+        116,
+        116
+      ],
+      [
+        293,
+        298
+      ]
+    ],
+    "source_page_range": [
+      118,
+      120
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 83,
+    "split": "validation",
+    "setup_task": "(Setup) Create two overlapping shapes for arranging",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle on the slide.",
+      "Insert a second shape and place it so it overlaps the rectangle."
+    ],
+    "main_task": "Bring the selected shape to the front using the Arrange menu",
+    "main_steps": [
+      "Click the shape that is currently behind the other shape.",
+      "Open the Format menu.",
+      "Point to Arrange.",
+      "Click Bring to Front."
+    ],
+    "id": 0,
+    "section_title": "Using Helplines",
+    "section_path": [
+      "Chapter 5, Managing Graphic Objects",
+      "Using Helplines"
+    ],
+    "section_start_page": 163,
+    "section_end_page": 164,
+    "relevant_procedure": "Relevant procedure:\n1. Select the shape to be brought to the front.  \n2. Go to Format > Arrange > Bring to Front.",
+    "retrieved_page_ranges": [
+      [
+        164,
+        165
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        165,
+        171
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        147,
+        149
+      ]
+    ],
+    "source_page_range": [
+      163,
+      164
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 94,
+    "split": "validation",
+    "setup_task": "(Setup) Create a slide with two overlapping rectangles for a background image fill exercise",
+    "setup_steps": [
+      "Create a new blank slide.",
+      "Insert a rectangle.",
+      "Insert a second rectangle.",
+      "Move the second rectangle so it overlaps the first rectangle.",
+      "Select the top rectangle."
+    ],
+    "main_task": "Apply the slide background as the fill of the selected top rectangle",
+    "main_steps": [
+      "Open the Area dialog.",
+      "Click the Area page.",
+      "Select Use Background.",
+      "Click OK.",
+      "Click on the slide to deselect the rectangle."
+    ],
+    "id": 0,
+    "section_title": "Working with area fill types",
+    "section_path": [
+      "Chapter 6, Formatting Graphic Objects",
+      "Working with area fill types"
+    ],
+    "section_start_page": 197,
+    "section_end_page": 213,
+    "relevant_procedure": "Relevant procedure:\n1) Select the top rectangle on the slide.  \n2) Open the Area dialog by clicking on Area in the Line and Filling toolbar.  \n3) Click on Fill to open the Fill page, then select Slide Background from the options available.  \n4) Click OK to apply the slide background as the fill of the selected top rectangle.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        42,
+        60
+      ],
+      [
+        215,
+        216
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        256,
+        262
+      ]
+    ],
+    "source_page_range": [
+      197,
+      213
+    ],
+    "is_hit": true
+  },
+  {
+    "plan_index": 106,
+    "split": "validation",
+    "setup_task": "(Setup) Create a presentation with one photo album slide",
+    "setup_steps": [
+      "Open a new presentation.",
+      "Click the first slide.",
+      "Click Insert on the menu bar.",
+      "Click Media.",
+      "Click Photo Album.",
+      "Click Add.",
+      "Select one photograph file in the file browser.",
+      "Click Open.",
+      "Click Insert Slides."
+    ],
+    "main_task": "Add a soft frame to the photograph using the Effect panel",
+    "main_steps": [
+      "Click the photo on the slide.",
+      "Open the Properties deck on the Sidebar.",
+      "Click Effect.",
+      "In Glow, click the Radius box.",
+      "Type 0.",
+      "In Glow, click the Color drop-down list.",
+      "Select Black.",
+      "In Glow, click the Transparency box.",
+      "Type 0.",
+      "In Soft Edge, click the Radius box.",
+      "Type 0."
+    ],
+    "id": 0,
+    "section_title": "Photo albums",
+    "section_path": [
+      "Chapter 9, Slide Shows and Photo Albums",
+      "Photo albums"
+    ],
+    "section_start_page": 293,
+    "section_end_page": 298,
+    "relevant_procedure": "Relevant procedure:\n1. Select the photograph in the slide.\n2. Open the Properties deck on the Sidebar and navigate to the Effect panel.\n3. In the Effect panel, adjust the Glow Radius to apply a soft frame around the photograph.\n4. Select a color for the soft frame from the available color palettes in the Glow Color option.\n5. Enter a transparency value in the Glow Transparency box to adjust the opacity of the soft frame.\n6. Adjust the Soft Edge Radius to reduce the internal width of the soft frame and make the photograph appear smaller.\n7. Click OK to save the changes.",
+    "retrieved_page_ranges": [
+      [
+        197,
+        213
+      ],
+      [
+        120,
+        132
+      ],
+      [
+        293,
+        298
+      ],
+      [
+        363,
+        379
+      ],
+      [
+        142,
+        147
+      ]
+    ],
+    "source_page_range": [
+      293,
+      298
+    ],
+    "is_hit": true
+  }
+]

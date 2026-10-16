@@ -1,0 +1,129 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure\n1. Click on cell C1.\n2. Type \"Maturity Date\".\n3. Press the Enter key.\n4. Click on cell C2.\n5. Type the formula `=A2+B2`.\n6. Press the Enter key.\n7. Click on cell C2 to select it again.\n8. Move the cursor to the small square handle at the bottom-right corner of cell C2 (the fill handle).\n9. Click and drag the handle down to cell C10.\n10. Release the mouse button to fill the formula down the column.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell C1.\n2. Type \"Maturity Date\".\n3. Press the Enter key.\n4. Click on cell C2.\n5. Type the formula `=A2+B2`.\n6. Press the Enter key.\n7. Click on cell C2 to select it again.\n8. Move the cursor to the small square handle at the bottom-right corner of cell C2 (the fill handle).\n9. Click and drag the handle down to cell C10.\n10. Release the mouse button to fill the formula down the column.",
+  "retrieved_page_ranges": [
+    [
+      57,
+      58
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      290,
+      290
+    ],
+    [
+      55,
+      55
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      435,
+      437
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      56,
+      57
+    ],
+    [
+      315,
+      316
+    ],
+    [
+      96,
+      96
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/step_1.png"
+}

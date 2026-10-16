@@ -1,0 +1,117 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nRelevant procedure\n\n1. Identify all rows in the table that contain the text \"N/A\" in any of the data columns.\n2. Select the row numbers on the left-hand side of the spreadsheet for each row identified in the previous step. To select multiple non-adjacent rows, hold down the `Ctrl` key while clicking each row number.\n3. Right-click on one of the selected row numbers to open the context menu.\n4. In the context menu, click on **Hide Rows**.\n   - Alternatively, with the rows selected, go to the **Format** menu in the top menu bar, hover over **Rows**, and select **Hide**.\n5. Verify that the rows containing \"N/A\" are no longer visible, but the row numbers skip the hidden rows (e.g., going from row 5 to 7), indicating the data is hidden rather than deleted.",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Identify all rows in the table that contain the text \"N/A\" in any of the data columns.\n2. Select the row numbers on the left-hand side of the spreadsheet for each row identified in the previous step. To select multiple non-adjacent rows, hold down the `Ctrl` key while clicking each row number.\n3. Right-click on one of the selected row numbers to open the context menu.\n4. In the context menu, click on **Hide Rows**.\n   - Alternatively, with the rows selected, go to the **Format** menu in the top menu bar, hover over **Rows**, and select **Hide**.\n5. Verify that the rows containing \"N/A\" are no longer visible, but the row numbers skip the hidden rows (e.g., going from row 5 to 7), indicating the data is hidden rather than deleted.",
+  "retrieved_page_ranges": [
+    [
+      90,
+      90
+    ],
+    [
+      89,
+      90
+    ],
+    [
+      86,
+      88
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      320,
+      320
+    ]
+  ],
+  "first_screen_image_path": null
+}

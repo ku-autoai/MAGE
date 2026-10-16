@@ -1,0 +1,136 @@
+{
+  "id": "ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In the column \"Pass/Fail/Held\", one from the texts \"Pass\", \"Fail\", and \"Held\" should be filled. For convinience, enable data validation for the cells in this column so that the texts to fill can be directly selected from a drop down list. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell D2 to position the cursor in the first data row of the \"Pass/Fail/Held\" column.\n2. Select the entire data range for the \"Pass/Fail/Held\" column. Since the names appear to end at row 29 based on visible data, click on cell D2, hold Shift, and scroll down to cell D29 (or the last row with data) and click it to select the range D2:D29. Alternatively, if the data extends further, select the specific range of cells corresponding to the rows containing names.\n3. With the range selected, click on the \"Data\" menu in the top menu bar.\n4. In the dropdown menu, click on \"Validity\".\n5. In the \"Validity\" dialog box, under the \"Criteria\" tab, click the dropdown menu next to \"Allow\" and select \"List\".\n6. In the \"Entries\" field below, type the allowed values separated by line breaks:\n   Pass\n   Fail\n   Held\n7. Ensure the option \"Show selection list for cells\" is checked so that a dropdown arrow appears in the cells.\n8. Click the \"OK\" button to apply the data validation rule.\n9. To verify, click on any cell within the selected range (e.g., D2) and check for a dropdown arrow icon that allows selecting \"Pass\", \"Fail\", or \"Held\".",
+  "source": "https://www.youtube.com/shorts/tXOovKn0H68",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail.xlsx",
+            "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Id_Mark_Pass_Fail.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "data_validation",
+          "sheet_idx": 0,
+          "dv_props": [
+            {
+              "ranges": {
+                "method": "spreadsheet_range",
+                "ref": [
+                  "D2:D29",
+                  "D2:D1048576"
+                ]
+              },
+              "type": {
+                "method": "eq",
+                "ref": "list"
+              },
+              "formula1": {
+                "method": "str_set_eq",
+                "ref": [
+                  "Pass",
+                  "Fail",
+                  "Held"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail_gold.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail_gold.xlsx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell D2 to position the cursor in the first data row of the \"Pass/Fail/Held\" column.\n2. Select the entire data range for the \"Pass/Fail/Held\" column. Since the names appear to end at row 29 based on visible data, click on cell D2, hold Shift, and scroll down to cell D29 (or the last row with data) and click it to select the range D2:D29. Alternatively, if the data extends further, select the specific range of cells corresponding to the rows containing names.\n3. With the range selected, click on the \"Data\" menu in the top menu bar.\n4. In the dropdown menu, click on \"Validity\".\n5. In the \"Validity\" dialog box, under the \"Criteria\" tab, click the dropdown menu next to \"Allow\" and select \"List\".\n6. In the \"Entries\" field below, type the allowed values separated by line breaks:\n   Pass\n   Fail\n   Held\n7. Ensure the option \"Show selection list for cells\" is checked so that a dropdown arrow appears in the cells.\n8. Click the \"OK\" button to apply the data validation rule.\n9. To verify, click on any cell within the selected range (e.g., D2) and check for a dropdown arrow icon that allows selecting \"Pass\", \"Fail\", or \"Held\".",
+  "retrieved_page_ranges": [
+    [
+      354,
+      355
+    ],
+    [
+      101,
+      102
+    ],
+    [
+      496,
+      497
+    ],
+    [
+      342,
+      343
+    ],
+    [
+      447,
+      448
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/step_1.png"
+}

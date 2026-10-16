@@ -1,0 +1,88 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nRelevant procedure\n\n1. Click the \"Sheet\" menu at the top toolbar.\n2. Select \"Page Style...\" from the dropdown menu.\n3. In the Page Style dialog, click the \"Sheet\" tab.\n4. Under \"Print ranges,\" select \"Selection\" and click the input field next to it.\n5. Select the data range (e.g., A1:D23 or A1:F23) by clicking the first cell, holding Shift, and clicking the last cell of your data area.\n6. Click \"OK\" to apply the print range.\n7. Go back to \"Sheet\" > \"Page Style...\" and click the \"Sheet\" tab again.\n8. Under \"Scaling,\" select \"Fit print range(s) to width/height\" and set both Width and Height to \"1\".\n9. Click \"OK\" to confirm the page setup.\n10. Press Ctrl+Shift+P to open the Export as PDF dialog.\n11. Ensure the filename is set to \"Resize_Cells_Fit_Page.pdf\" and the location is your home directory.\n12. Click \"Export\" to save the PDF file.",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the \"Sheet\" menu at the top toolbar.\n2. Select \"Page Style...\" from the dropdown menu.\n3. In the Page Style dialog, click the \"Sheet\" tab.\n4. Under \"Print ranges,\" select \"Selection\" and click the input field next to it.\n5. Select the data range (e.g., A1:D23 or A1:F23) by clicking the first cell, holding Shift, and clicking the last cell of your data area.\n6. Click \"OK\" to apply the print range.\n7. Go back to \"Sheet\" > \"Page Style...\" and click the \"Sheet\" tab again.\n8. Under \"Scaling,\" select \"Fit print range(s) to width/height\" and set both Width and Height to \"1\".\n9. Click \"OK\" to confirm the page setup.\n10. Press Ctrl+Shift+P to open the Export as PDF dialog.\n11. Ensure the filename is set to \"Resize_Cells_Fit_Page.pdf\" and the location is your home directory.\n12. Click \"Export\" to save the PDF file.",
+  "retrieved_page_ranges": [
+    [
+      288,
+      289
+    ],
+    [
+      417,
+      417
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      338,
+      340
+    ],
+    [
+      122,
+      122
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/step_1.png"
+}

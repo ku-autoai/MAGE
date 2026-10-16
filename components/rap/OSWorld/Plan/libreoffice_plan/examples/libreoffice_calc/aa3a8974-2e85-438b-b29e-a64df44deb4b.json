@@ -1,0 +1,87 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nRelevant procedure\n\n1. Click the **File** menu at the top-left corner of the LibreOffice Calc window.\n2. Click the **Format** option in the expanded menu.\n3. Click the **Page...** option from the Format submenu to open the Page Style settings.\n4. In the dialog box, select the **Sheet** tab on the left-hand sidebar.\n5. Under the **Scaling mode** section, click the dropdown menu and select **Fit print range(s) on number of pages**.\n6. Ensure the **Width** field is set to `1` and the **Height** field is set to `1` to fit the content onto a single page.\n7. Click the **OK** button to apply the scaling changes.\n8. Click the **File** menu again.\n9. Click **Export as PDF...** to open the export dialog.\n10. Click the **Export** button in the PDF Options window.\n11. In the \"Save\" window, click the **Home** icon (or folder labeled with your username) in the left sidebar to ensure the file is saved to your home directory.\n12. Verify that the Name field at the top contains `Resize_Cells_Fit_Page`.\n13. Click the green **Save** button to export the PDF.",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **File** menu at the top-left corner of the LibreOffice Calc window.\n2. Click the **Format** option in the expanded menu.\n3. Click the **Page...** option from the Format submenu to open the Page Style settings.\n4. In the dialog box, select the **Sheet** tab on the left-hand sidebar.\n5. Under the **Scaling mode** section, click the dropdown menu and select **Fit print range(s) on number of pages**.\n6. Ensure the **Width** field is set to `1` and the **Height** field is set to `1` to fit the content onto a single page.\n7. Click the **OK** button to apply the scaling changes.\n8. Click the **File** menu again.\n9. Click **Export as PDF...** to open the export dialog.\n10. Click the **Export** button in the PDF Options window.\n11. In the \"Save\" window, click the **Home** icon (or folder labeled with your username) in the left sidebar to ensure the file is saved to your home directory.\n12. Verify that the Name field at the top contains `Resize_Cells_Fit_Page`.\n13. Click the green **Save** button to export the PDF.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      238,
+      240
+    ],
+    [
+      408,
+      408
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      27,
+      27
+    ]
+  ]
+}

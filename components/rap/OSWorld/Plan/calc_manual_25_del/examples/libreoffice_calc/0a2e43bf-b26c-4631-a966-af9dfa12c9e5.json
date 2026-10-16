@@ -1,0 +1,117 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure\n\n1.  Click cell **B6** (the cell in the \"Jan\" column, directly below the last product's sales figure, assuming row 5 is the last product and row 1 contains headers).\n2.  Type the formula `=SUM(B2:B5)` and press **Enter** to calculate the total for January.\n3.  Click cell **B6** again, then click and drag the fill handle (the small square at the bottom-right corner of the cell selection) across to cell **K6** (the \"Dec\" column) to copy the total formula for all months.\n4.  Click cell **A6** and type `Total` to label the row.\n5.  Select the data range **A1:K6** (including headers \"Month\", \"Product A\", etc., and the new \"Total\" row).\n6.  Go to the top menu bar, click **Insert**, and select **Chart**.\n7.  In the Chart Wizard, ensure the **Chart Type** is set to **Line**.\n8.  If the data series are not arranged correctly (e.g., if products are X-axis labels), click the **Data Series** button.\n9.  Check the box for **Rows** to ensure products are series and months are categories, or **Columns** depending on how the data is structured (typically, if Months are in Row 1, select **Rows** so that columns A-K are treated as series, or ensure the First Row is used as Labels). *Correction*: Since Months are in Row 1 and Products are in Column A, select **Rows** is usually incorrect if you want Months on X-axis. Actually, standard setup: Months in Row 1 (A1, B1...), Products in Col A (A2, A3...). To get Months on X-axis, you usually need to select **Rows** if the data is transposed, or **Columns** if standard. Let's look at standard Calc behavior: If you select A1:K6, and Months are in Row 1, you typically choose **Rows** for Data Series so that each column (Jan, Feb...) is a series? No, that puts Months on Y-axis.\n    *   *Refined Step 8-9*: In the Chart Wizard, click **Data Series**. Ensure **Rows** is selected if your data is structured with Months as columns and Products as rows",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  Click cell **B6** (the cell in the \"Jan\" column, directly below the last product's sales figure, assuming row 5 is the last product and row 1 contains headers).\n2.  Type the formula `=SUM(B2:B5)` and press **Enter** to calculate the total for January.\n3.  Click cell **B6** again, then click and drag the fill handle (the small square at the bottom-right corner of the cell selection) across to cell **K6** (the \"Dec\" column) to copy the total formula for all months.\n4.  Click cell **A6** and type `Total` to label the row.\n5.  Select the data range **A1:K6** (including headers \"Month\", \"Product A\", etc., and the new \"Total\" row).\n6.  Go to the top menu bar, click **Insert**, and select **Chart**.\n7.  In the Chart Wizard, ensure the **Chart Type** is set to **Line**.\n8.  If the data series are not arranged correctly (e.g., if products are X-axis labels), click the **Data Series** button.\n9.  Check the box for **Rows** to ensure products are series and months are categories, or **Columns** depending on how the data is structured (typically, if Months are in Row 1, select **Rows** so that columns A-K are treated as series, or ensure the First Row is used as Labels). *Correction*: Since Months are in Row 1 and Products are in Column A, select **Rows** is usually incorrect if you want Months on X-axis. Actually, standard setup: Months in Row 1 (A1, B1...), Products in Col A (A2, A3...). To get Months on X-axis, you usually need to select **Rows** if the data is transposed, or **Columns** if standard. Let's look at standard Calc behavior: If you select A1:K6, and Months are in Row 1, you typically choose **Rows** for Data Series so that each column (Jan, Feb...) is a series? No, that puts Months on Y-axis.\n    *   *Refined Step 8-9*: In the Chart Wizard, click **Data Series**. Ensure **Rows** is selected if your data is structured with Months as columns and Products as rows",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      150,
+      150
+    ]
+  ],
+  "first_screen_image_path": null
+}

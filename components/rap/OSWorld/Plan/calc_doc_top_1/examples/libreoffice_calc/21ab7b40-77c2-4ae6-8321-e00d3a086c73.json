@@ -1,0 +1,101 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nBased on the screenshot and task requirements, here is the procedure to calculate the period rate, format it as a number, and highlight the maximum value.\n\n**Relevant procedure**\n\n1.  Click on cell **C1** in the spreadsheet to select it.\n2.  Type `Period Rate (%)` into the cell to create the header, then press **Enter**.\n3.  Click on cell **C2** to begin entering the formula.\n4.  Type the formula `=A2/B2` (which divides the Annual Rate by the Period per Year).\n5.  Press **Enter**.\n6.  Click back on cell **C2** to select it.\n7.  Locate the small square handle at the bottom-right corner of the selected cell (the fill handle).\n8.  Click and drag this handle downwards until you reach row 25 (the last row containing data in columns A and B), then release.\n9.  With the calculated column still selected (C2:C25), click the **Format** menu in the top toolbar.\n10. Select **Cells...** (or press Ctrl+1) to open the Format Cells dialog.\n11. In the dialog, click on the **Numbers** tab on the left.\n12. Select **Number** from the Category list on the left.\n13. Set the decimal places to a reasonable number (e.g., 4 or 2) in the options on the right, then click **OK**.\n14. Ensure the range **C2:C25** is selected.\n15. Click the **Format** menu in the top toolbar.\n16. Hover over **Conditional**, then click **Condition...** to open the Conditional Formatting dialog.\n17. In the \"Condition 1\" dropdown, select **Cell value is**.\n18. In the \"is\" dropdown, select **Max**.\n19. Click on the **Style** dropdown menu.\n20. Click **New Style...** (or select a custom option if available). In the Style editor, go to the **Font** tab (or Colors tab depending on version), change the Font Color to Green (#00FF00), and click **OK**.\n21. Click **OK** in the Conditional Formatting dialog to apply the changes.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the screenshot and task requirements, here is the procedure to calculate the period rate, format it as a number, and highlight the maximum value.\n\n**Relevant procedure**\n\n1.  Click on cell **C1** in the spreadsheet to select it.\n2.  Type `Period Rate (%)` into the cell to create the header, then press **Enter**.\n3.  Click on cell **C2** to begin entering the formula.\n4.  Type the formula `=A2/B2` (which divides the Annual Rate by the Period per Year).\n5.  Press **Enter**.\n6.  Click back on cell **C2** to select it.\n7.  Locate the small square handle at the bottom-right corner of the selected cell (the fill handle).\n8.  Click and drag this handle downwards until you reach row 25 (the last row containing data in columns A and B), then release.\n9.  With the calculated column still selected (C2:C25), click the **Format** menu in the top toolbar.\n10. Select **Cells...** (or press Ctrl+1) to open the Format Cells dialog.\n11. In the dialog, click on the **Numbers** tab on the left.\n12. Select **Number** from the Category list on the left.\n13. Set the decimal places to a reasonable number (e.g., 4 or 2) in the options on the right, then click **OK**.\n14. Ensure the range **C2:C25** is selected.\n15. Click the **Format** menu in the top toolbar.\n16. Hover over **Conditional**, then click **Condition...** to open the Conditional Formatting dialog.\n17. In the \"Condition 1\" dropdown, select **Cell value is**.\n18. In the \"is\" dropdown, select **Max**.\n19. Click on the **Style** dropdown menu.\n20. Click **New Style...** (or select a custom option if available). In the Style editor, go to the **Font** tab (or Colors tab depending on version), change the Font Color to Green (#00FF00), and click **OK**.\n21. Click **OK** in the Conditional Formatting dialog to apply the changes.",
+  "retrieved_page_ranges": [
+    [
+      83,
+      84
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/step_1.png"
+}

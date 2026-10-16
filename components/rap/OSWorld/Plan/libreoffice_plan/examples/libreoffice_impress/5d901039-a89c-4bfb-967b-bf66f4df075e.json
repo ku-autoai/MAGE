@@ -1,0 +1,99 @@
+{
+  "id": "5d901039-a89c-4bfb-967b-bf66f4df075e",
+  "snapshot": "libreoffice_impress",
+  "instruction": "I want to turn the rectangular image of Columbus on the first page into a cover page. Could you help me stretch this image to fill the entire page, keeping its proportion and centering the image?\n\nRelevant procedure\n\n1. Click on the rectangular image of Columbus on the first page to select it.\n2. Right-click the selected image and choose \"Image Properties\" (or \"Picture Format\" > \"Crop\" > \"Fill\" depending on the specific software, but typically \"Image Properties\" or a context menu option for positioning/sizing). If a ribbon interface is present, look for a \"Fill\" option under the \"Picture Format\" or \"Image\" tab.\n3. In the properties dialog, look for a \"Position and Size\" or \"Fit to Page\" tab.\n4. If using a \"Fill\" mode: Select the \"Fill\" option which automatically crops and stretches the image to fill the container while maintaining aspect ratio. Ensure the anchor is set to the center of the page.\n5. If manual adjustment is required via \"Position and Size\":\n   a. Set the \"Width\" to 100% and \"Height\" to 100% of the page dimensions.\n   b. Ensure the \"Keep scale\" or \"Lock aspect ratio\" box is checked. Note that if the image aspect ratio differs from the page, checking \"Keep scale\" might prevent filling the entire page without cropping.\n   c. If \"Keep scale\" prevents filling, uncheck it or use the \"Fill\" mode specifically designed for this purpose.\n   d. Center the image by setting horizontal and vertical alignment to \"Center\" or adjusting position offsets to 50% if manual positioning is used.\n6. Click \"OK\" or \"Apply\" to confirm the changes.\n7. Verify that the image now covers the entire page, is centered, and maintains its original proportions (cropping excess parts if necessary).",
+  "source": "https://superuser.com/questions/986776/how-can-i-stretch-an-image-in-a-libreoffice-impress-presentation-to-fill-the-pag",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5d901039-a89c-4bfb-967b-bf66f4df075e/CPD_Background_Investigation_Process.pptx",
+            "path": "/home/user/Desktop/CPD_Background_Investigation_Process.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/CPD_Background_Investigation_Process.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "CPD_Background_Investigation_Process.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "check_image_stretch_and_center",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5d901039-a89c-4bfb-967b-bf66f4df075e/CPD_Background_Investigation_Process.pptx",
+      "dest": "CPD_Background_Investigation_Process_Original.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/CPD_Background_Investigation_Process.pptx",
+      "dest": "CPD_Background_Investigation_Process.pptx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on the rectangular image of Columbus on the first page to select it.\n2. Right-click the selected image and choose \"Image Properties\" (or \"Picture Format\" > \"Crop\" > \"Fill\" depending on the specific software, but typically \"Image Properties\" or a context menu option for positioning/sizing). If a ribbon interface is present, look for a \"Fill\" option under the \"Picture Format\" or \"Image\" tab.\n3. In the properties dialog, look for a \"Position and Size\" or \"Fit to Page\" tab.\n4. If using a \"Fill\" mode: Select the \"Fill\" option which automatically crops and stretches the image to fill the container while maintaining aspect ratio. Ensure the anchor is set to the center of the page.\n5. If manual adjustment is required via \"Position and Size\":\n   a. Set the \"Width\" to 100% and \"Height\" to 100% of the page dimensions.\n   b. Ensure the \"Keep scale\" or \"Lock aspect ratio\" box is checked. Note that if the image aspect ratio differs from the page, checking \"Keep scale\" might prevent filling the entire page without cropping.\n   c. If \"Keep scale\" prevents filling, uncheck it or use the \"Fill\" mode specifically designed for this purpose.\n   d. Center the image by setting horizontal and vertical alignment to \"Center\" or adjusting position offsets to 50% if manual positioning is used.\n6. Click \"OK\" or \"Apply\" to confirm the changes.\n7. Verify that the image now covers the entire page, is centered, and maintains its original proportions (cropping excess parts if necessary).",
+  "retrieved_page_ranges": [
+    [
+      120,
+      132
+    ],
+    [
+      120,
+      132
+    ],
+    [
+      120,
+      132
+    ],
+    [
+      120,
+      132
+    ],
+    [
+      197,
+      213
+    ]
+  ]
+}

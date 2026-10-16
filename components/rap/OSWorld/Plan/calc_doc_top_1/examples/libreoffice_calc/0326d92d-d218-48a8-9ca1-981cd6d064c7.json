@@ -1,0 +1,102 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A12 to select it.\n2. Type `Total` into cell A12.\n3. Click cell B12 to select it.\n4. Type `=SUM(B2:B11)` into cell B12 and press Enter.\n5. Click cell B12 again, then click and drag the fill handle (bottom-right corner of the cell) across to cell G12 to copy the formula to the other months.\n6. Click cell A13 to select it.\n7. Type `Growth` into cell A13.\n8. Click cell B13 to select it.\n9. Type `=IF(AND(ROW()=13, COLUMN()>=3), (B12-A12)/A12, \"\")` into cell B13 and press Enter. (Note: This formula assumes B12 is Feb and A12 is Jan. Since we want Feb growth based on Jan, this calculation is specific to Feb. For subsequent months, the denominator changes).\n   *Correction for robustness:* Let's use a more direct approach. Click cell B13. Type `=(B12-A12)/A12` and press Enter. This calculates Feb growth over Jan.\n10. Click cell C13 to select it.\n11. Type `=(C12-B12)/B12` and press Enter. This calculates Mar growth over Feb.\n12. Click cell C13, then drag the fill handle across to cell G13 to copy the relative formula for the remaining months (Apr, May, Jun).\n13. Select cell range A12:G13 to include both Total and Growth headers and their values.\n14. Click the `Insert` menu at the top of the window.\n15. Select `Chart...` from the drop-down menu.\n16. In the Chart Wizard dialog, under `Chart Type`, ensure `Column and Line` is selected.\n17. Click `Next`.\n18. In the `Data Range` tab, verify the data range is correct ($A$12:$G$13) and that Data Series are In Rows. Click `Next`.\n19. In the `Data Series` tab, select the first series (Total). Change the Chart Type to `Column` (or `",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A12 to select it.\n2. Type `Total` into cell A12.\n3. Click cell B12 to select it.\n4. Type `=SUM(B2:B11)` into cell B12 and press Enter.\n5. Click cell B12 again, then click and drag the fill handle (bottom-right corner of the cell) across to cell G12 to copy the formula to the other months.\n6. Click cell A13 to select it.\n7. Type `Growth` into cell A13.\n8. Click cell B13 to select it.\n9. Type `=IF(AND(ROW()=13, COLUMN()>=3), (B12-A12)/A12, \"\")` into cell B13 and press Enter. (Note: This formula assumes B12 is Feb and A12 is Jan. Since we want Feb growth based on Jan, this calculation is specific to Feb. For subsequent months, the denominator changes).\n   *Correction for robustness:* Let's use a more direct approach. Click cell B13. Type `=(B12-A12)/A12` and press Enter. This calculates Feb growth over Jan.\n10. Click cell C13 to select it.\n11. Type `=(C12-B12)/B12` and press Enter. This calculates Mar growth over Feb.\n12. Click cell C13, then drag the fill handle across to cell G13 to copy the relative formula for the remaining months (Apr, May, Jun).\n13. Select cell range A12:G13 to include both Total and Growth headers and their values.\n14. Click the `Insert` menu at the top of the window.\n15. Select `Chart...` from the drop-down menu.\n16. In the Chart Wizard dialog, under `Chart Type`, ensure `Column and Line` is selected.\n17. Click `Next`.\n18. In the `Data Range` tab, verify the data range is correct ($A$12:$G$13) and that Data Series are In Rows. Click `Next`.\n19. In the `Data Series` tab, select the first series (Total). Change the Chart Type to `Column` (or `",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/step_1.png"
+}

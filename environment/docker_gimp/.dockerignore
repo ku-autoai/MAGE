@@ -1,0 +1,17 @@
+**
+!Dockerfile
+!LAM_data_generator/
+!LAM_data_generator/**
+**/.env
+**/.env.*
+**/.git
+**/__pycache__
+**/*.pyc
+**/*.pem
+**/*.key
+**/.ssh
+**/.aws
+**/.config
+**/chrome_profile
+**/logs
+**/.vscode

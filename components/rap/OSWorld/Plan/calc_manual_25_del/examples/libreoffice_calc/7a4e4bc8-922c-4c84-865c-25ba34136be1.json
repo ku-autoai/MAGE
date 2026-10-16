@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click cell **A1** (the cell containing the header \"Date\") to ensure the active cell is within the data range.\n2. Click the **Data** menu in the top menu bar.\n3. Select **Sort...** from the dropdown menu to open the Sort dialog.\n4. In the Sort dialog, click the **Options** tab.\n5. Select the radio button **Left to right (sort columns)** to enable column reordering.\n6. Ensure the checkbox **Range contains column/row labels** is checked (this typically refers to the first row when sorting left-to-right, but since we are sorting columns, it ensures the first row isn't treated as data if it were a row sort; however, for column sorting, this usually implies the first *column* is a label if sorting top-to-bottom. For Left-to-Right sorting, this option often means the first *row* is a label. Wait, standard Calc behavior: \"Range contains column/row labels\" when sorting Left-to-Right usually omits the first *row* from the sort if it's considered a label, but here we want to move entire columns. Actually, the safest way to reorder columns without losing header association is to sort by a helper row or simply move columns. However, the task asks to \"Reorder\". The Sort dialog with \"Left to right\" sorts columns based on values in the active row. To achieve a specific order like \"Date\", \"First Name\", etc., using the Sort dialog is not direct unless you create a helper row with indices (1, 2, 3, 4, 5).\n   *Alternative Robust Path (Drag and Drop is not supported for whole columns easily in all views, Cut/Paste is safer):*\n   Let's use Cut and Paste to reorder columns explicitly.\n   \n   **Revised Procedure (Cut/Paste Method is more precise for specific arbitrary order):**\n   \n1. Right-click on the column letter **C** (which contains \"Last Name\" or whichever column needs to move, let's identify current state from image if possible. The image is not provided in text, but typically \"Date\", \"First Name\", \"Last Name\" are C, D, E? No, usually Date is A. Let's assume standard layout or look at headers.\n   *Since I cannot see the screenshot, I must rely on general robust actions. The prompt implies I should generate steps based",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell **A1** (the cell containing the header \"Date\") to ensure the active cell is within the data range.\n2. Click the **Data** menu in the top menu bar.\n3. Select **Sort...** from the dropdown menu to open the Sort dialog.\n4. In the Sort dialog, click the **Options** tab.\n5. Select the radio button **Left to right (sort columns)** to enable column reordering.\n6. Ensure the checkbox **Range contains column/row labels** is checked (this typically refers to the first row when sorting left-to-right, but since we are sorting columns, it ensures the first row isn't treated as data if it were a row sort; however, for column sorting, this usually implies the first *column* is a label if sorting top-to-bottom. For Left-to-Right sorting, this option often means the first *row* is a label. Wait, standard Calc behavior: \"Range contains column/row labels\" when sorting Left-to-Right usually omits the first *row* from the sort if it's considered a label, but here we want to move entire columns. Actually, the safest way to reorder columns without losing header association is to sort by a helper row or simply move columns. However, the task asks to \"Reorder\". The Sort dialog with \"Left to right\" sorts columns based on values in the active row. To achieve a specific order like \"Date\", \"First Name\", etc., using the Sort dialog is not direct unless you create a helper row with indices (1, 2, 3, 4, 5).\n   *Alternative Robust Path (Drag and Drop is not supported for whole columns easily in all views, Cut/Paste is safer):*\n   Let's use Cut and Paste to reorder columns explicitly.\n   \n   **Revised Procedure (Cut/Paste Method is more precise for specific arbitrary order):**\n   \n1. Right-click on the column letter **C** (which contains \"Last Name\" or whichever column needs to move, let's identify current state from image if possible. The image is not provided in text, but typically \"Date\", \"First Name\", \"Last Name\" are C, D, E? No, usually Date is A. Let's assume standard layout or look at headers.\n   *Since I cannot see the screenshot, I must rely on general robust actions. The prompt implies I should generate steps based",
+  "retrieved_page_ranges": [
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      96,
+      97
+    ]
+  ],
+  "first_screen_image_path": null
+}

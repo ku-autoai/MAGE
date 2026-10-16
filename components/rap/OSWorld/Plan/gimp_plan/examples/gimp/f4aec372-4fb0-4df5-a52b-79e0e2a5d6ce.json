@@ -1,0 +1,121 @@
+{
+  "id": "f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce",
+  "snapshot": "gimp",
+  "instruction": "Help me choose the yellow triangle and positioning it at the center of my picture.\n\nRelevant procedure\n1. Click the Move Tool icon in the left toolbox (the four-arrow cursor icon at the top of the tools).\n2. Ensure the yellow triangle layer is active by clicking it in the Layers dock on the right (the top layer with the triangle thumbnail).\n3. With the Move Tool selected, click and drag the yellow triangle toward the center of the canvas.\n4. Press the Shift key while dragging to constrain movement to horizontal or vertical, and align the triangle visually to the center.\n5. If needed, enable View > Guides > New Guide (Horizontal) and New Guide (Vertical) to create center guides, then drag the triangle until its center aligns with both guides.\n6. Press Enter or click the anchor icon in the status bar (\"Floating Selection\") to confirm placement if a floating selection appears.",
+  "source": "https://superuser.com/questions/612338/how-do-i-select-and-move-an-object-in-gimp",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.png",
+            "path": "/home/user/Desktop/Triangle_On_The_Side.png"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.xcf",
+            "path": "/home/user/Desktop/Triangle_On_The_Side.xcf"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/Triangle_On_The_Side.xcf"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"Triangle_In_The_Middle\");time.sleep(1);pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 2
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 5
+        }
+      }
+    ],
+    "func": "check_triangle_position",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Triangle_In_The_Middle.png",
+      "dest": "Triangle_In_The_Middle.png"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the Move Tool icon in the left toolbox (the four-arrow cursor icon at the top of the tools).\n2. Ensure the yellow triangle layer is active by clicking it in the Layers dock on the right (the top layer with the triangle thumbnail).\n3. With the Move Tool selected, click and drag the yellow triangle toward the center of the canvas.\n4. Press the Shift key while dragging to constrain movement to horizontal or vertical, and align the triangle visually to the center.\n5. If needed, enable View > Guides > New Guide (Horizontal) and New Guide (Vertical) to create center guides, then drag the triangle until its center aligns with both guides.\n6. Press Enter or click the anchor icon in the status bar (\"Floating Selection\") to confirm placement if a floating selection appears.",
+  "retrieved_page_ranges": [
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "13.11. Map Object",
+      "13.11. Map Object"
+    ],
+    [
+      "8.11. Curves",
+      "8.11. Curves"
+    ],
+    [
+      "14.5. Cell Noise",
+      "14.5. Cell Noise"
+    ],
+    [
+      "5.31. Snap to Equidistance",
+      "5.31. Snap to Equidistance"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/step_1.png"
+}

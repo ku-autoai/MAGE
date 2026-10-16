@@ -1,0 +1,115 @@
+{
+  "id": "1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Summarize the total revenue for each promotion type in a new sheet (Sheet2) with the promotion names as the column headers using the Pivot Table feature.\n\nRelevant procedure\n1. Click any cell within the existing data range in the current sheet (e.g., Sheet1) to select the data source.\n2. Click the **Insert** menu in the top menu bar and select **Pivot Table** (or **Insert or Edit Pivot Table** from the Standard toolbar).\n3. In the \"Select Source\" dialog, ensure \"Current selection\" or \"Current selection as source\" is selected, then click **OK**.\n4. In the \"Pivot Table Layout\" dialog, expand the \"Options\" or \"Source and Destination\" section if necessary to reveal the placement options.\n5. Under \"Source and Destination,\" select **New Sheet** as the output location.\n6. Locate the field corresponding to \"Promotion Type\" (e.g., named \"Promotion\", \"Promotion Type\", or similar) in the \"Available Fields\" list.\n7. Drag the \"Promotion Type\" field from \"Available Fields\" and drop it into the **Column Fields** area.\n8. Locate the field corresponding to \"Revenue\" (e.g., named \"Revenue\", \"Sales\", \"Amount\", or similar) in the \"Available Fields\" list.\n9. Drag the \"Revenue\" field from \"Available Fields\" and drop it into the **Data Fields** area. Ensure the function is set to \"Sum\" (it usually defaults to this).\n10. Click **OK** to generate the pivot table in the new sheet (Sheet2).",
+  "source": "SheetCopilot@55",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/EntireSummerSales.xlsx",
+            "path": "/home/user/EntireSummerSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/EntireSummerSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1de60575-bb6e-4c3d-9e6a-2fa699f9f197",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "EntireSummerSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 3.0
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1de60575-bb6e-4c3d-9e6a-2fa699f9f197/6_EntireSummerSales_gt1.xlsx",
+      "dest": "6_EntireSummerSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/EntireSummerSales.xlsx",
+      "dest": "EntireSummerSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click any cell within the existing data range in the current sheet (e.g., Sheet1) to select the data source.\n2. Click the **Insert** menu in the top menu bar and select **Pivot Table** (or **Insert or Edit Pivot Table** from the Standard toolbar).\n3. In the \"Select Source\" dialog, ensure \"Current selection\" or \"Current selection as source\" is selected, then click **OK**.\n4. In the \"Pivot Table Layout\" dialog, expand the \"Options\" or \"Source and Destination\" section if necessary to reveal the placement options.\n5. Under \"Source and Destination,\" select **New Sheet** as the output location.\n6. Locate the field corresponding to \"Promotion Type\" (e.g., named \"Promotion\", \"Promotion Type\", or similar) in the \"Available Fields\" list.\n7. Drag the \"Promotion Type\" field from \"Available Fields\" and drop it into the **Column Fields** area.\n8. Locate the field corresponding to \"Revenue\" (e.g., named \"Revenue\", \"Sales\", \"Amount\", or similar) in the \"Available Fields\" list.\n9. Drag the \"Revenue\" field from \"Available Fields\" and drop it into the **Data Fields** area. Ensure the function is set to \"Sum\" (it usually defaults to this).\n10. Click **OK** to generate the pivot table in the new sheet (Sheet2).",
+  "retrieved_page_ranges": [
+    [
+      290,
+      290
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      291,
+      293
+    ],
+    [
+      298,
+      302
+    ]
+  ],
+  "first_screen_image_path": null
+}

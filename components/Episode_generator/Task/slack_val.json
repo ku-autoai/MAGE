@@ -1,0 +1,602 @@
+[
+  {
+    "id": 0,
+    "main_steps": [
+      "Click Admin in the left sidebar.",
+      "Click Apps and workflows in the menu that appears.",
+      "In the Slack Marketplace window, click App Management Settings in the left sidebar.",
+      "Next to Require approved apps, click the Edit button.",
+      "Check the box labeled Allow members to request apps for approval.",
+      "Click Save."
+    ],
+    "main_task": "Enable the “Allow members to request apps for approval” option",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click **Admin** in the sidebar.\n2. Select **Apps and workflows** from the menu to open the Slack Marketplace.\n3. Click **App Management Settings** in the left sidebar.\n4. Click **Edit** next to **Require approved apps**.\n5. Check the box next to **Allow members to request apps for approval**.\n6. Click **Save**.",
+    "retrieved_page_ranges": [
+      [
+        "Manage app approval for your workspace",
+        "Manage app approval for your workspace"
+      ],
+      [
+        "Manage app requests for your workspace",
+        "Manage app requests for your workspace"
+      ],
+      [
+        "Add apps to your Slack workspace",
+        "Add apps to your Slack workspace"
+      ],
+      [
+        "Manage app settings and permissions",
+        "Manage app settings and permissions"
+      ],
+      [
+        "Set organization-level policies for apps",
+        "Set organization-level policies for apps"
+      ]
+    ]
+  },
+  {
+    "id": 1,
+    "main_steps": [
+      "Click the workspace name at the top of the sidebar.",
+      "Click \"Invite people to…\" in the dropdown menu.",
+      "In the Invite dialog, click \"Add from G Suite\".",
+      "Click \"Switch Google account\"."
+    ],
+    "main_task": "Open the Google account selection window while inviting people from G Suite",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click your workspace name in the sidebar.\n2. Select Invite people to...\n3. Select Add from G Suite.\n4. Click Switch Google account.\n5. Follow the prompts to choose another account.",
+    "retrieved_page_ranges": [
+      [
+        "Use Google Sheets with Workflow Builder",
+        "Use Google Sheets with Workflow Builder"
+      ],
+      [
+        "Google Workspace single sign-on",
+        "Google Workspace single sign-on"
+      ],
+      [
+        "Invite new members to your workspace from your Google Directory",
+        "Invite new members to your workspace from your Google Directory"
+      ],
+      [
+        "Manage workspace creation requests for your Enterprise organization",
+        "Manage workspace creation requests for your Enterprise organization"
+      ],
+      [
+        "Reactivate your Slack account",
+        "Reactivate your Slack account"
+      ]
+    ]
+  },
+  {
+    "id": 2,
+    "main_steps": [
+      "Click the workspace name in the upper-left corner of Slack.",
+      "Hover over \"Settings & administration\".",
+      "Click \"Workspace settings\".",
+      "Switch to the browser window that opens.",
+      "Click the \"Permissions\" tab.",
+      "Scroll to the section labeled \"@channel, @here, @everyone\".",
+      "Check the box to show a warning when any of these mentions are used in a channel with at least six members.",
+      "Click \"Save\"."
+    ],
+    "main_task": "Enable the warning message when @channel, @here, or @everyone is used in channels with six or more members",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click **Admin** in the sidebar.\n2. Select **Workspace settings** from the menu.\n3. Click the **Permissions** tab.\n4. Next to **Messaging**, click **Expand**.\n5. Open the drop-down menu and select the option to enable the warning message.\n6. Click **Save**.",
+    "retrieved_page_ranges": [
+      [
+        "Manage who can notify a channel or workspace",
+        "Manage who can notify a channel or workspace"
+      ],
+      [
+        "Notify a channel or workspace",
+        "Notify a channel or workspace"
+      ],
+      [
+        "Use the general channel to share announcements",
+        "Use the general channel to share announcements"
+      ],
+      [
+        "Disable huddles in certain channels",
+        "Disable huddles in certain channels"
+      ],
+      [
+        "Limit channel invitations in an Enterprise organization",
+        "Limit channel invitations in an Enterprise organization"
+      ]
+    ]
+  },
+  {
+    "id": 3,
+    "main_steps": [
+      "Click the workspace name in the upper-left corner.",
+      "Click Tools & settings.",
+      "Click Manage members.",
+      "If a workspace drop-down appears, choose the current workspace.",
+      "Locate the row for Guest Candidate and click the three dots icon at the far right of that row.",
+      "Click Change account type.",
+      "Select Single-Channel Guest and click Next.",
+      "In the Channels box, type #general and press Enter.",
+      "Leave the time limit field blank.",
+      "Click Make Single-Channel Guest.",
+      "Observe that Guest Candidate’s role now shows Single-Channel Guest in the members list."
+    ],
+    "main_task": "Convert “Guest Candidate” from a regular member to a Single-Channel Guest assigned only to #general",
+    "setup_steps": [
+      "Click the workspace name in the upper-left corner of Slack.",
+      "Click Invite people.",
+      "In the email field, type candidate@example.com.",
+      "Confirm the Role field shows Full member.",
+      "Click Send Invitation.",
+      "Click Done to close the invitation window."
+    ],
+    "setup_task": "(Setup) Invite a regular member named “Guest Candidate” to the workspace",
+    "relevant_procedure": "Relevant procedure\n1. Click **Admin** in the sidebar.\n2. Select **Workspace settings** from the menu, then click **People**.\n3. Click the **three dots icon** next to \"Guest Candidate\" and select **Change account type**.\n4. Select **Single-Channel Guest** and click **Next**.\n5. In the channel field, type or select **#general**.\n6. Click **Make Single-Channel Guest**.",
+    "retrieved_page_ranges": [
+      [
+        "Understand guest roles in Slack",
+        "Understand guest roles in Slack"
+      ],
+      [
+        "Convert a channel to private or public",
+        "Convert a channel to private or public"
+      ],
+      [
+        "Manage pronoun and name pronunciation display for member profiles",
+        "Manage pronoun and name pronunciation display for member profiles"
+      ],
+      [
+        "Disable huddles in certain channels",
+        "Disable huddles in certain channels"
+      ],
+      [
+        "Change a member's role",
+        "Change a member's role"
+      ]
+    ]
+  },
+  {
+    "id": 4,
+    "main_steps": [
+      "Click Tools in the left-hand Slack sidebar.",
+      "Click Workflows.",
+      "Click the New button in the top-right corner of the Workflows window.",
+      "Click Build Workflow.",
+      "Under Start the workflow, click Choose an event.",
+      "Select Start with a Salesforce event.",
+      "In the Object list, click Opportunity.",
+      "In the Event list, select Opportunity Amount decreases by.",
+      "In the Percentage field, type 10.",
+      "Click Continue.",
+      "Click Add steps.",
+      "Select Salesforce channels.",
+      "Click Create Salesforce channel.",
+      "In the Channel name box, type oppty-{Opportunity Name}.",
+      "Open the Channel type menu and select Private channel.",
+      "Click Save.",
+      "Below Suggested step, click Add people to a channel.",
+      "In the first People field, choose Opportunity Owner.",
+      "Click Add another person.",
+      "In the second People field, choose Sales Manager.",
+      "Click Save.",
+      "Click Finish up.",
+      "In the Workflow name field, type Auto Salesforce Invitation.",
+      "Click Publish."
+    ],
+    "main_task": "Create a workflow that starts with a Salesforce event, creates a Salesforce channel, and adds the Opportunity Owner and Sales Manager to that channel",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click **Tools** in the sidebar (or **Automations** if Tools is not visible).\n2. From **Workflows**, click **New** in the top right, then select **Build Workflow**.\n3. Below **Start the workflow**, click **Choose an event**, then select **Start with a Salesforce event**.\n4. Set up your workflow trigger, then click **Continue**.\n5. Click **Add steps**, then select **Salesforce channels**.\n6. Choose **Create Salesforce channel** and configure the step.\n7. Below **Suggested step**, select **Add people to a channel**, then configure the step to add the Opportunity Owner and Sales Manager.\n8. Complete your workflow, then select **Finish up**.",
+    "retrieved_page_ranges": [
+      [
+        "Use Salesforce channels in Slack",
+        "Use Salesforce channels in Slack"
+      ],
+      [
+        "Set up and manage Salesforce channels in Slack",
+        "Set up and manage Salesforce channels in Slack"
+      ],
+      [
+        "Use Sales Home in Slack",
+        "Use Sales Home in Slack"
+      ],
+      [
+        "Manage the Workflows tab in channels and DMs",
+        "Manage the Workflows tab in channels and DMs"
+      ],
+      [
+        "Build a workflow: Use a workflow template",
+        "Build a workflow: Use a workflow template"
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "main_steps": [
+      "Click the workspace name at the top-left corner of Slack.",
+      "Click Invite people in the dropdown menu.",
+      "Click the Email tab if it is not already active.",
+      "Click inside the first email field.",
+      "Type newmember@example.com.",
+      "Click Send to dispatch the invitation."
+    ],
+    "main_task": "Send an invitation to the email address “newmember@example.com”",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click your workspace name in the sidebar.\n2. Select Invite people to... from the menu.\n3. Type newmember@example.com in the email address field.\n4. Click Send.\n5. Click Done.",
+    "retrieved_page_ranges": [
+      [
+        "Invite new members to your workspace",
+        "Invite new members to your workspace"
+      ],
+      [
+        "Invited members in Slack",
+        "Invited members in Slack"
+      ],
+      [
+        "Use Slack Connect to start a DM with someone at another company",
+        "Use Slack Connect to start a DM with someone at another company"
+      ],
+      [
+        "Email template for introducing Slack",
+        "Email template for introducing Slack"
+      ],
+      [
+        "Use Slack Connect to work with other companies in channels",
+        "Use Slack Connect to work with other companies in channels"
+      ]
+    ]
+  },
+  {
+    "id": 6,
+    "main_steps": [
+      "Click the workspace name in the top-left corner of the Slack window.",
+      "Click Customize [workspace name] in the menu that appears.",
+      "In the browser tab that opens to the Customize Emoji page, click Add Alias.",
+      "Click the Choose Emoji drop-down.",
+      "Type \"smile\" into the search box and press Enter.",
+      "Click the “smile” emoji from the filtered results.",
+      "Click inside the Enter an alias field.",
+      "Type happyface",
+      "Click Save."
+    ],
+    "main_task": "Create the emoji alias :happyface: that points to the default “smile” emoji",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click your workspace name in the top left.\n2. Select Customize [workspace name].\n3. Click the Emoji tab at the top of the page.\n4. Click Add Alias.\n5. Click Choose Emoji and select the smile emoji from the drop-down menu.\n6. In the Enter an alias field, type happyface.\n7. Click Save.",
+    "retrieved_page_ranges": [
+      [
+        "Add custom emoji and aliases to your workspace",
+        "Add custom emoji and aliases to your workspace"
+      ],
+      [
+        "Manage one-click emoji reactions for your workspace or organization",
+        "Manage one-click emoji reactions for your workspace or organization"
+      ],
+      [
+        "Use emoji and reactions",
+        "Use emoji and reactions"
+      ],
+      [
+        "Manage your emoji preferences",
+        "Manage your emoji preferences"
+      ],
+      [
+        "Set the default language of a workspace or organization",
+        "Set the default language of a workspace or organization"
+      ]
+    ]
+  },
+  {
+    "id": 7,
+    "main_steps": [
+      "Click the #general channel in the left sidebar.",
+      "Click the message input box at the bottom.",
+      "Type Hello Slack.",
+      "Press Enter to send the message."
+    ],
+    "main_task": "Send the message \"Hello Slack\" in the #general channel",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "No useful manual guidance found.",
+    "retrieved_page_ranges": [
+      [
+        "Notify a channel or workspace",
+        "Notify a channel or workspace"
+      ],
+      [
+        "Star channels and direct messages",
+        "Star channels and direct messages"
+      ],
+      [
+        "Sign members out of Slack",
+        "Sign members out of Slack"
+      ],
+      [
+        "Use Channel Expert in Slack",
+        "Use Channel Expert in Slack"
+      ],
+      [
+        "Manage your Enterprise organization with APIs",
+        "Manage your Enterprise organization with APIs"
+      ]
+    ]
+  },
+  {
+    "id": 8,
+    "main_steps": [
+      "Hover over the last message.",
+      "Click the More actions (three dots) icon.",
+      "Click Edit message.",
+      "Select all existing text.",
+      "Type Hello Edited.",
+      "Press Enter to save changes."
+    ],
+    "main_task": "Edit the last message to \"Hello Edited\"",
+    "setup_steps": [
+      "Click the #general channel in the left sidebar.",
+      "Click the message input box.",
+      "Type Hello Slack.",
+      "Press Enter."
+    ],
+    "setup_task": "(Setup) Send a message \"Hello Slack\" in the #general channel",
+    "relevant_procedure": "Relevant procedure\n1. Hover over the last message (\"Hello Slack\").\n2. Click the three dots icon.\n3. Click Edit message.\n4. Replace the text with \"Hello Edited\".\n5. Click Save Changes.",
+    "retrieved_page_ranges": [
+      [
+        "Edit your profile",
+        "Edit your profile"
+      ],
+      [
+        "Set a conversation topic or channel description",
+        "Set a conversation topic or channel description"
+      ],
+      [
+        "Understand canvas update messages",
+        "Understand canvas update messages"
+      ],
+      [
+        "Edit or delete messages",
+        "Edit or delete messages"
+      ],
+      [
+        "Manage pronoun and name pronunciation display for member profiles",
+        "Manage pronoun and name pronunciation display for member profiles"
+      ]
+    ]
+  },
+  {
+    "id": 9,
+    "main_steps": [
+      "Hover over the last message.",
+      "Click the Add reaction icon.",
+      "Type thumbsup in the emoji search box.",
+      "Click the thumbs up emoji."
+    ],
+    "main_task": "Add a thumbs up reaction to the last message",
+    "setup_steps": [
+      "Click the #general channel.",
+      "Click the message input box.",
+      "Type React to me.",
+      "Press Enter."
+    ],
+    "setup_task": "(Setup) Send a message \"React to me\" in the #general channel",
+    "relevant_procedure": "Relevant procedure\n1. Hover over the last message (\"React to me\").\n2. Click the Add reaction icon.\n3. Select the thumbs up emoji.",
+    "retrieved_page_ranges": [
+      [
+        "Use emoji and reactions",
+        "Use emoji and reactions"
+      ],
+      [
+        "Moderate message content in Slack",
+        "Moderate message content in Slack"
+      ],
+      [
+        "Manage one-click emoji reactions for your workspace or organization",
+        "Manage one-click emoji reactions for your workspace or organization"
+      ],
+      [
+        "Star channels and direct messages",
+        "Star channels and direct messages"
+      ],
+      [
+        "Understand canvas update messages",
+        "Understand canvas update messages"
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "main_steps": [
+      "Hover over the last message.",
+      "Click Reply in thread.",
+      "Click the thread reply input box.",
+      "Type Thread reply.",
+      "Press Enter."
+    ],
+    "main_task": "Reply \"Thread reply\" in the thread of the last message",
+    "setup_steps": [
+      "Click the #general channel.",
+      "Click the message input box.",
+      "Type Thread test.",
+      "Press Enter."
+    ],
+    "setup_task": "(Setup) Send a message \"Thread test\" in the #general channel",
+    "relevant_procedure": "Relevant procedure\n1. Hover over the last message (\"Thread test\") in the #general channel.\n2. Click the Reply in thread icon.\n3. Type Thread reply.\n4. Press Enter.",
+    "retrieved_page_ranges": [
+      [
+        "Moderate message content in Slack",
+        "Moderate message content in Slack"
+      ],
+      [
+        "Use threads to organize discussions",
+        "Use threads to organize discussions"
+      ],
+      [
+        "Manage pronoun and name pronunciation display for member profiles",
+        "Manage pronoun and name pronunciation display for member profiles"
+      ],
+      [
+        "Use Channel Expert in Slack",
+        "Use Channel Expert in Slack"
+      ],
+      [
+        "Set a conversation topic or channel description",
+        "Set a conversation topic or channel description"
+      ]
+    ]
+  },
+  {
+    "id": 11,
+    "main_steps": [
+      "Hover over the last message.",
+      "Click the More actions (three dots) icon.",
+      "Click Delete message.",
+      "Click Delete to confirm."
+    ],
+    "main_task": "Delete the last message",
+    "setup_steps": [
+      "Click the #general channel.",
+      "Click the message input box.",
+      "Type Delete me.",
+      "Press Enter."
+    ],
+    "setup_task": "(Setup) Send a message \"Delete me\" in the #general channel",
+    "relevant_procedure": "Relevant procedure\n1. Hover over the message \"Delete me\".\n2. Click the three dots icon.\n3. Click Delete message.\n4. Select Delete to confirm.",
+    "retrieved_page_ranges": [
+      [
+        "End direct messages with people from other organizations",
+        "End direct messages with people from other organizations"
+      ],
+      [
+        "Edit or delete messages",
+        "Edit or delete messages"
+      ],
+      [
+        "Sign members out of Slack",
+        "Sign members out of Slack"
+      ],
+      [
+        "Leave a channel",
+        "Leave a channel"
+      ],
+      [
+        "Remove someone from a channel",
+        "Remove someone from a channel"
+      ]
+    ]
+  },
+  {
+    "id": 12,
+    "main_steps": [
+      "Click Alex in the Direct Messages section in the sidebar.",
+      "Click the message input box.",
+      "Type Hi Alex.",
+      "Press Enter."
+    ],
+    "main_task": "Send the message \"Hi Alex\" to Alex via direct message",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "No useful manual guidance found.",
+    "retrieved_page_ranges": [
+      [
+        "End direct messages with people from other organizations",
+        "End direct messages with people from other organizations"
+      ],
+      [
+        "Forward messages in Slack",
+        "Forward messages in Slack"
+      ],
+      [
+        "Add people to a direct message",
+        "Add people to a direct message"
+      ],
+      [
+        "Star channels and direct messages",
+        "Star channels and direct messages"
+      ],
+      [
+        "Use Channel Expert in Slack",
+        "Use Channel Expert in Slack"
+      ]
+    ]
+  },
+  {
+    "id": 13,
+    "main_steps": [
+      "Click the + icon next to Channels in the sidebar.",
+      "Click Create a channel.",
+      "Type test-channel in the channel name field.",
+      "Ensure the channel is set to public.",
+      "Click Create."
+    ],
+    "main_task": "Create a new public channel named #test-channel",
+    "setup_steps": [],
+    "setup_task": "",
+    "relevant_procedure": "Relevant procedure\n1. Click the plus sign in the sidebar.\n2. Select Channel.\n3. Enter \"test-channel\" as the channel name.\n4. Choose public as the channel type.\n5. Click Create.",
+    "retrieved_page_ranges": [
+      [
+        "Create a channel",
+        "Create a channel"
+      ],
+      [
+        "Convert a channel to private or public",
+        "Convert a channel to private or public"
+      ],
+      [
+        "What is a channel?",
+        "What is a channel?"
+      ],
+      [
+        "Join a channel",
+        "Join a channel"
+      ],
+      [
+        "Use the general channel to share announcements",
+        "Use the general channel to share announcements"
+      ]
+    ]
+  },
+  {
+    "id": 14,
+    "main_steps": [
+      "Hover over the last message.",
+      "Click the More actions (three dots) icon.",
+      "Click Pin to channel."
+    ],
+    "main_task": "Pin the last message to the channel",
+    "setup_steps": [
+      "Click the #general channel.",
+      "Click the message input box.",
+      "Type Pin me.",
+      "Press Enter."
+    ],
+    "setup_task": "(Setup) Send a message \"Pin me\" in the #general channel",
+    "relevant_procedure": "No useful manual guidance found.",
+    "retrieved_page_ranges": [
+      [
+        "Star channels and direct messages",
+        "Star channels and direct messages"
+      ],
+      [
+        "Forward messages in Slack",
+        "Forward messages in Slack"
+      ],
+      [
+        "Understand canvas update messages",
+        "Understand canvas update messages"
+      ],
+      [
+        "Notify a channel or workspace",
+        "Notify a channel or workspace"
+      ],
+      [
+        "Convert a channel to private or public",
+        "Convert a channel to private or public"
+      ]
+    ]
+  }
+]

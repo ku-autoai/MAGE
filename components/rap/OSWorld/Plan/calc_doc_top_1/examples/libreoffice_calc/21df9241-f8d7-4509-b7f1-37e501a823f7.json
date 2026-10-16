@@ -1,0 +1,127 @@
+{
+  "id": "21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Change the representation of column \"Parameter\" to show in Millions (M) in Column B and Billions (B) in Column C. The numbers should be rounded to one decimal place, and half should be rounded up. Then remember to place a white space between the digits and the unit.\n\nRelevant procedure\n\n1. Select the range of cells in Column B containing the numeric data derived from the \"Parameter\" column (excluding the header).\n2. Right-click the selected cells and choose \"Format Cells\" from the context menu, or press `Ctrl + 1`.\n3. In the Format Cells dialog, ensure the \"Numbers\" tab is selected.\n4. In the Category list, select \"Custom\".\n5. In the \"Format code\" input field, type the following custom format string: `0.0\" M\"`\n6. Click \"OK\" to apply the formatting. This will divide the underlying numbers by 1 (assuming they are already scaled) or requires manual division if not. *Correction*: Standard custom formats do not perform division. You must use formulas.\n   \n   *Revised Procedure based on standard spreadsheet capabilities (Formulas required for scaling):*\n\n1. Insert a new column to the left of Column B if necessary, or select the cells in Column B where the converted values should appear.\n2. In the first data cell of Column B (e.g., B2), enter the formula: `=ROUND(A2/1000000, 1) & \" M\"`. Replace `A2` with the actual reference to the \"Parameter\" column cell.\n3. Press Enter to confirm the formula.\n4. Select the cell with the formula and drag the fill handle down to copy the formula to all other rows in Column B.\n5. Select the first data cell of Column C (e.g., C2).\n6. Enter the formula: `=ROUND(A2/1000000000, 1) & \" B\"`. Replace `A2` with the actual reference to the \"Parameter\" column cell.\n7. Press Enter to confirm the formula.\n8. Select the cell with the formula and drag the fill handle down to copy the formula to all other rows in Column C.\n9. If the original \"Parameter\" column (Column A) is no longer needed, you may hide it or delete it as per preference, but the task only asks to change the representation in B and C.",
+  "source": "https://www.youtube.com/watch?v=p5C4V_AO1UU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions.xlsx",
+            "path": "/home/user/Represent_in_millions_billions.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Represent_in_millions_billions.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Represent_in_millions_billions.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Represent_in_millions_billions.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Represent_in_millions_billions.xlsx",
+        "/home/user/Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions.xlsx",
+        "Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions_gold.xlsx",
+        "Represent_in_millions_billions_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "ignore_case": true
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Select the range of cells in Column B containing the numeric data derived from the \"Parameter\" column (excluding the header).\n2. Right-click the selected cells and choose \"Format Cells\" from the context menu, or press `Ctrl + 1`.\n3. In the Format Cells dialog, ensure the \"Numbers\" tab is selected.\n4. In the Category list, select \"Custom\".\n5. In the \"Format code\" input field, type the following custom format string: `0.0\" M\"`\n6. Click \"OK\" to apply the formatting. This will divide the underlying numbers by 1 (assuming they are already scaled) or requires manual division if not. *Correction*: Standard custom formats do not perform division. You must use formulas.\n   \n   *Revised Procedure based on standard spreadsheet capabilities (Formulas required for scaling):*\n\n1. Insert a new column to the left of Column B if necessary, or select the cells in Column B where the converted values should appear.\n2. In the first data cell of Column B (e.g., B2), enter the formula: `=ROUND(A2/1000000, 1) & \" M\"`. Replace `A2` with the actual reference to the \"Parameter\" column cell.\n3. Press Enter to confirm the formula.\n4. Select the cell with the formula and drag the fill handle down to copy the formula to all other rows in Column B.\n5. Select the first data cell of Column C (e.g., C2).\n6. Enter the formula: `=ROUND(A2/1000000000, 1) & \" B\"`. Replace `A2` with the actual reference to the \"Parameter\" column cell.\n7. Press Enter to confirm the formula.\n8. Select the cell with the formula and drag the fill handle down to copy the formula to all other rows in Column C.\n9. If the original \"Parameter\" column (Column A) is no longer needed, you may hide it or delete it as per preference, but the task only asks to change the representation in B and C.",
+  "retrieved_page_ranges": [
+    [
+      51,
+      51
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,53 @@
+{
+  "id": "62f7fd55-0687-4a43-b6e1-3eda16fc6252",
+  "snapshot": "gimp",
+  "instruction": "Could you help me convert the image located at \"/home/user/logo.png\" to \".svg\" format by GIMP?\n\nRelevant procedure\n1. Wait for GIMP to finish loading and display its main interface.\n2. Click the \"File\" menu, then choose \"Open...\"\n3. In the file chooser dialog, navigate to `/home/user` and select `logo.png`, then click \"Open\".\n4. Wait for the image to load into GIMP.\n5. Click the \"File\" menu, then choose \"Export As...\"\n6. In the Export Image dialog, change the filename to `logo.svg` (or select \".svg\" from the file type dropdown if available).\n7. Click \"Export\".\n8. In the \"Export Image as SVG\" options dialog that appears, configure the options as desired (e.g., \"Embed raster layers as PNG\" if the image is raster-based).\n9. Click \"Export\" again to save the file in SVG format.",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/62f7fd55-0687-4a43-b6e1-3eda16fc6252/logo.png",
+            "path": "/home/user/logo.png"
+          }
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Wait for GIMP to finish loading and display its main interface.\n2. Click the \"File\" menu, then choose \"Open...\"\n3. In the file chooser dialog, navigate to `/home/user` and select `logo.png`, then click \"Open\".\n4. Wait for the image to load into GIMP.\n5. Click the \"File\" menu, then choose \"Export As...\"\n6. In the Export Image dialog, change the filename to `logo.svg` (or select \".svg\" from the file type dropdown if available).\n7. Click \"Export\".\n8. In the \"Export Image as SVG\" options dialog that appears, configure the options as desired (e.g., \"Embed raster layers as PNG\" if the image is raster-based).\n9. Click \"Export\" again to save the file in SVG format.",
+  "retrieved_page_ranges": [
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ],
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ],
+    [
+      "5.57. Export Image as X PixMap",
+      "5.57. Export Image as X PixMap"
+    ],
+    [
+      "5.48. Export Image as SGI",
+      "5.48. Export Image as SGI"
+    ],
+    [
+      "5.28. Export Image as ICNS",
+      "5.28. Export Image as ICNS"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/62f7fd55-0687-4a43-b6e1-3eda16fc6252/step_1.png"
+}

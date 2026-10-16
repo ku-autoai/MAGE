@@ -1,0 +1,93 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure:\n1. Click on cell C1 to select it.\n2. Type \"Maturity Date\" and press Enter.\n3. Click on cell C2 to select it.\n4. Type the formula \"=DATE(YEAR(A2), MONTH(A2)+MONTHS(A2,B2), DAY(A2))\" and press Enter.\n5. Click on cell C2 again to ensure it is selected.\n6. Move your mouse to the bottom-right corner of cell C2 until the cursor changes to a small black cross (fill handle).\n7. Click and hold the left mouse button, then drag the fill handle down to cell C10.\n8. Release the mouse button to fill the formula for all loan dates.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click on cell C1 to select it.\n2. Type \"Maturity Date\" and press Enter.\n3. Click on cell C2 to select it.\n4. Type the formula \"=DATE(YEAR(A2), MONTH(A2)+MONTHS(A2,B2), DAY(A2))\" and press Enter.\n5. Click on cell C2 again to ensure it is selected.\n6. Move your mouse to the bottom-right corner of cell C2 until the cursor changes to a small black cross (fill handle).\n7. Click and hold the left mouse button, then drag the fill handle down to cell C10.\n8. Release the mouse button to fill the formula for all loan dates.",
+  "retrieved_page_ranges": [
+    [
+      57,
+      58
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/step_1.png"
+}

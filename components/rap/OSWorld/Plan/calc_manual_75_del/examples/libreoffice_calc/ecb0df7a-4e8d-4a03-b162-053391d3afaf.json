@@ -1,0 +1,136 @@
+{
+  "id": "ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In the column \"Pass/Fail/Held\", one from the texts \"Pass\", \"Fail\", and \"Held\" should be filled. For convinience, enable data validation for the cells in this column so that the texts to fill can be directly selected from a drop down list. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select the range of cells in the \"Pass/Fail/Held\" column where the drop-down list is required (excluding the header cell).\n2. Click the **Data** menu in the top menu bar.\n3. Select **Validity** from the dropdown menu to open the Validity dialog.\n4. In the **Criteria** tab, click the **Allow** drop-down list and select **List**.\n5. Check the box labeled **Show selection list** to enable the drop-down arrow in the cells.\n6. In the **Entries** text box, type the three options separated by line breaks:\n   - Type `Pass`, then press Ctrl+Enter (or Enter, depending on the specific UI version, but usually Ctrl+Enter to insert a new line within the dialog box) to create a new line.\n   - Type `Fail`, then press Ctrl+Enter to create a new line.\n   - Type `Held`.\n   *(Alternatively, if the interface allows, enter them as `Pass,Fail,Held` if the separator is a comma, but the manual snippet implies distinct entries. Standard LibreOffice behavior for \"List\" source often accepts line breaks for separate entries in the \"Entries\" box.)*\n7. Click **OK** to apply the validation.",
+  "source": "https://www.youtube.com/shorts/tXOovKn0H68",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail.xlsx",
+            "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Id_Mark_Pass_Fail.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "data_validation",
+          "sheet_idx": 0,
+          "dv_props": [
+            {
+              "ranges": {
+                "method": "spreadsheet_range",
+                "ref": [
+                  "D2:D29",
+                  "D2:D1048576"
+                ]
+              },
+              "type": {
+                "method": "eq",
+                "ref": "list"
+              },
+              "formula1": {
+                "method": "str_set_eq",
+                "ref": [
+                  "Pass",
+                  "Fail",
+                  "Held"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail_gold.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail_gold.xlsx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the range of cells in the \"Pass/Fail/Held\" column where the drop-down list is required (excluding the header cell).\n2. Click the **Data** menu in the top menu bar.\n3. Select **Validity** from the dropdown menu to open the Validity dialog.\n4. In the **Criteria** tab, click the **Allow** drop-down list and select **List**.\n5. Check the box labeled **Show selection list** to enable the drop-down arrow in the cells.\n6. In the **Entries** text box, type the three options separated by line breaks:\n   - Type `Pass`, then press Ctrl+Enter (or Enter, depending on the specific UI version, but usually Ctrl+Enter to insert a new line within the dialog box) to create a new line.\n   - Type `Fail`, then press Ctrl+Enter to create a new line.\n   - Type `Held`.\n   *(Alternatively, if the interface allows, enter them as `Pass,Fail,Held` if the separator is a comma, but the manual snippet implies distinct entries. Standard LibreOffice behavior for \"List\" source often accepts line breaks for separate entries in the \"Entries\" box.)*\n7. Click **OK** to apply the validation.",
+  "retrieved_page_ranges": [
+    [
+      61,
+      62
+    ],
+    [
+      63,
+      64
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      523,
+      523
+    ]
+  ],
+  "first_screen_image_path": null
+}

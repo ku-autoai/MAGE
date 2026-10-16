@@ -1,0 +1,152 @@
+{
+  "id": "d16c99dc-2a1e-46f2-b350-d97c86c85c15",
+  "snapshot": "gimp",
+  "instruction": "Could you assist me with resizing the dog layer of an image? I need to adjust the height to 512 pixels while maintaining the original aspect ratio?\n\nRelevant procedure:\n\n1. Select the \"dog_with_bac\" layer in the Layers panel on the right by clicking on its thumbnail or name.\n2. Click the “Layer” menu at the top menu bar.\n3. From the dropdown, select “Scale Layer…” to open the Scale Layer dialog.\n4. In the dialog, click inside the Height field and type “512”.\n5. Ensure the chain link icon between Width and Height is locked (to maintain aspect ratio).\n6. Click “Scale” to apply the resize.",
+  "source": "https://stackoverflow.com/questions/75185543/use-gimp-to-resize-image-in-one-layer-only",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/dog_with_background.png",
+            "path": "/home/user/Desktop/dog_with_background.png"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/dog_with_background_two_layers.xcf",
+            "path": "/home/user/Desktop/dog_with_background_two_layers.xcf"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/dog_with_background_two_layers.xcf"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "GNU Image Manipulation Program"
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);time.sleep(1);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; pyautogui.write(\"resized\");time.sleep(1);pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 2
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import pyautogui; pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 5
+        }
+      }
+    ],
+    "func": [
+      "check_image_size",
+      "check_structure_sim_resized"
+    ],
+    "conj": "and",
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "height": 512,
+          "ignore_transparent": true
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/dog_with_background.png",
+        "dest": "dog_with_background.png"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/resized.png",
+        "dest": "resized.png"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/resized.png",
+        "dest": "resized.png"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n\n1. Select the \"dog_with_bac\" layer in the Layers panel on the right by clicking on its thumbnail or name.\n2. Click the “Layer” menu at the top menu bar.\n3. From the dropdown, select “Scale Layer…” to open the Scale Layer dialog.\n4. In the dialog, click inside the Height field and type “512”.\n5. Ensure the chain link icon between Width and Height is locked (to maintain aspect ratio).\n6. Click “Scale” to apply the resize.",
+  "retrieved_page_ranges": [
+    [
+      "7.54. Layers to Image Size",
+      "7.54. Layers to Image Size"
+    ],
+    [
+      "7.53. Layer Boundary Size",
+      "7.53. Layer Boundary Size"
+    ],
+    [
+      "7.55. Scale Layer",
+      "7.55. Scale Layer"
+    ],
+    [
+      "7.54. Layers to Image Size",
+      "7.54. Layers to Image Size"
+    ],
+    [
+      "6.24. Scale Image",
+      "6.24. Scale Image"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/step_1.png"
+}

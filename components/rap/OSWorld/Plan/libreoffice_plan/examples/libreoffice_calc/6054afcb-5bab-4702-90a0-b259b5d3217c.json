@@ -1,0 +1,116 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nRelevant procedure\n\n1. Select the range of cells containing the data (e.g., A2:F36) by clicking and dragging from cell A2 to F36, or by using the Name Box to enter the range.\n2. Go to the **Format** menu in the top toolbar.\n3. Select **Styles and Formatting...** from the dropdown menu. (Alternatively, press `F11`).\n4. In the Styles and Formatting window, go to the **Cell Styles** tab (usually the first tab).\n5. Right-click on any style in the list and select **New...** to create a new cell style, or select an existing style like \"Default\" and click **Modify...** if you want to apply it directly without creating a new one.\n6. In the Cell Style dialog, go to the **Font Effects** tab.\n7. Under **Text color**, select a color that matches the cell background (usually white, so select white).\n8. Alternatively, under **Strikethrough**, select a line style if you want to visually strike through the text, but for hiding, matching text color to background is better.\n9. Click **OK** to apply the color change.\n10. Now, you need to apply this style to all cells containing \"#N/A\". Since manual selection is tedious, use Find & Replace with formatting:\n    a. Press `Ctrl+H` to open the Find and Replace dialog.\n    b. In the **Find** field, type `#N/A`.\n    c. Click the **More options** button to expand advanced settings.\n    d. Click the **Format** button next to the **Replace** field (if available in your version) or manually apply the style. *Note: Standard Find & Replace in LibreOffice Calc does not support \"Find by content, Replace format\" directly in one step easily without macros.*\n    \n    *Alternative Reliable Method for Hiding Text without Macros:*\n    \n    1. Select the entire data range (A2:F36).\n    2. Press `Ctrl+H` to open Find & Replace.\n    3. In the **Find** field, enter `#N/A`.\n    4. Leave the **Replace** field empty.\n    5. Click **More options**.\n    6. Ensure \"Match entire cell contents\" is checked if \"#N/A\" is the only content in the",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Select the range of cells containing the data (e.g., A2:F36) by clicking and dragging from cell A2 to F36, or by using the Name Box to enter the range.\n2. Go to the **Format** menu in the top toolbar.\n3. Select **Styles and Formatting...** from the dropdown menu. (Alternatively, press `F11`).\n4. In the Styles and Formatting window, go to the **Cell Styles** tab (usually the first tab).\n5. Right-click on any style in the list and select **New...** to create a new cell style, or select an existing style like \"Default\" and click **Modify...** if you want to apply it directly without creating a new one.\n6. In the Cell Style dialog, go to the **Font Effects** tab.\n7. Under **Text color**, select a color that matches the cell background (usually white, so select white).\n8. Alternatively, under **Strikethrough**, select a line style if you want to visually strike through the text, but for hiding, matching text color to background is better.\n9. Click **OK** to apply the color change.\n10. Now, you need to apply this style to all cells containing \"#N/A\". Since manual selection is tedious, use Find & Replace with formatting:\n    a. Press `Ctrl+H` to open the Find and Replace dialog.\n    b. In the **Find** field, type `#N/A`.\n    c. Click the **More options** button to expand advanced settings.\n    d. Click the **Format** button next to the **Replace** field (if available in your version) or manually apply the style. *Note: Standard Find & Replace in LibreOffice Calc does not support \"Find by content, Replace format\" directly in one step easily without macros.*\n    \n    *Alternative Reliable Method for Hiding Text without Macros:*\n    \n    1. Select the entire data range (A2:F36).\n    2. Press `Ctrl+H` to open Find & Replace.\n    3. In the **Find** field, enter `#N/A`.\n    4. Leave the **Replace** field empty.\n    5. Click **More options**.\n    6. Ensure \"Match entire cell contents\" is checked if \"#N/A\" is the only content in the",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      293,
+      295
+    ],
+    [
+      311,
+      313
+    ]
+  ]
+}

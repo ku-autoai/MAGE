@@ -1,0 +1,117 @@
+{
+  "id": "e4ef0baf-4b52-4590-a47e-d4d464cca2d7",
+  "snapshot": "libreoffice_impress",
+  "instruction": "The height of picture should be 20cm on slide 3 while the font size of all textboxes should be 40pt on slide 6.\n\nRelevant procedure\n\n1. Navigate to slide 3 in the presentation.\n2. Click on the picture object to select it.\n3. Open the Format Shape or Picture Format pane (usually via the right-click context menu \"Format Picture\" or the ribbon \"Picture Format\" tab).\n4. Locate the \"Size\" or \"Properties\" section within the format pane.\n5. Find the \"Height\" input field.\n6. Type `20 cm` into the Height field and press Enter to apply the change.\n7. Navigate to slide 6 in the presentation.\n8. Click on the first text box to select it.\n9. Highlight all text within the text box (e.g., using Ctrl+A while the text box is active).\n10. Go to the Home tab on the ribbon.\n11. Locate the Font Size input box in the Font group.\n12. Type `40` into the Font Size box and press Enter.\n13. Repeat steps 8-12 for any other text boxes present on slide 6.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/e4ef0baf-4b52-4590-a47e-d4d464cca2d7/42_2.pptx",
+            "path": "/home/user/Desktop/42_2.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/42_2.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "42_2.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": [
+      "compare_pptx_files",
+      "compare_pptx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/e4ef0baf-4b52-4590-a47e-d4d464cca2d7/42_2_Gold.pptx",
+        "dest": "42_2_Gold.pptx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/e4ef0baf-4b52-4590-a47e-d4d464cca2d7/42_2_Gold_all_fonts.pptx",
+        "dest": "42_2_Gold_all_fonts.pptx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/42_2.pptx",
+        "dest": "42_2.pptx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/42_2.pptx",
+        "dest": "42_2.pptx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Navigate to slide 3 in the presentation.\n2. Click on the picture object to select it.\n3. Open the Format Shape or Picture Format pane (usually via the right-click context menu \"Format Picture\" or the ribbon \"Picture Format\" tab).\n4. Locate the \"Size\" or \"Properties\" section within the format pane.\n5. Find the \"Height\" input field.\n6. Type `20 cm` into the Height field and press Enter to apply the change.\n7. Navigate to slide 6 in the presentation.\n8. Click on the first text box to select it.\n9. Highlight all text within the text box (e.g., using Ctrl+A while the text box is active).\n10. Go to the Home tab on the ribbon.\n11. Locate the Font Size input box in the Font group.\n12. Type `40` into the Font Size box and press Enter.\n13. Repeat steps 8-12 for any other text boxes present on slide 6.",
+  "retrieved_page_ranges": [
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      42,
+      60
+    ]
+  ]
+}

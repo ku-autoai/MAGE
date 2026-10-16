@@ -1,0 +1,109 @@
+{
+  "id": "7e429b8d-a3f0-4ed0-9b58-08957d00b127",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have a lookup table for the officers of each branch. Please, here is another table in which I need to fill with the officer names according the headoffice (i.e., the branch name). Help me to complete this.\n\nRelevant procedure\n\n1. Click the cell in the target table (the table needing officer names) where you want to start inserting the data, specifically the first cell under the \"Officer\" or relevant name column corresponding to the first Headoffice/Branch.\n2. Go to the **Data** menu at the top menu bar and select **Pivot Table**, then click **Insert or Edit**.\n3. In the \"Create Pivot Table\" dialog, ensure the data source is set to the sheet or range containing your **lookup table** (the table with Branch and Officer names). If it is not selected, click the small icon next to the Data Source field to manually select the range of the lookup table.\n4. Click **OK** to open the Pivot Table Layout dialog.\n5. In the Pivot Table Layout dialog, locate the **Branch** (or Headoffice) field in the \"Available Fields\" list on the left.\n6. Drag the **Branch** field and drop it into the **Row Fields** box (or \"Rows\" area) at the bottom. This ensures the pivot table lists each branch name.\n7. Locate the **Officer** (or Officer Name) field in the \"Available Fields\" list.\n8. Drag the **Officer** field and drop it into the **Data Fields** box (or \"Data\" area).\n9. Check the settings for the Data Field. If it defaults to \"Sum\" or \"Count\", click on the field in the Data Fields box and click **Options** (or double-click it). Change the operation to **None** or **Concatenate** (if available) to display the name instead of a count. If \"None\" is not available, you may need to use a VLOOKUP approach instead (see step 10 alternative).\n    * *Alternative Robust Path (VLOOKUP):* If the Pivot Table interface is complex or does not allow displaying names directly as text in a simple list, cancel the Pivot Table. Instead, type the formula `=VLOOKUP(A2, 'LookupSheet'!$A$2:$B$10, 2, FALSE)` in the first officer cell (adjusting ranges 'A2' for branch name and 'LookupSheet' to your actual lookup table name/range). Drag the fill handle down to copy the formula for all rows.\n10. If using the Pivot Table method: Click **OK**. The Pivot Table will generate.",
+  "source": "https://medium.com/@divyangichaudhari17/how-to-use-vlookup-and-hlookup-in-libre-calc-3370698bb3ff",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form.xlsx",
+            "path": "/home/user/VLOOKUP_Fill_the_form.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/VLOOKUP_Fill_the_form.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7e429b8d-a3f0-4ed0-9b58-08957d00b127",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "VLOOKUP_Fill_the_form.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form_gold.xlsx",
+      "dest": "VLOOKUP_Fill_the_form_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/VLOOKUP_Fill_the_form.xlsx",
+      "dest": "VLOOKUP_Fill_the_form.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the cell in the target table (the table needing officer names) where you want to start inserting the data, specifically the first cell under the \"Officer\" or relevant name column corresponding to the first Headoffice/Branch.\n2. Go to the **Data** menu at the top menu bar and select **Pivot Table**, then click **Insert or Edit**.\n3. In the \"Create Pivot Table\" dialog, ensure the data source is set to the sheet or range containing your **lookup table** (the table with Branch and Officer names). If it is not selected, click the small icon next to the Data Source field to manually select the range of the lookup table.\n4. Click **OK** to open the Pivot Table Layout dialog.\n5. In the Pivot Table Layout dialog, locate the **Branch** (or Headoffice) field in the \"Available Fields\" list on the left.\n6. Drag the **Branch** field and drop it into the **Row Fields** box (or \"Rows\" area) at the bottom. This ensures the pivot table lists each branch name.\n7. Locate the **Officer** (or Officer Name) field in the \"Available Fields\" list.\n8. Drag the **Officer** field and drop it into the **Data Fields** box (or \"Data\" area).\n9. Check the settings for the Data Field. If it defaults to \"Sum\" or \"Count\", click on the field in the Data Fields box and click **Options** (or double-click it). Change the operation to **None** or **Concatenate** (if available) to display the name instead of a count. If \"None\" is not available, you may need to use a VLOOKUP approach instead (see step 10 alternative).\n    * *Alternative Robust Path (VLOOKUP):* If the Pivot Table interface is complex or does not allow displaying names directly as text in a simple list, cancel the Pivot Table. Instead, type the formula `=VLOOKUP(A2, 'LookupSheet'!$A$2:$B$10, 2, FALSE)` in the first officer cell (adjusting ranges 'A2' for branch name and 'LookupSheet' to your actual lookup table name/range). Drag the fill handle down to copy the formula for all rows.\n10. If using the Pivot Table method: Click **OK**. The Pivot Table will generate.",
+  "retrieved_page_ranges": [
+    [
+      391,
+      392
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      315,
+      315
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      290,
+      290
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,69 @@
+{
+  "id": "3aaa4e37-dc91-482e-99af-132a612d40f3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Could you help me to export the current sheet to a csv file? Export the contents just as they are shown on the screen. Just keep the other options untouched. A default csv format is ok. The csv should share the file name with the original xlsx.\n\nRelevant procedure\n\n1. Click the **File** menu in the top menu bar.\n2. Click **Save As...** (or press `F12`) to open the Save As dialog.\n3. In the **Save as type** dropdown menu at the bottom of the dialog, select **Text CSV (.csv)**.\n4. Ensure the filename in the **Name** field matches the original file name (LibreOffice usually defaults to this with a `.csv` extension).\n5. Click **Save**.\n6. If the **Export Text File** dialog appears, ensure the **Separator options** are set to default (usually Tab, Comma, Semicolon, and Space are checked, with Comma being the primary export standard for CSV) and click **OK**. If no dialog appears, the export is complete.",
+  "source": "https://www.quora.com/How-can-you-import-export-CSV-files-with-LibreOffice-Calc-or-OpenOffice",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3aaa4e37-dc91-482e-99af-132a612d40f3/Export_Calc_to_CSV.xlsx",
+            "path": "/home/user/Export_Calc_to_CSV.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Export_Calc_to_CSV.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3aaa4e37-dc91-482e-99af-132a612d40f3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "compare_csv",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Export_Calc_to_CSV.csv",
+      "dest": "Export_Calc_to_CSV.csv"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3aaa4e37-dc91-482e-99af-132a612d40f3/Export_Calc_to_CSV.csv",
+      "dest": "Export_Calc_to_CSV_gold.csv"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **File** menu in the top menu bar.\n2. Click **Save As...** (or press `F12`) to open the Save As dialog.\n3. In the **Save as type** dropdown menu at the bottom of the dialog, select **Text CSV (.csv)**.\n4. Ensure the filename in the **Name** field matches the original file name (LibreOffice usually defaults to this with a `.csv` extension).\n5. Click **Save**.\n6. If the **Export Text File** dialog appears, ensure the **Separator options** are set to default (usually Tab, Comma, Semicolon, and Space are checked, with Comma being the primary export standard for CSV) and click **OK**. If no dialog appears, the export is complete.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      86,
+      88
+    ],
+    [
+      230,
+      230
+    ],
+    [
+      88,
+      89
+    ],
+    [
+      240,
+      241
+    ]
+  ],
+  "first_screen_image_path": null
+}

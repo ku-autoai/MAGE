@@ -1,0 +1,116 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Press `Ctrl+A` to select the entire worksheet to prepare for filtering or formula application.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"AutoFilter\" from the dropdown menu (or click the funnel icon in the toolbar) to enable filters on the headers.\n4. Click cell **A1** (containing the column header \"A\").\n5. Click the dropdown arrow that appears in cell **A1**.\n6. Click \"Sort & Filter Options\" (or similar) and check \"Sort weekends to the end\" or simply select \"Filter\" > \"Visible Cells Only\" if available. Alternatively, use the standard filter options to filter by \"Saturday\" and \"Sunday\" if the data type is recognized, but given the format, a formula approach is safer.\n    * *Alternative simpler path*: Since the dates are standard, let's use a formula to identify weekends.\n7. Click cell **G1** (an empty column next to the data).\n8. Type the formula: `=WEEKDAY(A2)=1` (assuming A2 is the first date in column A). This returns TRUE for Sundays. Adjust if A1 is a header. Looking at the screenshot, **A2** is `6/1/2022`.\n9. Press Enter.\n10. Select cell **G1**.\n11. Drag the fill handle down to row 33 to apply the formula to all dates in column A.\n12. Copy column G's results and paste them as values next to columns B, C, D, E, and F to identify weekends in those months too. (Note: The columns represent different months, so `A2`, `B2`, etc. are different dates).\n    * *Correction*: It is more efficient to select all data cells.\n13. Select the range **A2:F33** (all the date cells).\n14. Click the \"Format\" menu.\n15. Select \"Conditional Formatting\" > \"Manage...\" (or \"Edit...\").\n16. Click \"New Rule\".\n17. Select \"Formula is\" from the dropdown.\n18. In the formula field, enter: `=OR(WEEKDAY(A2)=1, WEEKDAY(A2)=7)`\n    * *Refinement for multi-column selection*: If selecting A2:F3",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Press `Ctrl+A` to select the entire worksheet to prepare for filtering or formula application.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"AutoFilter\" from the dropdown menu (or click the funnel icon in the toolbar) to enable filters on the headers.\n4. Click cell **A1** (containing the column header \"A\").\n5. Click the dropdown arrow that appears in cell **A1**.\n6. Click \"Sort & Filter Options\" (or similar) and check \"Sort weekends to the end\" or simply select \"Filter\" > \"Visible Cells Only\" if available. Alternatively, use the standard filter options to filter by \"Saturday\" and \"Sunday\" if the data type is recognized, but given the format, a formula approach is safer.\n    * *Alternative simpler path*: Since the dates are standard, let's use a formula to identify weekends.\n7. Click cell **G1** (an empty column next to the data).\n8. Type the formula: `=WEEKDAY(A2)=1` (assuming A2 is the first date in column A). This returns TRUE for Sundays. Adjust if A1 is a header. Looking at the screenshot, **A2** is `6/1/2022`.\n9. Press Enter.\n10. Select cell **G1**.\n11. Drag the fill handle down to row 33 to apply the formula to all dates in column A.\n12. Copy column G's results and paste them as values next to columns B, C, D, E, and F to identify weekends in those months too. (Note: The columns represent different months, so `A2`, `B2`, etc. are different dates).\n    * *Correction*: It is more efficient to select all data cells.\n13. Select the range **A2:F33** (all the date cells).\n14. Click the \"Format\" menu.\n15. Select \"Conditional Formatting\" > \"Manage...\" (or \"Edit...\").\n16. Click \"New Rule\".\n17. Select \"Formula is\" from the dropdown.\n18. In the formula field, enter: `=OR(WEEKDAY(A2)=1, WEEKDAY(A2)=7)`\n    * *Refinement for multi-column selection*: If selecting A2:F3",
+  "retrieved_page_ranges": [
+    [
+      196,
+      196
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      485,
+      485
+    ],
+    [
+      485,
+      486
+    ],
+    [
+      370,
+      370
+    ]
+  ]
+}

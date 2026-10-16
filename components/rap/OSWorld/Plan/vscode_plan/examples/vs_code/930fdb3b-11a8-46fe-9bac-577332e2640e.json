@@ -1,0 +1,71 @@
+{
+  "id": "930fdb3b-11a8-46fe-9bac-577332e2640e",
+  "snapshot": "vscode",
+  "instruction": "Please help me create a shortcut \"ctrl+j\" to move cursor focus from terminal to editor in VS Code.\n\nRelevant procedure:\n1. Click the \"File\" menu in the top-left corner of the window.\n2. Select \"Preferences\" from the dropdown menu.\n3. Select \"Keyboard Shortcuts\" from the submenu.\n4. Click inside the search bar at the top of the Keyboard Shortcuts editor.\n5. Type \"workbench.action.terminal.focusEditor\" into the search bar to locate the specific command for moving focus to the editor.\n6. Double-click the row corresponding to the \"workbench.action.terminal.focusEditor\" command.\n7. Press the **Ctrl** and **j** keys simultaneously.\n8. Press the **Enter** key to confirm and save the new shortcut.",
+  "source": "https://superuser.com/questions/1270103/how-to-switch-the-cursor-between-terminal-and-code-in-vscode",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_keybindings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "key": "ctrl+j",
+          "command": "workbench.action.focusActiveEditorGroup",
+          "when": "terminalFocus"
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/keybindings.json",
+      "dest": "keybindings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the \"File\" menu in the top-left corner of the window.\n2. Select \"Preferences\" from the dropdown menu.\n3. Select \"Keyboard Shortcuts\" from the submenu.\n4. Click inside the search bar at the top of the Keyboard Shortcuts editor.\n5. Type \"workbench.action.terminal.focusEditor\" into the search bar to locate the specific command for moving focus to the editor.\n6. Double-click the row corresponding to the \"workbench.action.terminal.focusEditor\" command.\n7. Press the **Ctrl** and **j** keys simultaneously.\n8. Press the **Enter** key to confirm and save the new shortcut.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/930fdb3b-11a8-46fe-9bac-577332e2640e/step_1.png"
+}

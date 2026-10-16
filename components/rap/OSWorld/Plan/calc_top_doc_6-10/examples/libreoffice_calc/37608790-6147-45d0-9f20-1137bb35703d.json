@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click cell B2 to select the first data cell under the \"First Name\" header.\n2. Click the **Data** menu in the top menu bar.\n3. Click **Text to Columns...** in the dropdown menu.\n4. In the dialog that appears, ensure **Split each word** is selected under \"Separators\" (or the appropriate method for splitting text by spaces), then click **OK**. This will distribute the words in Column A into columns B, C, and D for the selected row.\n5. Select cell B2 again.\n6. With B2 selected, double-click the small black fill handle square at the bottom-right corner of the selection border to auto-fill the formula down to the last row with data in Column A.\n7. Select the entire range of new data in columns B through D (e.g., B2:D22) by clicking and dragging or using Shift+Click.\n8. Press **Ctrl+C** to copy the data.\n9. Click cell B2 again.\n10. Right-click and choose **Paste Special...** from the context menu.\n11. In the Paste Special dialog, select **Values and number formats** (or similar option to paste only values) and click **OK** to convert formulas to static text.\n12. Click cell A1 to deselect and view the completed data structure.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 to select the first data cell under the \"First Name\" header.\n2. Click the **Data** menu in the top menu bar.\n3. Click **Text to Columns...** in the dropdown menu.\n4. In the dialog that appears, ensure **Split each word** is selected under \"Separators\" (or the appropriate method for splitting text by spaces), then click **OK**. This will distribute the words in Column A into columns B, C, and D for the selected row.\n5. Select cell B2 again.\n6. With B2 selected, double-click the small black fill handle square at the bottom-right corner of the selection border to auto-fill the formula down to the last row with data in Column A.\n7. Select the entire range of new data in columns B through D (e.g., B2:D22) by clicking and dragging or using Shift+Click.\n8. Press **Ctrl+C** to copy the data.\n9. Click cell B2 again.\n10. Right-click and choose **Paste Special...** from the context menu.\n11. In the Paste Special dialog, select **Values and number formats** (or similar option to paste only values) and click **OK** to convert formulas to static text.\n12. Click cell A1 to deselect and view the completed data structure.",
+  "retrieved_page_ranges": [
+    [
+      39,
+      41
+    ],
+    [
+      39,
+      39
+    ],
+    [
+      460,
+      460
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      330,
+      331
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

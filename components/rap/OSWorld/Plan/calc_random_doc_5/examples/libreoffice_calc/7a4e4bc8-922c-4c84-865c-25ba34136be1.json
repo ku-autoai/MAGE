@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the column header \"E\" to select the entire \"Date\" column.\n2. Cut the column using `Ctrl+X` (or right-click the selected column header and select **Cut** from the context menu).\n3. Click the column header \"B\" to select the first column (\"First Name\").\n4. Insert the cut column before the selected column by choosing **Insert Cut Cells** from the Edit menu (or right-click the column header \"B\" and select **Insert Cut Cells**). The \"Date\" column is now the first column.\n5. Click the column header \"C\" (which now corresponds to the \"First Name\" column) to select it.\n6. Move the selection to the right by clicking the column header \"F\" (which is currently the \"Sales\" column) to select it, then cut it (`Ctrl+X`), then click column header \"C\" (\"First Name\"), and insert the cut cells.\n7. Repeat the cut and insert operations to move \"Last Name\", \"Order ID\", and \"Sales\" columns until the final order matches the requirement: \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header \"E\" to select the entire \"Date\" column.\n2. Cut the column using `Ctrl+X` (or right-click the selected column header and select **Cut** from the context menu).\n3. Click the column header \"B\" to select the first column (\"First Name\").\n4. Insert the cut column before the selected column by choosing **Insert Cut Cells** from the Edit menu (or right-click the column header \"B\" and select **Insert Cut Cells**). The \"Date\" column is now the first column.\n5. Click the column header \"C\" (which now corresponds to the \"First Name\" column) to select it.\n6. Move the selection to the right by clicking the column header \"F\" (which is currently the \"Sales\" column) to select it, then cut it (`Ctrl+X`), then click column header \"C\" (\"First Name\"), and insert the cut cells.\n7. Repeat the cut and insert operations to move \"Last Name\", \"Order ID\", and \"Sales\" columns until the final order matches the requirement: \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".",
+  "retrieved_page_ranges": [
+    [
+      519,
+      520
+    ],
+    [
+      86,
+      86
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      288,
+      288
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

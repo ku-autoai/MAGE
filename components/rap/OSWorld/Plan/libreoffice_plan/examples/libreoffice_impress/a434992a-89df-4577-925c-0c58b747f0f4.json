@@ -1,0 +1,100 @@
+{
+  "id": "a434992a-89df-4577-925c-0c58b747f0f4",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Change the font size of the content to 12, and change the font color to orange. Change the slide's background to red.\n\nRelevant procedure\n1. Select all text on the slide by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by clicking and dragging to highlight the text content.\n2. Click the **Home** tab in the top ribbon menu to access text formatting tools.\n3. Locate the **Font** group in the ribbon, click the dropdown arrow next to the font size box (e.g., \"11\"), and select **12**.\n4. In the same **Font** group, click the dropdown arrow next to the Font Color icon (usually an 'A' with a colored bar) and select **Orange** from the theme colors or standard colors palette.\n5. Right-click on an empty area of the slide background to open the context menu.\n6. Select **Slide Properties** from the context menu.\n7. In the **Slide Properties** dialog box, click on the **Background** tab.\n8. Under the \"Type\" section, select **Color**.\n9. Click the color selection box next to \"Color\" and choose **Red** from the palette.\n10. Click **OK** to apply the red background to the slide.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/a434992a-89df-4577-925c-0c58b747f0f4/16_2.pptx",
+            "path": "/home/user/Desktop/16_2.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/16_2.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "16_2.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/a434992a-89df-4577-925c-0c58b747f0f4/16_2_Gold.pptx",
+      "dest": "16_2_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/16_2.pptx",
+      "dest": "16_2.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select all text on the slide by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by clicking and dragging to highlight the text content.\n2. Click the **Home** tab in the top ribbon menu to access text formatting tools.\n3. Locate the **Font** group in the ribbon, click the dropdown arrow next to the font size box (e.g., \"11\"), and select **12**.\n4. In the same **Font** group, click the dropdown arrow next to the Font Color icon (usually an 'A' with a colored bar) and select **Orange** from the theme colors or standard colors palette.\n5. Right-click on an empty area of the slide background to open the context menu.\n6. Select **Slide Properties** from the context menu.\n7. In the **Slide Properties** dialog box, click on the **Background** tab.\n8. Under the \"Type\" section, select **Color**.\n9. Click the color selection box next to \"Color\" and choose **Red** from the palette.\n10. Click **OK** to apply the red background to the slide.",
+  "retrieved_page_ranges": [
+    [
+      273,
+      279
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      42,
+      60
+    ],
+    [
+      256,
+      262
+    ]
+  ]
+}

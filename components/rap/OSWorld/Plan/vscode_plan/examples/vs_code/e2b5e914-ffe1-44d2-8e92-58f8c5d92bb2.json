@@ -1,0 +1,81 @@
+{
+  "id": "e2b5e914-ffe1-44d2-8e92-58f8c5d92bb2",
+  "snapshot": "vscode",
+  "instruction": "Please modify VS Code's settings to disable error reporting for Python missing imports.\n\nBased on the current state of the application, the settings search bar is occupied with irrelevant text (\"workspace trust enabled\"). To configure the Python language server to ignore missing import errors (usually handled by the Pylance or Python extension via the `reportMissingImports` diagnostic rule), we must first clear the search and find the correct setting.\n\nRelevant procedure\n1. Click the search input field at the top of the Settings tab which currently contains the text \"workspace trust enabled\".\n2. Select all text in the input field (e.g., press Ctrl+A) and delete it to clear the current filter.\n3. Type \"report missing imports\" into the empty search bar.\n4. Wait for the settings list to filter results under the \"Python\" or \"Pylance\" category.\n5. Locate the setting labeled **Python > Analysis: Diagnostic Mode** or specifically **Python > Analysis: Report Missing Imports** (the specific setting name might vary slightly depending on the installed Python extension version, look for \"reportMissingImports\").\n6. Click the dropdown menu associated with that setting.\n7. Select **\"none\"** from the dropdown options to disable the error reporting for missing imports.",
+  "source": "https://superuser.com/questions/1386061/how-to-suppress-some-python-errors-warnings-in-vs-code",
+  "config": [
+    {
+      "type": "command",
+      "parameters": {
+        "command": [
+          "code",
+          "--install-extension",
+          "ms-python.python"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_settings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "python.analysis.diagnosticSeverityOverrides": {
+            "reportMissingImports": "none"
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/settings.json",
+      "dest": "settings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the current state of the application, the settings search bar is occupied with irrelevant text (\"workspace trust enabled\"). To configure the Python language server to ignore missing import errors (usually handled by the Pylance or Python extension via the `reportMissingImports` diagnostic rule), we must first clear the search and find the correct setting.\n\nRelevant procedure\n1. Click the search input field at the top of the Settings tab which currently contains the text \"workspace trust enabled\".\n2. Select all text in the input field (e.g., press Ctrl+A) and delete it to clear the current filter.\n3. Type \"report missing imports\" into the empty search bar.\n4. Wait for the settings list to filter results under the \"Python\" or \"Pylance\" category.\n5. Locate the setting labeled **Python > Analysis: Diagnostic Mode** or specifically **Python > Analysis: Report Missing Imports** (the specific setting name might vary slightly depending on the installed Python extension version, look for \"reportMissingImports\").\n6. Click the dropdown menu associated with that setting.\n7. Select **\"none\"** from the dropdown options to disable the error reporting for missing imports.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/e2b5e914-ffe1-44d2-8e92-58f8c5d92bb2/step_1.png"
+}

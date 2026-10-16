@@ -1,0 +1,109 @@
+{
+  "id": "1e8df695-bd1b-45b3-b557-e7d599cf7597",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Add a new column named \"Profit\" right next to the 'CGOS' column and calculate the profit for each week by subtracting \"COGS\" from \"Sales\" in that column.\n\nRelevant procedure\n1. Click the column header to the immediate right of the \"CGOS\" (COGS) column to select the entire column where the new data will reside.\n2. Right-click the selected column header and choose **Insert** from the context menu to add a blank column between COGS and the existing next column.\n3. Click the header cell (e.g., B1 or the appropriate cell in the first row) of the newly inserted column.\n4. Type \"Profit\" and press **Enter** to set the column name.\n5. Click the first data cell below the \"Profit\" header (e.g., B2).\n6. Type `=` into the cell or formula bar to start the formula.\n7. Click the corresponding \"Sales\" cell for that row (e.g., A2).\n8. Type the minus sign `-`.\n9. Click the corresponding \"CGOS\" (COGS) cell for that row (e.g., C2, assuming it shifted right, or the original COGS column if the insertion moved it). *Note: Ensure you click the cell containing the COGS value.*\n10. Press **Enter** to calculate the profit for the first week.\n11. Click the cell containing the formula just created to highlight it.\n12. Hover over the small square handle at the bottom-right corner of the cell (the fill handle) until the cursor changes to a black cross.\n13. Click and drag the fill handle down to the last row of data to copy the formula to all weeks.",
+  "source": "SheetCopilot@203",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/WeeklySales.xlsx",
+            "path": "/home/user/WeeklySales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/WeeklySales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1e8df695-bd1b-45b3-b557-e7d599cf7597",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "WeeklySales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/6_WeeklySales_gt1.xlsx",
+      "dest": "6_WeeklySales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/WeeklySales.xlsx",
+      "dest": "WeeklySales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header to the immediate right of the \"CGOS\" (COGS) column to select the entire column where the new data will reside.\n2. Right-click the selected column header and choose **Insert** from the context menu to add a blank column between COGS and the existing next column.\n3. Click the header cell (e.g., B1 or the appropriate cell in the first row) of the newly inserted column.\n4. Type \"Profit\" and press **Enter** to set the column name.\n5. Click the first data cell below the \"Profit\" header (e.g., B2).\n6. Type `=` into the cell or formula bar to start the formula.\n7. Click the corresponding \"Sales\" cell for that row (e.g., A2).\n8. Type the minus sign `-`.\n9. Click the corresponding \"CGOS\" (COGS) cell for that row (e.g., C2, assuming it shifted right, or the original COGS column if the insertion moved it). *Note: Ensure you click the cell containing the COGS value.*\n10. Press **Enter** to calculate the profit for the first week.\n11. Click the cell containing the formula just created to highlight it.\n12. Hover over the small square handle at the bottom-right corner of the cell (the fill handle) until the cursor changes to a black cross.\n13. Click and drag the fill handle down to the last row of data to copy the formula to all weeks.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      182,
+      183
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      290,
+      290
+    ],
+    [
+      375,
+      376
+    ]
+  ],
+  "first_screen_image_path": null
+}

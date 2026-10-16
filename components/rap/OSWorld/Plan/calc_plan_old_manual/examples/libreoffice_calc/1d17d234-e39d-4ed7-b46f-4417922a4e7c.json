@@ -1,0 +1,203 @@
+{
+  "id": "1d17d234-e39d-4ed7-b46f-4417922a4e7c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a new sheet named \"Sheet2\" and merge cells A1:C1 to write the header \"Investment Summary\". Beneath that, merge cells A2:B2 to write \"High Interest Rate\" and merge cells C2:D2 to form \"Low Interest Rate\".\n\nRelevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the window to ensure it is selected.\n2. Right-click the \"Sheet2\" tab and choose \"Rename Sheet...\" from the context menu.\n3. In the Rename Sheet dialog, type \"Sheet2\" (replacing the current text if needed) and click \"OK\".\n4. Click cell A1 to select it.\n5. Click and drag from cell A1 to cell C1 to select the range A1:C1.\n6. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar if visible).\n7. Type \"Investment Summary\" into the merged cell.\n8. Press Enter to confirm the entry.\n9. Click cell A2 to select it.\n10. Click and drag from cell A2 to cell B2 to select the range A2:B2.\n11. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar).\n12. Type \"High Interest Rate\" into the merged cell.\n13. Press Enter to confirm the entry.\n14. Click cell C2 to select it.\n15. Click and drag from cell C2 to cell D2 to select the range C2:D2.\n16. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar).\n17. Type \"Low Interest Rate\" into the merged cell.\n18. Press Enter to confirm the entry.",
+  "source": "SheetCopilot@73",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/FutureValue.xlsx",
+            "path": "/home/user/FutureValue.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/FutureValue.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1d17d234-e39d-4ed7-b46f-4417922a4e7c",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "FutureValue.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/5_FutureValue_gt1.xlsx",
+      "dest": "5_FutureValue_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/FutureValue.xlsx",
+      "dest": "FutureValue.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A1",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Investment Summary"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "High Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Low Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "E2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the window to ensure it is selected.\n2. Right-click the \"Sheet2\" tab and choose \"Rename Sheet...\" from the context menu.\n3. In the Rename Sheet dialog, type \"Sheet2\" (replacing the current text if needed) and click \"OK\".\n4. Click cell A1 to select it.\n5. Click and drag from cell A1 to cell C1 to select the range A1:C1.\n6. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar if visible).\n7. Type \"Investment Summary\" into the merged cell.\n8. Press Enter to confirm the entry.\n9. Click cell A2 to select it.\n10. Click and drag from cell A2 to cell B2 to select the range A2:B2.\n11. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar).\n12. Type \"High Interest Rate\" into the merged cell.\n13. Press Enter to confirm the entry.\n14. Click cell C2 to select it.\n15. Click and drag from cell C2 to cell D2 to select the range C2:D2.\n16. Go to the \"Format\" menu and select \"Merge and Center Cells\" (or click the \"Merge and Center\" icon in the toolbar).\n17. Type \"Low Interest Rate\" into the merged cell.\n18. Press Enter to confirm the entry.",
+  "retrieved_page_ranges": [
+    [
+      16,
+      16
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      41,
+      41
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      40,
+      41
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/step_1.png"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nRelevant procedure\n\n1. Open the Find and Replace dialog by pressing `Ctrl` + `H`.\n2. In the **Search for** field, type `#N/A`.\n3. In the **Replace with** field, leave it completely empty (do not enter any spaces or characters).\n4. Click the **Find All** button (or the **Format** button then apply a specific \"Hidden\" custom style, if standard replace is not desired, but standard replace of text to empty works for values). *Correction based on standard spreadsheet behavior*: To hide without deleting, we must change the number format to hide them. The snippet mentions custom styles.\n   *Alternative reliable path using Format Cells (which matches the \"Do not delete\" constraint better than replacing with empty):*\n   \n   **Revised Plan based on \"Hiding\" concept:**\n   \n   1. Select the entire data range (columns B through E, rows 2 to 36). You can click cell **B2**, hold **Shift**, and click cell **E36**.\n   2. Right-click the selected area and choose **Format Cells**.\n   3. This approach is difficult for mixed types (text vs error). The most robust way to \"hide\" specific content like `#N/A` in Calc without filtering or deleting is to change the Number Format to display blank for errors, or use a conditional style. However, a simpler interpretation often used in GUI testing for \"Hide N/A\" without filters is to use **Find & Replace** to replace `#N/A` with nothing, but the prompt says \"Do not delete\".\n   \n   *Let's look at the snippets again.* Snippet 1 discusses \"Hiding and showing data\" via Format -> Row/Col -> Hide. It also discusses \"Conditional formatting\". It does *not* mention hiding specific cells based on content via a right-click menu.\n   \n   Actually, the most common GUI task for \"Hide #N/A\" that isn't filtering is replacing them with empty strings or using a custom number format for error values. Since `#N/A` is an error value, a custom number format `0.0;-0.0;\"\";@;\"\"` will hide numbers, negatives, zeros, text, and errors.\n   \n   Let's try the **Find and Replace** method which effectively \"hides\" the visual data by removing the text, but the prompt warns \"Do not",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Open the Find and Replace dialog by pressing `Ctrl` + `H`.\n2. In the **Search for** field, type `#N/A`.\n3. In the **Replace with** field, leave it completely empty (do not enter any spaces or characters).\n4. Click the **Find All** button (or the **Format** button then apply a specific \"Hidden\" custom style, if standard replace is not desired, but standard replace of text to empty works for values). *Correction based on standard spreadsheet behavior*: To hide without deleting, we must change the number format to hide them. The snippet mentions custom styles.\n   *Alternative reliable path using Format Cells (which matches the \"Do not delete\" constraint better than replacing with empty):*\n   \n   **Revised Plan based on \"Hiding\" concept:**\n   \n   1. Select the entire data range (columns B through E, rows 2 to 36). You can click cell **B2**, hold **Shift**, and click cell **E36**.\n   2. Right-click the selected area and choose **Format Cells**.\n   3. This approach is difficult for mixed types (text vs error). The most robust way to \"hide\" specific content like `#N/A` in Calc without filtering or deleting is to change the Number Format to display blank for errors, or use a conditional style. However, a simpler interpretation often used in GUI testing for \"Hide N/A\" without filters is to use **Find & Replace** to replace `#N/A` with nothing, but the prompt says \"Do not delete\".\n   \n   *Let's look at the snippets again.* Snippet 1 discusses \"Hiding and showing data\" via Format -> Row/Col -> Hide. It also discusses \"Conditional formatting\". It does *not* mention hiding specific cells based on content via a right-click menu.\n   \n   Actually, the most common GUI task for \"Hide #N/A\" that isn't filtering is replacing them with empty strings or using a custom number format for error values. Since `#N/A` is an error value, a custom number format `0.0;-0.0;\"\";@;\"\"` will hide numbers, negatives, zeros, text, and errors.\n   \n   Let's try the **Find and Replace** method which effectively \"hides\" the visual data by removing the text, but the prompt warns \"Do not",
+  "retrieved_page_ranges": [
+    [
+      33,
+      33
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      34,
+      34
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/step_1.png"
+}

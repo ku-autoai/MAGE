@@ -1,0 +1,126 @@
+{
+  "id": "53ad5833-3455-407b-bbc6-45b4c79ab8fb",
+  "snapshot": "vscode",
+  "instruction": "Please help me use VS Code to open the \"project\" in the \"user\" folder under \"home\".\n\nRelevant procedure:\n1. Click the \"Open Folder\" button in the Explorer sidebar on the left side of the window.\n2. In the file dialog that appears, navigate to the \"home\" directory.\n3. Open the \"user\" folder inside \"home\".\n4. Select the \"project\" folder within the \"user\" folder.\n5. Click the \"Open\" button in the file dialog to load the project into VS Code.",
+  "source": "https://www.youtube.com/watch?v=VqCgcpAypFQ",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/53ad5833-3455-407b-bbc6-45b4c79ab8fb/vscodeEvalExtension.zip",
+            "path": "/home/user/Downloads/vscodeEvalExtension.zip"
+          }
+        ]
+      }
+    },
+    {
+      "type": "execute",
+      "parameters": {
+        "command": [
+          "/bin/bash",
+          "-c",
+          "cd /home/user/Downloads && unzip -q vscodeEvalExtension.zip && code --install-extension vscodeEvalExtension/eval-0.0.1.vsix && rm -rf vscodeEvalExtension vscodeEvalExtension.zip"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "command",
+      "parameters": {
+        "command": [
+          "mkdir",
+          "-p",
+          "/home/user/project/.vscode"
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/5e2d93d8-8ad0-4435-b150-1692aacaa994/main.py",
+            "path": "/home/user/project/main.py"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/53ad5833-3455-407b-bbc6-45b4c79ab8fb/README.md",
+            "path": "/home/user/project/README.md"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/vs_code/53ad5833-3455-407b-bbc6-45b4c79ab8fb/settings.json",
+            "path": "/home/user/project/.vscode/settings.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/53ad5833-3455-407b-bbc6-45b4c79ab8fb",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Visual Studio Code"
+        }
+      }
+    ],
+    "func": "compare_config",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": "project"
+      }
+    },
+    "result": {
+      "type": "vscode_config",
+      "vscode_extension_command": "OpenProject",
+      "path": "/home/user/OpenProject.txt",
+      "dest": "OpenProject.txt"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the \"Open Folder\" button in the Explorer sidebar on the left side of the window.\n2. In the file dialog that appears, navigate to the \"home\" directory.\n3. Open the \"user\" folder inside \"home\".\n4. Select the \"project\" folder within the \"user\" folder.\n5. Click the \"Open\" button in the file dialog to load the project into VS Code.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/53ad5833-3455-407b-bbc6-45b4c79ab8fb/step_1.png"
+}

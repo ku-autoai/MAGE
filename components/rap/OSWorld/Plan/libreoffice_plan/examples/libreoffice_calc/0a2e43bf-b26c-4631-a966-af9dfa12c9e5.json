@@ -1,0 +1,116 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure\n\n1. Click on cell A12 to select it.\n2. Type \"Total\" into the cell and press Enter.\n3. Click on cell B12 to select it.\n4. Type the formula `=SUM(B2:B11)` into the formula bar and press Enter.\n5. Click on cell B12 again to select it.\n6. Drag the fill handle (small square at the bottom-right corner of the selection) from B12 to G12 to copy the sum formula for all months.\n7. Select the data range A1:G12 (from the \"Sales Rep\" header to the \"Total\" values) by clicking cell A1 and dragging to G12.\n8. Click the \"Insert\" menu in the top menu bar.\n9. Select \"Chart...\" from the dropdown menu.\n10. In the Chart Type dialog, select \"Line\" as the chart type.\n11. Click the \"Data Range\" tab.\n12. Check the box for \"Series in columns\" (or \"Series in rows\" depending on how you want the data oriented; usually \"Series in columns\" is default for this layout).\n13. Click the \"Next\" button.\n14. On the \"Data Series\" page, ensure the \"Categories\" are set to the range $A$2:$A$12 (or similar, ensuring \"Total\" is included as a series label). If the X-axis labels (Months) are not correct, use the \"Categories\" field to select the range B1:G1 (Jan to Jun).\n15. Click \"Next\" to proceed to the chart elements page.\n16. Verify the chart title and axes labels are appropriate.\n17. Click \"Finish\" to insert the chart.",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell A12 to select it.\n2. Type \"Total\" into the cell and press Enter.\n3. Click on cell B12 to select it.\n4. Type the formula `=SUM(B2:B11)` into the formula bar and press Enter.\n5. Click on cell B12 again to select it.\n6. Drag the fill handle (small square at the bottom-right corner of the selection) from B12 to G12 to copy the sum formula for all months.\n7. Select the data range A1:G12 (from the \"Sales Rep\" header to the \"Total\" values) by clicking cell A1 and dragging to G12.\n8. Click the \"Insert\" menu in the top menu bar.\n9. Select \"Chart...\" from the dropdown menu.\n10. In the Chart Type dialog, select \"Line\" as the chart type.\n11. Click the \"Data Range\" tab.\n12. Check the box for \"Series in columns\" (or \"Series in rows\" depending on how you want the data oriented; usually \"Series in columns\" is default for this layout).\n13. Click the \"Next\" button.\n14. On the \"Data Series\" page, ensure the \"Categories\" are set to the range $A$2:$A$12 (or similar, ensuring \"Total\" is included as a series label). If the X-axis labels (Months) are not correct, use the \"Categories\" field to select the range B1:G1 (Jan to Jun).\n15. Click \"Next\" to proceed to the chart elements page.\n16. Verify the chart title and axes labels are appropriate.\n17. Click \"Finish\" to insert the chart.",
+  "retrieved_page_ranges": [
+    [
+      101,
+      101
+    ],
+    [
+      338,
+      340
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      169,
+      169
+    ]
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "535364ea-05bd-46ea-9937-9f55c68507e8",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create two pivot tables in a new sheet named \"Sheet2\" showing the total revenue for each product and sales channel.\n\nRelevant procedure\n1. Click the \"Sheet\" menu at the top menu bar.\n2. Select \"Insert Sheet...\" from the dropdown menu.\n3. In the dialog box, type \"Sheet2\" in the \"Name\" field.\n4. Click \"OK\" to create the new sheet.\n5. Click on the \"Sheet1\" tab at the bottom of the window to switch back to the data sheet.\n6. Select the cell range A1:G29 by clicking cell A1 and dragging to cell G29.\n7. Click the \"Insert\" menu at the top menu bar.\n8. Select \"Pivot Table...\" from the dropdown menu.\n9. In the \"Create Pivot Table\" dialog, verify the \"Current selection\" is chosen.\n10. In the \"Sheet\" dropdown, select \"Sheet2\" as the destination.\n11. Click \"OK\" to open the pivot table layout dialog.\n12. Drag \"Product\" from the \"Field List\" to the \"Row Fields\" area.\n13. Drag \"Revenue ($)\" from the \"Field List\" to the \"Data Fields\" area.\n14. Ensure the \"Function\" for Revenue is set to \"Sum\".\n15. Click \"OK\" to create the first pivot table in Sheet2.\n16. In Sheet2, select the entire first pivot table range (e.g., A1:D10 or the full range generated).\n17. Click the \"Insert\" menu at the top menu bar.\n18. Select \"Pivot Table...\" from the dropdown menu.\n19. In the \"Create Pivot Table\" dialog, verify the \"Current selection\" is chosen.\n20. In the \"Sheet\" dropdown, select \"Sheet2\" as the destination.\n21. Set the \"Position\" to start at a cell to the right of the first pivot table, such as F2.\n22. Click \"OK\" to open the second pivot table layout dialog.\n23. Drag \"Sales Channel\" from the \"Field List\" to the \"Row Fields\" area.\n24. Drag \"Revenue ($)\" from the \"Field List\" to the \"Data Fields\" area.\n25. Ensure the \"Function\" for Revenue is set to \"Sum\".\n26. Click \"OK\" to create the second pivot table in Sheet2.",
+  "source": "SheetCopilot@180",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/535364ea-05bd-46ea-9937-9f55c68507e8/SummerSales.xlsx",
+            "path": "/home/user/SummerSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SummerSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/535364ea-05bd-46ea-9937-9f55c68507e8",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SummerSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/535364ea-05bd-46ea-9937-9f55c68507e8/5_SummerSales_gt1.xlsx",
+      "dest": "5_SummerSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SummerSales.xlsx",
+      "dest": "SummerSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet\" menu at the top menu bar.\n2. Select \"Insert Sheet...\" from the dropdown menu.\n3. In the dialog box, type \"Sheet2\" in the \"Name\" field.\n4. Click \"OK\" to create the new sheet.\n5. Click on the \"Sheet1\" tab at the bottom of the window to switch back to the data sheet.\n6. Select the cell range A1:G29 by clicking cell A1 and dragging to cell G29.\n7. Click the \"Insert\" menu at the top menu bar.\n8. Select \"Pivot Table...\" from the dropdown menu.\n9. In the \"Create Pivot Table\" dialog, verify the \"Current selection\" is chosen.\n10. In the \"Sheet\" dropdown, select \"Sheet2\" as the destination.\n11. Click \"OK\" to open the pivot table layout dialog.\n12. Drag \"Product\" from the \"Field List\" to the \"Row Fields\" area.\n13. Drag \"Revenue ($)\" from the \"Field List\" to the \"Data Fields\" area.\n14. Ensure the \"Function\" for Revenue is set to \"Sum\".\n15. Click \"OK\" to create the first pivot table in Sheet2.\n16. In Sheet2, select the entire first pivot table range (e.g., A1:D10 or the full range generated).\n17. Click the \"Insert\" menu at the top menu bar.\n18. Select \"Pivot Table...\" from the dropdown menu.\n19. In the \"Create Pivot Table\" dialog, verify the \"Current selection\" is chosen.\n20. In the \"Sheet\" dropdown, select \"Sheet2\" as the destination.\n21. Set the \"Position\" to start at a cell to the right of the first pivot table, such as F2.\n22. Click \"OK\" to open the second pivot table layout dialog.\n23. Drag \"Sales Channel\" from the \"Field List\" to the \"Row Fields\" area.\n24. Drag \"Revenue ($)\" from the \"Field List\" to the \"Data Fields\" area.\n25. Ensure the \"Function\" for Revenue is set to \"Sum\".\n26. Click \"OK\" to create the second pivot table in Sheet2.",
+  "retrieved_page_ranges": [
+    [
+      361,
+      363
+    ],
+    [
+      68,
+      69
+    ],
+    [
+      34,
+      34
+    ],
+    [
+      520,
+      520
+    ],
+    [
+      332,
+      333
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/535364ea-05bd-46ea-9937-9f55c68507e8/step_1.png"
+}

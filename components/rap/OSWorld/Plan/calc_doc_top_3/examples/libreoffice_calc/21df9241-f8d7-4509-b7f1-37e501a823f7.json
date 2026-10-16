@@ -1,0 +1,135 @@
+{
+  "id": "21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Change the representation of column \"Parameter\" to show in Millions (M) in Column B and Billions (B) in Column C. The numbers should be rounded to one decimal place, and half should be rounded up. Then remember to place a white space between the digits and the unit.\n\nRelevant procedure\n1. Click cell B2 (the first data cell in Column B under \"Millions\").\n2. Press `Ctrl + 1` to open the Format Cells dialog (or right-click the cell and select \"Format Cells\").\n3. In the **Numbers** tab, select **Custom** from the Category list on the left.\n4. In the **Format code** input box, type: `#,##0.0\"M\"`.\n5. Click **OK** to apply the format.\n6. Click cell C2 (the first data cell in Column C under \"Billions\").\n7. Press `Ctrl + 1` to open the Format Cells dialog.\n8. In the **Numbers** tab, select **Custom** from the Category list on the left.\n9. In the **Format code** input box, type: `#,##0.0\"B\"`.\n10. Click **OK** to apply the format.\n11. Select the entire Column B by clicking the column header \"B\".\n12. Double-click the right border of the Column B header to auto-fit the column width to the formatted content.\n13. Select the entire Column C by clicking the column header \"C\".\n14. Double-click the right border of the Column C header to auto-fit the column width to the formatted content.",
+  "source": "https://www.youtube.com/watch?v=p5C4V_AO1UU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions.xlsx",
+            "path": "/home/user/Represent_in_millions_billions.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Represent_in_millions_billions.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Represent_in_millions_billions.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Represent_in_millions_billions.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Represent_in_millions_billions.xlsx",
+        "/home/user/Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions.xlsx",
+        "Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions_gold.xlsx",
+        "Represent_in_millions_billions_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "ignore_case": true
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 (the first data cell in Column B under \"Millions\").\n2. Press `Ctrl + 1` to open the Format Cells dialog (or right-click the cell and select \"Format Cells\").\n3. In the **Numbers** tab, select **Custom** from the Category list on the left.\n4. In the **Format code** input box, type: `#,##0.0\"M\"`.\n5. Click **OK** to apply the format.\n6. Click cell C2 (the first data cell in Column C under \"Billions\").\n7. Press `Ctrl + 1` to open the Format Cells dialog.\n8. In the **Numbers** tab, select **Custom** from the Category list on the left.\n9. In the **Format code** input box, type: `#,##0.0\"B\"`.\n10. Click **OK** to apply the format.\n11. Select the entire Column B by clicking the column header \"B\".\n12. Double-click the right border of the Column B header to auto-fit the column width to the formatted content.\n13. Select the entire Column C by clicking the column header \"C\".\n14. Double-click the right border of the Column C header to auto-fit the column width to the formatted content.",
+  "retrieved_page_ranges": [
+    [
+      51,
+      51
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      71,
+      71
+    ]
+  ],
+  "first_screen_image_path": null
+}

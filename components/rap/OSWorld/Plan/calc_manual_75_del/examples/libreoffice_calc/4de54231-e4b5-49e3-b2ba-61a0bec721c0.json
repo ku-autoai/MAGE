@@ -1,0 +1,109 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n1. Select cell B2 (which contains the acceleration formula) and drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to copy the formula to the entire column.\n2. Select cell D2 and drag the fill handle down to the last row of data to copy any existing formula or value to the entire column.\n3. Click on cell E1 (the first empty column to the right of D) to create the new header.\n4. Type \"Combined Data\" into cell E1 and press Enter.\n5. Click on cell E2 to start entering the concatenation formula.\n6. Enter the following formula into cell E2, assuming columns A, B, C, and D contain the data and headers are in row 1:\n   `=ROUND(CONCATENATE(A$1&\": \"&A2&\", \"&B$1&\": \"&B2&\", \"&C$1&\": \"&C2&\", \"&D$1&\": \"&D2), 0)`\n   *Note: Since the request asks to keep 2 decimal digits in the final column, and the concatenation results in text, you should format the numeric parts inside the concatenation or round the final result if it were numeric. However, since it's a text string, you must ensure the numbers displayed are rounded. A more robust formula for text output with 2 decimals is:*\n   `=CONCATENATE(A$1&\": \"&TEXT(A2,\"0.00\")&\", \"&B$1&\": \"&TEXT(B2,\"0.00\")&\", \"&C$1&\": \"&TEXT(C2,\"0.00\")&\", \"&D$1&\": \"&TEXT(D2,\"0.00\"))`\n7. Press Enter to confirm the formula.\n8. Select cell E2 and drag the fill handle down to the last row of data to apply the concatenation formula to all rows.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select cell B2 (which contains the acceleration formula) and drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to copy the formula to the entire column.\n2. Select cell D2 and drag the fill handle down to the last row of data to copy any existing formula or value to the entire column.\n3. Click on cell E1 (the first empty column to the right of D) to create the new header.\n4. Type \"Combined Data\" into cell E1 and press Enter.\n5. Click on cell E2 to start entering the concatenation formula.\n6. Enter the following formula into cell E2, assuming columns A, B, C, and D contain the data and headers are in row 1:\n   `=ROUND(CONCATENATE(A$1&\": \"&A2&\", \"&B$1&\": \"&B2&\", \"&C$1&\": \"&C2&\", \"&D$1&\": \"&D2), 0)`\n   *Note: Since the request asks to keep 2 decimal digits in the final column, and the concatenation results in text, you should format the numeric parts inside the concatenation or round the final result if it were numeric. However, since it's a text string, you must ensure the numbers displayed are rounded. A more robust formula for text output with 2 decimals is:*\n   `=CONCATENATE(A$1&\": \"&TEXT(A2,\"0.00\")&\", \"&B$1&\": \"&TEXT(B2,\"0.00\")&\", \"&C$1&\": \"&TEXT(C2,\"0.00\")&\", \"&D$1&\": \"&TEXT(D2,\"0.00\"))`\n7. Press Enter to confirm the formula.\n8. Select cell E2 and drag the fill handle down to the last row of data to apply the concatenation formula to all rows.",
+  "retrieved_page_ranges": [
+    [
+      59,
+      60
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      71,
+      72
+    ]
+  ],
+  "first_screen_image_path": null
+}

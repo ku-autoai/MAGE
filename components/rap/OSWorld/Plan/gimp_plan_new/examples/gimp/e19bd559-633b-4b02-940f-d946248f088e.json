@@ -1,0 +1,41 @@
+{
+  "id": "e19bd559-633b-4b02-940f-d946248f088e",
+  "snapshot": "gimp",
+  "instruction": "Could you tone down the brightness of my photo at desktop?\n\nRelevant procedure:\n1. Click the **Files** icon (folder icon) in the left sidebar to open the file manager.\n2. If the Files window does not open directly to the Desktop, click **Desktop** in the left navigation pane or the **Home** folder and then double-click the **Desktop** folder to navigate there.\n3. Double-click the photo file located on the desktop to open it in the default image viewer.\n4. If the image viewer is already open, click the **Menu** button (typically three horizontal lines or dots) and select **Open With...** > **GNU Image Manipulation Program (GIMP)**.\n5. Once the image is open in GIMP, click the **Colors** menu in the top menu bar.\n6. Select **Brightness-Contrast...** from the dropdown menu.\n7. In the Brightness-Contrast dialog, drag the **Brightness** slider to the left to darken the image until the desired tone is achieved.\n8. Click the **OK** button to apply the changes.\n9. To save the modified photo, go to the **File** menu and select **Export As...** or **Save**, then follow the prompts to save the file.",
+  "source": "https://www.quora.com/How-do-I-edit-a-photo-in-GIMP",
+  "config": [],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the **Files** icon (folder icon) in the left sidebar to open the file manager.\n2. If the Files window does not open directly to the Desktop, click **Desktop** in the left navigation pane or the **Home** folder and then double-click the **Desktop** folder to navigate there.\n3. Double-click the photo file located on the desktop to open it in the default image viewer.\n4. If the image viewer is already open, click the **Menu** button (typically three horizontal lines or dots) and select **Open With...** > **GNU Image Manipulation Program (GIMP)**.\n5. Once the image is open in GIMP, click the **Colors** menu in the top menu bar.\n6. Select **Brightness-Contrast...** from the dropdown menu.\n7. In the Brightness-Contrast dialog, drag the **Brightness** slider to the left to darken the image until the desired tone is achieved.\n8. Click the **OK** button to apply the changes.\n9. To save the modified photo, go to the **File** menu and select **Export As...** or **Save**, then follow the prompts to save the file.",
+  "retrieved_page_ranges": [
+    [
+      "8.8. Shadows-Highlights",
+      "8.8. Shadows-Highlights"
+    ],
+    [
+      "8.6. Saturation",
+      "8.6. Saturation"
+    ],
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "5.12. Display Filters",
+      "5.12. Display Filters"
+    ],
+    [
+      "8.9. Brightness-Contrast",
+      "8.9. Brightness-Contrast"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/e19bd559-633b-4b02-940f-d946248f088e/step_1.png"
+}

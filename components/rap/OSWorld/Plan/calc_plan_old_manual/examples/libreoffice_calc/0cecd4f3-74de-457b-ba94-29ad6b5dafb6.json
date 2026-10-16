@@ -1,0 +1,122 @@
+{
+  "id": "0cecd4f3-74de-457b-ba94-29ad6b5dafb6",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Rename \"Sheet 1\" to \"LARS Resources\". Then make a copy of it. Place the copy before \"Sheet 2\" and rename it by appending a suffix \"(Backup)\", concatenated by a white space. And Also rename \"Sheet2\" to \"LARS Resources (Offline)\".\n\nRelevant procedure\n\n1. Right-click on the \"Sheet1\" tab at the bottom of the window to open the context menu.\n2. Click on \"Rename Sheet...\" in the context menu.\n3. Type \"LARS Resources\" to replace the existing name and press Enter to confirm.\n4. Right-click on the renamed \"LARS Resources\" tab.\n5. Click on \"Move or Copy Sheet...\" in the context menu to open the dialog.\n6. Check the box labeled \"Create a copy\" at the bottom of the dialog.\n7. In the \"Insert sheet after selected sheet\" list, select \"Sheet 2\" so the new copy will appear immediately before it (as per standard behavior where the copy inserts before the selected target when using this specific dialog logic, or select the option that places it before Sheet 2 if explicitly available; typically in Calc, selecting the sheet *before* which you want to insert is done by choosing the sheet it will precede in the list order logic). *Correction based on standard Calc behavior*: The list shows where the sheet goes *after*. To place it *before* Sheet 2, you must select the sheet that is currently before Sheet 2 (which is now \"LARS Resources\")? No, the task says place copy *before* Sheet 2. If we copy \"LARS Resources\", it usually appends. To place it before Sheet 2: In the \"Move or Copy Sheet\" dialog, ensure \"Create a copy\" is checked. Then look at the list \"Insert sheet after selected sheet\". Select the item corresponding to the sheet that is currently immediately before \"Sheet 2\" (which is likely \"Sheet 1\" / \"LARS Resources\" itself or the previous sheet). Actually, simpler way: Select \"Sheet 2\" in the list? No, that puts it after Sheet 2. We need to put it *before* Sheet 2. So we need to insert it after the sheet that is currently before Sheet 2. Assuming the order is Sheet1, Sheet2, Sheet3. The sheet before Sheet2 is Sheet1. So select \"LARS Resources\" (the current Sheet1) in the list? That might just duplicate it right there. Let's look at the specific dialog options. Usually, there is a list of existing sheets. You select the sheet *after* which the new sheet will be inserted. To have the new sheet appear *before* Sheet 2,",
+  "source": "https://www.libreofficehelp.com/add-insert-delete-copy-move-rename-a-worksheet-in-libreoffice-calc/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0cecd4f3-74de-457b-ba94-29ad6b5dafb6/LARS_Science_Assessment_Resource_List_7-30-21.xlsx",
+            "path": "/home/user/copy_sheet_insert.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/copy_sheet_insert.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0cecd4f3-74de-457b-ba94-29ad6b5dafb6",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "copy_sheet_insert.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/copy_sheet_insert.xlsx",
+      "dest": "copy_sheet_insert.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0cecd4f3-74de-457b-ba94-29ad6b5dafb6/LARS_Science_Assessment_Resource_List_7-30-21_gold.xlsx",
+      "dest": "copy_sheet_insert_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_name"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": 1
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 1,
+          "sheet_idx1": "EI1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 2,
+          "sheet_idx1": "EI2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Right-click on the \"Sheet1\" tab at the bottom of the window to open the context menu.\n2. Click on \"Rename Sheet...\" in the context menu.\n3. Type \"LARS Resources\" to replace the existing name and press Enter to confirm.\n4. Right-click on the renamed \"LARS Resources\" tab.\n5. Click on \"Move or Copy Sheet...\" in the context menu to open the dialog.\n6. Check the box labeled \"Create a copy\" at the bottom of the dialog.\n7. In the \"Insert sheet after selected sheet\" list, select \"Sheet 2\" so the new copy will appear immediately before it (as per standard behavior where the copy inserts before the selected target when using this specific dialog logic, or select the option that places it before Sheet 2 if explicitly available; typically in Calc, selecting the sheet *before* which you want to insert is done by choosing the sheet it will precede in the list order logic). *Correction based on standard Calc behavior*: The list shows where the sheet goes *after*. To place it *before* Sheet 2, you must select the sheet that is currently before Sheet 2 (which is now \"LARS Resources\")? No, the task says place copy *before* Sheet 2. If we copy \"LARS Resources\", it usually appends. To place it before Sheet 2: In the \"Move or Copy Sheet\" dialog, ensure \"Create a copy\" is checked. Then look at the list \"Insert sheet after selected sheet\". Select the item corresponding to the sheet that is currently immediately before \"Sheet 2\" (which is likely \"Sheet 1\" / \"LARS Resources\" itself or the previous sheet). Actually, simpler way: Select \"Sheet 2\" in the list? No, that puts it after Sheet 2. We need to put it *before* Sheet 2. So we need to insert it after the sheet that is currently before Sheet 2. Assuming the order is Sheet1, Sheet2, Sheet3. The sheet before Sheet2 is Sheet1. So select \"LARS Resources\" (the current Sheet1) in the list? That might just duplicate it right there. Let's look at the specific dialog options. Usually, there is a list of existing sheets. You select the sheet *after* which the new sheet will be inserted. To have the new sheet appear *before* Sheet 2,",
+  "retrieved_page_ranges": [
+    [
+      18,
+      18
+    ],
+    [
+      18,
+      18
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      8,
+      8
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0cecd4f3-74de-457b-ba94-29ad6b5dafb6/step_1.png"
+}

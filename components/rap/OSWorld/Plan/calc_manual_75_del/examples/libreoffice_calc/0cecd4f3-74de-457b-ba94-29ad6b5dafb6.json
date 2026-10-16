@@ -1,0 +1,122 @@
+{
+  "id": "0cecd4f3-74de-457b-ba94-29ad6b5dafb6",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Rename \"Sheet 1\" to \"LARS Resources\". Then make a copy of it. Place the copy before \"Sheet 2\" and rename it by appending a suffix \"(Backup)\", concatenated by a white space. And Also rename \"Sheet2\" to \"LARS Resources (Offline)\".\n\nRelevant procedure\n1. Right-click the \"Sheet 1\" tab at the bottom of the window.\n2. Select \"Rename Sheet\" from the context menu.\n3. Type \"LARS Resources\" and press Enter.\n4. Right-click the \"LARS Resources\" tab.\n5. Select \"Move or Copy Sheet...\" from the context menu.\n6. In the dialog, check the box for \"Create a copy\".\n7. Under \"Insert before sheet\", select \"Sheet 2\" from the list (if not automatically selected, use the arrows to position the new sheet before Sheet 2).\n8. Click OK.\n9. Right-click the newly created tab (likely named \"LARS Resources (2)\" or similar) at the bottom.\n10. Select \"Rename Sheet\" from the context menu.\n11. Type \"LARS Resources (Backup)\" and press Enter.\n12. Right-click the \"Sheet 2\" tab.\n13. Select \"Rename Sheet\" from the context menu.\n14. Type \"LARS Resources (Offline)\" and press Enter.",
+  "source": "https://www.libreofficehelp.com/add-insert-delete-copy-move-rename-a-worksheet-in-libreoffice-calc/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0cecd4f3-74de-457b-ba94-29ad6b5dafb6/LARS_Science_Assessment_Resource_List_7-30-21.xlsx",
+            "path": "/home/user/copy_sheet_insert.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/copy_sheet_insert.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0cecd4f3-74de-457b-ba94-29ad6b5dafb6",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "copy_sheet_insert.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/copy_sheet_insert.xlsx",
+      "dest": "copy_sheet_insert.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0cecd4f3-74de-457b-ba94-29ad6b5dafb6/LARS_Science_Assessment_Resource_List_7-30-21_gold.xlsx",
+      "dest": "copy_sheet_insert_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_name"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": 1
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 1,
+          "sheet_idx1": "EI1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 2,
+          "sheet_idx1": "EI2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Right-click the \"Sheet 1\" tab at the bottom of the window.\n2. Select \"Rename Sheet\" from the context menu.\n3. Type \"LARS Resources\" and press Enter.\n4. Right-click the \"LARS Resources\" tab.\n5. Select \"Move or Copy Sheet...\" from the context menu.\n6. In the dialog, check the box for \"Create a copy\".\n7. Under \"Insert before sheet\", select \"Sheet 2\" from the list (if not automatically selected, use the arrows to position the new sheet before Sheet 2).\n8. Click OK.\n9. Right-click the newly created tab (likely named \"LARS Resources (2)\" or similar) at the bottom.\n10. Select \"Rename Sheet\" from the context menu.\n11. Type \"LARS Resources (Backup)\" and press Enter.\n12. Right-click the \"Sheet 2\" tab.\n13. Select \"Rename Sheet\" from the context menu.\n14. Type \"LARS Resources (Offline)\" and press Enter.",
+  "retrieved_page_ranges": [
+    [
+      204,
+      204
+    ],
+    [
+      371,
+      372
+    ],
+    [
+      377,
+      378
+    ],
+    [
+      86,
+      88
+    ],
+    [
+      396,
+      398
+    ]
+  ],
+  "first_screen_image_path": null
+}

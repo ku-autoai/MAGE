@@ -1,0 +1,101 @@
+{
+  "id": "f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the missing rows and columns which show the total value\n\nRelevant procedure\n\n1. Click cell **B6** (the empty cell under the Q1 column in the \"Zone 1\" section).\n2. Type the formula `=SUM(B3:B5)` to sum the product sales for Q1.\n3. Press **Ctrl+C** to copy the cell.\n4. Hold **Shift** and click cell **F6** to select the range **B6:F6**.\n5. Press **Ctrl+V** to paste the formula, calculating the totals for Q2, Q3, and Q4 for Zone 1.\n6. Click cell **F6** to select the newly calculated Quarter 4 total.\n7. Type the formula `=SUM(B6:E6)` to calculate the row total for Zone 1.\n8. Click cell **A1** to deselect the active formula bar.\n9. Click cell **B13** (the empty cell under the Q1 column in the \"Zone 2\" section).\n10. Type the formula `=SUM(B10:B12)` to sum the product sales for Q1 in Zone 2.\n11. Press **Ctrl+C** to copy the cell.\n12. Hold **Shift** and click cell **F13** to select the range **B13:F13**.\n13. Press **Ctrl+V** to paste the formula for the quarterly totals.\n14. Click cell **F13** and type `=SUM(B13:E13)` to calculate the row total for Zone 2.\n15. Click cell **A1** to deselect the active formula bar.\n16. Click cell **B20** (the empty cell under the Q1 column in the \"Zone 3\" section).\n17. Type the formula `=SUM(B17:B19)` to sum the product sales for Q1 in Zone 3.\n18. Press **Ctrl+C** to copy the cell.\n19. Hold **Shift** and click cell **F20** to select the range **B20:F20**.\n20. Press **Ctrl+V** to paste the formula for the quarterly totals.\n21. Click cell **F20** and type `=SUM(B20:E20)` to calculate the row total for Zone 3.",
+  "source": "https://youtube.com/shorts/feldd-Pn48c?si=9xJiem2uAHm6Jshb",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone.xlsx",
+            "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/f9584479-3d0d-4c79-affa-9ad7afdd8850",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Quarterly_Product_Sales_by_Zone.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/Quarterly_Product_Sales_by_Zone_gold.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Quarterly_Product_Sales_by_Zone.xlsx",
+      "dest": "Quarterly_Product_Sales_by_Zone.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell **B6** (the empty cell under the Q1 column in the \"Zone 1\" section).\n2. Type the formula `=SUM(B3:B5)` to sum the product sales for Q1.\n3. Press **Ctrl+C** to copy the cell.\n4. Hold **Shift** and click cell **F6** to select the range **B6:F6**.\n5. Press **Ctrl+V** to paste the formula, calculating the totals for Q2, Q3, and Q4 for Zone 1.\n6. Click cell **F6** to select the newly calculated Quarter 4 total.\n7. Type the formula `=SUM(B6:E6)` to calculate the row total for Zone 1.\n8. Click cell **A1** to deselect the active formula bar.\n9. Click cell **B13** (the empty cell under the Q1 column in the \"Zone 2\" section).\n10. Type the formula `=SUM(B10:B12)` to sum the product sales for Q1 in Zone 2.\n11. Press **Ctrl+C** to copy the cell.\n12. Hold **Shift** and click cell **F13** to select the range **B13:F13**.\n13. Press **Ctrl+V** to paste the formula for the quarterly totals.\n14. Click cell **F13** and type `=SUM(B13:E13)` to calculate the row total for Zone 2.\n15. Click cell **A1** to deselect the active formula bar.\n16. Click cell **B20** (the empty cell under the Q1 column in the \"Zone 3\" section).\n17. Type the formula `=SUM(B17:B19)` to sum the product sales for Q1 in Zone 3.\n18. Press **Ctrl+C** to copy the cell.\n19. Hold **Shift** and click cell **F20** to select the range **B20:F20**.\n20. Press **Ctrl+V** to paste the formula for the quarterly totals.\n21. Click cell **F20** and type `=SUM(B20:E20)` to calculate the row total for Zone 3.",
+  "retrieved_page_ranges": [
+    [
+      56,
+      57
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      55,
+      55
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/f9584479-3d0d-4c79-affa-9ad7afdd8850/step_1.png"
+}

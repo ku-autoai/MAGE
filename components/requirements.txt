@@ -1,0 +1,38 @@
+# Core ML stack
+transformers==4.46.0
+accelerate==0.34.0
+deepspeed==0.15.0
+peft==0.13.0
+
+# Data and utilities
+numpy==1.24.0
+pandas==2.0.0
+tqdm==4.66.0
+Pillow==9.2.0
+PyYAML==6.0
+toml==0.10.2
+requests==2.31.0
+
+# Agent / API
+openai==1.30.0
+python-dotenv==1.0.1
+backoff==2.2.1
+tiktoken==0.7.0
+pydantic==2.6.0
+
+# GUI / browser automation
+pyautogui==0.9.54
+selenium==4.0.0
+
+# Document and text tooling
+beautifulsoup4==4.12.0
+pdfplumber==0.11.0
+pypdf==4.0.0
+pdf2image==1.17.0
+
+# Analysis
+matplotlib==3.7.0
+scikit-learn==1.3.0
+
+# Model-specific helper
+qwen-vl-utils==0.0.8

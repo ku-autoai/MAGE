@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Click cell F2 (first data row in the \"Chart\" column).\n2. Click the \"Insert\" menu in the top menu bar.\n3. Click \"Sparkline...\" in the Insert menu.\n4. In the Sparkline dialog, ensure Data range is set to C2:E2 (the Jan–Mar cells for that row). If not, click the range selector button next to Data range and select cells C2:E2 in the sheet, then press Enter.\n5. Ensure the Location field shows $F2$ (or F2). If not, edit it to F2.\n6. In the \"Sparkline type\" section, select \"Line\".\n7. Click OK to insert the sparkline in F2.\n8. Select cell F2 again.\n9. With F2 selected, use the fill handle (small square at the bottom-right corner of the selection) and drag down to row 23 (or the last row containing Order ID data) to fill sparklines for all rows.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell F2 (first data row in the \"Chart\" column).\n2. Click the \"Insert\" menu in the top menu bar.\n3. Click \"Sparkline...\" in the Insert menu.\n4. In the Sparkline dialog, ensure Data range is set to C2:E2 (the Jan–Mar cells for that row). If not, click the range selector button next to Data range and select cells C2:E2 in the sheet, then press Enter.\n5. Ensure the Location field shows $F2$ (or F2). If not, edit it to F2.\n6. In the \"Sparkline type\" section, select \"Line\".\n7. Click OK to insert the sparkline in F2.\n8. Select cell F2 again.\n9. With F2 selected, use the fill handle (small square at the bottom-right corner of the selection) and drag down to row 23 (or the last row containing Order ID data) to fill sparklines for all rows.",
+  "retrieved_page_ranges": [
+    [
+      68,
+      68
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      211,
+      212
+    ],
+    [
+      233,
+      233
+    ],
+    [
+      396,
+      396
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/step_1.png"
+}

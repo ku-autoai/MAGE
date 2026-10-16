@@ -1,0 +1,69 @@
+{
+  "id": "2e6f678f-472d-4c55-99cc-8e7c5c402a71",
+  "snapshot": "gimp",
+  "instruction": "Please batch process all images on the desktop by increasing their brightness to 50, instead of adjusting them individually within GIMP.\n\nRelevant procedure\nINFEASIBLE",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/squirrel.jpeg",
+            "path": "/home/user/Desktop/squirrel.jpeg"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/panda.jpeg",
+            "path": "/home/user/Desktop/panda.jpeg"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/heron.jpeg",
+            "path": "/home/user/Desktop/heron.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\nINFEASIBLE",
+  "retrieved_page_ranges": [
+    [
+      "8.16. Equalize",
+      "8.16. Equalize"
+    ],
+    [
+      "2.21. Close All",
+      "2.21. Close All"
+    ],
+    [
+      "8.20. Color Enhance",
+      "8.20. Color Enhance"
+    ],
+    [
+      "8.15. The “ Auto ” Submenu",
+      "8.15. The “ Auto ” Submenu"
+    ],
+    [
+      "6.24. Scale Image",
+      "6.24. Scale Image"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/2e6f678f-472d-4c55-99cc-8e7c5c402a71/step_1.png"
+}

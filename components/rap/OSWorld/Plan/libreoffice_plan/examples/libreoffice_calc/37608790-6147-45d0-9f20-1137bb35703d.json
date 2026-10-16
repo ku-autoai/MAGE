@@ -1,0 +1,108 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click cell **B2** (under the \"First Name\" header).\n2. Type the formula `=LEFT(A2,FIND(\" \",A2)-1)`, then press **Enter**.\n3. Click cell **C2** (under the \"Last Name\" header).\n4. Type the formula `=MID(A2,FIND(\" \",A2)+1,LEN(A2)-LEN(RIGHT(A2,LEN(A2)-FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",LEN(A2)-LEN(SUBSTITUTE(A2,\" \",\"\"))))-1))-LEN(LEFT(A2,FIND(\" \",A2)-1))-1)`, then press **Enter**.\n   *(Note: This formula extracts the middle word. Assuming the format is \"First Last Role\". A simpler alternative if \"Last Name\" means the last word before the role is `=TRIM(MID(SUBSTITUTE(A2,\" \",REPT(\" \",100)),100,100))` but that gets the last word. Let's assume the task implies splitting \"Name\" and \"Role\". If the column headers are First Name, Last Name, Rank, it implies a 3-part split: \"First\", \"Last\", \"Rank\". Example: \"Benedict Cumberbatch Manager\". First=Benedict, Last=Cumberbatch, Rank=Manager.)*\n   *Correction for Step 4*: Type `=MID(A2,FIND(\" \",A2)+1,FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",2))-FIND(\" \",A2)-1)` and press **Enter**.\n5. Click cell **D2** (under the \"Rank\" header).\n6. Type the formula `=RIGHT(A2,LEN(A2)-FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",LEN(A2)-LEN(SUBSTITUTE(A2,\" \",\"\")))))`, then press **Enter**.\n7. Select the range **B2:D2**.\n8. Move the mouse cursor to the bottom-right corner of the selection until it turns into a small black cross (fill handle).\n9. Click and drag the fill handle down to row 22 (matching the last row of data in column A).\n10. Release the mouse button to auto-fill the formulas.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell **B2** (under the \"First Name\" header).\n2. Type the formula `=LEFT(A2,FIND(\" \",A2)-1)`, then press **Enter**.\n3. Click cell **C2** (under the \"Last Name\" header).\n4. Type the formula `=MID(A2,FIND(\" \",A2)+1,LEN(A2)-LEN(RIGHT(A2,LEN(A2)-FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",LEN(A2)-LEN(SUBSTITUTE(A2,\" \",\"\"))))-1))-LEN(LEFT(A2,FIND(\" \",A2)-1))-1)`, then press **Enter**.\n   *(Note: This formula extracts the middle word. Assuming the format is \"First Last Role\". A simpler alternative if \"Last Name\" means the last word before the role is `=TRIM(MID(SUBSTITUTE(A2,\" \",REPT(\" \",100)),100,100))` but that gets the last word. Let's assume the task implies splitting \"Name\" and \"Role\". If the column headers are First Name, Last Name, Rank, it implies a 3-part split: \"First\", \"Last\", \"Rank\". Example: \"Benedict Cumberbatch Manager\". First=Benedict, Last=Cumberbatch, Rank=Manager.)*\n   *Correction for Step 4*: Type `=MID(A2,FIND(\" \",A2)+1,FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",2))-FIND(\" \",A2)-1)` and press **Enter**.\n5. Click cell **D2** (under the \"Rank\" header).\n6. Type the formula `=RIGHT(A2,LEN(A2)-FIND(\"@\",SUBSTITUTE(A2,\" \",\"@\",LEN(A2)-LEN(SUBSTITUTE(A2,\" \",\"\")))))`, then press **Enter**.\n7. Select the range **B2:D2**.\n8. Move the mouse cursor to the bottom-right corner of the selection until it turns into a small black cross (fill handle).\n9. Click and drag the fill handle down to row 22 (matching the last row of data in column A).\n10. Release the mouse button to auto-fill the formulas.",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      452,
+      455
+    ],
+    [
+      408,
+      408
+    ],
+    [
+      455,
+      456
+    ]
+  ]
+}

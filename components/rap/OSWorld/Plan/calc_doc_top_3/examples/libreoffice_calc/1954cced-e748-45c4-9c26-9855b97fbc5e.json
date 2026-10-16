@@ -1,0 +1,107 @@
+{
+  "id": "1954cced-e748-45c4-9c26-9855b97fbc5e",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a Pivot Table in a new sheet (Sheet2) to count how many times each \"Invoice No.\" appears.\n\nRelevant procedure\n1. Click any cell within the data range (for example, cell A1) to ensure the source data is recognized.\n2. Click the \"Insert\" menu in the top menu bar.\n3. Select \"Pivot Table...\" from the dropdown menu.\n4. In the \"Select Source\" dialog, ensure \"Current selection\" is selected, then click \"OK\".\n5. In the \"Pivot Table Layout\" dialog, under the \"Destination\" section, select the \"New sheet\" radio button.\n6. In the \"Sheet name\" field next to the \"New sheet\" option, type \"Sheet2\".\n7. In the \"Available Fields\" list on the left, click and drag \"Invoice No.\" into the \"Row Fields\" area.\n8. In the \"Available Fields\" list, click and drag \"Invoice No.\" again into the \"Data Fields\" area.\n9. Double-click the \"Invoice No.\" field that is now in the \"Data Fields\" area to open the \"Data Field\" options dialog.\n10. In the \"Function\" dropdown list, select \"Count\" (if \"Sum\" is currently selected).\n11. Click \"OK\" to close the Data Field options dialog.\n12. Click \"OK\" in the \"Pivot Table Layout\" dialog to generate the pivot table on Sheet2.",
+  "source": "SheetCopilot@104",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1954cced-e748-45c4-9c26-9855b97fbc5e/Invoices.xlsx",
+            "path": "/home/user/Invoices.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Invoices.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1954cced-e748-45c4-9c26-9855b97fbc5e",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Invoices.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1954cced-e748-45c4-9c26-9855b97fbc5e/8_Invoices_gt1.xlsx",
+      "dest": "8_Invoices_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Invoices.xlsx",
+      "dest": "Invoices.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click any cell within the data range (for example, cell A1) to ensure the source data is recognized.\n2. Click the \"Insert\" menu in the top menu bar.\n3. Select \"Pivot Table...\" from the dropdown menu.\n4. In the \"Select Source\" dialog, ensure \"Current selection\" is selected, then click \"OK\".\n5. In the \"Pivot Table Layout\" dialog, under the \"Destination\" section, select the \"New sheet\" radio button.\n6. In the \"Sheet name\" field next to the \"New sheet\" option, type \"Sheet2\".\n7. In the \"Available Fields\" list on the left, click and drag \"Invoice No.\" into the \"Row Fields\" area.\n8. In the \"Available Fields\" list, click and drag \"Invoice No.\" again into the \"Data Fields\" area.\n9. Double-click the \"Invoice No.\" field that is now in the \"Data Fields\" area to open the \"Data Field\" options dialog.\n10. In the \"Function\" dropdown list, select \"Count\" (if \"Sum\" is currently selected).\n11. Click \"OK\" to close the Data Field options dialog.\n12. Click \"OK\" in the \"Pivot Table Layout\" dialog to generate the pivot table on Sheet2.",
+  "retrieved_page_ranges": [
+    [
+      290,
+      290
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      295,
+      298
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1954cced-e748-45c4-9c26-9855b97fbc5e/step_1.png"
+}

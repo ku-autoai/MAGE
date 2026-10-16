@@ -1,0 +1,53 @@
+{
+  "id": "62f7fd55-0687-4a43-b6e1-3eda16fc6252",
+  "snapshot": "gimp",
+  "instruction": "Could you help me convert the image located at \"/home/user/logo.png\" to \".svg\" format by GIMP?\n\nRelevant procedure\n1. Click the GIMP icon in the left sidebar (GNU Dog logo) to launch the application.\n2. In the GIMP window, click the \"File\" menu in the top-left corner.\n3. Click \"Open...\" from the dropdown menu.\n4. In the \"Open Image\" dialog, enter `/home/user/logo.png` in the file path input field (or navigate to the file) and click \"Open\".\n5. Once the image is loaded, click the \"File\" menu again.\n6. Hover over \"Export As...\" in the dropdown menu and click it.\n7. In the \"Export Image\" dialog, change the filename extension to `.svg` (e.g., rename the file to `logo.svg`) or select \"Scalable Vector Graphics image\" from the \"Select File Type\" list at the bottom.\n8. Click the \"Export\" button.\n9. In the \"Export Image as SVG\" options dialog, click \"Export\" again to confirm the conversion.",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/62f7fd55-0687-4a43-b6e1-3eda16fc6252/logo.png",
+            "path": "/home/user/logo.png"
+          }
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the GIMP icon in the left sidebar (GNU Dog logo) to launch the application.\n2. In the GIMP window, click the \"File\" menu in the top-left corner.\n3. Click \"Open...\" from the dropdown menu.\n4. In the \"Open Image\" dialog, enter `/home/user/logo.png` in the file path input field (or navigate to the file) and click \"Open\".\n5. Once the image is loaded, click the \"File\" menu again.\n6. Hover over \"Export As...\" in the dropdown menu and click it.\n7. In the \"Export Image\" dialog, change the filename extension to `.svg` (e.g., rename the file to `logo.svg`) or select \"Scalable Vector Graphics image\" from the \"Select File Type\" list at the bottom.\n8. Click the \"Export\" button.\n9. In the \"Export Image as SVG\" options dialog, click \"Export\" again to confirm the conversion.",
+  "retrieved_page_ranges": [
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ],
+    [
+      "5.50. Export Image as SVG",
+      "5.50. Export Image as SVG"
+    ],
+    [
+      "5.57. Export Image as X PixMap",
+      "5.57. Export Image as X PixMap"
+    ],
+    [
+      "2.17. Send by Email",
+      "2.17. Send by Email"
+    ],
+    [
+      "5.48. Export Image as SGI",
+      "5.48. Export Image as SGI"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/62f7fd55-0687-4a43-b6e1-3eda16fc6252/step_1.png"
+}

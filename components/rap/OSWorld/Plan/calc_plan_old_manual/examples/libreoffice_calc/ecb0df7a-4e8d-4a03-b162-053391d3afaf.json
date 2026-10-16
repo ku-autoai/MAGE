@@ -1,0 +1,136 @@
+{
+  "id": "ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In the column \"Pass/Fail/Held\", one from the texts \"Pass\", \"Fail\", and \"Held\" should be filled. For convinience, enable data validation for the cells in this column so that the texts to fill can be directly selected from a drop down list. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the column header \"D\" at the top of the spreadsheet to ensure the entire column is selected.\n2. Go to the top menu bar and click on **Data**.\n3. In the dropdown menu, select **Validity...** (or **Validating Cell Contents**).\n4. In the dialog box that appears, ensure you are on the **Criteria** tab.\n5. In the **Allow** field, click the dropdown arrow and select **List**.\n6. Check the box labeled **Show selection list** to enable the dropdown arrow in cells.\n7. In the **Entries** box, type the following options (one per line):\n   Pass\n   Fail\n   Held\n8. Click the **OK** button to apply the validation rule to the column.",
+  "source": "https://www.youtube.com/shorts/tXOovKn0H68",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail.xlsx",
+            "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/ecb0df7a-4e8d-4a03-b162-053391d3afaf",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Id_Mark_Pass_Fail.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "data_validation",
+          "sheet_idx": 0,
+          "dv_props": [
+            {
+              "ranges": {
+                "method": "spreadsheet_range",
+                "ref": [
+                  "D2:D29",
+                  "D2:D1048576"
+                ]
+              },
+              "type": {
+                "method": "eq",
+                "ref": "list"
+              },
+              "formula1": {
+                "method": "str_set_eq",
+                "ref": [
+                  "Pass",
+                  "Fail",
+                  "Held"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Id_Mark_Pass_Fail.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/Order_Id_Mark_Pass_Fail_gold.xlsx",
+      "dest": "Order_Id_Mark_Pass_Fail_gold.xlsx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header \"D\" at the top of the spreadsheet to ensure the entire column is selected.\n2. Go to the top menu bar and click on **Data**.\n3. In the dropdown menu, select **Validity...** (or **Validating Cell Contents**).\n4. In the dialog box that appears, ensure you are on the **Criteria** tab.\n5. In the **Allow** field, click the dropdown arrow and select **List**.\n6. Check the box labeled **Show selection list** to enable the dropdown arrow in cells.\n7. In the **Entries** box, type the following options (one per line):\n   Pass\n   Fail\n   Held\n8. Click the **OK** button to apply the validation rule to the column.",
+  "retrieved_page_ranges": [
+    [
+      26,
+      26
+    ],
+    [
+      26,
+      26
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      25,
+      25
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/ecb0df7a-4e8d-4a03-b162-053391d3afaf/step_1.png"
+}

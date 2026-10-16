@@ -1,0 +1,41 @@
+{
+  "id": "e19bd559-633b-4b02-940f-d946248f088e",
+  "snapshot": "gimp",
+  "instruction": "Could you tone down the brightness of my photo at desktop?\n\nRelevant procedure\n1. In the file manager, click the Desktop shortcut in the left sidebar to open the Desktop folder.\n2. Find the photo file you want to edit and double-click it to open it in GIMP.\n3. In GIMP, go to Colors > Brightness-Contrast in the menu bar.\n4. In the Brightness-Contrast dialog, drag the Brightness slider to the left to reduce the brightness to your desired level.\n5. Click OK to apply the brightness changes.\n6. Go to File > Export As, choose a filename and save location, then click Export and confirm to save the toned-down image.",
+  "source": "https://www.quora.com/How-do-I-edit-a-photo-in-GIMP",
+  "config": [],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. In the file manager, click the Desktop shortcut in the left sidebar to open the Desktop folder.\n2. Find the photo file you want to edit and double-click it to open it in GIMP.\n3. In GIMP, go to Colors > Brightness-Contrast in the menu bar.\n4. In the Brightness-Contrast dialog, drag the Brightness slider to the left to reduce the brightness to your desired level.\n5. Click OK to apply the brightness changes.\n6. Go to File > Export As, choose a filename and save location, then click Export and confirm to save the toned-down image.",
+  "retrieved_page_ranges": [
+    [
+      "8.6. Saturation",
+      "8.6. Saturation"
+    ],
+    [
+      "8.8. Shadows-Highlights",
+      "8.8. Shadows-Highlights"
+    ],
+    [
+      "5.12. Display Filters",
+      "5.12. Display Filters"
+    ],
+    [
+      "2.21. Close All",
+      "2.21. Close All"
+    ],
+    [
+      "8.9. Brightness-Contrast",
+      "8.9. Brightness-Contrast"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/e19bd559-633b-4b02-940f-d946248f088e/step_1.png"
+}

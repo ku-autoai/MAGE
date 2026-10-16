@@ -1,0 +1,109 @@
+{
+  "id": "51b11269-2ca8-4b2a-9163-f21758420e78",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Could you help me to sort the records accoring to the amounts ascendingly?\n\nRelevant procedure\n1. Click any cell within the column containing the amounts (or select the entire data range including headers) to define the sort context.\n2. Click the **Data** menu in the top menu bar.\n3. Click **Sort Ascending** from the dropdown menu to sort the records by the amounts from lowest to highest.\n   - *Alternative:* If the **Data** menu is not available or you need to specify the column explicitly, click **Data** > **Sort**, ensure the \"Amount\" column is listed first under Sort By, select \"Ascending\", and click **OK**.",
+  "source": "https://www.reddit.com/r/LibreOfficeCalc/comments/186pcc6/how_to_arrange_numbers_in_a_column_from_minimum/",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max.xlsx",
+            "path": "/home/user/Arrang_Value_min_to_max.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Arrang_Value_min_to_max.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51b11269-2ca8-4b2a-9163-f21758420e78",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Arrang_Value_min_to_max.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max_gold.xlsx",
+      "dest": "Arrang_Value_min_to_max_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Arrang_Value_min_to_max.xlsx",
+      "dest": "Arrang_Value_min_to_max.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click any cell within the column containing the amounts (or select the entire data range including headers) to define the sort context.\n2. Click the **Data** menu in the top menu bar.\n3. Click **Sort Ascending** from the dropdown menu to sort the records by the amounts from lowest to highest.\n   - *Alternative:* If the **Data** menu is not available or you need to specify the column explicitly, click **Data** > **Sort**, ensure the \"Amount\" column is listed first under Sort By, select \"Ascending\", and click **OK**.",
+  "retrieved_page_ranges": [
+    [
+      95,
+      96
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      298,
+      302
+    ],
+    [
+      90,
+      90
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,109 @@
+{
+  "id": "01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill all the blank cells in B1:E30 with the value in the cell above it. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select the range B1:E30 in the spreadsheet grid.\n2. Click the \"Edit\" menu at the top of the window.\n3. Choose \"Find & Replace\" from the menu (or press Ctrl+H) to open the Find & Replace dialog.\n4. Leave the \"Find\" field empty.\n5. Type `=` into the \"Replace\" field.\n6. Click the \"Options\" button to expand the options menu.\n7. Check the box labeled \"Regular expressions\".\n8. In the \"Replace\" field, change the text to `=$#`.\n9. Click the \"Replace All\" button to fill all blank cells in the selection with the value of the cell above.\n10. Click \"Close\" on the dialog to finish.",
+  "source": "https://www.youtube.com/shorts/VrUzPTIwQ04",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank.xlsx",
+            "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Student_Level_Fill_Blank.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank_gold.xlsx",
+      "dest": "Student_Level_Fill_Blank_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Student_Level_Fill_Blank.xlsx",
+      "dest": "Student_Level_Fill_Blank.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the range B1:E30 in the spreadsheet grid.\n2. Click the \"Edit\" menu at the top of the window.\n3. Choose \"Find & Replace\" from the menu (or press Ctrl+H) to open the Find & Replace dialog.\n4. Leave the \"Find\" field empty.\n5. Type `=` into the \"Replace\" field.\n6. Click the \"Options\" button to expand the options menu.\n7. Check the box labeled \"Regular expressions\".\n8. In the \"Replace\" field, change the text to `=$#`.\n9. Click the \"Replace All\" button to fill all blank cells in the selection with the value of the cell above.\n10. Click \"Close\" on the dialog to finish.",
+  "retrieved_page_ranges": [
+    [
+      67,
+      68
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      84,
+      84
+    ],
+    [
+      483,
+      484
+    ],
+    [
+      65,
+      66
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/step_1.png"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "971cbb5b-3cbf-4ff7-9e24-b5c84fcebfa6",
+  "snapshot": "vscode",
+  "instruction": "Please help me change the settings of VS Code so that every time I open it, it automatically creates a python file called \"test.py\" without using any extensions.\n\nRelevant procedure\n1. Click the close button (X) on the \"Software Updates Available\" notification at the top.\n2. In the Settings search bar at the top, clear the current text \"workspace trust enabled\" (click the 'x' icon or select all and delete).\n3. Type \"files.defaultLanguage\" into the search bar.\n4. Click on the \"Default Language\" setting that appears (under Security > Workspace > Trust or User settings).\n5. In the dropdown menu for the default language, select \"python\" from the list.\n6. Click the \"Open Folder\" button in the Explorer sidebar on the left to select a folder where the file will be created.\n7. In the file explorer dialog, select your desired directory and click \"Select as Folder\".\n8. Once the folder is open, click the \"New File\" icon (file with a plus sign) next to the \"NO FOLDER OPENED\" text (now showing the folder name) or right-click in the Explorer area and select \"New File\".\n9. Name the file \"test.py\" and press Enter.\n10. The file \"test.py\" will now be created in the root of the opened folder.",
+  "source": "",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the close button (X) on the \"Software Updates Available\" notification at the top.\n2. In the Settings search bar at the top, clear the current text \"workspace trust enabled\" (click the 'x' icon or select all and delete).\n3. Type \"files.defaultLanguage\" into the search bar.\n4. Click on the \"Default Language\" setting that appears (under Security > Workspace > Trust or User settings).\n5. In the dropdown menu for the default language, select \"python\" from the list.\n6. Click the \"Open Folder\" button in the Explorer sidebar on the left to select a folder where the file will be created.\n7. In the file explorer dialog, select your desired directory and click \"Select as Folder\".\n8. Once the folder is open, click the \"New File\" icon (file with a plus sign) next to the \"NO FOLDER OPENED\" text (now showing the folder name) or right-click in the Explorer area and select \"New File\".\n9. Name the file \"test.py\" and press Enter.\n10. The file \"test.py\" will now be created in the root of the opened folder.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/971cbb5b-3cbf-4ff7-9e24-b5c84fcebfa6/step_1.png"
+}

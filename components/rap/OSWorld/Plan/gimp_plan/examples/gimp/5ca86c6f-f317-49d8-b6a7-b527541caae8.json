@@ -1,0 +1,41 @@
+{
+  "id": "5ca86c6f-f317-49d8-b6a7-b527541caae8",
+  "snapshot": "gimp",
+  "instruction": "Could you help me download the logo of the University of Hong Kong in '.png' format using only GIMP's built-in features, without launching a separate web browser?\n\nRelevant procedure\nINFEASIBLE",
+  "source": "",
+  "config": [],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\nINFEASIBLE",
+  "retrieved_page_ranges": [
+    [
+      "5.42. Export Image as PNM, PAM, PBM, PGM, PPM",
+      "5.42. Export Image as PNM, PAM, PBM, PGM, PPM"
+    ],
+    [
+      "5.57. Export Image as X PixMap",
+      "5.57. Export Image as X PixMap"
+    ],
+    [
+      "2.17. Send by Email",
+      "2.17. Send by Email"
+    ],
+    [
+      "2.16. Print",
+      "2.16. Print"
+    ],
+    [
+      "16.5. Playback",
+      "16.5. Playback"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/5ca86c6f-f317-49d8-b6a7-b527541caae8/step_1.png"
+}

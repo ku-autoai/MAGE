@@ -1,0 +1,117 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n1. Click cell C1 to select it.\n2. Type \"Period Rate (%)\" into cell C1 and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula `=A2/B2` into cell C2 and press Enter.\n5. Click cell C2 to select it, then click the 'Number Format' dropdown in the toolbar and select 'Number' (or press Ctrl+1, go to Numbers category, select Number, and click OK).\n6. Select the range C2:C25 by clicking C2 and dragging down to C25.\n7. Press Ctrl+C to copy the cells.\n8. Click cell C3, then press Ctrl+Shift+End to extend the selection to the last data row, then press Ctrl+V to paste the formula down.\n9. Select the range C2:C25 (the calculated period rates).\n10. Go to Format → Conditional Formatting → Highlight Cells Rules → Greater Than.\n11. In the dialog, enter the formula `=MAX(C2:C25)` in the first field (or type the specific maximum value if known).\n12. In the second field, choose 'Custom format'.\n13. In the Format Cells dialog, go to the Font tab.\n14. Click the Color dropdown and select the custom green color (#00ff00).\n15. Click OK in the Format Cells dialog.\n16. Click OK in the Conditional Formatting dialog.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell C1 to select it.\n2. Type \"Period Rate (%)\" into cell C1 and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula `=A2/B2` into cell C2 and press Enter.\n5. Click cell C2 to select it, then click the 'Number Format' dropdown in the toolbar and select 'Number' (or press Ctrl+1, go to Numbers category, select Number, and click OK).\n6. Select the range C2:C25 by clicking C2 and dragging down to C25.\n7. Press Ctrl+C to copy the cells.\n8. Click cell C3, then press Ctrl+Shift+End to extend the selection to the last data row, then press Ctrl+V to paste the formula down.\n9. Select the range C2:C25 (the calculated period rates).\n10. Go to Format → Conditional Formatting → Highlight Cells Rules → Greater Than.\n11. In the dialog, enter the formula `=MAX(C2:C25)` in the first field (or type the specific maximum value if known).\n12. In the second field, choose 'Custom format'.\n13. In the Format Cells dialog, go to the Font tab.\n14. Click the Color dropdown and select the custom green color (#00ff00).\n15. Click OK in the Format Cells dialog.\n16. Click OK in the Conditional Formatting dialog.",
+  "retrieved_page_ranges": [
+    [
+      33,
+      33
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      35,
+      35
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/step_1.png"
+}

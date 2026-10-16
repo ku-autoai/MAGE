@@ -1,0 +1,142 @@
+{
+  "id": "a01fbce3-2793-461f-ab86-43680ccbae25",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I need to set the decimal separator as a comma (,) for localized data representation and clarity in visualization. Can you help me to update all the numbers in the sheet? Also please keep the decimal numbers as-is.\n\nRelevant procedure\n1. Press `Ctrl + A` to select all cells in the spreadsheet.\n2. Press `Ctrl + 1` (or right-click the selection and choose \"Format Cells\") to open the Format Cells dialog.\n3. Click the \"Numbers\" tab if it is not already selected.\n4. In the \"Category\" list on the left, click \"Number\".\n5. In the \"Format\" list (or \"Languages\" section depending on the view), look for a format code that uses a comma as the decimal separator (e.g., `#,##0.00` where the dot might be interpreted based on locale, or specifically looking for a custom format preview showing a comma).\n6. If a standard comma-separator format is not visible in the \"Format\" list:\n    a. Select \"Custom\" from the Category list.\n    b. In the \"Format code\" field, type: `#,##0.00` (Note: In many locales, this code inherently respects the system's decimal separator. If the system uses a period, you may need to type `#,##0,00` explicitly to force a comma, or ensure the Language setting is set to a locale that uses commas like German or French).\n    c. Ensure \"Decimal places\" is set to the desired number (e.g., 2) to keep decimal numbers as-is (visible).\n7. Click \"OK\" to apply the format to all selected cells.\n8. Verify that the numbers in the sheet now display with a comma as the decimal separator.",
+  "source": "https://superuser.com/questions/1250677/how-to-set-decimal-separator-in-libre-office-calc",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot.xlsx",
+            "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Set_Decimal_Separator_Dot.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/a01fbce3-2793-461f-ab86-43680ccbae25",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Set_Decimal_Separator_Dot.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Set_Decimal_Separator_Dot.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Set_Decimal_Separator_Dot.xlsx",
+        "/home/user/Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot.xlsx",
+        "Set_Decimal_Separator_Dot-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a01fbce3-2793-461f-ab86-43680ccbae25/Set_Decimal_Separator_Dot_gold_ru.csv"
+      ],
+      "dest": [
+        "Set_Decimal_Separator_Dot_gold.xlsx",
+        "Set_Decimal_Separator_Dot_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Press `Ctrl + A` to select all cells in the spreadsheet.\n2. Press `Ctrl + 1` (or right-click the selection and choose \"Format Cells\") to open the Format Cells dialog.\n3. Click the \"Numbers\" tab if it is not already selected.\n4. In the \"Category\" list on the left, click \"Number\".\n5. In the \"Format\" list (or \"Languages\" section depending on the view), look for a format code that uses a comma as the decimal separator (e.g., `#,##0.00` where the dot might be interpreted based on locale, or specifically looking for a custom format preview showing a comma).\n6. If a standard comma-separator format is not visible in the \"Format\" list:\n    a. Select \"Custom\" from the Category list.\n    b. In the \"Format code\" field, type: `#,##0.00` (Note: In many locales, this code inherently respects the system's decimal separator. If the system uses a period, you may need to type `#,##0,00` explicitly to force a comma, or ensure the Language setting is set to a locale that uses commas like German or French).\n    c. Ensure \"Decimal places\" is set to the desired number (e.g., 2) to keep decimal numbers as-is (visible).\n7. Click \"OK\" to apply the format to all selected cells.\n8. Verify that the numbers in the sheet now display with a comma as the decimal separator.",
+  "retrieved_page_ranges": [
+    [
+      51,
+      52
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      150,
+      150
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,117 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n\n1. Click the empty cell immediately to the right of the existing column headers (e.g., if data is in A and B, click C1).\n2. Type `Period Rate (%)` and press Enter to create the new header.\n3. Click the first empty cell below the new header (e.g., C2).\n4. Enter the formula to calculate the period rate based on your data columns. For example, if column A is the start value and column B is the end value, type `=(B2-A2)/A2*100` and press Enter.\n5. With the formula cell still selected, click and drag the fill handle (the small square at the bottom-right corner of the cell selection border) down to the last row of your data to copy the formula.\n6. Select the entire range of calculated values in the \"Period Rate (%)\" column (excluding the header).\n7. Right-click the selected range and choose \"Format Cells\" (or press Ctrl+1).\n8. In the Format Cells dialog, go to the \"Numbers\" tab.\n9. Select \"Number\" from the Category list to ensure the results are treated as numeric types, then click OK.\n10. With the same range of calculated values still selected, go to the \"Format\" menu at the top, hover over \"Conditional Formatting,\" and select \"Condition...\" (or \"Manage...\" depending on the version, then add a new condition).\n11. In the Conditional Formatting dialog:\n    - Set the first drop-down (Condition 1) to \"Cell value is\".\n    - Set the second drop-down to \"equal to\".\n    - In the third field, enter the formula `=MAX($C$2:$C[last_row])` (replace $C$2:$C[last_row] with the actual range of your data, e.g., $C$2:$C$100).\n12. Click the \"Style\" button (or \"Font\" tab/section depending on the dialog version).\n13. In the Font settings, set the Font Color to green (`#00ff00`).\n14. Click OK to apply the style and close the Conditional Formatting dialog.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the empty cell immediately to the right of the existing column headers (e.g., if data is in A and B, click C1).\n2. Type `Period Rate (%)` and press Enter to create the new header.\n3. Click the first empty cell below the new header (e.g., C2).\n4. Enter the formula to calculate the period rate based on your data columns. For example, if column A is the start value and column B is the end value, type `=(B2-A2)/A2*100` and press Enter.\n5. With the formula cell still selected, click and drag the fill handle (the small square at the bottom-right corner of the cell selection border) down to the last row of your data to copy the formula.\n6. Select the entire range of calculated values in the \"Period Rate (%)\" column (excluding the header).\n7. Right-click the selected range and choose \"Format Cells\" (or press Ctrl+1).\n8. In the Format Cells dialog, go to the \"Numbers\" tab.\n9. Select \"Number\" from the Category list to ensure the results are treated as numeric types, then click OK.\n10. With the same range of calculated values still selected, go to the \"Format\" menu at the top, hover over \"Conditional Formatting,\" and select \"Condition...\" (or \"Manage...\" depending on the version, then add a new condition).\n11. In the Conditional Formatting dialog:\n    - Set the first drop-down (Condition 1) to \"Cell value is\".\n    - Set the second drop-down to \"equal to\".\n    - In the third field, enter the formula `=MAX($C$2:$C[last_row])` (replace $C$2:$C[last_row] with the actual range of your data, e.g., $C$2:$C$100).\n12. Click the \"Style\" button (or \"Font\" tab/section depending on the dialog version).\n13. In the Font settings, set the Font Color to green (`#00ff00`).\n14. Click OK to apply the style and close the Conditional Formatting dialog.",
+  "retrieved_page_ranges": [
+    [
+      83,
+      84
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      57,
+      58
+    ]
+  ],
+  "first_screen_image_path": null
+}

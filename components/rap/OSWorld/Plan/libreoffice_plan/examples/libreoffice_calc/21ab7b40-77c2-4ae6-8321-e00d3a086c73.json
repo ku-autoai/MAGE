@@ -1,0 +1,116 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure:\n1. Click cell C1 to ensure it is selected.\n2. Type \"Period Rate (%)\" and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula =A2/B2 and press Enter.\n5. Click cell C2 again to select it.\n6. Click and drag the fill handle (small square at the bottom-right corner of the selected cell) down to C25 to copy the formula to all rows with data.\n7. Select the range C2:C25 by clicking C2 and dragging to C25 (or click C2, then Shift+click C25).\n8. Right-click on the selected range and choose \"Format Cells...\" from the context menu.\n9. In the Format Cells dialog, click the \"Numbers\" tab.\n10. Select \"Number\" from the Category list on the left.\n11. Set \"Decimal places\" to a desired value (e.g., 2) and click \"OK\".\n12. Click cell C2 to start selecting the data range again.\n13. Hold Shift and click cell C25 to select the entire range C2:C25.\n14. Press F5 or click Edit > Go to Special > Last Cell to find the maximum value, then manually click through C2:C25 to visually identify the cell with the highest value, or use the Formula Bar: type =MAX(C2:C25) in an empty cell to find the max value, then search for it in C2:C25.\n15. Alternatively, after selecting C2:C25, go to Home menu > Conditional Formatting > New Rule... but since we need exact max, instead: click each cell in C2:C25 and look at the Formula Bar to find the largest value.\n16. Once the cell with the highest value is identified (e.g., suppose it's C10), click that cell.\n17. Click the font color dropdown arrow in the toolbar (the \"A\" with a colored underline icon).\n18. Select \"Custom Color...\" from the dropdown.\n19. In the Color Selection dialog, enter \"#00ff00\" in the hex field or select green, then click \"OK\".\n20. Save the file by clicking File > Save or pressing Ctrl+S.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click cell C1 to ensure it is selected.\n2. Type \"Period Rate (%)\" and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula =A2/B2 and press Enter.\n5. Click cell C2 again to select it.\n6. Click and drag the fill handle (small square at the bottom-right corner of the selected cell) down to C25 to copy the formula to all rows with data.\n7. Select the range C2:C25 by clicking C2 and dragging to C25 (or click C2, then Shift+click C25).\n8. Right-click on the selected range and choose \"Format Cells...\" from the context menu.\n9. In the Format Cells dialog, click the \"Numbers\" tab.\n10. Select \"Number\" from the Category list on the left.\n11. Set \"Decimal places\" to a desired value (e.g., 2) and click \"OK\".\n12. Click cell C2 to start selecting the data range again.\n13. Hold Shift and click cell C25 to select the entire range C2:C25.\n14. Press F5 or click Edit > Go to Special > Last Cell to find the maximum value, then manually click through C2:C25 to visually identify the cell with the highest value, or use the Formula Bar: type =MAX(C2:C25) in an empty cell to find the max value, then search for it in C2:C25.\n15. Alternatively, after selecting C2:C25, go to Home menu > Conditional Formatting > New Rule... but since we need exact max, instead: click each cell in C2:C25 and look at the Formula Bar to find the largest value.\n16. Once the cell with the highest value is identified (e.g., suppose it's C10), click that cell.\n17. Click the font color dropdown arrow in the toolbar (the \"A\" with a colored underline icon).\n18. Select \"Custom Color...\" from the dropdown.\n19. In the Color Selection dialog, enter \"#00ff00\" in the hex field or select green, then click \"OK\".\n20. Save the file by clicking File > Save or pressing Ctrl+S.",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      288,
+      288
+    ]
+  ]
+}

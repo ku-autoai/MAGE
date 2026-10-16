@@ -1,0 +1,108 @@
+{
+  "id": "7efeb4b1-3d19-4762-b163-63328d66303b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the Sequence Numbers as \"No. #\" in the \"Seq No.\" column. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell B2 in the spreadsheet to select it.\n2. Type the text `No. 1` into the active cell.\n3. Press Enter to confirm the entry and move to the next row.\n4. Click on cell B2 again to re-select it.\n5. Drag the selection handle from cell B2 down to the last row containing data in the adjacent \"Order ID\" column (cell B29) to select the entire range B2:B29.\n6. Navigate to the top menu bar and click on `Sheet`.\n7. From the dropdown menu, select `Fill Cells`.\n8. In the submenu, click on `Fill Series...`.\n9. In the \"Fill Series\" dialog box, ensure `Series in` is set to `Columns`.\n10. Under `Series type`, select `AutoFill`.\n11. Click the `OK` button to apply the series.",
+  "source": "https://www.youtube.com/shorts/4jzXfZNhfmk",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23.xlsx",
+            "path": "/home/user/Order_Sales_Serial#.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Sales_Serial#.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Sales_Serial#.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23_gold.xlsx",
+      "dest": "Order_Sales_Serial#_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Sales_Serial#.xlsx",
+      "dest": "Order_Sales_Serial#.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell B2 in the spreadsheet to select it.\n2. Type the text `No. 1` into the active cell.\n3. Press Enter to confirm the entry and move to the next row.\n4. Click on cell B2 again to re-select it.\n5. Drag the selection handle from cell B2 down to the last row containing data in the adjacent \"Order ID\" column (cell B29) to select the entire range B2:B29.\n6. Navigate to the top menu bar and click on `Sheet`.\n7. From the dropdown menu, select `Fill Cells`.\n8. In the submenu, click on `Fill Series...`.\n9. In the \"Fill Series\" dialog box, ensure `Series in` is set to `Columns`.\n10. Under `Series type`, select `AutoFill`.\n11. Click the `OK` button to apply the series.",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      56,
+      57
+    ],
+    [
+      478,
+      478
+    ],
+    [
+      57,
+      58
+    ]
+  ]
+}

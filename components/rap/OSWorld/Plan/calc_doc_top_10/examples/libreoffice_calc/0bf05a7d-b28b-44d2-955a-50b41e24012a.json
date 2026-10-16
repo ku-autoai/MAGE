@@ -1,0 +1,156 @@
+{
+  "id": "0bf05a7d-b28b-44d2-955a-50b41e24012a",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I would like to copy all the numbers in the 'Old ID' column to the 'New 7 Digit Id' column, and pad them with zeros in front, to fill them up to seven digits. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell **D2** (the first empty cell under the \"New 7 Digit Id\" header).\n2. Click on the **Function Wizard** button (`fx`) in the toolbar, or go to **Insert > Function...** in the menu bar, to open the Function Wizard. Alternatively, start typing `=TEXT(` directly in the formula bar if preferred.\n3. In the **Function Wizard** window, locate and select the **TEXT** function from the list (if it's not immediately visible, type \"TEXT\" in the search box or look under the \"Text\" category).\n4. Click **OK** to proceed to the arguments configuration.\n5. In the first argument box (representing the value), click the cell selection button (icon with a spreadsheet and arrow) to collapse the dialog temporarily.\n6. With the dialog collapsed, click on cell **C2** (the first value in the \"Old ID\" column) to select it. The address `C2` should appear in the first argument field.\n7. Click the collapse button again (or maximize the dialog) to return to the Function Wizard.\n8. In the second argument box (representing the format code), type `\"0000000\"`. (Include the double quotes). This specifies the format to pad the number with zeros to 7 digits.\n9. Click **OK** to insert the formula. The cell D2 should now display the ID from C2 padded with zeros.\n10. Click on cell **D2** to select it.\n11. Drag the **fill handle** (the small square at the bottom-right corner of the selected cell) down to the last row containing data in column C. Alternatively, double-click the fill handle to automatically fill down to the last adjacent row.\n12. If double-clicking doesn't fill all the way, ensure the fill extends to the last populated row in column C.\n13. Save the document by pressing **Ctrl+S**.",
+  "source": "https://www.youtube.com/shorts/FPAQaDTS8VY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0bf05a7d-b28b-44d2-955a-50b41e24012a/Customers_New_7digit_Id.xlsx",
+            "path": "/home/user/Customers_New_7digit_Id.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Customers_New_7digit_Id.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0bf05a7d-b28b-44d2-955a-50b41e24012a",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Customers_New_7digit_Id.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Customers_New_7digit_Id.xlsx"
+          ]
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Customers_New_7digit_Id.xlsx",
+        "/home/user/Customers_New_7digit_Id-Sheet1.csv"
+      ],
+      "dest": [
+        "Customers_New_7digit_Id.xlsx",
+        "Customers_New_7digit_Id-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0bf05a7d-b28b-44d2-955a-50b41e24012a/Customers_New_7digit_Id_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0bf05a7d-b28b-44d2-955a-50b41e24012a/Customers_New_7digit_Id_gold.csv"
+      ],
+      "dest": [
+        "Customers_New_7digit_Id_gold.xlsx",
+        "Customers_New_7digit_Id_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell **D2** (the first empty cell under the \"New 7 Digit Id\" header).\n2. Click on the **Function Wizard** button (`fx`) in the toolbar, or go to **Insert > Function...** in the menu bar, to open the Function Wizard. Alternatively, start typing `=TEXT(` directly in the formula bar if preferred.\n3. In the **Function Wizard** window, locate and select the **TEXT** function from the list (if it's not immediately visible, type \"TEXT\" in the search box or look under the \"Text\" category).\n4. Click **OK** to proceed to the arguments configuration.\n5. In the first argument box (representing the value), click the cell selection button (icon with a spreadsheet and arrow) to collapse the dialog temporarily.\n6. With the dialog collapsed, click on cell **C2** (the first value in the \"Old ID\" column) to select it. The address `C2` should appear in the first argument field.\n7. Click the collapse button again (or maximize the dialog) to return to the Function Wizard.\n8. In the second argument box (representing the format code), type `\"0000000\"`. (Include the double quotes). This specifies the format to pad the number with zeros to 7 digits.\n9. Click **OK** to insert the formula. The cell D2 should now display the ID from C2 padded with zeros.\n10. Click on cell **D2** to select it.\n11. Drag the **fill handle** (the small square at the bottom-right corner of the selected cell) down to the last row containing data in column C. Alternatively, double-click the fill handle to automatically fill down to the last adjacent row.\n12. If double-clicking doesn't fill all the way, ensure the fill extends to the last populated row in column C.\n13. Save the document by pressing **Ctrl+S**.",
+  "retrieved_page_ranges": [
+    [
+      51,
+      51
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      56,
+      57
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      55,
+      55
+    ],
+    [
+      68,
+      69
+    ],
+    [
+      68,
+      68
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      65,
+      66
+    ],
+    [
+      71,
+      71
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0bf05a7d-b28b-44d2-955a-50b41e24012a/step_1.png"
+}

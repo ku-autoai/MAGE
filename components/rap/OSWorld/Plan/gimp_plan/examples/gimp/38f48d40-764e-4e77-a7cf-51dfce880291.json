@@ -1,0 +1,53 @@
+{
+  "id": "38f48d40-764e-4e77-a7cf-51dfce880291",
+  "snapshot": "gimp",
+  "instruction": "Could you help me trim the video located at \"/home/user/fullvideo.mp4\" within GIMP, since I only want the second to fourth second part of this video?\n\nRelevant procedure\nINFEASIBLE",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/38f48d40-764e-4e77-a7cf-51dfce880291/fullvideo.mp4",
+            "path": "/home/user/fullvideo.mp4"
+          }
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\nINFEASIBLE",
+  "retrieved_page_ranges": [
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "10.3. Filmstrip",
+      "10.3. Filmstrip"
+    ],
+    [
+      "5.10. Move to Screen",
+      "5.10. Move to Screen"
+    ],
+    [
+      "16.5. Playback",
+      "16.5. Playback"
+    ],
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/38f48d40-764e-4e77-a7cf-51dfce880291/step_1.png"
+}

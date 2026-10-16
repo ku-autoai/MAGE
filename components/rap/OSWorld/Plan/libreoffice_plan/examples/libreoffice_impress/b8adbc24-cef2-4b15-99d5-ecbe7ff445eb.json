@@ -1,0 +1,106 @@
+{
+  "id": "b8adbc24-cef2-4b15-99d5-ecbe7ff445eb",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Go to the second slide and name its title as \"Online Shopping\" with the same color, position and font size as the previous title.\n\nRelevant procedure\n1. Click on the slide sorter view or the thumbnail pane on the left side of the screen to locate the second slide.\n2. Click on the title text box of the first slide to select it.\n3. With the first slide's title selected, note the font size and color from the formatting toolbar, or simply copy the text box (Ctrl+C) to preserve its formatting properties.\n4. Navigate to the second slide by clicking its thumbnail in the slide sorter or using the \"Next Slide\" button.\n5. Click on the existing title text box on the second slide to select it.\n6. Delete the existing text in the title box.\n7. If you copied the first slide's title box, paste it (Ctrl+V) over the existing title box on the second slide to retain the position, font size, and color. If not, manually adjust the font size and color of the second slide's title box to match the first slide's title.\n8. Type \"Online Shopping\" into the title text box.\n9. Ensure the position of the text box matches the previous title by aligning it using the slide guides or by checking the position coordinates in the format menu if necessary.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/b8adbc24-cef2-4b15-99d5-ecbe7ff445eb/189_4.pptx",
+            "path": "/home/user/Desktop/189_4.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/189_4.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "189_4.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/b8adbc24-cef2-4b15-99d5-ecbe7ff445eb/189_4_Gold.pptx",
+      "dest": "189_4_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/189_4.pptx",
+      "dest": "189_4.pptx"
+    },
+    "options": {
+      "examine_alignment": false,
+      "examine_font_name": false,
+      "examine_shape": false,
+      "examine_font_size": false,
+      "examine_run_count": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the slide sorter view or the thumbnail pane on the left side of the screen to locate the second slide.\n2. Click on the title text box of the first slide to select it.\n3. With the first slide's title selected, note the font size and color from the formatting toolbar, or simply copy the text box (Ctrl+C) to preserve its formatting properties.\n4. Navigate to the second slide by clicking its thumbnail in the slide sorter or using the \"Next Slide\" button.\n5. Click on the existing title text box on the second slide to select it.\n6. Delete the existing text in the title box.\n7. If you copied the first slide's title box, paste it (Ctrl+V) over the existing title box on the second slide to retain the position, font size, and color. If not, manually adjust the font size and color of the second slide's title box to match the first slide's title.\n8. Type \"Online Shopping\" into the title text box.\n9. Ensure the position of the text box matches the previous title by aligning it using the slide guides or by checking the position coordinates in the format menu if necessary.",
+  "retrieved_page_ranges": [
+    [
+      273,
+      279
+    ],
+    [
+      289,
+      293
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      42,
+      60
+    ]
+  ]
+}

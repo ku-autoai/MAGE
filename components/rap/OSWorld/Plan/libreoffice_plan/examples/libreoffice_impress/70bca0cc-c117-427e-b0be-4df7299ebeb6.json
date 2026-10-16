@@ -1,0 +1,100 @@
+{
+  "id": "70bca0cc-c117-427e-b0be-4df7299ebeb6",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Make the background color of slide 2 same as the color of its title.\n\nRelevant procedure\n1. Click on Slide 2 in the slide pane on the left to select it.\n2. Double-click the title text box to enter edit mode, then click inside the title text to position the cursor.\n3. Open the Character Formatting or Font Color tool (usually found in the Formatting sidebar or toolbar) to identify or pick the specific color of the title text.\n4. Right-click in an empty area of the slide background (avoiding any text boxes or shapes).\n5. Select \"Slide Properties\" from the context menu.\n6. Click the \"Background\" tab in the Slide Properties dialog.\n7. Select \"Color\" as the background type.\n8. Click the color selection box and choose the exact same color identified in step 3 for the title.\n9. Click \"OK\" to apply the new background color.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/70bca0cc-c117-427e-b0be-4df7299ebeb6/71_6.pptx",
+            "path": "/home/user/Desktop/71_6.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/71_6.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "71_6.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/70bca0cc-c117-427e-b0be-4df7299ebeb6/71_6_Gold.pptx",
+      "dest": "71_6_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/71_6.pptx",
+      "dest": "71_6.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on Slide 2 in the slide pane on the left to select it.\n2. Double-click the title text box to enter edit mode, then click inside the title text to position the cursor.\n3. Open the Character Formatting or Font Color tool (usually found in the Formatting sidebar or toolbar) to identify or pick the specific color of the title text.\n4. Right-click in an empty area of the slide background (avoiding any text boxes or shapes).\n5. Select \"Slide Properties\" from the context menu.\n6. Click the \"Background\" tab in the Slide Properties dialog.\n7. Select \"Color\" as the background type.\n8. Click the color selection box and choose the exact same color identified in step 3 for the title.\n9. Click \"OK\" to apply the new background color.",
+  "retrieved_page_ranges": [
+    [
+      273,
+      279
+    ],
+    [
+      256,
+      262
+    ],
+    [
+      194,
+      197
+    ],
+    [
+      327,
+      332
+    ],
+    [
+      273,
+      279
+    ]
+  ]
+}

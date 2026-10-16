@@ -1,0 +1,109 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure\n1. Click on the empty header cell to the right of the last loan data column (e.g., if loans are in columns A-D, click cell E1).\n2. Type \"Maturity Date\" and press Enter.\n3. Click on the first empty cell in the new \"Maturity Date\" column (e.g., cell E2, directly below the header).\n4. Identify the columns for \"Loan Start Date\" (e.g., column B) and \"Loan Term in Months\" (e.g., column C) from the visible data.\n5. Type the formula `=EDATE(B2, C2)` (replace B2 with the cell containing the start date for the first loan, and C2 with the cell containing the term in months for the first loan) and press Enter.\n   - Note: If the term is not in months, adjust the formula accordingly (e.g., use `=B2 + D2` if D2 contains days, or `=EDATE(B2, D2*12)` if D2 contains years).\n6. With the cell containing the formula still selected, hover over the bottom-right corner until the cursor changes to a black cross (fill handle).\n7. Double-click the fill handle to automatically copy the formula down to all rows containing loan data, or click and drag it down to the last row of the loan list.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the empty header cell to the right of the last loan data column (e.g., if loans are in columns A-D, click cell E1).\n2. Type \"Maturity Date\" and press Enter.\n3. Click on the first empty cell in the new \"Maturity Date\" column (e.g., cell E2, directly below the header).\n4. Identify the columns for \"Loan Start Date\" (e.g., column B) and \"Loan Term in Months\" (e.g., column C) from the visible data.\n5. Type the formula `=EDATE(B2, C2)` (replace B2 with the cell containing the start date for the first loan, and C2 with the cell containing the term in months for the first loan) and press Enter.\n   - Note: If the term is not in months, adjust the formula accordingly (e.g., use `=B2 + D2` if D2 contains days, or `=EDATE(B2, D2*12)` if D2 contains years).\n6. With the cell containing the formula still selected, hover over the bottom-right corner until the cursor changes to a black cross (fill handle).\n7. Double-click the fill handle to automatically copy the formula down to all rows containing loan data, or click and drag it down to the last row of the loan list.",
+  "retrieved_page_ranges": [
+    [
+      57,
+      58
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      290,
+      290
+    ],
+    [
+      55,
+      55
+    ],
+    [
+      83,
+      83
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,109 @@
+{
+  "id": "7efeb4b1-3d19-4762-b163-63328d66303b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill the Sequence Numbers as \"No. #\" in the \"Seq No.\" column. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click cell B2 in the \"Seq No.\" column to select it.\n2. Type exactly: `No. 1`\n3. Press the Down arrow key to move to cell B3.\n4. Type exactly: `No. 2`\n5. Press Ctrl+Shift+Up arrow to select the range B2:B3.\n6. Press Ctrl+D to fill down the series pattern to the bottom of the data range in column C.",
+  "source": "https://www.youtube.com/shorts/4jzXfZNhfmk",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23.xlsx",
+            "path": "/home/user/Order_Sales_Serial#.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Order_Sales_Serial#.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Order_Sales_Serial#.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/Order_Sales_Serial%23_gold.xlsx",
+      "dest": "Order_Sales_Serial#_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Order_Sales_Serial#.xlsx",
+      "dest": "Order_Sales_Serial#.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 in the \"Seq No.\" column to select it.\n2. Type exactly: `No. 1`\n3. Press the Down arrow key to move to cell B3.\n4. Type exactly: `No. 2`\n5. Press Ctrl+Shift+Up arrow to select the range B2:B3.\n6. Press Ctrl+D to fill down the series pattern to the bottom of the data range in column C.",
+  "retrieved_page_ranges": [
+    [
+      370,
+      370
+    ],
+    [
+      408,
+      408
+    ],
+    [
+      478,
+      481
+    ],
+    [
+      225,
+      225
+    ],
+    [
+      51,
+      51
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7efeb4b1-3d19-4762-b163-63328d66303b/step_1.png"
+}

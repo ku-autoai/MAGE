@@ -1,0 +1,109 @@
+{
+  "id": "1e8df695-bd1b-45b3-b557-e7d599cf7597",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Add a new column named \"Profit\" right next to the 'CGOS' column and calculate the profit for each week by subtracting \"COGS\" from \"Sales\" in that column.\n\nRelevant procedure\n1. Click on column D header to select the entire column.\n2. Right-click on the selected column D header and choose \"Insert Columns before\" from the context menu.\n3. Click on cell D1 (which is now the newly inserted column header).\n4. Type \"Profit\" and press Enter.\n5. Click on cell D2.\n6. Type the formula `=B2-C2` and press Enter.\n7. Select cell D2 to ensure it is active.\n8. Move to the bottom-right corner of cell D2 until the cursor changes to a fill handle (plus sign).\n9. Double-click the fill handle to auto-fill the formula down to the last row with data (row 11).",
+  "source": "SheetCopilot@203",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/WeeklySales.xlsx",
+            "path": "/home/user/WeeklySales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/WeeklySales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1e8df695-bd1b-45b3-b557-e7d599cf7597",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "WeeklySales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/6_WeeklySales_gt1.xlsx",
+      "dest": "6_WeeklySales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/WeeklySales.xlsx",
+      "dest": "WeeklySales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on column D header to select the entire column.\n2. Right-click on the selected column D header and choose \"Insert Columns before\" from the context menu.\n3. Click on cell D1 (which is now the newly inserted column header).\n4. Type \"Profit\" and press Enter.\n5. Click on cell D2.\n6. Type the formula `=B2-C2` and press Enter.\n7. Select cell D2 to ensure it is active.\n8. Move to the bottom-right corner of cell D2 until the cursor changes to a fill handle (plus sign).\n9. Double-click the fill handle to auto-fill the formula down to the last row with data (row 11).",
+  "retrieved_page_ranges": [
+    [
+      16,
+      16
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/step_1.png"
+}

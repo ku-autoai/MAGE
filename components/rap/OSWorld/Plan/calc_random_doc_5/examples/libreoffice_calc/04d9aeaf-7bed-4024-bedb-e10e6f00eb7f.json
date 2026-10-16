@@ -1,0 +1,109 @@
+{
+  "id": "04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In a new sheet (\"Sheet2\") with 4 headers \"Year\", \"CA changes\", \"FA changes\", and \"OA changes\", calculate the percentage annual changes compared to last year in 2015 to 2019 for the Current Assets, Fixed Assets, and Other Assets columns.\n\nRelevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the screen to switch to that worksheet.\n2. Click cell A1.\n3. Type \"Year\" and press Enter.\n4. Click cell B1.\n5. Type \"CA changes\" and press Enter.\n6. Click cell C1.\n7. Type \"FA changes\" and press Enter.\n8. Click cell D1.\n9. Type \"OA changes\" and press Enter.\n10. Click cell A2.\n11. Type \"2015\" and press Enter.\n12. Click cell A3.\n13. Type \"2016\" and press Enter.\n14. Click cell A4.\n15. Type \"2017\" and press Enter.\n16. Click cell A5.\n17. Type \"2018\" and press Enter.\n18. Click cell A6.\n19. Type \"2019\" and press Enter.\n20. Click cell B2.\n21. Type the formula: =(Sheet1.B5-Sheet1.B4)/Sheet1.B4\n22. Press Enter.\n23. Click cell C2.\n24. Type the formula: =(Sheet1.C5-Sheet1.C4)/Sheet1.C4\n25. Press Enter.\n26. Click cell D2.\n27. Type the formula: =(Sheet1.D5-Sheet1.D4)/Sheet1.D4\n28. Press Enter.\n29. Select the range B2:D2 by clicking and dragging from B2 to D2.\n30. Click and hold the small square fill handle at the bottom-right corner of the selected range and drag down to row 6 (D6), then release.\n31. Select the range B2:D6 by clicking and dragging from B2 to D6.\n32. Click the Percentage (%) button in the toolbar to format the cells as percentages.",
+  "source": "SheetCopilot@168",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/SmallBalanceSheet.xlsx",
+            "path": "/home/user/SmallBalanceSheet.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SmallBalanceSheet.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SmallBalanceSheet.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/4_SmallBalanceSheet_gt1.xlsx",
+      "dest": "4_SmallBalanceSheet_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SmallBalanceSheet.xlsx",
+      "dest": "SmallBalanceSheet.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the screen to switch to that worksheet.\n2. Click cell A1.\n3. Type \"Year\" and press Enter.\n4. Click cell B1.\n5. Type \"CA changes\" and press Enter.\n6. Click cell C1.\n7. Type \"FA changes\" and press Enter.\n8. Click cell D1.\n9. Type \"OA changes\" and press Enter.\n10. Click cell A2.\n11. Type \"2015\" and press Enter.\n12. Click cell A3.\n13. Type \"2016\" and press Enter.\n14. Click cell A4.\n15. Type \"2017\" and press Enter.\n16. Click cell A5.\n17. Type \"2018\" and press Enter.\n18. Click cell A6.\n19. Type \"2019\" and press Enter.\n20. Click cell B2.\n21. Type the formula: =(Sheet1.B5-Sheet1.B4)/Sheet1.B4\n22. Press Enter.\n23. Click cell C2.\n24. Type the formula: =(Sheet1.C5-Sheet1.C4)/Sheet1.C4\n25. Press Enter.\n26. Click cell D2.\n27. Type the formula: =(Sheet1.D5-Sheet1.D4)/Sheet1.D4\n28. Press Enter.\n29. Select the range B2:D2 by clicking and dragging from B2 to D2.\n30. Click and hold the small square fill handle at the bottom-right corner of the selected range and drag down to row 6 (D6), then release.\n31. Select the range B2:D6 by clicking and dragging from B2 to D6.\n32. Click the Percentage (%) button in the toolbar to format the cells as percentages.",
+  "retrieved_page_ranges": [
+    [
+      451,
+      452
+    ],
+    [
+      23,
+      25
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      465,
+      468
+    ],
+    [
+      408,
+      409
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/step_1.png"
+}

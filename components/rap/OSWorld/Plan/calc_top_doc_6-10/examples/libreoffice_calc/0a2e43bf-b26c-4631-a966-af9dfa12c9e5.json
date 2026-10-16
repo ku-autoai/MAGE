@@ -1,0 +1,117 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure\n\n1. Click on cell A12 to select it.\n\n2. Type \"Total\" and press Enter.\n\n3. Click on cell B12 to select it.\n\n4. Type =SUM(B2:B11) and press Enter.\n\n5. Select the range B12:H12 by clicking and dragging from cell B12 to cell H12.\n\n6. With the range B12:H12 selected, click on the \"Insert\" menu at the top of the window.\n\n7. From the dropdown menu, click on \"Chart...\".\n\n8. In the Chart Wizard dialog, select \"Line\" as the chart type.\n\n9. In the chart type options, select \"Points and Lines\" variant.\n\n10. Click \"Next\" to proceed to the data range configuration.\n\n11. Ensure the data range is correct (B12:H12) and the rows/columns are set correctly for months on the x-axis.\n\n12. Click \"Next\" to proceed to the chart elements configuration.\n\n13. Under the \"Titles\" tab, set the X-axis title to \"Months\".\n\n14. Click \"Finish\" to create the chart.",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell A12 to select it.\n\n2. Type \"Total\" and press Enter.\n\n3. Click on cell B12 to select it.\n\n4. Type =SUM(B2:B11) and press Enter.\n\n5. Select the range B12:H12 by clicking and dragging from cell B12 to cell H12.\n\n6. With the range B12:H12 selected, click on the \"Insert\" menu at the top of the window.\n\n7. From the dropdown menu, click on \"Chart...\".\n\n8. In the Chart Wizard dialog, select \"Line\" as the chart type.\n\n9. In the chart type options, select \"Points and Lines\" variant.\n\n10. Click \"Next\" to proceed to the data range configuration.\n\n11. Ensure the data range is correct (B12:H12) and the rows/columns are set correctly for months on the x-axis.\n\n12. Click \"Next\" to proceed to the chart elements configuration.\n\n13. Under the \"Titles\" tab, set the X-axis title to \"Months\".\n\n14. Click \"Finish\" to create the chart.",
+  "retrieved_page_ranges": [
+    [
+      169,
+      169
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      336,
+      338
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/step_1.png"
+}

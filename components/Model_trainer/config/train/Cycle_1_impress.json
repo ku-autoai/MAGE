@@ -1,0 +1,29 @@
+{
+  "env": {
+    "PYTORCH_CUDA_ALLOC_CONF": "max_split_size_mb:64,expandable_segments:True"
+  },
+  "launcher": {
+    "type": "deepspeed",
+    "master_port": 29505,
+    "include": "localhost:1,2,3"
+  },
+  "args": {
+    "model_path": "ByteDance-Seed/UI-TARS-1.5-7B",
+    "engine": "deepspeed",
+    "seed": 1,
+    "output_dir": "output/grpo/model/Libre_calc_impress/final_experiment/with_plan/Cycle_1",
+    "data_root": "${DATA_ROOT}/episode/2_impress/final_experiment/train/Cycle_0_train",
+    "epochs": 2,
+    "ds_config": "Model_trainer/config/ds_config.json",
+    "use_lora": true,
+    "use_adaptive_kl": false,
+    "use_kl": true,
+    "beta": 0.1,
+    "num_workers": 0,
+    "micro_batch_size_per_gpu": 2,
+    "uniform_sampling": true,
+    "include_failed_trajectories": true,
+    "div_traj_len": true,
+    "eval_subset_size": 1
+  }
+}

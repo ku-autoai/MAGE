@@ -1,0 +1,117 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n1. Click cell C1 to select it.\n2. Type \"Period Rate (%)\" and press Enter to create the header in column C.\n3. Click cell C2 to select it.\n4. Type the formula `=A2/B2` and press Enter to calculate the period rate for the first data row.\n5. Click cell C2 again to ensure it is selected (containing the formula).\n6. Copy the cell by pressing Ctrl+C.\n7. Click the column header \"C\" to select the entire column.\n8. Hold Shift and press the Down arrow key once to extend selection to the last data row (based on visible data in rows 2–25).\n9. Paste the formula into the selected range by pressing Ctrl+V.\n10. Click cell C2 to select it.\n11. Press Ctrl+C to copy it.\n12. Select the range C2:C25 (click C2, then Shift+click C25).\n13. Press Ctrl+Shift+V to open Paste Special, then click \"Numbers only\" or similar option, and click OK to convert all results to numbers.\n14. Select the range C2:C25 (click C2, then Shift+click C25).\n15. Click the \"Home\" tab if not already active, then click the \"Find & Select\" button in the Editing group.\n16. Click \"Go To Special\", then select \"Maximum values\", and click OK.\n17. With the maximum value cell selected, click the font color dropdown in the toolbar.\n18. Click \"More Colors\" if needed, then enter #00ff00 as the custom color and click OK.",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell C1 to select it.\n2. Type \"Period Rate (%)\" and press Enter to create the header in column C.\n3. Click cell C2 to select it.\n4. Type the formula `=A2/B2` and press Enter to calculate the period rate for the first data row.\n5. Click cell C2 again to ensure it is selected (containing the formula).\n6. Copy the cell by pressing Ctrl+C.\n7. Click the column header \"C\" to select the entire column.\n8. Hold Shift and press the Down arrow key once to extend selection to the last data row (based on visible data in rows 2–25).\n9. Paste the formula into the selected range by pressing Ctrl+V.\n10. Click cell C2 to select it.\n11. Press Ctrl+C to copy it.\n12. Select the range C2:C25 (click C2, then Shift+click C25).\n13. Press Ctrl+Shift+V to open Paste Special, then click \"Numbers only\" or similar option, and click OK to convert all results to numbers.\n14. Select the range C2:C25 (click C2, then Shift+click C25).\n15. Click the \"Home\" tab if not already active, then click the \"Find & Select\" button in the Editing group.\n16. Click \"Go To Special\", then select \"Maximum values\", and click OK.\n17. With the maximum value cell selected, click the font color dropdown in the toolbar.\n18. Click \"More Colors\" if needed, then enter #00ff00 as the custom color and click OK.",
+  "retrieved_page_ranges": [
+    [
+      315,
+      316
+    ],
+    [
+      132,
+      133
+    ],
+    [
+      490,
+      490
+    ],
+    [
+      64,
+      65
+    ],
+    [
+      35,
+      35
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/step_1.png"
+}

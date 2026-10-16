@@ -1,0 +1,80 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nBased on the screenshot and manual snippets, here is the step-by-step procedure to resize the spreadsheet to one page and export it as a PDF to your home directory.\n\n**Relevant procedure**\n\n1.  Click the **Format** menu in the top menu bar.\n2.  Select **Page Style...** from the dropdown menu to open the Page Style dialog.\n3.  In the left-hand pane of the dialog, click the **Sheet** tab.\n4.  Locate the **Scaling mode** section within the \"Scale\" area.\n5.  Click the dropdown menu next to \"Scaling mode\" and select **Fit print range(s) on number of pages**.\n6.  Ensure the width and height boxes are set to `1` (or just `1` page if a single field is present) to force the content onto a single page.\n7.  Click the **OK** button to apply the scaling changes.\n8.  Click the **File** menu in the top menu bar.\n9.  Hover over **Export...** to open the submenu, then click **Export as PDF...** (or click **Export...** and select \"PDF - Portable Document Format\" from the file type dropdown).\n10. When the \"PDF Options\" dialog appears, click the **Export** button (do not change settings unless necessary).\n11. In the file save dialog, ensure the **Home** folder is selected on the left sidebar.\n12. In the \"Name\" field, verify the filename matches the spreadsheet name (e.g., `Resize_Cells_Fit_Page`).\n13. Click the **Save** button to export the file.",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the screenshot and manual snippets, here is the step-by-step procedure to resize the spreadsheet to one page and export it as a PDF to your home directory.\n\n**Relevant procedure**\n\n1.  Click the **Format** menu in the top menu bar.\n2.  Select **Page Style...** from the dropdown menu to open the Page Style dialog.\n3.  In the left-hand pane of the dialog, click the **Sheet** tab.\n4.  Locate the **Scaling mode** section within the \"Scale\" area.\n5.  Click the dropdown menu next to \"Scaling mode\" and select **Fit print range(s) on number of pages**.\n6.  Ensure the width and height boxes are set to `1` (or just `1` page if a single field is present) to force the content onto a single page.\n7.  Click the **OK** button to apply the scaling changes.\n8.  Click the **File** menu in the top menu bar.\n9.  Hover over **Export...** to open the submenu, then click **Export as PDF...** (or click **Export...** and select \"PDF - Portable Document Format\" from the file type dropdown).\n10. When the \"PDF Options\" dialog appears, click the **Export** button (do not change settings unless necessary).\n11. In the file save dialog, ensure the **Home** folder is selected on the left sidebar.\n12. In the \"Name\" field, verify the filename matches the spreadsheet name (e.g., `Resize_Cells_Fit_Page`).\n13. Click the **Save** button to export the file.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      238,
+      240
+    ],
+    [
+      240,
+      241
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/step_1.png"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n\n1. Locate the column containing the mixed data (First Name, Last Name, Rank) and the target columns for \"First Name\", \"Last Name\", and \"Rank\".\n2. Insert new columns if necessary to hold the split data, ensuring you do not overwrite the original mixed data column.\n3. Select the cells in the first target column (e.g., \"First Name\") corresponding to the rows with mixed data.\n4. Go to the menu bar and click **Data**.\n5. Select **Text to Columns** from the dropdown menu.\n6. In the \"Split Range\" dialog, ensure **Split by separator** is selected.\n7. Under \"Separators\", check **Other** and type the delimiter character used in the mixed data (e.g., a space, comma, or semicolon) into the input box. If names have middle initials or suffixes that complicate simple splitting, proceed to step 8.\n8. If the data structure is consistent (e.g., \"Rank, Last Name, First Name\"), use **Fixed width** instead: click **Fixed width**, then click in the preview window to place break lines between Rank, Last Name, and First Name.\n9. Adjust the output range if necessary to ensure the split data fills the correct target columns.\n10. Click **OK** to split the data into the respective columns.\n11. Verify that the original data column remains untouched and the new columns are populated correctly.\n12. If the order of columns is incorrect (e.g., First Name ended up in the Last Name column), copy the contents of the resulting columns and paste them into the correct target columns manually.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Locate the column containing the mixed data (First Name, Last Name, Rank) and the target columns for \"First Name\", \"Last Name\", and \"Rank\".\n2. Insert new columns if necessary to hold the split data, ensuring you do not overwrite the original mixed data column.\n3. Select the cells in the first target column (e.g., \"First Name\") corresponding to the rows with mixed data.\n4. Go to the menu bar and click **Data**.\n5. Select **Text to Columns** from the dropdown menu.\n6. In the \"Split Range\" dialog, ensure **Split by separator** is selected.\n7. Under \"Separators\", check **Other** and type the delimiter character used in the mixed data (e.g., a space, comma, or semicolon) into the input box. If names have middle initials or suffixes that complicate simple splitting, proceed to step 8.\n8. If the data structure is consistent (e.g., \"Rank, Last Name, First Name\"), use **Fixed width** instead: click **Fixed width**, then click in the preview window to place break lines between Rank, Last Name, and First Name.\n9. Adjust the output range if necessary to ensure the split data fills the correct target columns.\n10. Click **OK** to split the data into the respective columns.\n11. Verify that the original data column remains untouched and the new columns are populated correctly.\n12. If the order of columns is incorrect (e.g., First Name ended up in the Last Name column), copy the contents of the resulting columns and paste them into the correct target columns manually.",
+  "retrieved_page_ranges": [
+    [
+      302,
+      302
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      302,
+      303
+    ],
+    [
+      290,
+      290
+    ]
+  ],
+  "first_screen_image_path": null
+}

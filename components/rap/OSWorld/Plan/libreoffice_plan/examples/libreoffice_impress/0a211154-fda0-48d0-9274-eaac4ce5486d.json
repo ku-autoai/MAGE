@@ -1,0 +1,102 @@
+{
+  "id": "0a211154-fda0-48d0-9274-eaac4ce5486d",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Set the background color to yellow for any slide that contains one or more images of real people, and set the title of slide 2 as \"Let's start\".\n\nRelevant procedure\n1. Click the slide panel on the left side of the window to view all slide thumbnails.\n2. Examine the thumbnails of each slide to identify which slides contain images of real people.\n3. Click on the first identified slide containing a real person to select it.\n4. Right-click on the selected slide's content area or navigate to the \"Slide\" menu and select \"Slide Properties\" (or \"Background\") to open the formatting dialog.\n5. In the background settings, select the \"Color\" tab or option.\n6. Choose \"Yellow\" from the color palette.\n7. Click \"OK\" or \"Apply\" to confirm the background change for this slide.\n8. Repeat steps 4-7 for any other slides identified in step 2 that contain images of real people.\n9. In the left slide panel, click on the thumbnail for Slide 2 to select it.\n10. In the main editing area, click on the title text box of Slide 2.\n11. Delete the existing title text.\n12. Type \"Let's start\" into the title text box.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/0a211154-fda0-48d0-9274-eaac4ce5486d/13_0_.pptx",
+            "path": "/home/user/Desktop/13_0.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/13_0.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "13_0.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 3
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/0a211154-fda0-48d0-9274-eaac4ce5486d/13_0_Gold.pptx",
+      "dest": "13_0_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/13_0.pptx",
+      "dest": "13_0.pptx"
+    },
+    "options": {
+      "examine_shape": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the slide panel on the left side of the window to view all slide thumbnails.\n2. Examine the thumbnails of each slide to identify which slides contain images of real people.\n3. Click on the first identified slide containing a real person to select it.\n4. Right-click on the selected slide's content area or navigate to the \"Slide\" menu and select \"Slide Properties\" (or \"Background\") to open the formatting dialog.\n5. In the background settings, select the \"Color\" tab or option.\n6. Choose \"Yellow\" from the color palette.\n7. Click \"OK\" or \"Apply\" to confirm the background change for this slide.\n8. Repeat steps 4-7 for any other slides identified in step 2 that contain images of real people.\n9. In the left slide panel, click on the thumbnail for Slide 2 to select it.\n10. In the main editing area, click on the title text box of Slide 2.\n11. Delete the existing title text.\n12. Type \"Let's start\" into the title text box.",
+  "retrieved_page_ranges": [
+    [
+      273,
+      279
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      194,
+      197
+    ],
+    [
+      60,
+      65
+    ],
+    [
+      273,
+      279
+    ]
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell B3 (the first data cell under the \"Jun\" header).\n2. Press **Ctrl + Shift + End** on the keyboard to select the range from B3 down to the last used row and column (ending at F33).\n3. Open the \"Format\" menu from the top menu bar.\n4. Select \"Styles\" > \"Manage Styles...\" from the dropdown menu.\n5. In the \"Styles\" window that appears, if the view does not show a list of styles, click the \"Styles\" icon (the third icon, looks like a paintbrush) in the top-left of the dialog to switch to the Styles tab.\n6. In the \"Category\" list on the left, click on \"Cell Styles\".\n7. Scroll down the list of styles on the right to find a style named \"Good\" (or simply select the default style \"Default\" if preferred, but we need to edit a copy). Let's create a new one. Click the \"New\" button (first icon, green plus) at the top of the styles list.\n8. In the \"Edit Style\" dialog, type \"WeekendHighlight\" in the \"Name\" field.\n9. Click on the \"Background\" tab in the left pane of the \"Edit Style\" dialog.\n10. Click on the \"Color\" button.\n11. In the color picker, type `#ff0000` in the \"Hex\" field (or use the RGB sliders to set Red=255, Green=0, Blue=0).\n12. Click \"OK\" to close the color picker.\n13. Click \"OK\" to close the \"Edit Style\" dialog.\n14. The style \"WeekendHighlight\" should now be selected in the Styles list. Click \"Close\" to close the Styles window.\n15. Now, we need to apply this style only to the weekend columns. Since the selection includes all months, we must refine our approach. The previous selection was B3:F33.\n16. Deselect all by pressing **Esc** or clicking a single cell.\n17. Click on cell B3 again.\n18. Press **Ctrl + Shift + End** to re-select the full data range B3:F33.\n19. Hold down the **Ctrl** key.\n20. While holding **",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell B3 (the first data cell under the \"Jun\" header).\n2. Press **Ctrl + Shift + End** on the keyboard to select the range from B3 down to the last used row and column (ending at F33).\n3. Open the \"Format\" menu from the top menu bar.\n4. Select \"Styles\" > \"Manage Styles...\" from the dropdown menu.\n5. In the \"Styles\" window that appears, if the view does not show a list of styles, click the \"Styles\" icon (the third icon, looks like a paintbrush) in the top-left of the dialog to switch to the Styles tab.\n6. In the \"Category\" list on the left, click on \"Cell Styles\".\n7. Scroll down the list of styles on the right to find a style named \"Good\" (or simply select the default style \"Default\" if preferred, but we need to edit a copy). Let's create a new one. Click the \"New\" button (first icon, green plus) at the top of the styles list.\n8. In the \"Edit Style\" dialog, type \"WeekendHighlight\" in the \"Name\" field.\n9. Click on the \"Background\" tab in the left pane of the \"Edit Style\" dialog.\n10. Click on the \"Color\" button.\n11. In the color picker, type `#ff0000` in the \"Hex\" field (or use the RGB sliders to set Red=255, Green=0, Blue=0).\n12. Click \"OK\" to close the color picker.\n13. Click \"OK\" to close the \"Edit Style\" dialog.\n14. The style \"WeekendHighlight\" should now be selected in the Styles list. Click \"Close\" to close the Styles window.\n15. Now, we need to apply this style only to the weekend columns. Since the selection includes all months, we must refine our approach. The previous selection was B3:F33.\n16. Deselect all by pressing **Esc** or clicking a single cell.\n17. Click on cell B3 again.\n18. Press **Ctrl + Shift + End** to re-select the full data range B3:F33.\n19. Hold down the **Ctrl** key.\n20. While holding **",
+  "retrieved_page_ranges": [
+    [
+      196,
+      196
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/step_1.png"
+}

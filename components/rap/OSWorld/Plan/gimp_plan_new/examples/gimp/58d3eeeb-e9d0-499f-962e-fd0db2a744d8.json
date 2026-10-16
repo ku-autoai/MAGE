@@ -1,0 +1,62 @@
+{
+  "id": "58d3eeeb-e9d0-499f-962e-fd0db2a744d8",
+  "snapshot": "gimp",
+  "instruction": "Based on the image above, translate the hidden audio conversation into French.\n\nRelevant procedure:\n1. Close the \"Software Updates\" notification by clicking the \"X\" icon in the top-right corner of the pop-up window.\n2. Click on the GIMP icon in the left sidebar to launch the application (or ensure the current window is focused).\n3. Click on the \"File\" menu at the top-left of the screen.\n4. Select \"Import\" (or \"Open\" if Import is not listed) to import the hidden audio file.\n5. Choose the audio file location, select it, and click \"Open\".\n6. Click on the \"Layer\" menu at the top.\n7. Select \"Transparency\" > \"Add Alpha Channel\" if necessary for the task context.\n8. Click on the \"Select\" menu at the top.\n9. Select \"All\" to select the entire layer.\n10. Click on the \"Edit\" menu at the top.\n11. Select \"Copy\" to copy the selection.\n12. Click on the \"Image\" menu at the top.\n13. Select \"New\" to create a new image.\n14. In the \"New Image\" dialog, set the width and height to 1000x1000 pixels.\n15. Click \"OK\" to create the new image.\n16. Click on the \"Edit\" menu at the top.\n17. Select \"Paste as New Layer\" to paste the copied content.\n18. Click on the \"Filters\" menu at the top.\n19. Select \"Distorts\" > \"Cell Noise\" to apply the filter.\n20. Adjust the parameters in the \"Cell Noise\" dialog box as needed.\n21. Click \"OK\" to apply the filter.\n22. Click on the \"File\" menu at the top.\n23. Select \"Export As\" to save the final image.\n24. Choose the save location, enter the filename \"translated_audio.png\", and click \"Save\".",
+  "source": "",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/58d3eeeb-e9d0-499f-962e-fd0db2a744d8/heron.jpeg",
+            "path": "/home/user/Desktop/heron.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/heron.jpeg"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Close the \"Software Updates\" notification by clicking the \"X\" icon in the top-right corner of the pop-up window.\n2. Click on the GIMP icon in the left sidebar to launch the application (or ensure the current window is focused).\n3. Click on the \"File\" menu at the top-left of the screen.\n4. Select \"Import\" (or \"Open\" if Import is not listed) to import the hidden audio file.\n5. Choose the audio file location, select it, and click \"Open\".\n6. Click on the \"Layer\" menu at the top.\n7. Select \"Transparency\" > \"Add Alpha Channel\" if necessary for the task context.\n8. Click on the \"Select\" menu at the top.\n9. Select \"All\" to select the entire layer.\n10. Click on the \"Edit\" menu at the top.\n11. Select \"Copy\" to copy the selection.\n12. Click on the \"Image\" menu at the top.\n13. Select \"New\" to create a new image.\n14. In the \"New Image\" dialog, set the width and height to 1000x1000 pixels.\n15. Click \"OK\" to create the new image.\n16. Click on the \"Edit\" menu at the top.\n17. Select \"Paste as New Layer\" to paste the copied content.\n18. Click on the \"Filters\" menu at the top.\n19. Select \"Distorts\" > \"Cell Noise\" to apply the filter.\n20. Adjust the parameters in the \"Cell Noise\" dialog box as needed.\n21. Click \"OK\" to apply the filter.\n22. Click on the \"File\" menu at the top.\n23. Select \"Export As\" to save the final image.\n24. Choose the save location, enter the filename \"translated_audio.png\", and click \"Save\".",
+  "retrieved_page_ranges": [
+    [
+      "14.5. Cell Noise",
+      "14.5. Cell Noise"
+    ],
+    [
+      "2. Image Structure Related Dialogs",
+      "2. Image Structure Related Dialogs"
+    ],
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "2.21. Close All",
+      "2.21. Close All"
+    ],
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/58d3eeeb-e9d0-499f-962e-fd0db2a744d8/step_1.png"
+}

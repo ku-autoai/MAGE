@@ -1,0 +1,101 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nBased on the screenshot and the requirement to hide rows containing \"#N/A\" without deleting them or using filters, the best approach is to **Hide Rows** based on the specific content. Since there are many rows with \"#N/A\", manually hiding each one is tedious. The most efficient method in LibreOffice Calc for this specific \"hide, don't delete, no filter\" constraint is to use **Find & Replace** to identify the cells, select the corresponding rows, and hide them. However, a simpler and more robust GUI-based method for a large number of scattered rows is often to use **Conditional Formatting** with an icon or background to mark them, but the task says \"hide them\".\n\nActually, the most direct way to \"hide\" rows containing a specific value without filters in a spreadsheet, if you want to do it in one go, is difficult via standard menus. Let's look at the options.\n1.  **Manual Hiding**: Select rows -> Right click -> Hide. Too slow for many rows.\n2.  **Filters**: Explicitly forbidden (\"filter is not needed\").\n3.  **VBA/Macro**: Not a standard GUI interaction.\n4.  **Find & Select**: We can use the \"Find & Replace\" tool to find all instances of \"#N/A\", select them, and then hide the rows.\n\nLet's refine the \"Find & Hide\" procedure:\n1.  Use **Find & Replace** (`Ctrl+H` or `Edit` menu).\n2.  Search for `#N/A`.\n3.  Click **Find All**.\n4.  In the results list, **Select All**.\n5.  This selects all cells containing `#N/A`.\n6.  Close the Find dialog.\n7.  Now we need to hide the *rows* containing these cells. There isn't a direct \"Hide Rows of Selection\" button. We would need to select the entire row for each. This is tricky.\n\nAlternative Interpretation: Perhaps the user just wants to hide the specific cells? No, \"hide them in the table\" usually implies the rows or the data visibility. If we hide the rows, the table shrinks.\n\nLet's look for a simpler path. Is there a \"Hide Rows\" feature based on criteria? No.\n\nLet's reconsider the \"Filter\" constraint. \"Filter is not needed\" might mean \"You don't need to create a complex filter setup\" or \"Don",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the screenshot and the requirement to hide rows containing \"#N/A\" without deleting them or using filters, the best approach is to **Hide Rows** based on the specific content. Since there are many rows with \"#N/A\", manually hiding each one is tedious. The most efficient method in LibreOffice Calc for this specific \"hide, don't delete, no filter\" constraint is to use **Find & Replace** to identify the cells, select the corresponding rows, and hide them. However, a simpler and more robust GUI-based method for a large number of scattered rows is often to use **Conditional Formatting** with an icon or background to mark them, but the task says \"hide them\".\n\nActually, the most direct way to \"hide\" rows containing a specific value without filters in a spreadsheet, if you want to do it in one go, is difficult via standard menus. Let's look at the options.\n1.  **Manual Hiding**: Select rows -> Right click -> Hide. Too slow for many rows.\n2.  **Filters**: Explicitly forbidden (\"filter is not needed\").\n3.  **VBA/Macro**: Not a standard GUI interaction.\n4.  **Find & Select**: We can use the \"Find & Replace\" tool to find all instances of \"#N/A\", select them, and then hide the rows.\n\nLet's refine the \"Find & Hide\" procedure:\n1.  Use **Find & Replace** (`Ctrl+H` or `Edit` menu).\n2.  Search for `#N/A`.\n3.  Click **Find All**.\n4.  In the results list, **Select All**.\n5.  This selects all cells containing `#N/A`.\n6.  Close the Find dialog.\n7.  Now we need to hide the *rows* containing these cells. There isn't a direct \"Hide Rows of Selection\" button. We would need to select the entire row for each. This is tricky.\n\nAlternative Interpretation: Perhaps the user just wants to hide the specific cells? No, \"hide them in the table\" usually implies the rows or the data visibility. If we hide the rows, the table shrinks.\n\nLet's look for a simpler path. Is there a \"Hide Rows\" feature based on criteria? No.\n\nLet's reconsider the \"Filter\" constraint. \"Filter is not needed\" might mean \"You don't need to create a complex filter setup\" or \"Don",
+  "retrieved_page_ranges": [
+    [
+      293,
+      295
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/step_1.png"
+}

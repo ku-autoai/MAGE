@@ -1,0 +1,113 @@
+{
+  "id": "12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a clustered column chart showing the Sales and COGS data for each week in a new sheet named \"Sheet2\". Set the chart title as \"Sales & COGS\".\n\nRelevant procedure\n1. Click the sheet tab area at the bottom of the window and select \"Insert Sheet\" (or right-click an existing sheet tab and choose \"Insert Sheet\").\n2. In the \"Insert Sheet\" dialog, change the name to \"Sheet2\" and click \"OK\".\n3. Go to the sheet containing the Sales and COGS data (likely \"Sheet1\").\n4. Select the data range that includes the Week labels, Sales values, and COGS values (e.g., A1:C5, assuming headers are included).\n5. Go to the \"Insert\" menu at the top toolbar and select \"Chart...\".\n6. In the Chart Wizard Step 1 (Chart Type), select \"Column\" and choose the \"Normal\" variant (which creates clustered columns) to ensure Sales and COGS are displayed side-by-side for each week.\n7. Click \"Next\" to proceed to Step 2 (Data Range). Verify that the data range is correct. Ensure \"Series in columns\" is selected if Sales and COGS are in separate columns. Click \"Next\".\n8. In Step 3 (Data Series), verify that both \"Sales\" and \"COGS\" are listed as series. Ensure the X-axis labels correspond to the Weeks. Click \"Next\".\n9. In Step 4 (Chart Elements), enter \"Sales & COGS\" in the \"Title\" field.\n10. Click \"Finish\" to insert the chart.\n11. If the chart was inserted into the original data sheet, cut the chart (Ctrl+X) and paste it (Ctrl+V) into \"Sheet2\". Alternatively, in the Chart Wizard Step 4, select \"New sheet\" and name it \"Sheet2\" if that option is available and preferred over creating the sheet manually.\n12. Verify the chart title displays as \"Sales & COGS\" and the chart type is a clustered column chart showing Sales and COGS for each week.",
+  "source": "SheetCopilot@210",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/WeeklySales.xlsx",
+            "path": "/home/user/WeeklySales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/WeeklySales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "WeeklySales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371/13_WeeklySales_gt1.xlsx",
+      "dest": "13_WeeklySales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/WeeklySales.xlsx",
+      "dest": "WeeklySales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the sheet tab area at the bottom of the window and select \"Insert Sheet\" (or right-click an existing sheet tab and choose \"Insert Sheet\").\n2. In the \"Insert Sheet\" dialog, change the name to \"Sheet2\" and click \"OK\".\n3. Go to the sheet containing the Sales and COGS data (likely \"Sheet1\").\n4. Select the data range that includes the Week labels, Sales values, and COGS values (e.g., A1:C5, assuming headers are included).\n5. Go to the \"Insert\" menu at the top toolbar and select \"Chart...\".\n6. In the Chart Wizard Step 1 (Chart Type), select \"Column\" and choose the \"Normal\" variant (which creates clustered columns) to ensure Sales and COGS are displayed side-by-side for each week.\n7. Click \"Next\" to proceed to Step 2 (Data Range). Verify that the data range is correct. Ensure \"Series in columns\" is selected if Sales and COGS are in separate columns. Click \"Next\".\n8. In Step 3 (Data Series), verify that both \"Sales\" and \"COGS\" are listed as series. Ensure the X-axis labels correspond to the Weeks. Click \"Next\".\n9. In Step 4 (Chart Elements), enter \"Sales & COGS\" in the \"Title\" field.\n10. Click \"Finish\" to insert the chart.\n11. If the chart was inserted into the original data sheet, cut the chart (Ctrl+X) and paste it (Ctrl+V) into \"Sheet2\". Alternatively, in the Chart Wizard Step 4, select \"New sheet\" and name it \"Sheet2\" if that option is available and preferred over creating the sheet manually.\n12. Verify the chart title displays as \"Sales & COGS\" and the chart type is a clustered column chart showing Sales and COGS for each week.",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      182,
+      183
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      169,
+      171
+    ]
+  ],
+  "first_screen_image_path": null
+}

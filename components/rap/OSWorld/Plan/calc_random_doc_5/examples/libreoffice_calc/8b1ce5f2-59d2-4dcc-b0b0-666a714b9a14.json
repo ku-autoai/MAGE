@@ -1,0 +1,117 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select column B by clicking on the column header \"B\"\n2. Press Ctrl+Shift+Right Arrow to extend the selection to column F (covering all calendar months shown)\n3. Click Format menu → Conditional Formatting → New Rule\n4. In the new dialog, select \"Formula is\" from the dropdown\n5. Enter the formula: `=OR(WEEKDAY(B3)=1,WEEKDAY(B3)=7)`\n6. Click the Format button\n7. Go to Background tab and select the color #FF0000 (red) or the closest red available\n8. Click OK to apply formatting\n9. Click OK to close the Conditional Formatting dialog\n10. Copy the conditional formatting from cell B3 by selecting it and pressing Ctrl+C\n11. Select the entire calendar data range (B3:F33) by clicking and dragging or using Ctrl+Shift+End from B3\n12. Apply Paste Special → Formats by pressing Ctrl+Shift+V and selecting \"All attributes\" or using Format → Paste Special\n13. The weekends will now be highlighted in red throughout the calendar\n14. Click anywhere outside the selection to deselect and view the final result",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select column B by clicking on the column header \"B\"\n2. Press Ctrl+Shift+Right Arrow to extend the selection to column F (covering all calendar months shown)\n3. Click Format menu → Conditional Formatting → New Rule\n4. In the new dialog, select \"Formula is\" from the dropdown\n5. Enter the formula: `=OR(WEEKDAY(B3)=1,WEEKDAY(B3)=7)`\n6. Click the Format button\n7. Go to Background tab and select the color #FF0000 (red) or the closest red available\n8. Click OK to apply formatting\n9. Click OK to close the Conditional Formatting dialog\n10. Copy the conditional formatting from cell B3 by selecting it and pressing Ctrl+C\n11. Select the entire calendar data range (B3:F33) by clicking and dragging or using Ctrl+Shift+End from B3\n12. Apply Paste Special → Formats by pressing Ctrl+Shift+V and selecting \"All attributes\" or using Format → Paste Special\n13. The weekends will now be highlighted in red throughout the calendar\n14. Click anywhere outside the selection to deselect and view the final result",
+  "retrieved_page_ranges": [
+    [
+      446,
+      446
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      434,
+      434
+    ],
+    [
+      132,
+      133
+    ],
+    [
+      101,
+      102
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/step_1.png"
+}

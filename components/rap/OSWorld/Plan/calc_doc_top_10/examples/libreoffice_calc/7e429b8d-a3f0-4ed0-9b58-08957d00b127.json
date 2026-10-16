@@ -1,0 +1,129 @@
+{
+  "id": "7e429b8d-a3f0-4ed0-9b58-08957d00b127",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have a lookup table for the officers of each branch. Please, here is another table in which I need to fill with the officer names according the headoffice (i.e., the branch name). Help me to complete this.\n\nTo complete the officer names table based on the head office branch, you will use the VLOOKUP function in cell F2 and then copy it down for the rest of the list.\n\n1.  Click on cell **F2** to select it (the first empty cell under \"Officer Name\").\n2.  Type the following formula exactly:\n    `=VLOOKUP(E2, $A$2:$B$7, 2, FALSE)`\n    *   **E2** is the Head Office to look up (e.g., Surat).\n    *   **$A$2:$B$7** is the lookup table range containing the Branch names and Officer Names (the dollar signs lock the range so it doesn't shift when you copy the formula).\n    *   **2** tells the function to return the value from the 2nd column of the lookup table (the Officer Name).\n    *   **FALSE** ensures an exact match is required.\n3.  Press **Enter**. The officer name for the first entry (likely A. B. Bose for Surat) should appear.\n4.  Click back on cell **F2** to select it again.\n5.  Copy the cell by pressing **Ctrl + C** (or right-click > Copy).\n6.  Select the range **F3:F7** (the remaining empty cells under Officer Name corresponding to the list).\n7.  Paste the formula by pressing **Ctrl + V** (or right-click > Paste).\n\nThe cells will now automatically fill with the correct officer names corresponding to each Head Office in column E.",
+  "source": "https://medium.com/@divyangichaudhari17/how-to-use-vlookup-and-hlookup-in-libre-calc-3370698bb3ff",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form.xlsx",
+            "path": "/home/user/VLOOKUP_Fill_the_form.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/VLOOKUP_Fill_the_form.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7e429b8d-a3f0-4ed0-9b58-08957d00b127",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "VLOOKUP_Fill_the_form.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form_gold.xlsx",
+      "dest": "VLOOKUP_Fill_the_form_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/VLOOKUP_Fill_the_form.xlsx",
+      "dest": "VLOOKUP_Fill_the_form.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "To complete the officer names table based on the head office branch, you will use the VLOOKUP function in cell F2 and then copy it down for the rest of the list.\n\n1.  Click on cell **F2** to select it (the first empty cell under \"Officer Name\").\n2.  Type the following formula exactly:\n    `=VLOOKUP(E2, $A$2:$B$7, 2, FALSE)`\n    *   **E2** is the Head Office to look up (e.g., Surat).\n    *   **$A$2:$B$7** is the lookup table range containing the Branch names and Officer Names (the dollar signs lock the range so it doesn't shift when you copy the formula).\n    *   **2** tells the function to return the value from the 2nd column of the lookup table (the Officer Name).\n    *   **FALSE** ensures an exact match is required.\n3.  Press **Enter**. The officer name for the first entry (likely A. B. Bose for Surat) should appear.\n4.  Click back on cell **F2** to select it again.\n5.  Copy the cell by pressing **Ctrl + C** (or right-click > Copy).\n6.  Select the range **F3:F7** (the remaining empty cells under Officer Name corresponding to the list).\n7.  Paste the formula by pressing **Ctrl + V** (or right-click > Paste).\n\nThe cells will now automatically fill with the correct officer names corresponding to each Head Office in column E.",
+  "retrieved_page_ranges": [
+    [
+      394,
+      396
+    ],
+    [
+      391,
+      392
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      315,
+      315
+    ],
+    [
+      315,
+      316
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      290,
+      290
+    ],
+    [
+      374,
+      375
+    ],
+    [
+      291,
+      293
+    ],
+    [
+      290,
+      291
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/step_1.png"
+}

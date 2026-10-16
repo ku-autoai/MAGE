@@ -1,0 +1,117 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nRelevant procedure\n1. Click the \"Date\" column header cell B1 to focus the sheet and deselect the current selection.\n2. Click the \"Format\" menu in the top menu bar.\n3. Click \"Rows\" in the dropdown menu.\n4. Click \"Hide\" in the submenu.\n5. Click cell B2 to deselect the hidden rows.\n6. Press Ctrl+H to open the Find and Replace dialog.\n7. In the \"Find\" field, type \"#N/A\".\n8. Check the \"Match entire cell contents\" checkbox.\n9. Click \"Find All\" at the bottom of the dialog.\n10. In the results list at the bottom, click the first found entry to select it.\n11. Press Ctrl+A to select all found cells.\n12. Click \"Close\" at the bottom of the dialog.\n13. Right-click on any of the highlighted \"#N/A\" cells.\n14. Select \"Format Cells...\" from the context menu.\n15. Click the \"Font Effects\" tab on the left.\n16. In the \"Font color\" section, click the dropdown arrow.\n17. Select the color that matches the cell background (light pink/orange, typically the second color in the Recent section or the specific RGB color matching the sheet).\n18. Click \"OK\".",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Date\" column header cell B1 to focus the sheet and deselect the current selection.\n2. Click the \"Format\" menu in the top menu bar.\n3. Click \"Rows\" in the dropdown menu.\n4. Click \"Hide\" in the submenu.\n5. Click cell B2 to deselect the hidden rows.\n6. Press Ctrl+H to open the Find and Replace dialog.\n7. In the \"Find\" field, type \"#N/A\".\n8. Check the \"Match entire cell contents\" checkbox.\n9. Click \"Find All\" at the bottom of the dialog.\n10. In the results list at the bottom, click the first found entry to select it.\n11. Press Ctrl+A to select all found cells.\n12. Click \"Close\" at the bottom of the dialog.\n13. Right-click on any of the highlighted \"#N/A\" cells.\n14. Select \"Format Cells...\" from the context menu.\n15. Click the \"Font Effects\" tab on the left.\n16. In the \"Font color\" section, click the dropdown arrow.\n17. Select the color that matches the cell background (light pink/orange, typically the second color in the Recent section or the specific RGB color matching the sheet).\n18. Click \"OK\".",
+  "retrieved_page_ranges": [
+    [
+      90,
+      92
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      37,
+      37
+    ],
+    [
+      127,
+      127
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/step_1.png"
+}

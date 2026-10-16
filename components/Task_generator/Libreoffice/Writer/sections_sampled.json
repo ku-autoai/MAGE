@@ -1,0 +1,1123 @@
+[
+  {
+    "title": "Outline & List",
+    "level": 4,
+    "path": [
+      "Chapter 4, Formatting Text",
+      "Formatting paragraphs directly",
+      "Settings on the Paragraph dialog",
+      "Outline & List"
+    ],
+    "start_page": 91,
+    "end_page": 91,
+    "next_start_page": 91,
+    "is_leaf": true,
+    "text": "In the Options section, you can specify how paragraphs are treated at the bottom of a page. Do\nnot split paragraph and Keep with next paragraph should be self-explanatory. The other options\nallow you to avoid a single line at the bottom of a page (called an orphan) or a single line at the\ntop of a page (a widow).\nOutline & List\nThe Outline & List tab on the Paragraph dialog provides options for choosing the outline level of\nthe paragraph and its list style (if any). If the paragraph is part of an ordered list, you can specify\nthat list numbering restarts at the paragraph, and what number to restart with.\nThis tab does not cover the same functions as the Chapter Numbering dialog (Tools > Chapter\nNumbering), but the Outline level selected here is related to the outline defined there. See\nChapter 8, Introduction to Styles, and Chapter 9, Working with Styles, for a discussion of these\nfeatures. Line numbering is discussed in Chapter 3, Working with Text: Advanced.\nFigure 71: Selecting outline level, paragraph numbering, and line numbering\nSetting tab stops and indents\nThe horizontal ruler shows the tab stops. Any tab stops that you have defined will overwrite the\ndefault tab stops. Tab settings affect indentation of full paragraphs (using the Increase Indent\nand Decrease Indent buttons on the Formatting toolbar or the Paragraph panel of the Properties\ndeck in the Sidebar) as well as indentation of parts of a paragraph (by pressing the Tab key on\nthe keyboard).\nTip\nMany indents, for example at the beginning of a paragraph, can be set in the\nparagraph style, so you don’t need to use the Tab key to activate them.\nUsing the default tab spacing can cause formatting problems if you share documents with other\npeople. If you use the default tab spacing and then send the document to someone else who has\nchosen a different default tab spacing, tabbed material will change to use the other person’s\nsettings. Instead of using the defaults, define your own tab settings, as described in this section.\nTo define indents and tab settings for one or more selected paragraphs, right-click a paragraph\nand choose Paragraph to open the Paragraph dialog; then select either the Tabs tab (Figure 72)\nor the Indents & Spacing tab of the dialog. Alternatively, you can double-click the horizontal ruler\nto open the Indents & Spacing tab of the Paragraph dialog. A better strategy is to define tabs for\nthe paragraph style. Refer to Chapters 8 and 9 for more about paragraph styles.\nChapter 4, Formatting Text | 91",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_91.png"
+    ]
+  },
+  {
+    "title": "Resetting the shortcut keys",
+    "level": 3,
+    "path": [
+      "Chapter 20, Customizing Writer",
+      "Assigning shortcut keys",
+      "Resetting the shortcut keys"
+    ],
+    "start_page": 459,
+    "end_page": 459,
+    "next_start_page": 459,
+    "is_leaf": true,
+    "text": "Resetting the shortcut keys\nTo reset all of the keyboard shortcuts to their default values, click the Reset button on the\nCustomize dialog. Use this feature with care; no confirmation dialog will be displayed.\nAssigning macros to events\nIn LibreOffice, when something happens, we say that an event occurred. For example, a\ndocument is opened, a key is pressed, or the mouse moved. You can associate a macro with an\nevent, so the macro is run when the event occurs. For example, a common use is to assign the\n“open document” event to run a macro that performs certain setup tasks for the document.\nTo associate a macro with an event, use the Events tab of the Customize dialog. For more\ninformation, see Chapter 13, Getting Started with Macros, in the Getting Started Guide.\nAdding functionality with extensions\nAn extension is a package that can be installed into LibreOffice to add new functionality.\nTemplate sets, spelling dictionaries, clipart galleries, macros, and dialog libraries can be\npackaged as LibreOffice extensions. They can add new top-level menus, submenus or toolbar\nicons. Extensions may also have their own settings, available from the extension manager.\nSeveral extensions are shipped bundled with LibreOffice and are installed with the program.\nThese can only be removed by changing the installation options. Others can be downloaded from\nvarious websites. The official extension repository is located at https://extensions.libreoffice.org/.\nThese extensions are free of charge.\nSome extensions from other sources are free of charge; others are available for a fee. Check the\ndescriptions to see what licenses and fees apply to the ones that interest you.\nDownload the extension to your computer in any folder that you want (usually folder Download).\nInstalling extensions\nTo install an extension that is listed in the repository, follow these steps:\n1) In LibreOffice, select Tools > Extension Manager on the Menu bar.\n2) In the Extension Manager dialog (Figure 474), click Get more extensions online.\n3) A browser window opens. Find and select the extension you want to install and download\nit to your computer.\n4) After the extension is downloaded and saved, return to the Extension Manager dialog and\nclick Add. Find and select the extension you want to install and click Open. The\nextension begins installing. You may be asked to accept a license agreement.\n5) When the installation is complete, the extension is listed in the Extension Manager dialog.\nTo install an extension that is not listed in the repository, download the extension, then continue\nwith step 3 above.\nUpdating extensions\nClick the Check for Updates button on the Extension Manager dialog to check for updates to\ninstalled extensions.\nChapter 20, Customizing Writer | 459",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_459.png"
+    ]
+  },
+  {
+    "title": "Text box",
+    "level": 4,
+    "path": [
+      "Chapter 18, Forms",
+      "Example: a simple form",
+      "Configure form controls",
+      "Text box"
+    ],
+    "start_page": 407,
+    "end_page": 408,
+    "next_start_page": 408,
+    "is_leaf": true,
+    "text": "Add form controls\nThe next step is to add the form controls to the document. We will have four controls:\n• Name is a text box.\n• Gender is three option buttons: male, female, or other; user can select one.\n• Favorite shape is a list of options; user can select one.\n• All shapes you like is a series of check boxes; user can select one or more.\nTo add these controls:\n1) Select View > Toolbars > Form Controls to open the Form Control toolbar.\n2) If the tools are not active, click the Design Mode icon to activate them.\n3) Click the Text Box icon, then click in the document and drag the shape of the Name text\nbox to approximately the size you want. Drag it to line up with the Name: label.\n4) Make sure Toggle Form Control Wizards is OFF. Click the Option Button icon. Click\nand drag to create three option buttons near the Gender: label in the document. We will\nconfigure these in the next section.\n5) Click the List Box icon and draw a list box by Favourite shape: in the document. This will\njust be an empty pane for now.\n6) Click the Check Box icon and create four check boxes by All shapes you like, side by\nside across the page.\nYour document should now look something like Figure 424. Do not worry if the controls are not\nlined up well; we will fix this later.\nFigure 424: Document with form controls\nConfigure form controls\nText box\nNo further configuration is required for the Name field, but you may wish to change the height or\nwidth of the field, its background color, or other formatting. If so:\n1) Be sure Design Mode is on and Wizards are off.\n2) Double-click on the Name field to open the Properties: Text Box dialog (Figure 425).\n3) On the General tab, scroll down (or expand the dialog by dragging the bottom edge\ndown) to find the Width and Height properties. Change these as needed.\nChapter 18, Forms | 407\n\n4) You can then close the dialog or leave it open while you configure the other controls.\nFigure 425: Changing the width and height of a text box\nOption buttons\nThe Gender option buttons need to be configured to allow only one of the three to be selected.\nYou can do this in two ways: using individual option buttons as described here, or using a Group\nBox (see page 469).\n1) Be sure Design Mode is ON and Wizards are OFF.\n2) If the Properties dialog is open, click once on the first option button to change the dialog\nto Properties: Option Button. If the dialog is not open, double-click the first option button.\nIn the Properties dialog (Figure 426), on the General tab, type Male in the Label field and\nGender in the Group name field.\n3) Repeat for the other two options, using Female and Other, respectively, for the Label and\nGender for the Group name. (Grouping allows only one option to be selected at a time.)\nFigure 426: Specifying label and group names for an option button\nIf the option buttons are too far apart, click on each in turn and drag it to the left or right.\nIf the option buttons are not lined up neatly, do this:\n1) Click the Select button on the Form Controls toolbar and draw a box around the three\noption button controls with the mouse to select all of them (Figure 427).\n408 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_407.png",
+      "Writer/images/page_408.png"
+    ]
+  },
+  {
+    "title": "Saving merged documents",
+    "level": 3,
+    "path": [
+      "Chapter 14, Mail Merge",
+      "Creating a form letter",
+      "Saving merged documents"
+    ],
+    "start_page": 317,
+    "end_page": 318,
+    "next_start_page": 318,
+    "is_leaf": true,
+    "text": "Figure 334: Defining a conditional hidden paragraph\n3) Now click in the Condition box and enter the details of the condition that defines a blank\naddress field. It has the general form of:\n![Database.Table.Database field]\nFor example, in our database the condition to test if the AD2 field is empty would be:\n![Addresses.Sheet1.AD2] as illustrated in Figure 334.\nAlternative ways to express this condition include NOT Addresses.Sheet1.AD2 and\nAddresses.Sheet1.AD2 EQ “”.\n4) Click Insert.\nSaving merged documents\nYou may prefer to save the letters in a file, to allow for proofreading or formatting. To do this:\n1) In the Mail Merge dialog (Figure 333), select the records to be included, then select File\nin the Output section to activate some other choices on the page (Figure 335).\n2) You can choose whether to save the output as a single document (containing all of the\nletters) or save the letters as individual documents; and you can specify the name,\nlocation, and format of the files.\nFigure 335: Saving output to a file\n3) Click OK. In the Save as dialog, enter a file name for the saved letters and choose a\nfolder in which to save them. The letters will be saved consecutively as separate pages in\nthe single document, or numbered consecutively in individual files.\nYou can now open the letters and edit them individually as you would edit any other document.\nChapter 14, Mail Merge | 317\n\nPrinting mailing labels\nLabels are commonly used for printing address lists (where each label shows a different\naddress), but they can also be used for making multiple copies of one label only, for example\nreturn-address stickers, or labels for CDs/DVDs or other items.\nBefore beginning this process, note the brand and type of labels you intend to use. You can also\ndefine your own label size; see Step 6).\nTip\nIf you are printing the same information on each label, you may find the Business\nCards dialog useful. Access it through File > New > Business Cards. The Labels\nand Business Cards dialogs are very similar.\nPreparing for printing\nTo prepare mailing labels for printing:\n1) Choose File > New > Labels. The Labels dialog opens.\n2) On the Labels page (Figure 336), select the Database and Table.\n3) From the Database field drop-down list, select the first field to be used in the label (in this\nexample, FNAME), then click the left arrow button to move it to the Label text area.\n4) Continue adding fields and inserting desired punctuation, spaces, and line (paragraph)\nends until the label is composed. Figure 336 shows the completed label.\nFigure 336: The completed label\nOn some operating systems, a scroll bar will appear below the Label text box and you\ncan see where the paragraph ends are located. On others (as in the example), the fields\nmay appear in a list and you cannot see where the paragraph ends are located. You can\ncheck them later in the procedure (Step 8)).\n318 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_317.png",
+      "Writer/images/page_318.png"
+    ]
+  },
+  {
+    "title": "Extension tab",
+    "level": 4,
+    "path": [
+      "Chapter 21, User Interface Variants",
+      "Tabbed interface",
+      "Fixed tabs",
+      "Extension tab"
+    ],
+    "start_page": 472,
+    "end_page": 472,
+    "next_start_page": 472,
+    "is_leaf": true,
+    "text": "Figure 495: Tabbed Interface – View tab\nThe View tab menu (Figure 496) provides many of the same commands.\nFigure 496: View tab menu\nExtension tab\nThe Extension tab (Figure 497) contains only the menu for accessing the Extension Manager.\nFigure 497: Tabbed Interface – Extension tab\nTools tab\nThe Tools tab (Figure 498) provides several tools for macros, mail merge, and form creation.\n472 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_472.png"
+    ]
+  },
+  {
+    "title": "Introduction",
+    "level": 2,
+    "path": [
+      "Chapter 10, Working with Templates",
+      "Introduction"
+    ],
+    "start_page": 222,
+    "end_page": 222,
+    "next_start_page": 222,
+    "is_leaf": true,
+    "text": "Introduction\nA template is a model document that you use to create other documents. For example, you can\ncreate a template for business reports that has your company’s logo on the first page. New\ndocuments created from this template will all have your company’s logo on the first page.\nTemplates can contain anything that regular documents can contain, such as text, graphics, a set\nof styles, and user-specific setup information such as measurement units, language, the default\nprinter, and toolbar and menu customization.\nAll documents in LibreOffice are based on templates. You can create, or download and install, as\nmany templates as you wish, and you can set a default template for each type of document (text,\nspreadsheet, drawing, presentation). If you do not choose a template when you start a new\nWriter document, then the document is based on the default template for text documents. If you\nhave not specified a default template, Writer uses the built-in blank template for text documents\nthat is installed with LibreOffice. See “Setting a default template” on page 261.\nIn Writer, you can create templates for master documents as well as for ordinary documents.\nThis chapter describes the use of LibreOffice’s template management features. You can also use\ntemplates in other ways, but the effects are a bit different. See “Other ways to manage\ntemplates” on page 264 for more information.\nCreating a document from a template\nA new installation of LibreOffice may not include many templates, but you can create your own\n(see “Creating a template” on page 257) or install templates obtained from other sources (see\n“Adding templates obtained from other sources” on page 258).\nTo create a document from a template:\n1) Open the Templates dialog (Figure 234) using one of these methods:\n– Choose File > New > Templates or File > Templates > Manage Templates on the\nMenu bar.\n– Press the key combination Ctrl+Shift+N.\n– Click the arrow next to the New icon on the Standard toolbar and select Templates.\n– Select Templates > Manage Templates in the Start Center (visible in LibreOffice\nwhen no document is open).\n2) In the Filter lists at the top of the Templates dialog, you can select the type and category\nof template you want to use. The relevant templates are listed on the dialog. Click on the\nicons to the right of the Categories list to switch between Thumbnail view (Figure 234)\nand List view (Figure 235).\n3) Find and double-click the required template, or select the template and click Open. A new\ndocument based on the selected template opens in Writer. You can then edit and save\nthe new document.\nThe template the document is based on is listed in File > Properties > General.\nTip\nIn the Start Center, you can click on the Templates button, or open the drop-down\nmenu and select a type of template, to view the available templates without opening\nthe Templates dialog. Click on the required template to create a new document.\n222 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_222.png"
+    ]
+  },
+  {
+    "title": "Updating a table of contents",
+    "level": 3,
+    "path": [
+      "Chapter 15, Tables of Contents, Indexes, Bibliographies",
+      "Tables of contents",
+      "Updating a table of contents"
+    ],
+    "start_page": 340,
+    "end_page": 340,
+    "next_start_page": 340,
+    "is_leaf": true,
+    "text": "2) Select from the given bitmaps or click the Add/Import button to select an image from\nyour computer’s file system.\n3) Under Options, select the type of placement for the image.\n– Style – select custom position/size, tiled, or stretched.\n– Size – select the required Image aspect ratio or the Scale option.\n– Position – select where the image is to be displayed.\n4) To apply the image, click OK.\nDeleting a color or an image\nTo delete a color or an image from the table background, select None at the top of the dialog.\nEditing a table of contents\nTo edit an existing TOC, right-click anywhere in the TOC and choose Edit Index in the context\nmenu. You can also open the Navigator in the Sidebar, click the expansion symbol (+ sign or\ntriangle) next to Indexes, then double-click on Table of Contents.\nThe Table of Contents, Index or Bibliography dialog (Figure 351 on page 383) opens. You can\nedit and save the TOC as described in the previous section.\nUpdating a table of contents\nWriter does not update the TOC automatically, so after any changes to the headings, you need to\nupdate it manually. Right-click anywhere in the TOC; in the context menu, choose Update Index.\nYou can also update the index from the Navigator: expand Indexes, right-click on the name of\ntable of contents you want to update, and choose Index > Update.\nDeleting a table of contents\nTo delete the TOC from a document, right-click anywhere in the TOC and choose Delete Index in\nthe context menu. You can also delete the index from the Navigator by choosing Index > Delete\nin the menu shown in Figure 358. Writer will not prompt you to confirm the deletion.\nAlphabetic indexes\nAn alphabetical index (referred to as an index) is a list of keywords or phrases used throughout a\ndocument that, if listed in order with page numbers, may help the reader find information quickly.\nGenerally an index is found in the back of a book or document.\nThis section describes how to:\n• Add index entries manually.\n• Use a concordance file.\n• Create an alphabetic index quickly.\n• Customize the display of index entries.\n• Customize the appearance of the index.\n• View and edit existing index entries.\n340 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_340.png"
+    ]
+  },
+  {
+    "title": "Other settings",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Modifying images",
+      "Other settings"
+    ],
+    "start_page": 252,
+    "end_page": 253,
+    "next_start_page": 253,
+    "is_leaf": true,
+    "text": "Figure 260: Quickly rotating or flipping an image\nFigure 261: Use the Image tab of Image dialog, to flip, link, or rotate an image\nYou can rotate images at any required angle, using either of these methods:\n• Interactively. Select the image and click the Rotate icon on the Image toolbar or right-\nclick and select Rotate or Flip > Rotate. Rotation handles appear around the object.\nHover the cursor over a handle; when the cursor changes shape, click and drag it to the\nrequired angle. This method is quick and easy, but not precise.\n• Using the Image dialog. For precise rotation angles, right-click the image and select\nProperties. On the Image dialog (Figure 261), select the Image tab. In the Rotation Angle\nsection, specify the rotation required in the Angle field.\nOther settings\nThe Image dialog (Figure 261) has ten tabs. The Crop page was described on page 286; the\nType and Wrap pages are explained in “Positioning images within the text” on page 276. The\nother pages serve the following purposes:\n• Options: give the image a descriptive name (as you want it to appear in the Navigator),\ndisplay alternative text when the cursor hovers over the image in a web browser, protect\nsome of the image settings from accidental changes, and prevent the image from being\nprinted.\n252 | LibreOffice 7.3 Writer Guide\n\n• Borders: create borders around the image. The Borders dialog is the same as the one\nused for defining table or paragraph borders. You can also add a shadow to the image.\n• Area: change the background color of the image. This setting produces the desired\nresults only for images with a transparent color.\n• Hyperlink: associate a hyperlink to the image, or create an image map (see page 294).\n• Image: flip or rotate the image, and display the original location of the file in case the\nimage is linked rather than embedded.\n• Transparency: set the transparency options for the image.\n• Macro: associate a macro to the image. You can choose among the predefined macros\nor write your own.\nDeleting an image\nTo delete an image, click it to show the resizing handles, then press the Delete key.\nExporting (saving) images\nTo make complex adjustments to the image in another program, or to save an image for use in\nanother document, you can export it directly from the document. Right-click the image and\nchoose Save in the context menu to open the Image Export dialog. Writer will let you save the\nimage in several formats. Name the image, select the desired image format in the File type list,\nand click Save.\nBefore the image is saved another dialog opens, where you can choose various image size and\nformat options. The content of this dialog depends on the output file type selected. If the image\nhas been modified within Writer, you will see a confirmation dialog where you can choose to save\nthe original version or the modified version of the image.\nCompressing images\nIf you insert a large image in a document and resize it to fit into the layout of the page, the\ncomplete original image is stored in the document file to preserve its content, possibly resulting in\na large document file to store or send by email.\nIf you can accept some loss of quality of the image rendering, you can compress or resize the\nimage object to reduce its data volume while preserving its display in the page layout. You\nprobably do not want to compress something that will be professionally printed.\nRight-click to select the image and open the context menu. Then choose Compress to open the\nCompress Image dialog (Figure 262). Use the Calculate New Size button to update the image\ninformation on the dialog on each parameter set you change.\nClick OK to apply the compression settings. If the resulting image is not acceptable, press Ctrl+Z\nto undo and choose another compression setting. For more information, see the Help.\nChapter 11, Images and Graphics | 253",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_252.png",
+      "Writer/images/page_253.png"
+    ]
+  },
+  {
+    "title": "Inserting footnotes and endnotes",
+    "level": 3,
+    "path": [
+      "Chapter 3, Working with Text: Advanced",
+      "Using footnotes and endnotes",
+      "Inserting footnotes and endnotes"
+    ],
+    "start_page": 76,
+    "end_page": 76,
+    "next_start_page": 76,
+    "is_leaf": true,
+    "text": "Using footnotes and endnotes\nFootnotes appear at the bottom of the page on which they are referenced. Endnotes are\ncollected at the end of a document.\nTo work effectively with footnotes and endnotes, you need to:\n• Insert footnotes and define their format, if the default values do not meet your needs; see\nbelow.\n• Define the location of footnotes on the page, and the color and line style for separator\nlines, if the defaults to not meet your needs. See Chapter 5, Formatting Pages: Basics.\nInserting footnotes and endnotes\nTo insert a footnote or an endnote:\n1) Position the cursor where you want the footnote or endnote marker to appear.\n2) Select Insert > Footnote and Endnote on the Menu bar and choose Footnote or\nEndnote, or click the Insert Footnote or Insert Endnote button on the Standard toolbar.\n3) A footnote or endnote marker is inserted in the text and, depending on your choice, the\ncursor is relocated either to the footnote area at the bottom of the page or to the endnote\narea at the end of the document. Type the footnote or endnote content in this area.\nTo change the default Footnote/Endnote settings, go to Tools > Footnotes and Endnotes on\nthe Menu bar.\nTo choose whether to use the automatic numbering sequence specified in the footnote settings or\nspecify a custom number, go to Insert > Footnote and Endnote > Footnote or Endnote on the\nMenu bar to open the Insert Footnote/Endnote dialog (Figure 54).\nYou can edit an existing footnote or endnote in the same way you edit any other text.\nTo delete a footnote or endnote, delete the footnote marker. The contents of the footnote or\nendnote are deleted automatically, and the numbering of other footnotes or endnotes is adjusted\nautomatically.\nFigure 54: Inserting a footnote/endnote\nFormatting footnotes and endnotes\nTo format the footnotes themselves, click Tools > Footnotes and Endnotes. On the\nFootnotes/Endnotes Settings dialog (Figure 55), choose preferred settings.\n76 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_76.png"
+    ]
+  },
+  {
+    "title": "Digital Signatures tab of PDF Options dialog",
+    "level": 4,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Exporting to PDF",
+      "Controlling PDF content and quality",
+      "Digital Signatures tab of PDF Options dialog"
+    ],
+    "start_page": 165,
+    "end_page": 166,
+    "next_start_page": 166,
+    "is_leaf": true,
+    "text": "Note\nPermissions settings are effective only if the user’s PDF viewer respects the settings.\nDigital Signatures tab of PDF Options dialog\nThe Digital Signatures tab (Figure 168) contains the options for exporting a digitally signed PDF.\nFigure 168: Digital Signatures tab of PDF Options dialog\nDigital signatures are used to ensure that the PDF was really created by the original author (that\nis, you), and that the document has not been modified since it was signed.\nThe signed PDF export uses the keys and X.509 certificates already stored in your default key\nstore location or on a smartcard. The key store to be used can be selected under Tools >\nOptions > LibreOffice > Security > Certificate Path (Linux) or LibreOffice > Preferences >\nSecurity > Certificate Path (macOS). [On Windows, LibreOffice uses the default Windows\nlocation for storing and retrieving certificates.]\nWhen using a smartcard, it must already be configured for use by your key store. This is usually\ndone during installation of the smartcard software. Details about using these features is outside\nthe scope of this chapter.\n• Use this certificate to digitally sign PDF documents: Click Select to open the Select\nCertificate dialog, where all certificates found in your selected key store are displayed. If\nthe key store is protected by a password, you are prompted for it. When using a\nsmartcard that is protected by a PIN, you are also prompted for that.\n• Select the certificate to use for digitally signing the exported PDF, then click Sign.\n• All other fields on the Digital Signatures tab are accessible only after a certificate has\nbeen selected.\n• Certificate password: Enter the password used for protecting the private key associated\nwith the selected certificate. Usually this is the key store password. If the key store\npassword has already been entered in the Select Certificate dialog, the key store may\nalready be unlocked and not require the password again.\n• When using a smartcard, enter the PIN here. Some smartcard software will prompt you\nfor the PIN again before signing.\n• Location, Contact information, Reason: Optionally enter additional information about the\ndigital signature that will be applied to the PDF. This information will be embedded in the\nappropriate PDF fields and will be visible to anyone viewing the PDF. Any or all of the\nthree fields may be left blank.\nChapter 7, Printing, Exporting, Emailing, Signing | 165\n\n• Time Stamp Authority: Optionally select a Time Stamping Authority (TSA) URL. During\nthe PDF signing process, the TSA will be used to obtain a digitally signed timestamp that\nis then embedded in the signature. Anyone viewing the PDF can use this timestamp to\nverify when the document was signed.\n• The list of TSA URLs that can be selected is maintained under Tools > Options >\nLibreOffice > Security > TSAs. If no TSA URL is selected (the default), the signature\nwill not be timestamped, but will use the current time from your local computer.\nExporting to EPUB format\nEPUB format has become popular since mobile devices such as smartphones, tablets, and\ne-readers appeared on the market. The EPUB format is implemented as an archive file\nconsisting of HTML files carrying the content, along with images and other supporting files.\nWriter can export a file to EPUB. A text-only document generally exports well, but some contents\n(such as illustrations, tables, and cross-references) may not export correctly.\nQuick export to EPUB\nChoose File > Export As > Export Directly as EPUB to export the entire document using the\nEPUB settings you most recently selected on the EPUB Export dialog (Figure 169). Enter the file\nname and location for the EPUB file; you do not get a chance to select other options.\nControlling export to EPUB\nFor more control over the content and quality of the resulting EPUB file, use File > Export As >\nExport as EPUB. The EPUB Export dialog opens (Figure 169).\nFigure 169: EPUB Export dialog\n166 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_165.png",
+      "Writer/images/page_166.png"
+    ]
+  },
+  {
+    "title": "Introduction",
+    "level": 2,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Introduction"
+    ],
+    "start_page": 234,
+    "end_page": 234,
+    "next_start_page": 234,
+    "is_leaf": true,
+    "text": "Introduction\nYou can add graphic and image files, including photos, drawings, and scanned images, to Writer\ndocuments. Writer can import various vector (line drawing) and raster (bitmap) file formats.\nImages in Writer are of these basic types:\n• Image files, such as photos, drawings, and scanned images\n• Diagrams created using LibreOffice’s drawing tools\n• Artwork created using clip art or Fontwork\n• Charts created using LibreOffice’s Calc component\nThis chapter covers images, diagrams, and artwork. Instructions on how to create charts are\ngiven in Chapter 19, Spreadsheets, Charts, other Objects. For more detailed descriptions on\nworking with drawing tools, see the Draw Guide. For more about charts, see the Calc Guide.\nCreating and editing images\nYou might create images using a graphics program, scan them, or download them from the\nInternet (make sure you have permission to use them), or use photos taken with a digital camera.\nWriter can import various vector (line drawing) images, and can rotate and flip such images.\nWriter also supports raster (bitmap) file formats, the most common of which are GIF, JPG, PNG,\nand BMP. See the Help for a full list.\nWriter can also import SmartArt images from Microsoft Office files. For example, Writer can open\na Microsoft Word file that contains SmartArt, and you can use Writer to edit the images.\nTo edit photos and other bitmap images, use a bitmap editor. To edit line drawings, use a vector\ndrawing program. You do not need to buy expensive programs. For many graphics, LibreOffice\nDraw is sufficient. Open-source (and usually no-cost) tools such as GIMP (bitmap editor) and\nInkscape (vector drawing program) are excellent. These and many other programs work on\nWindows, macOS, and Linux.\nSome things to consider when choosing or creating images include image quality and whether\nthe image will be printed in color or black-and-white (grayscale).\nFor best results:\n• Create images that have the exact dimensions required for the document, or use an\nappropriate graphics package to scale photographs and large drawings to the required\ndimensions. Do not scale images with Writer, even though Writer has tools for doing this,\nbecause the results might not be as clear as you would like.\n• Do any other required image manipulation (brightness and contrast, color balance,\ncropping, conversion to grayscale, and so on) in a graphics package, not in Writer, even\nthough Writer has the tools to do a lot of these things, too.\n• If the document is meant for screen use only, there is no need to use high resolution\nimages of 300 or more dpi (dots per inch). Most computer monitors work at between 72\nand 96 dpi; reducing the resolution (and the file size) has no negative impact on what is\ndisplayed.\nPreparing images for black-and-white printing\nIf color images are to be printed in grayscale, check that any adjacent colors have good contrast\nand print dark enough. Test by printing on a black-and-white printer using a grayscale setting.\nBetter still: change the “mode” of the image to grayscale, either in a photo editor or in Writer itself\n(see “Image mode” on page 285).\n234 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_234.png"
+    ]
+  },
+  {
+    "title": "Choosing icons for toolbar commands",
+    "level": 3,
+    "path": [
+      "Chapter 20, Customizing Writer",
+      "Customizing toolbars",
+      "Choosing icons for toolbar commands"
+    ],
+    "start_page": 456,
+    "end_page": 456,
+    "next_start_page": 456,
+    "is_leaf": true,
+    "text": "Choosing icons for toolbar commands\nToolbar buttons usually have icons, not words, on them, but not all of the commands have\nassociated icons. If the command does not have an icon, you can choose an icon for it. To\nchoose an icon, select the command in the list on the right, and click Modify > Change Icon. On\nthe Change Icon dialog (Figure 471), scroll through the available icons, select one, and click OK\nto assign it to the command.\nTo use a custom icon, create it in a graphics program and import it into LibreOffice by clicking the\nImport button on the Change Icon dialog. Custom icons should be 16×16 pixels in size to\nachieve the best quality and should not contain more than 256 colors.\nFigure 471: Change Icon dialog\nCustomizing the user interface\nBy default, LibreOffice Writer’s commands are grouped in cascading menus and in toolbars filled\nwith icons—the standard user interface described in Chapter 1. In addition, Writer provides other\nuser interface variations, displaying contextual groups of commands and contents. These are\ndescribed in Chapter 21, User Interface Variants.\nWhen you set up Writer, you can choose one of these user interfaces, and you can switch\nbetween them and the standard interface at any time.\nIn three variants (Tabbed, Tabbed Compact, and Groupedbar Compact), the area at the top of\nthe workspace is divided into tabs, where each tab displays a set of icons grouped by context.\nThe context can change depending on the object selected in the document, for example a table\nor an image.\nAfter one of these variants has been selected (using View > User Interface), you can use the\ncheckboxes on the Notebookbar tab of the Customize dialog (Figure 472) to show and hide the\nindividual options on the various tabs that are provided in the Tabbed mode user interface.\nUse the Reset button to reset the selected configuration to the default settings.\n456 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_456.png"
+    ]
+  },
+  {
+    "title": "File tab",
+    "level": 4,
+    "path": [
+      "Chapter 21, User Interface Variants",
+      "Tabbed interface",
+      "Fixed tabs",
+      "File tab"
+    ],
+    "start_page": 466,
+    "end_page": 467,
+    "next_start_page": 467,
+    "is_leaf": true,
+    "text": "Quick menu\nAt the right-hand end of the tab bar is a Quick menu (Figure 482) containing some commonly\nused commands and links. Some of the Quick menu items have submenus, indicated by arrows\non the right.\nFigure 482: Quick menu\nFixed tabs\nThe fixed tabs in Writer are File, Home, Insert, Layout, References, Review, View, Extension,\nand Tools. The tabs are described on the following pages. The illustrations show the left and\nright ends of the tabs separately so they are large enough to more easily see the commands.\nFile tab\nThe File tab (Figure 483) includes commands to create new documents; open, save, print, and\nclose documents; manage templates; export to PDF and EPUB; display document properties;\nadd a digital signature; and sign an existing PDF.\nFigure 483: Tabbed Interface – File tab\nThe File tab has two menus (Figure 484): File and Help. The File menu contains the same\ncommands as the icons on the tab. The Help menu provides links to a variety of resources.\n466 | LibreOffice 7.3 Writer Guide\n\nFigure 484: File tab menus\nHome tab\nThe Home tab (Figure 485) includes commands to cut, copy, paste, and format text; insert\ncommon items (image, table, special characters, and page break); apply, update, and edit styles;\nand others.\nFigure 485: Tabbed Interface – Home tab\nThe Home tab menu (Figure 486) provides additional commands that are not on the tab.\nChapter 21, User Interface Variants | 467",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_466.png",
+      "Writer/images/page_467.png"
+    ]
+  },
+  {
+    "title": "Creating a template from a document",
+    "level": 3,
+    "path": [
+      "Chapter 10, Working with Templates",
+      "Creating a template",
+      "Creating a template from a document"
+    ],
+    "start_page": 224,
+    "end_page": 224,
+    "next_start_page": 224,
+    "is_leaf": true,
+    "text": "Creating a template\nYou can create templates in two ways: by saving a document as a template or by using a wizard.\nCreating a template from a document\nIn addition to formatting, any settings that can be added to or modified in a document can be\nsaved within a template. For example, printer settings; general behaviors set from Tools >\nOptions, such as paths and colors; menu and toolbar customizations, described in Chapter 20,\nCustomizing Writer.\nTemplates can also contain predefined text, saving you from having to type it every time you\ncreate a new document. For example, a letter template may contain your name, address, and\nsalutation.\nTo create a template from a document:\n1) Open a new or existing text (Writer) document.\n2) Add any content that you want to appear in any document you create from the new\ntemplate, for example company logo or a copyright statement.\n3) Create or modify any styles that you want to use in the new template.\n4) On the Menu bar, choose File > Templates > Save as Template. The Save as Template\ndialog (Figure 236) opens, displaying the existing categories and a box for the name for\nthe new template.\n5) Select a category, for example My Templates or Business Correspondence. You can also\nset this template as a default template at this time. Click Save.\nFigure 236: Save as Template dialog\nCreating a template using a wizard\nYou can use wizards to create templates for letters, faxes, and agendas. To create a template\nusing a wizard:\n1) On the Menu bar, choose File > Wizards > [type of template required] (Figure 237).\n2) Follow the instructions on the pages of the wizard. This process is slightly different for\neach type of template, but the format is similar.\n224 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_224.png"
+    ]
+  },
+  {
+    "title": "Using language settings in Options",
+    "level": 3,
+    "path": [
+      "Chapter 3, Working with Text: Advanced",
+      "Using built-in language tools",
+      "Using language settings in Options"
+    ],
+    "start_page": 65,
+    "end_page": 65,
+    "next_start_page": 65,
+    "is_leaf": true,
+    "text": "Figure 42: Options available through Tools > Language on the Menu bar\nUsing language settings in Options\nAnother way to change the language of a whole document is to use Tools > Options >\nLanguage Settings > Languages. In the Default languages for documents section (Figure 43),\nyou can choose a different language for all the text that is not explicitly marked as a different\nlanguage.\nCaution\nA change in the default language from the Options dialog is a general change of\nsettings of LibreOffice and will therefore apply to all the documents created in the\nfuture. If you want to change the language for the current document only, be sure to\nselect the For the current document only option (Figure 43).\nFigure 43: Options available in the Languages settings\nNote\nThe spelling checker works only for those languages in the list that have a\ncheckmark symbol next to them. If you do not see this symbol next to your preferred\nlanguage, you can install the dictionary using Tools > Language > More\nDictionaries Online.\nUsing paragraph and character styles\nChanging the language on the Font tab of the Paragraph Styles dialog (Figure 44) will change\nthe language for all paragraphs that use that paragraph style. If you will have whole paragraphs\nin different languages in a single document, you can use a different paragraph style for each\nChapter 3, Working with Text: Advanced | 65",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_65.png"
+    ]
+  },
+  {
+    "title": "Positioning information in headers or footers",
+    "level": 3,
+    "path": [
+      "Chapter 6, Formatting Pages: Advanced",
+      "Using tables for page layout",
+      "Positioning information in headers or footers"
+    ],
+    "start_page": 128,
+    "end_page": 128,
+    "next_start_page": 128,
+    "is_leaf": true,
+    "text": "The Wrap, Borders, Area, Columns, Transparency, and Macro pages of the Frame dialog are the\nsame as those for frame styles. Refer to Chapter 9, Working with Styles, for details.\nUsing tables for page layout\nWriter’s tables can serve several purposes, such as holding data as you might see it in a\nspreadsheet, lining up material, and creating more complex page layouts. For information about\nusing tables of data, see Chapter 13, Tables of Data.\nThis topic describes how to achieve some common layouts by using tables.\nPositioning information in headers or footers\nInstead of using tabs or frames, you can use a table in a header or footer to position different\nelements such as page number, document title, author, and so on. These elements are often\ninserted using fields, as described in Chapter 17, Fields.\nCreating sideheads using tables\nSideheads and marginal notes are commonly used in documents such as resumes and computer\nuser guides. The main body of the text is offset to leave white space (usually on the left-hand\nside) in which the sideheads or notes are placed. The first paragraph is aligned beside the\nsidehead, as in Figure 120.\nExample of a In some cases you may want to put only one or two paragraphs in the table\nsidehead itself and the rest of the text and graphics in ordinary paragraphs (formatted to\nline up with the paragraphs in the table) so that text and graphics will flow\nmore easily from one page to another when you add or delete material.\nIn other cases, you might put each paragraph in a separate row of the table\nand allow the table to break between pages.\nFigure 120: Example of a sidehead\nNote\nSideheads can also be created by placing text in a frame using the Marginalia frame\nstyle, as described in Chapter 9, Working with Styles.\nExample\nTo create a table for use with a sidehead:\n1) Place the cursor where you want the table to appear and choose Table > Insert Table\n(Ctrl+F12).\n2) In the Insert Table dialog (Figure 121), define a two-column, one-row table with no\nheading. Choose None under Styles so the table will have no border. Click Insert.\n3) Right-click the table and choose Table Properties in the context menu. On the Columns\ntab of the Table Properties dialog (Figure 122), set the column widths.\n4) On the Table tab of the Table Properties dialog (Figure 123), in the Spacing section, make\nthe Above and Below values the same as the Top and Bottom spacing you have defined\nfor ordinary paragraphs of text. In the Properties section, optionally give this table a\nname. Click OK to save your settings.\n128 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_128.png"
+    ]
+  },
+  {
+    "title": "Defining the number format",
+    "level": 3,
+    "path": [
+      "Chapter 5, Formatting Pages: Basics",
+      "Numbering pages",
+      "Defining the number format"
+    ],
+    "start_page": 113,
+    "end_page": 113,
+    "next_start_page": 113,
+    "is_leaf": true,
+    "text": "Defining the number format\nMany more variations are possible. For example, you can set the page number to display in\nRoman numerals. One way to do that is to double-click the page number and select the desired\nformat; a better choice is to specify the format of numbers in the page style as explained here.\nRight-click in the text area of the page and select Page Style in the context menu.\nOn the Page tab of the Page Style dialog, in the Layout Settings section on the right, select\ni, ii, iii, …. in the Page numbers: drop-down list to use lowercase Roman numerals (Figure 103).\nFigure 103: Changing format of page numbers\nCaution\nAny change in the number format affects the page numbers on all pages using that\npage style, regardless of the method used to change the format. To change the\nformat of page numbers on some pages but not all, you need to use different page\nstyles; see “Restarting page numbering and changing numbering format” below.\nRestarting page numbering and changing numbering format\nYou may want to restart the page numbering at 1, for example, on the page following a title page\nor a table of contents. In addition, many documents have the front matter (such as the table of\ncontents) numbered with Roman numerals and the main body of the document numbered in\nArabic numerals, restarting at 1.\nFirst, you need to define the numbering format for two page styles: Front Matter and Default. See\n“Using different page styles” on page 133 and “Defining the number format’ above.\nNext, in the front matter, insert a page number (see “Simple page numbering” on page 127).\nThen, you can restart page numbering as follows:\n1) Place the cursor in the first paragraph of the page to have the Default page style. (A\nheading is a paragraph.)\n2) Choose Format > Paragraph on the Menu bar, or right-click and choose Paragraph >\nParagraph, to display the Paragraph dialog.\n3) On the Text Flow page of the Paragraph dialog, in the Breaks area (Figure 104):\na) Select Insert.\nb) In the Type drop-down list, select Page.\nc) In the Position drop-down list, select Before.\nd) Select With page style and choose from the drop-down list the page style for the\nnext page.\nChapter 5, Formatting Pages: Basics | 113",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_113.png"
+    ]
+  },
+  {
+    "title": "Aligning images",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Positioning images within the text",
+      "Aligning images"
+    ],
+    "start_page": 241,
+    "end_page": 242,
+    "next_start_page": 242,
+    "is_leaf": true,
+    "text": "To Paragraph\nThe image is associated with a paragraph and moves with the paragraph. It may be placed\nin the margin or another location. This method is useful as an alternative to a table for\nplacing icons beside paragraphs.\nTo Character\nThe image is associated with a character but is not in the text sequence. It moves with the\nparagraph but may be placed in the margin or another location. This method is similar to\nanchoring to a paragraph.\nAs Character\nThe image is placed in the document like any other character and, therefore, affects the\nheight of the text line and the line break. The image moves with the text as you add or\ndelete text before the image. This method is useful for keeping screenshots in sequence in\na procedure (by anchoring them as a character in a blank paragraph) or for adding a small\n(inline) icon in sequence in a sentence.\nTo Frame\nIf the image has been placed in a frame, you can anchor the image in a fixed position\ninside the frame. The frame can then be anchored to page, to paragraph, to character, or\nas character.\nTip\nYou can set a default anchor for images in Tools > Options > LibreOffice Writer >\nFormatting Aids (Figure 248).\nFigure 248: Choices for setting a default image anchor\nAligning images\nAfter you have established the anchor point of an image, you can decide the position of the\nimage relative to its anchor: this is called aligning the image. Choose from six options: three for\naligning the image horizontally (left, center, right) and three for aligning the image vertically (top,\nmiddle, bottom). Horizontal alignment is not available for images anchored As Character.\nFor finer control of the alignment, use the Position options on the Type page of the Image dialog,\nshown in Figure 249.\nFor both the horizontal and vertical position, start by picking the reference point in the right hand\nside drop-down menu, then select in the first drop-down menu among Left, Right, or Center for\nHorizontal or Top, Bottom, Center for vertical. If you select From left or From top, you can\nspecify the distance. In the example in Figure 249, the image was anchored To Page; the upper-\nleft corner of the image will be placed at 5 cm from the left edge of the page text area and 10 cm\nfrom the top edge of the entire page.\nChapter 11, Images and Graphics | 241\n\nFigure 249: Fine tuning the alignment\nWrapping text around images\nThe Wrap setting determines the relation between the text and the image. It is normally selected\nafter anchoring and alignment of the image. Several choices are available in the context menu,\ndepending on the anchoring selection, and additional choices (including spacing from text on one\nor more sides of the image) are on the Wrap tab of the Image dialog (Figure 250).\nNone\nPlaces the object on a separate line in the document. The text is placed above and below\nthe image but not to either side of it.\nParallel\nWraps text on all four sides of the border frame of the object.\nOptimal\nThe text flows around the image. Moving the image around the page causes the text to be\nrearranged to fill the space to the left and right of it. Optimal prevents text from being\nplaced to the side of the image if the spacing between the image and the margin is less\nthan 2 cm.\nBefore\nWraps text on the left side of the object if there is enough space.\nAfter\nWraps text on the right side of the object if there is enough space.\nThrough\nSuperimposes the image on the text. That is, the image is in front of the text. This option\nshould be used with an image-transparency setting in order to make the text under the\nimage visible.\nIn Background\nSimilar to Through, but the image is placed behind the text so there may be no need to\nchange the transparency to make the text visible. Best used only for images without a lot of\ncontrast or different colors.\nContour\nWraps text around the shape of the object.\nEdit Contour\nOpens the Contour Editor; see “Editing the contour” on page 280.\nFirst paragraph\nStarts a new paragraph after the image even if the text could still wrap around the image.\nNote\nWhen anchoring an image as character, you can adjust the distance between the\nimage and the text, but no wrapping option is available.\n242 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_241.png",
+      "Writer/images/page_242.png"
+    ]
+  },
+  {
+    "title": "English sentence checking",
+    "level": 4,
+    "path": [
+      "Chapter 2, Working with Text: Basics",
+      "Checking spelling and grammar",
+      "Grammar",
+      "English sentence checking"
+    ],
+    "start_page": 53,
+    "end_page": 54,
+    "next_start_page": 54,
+    "is_leaf": true,
+    "text": "• The first entry in the menu describes the suspected broken grammatical rule.\n• The second menu item in the left example is Explanations, which opens your browser to\na web page offering more information about the error. This entry is not always present in\nthe context menu, as seen in the second example in Figure 30.\n• In the second section of the menu is the suggested correction. Clicking this changes the\ntext to the suggestion. The example to the right appears blank, but clicking here removes\nthe extra space causing the error.\n• In the third section of the menu you can choose to ignore the indicated error, or to open\nthe Spelling dialog, shown in Figure 31.\n• In the final section of the menu, you can set the language for the selection or the\nparagraph.\nIn the example shown in Figure 31, hovering the mouse pointer over More… on the upper right-\nhand side displays the URL for more information on the error indicated. Clicking on More…\nopens your default browser to that URL.\nFigure 31: Spelling dialog showing the URL for expanded explanation\nEnglish sentence checking\nAdditional grammar checking rules can be selected through Tools > Options > Language\nSettings > English sentence checking. You can also go to Tools > Extension Manager, select\nEnglish spelling dictionaries, and then click the Options button.\nOn the English Sentence Checking page (Figure 32), choose which items are checked for,\nreported to you, or converted automatically. After selecting the additional grammar checks, you\nmust restart LibreOffice, or reload the document, for them to take effect.\nChapter 2, Working with Text: Basics | 53\n\nFigure 32: Additional grammar checking options\nGrammar checking\nPossible mistakes\nChecks for errors such as with it's, he don't, this things and so on.\nCapitalization\nChecks for the capitalization of sentences.\nWord duplication\nChecks for all word duplication, rather than just the default words 'and', 'or', 'for' and 'the'.\nParentheses\nChecks for correct pairing of parentheses and quotation marks.\nPunctuation\nWord spacing\nThis option is selected by default. It checks for single spaces between words, indicating\ninstances of double or triple spaces. To find and correct longer groups of spaces, you need\nto run the checker more than once.\nQuotation marks\nThis checks that double quotation marks are typographically correct, that is, beginning [“]\nand ending [”] quotation marks curve in the correct directions.\nSentence spacing\nChecks for a single space between sentences, indicating when one or two extra spaces are\nfound.\nApostrophe\nReplaces an apostrophe with the correct (curved) typographical character.\nMore spaces\nChecks word and sentence spacing for more than two extra spaces.\nEm dash; En dash\nThese options force a non-spaced em dash to replace a spaced en dash, or force a spaced\nen dash to replace a non-spaced em dash, respectively. This feature provides for different\npunctuation conventions.\nMultiplication sign\nThis option is selected by default. It replaces an 'x' used as a multiplication symbol with the\ncorrect typographical symbol.\n54 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_53.png",
+      "Writer/images/page_54.png"
+    ]
+  },
+  {
+    "title": "AutoCaption options",
+    "level": 3,
+    "path": [
+      "Chapter 20, Customizing Writer",
+      "Choosing Writer-specific options",
+      "AutoCaption options"
+    ],
+    "start_page": 448,
+    "end_page": 448,
+    "next_start_page": 448,
+    "is_leaf": true,
+    "text": "Add paragraph and table spacing at bottom of table cells\nSpecifies that the bottom spacing is added to a paragraph, even when it is the last\nparagraph in a table cell.\nUse as Default\nClick this button to use the settings on this page as the default in Writer.\nAutoCaption options\nLibreOffice can automatically insert captions for tables, pictures, frames, and OLE objects in a\nWriter document. To set this up, use the options on the LibreOffice Writer > AutoCaption page.\nSelect the object you want to be automatically captioned (LibreOffice Writer Image in Figure\n461). With the item highlighted, specify the characteristics of the caption.\nThe categories supplied for captions are Drawing, Illustration, Table, and Text. To use another\nname (for example, Figure) for the caption label, type the required term in the Category box.\nNote\nYou may not want captions for every table, for example if you use tables for layout as\nwell as for tables of data. You can always add captions to individual tables, graphics,\nor other objects (right-click > Insert Caption).\nInformation about numbering captions by chapter, character styles, frame styles, and other items\non the AutoCaption page is given in other chapters in this book.\nFigure 461: Setting up automatic captions\nMail Merge Email options\nUsing a data source such as an address book, Writer can insert personal, address, and other\ninformation into form letters. These documents can be printed for mailing or they can be emailed\nthrough Writer. (See Chapter 14, Mail Merge, for details.)\nUse the LibreOffice Writer – Mail Merge Email page to set up the user and server information for\nsending form letters by email. If you are not sure what information to put in any of the fields,\nconsult your email program or your internet service provider.\n448 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_448.png"
+    ]
+  },
+  {
+    "title": "Assigning outline levels to other styles",
+    "level": 3,
+    "path": [
+      "Chapter 8, Introduction to Styles",
+      "Using paragraph styles to define a hierarchy of headings",
+      "Assigning outline levels to other styles"
+    ],
+    "start_page": 193,
+    "end_page": 193,
+    "next_start_page": 193,
+    "is_leaf": true,
+    "text": "Figure 201: Choosing paragraph styles for numbering levels\nAssigning outline levels to other styles\nIn Writer, you can assign an outline level to any paragraph style. This feature enables you to\ncreate a table of contents that includes those headings along with the headings using styles\nlisted in the Chapter Numbering dialog. For example, you might use a different sequence of\nstyles for appendixes, but you want the appendix headings and subheadings to appear in the\ntable of contents at the same levels as the chapter headings and subheadings.\nTo assign an outline level to a paragraph style, go to the Outline & List tab for the style, and\nselect the required outline level from the drop-down list. Click OK to save this change.\nFigure 202: Specifying an outline level for a\nparagraph style\nSetting up heading numbering\nIf you want one or more heading levels to be numbered, many choices are available; this\nexample defines a scheme to create headings that look like those in the illustration below.\nChapter 8, Introduction to Styles | 193",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_193.png"
+    ]
+  },
+  {
+    "title": "Standard interfaces",
+    "level": 2,
+    "path": [
+      "Chapter 21, User Interface Variants",
+      "Standard interfaces"
+    ],
+    "start_page": 464,
+    "end_page": 465,
+    "next_start_page": 465,
+    "is_leaf": true,
+    "text": "Introduction\nBy default, LibreOffice Writer’s commands are grouped in cascading menus and in toolbars filled\nwith icons—the standard user interface described in Chapter 1. These menus and toolbars are\ndescribed in the chapters that discuss the related tasks and functions.\nIn addition, Writer provides other user interface variants, displaying contextual groups of\ncommands and contents. This chapter describes these user interface variants and provides a\nquick reference to the location of the tools and functions when using each of the variants.\nSelecting the user interface\nWhen you set up Writer, you can choose one of these user interfaces, and you can switch\nbetween them and the standard interface at any time.\n1) Choose View > User Interface on the Menu bar.\n2) On the Select Your Preferred User Interface dialog (Figure 478), choose one of the\nvariants on the left. An example of the variant is shown in the Preview box on the right,\nalong with a short description.\n3) Choose the relevant button to apply your selection to all components of LibreOffice, or\nonly to Writer. The Writer window changes to match your selection.\n4) Click Close to close the dialog.\nFigure 478: Selecting a user interface\nIf you have activated experimental features (Tools > Options > Advanced), several more\nchoices appear on the left-hand side. These choices are not described here.\nStandard interfaces\nThree of the user interface choices in Figure 478 are described in Chapter 1, Introducing Writer.\nStandard toolbar\nClassic mode with two visible toolbars: standard and formatting. The sidebar shows only its\ntabs.\nSingle toolbar\nOnly one toolbar with frequently used features. The sidebar shows only its Hide button.\nSidebar\nThe sidebar is fully opened and only one toolbar (Formatting) is showing.\n464 | LibreOffice 7.3 Writer Guide\n\nThe elements on each of the standard user interfaces can be modified using the View menu on\nthe Menu bar.\nTabbed interface\nThe Tabbed interface (Figure 479) provides a familiar interface for users coming from proprietary\noffice suites such as Microsoft Office. It includes a Menu bar, an Icon bar, a Tab bar, icons for the\nactive tab, one or more tab-specific menus, and a Quick Menu. On Windows and Linux, the\nMenu bar can be hidden or displayed by clicking on the Menu Bar icon in the Icon bar (Figure\n481).\n1 Icon bar 2 Active tab 3 Icons on active tab 4 Tabs 5 Tab menus 6 Quick menu\nFigure 479: Tabbed Interface with Menu bar hidden\nIn Writer, this user interface variant includes nine fixed tabs and five additional tabs. Each tab\ndisplays a set of icons grouped by context. The context can change depending on the location of\nthe cursor or the item selected. Each tab also includes one or more tab-specific drop-down\nmenus at the right-hand end. The Quick Menu is the same for all tabs.\nThe Tabbed interface can be customized using the Notebookbar tab of the Customize dialog to\nshow and hide the individual icons on the various tabs. See Chapter 20, Customizing Writer, for\nmore information.\nIf the icons on a tab do not fit into the width of the Writer window, >> appears at the end of the\nrow. Click it to display the other commands (Figure 480).\nFigure 480: Displaying more commands on a tab\nIcon bar\nThe icon bar (Figure 481) is located at the top left of the tabs.\nFigure 481: Tabs – Icon box\n1 Menu bar – Show / Hide the menu bar.\n2 Open (Ctrl+O) – Open a file browser, where you can select the file to be opened.\n3 Save (Ctrl+S) – Save the open file.\n4 Undo (Ctrl+Z) – Undo the last action performed.\n5 Redo (Ctrl+Y) – Redo the last undone action.\n6 Print (Ctrl+P) – Open the Print dialog.\nChapter 21, User Interface Variants | 465",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_464.png",
+      "Writer/images/page_465.png"
+    ]
+  },
+  {
+    "title": "Selecting and optionally editing the address block",
+    "level": 4,
+    "path": [
+      "Chapter 14, Mail Merge",
+      "Using the Mail Merge Wizard to create a form letter",
+      "Step 3: Insert address block",
+      "Selecting and optionally editing the address block"
+    ],
+    "start_page": 325,
+    "end_page": 326,
+    "next_start_page": 326,
+    "is_leaf": true,
+    "text": "If you have not already created the address list, you may click Create to do so now. This\nstep will allow you to create a .csv (Comma Separated Values) file with a new list of\naddress records. If you have an address list that is not registered in LibreOffice, but which\nyou wish to use, click Add and select the file from the location in which it is saved.\nIn each of these cases a new data source (.odb file) will be created and registered.\n2) Select the address list and click OK to return to the Insert Address Block dialog. We retain\nAddresses as our address book for this example. The wizard can also exclude certain\nrecords; click Filter to choose them.\nSelecting and optionally editing the address block\n1) In section 2 (Figure 343), select the address block to appear on the letter, define its\nappearance, and choose the fields it contains. The main page gives two choices. Click\nMore to open the Select Address Block dialog for more choices.\n2) The Select Address Block dialog (Figure 345) displays the original two blocks plus other\nchoices for the format of the address block (you may need to scroll down to see all of the\nchoices). You can also optionally include or exclude the country (for example, only include\nthe country if it is not England) in the Address Block Settings section. The formats\nprovided are relatively common, but they might not exactly match your preference. If this\nis the case, select the address block that is closest to what you want and click Edit, which\nopens the Edit Address Block dialog.\n3) In the Edit Address Block dialog (Figure 346), you can add or delete address elements\nusing the arrow buttons between the boxes. To move elements around, use the arrow\nbuttons on the right. For example, to add an extra space between the first and the last\nnames in Figure 346, click <Last Name> and then click the Move right arrow button on\nthe right-hand side.\nFigure 345: Select address block\nChapter 14, Mail Merge | 325\n\nFigure 346: Edit address block\n4) Click OK to close the Edit Address Block dialog, then click OK on the Select Address\nBlock dialog to save your changes and return to the Mail Merge Wizard.\nMatching the fields\nFinally, it is time to match the wizard’s fields with the spreadsheet fields, so that items like\n<Surname> and “Last Name” match correctly.\n1) Look at section 3 of the wizard (shown in Figure 343 on page 370). The box at the bottom\ndisplays one record at a time, using the address block format you specified. Use the right\nand left arrow buttons below that address box to step through the addresses, checking\nthat they display correctly. Do not assume that all the records display correctly, just\nbecause one or two do.\n2) If the addresses do not display correctly, click Match Fields.\nThe Match Fields dialog (Figure 347) has three columns:\n– Address elements are the terms the wizard uses for each field, such as <First Name>\nand <Last Name>.\n– Use the Matches to field column to select, for each address element, the field from\nyour data source that matches it.\n– The Preview column shows what will be shown for this field from the selected address\nblock, so you can double-check that the match is correct.\n3) When you have matched all the fields, click OK to return to the Insert Address Block\ndialog. Now, when you use the arrow buttons to look at all the addresses, they should all\nlook correct. If not, go back and change anything you’re not happy with, before clicking\nNext to move to the next step.\n326 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_325.png",
+      "Writer/images/page_326.png"
+    ]
+  },
+  {
+    "title": "Change the value of the variable",
+    "level": 3,
+    "path": [
+      "Chapter 17, Fields",
+      "Developing conditional content",
+      "Change the value of the variable"
+    ],
+    "start_page": 396,
+    "end_page": 397,
+    "next_start_page": 397,
+    "is_leaf": true,
+    "text": "Figure 416: Creating a section to be hidden when a specified condition is met\nChange the value of the variable\nTo change the value of the variable between Lite and Pro:\n1) Find the variable field you created in “Choose or define a variable” on page 448.\n2) Click once just in front of this field, then right-click and click Fields in the context menu.\n3) On the Edit Fields dialog (Figure 417), change the value of the variable to Pro.\n4) If you have set fields to update automatically, all of the conditional and hidden text that\nuses this variable as a condition will change.\nNote\nConditional text and hidden text can only be edited in the Edit Fields dialog.\nTip\nTo turn on automatic updating of fields, choose Tools > Options > LibreOffice\nWriter > General, and select Fields under Automatically Update.\n396 | LibreOffice 7.3 Writer Guide\n\nFigure 417: Changing the value of the variable\nUsing placeholder fields\nA placeholder field prompts you to enter something (text, a table, a frame, an image, or an\nobject).\nTo insert a placeholder field into a document:\n1) On the Functions tab of the Fields dialog, select Placeholder in the Type column and\nselect what the placeholder is for in the Format column.\n2) In the Placeholder box, type the text that you want to appear in the placeholder field.\n3) In the Reference box, type the text that you want to display as a help tip when you rest\nthe mouse pointer over the field.\nFigure 418 shows the results of inserting a placeholder field for an image.\nFigure 418: Inserting a placeholder field\nBecause the <Logo> field is an Image placeholder, when you click the field in the document, the\nInsert Image dialog opens, prompting you to select an image. When you select an image and\nclick Open, the image replaces the field in the document.\nChapter 17, Fields | 397",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_396.png",
+      "Writer/images/page_397.png"
+    ]
+  },
+  {
+    "title": "Using tables as a page layout tool",
+    "level": 2,
+    "path": [
+      "Chapter 13, Tables",
+      "Using tables as a page layout tool"
+    ],
+    "start_page": 310,
+    "end_page": 311,
+    "next_start_page": 311,
+    "is_leaf": true,
+    "text": "4) Press Ctrl+V or click the Paste icon on the Standard toolbar. This pastes the cells and\ntheir contents and formatting.\nInserting a paragraph before or after a table\nTo insert a paragraph before a table, position the cursor before any text or other contents in the\nfirst (upper left-hand) cell and press Alt+Enter. To insert a paragraph after a table, position the\ncursor after any text in the last (lower right-hand) cell and press Alt+Enter.\nUsing tables as a page layout tool\nTables may be used as a page layout tool to position text in a document instead of using tabs or\nspaces. For more information and tips about using tables in page layout, see Chapter 6,\nFormatting Pages: Advanced.\nTip\nWhen inserting a table used for layout, you may wish to deselect the Heading and\nBorder options (see “Creating a new table” on page 332).\n310 | LibreOffice 7.3 Writer Guide\n\nWriter Guide 7.3\nChapter 14,\nMail Merge\nForm Letters, Mailing Labels, and Envelopes",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_310.png",
+      "Writer/images/page_311.png"
+    ]
+  },
+  {
+    "title": "Using fields in headers and footers",
+    "level": 3,
+    "path": [
+      "Chapter 5, Formatting Pages: Basics",
+      "Creating headers and footers",
+      "Using fields in headers and footers"
+    ],
+    "start_page": 111,
+    "end_page": 111,
+    "next_start_page": 111,
+    "is_leaf": true,
+    "text": "Using fields in headers and footers\nYou can type information into headers and footers, but some items such as document titles and\nchapter titles are best added as fields. That way, if something changes, the headers and footers\nare all updated automatically.\nFields are covered in Chapter 17, Fields, but one example here may be useful. To insert the\ndocument title into the header on a Default page style:\n1) Select File > Properties > Description on the Menu bar, enter a title for the document in\nthe Title area, and click OK to close the dialog.\n2) Add a header (Insert > Header and Footer > Header > [Page Style]).\n3) Place the cursor in the header part of the page.\n4) Select Insert > Field > Title on the Menu bar. The title should appear on a gray\nbackground (which does not show when printed and can be turned off).\n5) To change the title of the document, select File > Properties > Description again and\nedit.\nNote\nYou must use a field for the page number so it changes from one page to the next.\nSee “Numbering pages” below.\nNumbering pages\nWhen you place a page number field in a header or footer, the number appears on every page\nand changes automatically from one page to the next. The page number appears with a gray\nbackground. This gray background denotes a field; although it is visible on screen, it is not\nprinted.\nTip\nIf you wish to turn off the gray background, choose View > Field Shadings (or press\nCtrl+F8). If you see the words “Page number” instead of a number, press Ctrl+F9.\nThis toggles Writer between displaying the field name and the contents of the field.\nThis section describes some techniques to insert page numbers and related information in\nheaders or footers of a document:\n• Simple page numbering\n• Defining the number format\n• Restarting page numbering and changing numbering format\n• Numbering the first page something other than 1\n• Combining header text and page number\n• Numbering pages by chapter\nSimple page numbering\nThe simplest case is to have the page number at the top or bottom of every page and nothing\nmore (Figure 100). To do this, put the cursor on the header or footer and choose Insert > Page\nNumber or Insert > Field > Page Number on the Menu bar.\nChapter 5, Formatting Pages: Basics | 111",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_111.png"
+    ]
+  },
+  {
+    "title": "Using bookmarks",
+    "level": 4,
+    "path": [
+      "Chapter 16, Master Documents",
+      "Cross-referencing between subdocuments",
+      "Preparing items as targets for cross-referencing",
+      "Using bookmarks"
+    ],
+    "start_page": 374,
+    "end_page": 375,
+    "next_start_page": 375,
+    "is_leaf": true,
+    "text": "Figure 392: Editing a link in a master document\nCross-referencing between subdocuments\nThe methods described earlier in this chapter are all that most writers will need when using\nmaster documents. However, you might want to include automatically updated cross-references\nbetween subdocuments. This section describes how to do this.\nThe process to create cross-references between subdocuments is time consuming, but it works.\nCaution\nThe method described does not work well if the subdocuments will be used\nstandalone as well as within a master document. As shown in Figure 397 on page\n430, the cross-reference will show as an error in a standalone document, but it will\nshow correctly in the master document.\nPreparing items as targets for cross-referencing\nBefore you can insert a cross-reference to a heading, figure, or other item in another document,\nyou must prepare that item as a target for cross-referencing. To do this, you can either use\nbookmarks or set references. Bookmarks can be used only for location references such as page\nnumbers, not for text references; set references can be used for text (such as headings or figure\ncaptions) as well as location references.\nUsing bookmarks\nBookmarks are listed in the Navigator and can be accessed directly from there.\n1) Select the text you want to bookmark or click in the required place in the text. Choose\nInsert > Bookmark on the Menu bar.\n2) On the Insert Bookmark dialog (Figure 393), the larger box lists any previously defined\nbookmarks. Type a name for the new bookmark in the top box. Click Insert.\n374 | LibreOffice 7.3 Writer Guide\n\nFigure 393: Inserting a bookmark\nSetting references\nWhen you set references, be sure to select the entire text you want to use as the reference, such\nas a heading or figure number. Keep a list of your names for the reference fields, and be sure\neach name is unique. One way to keep track of this information is to save it in a separate file.\nThe field names are case-sensitive. You can check the field name by holding the cursor over the\nreferenced item. In our example (Figure 394), the heading has the field name word count.\nFigure 394: Finding the field name for a heading\nOpen the subdocument in which you want to set references.\n1) Click Insert > Cross-reference.\n2) On the Cross-references tab of the Fields dialog (Figure 395), click Set Reference in the\nType list. The Selection list now shows any references that have been defined. You can\nleave this tab open while you set many headings as references.\n3) Click in the document and highlight the text of the first heading to be used as a target for\na cross-reference. Click on the Fields dialog. The text of the heading will appear in the\nValue box in the lower right of the dialog. In the Name box, type some text by which you\ncan identify this heading.\n4) Click Insert. The text you typed in the Name box now appears in the Selection list.\n5) Repeat steps 3 and 4 as often as required, keeping a note of your references as needed.\n6) Repeat for other subdocuments if wanted. Click Close to save and exit the dialog.\nChapter 16, Master Documents | 375",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_374.png",
+      "Writer/images/page_375.png"
+    ]
+  },
+  {
+    "title": "Quick export to EPUB",
+    "level": 3,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Exporting to EPUB format",
+      "Quick export to EPUB"
+    ],
+    "start_page": 166,
+    "end_page": 166,
+    "next_start_page": 166,
+    "is_leaf": true,
+    "text": "• Time Stamp Authority: Optionally select a Time Stamping Authority (TSA) URL. During\nthe PDF signing process, the TSA will be used to obtain a digitally signed timestamp that\nis then embedded in the signature. Anyone viewing the PDF can use this timestamp to\nverify when the document was signed.\n• The list of TSA URLs that can be selected is maintained under Tools > Options >\nLibreOffice > Security > TSAs. If no TSA URL is selected (the default), the signature\nwill not be timestamped, but will use the current time from your local computer.\nExporting to EPUB format\nEPUB format has become popular since mobile devices such as smartphones, tablets, and\ne-readers appeared on the market. The EPUB format is implemented as an archive file\nconsisting of HTML files carrying the content, along with images and other supporting files.\nWriter can export a file to EPUB. A text-only document generally exports well, but some contents\n(such as illustrations, tables, and cross-references) may not export correctly.\nQuick export to EPUB\nChoose File > Export As > Export Directly as EPUB to export the entire document using the\nEPUB settings you most recently selected on the EPUB Export dialog (Figure 169). Enter the file\nname and location for the EPUB file; you do not get a chance to select other options.\nControlling export to EPUB\nFor more control over the content and quality of the resulting EPUB file, use File > Export As >\nExport as EPUB. The EPUB Export dialog opens (Figure 169).\nFigure 169: EPUB Export dialog\n166 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_166.png"
+    ]
+  },
+  {
+    "title": "Creating a table style",
+    "level": 3,
+    "path": [
+      "Chapter 13, Tables",
+      "Creating and applying table styles",
+      "Creating a table style"
+    ],
+    "start_page": 302,
+    "end_page": 303,
+    "next_start_page": 303,
+    "is_leaf": true,
+    "text": "list, choose which features you wish to use in your table (font, alignment, borders, and so on),\nand then click OK. The table will be reformatted.\nFigure 319: Table AutoFormat dialog\nTip\nYou can rename the formats by selecting one and clicking the Rename button. The\nname will change in this dialog and in the Table Styles page on the sidebar.\nYou can delete a format by selecting it and clicking the Delete button. However, you\ncannot rename or delete the Default Table Style.\nCreating a table style\nAlthough the Table Styles tab of the Sidebar’s Styles deck includes a quick way to apply table\nstyles, they are created by using the AutoFormat feature. Follow these steps:\n1) Create a table. Format it as you wish: font, alignment, borders, background, number\nformat.\n2) Put the cursor anywhere in the table. Select Table > AutoFormat Styles on the Menu\nbar, or click the AutoFormat Styles icon on the Table toolbar.\n3) On the AutoFormat dialog (Figure 319), choose which features you wish to include in the\nnew table style, and then click Add.\n4) In the pop-up dialog, type a name for the new style and click OK. The new style is added\nto the list of formats in the AutoFormat dialog and to the list of table styles in the Styles\ndeck in the sidebar.\nTable styles also include the following table-level properties:\n• Break\n• Keep with next paragraph\n• Repeat heading\n• Allow table to split across pages\n• Allow rows to break across pages\n• Merge adjacent line styles\n• Table shadow\n302 | LibreOffice 7.3 Writer Guide\n\nTip\nThese styles do not include table and column widths in the table format. To insert a\ntable with predefined full formatting, save it as AutoText. See “Using AutoText” in\nChapter 2, Working with Text: Basics, for instructions.\nFormatting the table text\nOnce the table layout is set, you can move on to formatting the text in the individual cells. You\ncan apply manual formatting as with any other paragraph in the text, but it is highly\nrecommended that you use paragraph and character styles, for consistency and ease of\nmaintenance. Other aspects to consider include text flow, alignment, and orientation.\nYou can format each cell independently of other cells, or you can simultaneously format a group\nof cells by selecting them before applying the desired formatting.\nTip\nYou can apply basic table text formatting by choosing a table style and then modify\nonly those cells that you wish to be different.\nVertical alignment\nBy default, text entered into a table is aligned to the top-left of the cell. You can change the\ndefault for the entire table, as described above, or for individually selected cells.\nTo vertically align the text in specific cells:\n1) Place the cursor in the cell you wish to change, or select multiple cells.\n2) Click an icon on the Table toolbar: Align Top, Center Vertically, or Align Bottom.\nNumber formats\nThe number format can be set for a whole table, a group of cells, or a single cell. For example,\ncells can be set to display in a particular currency, to four decimal places, or in a particular date\nformat.\nNumber recognition specifies that numbers in a text table are recognized and formatted as\nnumbers. If Number recognition is not selected, numbers are saved in text format and are\nautomatically left-aligned. To enable Number recognition, go to Tools > Options > LibreOffice\nWriter > Table and select the option in the Input in Tables section.\nTo set the number format for one or more cells, select the cells, then either click the icon for one\nof the popular formats on the Table toolbar, or choose Table > Number Format on the Menu bar.\nOn the Format Number dialog (Figure 320), you can set options for various categories of\nnumerical data.\n• In the Category list, select the category you want, such as currency, date, or text.\n• In the Format list, choose a format for the category you just selected.\n• For some categories, such as Date, you may wish to change the language using the\nLanguage list, while for other numerical categories you can use the Options section of\nthe dialog to customize the appearance.\nChapter 13, Tables | 303",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_302.png",
+      "Writer/images/page_303.png"
+    ]
+  },
+  {
+    "title": "Moving between cells",
+    "level": 3,
+    "path": [
+      "Chapter 13, Tables",
+      "Data entry and manipulation in tables",
+      "Moving between cells"
+    ],
+    "start_page": 305,
+    "end_page": 305,
+    "next_start_page": 305,
+    "is_leaf": true,
+    "text": "Data entry and manipulation in tables\nMoving between cells\nWithin a table, you can use the mouse, the arrow keys, or the Tab key to move between cells.\nThe arrow keys move the cursor one text character left or right at a time. If a cell is empty,\npressing the arrow key will move the cursor to the adjacent cell.\nThe Tab key moves directly to the next cell and, if the cursor is in the last cell in the table, creates\na new row. Pressing Shift+Tab moves the cursor back a cell.\nTip\nTo enter a Tab character as part of the text of the cell, press the Ctrl and Tab keys at\nthe same time.\nTo move to the beginning of the table, press Ctrl+Home. If the active cell is empty, the move is to\nthe beginning of the table. If the cell has content, the first press goes to the beginning of the cell\nand the next press goes to the beginning of the table. (Pressing again takes you to the beginning\nof the document.)\nTo move to the end of the table, press Ctrl+End. If the active cell is empty, the move is to the end\nof the table. If the cell has content, the first press goes to the end of the cell and the next press\ngoes to the end of the table. (Pressing again takes you to the end of the document.)\nSorting data in a table\nJust as in a spreadsheet, data in a table can be sorted. You can specify up to three levels of\nsorting (for example, sort first by age numerically, then alphabetically by name within each age).\nTo sort data in a table:\n1) Select the table (or part of the table) to be sorted.\n2) Choose Table > Sort on the Menu bar, or click the Sort icon on the Table toolbar.\n3) In the Sort dialog (Figure 322):\na) Decide whether you want to sort in the direction of rows or columns. The default\nsorting direction is by rows, which results in sorting the data in a column.\nb) Select up to three keys to sort on, in the correct order.\nc) For each key, select which column or row to sort on, whether the sort is Numeric or\nAlphanumeric and whether it is Ascending or Descending.\nd) Click OK to perform the sort.\nNote\nYou have to select all cells that might be affected by the sorting. For example, if you\nselect only the cells of one column, the sort affects that column only, while the others\nremain unchanged. In such a case, you risk mixing the data of the rows.\nChapter 13, Tables | 305",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_305.png"
+    ]
+  },
+  {
+    "title": "Numbering the first page something other than 1",
+    "level": 3,
+    "path": [
+      "Chapter 5, Formatting Pages: Basics",
+      "Numbering pages",
+      "Numbering the first page something other than 1"
+    ],
+    "start_page": 114,
+    "end_page": 114,
+    "next_start_page": 114,
+    "is_leaf": true,
+    "text": "e) Select Page number to make the field active. Type 1. Click OK.\nFigure 104: The Breaks section of the Text\nFlow page of the Paragraph Style dialog\nNumbering the first page something other than 1\nSometimes you may want to start a document with a page number greater than 1. The\ninstructions are similar to Step 3 in the previous section.\n1) Insert a page number in the header or footer (Insert > Page Number).\n2) Click in the first paragraph in the text area. Choose Format > Paragraph (or right-click\nand choose Paragraph > Paragraph in the context menu).\n3) In the Text Flow page of the Paragraph dialog, in the Breaks section (Figure 104), select\nInsert and select Page in the Type drop-down list. Select With page style and the page\nstyle you are using for the first page of the document.\n4) Select Page number to make the field active. Type the page number you want to start\nwith. Click OK.\nNote\nIf you set a starting page number that is an even number, you will end up with a\nblank page before the first page. LibreOffice adheres to the convention that odd page\nnumbers go on right-hand pages and even page numbers on left-hand pages.\nHowever, you can suppress this blank page when you print the file or export it as a\nPDF. See Chapter 7, Printing, Exporting, Emailing, Signing for more information.\nCombining header text and page number\nYou can apply a lot of interesting variations without further knowledge of page styles. Here are\nsome suggestions:\n• Right-align the header to make the page number appear on the top-right.\n• Type the word Page (and a space) before the page number field so the header reads\nPage 1, Page 2, and so on.\n• Add the document title so the header includes, for example: Peter’s Favourite Poems (left\naligned) and Page x (right aligned), where x is the value of the Page Number field. Use a\nright-aligned tab to separate the title from the page number.\n• Writer also has a Page Count field (Insert > Field > Page Count). Using it and the page\nnumber field, you could, for example, have a header that reads Page 2 of 12.\nThese variations are all illustrated in Figure 105.\n114 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_114.png"
+    ]
+  },
+  {
+    "title": "Specifying the default printer",
+    "level": 3,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Quick printing",
+      "Specifying the default printer"
+    ],
+    "start_page": 148,
+    "end_page": 148,
+    "next_start_page": 148,
+    "is_leaf": true,
+    "text": "Quick printing\nIf the Print Directly icon is visible on the Standard toolbar, you can click it to print the entire\ndocument using the current default print settings. If the icon is not visible, you can make it visible\nby right-clicking on the toolbar, pointing to Visible Buttons, and selecting Print Directly.\nSpecifying the default printer\nTo specify the default printer, choose File > Printer Settings on the Menu bar. The Printer Setup\ndialog (Figure 147) opens. To access other printing options, click the Options button on the\nPrinter Setup dialog. The same default options are available through Tools > Options >\nLibreOffice Writer > Print, and more general print options through Tools > Options >\nLibreOffice > Print. See Chapter 20, Customizing Writer, for more information.\nFigure 147: Printer Setup dialog\nControlling printing using the Print dialog\nFor more control over printing, use the Print dialog (File > Print, Ctrl+P (⌘+P for macOS), or the\nPrint icon on the Standard toolbar). The appearance of the Print dialog is different on Windows\nand Linux than it is on macOS, so they are described separately in this chapter.\nPrint dialog on Windows and Linux\nOn Windows and Linux, the Print dialog (Figure 148) has two tabs, on which you can choose a\nrange of options, as described in the following sections.\nSelecting general printing options\nOn the General tab of the Print dialog, you can choose:\n• The printer, from the list of available printers.\n• Which pages to print, the number of copies to print, and whether to collate multiple\ncopies (Range and copies section).\n• Paper size and print orientation (Page Layout section).\n• How many pages to print on one sheet of paper and whether to draw a border around\neach page (Page Layout section).\n• Whether to print a brochure (see page 173).\n• Whether to print in reverse page order (useful on some printers to make the pages come\nout in page order).\n148 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_148.png"
+    ]
+  },
+  {
+    "title": "Recording changes",
+    "level": 3,
+    "path": [
+      "Chapter 3, Working with Text: Advanced",
+      "Tracking changes to a document",
+      "Recording changes"
+    ],
+    "start_page": 71,
+    "end_page": 72,
+    "next_start_page": 72,
+    "is_leaf": true,
+    "text": "Tip\nAn alternative to steps 2 and 3 above is to choose File > Properties > Security tab,\nselect the Record changes option, then click Protect and enter the password.\nTrack Changes menu and toolbar\nIn addition to the Track Changes menu (Figure 48), Writer provides a convenient toolbar (Figure\n49) that includes buttons for the same functions.\nFigure 48: Track Changes menu\nFigure 49: Track Changes toolbar\n1 Show Changes 5 Accept Change 9 Accept & go to Next 13 Insert Change Comment\n2 Record Changes 6 Reject Change 10 Reject & go to Next 14 Protect Changes\n3 Previous Change 7 Accept All Changes 11 Manage Changes 15 Compare Documents\n4 Next Change 8 Reject All Changes 12 Insert Comment 16 Merge Documents\nRecording changes\nTo modify the default settings, see Chapter 20, Customizing Writer, for instructions on setting up\nhow changes will be displayed.\n1) To begin tracking (recording) changes, click Edit > Track Changes > Record. To show or\nhide the display of changes, click Edit > Track Changes > Show.\nTip\nHold the mouse pointer over a tracked change; you will see a Help Tip showing the\ntype of change, the author, date, and time of day for the change. If Extended Tips\nare enabled, you will also see any comments recorded for this change.\nChapter 3, Working with Text: Advanced | 71\n\n2) To enter a comment on a tracked change, place the cursor in the area of the change and\nthen click Edit > Track Changes > Comment or click the Insert Track Change\nComment button on the Track Changes toolbar.\nIn addition to being displayed as an extended tip, the comment is also shown in the list in\nthe Manage Changes dialog (Figure 50).\nTo move from one tracked change to the next, use the arrow buttons. If no comment has\nbeen recorded for a change, the Text field is blank.\n3) To stop recording changes, click Edit > Track Changes > Record again.\nTip\nSee also “Adding other comments” on page 84 for a way to annotate text that is not\nassociated with a tracked change.\nAccepting or rejecting changes\nTo accept or reject recorded changes, use any of these tools:\n• Track Changes toolbar (Figure 49)\n• Items on the Track Changes menu (Figure 48)\n• Right-click (context) menu\n• Manage Changes dialog\nThe results of accepting or rejecting a change are as follows:\n• Accept: incorporates the change into the document and removes the change indicator.\n• Reject: reverts the change to its original state and removes the change indicator.\nTrack Changes menu and toolbar\nFor quick and easy accepting and rejecting of changes, you can use the Track Changes\ntoolbar (Figure 49), which includes buttons for the same functions as appear on the Edit >\nTrack Changes submenu (Figure 48). To enable the Track Changes toolbar, click View >\nToolbars > Track Changes. You can dock this toolbar in a convenient place or leave it\nfloating.\nRight-click (context) menu\n1) If tracked changes are not showing, click Edit > Track Changes > Show.\n2) Hover the mouse pointer over a recorded change. A box appears with information about\nthe type of change, who made it, and the date and time.\n3) Right-click the changed text. In the context menu, choose Accept Change or Reject\nChange.\nManage Changes dialog\n1) Click Edit > Track Changes > Manage. The Manage Changes dialog (Figure 50) opens,\nshowing changes that have not yet been accepted or rejected.\n2) When you select a change in the dialog, the change itself is highlighted in the document,\nso you can see what the editor changed.\n3) Click Accept or Reject to accept or reject the selected change. You can also click\nAccept All or Reject All if you do not want to review the changes individually.\nTo show only the changes of certain people or only the changes on specific days or various other\nrestrictions, use the Filter tab (Figure 51) on the Manage Changes dialog. After specifying the\nfilter criteria, return to the List tab to see those changes that meet your criteria.\n72 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_71.png",
+      "Writer/images/page_72.png"
+    ]
+  },
+  {
+    "title": "Applying list styles",
+    "level": 3,
+    "path": [
+      "Chapter 8, Introduction to Styles",
+      "Applying styles",
+      "Applying list styles"
+    ],
+    "start_page": 185,
+    "end_page": 185,
+    "next_start_page": 185,
+    "is_leaf": true,
+    "text": "Figure 193: Setting a paragraph style to start on a page\nof a selected style\nStep 4. Start a new chapter.\nApply the Heading 1 paragraph style to the first paragraph, which is the title of the chapter.\nNote\nBy default, the Heading 1 paragraph style is assigned to Outline Level 1. The\nassignment of paragraph styles to outline levels is done through Tools > Chapter\nNumbering.\nStep 5. Set up the page headers.\nOn any Default Page Style page, put the cursor in the header and insert a page number\nfield (Insert > Page Number).\nApplying list styles\nList styles define properties such as indentation, numbering style (for example, 1,2,3; a,b,c; or\nbullets), and punctuation after the number, but they do not by themselves define properties such\nas font, borders, text flow, and so on. The latter are properties of paragraph styles.\nAlthough you can apply list styles using the Styles menu or the Styles deck in the Sidebar, those\nmethods are not recommended.\nWhenever possible, use paragraph styles for creating bulleted and numbered lists. Writer comes\nwith two sets of paragraph styles for this purpose. It is recommended to use list styles and\nparagraph styles together in these ways:\n• Use paragraph styles List 1, List 2, List 3, and so on for creating unordered (bulleted)\nlists. These styles use Bullet list styles.\n• Use paragraph styles Numbering 1, Numbering 2, Numbering 3, etc, for creating ordered\n(numbered) lists. These styles use the list styles called Numbering 1, Numbering 2, etc.\nWriter has several predefined list styles, which use different bullet symbols or number sequences\n(123, abc, ABC, and so on). As with any style, you can redefine the properties of these styles, for\nexample the numbering or bullet symbol and the indentation. You can also define other list styles\nin these series or create your own series. For more information, see Chapter 9, Working with\nStyles. Much more information about list styles is in Chapter 12, Lists.\nApplying table styles\nTable styles define properties such as the font, paragraph spacing, number of columns, borders,\nand background color.\nChapter 8, Introduction to Styles | 185",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_185.png"
+    ]
+  },
+  {
+    "title": "Indenting the section from margins",
+    "level": 4,
+    "path": [
+      "Chapter 6, Formatting Pages: Advanced",
+      "Using sections for page layout",
+      "Creating sections",
+      "Indenting the section from margins"
+    ],
+    "start_page": 134,
+    "end_page": 135,
+    "next_start_page": 135,
+    "is_leaf": true,
+    "text": "As you add text to the section, the text flows from one column to the next. You can distribute text\nacross the columns in one of two ways, as shown in Figure 130.\nEvenly distribute contents to all columns\nWhen this option is selected, Writer adjusts the length of the columns to the amount of text,\nso that all the columns are approximately the same length. As you add or delete text, the\ncolumns readjust.\nWhen this option is not selected, Writer fills the columns newspaper-style: one column at a\ntime, beginning with the first column. The last column may be shorter than the others.\nFigure 130: (Left) Evenly distributed columns; (Right) Newspaper-style columns\nIndenting the section from margins\nUse the Indents tab (Figure 131), to set indents from the right and left margins of the section.\nEnter the desired left-margin indent in the Before section box. Enter the desired right-margin\nindent in the After section box. The preview box on the right-hand side of the tab shows you\nhow the section will look with the indents applied.\nFigure 131: Indenting sections\n134 | LibreOffice 7.3 Writer Guide\n\nChanging the background of the section\nUse the Area tab to add color or an image to the background of the current section. This page is\nsimilar to the Area tabs for paragraphs, frames, tables, and other objects. For more information,\nrefer to “Defining borders and backgrounds” on page 162 and the Draw Guide.\nCustomizing footnotes and endnotes in a section\nUse the Footnotes/Endnotes page of the Insert Section dialog (Figure 132) to customize the\ncurrent section’s footnotes and endnotes.\nFigure 132: Setting footnotes and endnotes for sections\nCustomizing footnotes\nTo number the section’s footnotes separately from the other footnotes in the document, and\nformat the numbering, follow these steps:\n1) In the Footnotes section of the page, make sure that Collect at end of text is selected.\n2) Select Restart numbering.\n3) To start the section’s footnotes at a number other than 1, enter the desired starting\nnumber in the Start at box.\n4) Select the Custom format option. In the drop-down list, select a numbering format for the\nfootnotes.\nTo add text to the selected numbering format, use the Before and After boxes. For example, if\nyou want the footnote numbers to be preceded by the word Note and followed by a colon, fill the\nBefore and After boxes as shown in Figure 132.\nCustomizing endnotes\nIf you want the section’s endnotes to appear at the end of the section rather than at the end of\nthe document, select the Collect at end of section option in the Endnotes area.\nTo number the current section’s endnotes separately from the other endnotes in the document,\nand format the numbering, apply the procedures described above to the Endnotes settings.\nEditing and deleting sections\nTo edit a section, choose Format > Sections on the Menu bar. In the Edit Sections dialog\n(Figure 133), select the section you want to edit by clicking its name in the Section list.\nChapter 6, Formatting Pages: Advanced | 135",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_134.png",
+      "Writer/images/page_135.png"
+    ]
+  },
+  {
+    "title": "Groupedbar Compact interface",
+    "level": 2,
+    "path": [
+      "Chapter 21, User Interface Variants",
+      "Groupedbar Compact interface"
+    ],
+    "start_page": 477,
+    "end_page": 478,
+    "next_start_page": 478,
+    "is_leaf": true,
+    "text": "Figure 509: Table tab menu\nTabbed Compact interface\nThe Tabbed Compact interface has the same tabs as the Tabbed interface, but the commands on\neach tab are arranged in a single row of icons, many with drop-down menus of choices.\nFigure 510: Tabbed Compact interface example: Insert tab\nGroupedbar Compact interface\nThe Groupedbar Compact interface (Figure 511) is divided into groups that contain commands\norganized as sets of icons and menus.\nFigure 511: Groupedbar Compact interface example\nThe Groupedbar menu (Figure 512) provides a subset of commands, including a convenient way\nto change the user interface.\nChapter 21, User Interface Variants | 477\n\nFigure 512: Groupedbar menu\nContextual Single interface\nThe Contextual Single interface displays a standard Menu bar and a single toolbar with context-\ndependent content.\n478 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_477.png",
+      "Writer/images/page_478.png"
+    ]
+  },
+  {
+    "title": "View options",
+    "level": 3,
+    "path": [
+      "Chapter 20, Customizing Writer",
+      "Choosing options for all of LibreOffice",
+      "View options"
+    ],
+    "start_page": 435,
+    "end_page": 435,
+    "next_start_page": 435,
+    "is_leaf": true,
+    "text": "In the Cryptography section, you can set the preferred public key for OpenPGP encryption and\ndigital signature. These preferred keys will be pre-selected in the key selection dialog when you\nsign or encrypt a document (see Chapter 7, Printing, Exporting, Emailing, Signing).\nView options\nThe options on the LibreOffice – View page affect how the document window looks and behaves.\nSet them to suit your personal preferences. For details, see the Help or Chapter 2, Setting up\nLibreOffice, in the Getting Started Guide.\nPrint options\nOn the LibreOffice – Print page, set the print options to suit your default printer and your most\ncommon printing method.\nIn the Warnings section on the right side of the page, you can choose whether to be warned if the\npaper size or orientation specified in your document does not match the paper size or orientation\navailable for your printer. Having these warnings turned on can be quite helpful, particularly if you\nwork with documents produced by people in other countries where the standard paper size is\ndifferent from yours.\nFigure 448: Choosing general printing options for all components\nTip\nIf your printouts are incorrectly placed on the page or chopped off at the top, bottom,\nor sides, or the printer is refusing to print, a likely cause is page size incompatibility.\nPaths options\nOn the LibreOffice – Paths page, you can change the location of files associated with, or used by,\nLibreOffice to suit your needs. For example, you might want to store documents by default\nsomewhere other than My Documents, or you might want to store project templates in folders not\nin the supplied template paths. Multiple paths are possible, so you can add locations. For more\ninformation, see “Paths” in Chapter 2, Setting Up LibreOffice, in the Getting Started Guide,\nChapter 20, Customizing Writer | 435",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_435.png"
+    ]
+  },
+  {
+    "title": "Table tab",
+    "level": 4,
+    "path": [
+      "Chapter 21, User Interface Variants",
+      "Tabbed interface",
+      "Additional tabs",
+      "Table tab"
+    ],
+    "start_page": 476,
+    "end_page": 477,
+    "next_start_page": 477,
+    "is_leaf": true,
+    "text": "Figure 506: Tabbed Interface – Object tab\nThe Object tab menu (Figure 507) provides a few of the same commands. The illustration shows\nthe menu when a frame is selected.\nFigure 507: Object tab menu\nTable tab\nThe Table tab (Figure 508) is opened when the cursor is in a table.\nFigure 508: Tabbed Interface – Table tab\nThe Table tab menu (Figure 509) includes some commands not shown on the tab.\n476 | LibreOffice 7.3 Writer Guide\n\nFigure 509: Table tab menu\nTabbed Compact interface\nThe Tabbed Compact interface has the same tabs as the Tabbed interface, but the commands on\neach tab are arranged in a single row of icons, many with drop-down menus of choices.\nFigure 510: Tabbed Compact interface example: Insert tab\nGroupedbar Compact interface\nThe Groupedbar Compact interface (Figure 511) is divided into groups that contain commands\norganized as sets of icons and menus.\nFigure 511: Groupedbar Compact interface example\nThe Groupedbar menu (Figure 512) provides a subset of commands, including a convenient way\nto change the user interface.\nChapter 21, User Interface Variants | 477",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_476.png",
+      "Writer/images/page_477.png"
+    ]
+  },
+  {
+    "title": "Deleting a template category",
+    "level": 3,
+    "path": [
+      "Chapter 10, Working with Templates",
+      "Organizing templates",
+      "Deleting a template category"
+    ],
+    "start_page": 230,
+    "end_page": 230,
+    "next_start_page": 230,
+    "is_leaf": true,
+    "text": "Deleting a template category\nYou cannot delete template categories supplied with LibreOffice. Nor can you delete categories\nadded by the Extension Manager unless you first remove the extension that installed them.\nHowever, you can delete a category that you created:\n1) Open the Templates dialog and select the category in the Filter list at the top.\n2) Click the Manage button, and select Delete Category in the submenu (Figure 242).\nWhen a message box appears asking you to confirm the deletion, click Yes.\nFigure 242: Manage menu for a user-created template category\nRenaming a template category\nYou cannot rename template categories supplied with LibreOffice. You can only rename\ncategories that you created.\nOpen the Templates dialog, select the category in the Filter list at the top, then click the Manage\nbutton and select Rename Category in the submenu. In the small dialog that opens, type a\nname in the Enter New Name text box and click OK.\nMoving a template\nTo move a template from one template category to another, select it in the Templates dialog,\nright-click on it and select Move in the context menu (Figure 234). In the Select Category dialog\n(Figure 243), select the destination category and click OK. The selected template is moved to the\nselected category. You can also create a new category into which to move the template.\nFigure 243: Moving a template to another category\n230 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_230.png"
+    ]
+  },
+  {
+    "title": "Step 5: Adjust layout",
+    "level": 3,
+    "path": [
+      "Chapter 14, Mail Merge",
+      "Using the Mail Merge Wizard to create a form letter",
+      "Step 5: Adjust layout"
+    ],
+    "start_page": 329,
+    "end_page": 331,
+    "next_start_page": 331,
+    "is_leaf": true,
+    "text": "Figure 349: Customizing the salutation\nStep 5: Adjust layout\nIn Step 5: Adjust layout, you can adjust the position of the address block and salutation on the\npage. You can place the address block anywhere on the page. The salutation is always on the\nleft, but you can move it up and down the page. Use the buttons shown in Figure 350 to move\nthe elements.\nFigure 350: Adjust layout\nChapter 14, Mail Merge | 329\n\nYou now have a Writer document into which you can type the contents of the letter. To merge the\nfields and print the letters, choose File > Print on the Menu bar. A message pops up, asking if\nyou want to print a form letter. Click Yes.\nThe Mail Merge dialog (Figure 333) is now displayed, where you can optionally select records to\ninclude or exclude (in the top section) and, in the Output section, choose to print the letters\nimmediately (Printer) or save them (File) for further editing or printing at a later time.\nIf you choose File, you can then choose whether to save the output as a single document\n(containing all of the letters) or save the letters as individual documents, and you can specify the\nname, location, and format of the files. Click OK to save the letters. You can now open the letters\nand edit them individually as you would edit any other document.\n330 | LibreOffice 7.3 Writer Guide\n\nWriter Guide 7.3\nChapter 15,\nTables of Contents, Indexes,\nBibliographies",
+    "text_page_count": 3,
+    "image_paths": [
+      "Writer/images/page_329.png",
+      "Writer/images/page_330.png",
+      "Writer/images/page_331.png"
+    ]
+  },
+  {
+    "title": "Setting tab stops and indents",
+    "level": 3,
+    "path": [
+      "Chapter 4, Formatting Text",
+      "Formatting paragraphs directly",
+      "Setting tab stops and indents"
+    ],
+    "start_page": 91,
+    "end_page": 92,
+    "next_start_page": 92,
+    "is_leaf": true,
+    "text": "In the Options section, you can specify how paragraphs are treated at the bottom of a page. Do\nnot split paragraph and Keep with next paragraph should be self-explanatory. The other options\nallow you to avoid a single line at the bottom of a page (called an orphan) or a single line at the\ntop of a page (a widow).\nOutline & List\nThe Outline & List tab on the Paragraph dialog provides options for choosing the outline level of\nthe paragraph and its list style (if any). If the paragraph is part of an ordered list, you can specify\nthat list numbering restarts at the paragraph, and what number to restart with.\nThis tab does not cover the same functions as the Chapter Numbering dialog (Tools > Chapter\nNumbering), but the Outline level selected here is related to the outline defined there. See\nChapter 8, Introduction to Styles, and Chapter 9, Working with Styles, for a discussion of these\nfeatures. Line numbering is discussed in Chapter 3, Working with Text: Advanced.\nFigure 71: Selecting outline level, paragraph numbering, and line numbering\nSetting tab stops and indents\nThe horizontal ruler shows the tab stops. Any tab stops that you have defined will overwrite the\ndefault tab stops. Tab settings affect indentation of full paragraphs (using the Increase Indent\nand Decrease Indent buttons on the Formatting toolbar or the Paragraph panel of the Properties\ndeck in the Sidebar) as well as indentation of parts of a paragraph (by pressing the Tab key on\nthe keyboard).\nTip\nMany indents, for example at the beginning of a paragraph, can be set in the\nparagraph style, so you don’t need to use the Tab key to activate them.\nUsing the default tab spacing can cause formatting problems if you share documents with other\npeople. If you use the default tab spacing and then send the document to someone else who has\nchosen a different default tab spacing, tabbed material will change to use the other person’s\nsettings. Instead of using the defaults, define your own tab settings, as described in this section.\nTo define indents and tab settings for one or more selected paragraphs, right-click a paragraph\nand choose Paragraph to open the Paragraph dialog; then select either the Tabs tab (Figure 72)\nor the Indents & Spacing tab of the dialog. Alternatively, you can double-click the horizontal ruler\nto open the Indents & Spacing tab of the Paragraph dialog. A better strategy is to define tabs for\nthe paragraph style. Refer to Chapters 8 and 9 for more about paragraph styles.\nChapter 4, Formatting Text | 91\n\nFigure 72: Specifying tab stops and fill characters\nTip\nUsing tabs to space out material on a page is not recommended. Depending on what\nyou are trying to accomplish, a table or frame is usually a better choice.\nChanging the default tab stop interval\nCaution\nAny changes to the default tab setting will affect the existing default tab stops in any\ndocument you open afterward, as well as tab stops you insert after making the\nchange.\nTo set the measurement unit and the spacing of default tab stop intervals, go to Tools > Options\n> LibreOffice Writer > General.\nFigure 73: Selecting a default tab stop interval\nChanging measurement units for tab stops and rulers\nYou can also set or change the measurement unit for rulers in the current document by right-\nclicking on the ruler to open a list of units, as shown in Figure 74 for the horizontal ruler. Click one\nof them to change the ruler to that unit. The selected setting applies only to that ruler.\nFigure 74: Changing the measurement unit for a ruler\n92 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_91.png",
+      "Writer/images/page_92.png"
+    ]
+  },
+  {
+    "title": "Editing section attributes",
+    "level": 4,
+    "path": [
+      "Chapter 6, Formatting Pages: Advanced",
+      "Using sections for page layout",
+      "Editing and deleting sections",
+      "Editing section attributes"
+    ],
+    "start_page": 136,
+    "end_page": 136,
+    "next_start_page": 136,
+    "is_leaf": true,
+    "text": "Editing section attributes\nTo rename the selected section, type over its name in the Section name box.\nOn the Edit Sections dialog, you can also edit the selected section’s link, write-protect, and hide\nattributes. To learn how to edit these attributes, see “Linking sections” on page 152, “Write-\nprotecting sections” on page 152, and “Hiding sections” on page 153.\nFigure 133: Edit Sections dialog\nEditing the format of a section\nTo edit the format of the selected section, click the Options button.\nThe Options dialog has four tabs: Columns, Indents, Background, and Footnotes/Endnotes.\nThese tabs are the same as those in the Insert Section dialog described earlier; the Background\ntab on the Options dialog corresponds to the Area tab in the Insert Section dialog.\nTo reset a tab to the conditions in place when the dialog opened, click the Reset button. To save\nthe Options settings, click OK. You are returned to the Edit Sections dialog.\nRemoving sections\nTo remove the selected section, click the Remove button. This does not delete the contents of\nthe section; the contents become part of the main document. If the contents were linked, they are\nnow embedded.\nUpdating links\nYou can set Writer to update linked sections automatically, and you can also update links\nmanually.\nUpdating links automatically\nTo set Writer to update links without prompting you, or to turn off automatic updating, follow these\nsteps:\n1) Choose Tools > Options > LibreOffice Writer > General. The dialog displays general\ntext document settings.\n2) In the Update links when loading section of the dialog, select one of the options:\n136 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_136.png"
+    ]
+  },
+  {
+    "title": "Creating the Poem paragraph style",
+    "level": 3,
+    "path": [
+      "Chapter 8, Introduction to Styles",
+      "Example: creating and modifying paragraph styles",
+      "Creating the Poem paragraph style"
+    ],
+    "start_page": 190,
+    "end_page": 190,
+    "next_start_page": 190,
+    "is_leaf": true,
+    "text": "Creating the Poem paragraph style\nWe will use the Default Paragraph Style as a starting point.\n1) On the Styles deck, click the Paragraph Styles icon.\n2) Right-click Default Paragraph Style and choose New.\nThe Paragraph Style dialog opens, with the Organizer tab selected. To create a custom style, you\nneed to configure the top three entries.\nStyle fields Description\nName The name of the style itself, like Heading 1 or Text body.\nType the name Poem.\nNext Style The style of a paragraph that follows the paragraph that is in Poem\nstyle. When you press Enter while typing text in the Poem style, this\nstyle is automatically applied to the new paragraph.\nSet this value to Poem. When you press Enter, the text of the new\nparagraph will remain in the Poem style.\nInherit from If the properties of the Poem style are inherited from another style, say\nDefault Paragraph Style, then any change in Default will affect Poem.\nFor our example, this is not the behavior we want. Set this entry to\n– None –. This means that Poem is not inherited from any other style.\nSelect the Custom Styles category for new styles. Do not select the AutoUpdate option.\nAfter making these changes, the dialog should look like Figure 197.\nFigure 197: Initial configuration for the Poem style. Set the first three entries as shown.\nThe next step is to configure the alignment and font properties of this style.\n• On the Alignment page, select the Center option.\n• On the Font page, select the 12pt font size.\nClick OK to save the new Poem style.\nCreating the Poem Heading style\nTo create a new Poem Heading style, use the same procedure as above, with these changes:\n• Next Style: Select Poem, not Poem Heading. When you press Enter while typing text in\nthe PoemHeading style, this Poem style is automatically applied to the new paragraph.\n• Inherit from: Heading.\nThe dialog should look like Figure 198.\n190 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_190.png"
+    ]
+  },
+  {
+    "title": "Splitting a document into master and subdocuments",
+    "level": 2,
+    "path": [
+      "Chapter 16, Master Documents",
+      "Splitting a document into master and subdocuments"
+    ],
+    "start_page": 370,
+    "end_page": 371,
+    "next_start_page": 371,
+    "is_leaf": true,
+    "text": "5) Navigate to the location of the test results files (Results1.odt, Results2.odt, and so on).\nSelect the first file to insert, Results1.odt for example, and click Insert. The file is inserted\nabove the existing entry.\n6) Click the Move Up icon to have the TestFile1 text above the Results1 text (file contents\nare inserted above the selected file in the master document).\n7) Repeat from step 4 as often as required. It does not matter which file is highlighted in the\nmaster document when you insert the next one, just select the inserted file and use the\nMove Up or Move Down icons to position it as required.\nFigure 386: Moving subdocuments\n8) To edit the master document, to perhaps add a widget serial number and a client's name,\nin the master document right-click TestFile1.odt and select Edit in the context menu. Add\nthe required content to the file that opens, save and close the file (see “Editing a master\ndocument” on page 426 for more detailed information).\n9) Select Tools > Update > Links on the Menu bar, or click Update > Links in the\nNavigator and click Yes to confirm. All the edits in the master document will now show.\nSplitting a document into master and subdocuments\nWhen you have one existing document that you want to split into a master document and several\nsubdocuments, you can have Writer split the document automatically at headings with an outline\nlevel of your choice.\nAlthough this method is quick and easy, some cleanup work may be necessary:\n• The automatically generated file names for the subdocuments are maindocnameX.odt,\nwhere X is 1, 2, 3, and so on. If you have a Preface or other “chapter” starting with a\nHeading 1 before Chapter 1, the file names will not directly correspond to the chapter\nnumbers. You may wish to rename the subdocuments; see “Adding, deleting, or\nrenaming subdocuments” on page 426.\n• If the original document is associated with a template, the master document (.odm) is\nalso associated with that template, but the subdocuments are not. The subdocuments\ninherit the styles in the original document, but their association with the template is lost.\nHow to do it\n1) Open the document and choose File > Send > Create Master Document.\n2) On the Name and Path of Master Document dialog (Figure 387):\na) Navigate to the folder where you want to save the master document and its\nsubdocuments (or create a new folder).\nb) Type a name for the master document in the File name box.\nc) In the separated by: list, choose the outline level where the file should be split into\nsubdocuments. Usually this is Outline: Level 1 for a chapter heading, but your\ndocument may be structured differently. For more information about outline levels,\n370 | LibreOffice 7.3 Writer Guide\n\nsee “Using paragraph styles to define a hierarchy of headings” in Chapter 8,\nIntroduction to Styles.\nd) Leave the Automatic file name extension option selected, and click Save to split\nthe document into subdocuments and create the master document.\nFigure 387: Splitting a document into master and subdocuments\nIf you selected Outline: Level 1 and the paragraph style at that level is Heading 1, each of the\nsubdocuments begins with a Heading 1 paragraph.\nRestarting page numbering\nThe examples in the previous sections showed a very basic collection of files with sequential\npage numbering. This is useful for many documents, including e-books, but a typical printed book\nhas the following sequence of page numbers:\n• No page numbers on cover page or copyright page.\n• Lower-case roman numerals in the front matter, starting with i.\n• Arabic numerals in the body of the document, starting with 1.\n• Page numbering sequential through the rest of the book.\nTo set up a master document to produce such a book, you need to define a different paragraph\nstyle for the heading of the first chapter and assign two special characteristics to it.\nExample\nEach chapter may start with a Heading 1 paragraph, set up in the Breaks section of the Text Flow\ntab of the Paragraph Style dialog to start on a new page (Figure 388). The Page number\ncheckbox is not selected, so numbering continues from the number of the previous page.\nChapter 16, Master Documents | 371",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_370.png",
+      "Writer/images/page_371.png"
+    ]
+  },
+  {
+    "title": "Creating a new page style",
+    "level": 3,
+    "path": [
+      "Chapter 9, Working with Styles",
+      "Working with page styles",
+      "Creating a new page style"
+    ],
+    "start_page": 214,
+    "end_page": 214,
+    "next_start_page": 214,
+    "is_leaf": true,
+    "text": "Creating new frame styles\nYou can access frame settings by selecting New or Modify in the Styles deck for a frame style.\n• Type tab: sets the size and position of the frame. One of the most useful options here is\nAutoSize, which automatically adjusts the frame to the object it contains. If the frame\nstyle is used automatically, then this option should be selected.\n• Options tab: sets whether the contents of the frame are printed and able to be edited in a\nread-only document. This page also sets the text direction, which is useful if you are\nusing the frame for contents in a language that uses right-to-left text direction.\n• Wrap tab: sets how text is positioned in relation to the frame and how close text comes to\na frame. If you want the frame contents to stand out from the paragraphs around it, set\nthe wrap to Wrap Off. This probably is the single most important page for frames.\n• Area tab: sets the background color, bitmap, hatching, gradient, or pattern. This page is\nuseful mostly for text frames in complex page layouts, in which a text frame has an\nappearance different from the general background of the page.\n• Transparency tab: sets the transparency options for the selected background. Values can\nrange from 0% (fully opaque) to +100% (fully transparent).\n• Borders page: sets the attribute for a line around the frame, if any.\n• Columns tab: this page can be ignored unless the frame is being used for text. The page\nis the same as is used to set up a page style, as described in Chapter 6, Formatting\nPages: Advanced.\n• Macro tab: sets a macro to use with the frame in order to trigger an action when the user\ninteracts with the frame. These options are useful for on-line Writer or HTML documents.\nWorking with page styles\nPage styles control page properties (margins, page size, header and footer, among others).\nHowever, unlike paragraphs, characters, and frames, pages can not have directly applied\nproperties. If you change the properties of a page, you are actually changing the underlying page\nstyle, so those changes are applied to all pages that use that page style. To change the\nproperties of individual pages, you need to create a new page style.\nCreating a new page style\nTo create a new page style, open the Styles deck and click the Page Styles icon. Right-click\nanywhere in the window and select New. The Page Style dialog contains nine tabs.\nOrganizer tab\nThe Organizer tab is described on page 229.\nGeneral settings for the page style\nThe Page tab of the Page Style dialog is where you can control the general settings of the page.\nThe tab consists of three sections, plus a preview area in the top right.\nIn the Paper Format section, you can specify the size of the paper, choosing from one of the\nmany predefined formats, or select User to define your own paper size using the Width and\nHeight fields. Select the orientation of the paper: Portrait or Landscape. If your printer has more\nthan one tray, you can specify the tray from which to print pages in the new page style.\n214 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_214.png"
+    ]
+  },
+  {
+    "title": "Printing in black and white on a color printer",
+    "level": 2,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Printing in black and white on a color printer"
+    ],
+    "start_page": 155,
+    "end_page": 156,
+    "next_start_page": 156,
+    "is_leaf": true,
+    "text": "Tip\nIf your printer can print double-sided (duplex) automatically, choose All pages in\nstep 3 and skip steps 4 and 5.\nFigure 156: Settings for printing a brochure using Windows or Linux\nFigure 157: Settings for printing a brochure using macOS\nPrinting in black and white on a color printer\nYou may wish to print documents in black and white on a color printer. Several choices are\navailable.\nNote\nSome color printers may print in color regardless of the settings you choose.\nChapter 7, Printing, Exporting, Emailing, Signing | 155\n\n[Windows and Linux] For one document, change the printer settings to print in black and white or\ngrayscale:\n1) On the Print dialog, click Properties to open the Properties dialog for the printer. The\navailable choices vary from one printer to another, but you should find options for the\ncolor settings. See your printer’s help or user manual for more information.\n2) The choices for color might include black and white or grayscale. Choose grayscale.\n3) Click OK to confirm your choice and return to the Print dialog.\n4) Click Print to print the document.\n[macOS] For one document, change the Color setting on the LibreOffice Writer page of the Print\ndialog (Figure 152):\n1) In the Color section, select Print text in black.\n2) Click Print to print the document.\n[All] To print all color text and images as grayscale, change the LibreOffice settings:\n1) Choose Tools > Options > LibreOffice > Print [macOS: LibreOffice > Preferences >\nLibreOffice > Print].\n2) Select the Convert colors to grayscale option. Click OK to save the change.\n[All] To print all color text as black, and all images as grayscale, change the LibreOffice Writer\nsettings:\n1) Choose Tools > Options > LibreOffice Writer > Print [macOS: LibreOffice >\nPreferences > LibreOffice Writer > Print].\n2) Under Contents, select the Print text in black option. Click OK to save the change.\nPreviewing pages before printing\nThe normal page view in Writer shows what each page will look like when printed; you can edit\nthe pages in that view. If you are designing a document to be printed double-sided, you may want\nto see what facing pages look like. Writer provides two ways to do this:\n• View Layout (editable view): use the Book View button on the status bar and (usually)\nzoom out.\nFigure 158: Book view icon on Status bar\n• Print Preview (read-only view).\nTo use Print Preview:\n1) Choose File > Print Preview on the Menu bar, or click the Toggle Print Preview icon on\nthe Standard toolbar, or press Ctrl+Shift+O. Writer now displays the Print Preview toolbar\ninstead of the Formatting toolbar.\nFigure 159: Print Preview toolbar\n2) Select the required preview icon: Single Page Preview, Two Pages Preview, Book\nPreview, or Multiple Pages Preview.\n3) To print the document from this view, click the Print icon to open the Print dialog. Choose\nthe print options and click Print.\n156 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_155.png",
+      "Writer/images/page_156.png"
+    ]
+  },
+  {
+    "title": "Inserting en and em dashes",
+    "level": 3,
+    "path": [
+      "Chapter 2, Working with Text: Basics",
+      "Inserting special characters",
+      "Inserting en and em dashes"
+    ],
+    "start_page": 48,
+    "end_page": 50,
+    "next_start_page": 50,
+    "is_leaf": true,
+    "text": "Figure 27: Insert > Formatting Mark submenu\nSoft Hyphen\nSoft hyphens (also called custom, discretionary, or optional hyphens) specify where words\nshould be divided at the end of a line. If the word does not occur at the end of a line, the\nhyphen does not appear. To insert a soft hyphen, press Ctrl+hyphen.\nNarrow No-break Space\nIf you want a non-breaking space that is not as wide as a normal space, press Alt+Shift\nwhile you type the space.\nNo-width Optional Break\nUse Ctrl+/ to insert an invisible space in a word that will cause a line break if it is the last\ncharacter in the line. Available when complex text layout (CTL) is enabled.\nWord Joiner\nInserts an invisible space in a word that will keep the word together at the end of a line. In\nearlier versions of Writer, this mark was called No-width no break.\nWhen complex text layout (CTL) is enabled, these additional formatting marks are active:\nLeft-to right Mark\nInserts an invisible mark that affects the text direction of any text following the mark.\nRight-to-Left Mark\nInserts an invisible mark that affects the text direction of any text following the mark.\nInserting en and em dashes\nTo enter en and em dashes as you type, you can use the Replace dashes option on the Options\ntab under Tools > AutoCorrect > AutoCorrect Options. This option replaces one or two\nhyphens, under certain conditions, with the corresponding dash (Table 4).\n– An en-dash is a dash the width of the letter “n” in the font you are\nusing. Type at least one character, a space, a hyphen, another space, and at least one more\nletter. The hyphen will be replaced by an en-dash.\n— An em-dash is a dash the width of the letter “m” in the font you are\nusing. Type at least one character, two hyphens, and at least one more character. The two\nhyphens will be replaced by an em-dash. Exception: if the characters are numbers, as in a date\nor time range, the two hyphens are replaced by an en-dash.\n48 | LibreOffice 7.3 Writer Guide\n\nIn Table 4, the A and B represent text consisting of letters A to Z or digits 0 to 9.\nTable 4: Inserting dashes\nText that you type Result\nA - B (A, space, hyphen, space, B) A – B (A, space, en dash, space, B)\nA -- B (A, space, hyphen, hyphen, space, B) A – B (A, space, en dash, space, B)\nA--B (A, hyphen, hyphen, B) A—B (A, em dash, B)\n1--2 (number, hyphen, hyphen, number) 1–2 (number, en dash, number)\nA-B (A, hyphen, B) A-B (unchanged)\nA -B (A, space, hyphen, B) A -B (unchanged)\nA --B (A, space, hyphen, hyphen, B) A –B (A, space, en dash, B)\nAnother means of inserting en and em dashes is through the Insert > Special Characters menu.\nSelect the U+2013 or U+2014 character (found in the General punctuation subset), respectively.\nA third method uses keyboard shortcuts. These shortcuts vary depending on your operating\nsystem, as described below.\nTip\nYou can also record macros to insert en and em dashes and assign those macros to\nunused key combinations, for example Ctrl+Shift+N and Ctrl+Shift+M. For more\ninformation about key combinations, see Chapter 20, Customizing Writer.\nmacOS\nFor an en dash, hold down the Option (Alt) key and type a hyphen. For an em dash, the\ncombination is Shift+Option+Hyphen.\nWindows\nOn most non-Asian installations of Windows, hold down the left Alt key and type on the\nnumeric keypad: 0150 for an en dash or 0151 for an em dash. The dash appears when you\nrelease the Alt key.\nTip\nOn a keyboard with no numeric keypad, use a Fn (Function) key combination to type\nthe numbers. (The Fn key is usually next to the right of the left-hand Ctrl key on the\nkeyboard.) For example, on a US keyboard layout, the combination for an en dash\nshould be Alt+Fn+mjim and for an em dash it should be Alt+Fn+mjij.\nLinux\nHold down the Compose key and type two hyphens and a period for an en dash, or three\nhyphens for an em dash. The dash appears when you release the Compose key.\nTip\nThe key that operates as a Compose key varies with the Linux distribution. It is\nusually one of the Alt or Win keys, but may be another key, and should be user-\nselectable.\nChapter 2, Working with Text: Basics | 49\n\nChecking spelling and grammar\nBy default, four dictionaries are installed for each language, if they are available for that\nlanguage: a spelling checker, a grammar checker, a hyphenation dictionary, and a thesaurus.\nThe spelling checker determines if each word in the document is in the installed dictionary. The\ngrammar checker works in combination with the spelling checker. You can enable or disable the\ngrammar checker in the Spelling dialog.\nYou can choose to check spelling and grammar automatically as you type, or at any other time,\nor both.\nSpelling\nTo enable automatic checking of spelling, go to Tools on the Menu bar and select Automatic\nSpell Checking, or click the Automatic Spell Checking icon (which may not be displayed by\ndefault) on the Standard Toolbar, or go to Tools > Options > Language Settings > Writing Aids\nand select Check spelling as you type in the Options list.\nAutomatic Spell Checking checks each word as it is typed and displays a wavy red line under\nany unrecognized words. Right-click an unrecognized word to open a context menu (Figure 28).\nYou can click one of the suggested words to replace the underlined word with the one selected. If\nthe list does not contain the word you want, click Spelling to open a dialog. When the word is\ncorrected, the line disappears. If the word is correct but not in the dictionary, you can chose Add\nto dictionary to add it.\nFigure 28: Spelling context menu\nIf the document has change tracking enabled, then the context menu contains extra options\nrelating to changes in the text.\nThe choices in the second and third sections of the menu are:\nIgnore\nThis one instance of the underlined word will be ignored while the document is open. Other\ninstances, if they exist, will still be underlined. This setting is not stored with the document.\nIgnore All\nAll instances of the word in the document will be ignored, and the word will be added to the\nIgnoreAllList user-defined dictionary.\nAdd to Dictionary\nThe word is added by default to the Standard dictionary.\n50 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 3,
+    "image_paths": [
+      "Writer/images/page_48.png",
+      "Writer/images/page_49.png",
+      "Writer/images/page_50.png"
+    ]
+  },
+  {
+    "title": "Creating a frame",
+    "level": 3,
+    "path": [
+      "Chapter 6, Formatting Pages: Advanced",
+      "Using frames for page layout",
+      "Creating a frame"
+    ],
+    "start_page": 124,
+    "end_page": 124,
+    "next_start_page": 124,
+    "is_leaf": true,
+    "text": "Creating a frame\nYou can create a frame in several ways:\n• Choose Insert > Frame > Frame to create an empty frame. The Frame dialog (Figure\n115) opens. You can set the frame’s characteristics at this stage or click OK and come\nback to customize it later.\n• Select text and choose Insert > Frame > Frame to open the Frame dialog. Customize\nthe frame (for example, to add space between the frame and the text) and click OK. The\nselected text is removed from the normal text flow and inserted into the frame.\n• Choose Insert > Frame > Frame Interactively to quickly draw an empty frame. The\nmouse cursor changes shape. Click and drag the mouse to draw an empty frame. To\ncustomize the frame, right-click it and choose Properties in the context menu.\n• Insert a formula or OLE object by selecting Insert > Object > [type of object]. The item\nis inserted and appears in a frame. To customize the frame, right-click it and choose\nProperties in the context menu.\nTo add content to a frame, first deselect the frame by clicking in an empty space somewhere else\non the page. Then, click inside the frame to place the text cursor there. Now add content as you\nwould on the main page. When you are done, deselect the frame.\nNote\nThe menu item Insert > Frame > Floating Frame is for use with HTML documents.\nFigure 115: Frame dialog\nFrame toolbar\nWhen you create or select a frame, the Frame toolbar (Figure 116) is displayed. By default, it\nreplaces the Formatting toolbar. You can also display it by using View > Toolbars > Frame.\n124 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_124.png"
+    ]
+  },
+  {
+    "title": "Preparing images for black-and-white printing",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Creating and editing images",
+      "Preparing images for black-and-white printing"
+    ],
+    "start_page": 234,
+    "end_page": 235,
+    "next_start_page": 235,
+    "is_leaf": true,
+    "text": "Introduction\nYou can add graphic and image files, including photos, drawings, and scanned images, to Writer\ndocuments. Writer can import various vector (line drawing) and raster (bitmap) file formats.\nImages in Writer are of these basic types:\n• Image files, such as photos, drawings, and scanned images\n• Diagrams created using LibreOffice’s drawing tools\n• Artwork created using clip art or Fontwork\n• Charts created using LibreOffice’s Calc component\nThis chapter covers images, diagrams, and artwork. Instructions on how to create charts are\ngiven in Chapter 19, Spreadsheets, Charts, other Objects. For more detailed descriptions on\nworking with drawing tools, see the Draw Guide. For more about charts, see the Calc Guide.\nCreating and editing images\nYou might create images using a graphics program, scan them, or download them from the\nInternet (make sure you have permission to use them), or use photos taken with a digital camera.\nWriter can import various vector (line drawing) images, and can rotate and flip such images.\nWriter also supports raster (bitmap) file formats, the most common of which are GIF, JPG, PNG,\nand BMP. See the Help for a full list.\nWriter can also import SmartArt images from Microsoft Office files. For example, Writer can open\na Microsoft Word file that contains SmartArt, and you can use Writer to edit the images.\nTo edit photos and other bitmap images, use a bitmap editor. To edit line drawings, use a vector\ndrawing program. You do not need to buy expensive programs. For many graphics, LibreOffice\nDraw is sufficient. Open-source (and usually no-cost) tools such as GIMP (bitmap editor) and\nInkscape (vector drawing program) are excellent. These and many other programs work on\nWindows, macOS, and Linux.\nSome things to consider when choosing or creating images include image quality and whether\nthe image will be printed in color or black-and-white (grayscale).\nFor best results:\n• Create images that have the exact dimensions required for the document, or use an\nappropriate graphics package to scale photographs and large drawings to the required\ndimensions. Do not scale images with Writer, even though Writer has tools for doing this,\nbecause the results might not be as clear as you would like.\n• Do any other required image manipulation (brightness and contrast, color balance,\ncropping, conversion to grayscale, and so on) in a graphics package, not in Writer, even\nthough Writer has the tools to do a lot of these things, too.\n• If the document is meant for screen use only, there is no need to use high resolution\nimages of 300 or more dpi (dots per inch). Most computer monitors work at between 72\nand 96 dpi; reducing the resolution (and the file size) has no negative impact on what is\ndisplayed.\nPreparing images for black-and-white printing\nIf color images are to be printed in grayscale, check that any adjacent colors have good contrast\nand print dark enough. Test by printing on a black-and-white printer using a grayscale setting.\nBetter still: change the “mode” of the image to grayscale, either in a photo editor or in Writer itself\n(see “Image mode” on page 285).\n234 | LibreOffice 7.3 Writer Guide\n\nFor example, the following diagram looks good in color. The circle is dark red and the square is\ndark blue. In grayscale, the difference between the two is not so clear. A third element in the\ndiagram is a yellow arrow, which is almost invisible in grayscale.\nOriginal drawing in color Drawing printed in grayscale\nChanging the colors of the circle and the arrow improves the contrast and visibility of the resulting\ngrayscale image.\nOriginal drawing in color Drawing printed in grayscale\nIf the document will be available in black-and-white print only, a better result can often be\nobtained by choosing grayscale fills, not color fills.\nAdding images to a document\nImages can be added to a document in several ways: by inserting an image file stored on your\ncomputer, directly from a graphics program or a scanner, by dragging them from the clip art\ninternal gallery, or by copying and pasting from a source being viewed on your computer.\nInserting an image file\nWhen the image is in a file stored on the computer, you can insert it into a LibreOffice document\nusing any of the following methods.\nDrag and drop\nThis method embeds (saves a copy of) the image file in the Writer document. To link the file\ninstead of embedding it, hold down the Ctrl+Shift keys while dragging the image.\n1) Open a file browser window and locate the image you want to insert.\n2) Drag the image into the Writer document and drop it where you want it to appear. A faint\nvertical line marks where the image will be dropped.\nInsert Image dialog\n1) Click in the Writer document where you want the image to appear.\n2) Choose Insert > Image on the Menu bar or click the Insert Image icon on the Standard\ntoolbar.\n3) On the Insert Image dialog, navigate to the file to be inserted, and select it.\n4) At the bottom of the dialog (Figure 244) is a Link option; see “Linking an image file” on\npage 273. Select Preview to show a thumbnail of the selected image on the right, as in\nthe example. Click Open.\nChapter 11, Images and Graphics | 235",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_234.png",
+      "Writer/images/page_235.png"
+    ]
+  },
+  {
+    "title": "General settings for the page style",
+    "level": 3,
+    "path": [
+      "Chapter 9, Working with Styles",
+      "Working with page styles",
+      "General settings for the page style"
+    ],
+    "start_page": 214,
+    "end_page": 216,
+    "next_start_page": 216,
+    "is_leaf": true,
+    "text": "Creating new frame styles\nYou can access frame settings by selecting New or Modify in the Styles deck for a frame style.\n• Type tab: sets the size and position of the frame. One of the most useful options here is\nAutoSize, which automatically adjusts the frame to the object it contains. If the frame\nstyle is used automatically, then this option should be selected.\n• Options tab: sets whether the contents of the frame are printed and able to be edited in a\nread-only document. This page also sets the text direction, which is useful if you are\nusing the frame for contents in a language that uses right-to-left text direction.\n• Wrap tab: sets how text is positioned in relation to the frame and how close text comes to\na frame. If you want the frame contents to stand out from the paragraphs around it, set\nthe wrap to Wrap Off. This probably is the single most important page for frames.\n• Area tab: sets the background color, bitmap, hatching, gradient, or pattern. This page is\nuseful mostly for text frames in complex page layouts, in which a text frame has an\nappearance different from the general background of the page.\n• Transparency tab: sets the transparency options for the selected background. Values can\nrange from 0% (fully opaque) to +100% (fully transparent).\n• Borders page: sets the attribute for a line around the frame, if any.\n• Columns tab: this page can be ignored unless the frame is being used for text. The page\nis the same as is used to set up a page style, as described in Chapter 6, Formatting\nPages: Advanced.\n• Macro tab: sets a macro to use with the frame in order to trigger an action when the user\ninteracts with the frame. These options are useful for on-line Writer or HTML documents.\nWorking with page styles\nPage styles control page properties (margins, page size, header and footer, among others).\nHowever, unlike paragraphs, characters, and frames, pages can not have directly applied\nproperties. If you change the properties of a page, you are actually changing the underlying page\nstyle, so those changes are applied to all pages that use that page style. To change the\nproperties of individual pages, you need to create a new page style.\nCreating a new page style\nTo create a new page style, open the Styles deck and click the Page Styles icon. Right-click\nanywhere in the window and select New. The Page Style dialog contains nine tabs.\nOrganizer tab\nThe Organizer tab is described on page 229.\nGeneral settings for the page style\nThe Page tab of the Page Style dialog is where you can control the general settings of the page.\nThe tab consists of three sections, plus a preview area in the top right.\nIn the Paper Format section, you can specify the size of the paper, choosing from one of the\nmany predefined formats, or select User to define your own paper size using the Width and\nHeight fields. Select the orientation of the paper: Portrait or Landscape. If your printer has more\nthan one tray, you can specify the tray from which to print pages in the new page style.\n214 | LibreOffice 7.3 Writer Guide\n\nFigure 229: Page tab of Page Style dialog\nIn the Margins section, specify the size of the margins in your preferred unit of measurement. If\nyou select Mirrored for Page layout in the Layout settings section, then the names of the margins\nchange from Left and Right to Inner and Outer. The Gutter margin is the extra space to leave\nbetween the left (or inner) edge of the page and the left (or inner) margin. (Alternatively, you can\nleave the Gutter set to zero and add the gutter margin amount to the left or inner margin value.)\nSee also the Gutter position setting, which can be Left (the default) or Top.\nIn the Layout Settings section, choose the desired Page layout in the drop-down list. Decide\nwhether the page style being defined applies to both left and right pages (default), mirrored\npages, or right or left pages only. Some considerations:\n• If you plan to bind the printed pages using this style like a book, select a mirrored layout.\n• A common practice in page layouts is to have asymmetrical page margins—both for left\nand right margins and for top and bottom margins. The most common scheme follows\nthese two general rules for printed page layouts: (a) The outer margin (right margin on a\nright-hand page) would be wider than the inner margin (left margin on a right-hand page);\n(b) The bottom margin would be larger than the top margin.\n• If you want the first page of a new chapter to always start on a right page, make sure that\nthe page style for the first chapter page is set for the right page only in the Layout\nsettings field. The typical procedure for the rest of a chapter is to define a single\n“mirrored” page style (perhaps, Default Page Style) for both left and right pages. A\nmirrored page can have different headers and footers. If done this way, every chapter will\nuse two page styles.\n• You can choose to define separate page styles for left and right pages, if you want the\npages to be very different in appearance (for example, different margins or columns;\nimagine a book with a full-page photograph on the left pages and two columns of text on\nthe right pages). In that case, make sure that the Next Style field for the first page style is\nset for a left-only page, which, in turn, is set to be followed by a right-only page style. If\ndone this way, every chapter will use three page styles. A hypothetical case might have\nthese page style names: First Page, Left Page, and Right Page.\nUse the Page numbers drop-down list to specify the page numbering style to apply to this page\nstyle.\nChapter 9, Working with Styles | 215\n\nIf you mark the Use page line-spacing box, Writer will align the base lines of text printed on\nadjacent columns, opposite pages, and both sides of a sheet of paper to an invisible vertical grid\non the page with a spacing between grid points that depends on the selected Reference Style.\nBy default, page backgrounds (colors, images, and so on) fill the entire page, including the area\nin the margins. If you want the background to fill only the text area, but not the margin area, then\ndeselect the Background covers margins option in the lower right of the dialog.\nArea and Border tabs\nThe Area and Border tabs are described in detail in Chapter 6, Formatting Pages: Advanced. Use\nthe Area tab to apply a background (covers the entire page, including the margins) or the Border\ntab to draw a border around the text area of the page (inside the margins). You can also add a\nshadow to the text area.\nHeader and Footer tabs\nYou can associate a different header or footer with each page style. This property makes it easy\nto have different headers on left and right pages, to avoid headers on pages at the start of a new\nchapter, and so on. You can also have a different header or footer on the same page style where\nit is used for the first page of a document.\nIf you choose a Mirrored or Right and Left page layout on the Page tab, you can specify a\ndifferent header for left or right pages even if you use a single style for both. This option is not\navailable on the predefined Left Page and Right Page page styles or on any other page style\ndefined to be a left or right page only.\nThe Header and Footer tabs are described in detail in Chapter 5, Formatting Pages: Basics.\nFigure 230: Different content on left and right pages\nColumns tab\nUse the Columns tab to create the column layout for the page style. It has three sections:\nSettings, Width and Spacing, and Separator Line. Choose the desired number of columns. If you\nselect more than one column, the Width and Spacing section and the Separator LIne section\nbecome active. You can use the predefined settings (equally spaced columns) or deselect the\nAutoWidth option and enter the parameters manually. When you work with multiple columns per\npage, you can also fine tune the position and size of a separator line between the columns.\nFootnote tab\nUse the Footnote tab to adjust the appearance of the footnotes. See Chapter 5, Formatting\nPages: Basics, for details.\nWorking with list styles\nList styles work together with paragraph styles. They define indentation, alignment, and the\nnumbering or bullet characters used for list items. You can define many list styles, from simple\nbulleted lists to complex multi-level (nested) lists.\nAs with other styles, the main reasons for using list styles are consistency and speeding up your\nwork. Although you can create simple lists quickly by clicking the Toggle Ordered List or Toggle\n216 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 3,
+    "image_paths": [
+      "Writer/images/page_214.png",
+      "Writer/images/page_215.png",
+      "Writer/images/page_216.png"
+    ]
+  },
+  {
+    "title": "Printing a brochure",
+    "level": 3,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Controlling printing using the Print dialog",
+      "Printing a brochure"
+    ],
+    "start_page": 154,
+    "end_page": 155,
+    "next_start_page": 155,
+    "is_leaf": true,
+    "text": "Figure 155: The Layout page of the Print dialog on macOS\nPrinting a brochure\nIn Writer, you can print a document with two pages on each side of a sheet of paper, arranged so\nthat when the printed pages are folded in half, the pages are in the correct order to form a\nbooklet or brochure.\nTip\nPlan your document so it will look good when printed half size; choose appropriate\nmargins, font sizes, and so on. You may need to experiment.\nThe process for printing a brochure is the same for all operating systems, but the settings are\nfound in different places.\nTo print a brochure on a single-sided printer:\n1) [Windows and Linux] In the Page Layout section of the General tab of the Print dialog,\nclick more and select Brochure near the bottom.\n2) [macOS] On the LibreOffice page of the Print dialog, select Brochure near the bottom.\n3) The preview on the left changes to show the sequence in which the pages will be printed.\n(Figure 156.)\n4) If you have Asian or CTL selected in your language settings3, the Print dialog will include\na drop-down menu adjacent to the Brochure button (not shown in Figure 156). This list\nprovides Left-to-right script and Right-to-left script options. Select the required setting.\n5) [Windows and Linux] In the Range and Copies section of the General tab of the Print\ndialog, select Even pages\n[macOS] On the Paper Handling page of the Print dialog (Figure 157), in the Pages to\nPrint drop-down list, select Even pages.\n6) Click Print. Take the printed pages out of the printer and put them back into the printer in\nthe correct orientation to print on the blank side. You may need to experiment to find the\ncorrect arrangement for your printer.\n7) [Windows and Linux] In the Range and Copies section of the General tab of the Print\ndialog, select Odd pages.\n[macOS] On the Paper Handling page of the Print dialog (Figure 157), in the Pages to\nPrint drop-down list, select Odd pages.\n8) Click Print.\n3 Tools > Options > Language Settings > Languages on Windows or Linux; LibreOffice >\nPreferences > Language Settings > Languages on macOS.\n154 | LibreOffice 7.3 Writer Guide\n\nTip\nIf your printer can print double-sided (duplex) automatically, choose All pages in\nstep 3 and skip steps 4 and 5.\nFigure 156: Settings for printing a brochure using Windows or Linux\nFigure 157: Settings for printing a brochure using macOS\nPrinting in black and white on a color printer\nYou may wish to print documents in black and white on a color printer. Several choices are\navailable.\nNote\nSome color printers may print in color regardless of the settings you choose.\nChapter 7, Printing, Exporting, Emailing, Signing | 155",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_154.png",
+      "Writer/images/page_155.png"
+    ]
+  },
+  {
+    "title": "Using the Crop page of the Image dialog",
+    "level": 4,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Modifying images",
+      "Cropping images",
+      "Using the Crop page of the Image dialog"
+    ],
+    "start_page": 249,
+    "end_page": 250,
+    "next_start_page": 250,
+    "is_leaf": true,
+    "text": "Color\nUse this toolbar to modify the individual RGB color components of the image (red, green, blue)\nas well as the brightness, contrast, and gamma of the image. If the result is not satisfactory, you\ncan press Ctrl+Z to restore the default values.\nUsing the Formatting toolbar and Image dialog\nWhen an image is selected, you can customize some aspects of its appearance using the tools\navailable on the Formatting toolbar and in the dialog opened by right-clicking on the image and\nselecting Properties. You can, for example, create a border around the image, selecting style\nand color; or you can (on the Borders tab of the Image dialog) add a shadow to the image.\nCropping images\nWhen you are only interested in a section of the image for the purpose of your document, you\nmay wish to crop (cut off) parts of it. Writer provides two ways to crop an image: the Crop tool\nand the Crop tab of the Image dialog. The Crop tool provides a quick and easy way to crop an\nimage; but for more control, use the Image dialog.\nNote\nIf you crop an image in Writer, the image itself is not changed. Writer hides, not cuts\noff, part of the image. If you export the document to HTML, the original image is\nexported, not the cropped image. For exporting individual cropped images, see\n“Exporting (saving) images” on page 290.\nUsing the Crop tool\nTo use the Crop tool, right-click the image and select Crop in the context menu. Cropping\nhandles appear at the corners and mid-points of the sides of the image (Figure 256). Drag a\nhandle to cut off part of the image. Click outside the image to turn off cropping mode.\nFigure 256: Cropping handles on an image\nUsing the Crop page of the Image dialog\nTo use the Image dialog, right-click the image and select Properties in the context menu, then\nselect the Crop tab of the Image dialog (Figure 257).\nChapter 11, Images and Graphics | 249\n\nFigure 257: Result on image size of cropping using Keep scale option\nThe units of measurement shown on the Crop tab are those set in Tools > Options >\nLibreOffice Writer > General.\nTwo options are available in the Crop section: Keep scale and Keep image size. Keep scale\nmaintains the proportions of the image; Keep image size may result in distortion of the image.\nAs the values for Left, Right, Top, and Bottom are altered, the boundaries of the image in the\npreview box change to show the crop area on the image, and the Width and Height fields under\neither Scale or Image size. This results in either an image size change (Figure 257), or a scale\nchange for a fixed image size (Figure 258).\nThe original image size is indicated to the left of the Original Size button.\nFigure 258: Result using Keep image size option\nResizing an image\nTo fit the image into the document, you may have to resize it.\n250 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_249.png",
+      "Writer/images/page_250.png"
+    ]
+  },
+  {
+    "title": "Deleting images and themes from the Gallery",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Managing the LibreOffice Gallery",
+      "Deleting images and themes from the Gallery"
+    ],
+    "start_page": 260,
+    "end_page": 261,
+    "next_start_page": 261,
+    "is_leaf": true,
+    "text": "Tip\nYou can also get more gallery themes from the LibreOffice extensions website at\nhttps://extensions.libreoffice.org/, including themes from previous versions of\nLibreOffice that are no longer installed with the program. Themes in extensions\ninstall automatically.\nAdding objects to the Gallery\nTo add objects to a theme that you have created:\n1) Right-click the name of the theme and select Properties in the context menu.\n2) In the theme’s Properties dialog, click the Files tab (Figure 268).\nFigure 268: Gallery Properties dialog\nTo add several files at once:\n1) In the Properties dialog, click the Find Files button.\n2) The Select Path dialog (not shown) opens. You can enter the path for the file’s directory in\nthe Path text box, or you can navigate to locate the file’s directory.\n3) Click the Select button to start the search. A list of files is then displayed in the Properties\ndialog. You can use the file type drop-down list to limit the files displayed.\n4) To add all of the files shown in the list, click Add All. Otherwise, select the files to add\nand then click Add (hold down either the Shift key or the Ctrl key while clicking on the\nfiles).\nTo add a single file:\n1) In the Properties dialog, click Add to open the Gallery dialog (a file browser).\n2) Use the navigation controls to locate the image to add to the theme. Select it and then\nclick Open to add it to the theme.\n3) Click OK on the Properties dialog to close it.\nDeleting images and themes from the Gallery\nTo delete an image from a theme, right-click on the name of the image file or its thumbnail in the\nGallery, then click Delete in the context menu. A message appears, asking if you want to delete\nthis object. Click Yes.\nNote\nDeleting the name of a file from the list in the Gallery does not delete the file from the\nhard disk or other location.\nTo delete a theme from the Gallery, select it from the list of themes, right-click, then click Delete\nin the context menu. You cannot delete a theme supplied with LibreOffice.\n260 | LibreOffice 7.3 Writer Guide\n\nLocation of the Gallery and the objects in it\nGraphics and other objects shown in the Gallery can be located anywhere on your computer’s\nhard disk, on a network drive, or other removable media. When you add graphics to the Gallery,\nthe files are not moved or copied; the location of each new object is simply added as a reference.\nIn a workgroup, you may have access to a shared Gallery (where you cannot change the\ncontents unless authorized to do so) and a user Gallery, where you can add, change, or delete\nobjects.\nThe location of the user Gallery is specified in Tools > Options > LibreOffice > Paths. You can\nchange this location, and you can copy your gallery files (SDV) to other computers.\nGallery contents provided with LibreOffice are stored in a different location. You cannot change\nthis location.\nNote\nThe locations of Gallery themes distributed through LibreOffice extensions are\ndetermined by the extensions’ settings.\nUsing Fontwork\nWith Fontwork you can create graphical text art objects to make your work more attractive. There\nare many different settings for text art objects (line, area, position, size, and more), so you have a\nlarge choice.\nCreating a Fontwork object\n1) On the Fontwork toolbar (View > Toolbars > Fontwork) or the Drawing toolbar (View >\nToolbars > Drawing), click the Insert Fontwork Text icon, or choose Insert > Fontwork\non the Menu bar.\nFigure 269: The Fontwork Gallery\nChapter 11, Images and Graphics | 261",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_260.png",
+      "Writer/images/page_261.png"
+    ]
+  },
+  {
+    "title": "Using AutoUpdate",
+    "level": 3,
+    "path": [
+      "Chapter 8, Introduction to Styles",
+      "Creating and modifying styles",
+      "Using AutoUpdate"
+    ],
+    "start_page": 188,
+    "end_page": 189,
+    "next_start_page": 189,
+    "is_leaf": true,
+    "text": "Figure 195: Loading styles from a template\nDrag-and-drop a selection to create a style\nAnother way to create a new style is to drag-and-drop a text selection into the Styles deck.\n1) Open the Styles deck on the Sidebar.\n2) Select the style category you are going to create (for example a character style) using\none of the icons near the top of the deck.\n3) Select the object on which you want to base the style and drag it to the Styles deck. The\ncursor changes to indicate whether the operation is possible.\n4) In the Create Style dialog, type a name for the new style and click OK to save the style.\nNote\nYou cannot use the drag-and-drop method to create a new page style or table style.\nChanging a style using the Style dialog\nTo change a style (but not a table style) using the Style dialog, right-click the style in the Styles\ndeck and select Modify in the context menu.\nThe dialog displayed depends on the type of style selected. Each style’s dialog has several tabs.\nThe properties on these dialogs are described in Chapter 9, Working with Styles.\nSee Chapter 13, Tables of Data, for information on changing a table style.\nUsing AutoUpdate\nOn the Organizer tab of the Paragraph Style and Frame Style dialogs is an AutoUpdate option\n(marked in Figure 196). If this option is selected, then LibreOffice will apply to the style any\nmodification made manually to a paragraph formatted with that style.\nCaution\nIf you are in the habit of manually overriding styles in your document, be sure that\nAutoUpdate is not enabled, or you may suddenly find whole sections of your\ndocument reformatting unexpectedly.\n188 | LibreOffice 7.3 Writer Guide\n\nFigure 196: The Organizer page of the Paragraph Style dialog\nDeleting styles\nIt is not possible to delete LibreOffice’s predefined styles from a document or template, even if\nthey are not in use. However, custom styles can be deleted.\nTo delete any unwanted styles using the Styles deck of the Sidebar, select each one to be\ndeleted (hold Ctrl while selecting multiple styles), and then right-click and select Delete in the\ncontext menu. If the style is in use, a message appears warning you that the style is in use and\nasking you to verify that you really want to delete the style.\nIf the style is not in use, it is deleted immediately without confirmation.\nCaution\nIf you delete a style that is in use, all objects with that style will return to the style it\nwas based on (inherited from) but may retain some of the deleted style’s formatting\nas manual formatting.\nTip\nIf an unwanted paragraph style is in use, you can use Find and Replace to replace it\nwith a substitute style before deleting it. See Chapter 3, Working with Text:\nAdvanced, for more information.\nExample: creating and modifying paragraph styles\nThis section provides an example of a typical use of custom paragraph styles. We will create a\nPoem paragraph style and a Poem Header paragraph style, with the following properties:\n• Poem: Centered, with a font size of 10pt.\n• Poem Heading: Centered, bold, with a 12pt font size.\nIn addition, a Poem Heading style is to be followed by a Poem style. In other words, when you\npress Enter at the end of a paragraph in the Poem Heading paragraph style, the paragraph style\nfor the next paragraph in the document changes to Poem.\nNote\nYou may have noticed this behavior already. After you enter a heading using a\nHeading paragraph style and press Enter, the next style switches to Text body.\nChapter 8, Introduction to Styles | 189",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_188.png",
+      "Writer/images/page_189.png"
+    ]
+  },
+  {
+    "title": "Quick export to PDF",
+    "level": 3,
+    "path": [
+      "Chapter 7, Printing, Exporting, Emailing, Signing",
+      "Exporting to PDF",
+      "Quick export to PDF"
+    ],
+    "start_page": 159,
+    "end_page": 159,
+    "next_start_page": 159,
+    "is_leaf": true,
+    "text": "7) When you have finished formatting and are ready to print, click either the New Document\nbutton or the Insert button to finish. New Document makes only an envelope or starts a\nnew document with the envelope. Insert puts the envelope into your existing document as\npage 1.\n8) Save this file before you do anything else.\nTo print the envelope:\n1) Choose File > Print on the Menu bar.\n2) [Windows and Linux] On the Print dialog (Figure 148 on page 172), under Range and\nCopies, choose Pages and type 1 in the box. Choose the required printer (which may be\ndifferent from the usual printer).\n[macOS] On the Print dialog (Figure 151 on page 174), in the upper section of the dialog,\nchoose Pages – From: and type 1 in both boxes.\n3) Click Print.\nPrinting labels\nLabels are commonly used for printing address lists (where each label shows a different\naddress), but they can also be used to make multiple copies of one label, for example return-\naddress stickers, labels for CDs/DVDs, or other items.\nPrinting labels, like printing envelopes, has two steps: setup and printing. This topic is covered in\ndetail in Chapter 14, Mail Merge.\nExporting to PDF\nLibreOffice can export documents to PDF (Portable Document Format). This standard file format\nis ideal for sending the file to someone else to view using Adobe Reader or other PDF viewers.\nWarning\nA document in PDF format is not protected against contents tampering or editing by\ndefault. The PDF document contents can be edited by specialized software tools,\nincluding LibreOffice Draw.\nTip\nUnlike Save As, the Export command writes a copy of the current document in a new\nfile with the chosen format, but keeps the current document and format open in your\nsession.\nQuick export to PDF\nClick the Export Directly as PDF icon on the Standard toolbar, or File > Export As > Export\nDirectly as PDF, to export the entire document using the PDF settings you most recently\nselected in the PDF Options dialog. You are asked to enter the file name and location for the\nPDF, but you do not get a chance to choose a page range, the image compression, or other\noptions.\nControlling PDF content and quality\nFor more control over the content and quality of the resulting PDF, use File > Export as >\nExport as PDF. The PDF Options dialog opens. This dialog has six tabs (General, Initial View,\nUser Interface, Links, Security, and Digital Signatures). Select the appropriate settings, and then\nChapter 7, Printing, Exporting, Emailing, Signing | 159",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_159.png"
+    ]
+  },
+  {
+    "title": "Using the Formatting toolbar and Image dialog",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Modifying images",
+      "Using the Formatting toolbar and Image dialog"
+    ],
+    "start_page": 249,
+    "end_page": 249,
+    "next_start_page": 249,
+    "is_leaf": true,
+    "text": "Color\nUse this toolbar to modify the individual RGB color components of the image (red, green, blue)\nas well as the brightness, contrast, and gamma of the image. If the result is not satisfactory, you\ncan press Ctrl+Z to restore the default values.\nUsing the Formatting toolbar and Image dialog\nWhen an image is selected, you can customize some aspects of its appearance using the tools\navailable on the Formatting toolbar and in the dialog opened by right-clicking on the image and\nselecting Properties. You can, for example, create a border around the image, selecting style\nand color; or you can (on the Borders tab of the Image dialog) add a shadow to the image.\nCropping images\nWhen you are only interested in a section of the image for the purpose of your document, you\nmay wish to crop (cut off) parts of it. Writer provides two ways to crop an image: the Crop tool\nand the Crop tab of the Image dialog. The Crop tool provides a quick and easy way to crop an\nimage; but for more control, use the Image dialog.\nNote\nIf you crop an image in Writer, the image itself is not changed. Writer hides, not cuts\noff, part of the image. If you export the document to HTML, the original image is\nexported, not the cropped image. For exporting individual cropped images, see\n“Exporting (saving) images” on page 290.\nUsing the Crop tool\nTo use the Crop tool, right-click the image and select Crop in the context menu. Cropping\nhandles appear at the corners and mid-points of the sides of the image (Figure 256). Drag a\nhandle to cut off part of the image. Click outside the image to turn off cropping mode.\nFigure 256: Cropping handles on an image\nUsing the Crop page of the Image dialog\nTo use the Image dialog, right-click the image and select Properties in the context menu, then\nselect the Crop tab of the Image dialog (Figure 257).\nChapter 11, Images and Graphics | 249",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_249.png"
+    ]
+  },
+  {
+    "title": "Adding captions using the Caption dialog",
+    "level": 3,
+    "path": [
+      "Chapter 11, Images and Graphics",
+      "Adding captions to images",
+      "Adding captions using the Caption dialog"
+    ],
+    "start_page": 244,
+    "end_page": 245,
+    "next_start_page": 245,
+    "is_leaf": true,
+    "text": "When you are done, click the Apply button to save the contour.\nFigure 252 shows the result of contour wrapping and spacing around an image and a drawing\nobject.\nFigure 252: Image and drawing objects with contour wrapping\nAdding captions to images\nYou can add captions to images in three ways: automatically, by using the Caption dialog, or\nmanually.\nAdding captions automatically\nYou can set up LibreOffice to add captions automatically whenever you insert an image, a table,\nor other objects into a document. You can choose which objects are captioned automatically,\nwhat the sequence name is for each caption (for example, Table or Figure), and the position of\nthe caption.\nTo set up automatic captions, choose Tools > Options > LibreOffice Writer > AutoCaption. At\nthe right of the dialog, choose which objects you want to be automatically captioned and specify\nthe characteristics of the captions.\nWhen you insert an image, if automatic captioning is enabled, the image is placed in a frame\nalong with a caption containing the default sequence name for images. Position the cursor in the\ncaption area and type the text for the caption. You can change the sequence name by selecting\none in the drop-down Category list or typing in your own.\nIf you need a sequence name that is not one of the names provided, you can add any custom\nname you wish:\n1) Open the AutoCaption dialog, as described above.\n2) In the Add captions automatically when inserting section, select LibreOffice Writer\nImage. This activates the Caption area in the dialog for images.\n3) Under the Category drop-down list, enter the name that you want added (say, Photo), by\ntyping it in the box. (Overwriting a term in the box does not delete it from the list.) You can\nalso set some options for the number style and for a separator between the name and the\nnumber, if desired. Click OK to save the changes.\nAdding captions using the Caption dialog\nTo add captions using the Caption dialog:\n1) Insert the image, then either right-click it and select Insert Caption in the context menu,\nor select it and choose Insert > Caption on the Menu bar.\n244 | LibreOffice 7.3 Writer Guide\n\n2) Under Properties on the Caption dialog (Figure 253), make your selections for the\nCategory, Numbering, and Separator fields [Illustration, Arabic (1 2 3), and a colon (:),\nrespectively, for the example in Figure 253] and type your caption text in the Caption box\nat the top. The text you enter for the caption appears in the box at the bottom, after the\nsequence name, number, and separator.\n3) Click OK. The image and its caption are placed in a frame.\nTip\nIn the Category box, you can type any name you want (for example, Photo) if the\ndrop-down list does not include it. Writer will create a numbering sequence using that\nname, as it does when using the AutoCaption feature.\nFigure 253: Defining the caption for an illustration\nNumbering images by chapter\nAdditional options for numbering captions are available under the Options button in the Captions\ndialog (Figure 254). Some of these settings, which refer to the outline level, will have an effect\nonly if you are using outline level paragraph styles on the chapter headings within your\ndocument.\nWhen chapter numbering is set up, Writer will restart the caption numbering for each chapter it\nencounters. For example, if the last figure caption you create in chapter 1 is Figure 1.15, and the\nnext figure caption you create is in chapter 2, the numbering will start over at Figure 2.1.\nOptions for chapter numbering of captions are:\n• Use Level to specify the outline level that triggers a restart of the numbering as well as\nhow many levels of outline numbering are shown before the table number. For example,\nif the document uses Heading 1 style for chapters and Heading 2 style for sub-headings,\nif you want all the tables in a chapter (that is, between two Heading 1 paragraphs) to be\nnumbered sequentially independently of the sub-heading they are under, select 1 as\nLevel. If instead you want to restart the numbering at each sub-heading, select level 2.\n• Use the Separator field to establish the separator between the chapter number and\nfigure number.\nChapter 11, Images and Graphics | 245",
+    "text_page_count": 2,
+    "image_paths": [
+      "Writer/images/page_244.png",
+      "Writer/images/page_245.png"
+    ]
+  },
+  {
+    "title": "Step 4: Create salutation",
+    "level": 3,
+    "path": [
+      "Chapter 14, Mail Merge",
+      "Using the Mail Merge Wizard to create a form letter",
+      "Step 4: Create salutation"
+    ],
+    "start_page": 327,
+    "end_page": 329,
+    "next_start_page": 329,
+    "is_leaf": true,
+    "text": "Note that you will not be able to continue until you have correctly matched all the fields in\nyour chosen address block. If you see <not yet matched> in a field position it indicates\nthat the field in question is not correctly matched.\nFigure 347: Match fields dialog\n4) Notice the option for Suppress lines with empty fields in section 2 of Figure 343. Using\nthe Wizard, you do not have to create your own conditional suppression fields, as you do\nwhen using the manual form letter method described earlier in this chapter..\nStep 4: Create salutation\nIt is possible to create just about any salutation you want in this step (see Figure 348).\nSelect This document should contain a salutation to enable the General salutation list box.\nSome general texts are available in the list box, or you can enter your own text. A preview pane\ndisplays your choice.\nSelect Insert personalized salutation to enable further salutation constructs.\nYou can, for example, use a different greeting for men and women. To do this, Writer must have\nsome way of knowing whether a person is male or female. In a spreadsheet, you might have a\ncolumn called Gender. In the section Address list field indicating a female recipient, set the Field\nname to Gender and the Field value to F. The Male salutation is then printed for all men and the\nFemale salutation for all women. Unfortunately, LibreOffice does not provide for other genders;\nhowever, you can use a non-gendered salutation.\nIf you do not have such a column in your spreadsheet, or if you do not need to distinguish\nbetween genders in the salutation, then you can leave the Field name and Field value boxes\nempty and use the customized content of the Male list box for the salutation to all recipients.\nChapter 14, Mail Merge | 327\n\nFigure 348: Create a salutation\nAs an example:\n1) Click the New button alongside the Male list box. The Custom Salutation (Male\nRecipients) dialog opens (see Figure 349).\n2) Select Salutation in the Salutation elements list on the right and drag it into box 1 on the\nright.\n3) In the Customize salutation box, select an appropriate greeting or type your own text into\nthe box. Edit it as needed.\n4) Select and move First Name from the Salutation elements list into box 1, using either the\nAdd to salutation arrow button or by dragging it. Then click the Move right arrow button\non the right-hand side to add space between the salutation and the first name.\n5) Select and move Last Name from the Salutation elements list into box 1, then click the\nMove right arrow button to add space between the first and the last names.\n6) Finally, move Punctuation Mark across and select the comma from the choices in the\nCustomize salutation box.\n7) The construct is shown in the Preview box.\n8) Carry out any final editing. Click OK.\nThis method allows you to use gender neutral titles such as Doctor (Dr) and Reverend (Rev), or\ntitles such as Ms, or omit titles.\n328 | LibreOffice 7.3 Writer Guide\n\nFigure 349: Customizing the salutation\nStep 5: Adjust layout\nIn Step 5: Adjust layout, you can adjust the position of the address block and salutation on the\npage. You can place the address block anywhere on the page. The salutation is always on the\nleft, but you can move it up and down the page. Use the buttons shown in Figure 350 to move\nthe elements.\nFigure 350: Adjust layout\nChapter 14, Mail Merge | 329",
+    "text_page_count": 3,
+    "image_paths": [
+      "Writer/images/page_327.png",
+      "Writer/images/page_328.png",
+      "Writer/images/page_329.png"
+    ]
+  },
+  {
+    "title": "Modifying the paragraph style for the bibliography",
+    "level": 3,
+    "path": [
+      "Chapter 15, Tables of Contents, Indexes, Bibliographies",
+      "Bibliographies",
+      "Modifying the paragraph style for the bibliography"
+    ],
+    "start_page": 358,
+    "end_page": 360,
+    "next_start_page": 360,
+    "is_leaf": true,
+    "text": "The Structure of the entry is based on the fields available in the bibliographic database. Consult\nthe citation style required for your document and modify the Structure line as needed.\nTo remove elements from the Structure line, click the element then click the Remove button.\nTo add an element, click in the Structure line where it is to be inserted. Select either the Tab\nStop, or an element in the drop-down list to the left of the Insert button, and then click Insert.\nThe elements in the drop-down list are those fields found in the Bibliography Database.\nAll the elements on the Structure line can be formatted using the Character Style selection list.\nFor example, you can define a character style so that book and journal titles are in italics or bold.\nTo determine how entries are sorted, modify the Sort by options. To sort by the sequence that\nentries appear in the text, choose Document position. In most modern citation styles, you will\nwant Content (alphabetical descending order). Use Sort keys to group similar references.\nStyles, Columns and Background tabs\nRefer to “Styles tab” on page 387, “Columns tab” on page 396 and “Background tab” on page\n388 for detailed information on these tabs.\nModifying the paragraph style for the bibliography\nYou can modify the Bibliography 1 paragraph style to suit your requirements. For example, to\nnumber the entries in the bibliography list, you need to define a list style and link that list style to\nthe Bibliography 1 paragraph style. To do this:\n1) On the Styles deck in the sidebar, click on the List Styles icon. Right-click on Numbering\n123 and choose New in the context menu.\n2) In the List Style dialog, go to the Organizer tab and type a name for this style. In our\nexample, we have named it Bibliography.\n3) In our example we want to have the numbers enclosed in square brackets. To do this, go\nto the Customize tab and type [ in the Before box and ] in the After box, as shown in\nFigure 374. Remove any other punctuation, such as a period, that may be in the After\nbox.\nFigure 374: Specifying square brackets before and after the number in a list\n4) Now go to the Position tab of the List Style dialog (Figure 375). In the Indent at and Tab\nstop at boxes, specify how much indentation you want for the second and following lines\n358 | LibreOffice 7.3 Writer Guide\n\nof any item in the bibliography list of your document. Often you will need to experiment a\nbit to see what is the best setting. In our example, we have chosen 1 cm.\nFigure 375: Setting the spacing between the margin and the text\n5) Click OK to save these settings and close the List Style dialog. Return to the Styles deck,\nclick the Paragraph Styles icon, choose All Styles in the list at the bottom of that\nwindow, then right-click on Bibliography 1 and choose Modify.\n6) On the Paragraph Style dialog, go to the Outline & List tab and select Bibliography in the\nList Style drop-down list (Figure 376). Click OK to save this change to the Bibliography 1\nparagraph style.\nFigure 376: Applying a list style to a paragraph style\nNow when you generate the bibliography, the list will look something like the one shown in Figure\n377. You may also need to modify the structure line on the Entries tab (Figure 373).\nFigure 377: Result of changing settings for Bibliography 1 paragraph style\nChapter 15, Tables of Contents, Indexes, Bibliographies | 359\n\nUpdating, editing, and deleting an existing bibliography\nRight-click anywhere in the bibliography. From the context menu, select:\n• Update Index to update the bibliography.\n• Edit Index to open the Table of Contents, Index or Bibliography dialog so you can edit\nand save the bibliography.\n• Delete Index to delete the bibliography without a confirmation request.\nExternal bibliography tool\nIf you find Writer’s bibliography feature too limited, you may wish to try Zotero, which is free and\nopen source, available for macOS, Windows, and Linux. It is reported to work well with Writer\n(https://www.zotero.org/).\n360 | LibreOffice 7.3 Writer Guide",
+    "text_page_count": 3,
+    "image_paths": [
+      "Writer/images/page_358.png",
+      "Writer/images/page_359.png",
+      "Writer/images/page_360.png"
+    ]
+  },
+  {
+    "title": "Style dialog",
+    "level": 3,
+    "path": [
+      "Chapter 9, Working with Styles",
+      "Creating custom (new) styles",
+      "Style dialog"
+    ],
+    "start_page": 199,
+    "end_page": 199,
+    "next_start_page": 199,
+    "is_leaf": true,
+    "text": "Introduction\nChapter 8, Introduction to Styles, describes the basics of how to use, apply, and manage styles.\nThis chapter gives a more detailed description of how to create or modify some styles, using the\nmany options available on the various tabs of the Style dialog. It explains how these options\naffect the appearance of the style and how to use them efficiently.\nThe Style dialogs share many of the same tabs as the manual formatting dialogs, so this chapter\ncan also help you apply manual formatting (though you do not need that if you use styles).\nCreating custom (new) styles\nIn addition to using the predefined styles provided by LibreOffice, you can add new custom (user-\ndefined) styles. In Chapter 8, three methods are given for creating a new style: drag-and-drop,\nthe New Style from Selection icon on the Styles deck, and the Style dialog.\nThe first two of these methods are convenient because you can check the visual effects that the\nstyle produces before creating it. However, for full control over the style (and its relationship to\nother styles), you need to use the Style dialog, as described in this chapter.\nNote\nTable styles are created in a different way; see Chapter 13, Tables.\nStyle dialog\nOpen the Styles deck on the Sidebar. Select the category of style you want to create by clicking\non the appropriate icon on the top part of the Styles deck.\nRight-click in the window and select New in the context menu. The dialog that is displayed\ndepends on the type of style you selected.\nTip\nThe dialogs used to create a new style and to modify an existing style are mostly the\nsame, but with one exception: conditional styles have a different dialog. See “Using\nconditional paragraph styles” on page 240.\nOrganizer tab\nThe Organizer tab, shown in Figure 213, is common to all style categories (except Table styles),\nwith only small differences between them. Therefore, it is described only once.\nDepending on the style you are creating, you will find the following fields on this tab:\n• Name: present on all the categories. Use this field to name the style you are creating.\n• AutoUpdate: only present for paragraph and frame styles. If this option is selected, then\nWriter will apply any manual modification to a paragraph or frame formatted with that\nstyle to the style itself.\nCaution\nIf you are in the habit of manually overriding styles in your document, be sure that\nAutoUpdate is not enabled, or you may suddenly find whole sections of your\ndocument reformatted unexpectedly.\nChapter 9, Working with Styles | 199",
+    "text_page_count": 1,
+    "image_paths": [
+      "Writer/images/page_199.png"
+    ]
+  }
+]

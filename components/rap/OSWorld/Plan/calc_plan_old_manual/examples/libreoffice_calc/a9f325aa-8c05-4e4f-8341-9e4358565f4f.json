@@ -1,0 +1,109 @@
+{
+  "id": "a9f325aa-8c05-4e4f-8341-9e4358565f4f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to copy the movie titles in 'Garbage Movie Titles' column to the 'Clean Movie Titles' column. But please remove the adundant whitespaces and canonicalize the letter cases by capitalizing the first letter of each words and leave other letters as lower case. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click cell C2 (the first empty cell under \"Clean Movie Titles\").\n2. Type the formula: `=PROPER(TRIM(B2))`\n3. Press Enter to apply the formula.\n4. Click cell C2 again to select it.\n5. Press Ctrl+C to copy the cell.\n6. Press Ctrl+Shift+End to select the range from C2 to the last used row in column B (which appears to be around row 33 based on the screenshot).\n7. Press Ctrl+V to paste the formula into all selected cells.\n8. Click cell C2 again.\n9. Press Ctrl+C to copy.\n10. Click the \"Edit\" menu at the top.\n11. Select \"Paste Special...\" from the dropdown.\n12. In the dialog, check \"Values only\".\n13. Click \"OK\".\n14. Click cell C2 again.\n15. Press Delete to clear the formula from C2 (if needed to remove formula, otherwise it will keep updating).\n16. Save the document by pressing Ctrl+S.\n\nNote: Since the task asks to remove whitespace and canonicalize case, the PROPER() function handles the capitalization and TRIM() removes leading/trailing spaces. However, TRIM() only removes single spaces between words. If there are multiple spaces between words, this solution won't handle them completely. But given the context and the visible data, this should suffice for most cases.\n\nIf the PROPER and TRIM functions don't work as expected (e.g., if there are non-breaking spaces), an alternative would be to use a macro or a more complex formula, but that's beyond the scope of this task.",
+  "source": "https://www.youtube.com/shorts/A0gmEBRKXWs",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a9f325aa-8c05-4e4f-8341-9e4358565f4f/Movie_titles_garbage_clean.xlsx",
+            "path": "/home/user/Movie_title_garbage_clean.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Movie_title_garbage_clean.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/a9f325aa-8c05-4e4f-8341-9e4358565f4f",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Movie_title_garbage_clean.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/a9f325aa-8c05-4e4f-8341-9e4358565f4f/Movie_titles_garbage_clean_gold.xlsx",
+      "dest": "Movie_title_garbage_clean_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Movie_title_garbage_clean.xlsx",
+      "dest": "Movie_title_garbage_clean.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell C2 (the first empty cell under \"Clean Movie Titles\").\n2. Type the formula: `=PROPER(TRIM(B2))`\n3. Press Enter to apply the formula.\n4. Click cell C2 again to select it.\n5. Press Ctrl+C to copy the cell.\n6. Press Ctrl+Shift+End to select the range from C2 to the last used row in column B (which appears to be around row 33 based on the screenshot).\n7. Press Ctrl+V to paste the formula into all selected cells.\n8. Click cell C2 again.\n9. Press Ctrl+C to copy.\n10. Click the \"Edit\" menu at the top.\n11. Select \"Paste Special...\" from the dropdown.\n12. In the dialog, check \"Values only\".\n13. Click \"OK\".\n14. Click cell C2 again.\n15. Press Delete to clear the formula from C2 (if needed to remove formula, otherwise it will keep updating).\n16. Save the document by pressing Ctrl+S.\n\nNote: Since the task asks to remove whitespace and canonicalize case, the PROPER() function handles the capitalization and TRIM() removes leading/trailing spaces. However, TRIM() only removes single spaces between words. If there are multiple spaces between words, this solution won't handle them completely. But given the context and the visible data, this should suffice for most cases.\n\nIf the PROPER and TRIM functions don't work as expected (e.g., if there are non-breaking spaces), an alternative would be to use a macro or a more complex formula, but that's beyond the scope of this task.",
+  "retrieved_page_ranges": [
+    [
+      22,
+      23
+    ],
+    [
+      27,
+      27
+    ],
+    [
+      18,
+      18
+    ],
+    [
+      18,
+      18
+    ],
+    [
+      18,
+      19
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/a9f325aa-8c05-4e4f-8341-9e4358565f4f/step_1.png"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Select cell F2 (the first cell in the \"Chart\" column, directly to the right of the first data row).\n2. Click the \"Insert\" menu in the top menu bar.\n3. Click \"Sparkline...\" from the dropdown menu.\n4. In the Sparkline dialog box:\n   a. Click the \"Data range\" input field.\n   b. Select the cells C2:E2 on the spreadsheet (or type `C2:E2` into the field).\n   c. In the \"Sparkline range\" field, ensure the target is `F2`.\n   d. Choose a chart type (e.g., Line or Column) from the \"Series Type\" options.\n   e. Click OK to create the sparkline in cell F2.\n5. Select cell F2 where the sparkline was created.\n6. Click and drag the fill handle (the small square at the bottom-right corner of the selection) down to cell F23 to automatically fill the sparklines for all order IDs.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select cell F2 (the first cell in the \"Chart\" column, directly to the right of the first data row).\n2. Click the \"Insert\" menu in the top menu bar.\n3. Click \"Sparkline...\" from the dropdown menu.\n4. In the Sparkline dialog box:\n   a. Click the \"Data range\" input field.\n   b. Select the cells C2:E2 on the spreadsheet (or type `C2:E2` into the field).\n   c. In the \"Sparkline range\" field, ensure the target is `F2`.\n   d. Choose a chart type (e.g., Line or Column) from the \"Series Type\" options.\n   e. Click OK to create the sparkline in cell F2.\n5. Select cell F2 where the sparkline was created.\n6. Click and drag the fill handle (the small square at the bottom-right corner of the selection) down to cell F23 to automatically fill the sparklines for all order IDs.",
+  "retrieved_page_ranges": [
+    [
+      101,
+      101
+    ],
+    [
+      370,
+      370
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      518,
+      518
+    ],
+    [
+      408,
+      408
+    ]
+  ]
+}

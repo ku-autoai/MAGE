@@ -1,0 +1,109 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n1. Click cell B2 to select it.\n2. Hold Shift and click cell B30 to select the range B2:B30.\n3. Press Ctrl+D to fill down the formula from B2 into B3:B30.\n4. Click cell D2 to select it.\n5. Hold Shift and click cell D30 to select the range D2:D30.\n6. Press Ctrl+D to fill down the formula from D2 into D3:D30.\n7. Click the column header E to select the entire column.\n8. Right-click the selected column and choose \"Insert Columns Before\" from the context menu.\n9. In the new column E, click cell E1.\n10. Type \"Combined Data\" and press Enter.\n11. Click cell E2 to select it.\n12. Type the formula: =\"Hanging mass (kilograms): \"&TEXT(A2,\"0.00\")&\", Acceleration of Block up Ramp: \"&TEXT(B2,\"0.00\")&\", Hanging mass (kilograms): \"&TEXT(C2,\"0.00\")&\", Acceleration of Block down Ramp: \"&TEXT(D2,\"0.00\")\n13. Press Enter to confirm the formula.\n14. Click cell E2 to select it.\n15. Hold Shift and click cell E30 to select the range E2:E30.\n16. Press Ctrl+D to fill down the formula from E2 into E3:E30.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 to select it.\n2. Hold Shift and click cell B30 to select the range B2:B30.\n3. Press Ctrl+D to fill down the formula from B2 into B3:B30.\n4. Click cell D2 to select it.\n5. Hold Shift and click cell D30 to select the range D2:D30.\n6. Press Ctrl+D to fill down the formula from D2 into D3:D30.\n7. Click the column header E to select the entire column.\n8. Right-click the selected column and choose \"Insert Columns Before\" from the context menu.\n9. In the new column E, click cell E1.\n10. Type \"Combined Data\" and press Enter.\n11. Click cell E2 to select it.\n12. Type the formula: =\"Hanging mass (kilograms): \"&TEXT(A2,\"0.00\")&\", Acceleration of Block up Ramp: \"&TEXT(B2,\"0.00\")&\", Hanging mass (kilograms): \"&TEXT(C2,\"0.00\")&\", Acceleration of Block down Ramp: \"&TEXT(D2,\"0.00\")\n13. Press Enter to confirm the formula.\n14. Click cell E2 to select it.\n15. Hold Shift and click cell E30 to select the range E2:E30.\n16. Press Ctrl+D to fill down the formula from E2 into E3:E30.",
+  "retrieved_page_ranges": [
+    [
+      233,
+      233
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      378,
+      379
+    ],
+    [
+      498,
+      500
+    ],
+    [
+      128,
+      129
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/step_1.png"
+}

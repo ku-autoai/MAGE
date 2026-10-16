@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click cell B2 to select it.\n2. Enter the formula `=LEFT(A2,FIND(\" \",A2)-1)` to extract the first name.\n3. Press Enter to confirm the formula.\n4. Click cell C2 to select it.\n5. Enter the formula `=MID(A2,FIND(\" \",A2)+1,FIND(\" \",A2,FIND(\" \",A2)+1)-FIND(\" \",A2)-1)` to extract the last name.\n6. Press Enter to confirm the formula.\n7. Click cell D2 to select it.\n8. Enter the formula `=MID(A2,FIND(\" \",A2,FIND(\" \",A2)+1)+1,LEN(A2))` to extract the rank.\n9. Press Enter to confirm the formula.\n10. Click cell B2 to select it, then hold Shift and click cell D22 to select the range B2:D22.\n11. Click and drag the fill handle (small square at the bottom-right corner of the selection) down to row 22 to copy the formulas for all data rows.\n12. Click cell B2 to start the selection, then drag to select the range B2:D22.\n13. Press Ctrl+C to copy the filled formulas.\n14. Click cell B2 to start the selection, then drag to select the range B2:D22.\n15. Right-click the selected range and choose Paste Special.\n16. In the Paste Special dialog, select \"Values only\" and click OK to paste only the text values.\n17. Select the range B2:D22 again.\n18. Press Delete to clear the formulas, leaving only the pasted values.\n19. Verify that columns B, C, and D now contain the split First Name, Last Name, and Rank data respectively.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell B2 to select it.\n2. Enter the formula `=LEFT(A2,FIND(\" \",A2)-1)` to extract the first name.\n3. Press Enter to confirm the formula.\n4. Click cell C2 to select it.\n5. Enter the formula `=MID(A2,FIND(\" \",A2)+1,FIND(\" \",A2,FIND(\" \",A2)+1)-FIND(\" \",A2)-1)` to extract the last name.\n6. Press Enter to confirm the formula.\n7. Click cell D2 to select it.\n8. Enter the formula `=MID(A2,FIND(\" \",A2,FIND(\" \",A2)+1)+1,LEN(A2))` to extract the rank.\n9. Press Enter to confirm the formula.\n10. Click cell B2 to select it, then hold Shift and click cell D22 to select the range B2:D22.\n11. Click and drag the fill handle (small square at the bottom-right corner of the selection) down to row 22 to copy the formulas for all data rows.\n12. Click cell B2 to start the selection, then drag to select the range B2:D22.\n13. Press Ctrl+C to copy the filled formulas.\n14. Click cell B2 to start the selection, then drag to select the range B2:D22.\n15. Right-click the selected range and choose Paste Special.\n16. In the Paste Special dialog, select \"Values only\" and click OK to paste only the text values.\n17. Select the range B2:D22 again.\n18. Press Delete to clear the formulas, leaving only the pasted values.\n19. Verify that columns B, C, and D now contain the split First Name, Last Name, and Rank data respectively.",
+  "retrieved_page_ranges": [
+    [
+      21,
+      21
+    ],
+    [
+      21,
+      21
+    ],
+    [
+      21,
+      22
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      35,
+      35
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

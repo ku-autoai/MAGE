@@ -1,0 +1,109 @@
+{
+  "id": "eb03d19a-b88d-4de4-8a64-ca0ac66f426b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Apply matrix transposition to the table in B2:F5 and paste the transposed table at B8 (i.e., the top-left cell of the transposed table should be at B8)\n\nRelevant procedure\n1. Select the cell range B2:F5 by clicking cell B2 and dragging to cell F5.\n2. Copy the selected range by pressing Ctrl+C (or right-clicking the selection and choosing Copy).\n3. Click on cell B8 to set it as the top-left corner for the pasted data.\n4. Open the Paste Special dialog by pressing Ctrl+Shift+V (or by going to the Edit menu and selecting Paste Special > Paste Special).\n5. In the Paste Special dialog, locate the \"Options\" section and check the box labeled \"Transpose\".\n6. Click the OK button to paste the transposed table starting at B8.",
+  "source": "https://www.youtube.com/shorts/t9JLUaT55UQ",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/eb03d19a-b88d-4de4-8a64-ca0ac66f426b/Students_Class_Subject_Marks.xlsx",
+            "path": "/home/user/Students_Class_Subject_Marks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Students_Class_Subject_Marks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/eb03d19a-b88d-4de4-8a64-ca0ac66f426b",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Students_Class_Subject_Marks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/eb03d19a-b88d-4de4-8a64-ca0ac66f426b/Students_Class_Subject_Marks_gold.xlsx",
+      "dest": "Students_Class_Subject_Marks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Students_Class_Subject_Marks.xlsx",
+      "dest": "Students_Class_Subject_Marks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the cell range B2:F5 by clicking cell B2 and dragging to cell F5.\n2. Copy the selected range by pressing Ctrl+C (or right-clicking the selection and choosing Copy).\n3. Click on cell B8 to set it as the top-left corner for the pasted data.\n4. Open the Paste Special dialog by pressing Ctrl+Shift+V (or by going to the Edit menu and selecting Paste Special > Paste Special).\n5. In the Paste Special dialog, locate the \"Options\" section and check the box labeled \"Transpose\".\n6. Click the OK button to paste the transposed table starting at B8.",
+  "retrieved_page_ranges": [
+    [
+      67,
+      68
+    ],
+    [
+      68,
+      68
+    ],
+    [
+      68,
+      69
+    ],
+    [
+      516,
+      517
+    ],
+    [
+      315,
+      315
+    ]
+  ],
+  "first_screen_image_path": null
+}

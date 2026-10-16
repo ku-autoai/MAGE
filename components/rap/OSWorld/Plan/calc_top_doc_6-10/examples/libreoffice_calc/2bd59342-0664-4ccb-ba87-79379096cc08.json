@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1. Click on the first empty cell in the \"Chart\" column (cell F2).\n2. Go to the \"Insert\" menu at the top toolbar.\n3. Select \"Sparkline...\" from the dropdown menu.\n4. In the Sparkline dialog box, ensure \"Row\" is selected under \"Data range\".\n5. Set the \"Data range\" to `C2:E2` (Jan to Mar values for the first order).\n6. Set the \"Location range\" to `F2` (where the sparkline should appear).\n7. Click \"OK\" to create the first sparkline.\n8. Copy cell F2 by pressing Ctrl+C.\n9. Select the range F3:F23 (all order IDs have data from row 2 to row 23).\n10. Paste the sparklines into the selected range by pressing Ctrl+V.\n11. Adjust column F width if needed to ensure sparklines are fully visible.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the first empty cell in the \"Chart\" column (cell F2).\n2. Go to the \"Insert\" menu at the top toolbar.\n3. Select \"Sparkline...\" from the dropdown menu.\n4. In the Sparkline dialog box, ensure \"Row\" is selected under \"Data range\".\n5. Set the \"Data range\" to `C2:E2` (Jan to Mar values for the first order).\n6. Set the \"Location range\" to `F2` (where the sparkline should appear).\n7. Click \"OK\" to create the first sparkline.\n8. Copy cell F2 by pressing Ctrl+C.\n9. Select the range F3:F23 (all order IDs have data from row 2 to row 23).\n10. Paste the sparklines into the selected range by pressing Ctrl+V.\n11. Adjust column F width if needed to ensure sparklines are fully visible.",
+  "retrieved_page_ranges": [
+    [
+      48,
+      48
+    ],
+    [
+      225,
+      225
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      447,
+      447
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/step_1.png"
+}

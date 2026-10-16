@@ -1,0 +1,121 @@
+{
+  "id": "f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce",
+  "snapshot": "gimp",
+  "instruction": "Help me choose the yellow triangle and positioning it at the center of my picture.\n\nRelevant procedure:\n1. Click the Move Tool icon (four-headed arrow) in the left-hand toolbox.\n2. In the \"Tool Options\" panel on the left, ensure the \"Move the active layer\" radio button is selected.\n3. Select the yellow triangle layer from the Layers panel on the right if it is not already highlighted.\n4. Press the `Center` option in the `Alignment` tool options or manually drag the triangle towards the center.\n5. If manual positioning, click and drag the yellow triangle until it is visually centered within the canvas boundaries.\n6. Alternatively, use the `Align Layer to Canvas` commands by going to `Layer > Align Layer to Canvas > Center Horizontally` and then `Center Vertically`.",
+  "source": "https://superuser.com/questions/612338/how-do-i-select-and-move-an-object-in-gimp",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.png",
+            "path": "/home/user/Desktop/Triangle_On_The_Side.png"
+          },
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.xcf",
+            "path": "/home/user/Desktop/Triangle_On_The_Side.xcf"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/Triangle_On_The_Side.xcf"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"Triangle_In_The_Middle\");time.sleep(1);pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 2
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.press([\"enter\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 5
+        }
+      }
+    ],
+    "func": "check_triangle_position",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Triangle_In_The_Middle.png",
+      "dest": "Triangle_In_The_Middle.png"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the Move Tool icon (four-headed arrow) in the left-hand toolbox.\n2. In the \"Tool Options\" panel on the left, ensure the \"Move the active layer\" radio button is selected.\n3. Select the yellow triangle layer from the Layers panel on the right if it is not already highlighted.\n4. Press the `Center` option in the `Alignment` tool options or manually drag the triangle towards the center.\n5. If manual positioning, click and drag the yellow triangle until it is visually centered within the canvas boundaries.\n6. Alternatively, use the `Align Layer to Canvas` commands by going to `Layer > Align Layer to Canvas > Center Horizontally` and then `Center Vertically`.",
+  "retrieved_page_ranges": [
+    [
+      "6.10. Assign Color Profile",
+      "6.10. Assign Color Profile"
+    ],
+    [
+      "5.7. Center Image in Window",
+      "5.7. Center Image in Window"
+    ],
+    [
+      "6.25. Crop Image",
+      "6.25. Crop Image"
+    ],
+    [
+      "8.11. Curves",
+      "8.11. Curves"
+    ],
+    [
+      "13.11. Map Object",
+      "13.11. Map Object"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/step_1.png"
+}

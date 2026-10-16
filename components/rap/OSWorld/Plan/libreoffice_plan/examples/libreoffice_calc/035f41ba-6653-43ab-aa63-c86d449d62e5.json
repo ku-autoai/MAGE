@@ -1,0 +1,113 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n\n1. Switch to the worksheet containing the sales and expense data (likely **Sheet1**).\n2. Identify the cells corresponding to **Actual Sale** (Total Sales minus Returns), **Discounts**, **Allowances**, **Material Charges**, **Labor Charges**, and **Overhead** for the target year/row.\n3. Locate or create a header cell for **Gross Profit** in a new column next to the other expense columns.\n4. In the first data row for Gross Profit, enter a formula that subtracts the total expenses from the actual sale. For example, if **Actual Sale** is in cell `B5`, **Discounts** in `C5`, **Allowances** in `D5`, **Material** in `E5`, **Labor** in `F5`, and **Overhead** in `G5`, enter the formula: `=B5-(C5+D5+E5+F5+G5)` or `=B5-C5-D5-E5-F5-G5`.\n5. Press **Enter** to confirm the formula.\n6. Drag the fill handle (the small square at the bottom-right corner of the cell) down to copy this formula to all relevant rows in the Gross Profit column.\n7. Click the **Sheet2** tab at the bottom of the screen to switch to the new sheet.\n8. Click on cell **A1** in Sheet2.\n9. Type the text **Year_Profit** and press **Enter**.\n10. Click on cell **A2**.\n11. Enter a formula to concatenate the Year from Sheet1 and the integer part of the calculated Gross Profit. Assuming the Year is in **Sheet1.A2** and the corresponding Gross Profit calculated in step 4 is in **Sheet1.H2**, type: `=Sheet1.A2&\"_\"&INT(Sheet1.H2)`.\n   *   *Alternative if Gross Profit is in a different column (e.g., column G): `=Sheet1.A2&\"_\"&INT(Sheet1.G2)`*\n12. Press **Enter** to confirm the formula.\n13. Drag the fill handle down from cell **A2** to apply this concatenation to all corresponding years and profit values.",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Switch to the worksheet containing the sales and expense data (likely **Sheet1**).\n2. Identify the cells corresponding to **Actual Sale** (Total Sales minus Returns), **Discounts**, **Allowances**, **Material Charges**, **Labor Charges**, and **Overhead** for the target year/row.\n3. Locate or create a header cell for **Gross Profit** in a new column next to the other expense columns.\n4. In the first data row for Gross Profit, enter a formula that subtracts the total expenses from the actual sale. For example, if **Actual Sale** is in cell `B5`, **Discounts** in `C5`, **Allowances** in `D5`, **Material** in `E5`, **Labor** in `F5`, and **Overhead** in `G5`, enter the formula: `=B5-(C5+D5+E5+F5+G5)` or `=B5-C5-D5-E5-F5-G5`.\n5. Press **Enter** to confirm the formula.\n6. Drag the fill handle (the small square at the bottom-right corner of the cell) down to copy this formula to all relevant rows in the Gross Profit column.\n7. Click the **Sheet2** tab at the bottom of the screen to switch to the new sheet.\n8. Click on cell **A1** in Sheet2.\n9. Type the text **Year_Profit** and press **Enter**.\n10. Click on cell **A2**.\n11. Enter a formula to concatenate the Year from Sheet1 and the integer part of the calculated Gross Profit. Assuming the Year is in **Sheet1.A2** and the corresponding Gross Profit calculated in step 4 is in **Sheet1.H2**, type: `=Sheet1.A2&\"_\"&INT(Sheet1.H2)`.\n   *   *Alternative if Gross Profit is in a different column (e.g., column G): `=Sheet1.A2&\"_\"&INT(Sheet1.G2)`*\n12. Press **Enter** to confirm the formula.\n13. Drag the fill handle down from cell **A2** to apply this concatenation to all corresponding years and profit values.",
+  "retrieved_page_ranges": [
+    [
+      338,
+      340
+    ],
+    [
+      336,
+      338
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      288,
+      288
+    ]
+  ]
+}

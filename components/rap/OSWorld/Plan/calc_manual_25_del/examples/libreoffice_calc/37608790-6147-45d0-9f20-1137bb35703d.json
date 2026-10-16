@@ -1,0 +1,109 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Insert a new blank column immediately to the left or right of the column containing the mixed data (ensure original data remains untouched).\n2. Select the range of cells in the mixed data column that needs splitting.\n3. Go to the **Data** menu in the top toolbar.\n4. Click on **Text to Columns**.\n5. In the \"Convert Text to Columns\" dialog, ensure the correct separator is selected (e.g., Space, Tab, or Comma) based on how the data is mixed, so that it previews correctly into three distinct columns.\n6. Click **OK** to split the data into three new adjacent columns.\n7. Identify which of the new columns corresponds to First Name, Last Name, and Rank based on the data content.\n8. Select the header cell of the target \"First Name\" column.\n9. Copy the first relevant split column data and paste it into the \"First Name\" column, ensuring alignment with the original rows.\n10. Repeat the copy-paste process for the \"Last Name\" column using the second relevant split column.\n11. Repeat the copy-paste process for the \"Rank\" column using the third relevant split column.\n12. Delete the temporary helper columns created by the \"Text to Columns\" operation if they are no longer needed, leaving the original mixed data column intact and the new structured columns filled.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Insert a new blank column immediately to the left or right of the column containing the mixed data (ensure original data remains untouched).\n2. Select the range of cells in the mixed data column that needs splitting.\n3. Go to the **Data** menu in the top toolbar.\n4. Click on **Text to Columns**.\n5. In the \"Convert Text to Columns\" dialog, ensure the correct separator is selected (e.g., Space, Tab, or Comma) based on how the data is mixed, so that it previews correctly into three distinct columns.\n6. Click **OK** to split the data into three new adjacent columns.\n7. Identify which of the new columns corresponds to First Name, Last Name, and Rank based on the data content.\n8. Select the header cell of the target \"First Name\" column.\n9. Copy the first relevant split column data and paste it into the \"First Name\" column, ensuring alignment with the original rows.\n10. Repeat the copy-paste process for the \"Last Name\" column using the second relevant split column.\n11. Repeat the copy-paste process for the \"Rank\" column using the third relevant split column.\n12. Delete the temporary helper columns created by the \"Text to Columns\" operation if they are no longer needed, leaving the original mixed data column intact and the new structured columns filled.",
+  "retrieved_page_ranges": [
+    [
+      302,
+      302
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      93,
+      93
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      302,
+      303
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,117 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Identify the column headers in the calendar to locate the columns labeled \"Saturday\" and \"Sunday\".\n2. Click the header of the first \"Saturday\" column to select the entire column containing dates.\n3. Hold down the `Ctrl` key (or `Cmd` on Mac) and click the header of the first \"Sunday\" column to add it to the selection. Repeat for any additional Saturday/Sunday columns if the calendar spans multiple months.\n4. With the weekend columns selected, go to the top menu bar and click **Format**.\n5. From the dropdown menu, select **Cells...** (or **Style...** > **New...** if using styles, but **Format > Cells** is more direct for specific color application). This opens the **Format Cells** dialog.\n6. In the **Format Cells** dialog, click on the **Background** tab.\n7. Click the **Color** button (or the color palette area) to open the color picker.\n8. If red (#ff0000) is not immediately visible in the standard palette, click the option to enter a custom color (often labeled \"Custom\" or represented by a hex input field). Enter `ff0000` in the Red component and `0` in Green and Blue components, or simply select the bright red square from the palette if available.\n9. Click **OK** in the color picker to confirm the color.\n10. Click **OK** in the **Format Cells** dialog to apply the red background to the selected weekend cells.\n11. Verify that only the Saturday and Sunday cells have a red background and that no other regions were modified.",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Identify the column headers in the calendar to locate the columns labeled \"Saturday\" and \"Sunday\".\n2. Click the header of the first \"Saturday\" column to select the entire column containing dates.\n3. Hold down the `Ctrl` key (or `Cmd` on Mac) and click the header of the first \"Sunday\" column to add it to the selection. Repeat for any additional Saturday/Sunday columns if the calendar spans multiple months.\n4. With the weekend columns selected, go to the top menu bar and click **Format**.\n5. From the dropdown menu, select **Cells...** (or **Style...** > **New...** if using styles, but **Format > Cells** is more direct for specific color application). This opens the **Format Cells** dialog.\n6. In the **Format Cells** dialog, click on the **Background** tab.\n7. Click the **Color** button (or the color palette area) to open the color picker.\n8. If red (#ff0000) is not immediately visible in the standard palette, click the option to enter a custom color (often labeled \"Custom\" or represented by a hex input field). Enter `ff0000` in the Red component and `0` in Green and Blue components, or simply select the bright red square from the palette if available.\n9. Click **OK** in the color picker to confirm the color.\n10. Click **OK** in the **Format Cells** dialog to apply the red background to the selected weekend cells.\n11. Verify that only the Saturday and Sunday cells have a red background and that no other regions were modified.",
+  "retrieved_page_ranges": [
+    [
+      196,
+      196
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      83,
+      83
+    ],
+    [
+      196,
+      197
+    ]
+  ],
+  "first_screen_image_path": null
+}

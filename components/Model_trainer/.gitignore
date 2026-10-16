@@ -1,0 +1,33 @@
+# Training outputs
+/output/
+/checkpoints/
+/runs/
+/logs/
+
+# Data
+/data/
+/dataset/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# tensorboard
+events.out.tfevents*
+
+# deepspeed
+zero_to_fp32.py
+
+# vscode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Scratch notebooks
+/notebook_tmp/
+
+/tmp/

@@ -1,0 +1,118 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A12 to select it.\n2. Type \"Total\" and press Enter.\n3. Click cell B12 to select it.\n4. Type \"=SUM(B2:B11)\" and press Enter.\n5. Click cell C12 to select it.\n6. Type \"=SUM(C2:C11)\" and press Enter.\n7. Click cell D12 to select it.\n8. Type \"=SUM(D2:D11)\" and press Enter.\n9. Click cell E12 to select it.\n10. Type \"=SUM(E2:E11)\" and press Enter.\n11. Click cell F12 to select it.\n12. Type \"=SUM(F2:F11)\" and press Enter.\n13. Click cell G12 to select it.\n14. Type \"=SUM(G2:G11)\" and press Enter.\n15. Click cell A13 to select it.\n16. Type \"Growth\" and press Enter.\n17. Click cell C13 to select it.\n18. Type \"=(C12-B12)/B12\" and press Enter.\n19. Click cell D13 to select it.\n20. Type \"=(D12-C12)/C12\" and press Enter.\n21. Click cell E13 to select it.\n22. Type \"=(E12-D12)/D12\" and press Enter.\n23. Click cell F13 to select it.\n24. Type \"=(F12-E12)/E12\" and press Enter.\n25. Click cell G13 to select it.\n26. Type \"=(G12-F12)/F12\" and press Enter.\n27. Select cells B12:G12 by clicking and dragging from B12 to G12.\n28. Click the \"Insert\" menu at the top of the window.\n29. Click \"Chart...\" in the Insert menu.\n30. In the Chart Type dialog, select \"Column\" as the chart type.\n31. Click \"Next\" to proceed to the next step.\n32. Ensure \"Rows\" is selected under Data Series and click \"Next\".\n33",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A12 to select it.\n2. Type \"Total\" and press Enter.\n3. Click cell B12 to select it.\n4. Type \"=SUM(B2:B11)\" and press Enter.\n5. Click cell C12 to select it.\n6. Type \"=SUM(C2:C11)\" and press Enter.\n7. Click cell D12 to select it.\n8. Type \"=SUM(D2:D11)\" and press Enter.\n9. Click cell E12 to select it.\n10. Type \"=SUM(E2:E11)\" and press Enter.\n11. Click cell F12 to select it.\n12. Type \"=SUM(F2:F11)\" and press Enter.\n13. Click cell G12 to select it.\n14. Type \"=SUM(G2:G11)\" and press Enter.\n15. Click cell A13 to select it.\n16. Type \"Growth\" and press Enter.\n17. Click cell C13 to select it.\n18. Type \"=(C12-B12)/B12\" and press Enter.\n19. Click cell D13 to select it.\n20. Type \"=(D12-C12)/C12\" and press Enter.\n21. Click cell E13 to select it.\n22. Type \"=(E12-D12)/D12\" and press Enter.\n23. Click cell F13 to select it.\n24. Type \"=(F12-E12)/E12\" and press Enter.\n25. Click cell G13 to select it.\n26. Type \"=(G12-F12)/F12\" and press Enter.\n27. Select cells B12:G12 by clicking and dragging from B12 to G12.\n28. Click the \"Insert\" menu at the top of the window.\n29. Click \"Chart...\" in the Insert menu.\n30. In the Chart Type dialog, select \"Column\" as the chart type.\n31. Click \"Next\" to proceed to the next step.\n32. Ensure \"Rows\" is selected under Data Series and click \"Next\".\n33",
+  "retrieved_page_ranges": [
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      41,
+      41
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/step_1.png"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ac9bb6cb-1888-43ab-81e4-a98a547918cd",
+  "snapshot": "libreoffice_impress",
+  "instruction": "I am preparing a PPT in Libreoffice impress. The slide number is barely visible to me. Please help me change the color of the slide number to red?\n\nRelevant procedure\n1. Click the **View** menu in the top menu bar.\n2. Select **Master Slide** from the dropdown menu to enter the master slide editing mode.\n3. In the slide workspace, locate the slide number placeholder (typically a box labeled `<#>` or containing the number at the bottom of the slide).\n4. Click inside the slide number placeholder to activate text editing.\n5. Press **Ctrl+A** (or **Cmd+A** on macOS) to select the slide number text.\n6. Click the **Format** menu in the top menu bar.\n7. Select **Character...** from the dropdown menu to open the Character dialog.\n8. Click the **Font Effects** tab in the Character dialog.\n9. In the \"Font color\" section, click the dropdown arrow and select **Red** from the color palette.\n10. Click **OK** to apply the color change.\n11. Click the **View** menu again.\n12. Select **Normal** to return to the standard presentation view. The slide numbers on all slides should now be red.",
+  "source": "https://superuser.com/questions/1674211/how-to-change-colour-of-slide-number-in-libre-office",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/ac9bb6cb-1888-43ab-81e4-a98a547918cd/saa-format-guide.pptx",
+            "path": "/home/user/Desktop/saa-format-guide.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/saa-format-guide.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "saa-format-guide.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "check_page_number_colors",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/saa-format-guide.pptx",
+      "dest": "saa-format-guide.pptx"
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "color": "red"
+      }
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the **View** menu in the top menu bar.\n2. Select **Master Slide** from the dropdown menu to enter the master slide editing mode.\n3. In the slide workspace, locate the slide number placeholder (typically a box labeled `<#>` or containing the number at the bottom of the slide).\n4. Click inside the slide number placeholder to activate text editing.\n5. Press **Ctrl+A** (or **Cmd+A** on macOS) to select the slide number text.\n6. Click the **Format** menu in the top menu bar.\n7. Select **Character...** from the dropdown menu to open the Character dialog.\n8. Click the **Font Effects** tab in the Character dialog.\n9. In the \"Font color\" section, click the dropdown arrow and select **Red** from the color palette.\n10. Click **OK** to apply the color change.\n11. Click the **View** menu again.\n12. Select **Normal** to return to the standard presentation view. The slide numbers on all slides should now be red.",
+  "retrieved_page_ranges": [
+    [
+      322,
+      327
+    ],
+    [
+      42,
+      60
+    ],
+    [
+      300,
+      311
+    ],
+    [
+      110,
+      111
+    ],
+    [
+      300,
+      311
+    ]
+  ]
+}

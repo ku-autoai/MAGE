@@ -1,0 +1,102 @@
+{
+  "id": "3161d64e-3120-47b4-aaad-6a764a92493b",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Make the first textbox font size 60 pt while the second 28 pt on slide 14.\n\nRelevant procedure\n1. Navigate to slide 14 using the slide navigation pane or by pressing the Down Arrow key until slide 14 is displayed.\n2. Click on the first textbox to select it.\n3. Select all text within the textbox by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by triple-clicking inside the textbox.\n4. Locate the font size input field in the \"Home\" tab toolbar (usually near the bold/italic buttons).\n5. Type `60` into the font size field and press `Enter` to apply the size.\n6. Click on the second textbox to select it.\n7. Select all text within this textbox by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by triple-clicking inside the textbox.\n8. Locate the font size input field in the \"Home\" tab toolbar.\n9. Type `28` into the font size field and press `Enter` to apply the size.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/3161d64e-3120-47b4-aaad-6a764a92493b/45_1.pptx",
+            "path": "/home/user/Desktop/45_1.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/45_1.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "45_1.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/3161d64e-3120-47b4-aaad-6a764a92493b/45_1_Gold.pptx",
+      "dest": "45_1_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/45_1.pptx",
+      "dest": "45_1.pptx"
+    },
+    "options": {
+      "examine_shape": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Navigate to slide 14 using the slide navigation pane or by pressing the Down Arrow key until slide 14 is displayed.\n2. Click on the first textbox to select it.\n3. Select all text within the textbox by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by triple-clicking inside the textbox.\n4. Locate the font size input field in the \"Home\" tab toolbar (usually near the bold/italic buttons).\n5. Type `60` into the font size field and press `Enter` to apply the size.\n6. Click on the second textbox to select it.\n7. Select all text within this textbox by pressing `Ctrl + A` (or `Cmd + A` on Mac), or by triple-clicking inside the textbox.\n8. Locate the font size input field in the \"Home\" tab toolbar.\n9. Type `28` into the font size field and press `Enter` to apply the size.",
+  "retrieved_page_ranges": [
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      175,
+      178
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ]
+  ]
+}

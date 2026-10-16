@@ -1,0 +1,117 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A12 and type \"Total\" to label the total sales row.\n2. Click cell B12 and enter the formula `=SUM(B2:B11)`.\n3. Press Enter, then click cell B12 again. Drag the fill handle (small square at bottom-right corner) to the right until cell G12 to calculate totals for all months.\n4. Click cell A13 and type \"Growth\" to label the growth percentage row.\n5. Click cell B13 and enter the formula `=IF(B2=0,0,(B12-B2)/B2)` or simply leave it blank if Jan is to be omitted from calculation, but based on instruction \"Jan should be omitted in the chart as well\", we can put a placeholder or dash. Let's use `=\"-\"` for Jan.\n6. Click cell C13 and enter the formula `=(C12-B12)/B12` to calculate growth from Jan to Feb.\n7. Copy cell C13 and paste it into cells D13, E13, F13, and G13 to calculate growth for subsequent months.\n8. Click cell C13, then while holding Ctrl, click D13, E13, F13, and G13 to select the growth percentages for Feb-Jun. Also select the corresponding month headers C1:G1 (hold Ctrl and select C1:G1).\n   *Wait, better selection for chart data:*\n   Select the range C1:G1 (month headers) and then also select C13:G13 (growth values). To do this:\n   - Click cell C1 and drag to G1.\n   - Hold Ctrl, then click cell C13 and drag to G13.\n   *Actually, for a line chart of growth, we want categories as months.*\n   Let's select C1:G13 first.\n9. Go to the menu bar and click \"Insert\".\n10. Select \"Chart\" from the dropdown menu.\n11. In the Chart Wizard, choose \"Line\" as the chart type.\n12. Click \"Next\" to proceed.\n13. Ensure the data series are set correctly. Since we selected C1:G13, Calc might interpret this as two series (months and growth) or",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A12 and type \"Total\" to label the total sales row.\n2. Click cell B12 and enter the formula `=SUM(B2:B11)`.\n3. Press Enter, then click cell B12 again. Drag the fill handle (small square at bottom-right corner) to the right until cell G12 to calculate totals for all months.\n4. Click cell A13 and type \"Growth\" to label the growth percentage row.\n5. Click cell B13 and enter the formula `=IF(B2=0,0,(B12-B2)/B2)` or simply leave it blank if Jan is to be omitted from calculation, but based on instruction \"Jan should be omitted in the chart as well\", we can put a placeholder or dash. Let's use `=\"-\"` for Jan.\n6. Click cell C13 and enter the formula `=(C12-B12)/B12` to calculate growth from Jan to Feb.\n7. Copy cell C13 and paste it into cells D13, E13, F13, and G13 to calculate growth for subsequent months.\n8. Click cell C13, then while holding Ctrl, click D13, E13, F13, and G13 to select the growth percentages for Feb-Jun. Also select the corresponding month headers C1:G1 (hold Ctrl and select C1:G1).\n   *Wait, better selection for chart data:*\n   Select the range C1:G1 (month headers) and then also select C13:G13 (growth values). To do this:\n   - Click cell C1 and drag to G1.\n   - Hold Ctrl, then click cell C13 and drag to G13.\n   *Actually, for a line chart of growth, we want categories as months.*\n   Let's select C1:G13 first.\n9. Go to the menu bar and click \"Insert\".\n10. Select \"Chart\" from the dropdown menu.\n11. In the Chart Wizard, choose \"Line\" as the chart type.\n12. Click \"Next\" to proceed.\n13. Ensure the data series are set correctly. Since we selected C1:G13, Calc might interpret this as two series (months and growth) or",
+  "retrieved_page_ranges": [
+    [
+      101,
+      101
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      338,
+      340
+    ]
+  ]
+}

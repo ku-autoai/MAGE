@@ -1,0 +1,114 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n1. Identify the column containing \"Actual Sale\" (Sales minus Returns) and the columns containing \"Discounts\", \"Allowances\", \"Material Charges\", \"Labor Charges\", and \"Overhead\" in Sheet1.\n2. Click the first empty cell in the \"Gross profit\" column (assuming headers are in Row 1, click the cell in Row 2 of the Gross Profit column).\n3. Type a formula to subtract the sum of expenses from the actual sale. For example, if Actual Sale is in column B, and expenses are in columns C, D, E, F, and G, type: `=B2-SUM(C2:G2)`.\n4. Press Enter to confirm the formula.\n5. Copy this cell by pressing Ctrl+C (or right-click and select Copy).\n6. Select the remaining cells in the \"Gross profit\" column for all data rows.\n7. Paste the formula by pressing Ctrl+V (or right-click and select Paste).\n8. Right-click the \"Sheet1\" tab at the bottom of the window and select \"Insert Sheet\" (or click the \"+\" icon next to the sheet tabs if visible).\n9. Rename the new sheet to \"Sheet2\" by double-clicking the sheet tab and typing \"Sheet2\".\n10. Click cell A1 in \"Sheet2\" and type the header \"Year_Profit\", then press Enter.\n11. Click cell A2 in \"Sheet2\".\n12. Type a formula to concatenate the Year from Sheet1 with an underscore and the integer part of the Gross Profit from Sheet1. Assuming Year is in Column A and Gross Profit is in the last calculated column (e.g., Column H) in Sheet1, type: `=Sheet1.A2 & \"_\" & INT(Sheet1.H2)`.\n13. Press Enter to confirm the formula.\n14. Copy cell A2.\n15. Select the range below A2 covering all corresponding data rows from Sheet1.\n16. Paste the formula to populate the \"Year_Profit\" column for all entries.",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Identify the column containing \"Actual Sale\" (Sales minus Returns) and the columns containing \"Discounts\", \"Allowances\", \"Material Charges\", \"Labor Charges\", and \"Overhead\" in Sheet1.\n2. Click the first empty cell in the \"Gross profit\" column (assuming headers are in Row 1, click the cell in Row 2 of the Gross Profit column).\n3. Type a formula to subtract the sum of expenses from the actual sale. For example, if Actual Sale is in column B, and expenses are in columns C, D, E, F, and G, type: `=B2-SUM(C2:G2)`.\n4. Press Enter to confirm the formula.\n5. Copy this cell by pressing Ctrl+C (or right-click and select Copy).\n6. Select the remaining cells in the \"Gross profit\" column for all data rows.\n7. Paste the formula by pressing Ctrl+V (or right-click and select Paste).\n8. Right-click the \"Sheet1\" tab at the bottom of the window and select \"Insert Sheet\" (or click the \"+\" icon next to the sheet tabs if visible).\n9. Rename the new sheet to \"Sheet2\" by double-clicking the sheet tab and typing \"Sheet2\".\n10. Click cell A1 in \"Sheet2\" and type the header \"Year_Profit\", then press Enter.\n11. Click cell A2 in \"Sheet2\".\n12. Type a formula to concatenate the Year from Sheet1 with an underscore and the integer part of the Gross Profit from Sheet1. Assuming Year is in Column A and Gross Profit is in the last calculated column (e.g., Column H) in Sheet1, type: `=Sheet1.A2 & \"_\" & INT(Sheet1.H2)`.\n13. Press Enter to confirm the formula.\n14. Copy cell A2.\n15. Select the range below A2 covering all corresponding data rows from Sheet1.\n16. Paste the formula to populate the \"Year_Profit\" column for all entries.",
+  "retrieved_page_ranges": [
+    [
+      523,
+      523
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      443,
+      444
+    ],
+    [
+      51,
+      52
+    ]
+  ],
+  "first_screen_image_path": null
+}

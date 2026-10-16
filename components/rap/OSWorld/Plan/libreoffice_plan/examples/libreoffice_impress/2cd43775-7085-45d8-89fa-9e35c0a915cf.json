@@ -1,0 +1,61 @@
+{
+  "id": "2cd43775-7085-45d8-89fa-9e35c0a915cf",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Enable auto-save every 3min for me, so that I don't need to hit \"ctrl-s\" that much\n\nRelevant procedure\n\n1. Click the **File** menu in the top menu bar.\n2. Select **Options** (on Windows) or **Preferences** (on macOS) from the dropdown menu.\n3. In the dialog box that appears, click the **Save** category in the left-hand sidebar.\n4. Locate the setting labeled **Save AutoRecover information every [x] minutes**.\n5. Change the number in the input box to **3**.\n6. Click the **OK** button to apply the changes and close the dialog.",
+  "source": "https://www.libreofficehelp.com/enable-autosave-libreoffice/",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "libreoffice",
+          "--impress"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "func": "check_auto_saving_time",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/libreoffice/4/user/registrymodifications.xcu",
+      "dest": "registrymodifications.xcu"
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "minutes": 3
+      }
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **File** menu in the top menu bar.\n2. Select **Options** (on Windows) or **Preferences** (on macOS) from the dropdown menu.\n3. In the dialog box that appears, click the **Save** category in the left-hand sidebar.\n4. Locate the setting labeled **Save AutoRecover information every [x] minutes**.\n5. Change the number in the input box to **3**.\n6. Click the **OK** button to apply the changes and close the dialog.",
+  "retrieved_page_ranges": [
+    [
+      354,
+      359
+    ],
+    [
+      354,
+      359
+    ],
+    [
+      350,
+      354
+    ],
+    [
+      354,
+      359
+    ],
+    [
+      19,
+      26
+    ]
+  ]
+}

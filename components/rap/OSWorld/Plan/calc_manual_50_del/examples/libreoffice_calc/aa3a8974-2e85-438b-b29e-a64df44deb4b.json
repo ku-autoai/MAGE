@@ -1,0 +1,88 @@
+{
+  "id": "aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I'm working on a project and need to resize cells in a spreadsheet to fit onto one page and export to PDF for efficient presentation. Could you help me on this? Keep the name of PDF the same as the spreadsheet and place it under my home directory.\n\nRelevant procedure\n\n1. Click the **Format** menu in the top menu bar.\n2. Select **Page Style...** from the dropdown menu to open the Page Style dialog.\n3. In the Page Style dialog, click the **Sheet** tab in the left-hand navigation pane.\n4. In the **Print range** section, check the box labeled **Fit print range (number of pages) to**.\n5. Enter `1` in the **Width** field and `1` in the **Height** field to constrain the content to a single page.\n6. Click **OK** to apply the page scaling settings.\n7. Click the **File** menu in the top menu bar.\n8. Select **Export as PDF...** from the dropdown menu.\n9. In the PDF Options dialog that appears, ensure the **General** tab is selected. Verify that no specific restrictions are applied unless desired, then click **Export**.\n10. In the file save dialog, navigate to the **Home** directory (if not already there).\n11. Verify that the file name matches the current spreadsheet name (replacing the extension with `.pdf` if necessary).\n12. Click **Save** to export the file.",
+  "source": "https://www.quora.com/Libre-Office-Calc-How-do-I-resize-all-cells-in-a-sheet-to-make-them-fit-to-1-page-for-printing-and-exporting-as-PDF",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page.xlsx",
+            "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Resize_Cells_Fit_Page.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/aa3a8974-2e85-438b-b29e-a64df44deb4b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": [
+      "check_pdf_pages",
+      "compare_pdfs"
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Resize_Cells_Fit_Page.pdf",
+        "dest": "Resize_Cells_Fit_Page.pdf"
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "relation": "eq",
+          "ref_value": 1
+        }
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/aa3a8974-2e85-438b-b29e-a64df44deb4b/Resize_Cells_Fit_Page_gt.pdf",
+        "dest": "Resize_Cells_Fit_Page_gt.pdf"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **Format** menu in the top menu bar.\n2. Select **Page Style...** from the dropdown menu to open the Page Style dialog.\n3. In the Page Style dialog, click the **Sheet** tab in the left-hand navigation pane.\n4. In the **Print range** section, check the box labeled **Fit print range (number of pages) to**.\n5. Enter `1` in the **Width** field and `1` in the **Height** field to constrain the content to a single page.\n6. Click **OK** to apply the page scaling settings.\n7. Click the **File** menu in the top menu bar.\n8. Select **Export as PDF...** from the dropdown menu.\n9. In the PDF Options dialog that appears, ensure the **General** tab is selected. Verify that no specific restrictions are applied unless desired, then click **Export**.\n10. In the file save dialog, navigate to the **Home** directory (if not already there).\n11. Verify that the file name matches the current spreadsheet name (replacing the extension with `.pdf` if necessary).\n12. Click **Save** to export the file.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      234,
+      234
+    ],
+    [
+      246,
+      248
+    ],
+    [
+      228,
+      229
+    ],
+    [
+      228,
+      228
+    ]
+  ],
+  "first_screen_image_path": null
+}

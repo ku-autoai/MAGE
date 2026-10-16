@@ -1,0 +1,108 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure:\n1. Click on cell C1 to select it (the first empty column header cell to the right of the existing data).\n2. Type \"Maturity Date\" into the selected cell C1.\n3. Press Enter to confirm the header entry.\n4. Click on cell C2 to select it (first data row in the Maturity Date column).\n5. Type the formula: =A2+B2\n6. Press Enter to confirm the formula entry.\n7. Click on cell C2 again to select it.\n8. Position the mouse over the bottom-right corner of cell C2 until the cursor changes to a cross/plus shape.\n9. Click and drag downward from the bottom-right corner of C2 to row C10 to fill the formula for all loan entries.\n10. Release the mouse button to complete the auto-fill operation.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click on cell C1 to select it (the first empty column header cell to the right of the existing data).\n2. Type \"Maturity Date\" into the selected cell C1.\n3. Press Enter to confirm the header entry.\n4. Click on cell C2 to select it (first data row in the Maturity Date column).\n5. Type the formula: =A2+B2\n6. Press Enter to confirm the formula entry.\n7. Click on cell C2 again to select it.\n8. Position the mouse over the bottom-right corner of cell C2 until the cursor changes to a cross/plus shape.\n9. Click and drag downward from the bottom-right corner of C2 to row C10 to fill the formula for all loan entries.\n10. Release the mouse button to complete the auto-fill operation.",
+  "retrieved_page_ranges": [
+    [
+      370,
+      370
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      288,
+      288
+    ],
+    [
+      518,
+      518
+    ],
+    [
+      253,
+      253
+    ]
+  ]
+}

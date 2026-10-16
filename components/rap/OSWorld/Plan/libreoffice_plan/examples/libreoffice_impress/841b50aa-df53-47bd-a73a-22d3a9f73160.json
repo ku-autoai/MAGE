@@ -1,0 +1,101 @@
+{
+  "id": "841b50aa-df53-47bd-a73a-22d3a9f73160",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Add a note \"APP\" into the slide and give the slide a purple background color.\n\nRelevant procedure\n1. Click on the slide area to ensure it is selected.\n2. Go to the \"Insert\" menu in the top toolbar.\n3. Select \"Text Box\" from the dropdown menu.\n4. Click and drag on the slide to create a text box, then type \"APP\".\n5. Go to the \"Slide\" menu in the top toolbar.\n6. Select \"Slide Properties\" (or \"Background\") from the dropdown menu.\n7. In the dialog box that appears, locate the \"Background\" color selection.\n8. Click the color dropdown or palette and select the purple color.\n9. Click \"OK\" or \"Apply\" to confirm the background change.",
+  "hint": "The input is case sensitive.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/841b50aa-df53-47bd-a73a-22d3a9f73160/181_2.pptx",
+            "path": "/home/user/Desktop/181_2.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/181_2.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "181_2.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/841b50aa-df53-47bd-a73a-22d3a9f73160/181_2_Gold.pptx",
+      "dest": "181_2_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/181_2.pptx",
+      "dest": "181_2.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the slide area to ensure it is selected.\n2. Go to the \"Insert\" menu in the top toolbar.\n3. Select \"Text Box\" from the dropdown menu.\n4. Click and drag on the slide to create a text box, then type \"APP\".\n5. Go to the \"Slide\" menu in the top toolbar.\n6. Select \"Slide Properties\" (or \"Background\") from the dropdown menu.\n7. In the dialog box that appears, locate the \"Background\" color selection.\n8. Click the color dropdown or palette and select the purple color.\n9. Click \"OK\" or \"Apply\" to confirm the background change.",
+  "retrieved_page_ranges": [
+    [
+      60,
+      65
+    ],
+    [
+      194,
+      197
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      289,
+      293
+    ],
+    [
+      273,
+      279
+    ]
+  ]
+}

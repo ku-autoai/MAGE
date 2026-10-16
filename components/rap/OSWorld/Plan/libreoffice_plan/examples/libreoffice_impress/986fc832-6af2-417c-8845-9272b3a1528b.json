@@ -1,0 +1,100 @@
+{
+  "id": "986fc832-6af2-417c-8845-9272b3a1528b",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Underline the body of the slide only (without title and table) in dark red 2, and change the font color of the whole slide (title, body and table) to dark red 2.\n\nRelevant procedure\n1. Click on the body text placeholder to select it.\n2. Select the entire body text by pressing `Ctrl` + `A` (or `Command` + `A` on Mac) while the cursor is in the text box.\n3. In the formatting toolbar, click the underline icon or the dropdown arrow next to it to access underline color options.\n4. Select \"Dark Red 2\" from the color palette for the underline.\n5. Click on the slide background or the slide thumbnail in the left pane to deselect specific elements and prepare to select all content.\n6. Press `Ctrl` + `A` (or `Command` + `A`) twice to select all objects on the slide (first selects contents, second selects all objects including title and table). Alternatively, click the title text box, hold `Shift`, and click the table to ensure all three major elements (title, body, table) are selected.\n7. With all elements selected, locate the Font Color button in the formatting toolbar.\n8. Click the dropdown arrow next to the Font Color button.\n9. Select \"Dark Red 2\" from the color palette to apply this font color to the title, body, and table.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/986fc832-6af2-417c-8845-9272b3a1528b/154_3.pptx",
+            "path": "/home/user/Desktop/154_3.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/154_3.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "154_3.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/986fc832-6af2-417c-8845-9272b3a1528b/154_3_Gold.pptx",
+      "dest": "154_3_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/154_3.pptx",
+      "dest": "154_3.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the body text placeholder to select it.\n2. Select the entire body text by pressing `Ctrl` + `A` (or `Command` + `A` on Mac) while the cursor is in the text box.\n3. In the formatting toolbar, click the underline icon or the dropdown arrow next to it to access underline color options.\n4. Select \"Dark Red 2\" from the color palette for the underline.\n5. Click on the slide background or the slide thumbnail in the left pane to deselect specific elements and prepare to select all content.\n6. Press `Ctrl` + `A` (or `Command` + `A`) twice to select all objects on the slide (first selects contents, second selects all objects including title and table). Alternatively, click the title text box, hold `Shift`, and click the table to ensure all three major elements (title, body, table) are selected.\n7. With all elements selected, locate the Font Color button in the formatting toolbar.\n8. Click the dropdown arrow next to the Font Color button.\n9. Select \"Dark Red 2\" from the color palette to apply this font color to the title, body, and table.",
+  "retrieved_page_ranges": [
+    [
+      60,
+      65
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      26,
+      29
+    ],
+    [
+      101,
+      110
+    ],
+    [
+      194,
+      197
+    ]
+  ]
+}

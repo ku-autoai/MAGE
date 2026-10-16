@@ -1,0 +1,117 @@
+{
+  "id": "5cfb9197-e72b-454b-900e-c06b0c802b40",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Change the first row of table to \"T1\",\"T2\",\"T3\",\"T4\" on slide 4.\n\nRelevant procedure\n\n1. Navigate to slide 4 by clicking its thumbnail in the slide pane or using the slide navigation controls.\n2. Click on the table displayed on slide 4 to select it.\n3. Click inside the first cell of the first row (top-left cell).\n4. Type \"T1\" to replace the existing text.\n5. Press the `Tab` key or click the next cell in the first row.\n6. Type \"T2\" to replace the existing text.\n7. Press the `Tab` key or click the next cell in the first row.\n8. Type \"T3\" to replace the existing text.\n9. Press the `Tab` key or click the next cell in the first row.\n10. Type \"T4\" to replace the existing text.\n11. Click outside the table to deselect it and confirm the changes.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5cfb9197-e72b-454b-900e-c06b0c802b40/33_1.pptx",
+            "path": "/home/user/Desktop/33_1.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/33_1.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "33_1.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": [
+      "compare_pptx_files",
+      "compare_pptx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5cfb9197-e72b-454b-900e-c06b0c802b40/33_1_Gold.pptx",
+        "dest": "33_1_Gold.pptx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/5cfb9197-e72b-454b-900e-c06b0c802b40/33_1_Gold_all_fonts.pptx",
+        "dest": "33_1_Gold_all_fonts.pptx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/33_1.pptx",
+        "dest": "33_1.pptx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/33_1.pptx",
+        "dest": "33_1.pptx"
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Navigate to slide 4 by clicking its thumbnail in the slide pane or using the slide navigation controls.\n2. Click on the table displayed on slide 4 to select it.\n3. Click inside the first cell of the first row (top-left cell).\n4. Type \"T1\" to replace the existing text.\n5. Press the `Tab` key or click the next cell in the first row.\n6. Type \"T2\" to replace the existing text.\n7. Press the `Tab` key or click the next cell in the first row.\n8. Type \"T3\" to replace the existing text.\n9. Press the `Tab` key or click the next cell in the first row.\n10. Type \"T4\" to replace the existing text.\n11. Click outside the table to deselect it and confirm the changes.",
+  "retrieved_page_ranges": [
+    [
+      101,
+      110
+    ],
+    [
+      101,
+      110
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      273,
+      279
+    ]
+  ]
+}

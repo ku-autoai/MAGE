@@ -1,0 +1,129 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Click cell **D2** to begin entering the first unique name.\n2. Select cell **B2**, type **Keira Daily**, and press **Enter**.\n3. Select cell **B3**, type **50 Dollar Dollar**, and press **Enter**.\n4. Select cell **B4**, type **Jonah Mountain**, and press **Enter**.\n5. Skip cells B5 (duplicate of B2), B6 (duplicate of B3), B7 (duplicate of B4), B8 (duplicate of B4), B9 (duplicate of B3), B10 (duplicate of B3).\n6. Select cell **B11**, type **Emma Stoned**, and press **Enter**.\n7. Skip cells B12 (duplicate of B4), B13 (duplicate of B4), B14 (duplicate of B4), B15 (duplicate of B4), B16 (duplicate of B4).\n8. Select cell **B17**, type **Morgan Prisoner**, and press **Enter**.\n9. Skip cell B18 (duplicate of B4).\n10. The unique names are now listed in column D (cells D2:D6). Do not modify any other cells.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell **D2** to begin entering the first unique name.\n2. Select cell **B2**, type **Keira Daily**, and press **Enter**.\n3. Select cell **B3**, type **50 Dollar Dollar**, and press **Enter**.\n4. Select cell **B4**, type **Jonah Mountain**, and press **Enter**.\n5. Skip cells B5 (duplicate of B2), B6 (duplicate of B3), B7 (duplicate of B4), B8 (duplicate of B4), B9 (duplicate of B3), B10 (duplicate of B3).\n6. Select cell **B11**, type **Emma Stoned**, and press **Enter**.\n7. Skip cells B12 (duplicate of B4), B13 (duplicate of B4), B14 (duplicate of B4), B15 (duplicate of B4), B16 (duplicate of B4).\n8. Select cell **B17**, type **Morgan Prisoner**, and press **Enter**.\n9. Skip cell B18 (duplicate of B4).\n10. The unique names are now listed in column D (cells D2:D6). Do not modify any other cells.",
+  "retrieved_page_ranges": [
+    [
+      234,
+      234
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      64,
+      65
+    ],
+    [
+      263,
+      265
+    ],
+    [
+      265,
+      265
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/step_1.png"
+}

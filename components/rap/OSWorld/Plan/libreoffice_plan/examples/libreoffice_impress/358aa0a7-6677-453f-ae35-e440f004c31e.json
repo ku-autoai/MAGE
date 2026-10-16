@@ -1,0 +1,102 @@
+{
+  "id": "358aa0a7-6677-453f-ae35-e440f004c31e",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Do you have any suggestions on how to modify the font for all text boxes in an Impress presentation? I want to standardize the font to 'Liberation Sans Narrow', but I don't want to manually select each individual text box.\n\nRelevant procedure\n\n1. Go to the **View** menu on the menu bar and select **Master Slide** to enter the master slide editing mode.\n2. In the Master Slides pane (usually on the left), click on the top-most slide (the Main Master Slide) to ensure changes apply to the entire presentation structure.\n3. In the main slide area, click on the text placeholders (e.g., \"Click to add Title\" or \"Click to add Outline\") to select the text boxes. If needed, press **Ctrl+A** (or **Cmd+A** on macOS) to select all text within the selected placeholder.\n4. Open the font dropdown menu in the **Formatting** toolbar (or go to **Format > Text > Font** in the menu bar).\n5. Select **Liberation Sans Narrow** from the list of available fonts.\n6. Repeat steps 3–5 for other text placeholders on the master slide (e.g., footer, date, or different layout masters if multiple layouts are used) to ensure consistency.\n7. Go to the **View** menu on the menu bar and select **Normal** to return to the standard presentation editing view.\n8. Verify that the font has been updated in the individual slides' text boxes.",
+  "source": "https://superuser.com/questions/296101/change-all-text-fonts-in-libreoffice-impress-presentation",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/358aa0a7-6677-453f-ae35-e440f004c31e/note-taking-strategies.file",
+            "path": "/home/user/Desktop/note-taking-strategies.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/note-taking-strategies.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "note-taking-strategies.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 15
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/358aa0a7-6677-453f-ae35-e440f004c31e/note-taking-strategies_Gold.pptx",
+      "dest": "note-taking-strategies_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/note-taking-strategies.pptx",
+      "dest": "note-taking-strategies.pptx"
+    },
+    "options": {
+      "examine_shape": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Go to the **View** menu on the menu bar and select **Master Slide** to enter the master slide editing mode.\n2. In the Master Slides pane (usually on the left), click on the top-most slide (the Main Master Slide) to ensure changes apply to the entire presentation structure.\n3. In the main slide area, click on the text placeholders (e.g., \"Click to add Title\" or \"Click to add Outline\") to select the text boxes. If needed, press **Ctrl+A** (or **Cmd+A** on macOS) to select all text within the selected placeholder.\n4. Open the font dropdown menu in the **Formatting** toolbar (or go to **Format > Text > Font** in the menu bar).\n5. Select **Liberation Sans Narrow** from the list of available fonts.\n6. Repeat steps 3–5 for other text placeholders on the master slide (e.g., footer, date, or different layout masters if multiple layouts are used) to ensure consistency.\n7. Go to the **View** menu on the menu bar and select **Normal** to return to the standard presentation editing view.\n8. Verify that the font has been updated in the individual slides' text boxes.",
+  "retrieved_page_ranges": [
+    [
+      89,
+      94
+    ],
+    [
+      89,
+      94
+    ],
+    [
+      86,
+      89
+    ],
+    [
+      72,
+      86
+    ],
+    [
+      60,
+      65
+    ]
+  ]
+}

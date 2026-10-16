@@ -1,0 +1,137 @@
+{
+  "id": "3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Sort the data according to column A in an ascending order and then create a line chart with the \"Date Time\" column on the X-axis and quantity on the Y-axis.\n\nRelevant procedure\n1. Click cell **A1** (or any cell within the data range, e.g., **A1:E36**) to establish the data context.\n2. Select the **Data** menu from the top menu bar.\n3. Click **Sort Range** (or simply **Sort**) from the dropdown menu.\n4. In the Sort dialog that appears, ensure **Column A** is selected as the primary sort key.\n5. Select **Ascending** as the sort order.\n6. Ensure the option **My data has headers** (or similar, depending on version) is checked if A1 contains the header \"Date Time\".\n7. Click **OK** to apply the sort.\n8. With the data still selected (or click any cell within the dataset), go to the **Insert** menu at the top.\n9. Click **Chart** to open the Chart Wizard.\n10. In the Chart Type dialog, select **Line** from the list of chart types.\n11. Select the **Lines** or **Points and Lines** variant (typically the default preview) and click **Next**.\n12. In the Data Range step, ensure the range includes both Column A and Column E.\n13. Click **Data Series** tab (or similar depending on Wizard version) to configure axes.\n14. Ensure **Columns** are set as data series (or adjust if rows are default) so that Date Time becomes the category axis.\n15. Remove unnecessary series if prompted, or ensure only the **Quantity** column (Column E) is plotted as the Y-value series and **Date Time** (Column A) is the category.\n16. Click **Next** to reach the Chart Elements page.\n17. Optionally add a title (e.g., \"Quantity Over Time\") and axis labels.\n18. Click **Finish** to insert the chart into the spreadsheet.",
+  "source": "SheetCopilot@5",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/6_BoomerangSales_gt1.xlsx",
+      "dest": "6_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell **A1** (or any cell within the data range, e.g., **A1:E36**) to establish the data context.\n2. Select the **Data** menu from the top menu bar.\n3. Click **Sort Range** (or simply **Sort**) from the dropdown menu.\n4. In the Sort dialog that appears, ensure **Column A** is selected as the primary sort key.\n5. Select **Ascending** as the sort order.\n6. Ensure the option **My data has headers** (or similar, depending on version) is checked if A1 contains the header \"Date Time\".\n7. Click **OK** to apply the sort.\n8. With the data still selected (or click any cell within the dataset), go to the **Insert** menu at the top.\n9. Click **Chart** to open the Chart Wizard.\n10. In the Chart Type dialog, select **Line** from the list of chart types.\n11. Select the **Lines** or **Points and Lines** variant (typically the default preview) and click **Next**.\n12. In the Data Range step, ensure the range includes both Column A and Column E.\n13. Click **Data Series** tab (or similar depending on Wizard version) to configure axes.\n14. Ensure **Columns** are set as data series (or adjust if rows are default) so that Date Time becomes the category axis.\n15. Remove unnecessary series if prompted, or ensure only the **Quantity** column (Column E) is plotted as the Y-value series and **Date Time** (Column A) is the category.\n16. Click **Next** to reach the Chart Elements page.\n17. Optionally add a title (e.g., \"Quantity Over Time\") and axis labels.\n18. Click **Finish** to insert the chart into the spreadsheet.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      169,
+      169
+    ],
+    [
+      172,
+      173
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      175,
+      176
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/step_1.png"
+}

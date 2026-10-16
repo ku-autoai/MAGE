@@ -1,0 +1,110 @@
+{
+  "id": "347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Here are two tables recording the per-month costs in 2019 and 2020. I want to create two column bar charts reflecting per-month total costs for each year from these data. Help me, Mr. Assistant!\n\nRelevant procedure\n\n1. Click on cell **A3** (containing \"Jan\") to begin the selection.\n2. Click and drag to select the range **A3:I14** (from \"Jan\" in row 3 down to the total \"£4,708.00\" in cell I14 for the year 2019). This range includes the months and the total costs in column I.\n3. Click on the **Insert** menu in the top menu bar.\n4. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n5. In the **Chart Type** window, ensure **Column** is selected and **Normal** is chosen as the variant.\n6. Click the **Next** button to proceed to the **Data Range** step.\n7. Verify that the Data Range is correct. In the **Ranges** section on the right, ensure the checkmark for **First row as label** is checked.\n8. Click on the **Data Series** tab within the dialog (or click Next until you reach the Data Series step). Ensure that only the \"Total\" series (which corresponds to Column I) is selected. If other series are shown, deselect them or ensure the data is interpreted correctly so that only the monthly totals are plotted.\n9. Click the **Next** button to reach the **Chart Elements** step.\n10. Enter a title for the chart, e.g., \"Personal Costs - 2019\".\n11. Click the **Finish** button to create the first chart.\n12. Click on cell **A20** (containing \"Jan\" for 2020) to begin the second selection.\n13. Click and drag to select the range **A20:I31** (from \"Jan\" in row 20 down to the total \"£4,358.00\" in cell I31 for the year 2020).\n14. Click on the **Insert** menu in the top menu bar.\n15. Select **Chart...** from the dropdown menu.\n16. Ensure **Column** and **Normal** are selected in the Chart Type window.\n17. Click **Next**, verify the data range and labels (First row as label), and ensure only the total cost series is included.\n18. Click **Next**, enter the title",
+  "source": "https://www.youtube.com/watch?v=bgO40-CjYNY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics.xlsx",
+            "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Create_column_charts_using_statistics.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/347ef137-7eeb-4c80-a3bb-0951f26a8aff",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Create_column_charts_using_statistics.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Create_column_charts_using_statistics.xlsx",
+      "dest": "Create_column_charts_using_statistics.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/Create_column_charts_using_statistics_gold.xlsx",
+      "dest": "Create_column_charts_using_statistics_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "direction"
+          ]
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **A3** (containing \"Jan\") to begin the selection.\n2. Click and drag to select the range **A3:I14** (from \"Jan\" in row 3 down to the total \"£4,708.00\" in cell I14 for the year 2019). This range includes the months and the total costs in column I.\n3. Click on the **Insert** menu in the top menu bar.\n4. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n5. In the **Chart Type** window, ensure **Column** is selected and **Normal** is chosen as the variant.\n6. Click the **Next** button to proceed to the **Data Range** step.\n7. Verify that the Data Range is correct. In the **Ranges** section on the right, ensure the checkmark for **First row as label** is checked.\n8. Click on the **Data Series** tab within the dialog (or click Next until you reach the Data Series step). Ensure that only the \"Total\" series (which corresponds to Column I) is selected. If other series are shown, deselect them or ensure the data is interpreted correctly so that only the monthly totals are plotted.\n9. Click the **Next** button to reach the **Chart Elements** step.\n10. Enter a title for the chart, e.g., \"Personal Costs - 2019\".\n11. Click the **Finish** button to create the first chart.\n12. Click on cell **A20** (containing \"Jan\" for 2020) to begin the second selection.\n13. Click and drag to select the range **A20:I31** (from \"Jan\" in row 20 down to the total \"£4,358.00\" in cell I31 for the year 2020).\n14. Click on the **Insert** menu in the top menu bar.\n15. Select **Chart...** from the dropdown menu.\n16. Ensure **Column** and **Normal** are selected in the Chart Type window.\n17. Click **Next**, verify the data range and labels (First row as label), and ensure only the total cost series is included.\n18. Click **Next**, enter the title",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      165,
+      166
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/347ef137-7eeb-4c80-a3bb-0951f26a8aff/step_1.png"
+}

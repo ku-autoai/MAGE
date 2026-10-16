@@ -1,0 +1,143 @@
+{
+  "id": "21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Change the representation of column \"Parameter\" to show in Millions (M) in Column B and Billions (B) in Column C. The numbers should be rounded to one decimal place, and half should be rounded up. Then remember to place a white space between the digits and the unit.\n\nRelevant procedure\n1. Select the range of cells in Column B containing the numerical values from the \"Parameter\" column (e.g., B2:B100, excluding headers).\n2. Right-click the selected range and choose \"Format Cells...\" (or press Ctrl+1) to open the Format Cells dialog.\n3. In the \"Numbers\" tab, select \"Custom\" from the Category list on the left.\n4. In the \"Format code\" input field, clear any existing text and type: `0.0\" M\"`\n5. Click \"OK\" to apply the format. The numbers in Column B should now display as values divided by 1,000,000, rounded to one decimal place, with a space and \"M\" suffix (e.g., 1.5 M). *Note: If the values appear as the original large numbers followed by \" M\", you must first divide the original values by 1,000,000 in a new column or helper column before applying this format, or use a formula like `=TEXT(B2/1000000, \"0.0\") & \" M\"`.* Given the instruction implies formatting representation, assuming the underlying values need to be scaled or the format code handles the division is ambiguous in standard Calc without helper columns. However, standard \"Format Cells\" does not change value magnitude. Therefore, the robust approach is:\n   *   **Alternative Robust Path (Formula-based):**\n   1. Insert a new temporary column next to Parameter or overwrite Column B/C if allowed.\n   2. In the first cell of Column B (e.g., B2), enter the formula: `=ROUND(Parameter_Cells/1000000, 1) & \" M\"` (Replace Parameter_Cells with the actual cell reference, e.g., A2).\n   3. Drag the fill handle down to apply the formula to all relevant rows in Column B.\n   4. Select the range of cells in Column C.\n   5. In the first cell of Column C (e.g., C2), enter the formula: `=ROUND(Parameter_Cells/1000000000, 1) & \" B\"` (Replace Parameter_Cells with the actual cell reference, e.g., A2).\n   6. Drag the fill handle down to apply the formula to",
+  "source": "https://www.youtube.com/watch?v=p5C4V_AO1UU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions.xlsx",
+            "path": "/home/user/Represent_in_millions_billions.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Represent_in_millions_billions.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21df9241-f8d7-4509-b7f1-37e501a823f7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Represent_in_millions_billions.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "libreoffice",
+            "--convert-to",
+            "csv:Text - txt - csv (StarCalc):44,34,UTF-8,,,,false,true,true,false,false,1",
+            "--outdir",
+            "/home/user",
+            "/home/user/Represent_in_millions_billions.xlsx"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Represent_in_millions_billions.xlsx",
+        "/home/user/Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions.xlsx",
+        "Represent_in_millions_billions-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": [
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21df9241-f8d7-4509-b7f1-37e501a823f7/Represent_in_millions_billions_gold.csv"
+      ],
+      "dest": [
+        "Represent_in_millions_billions_gold.xlsx",
+        "Represent_in_millions_billions_gold-Sheet1.csv"
+      ],
+      "multi": true
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_print",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "ignore_case": true
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the range of cells in Column B containing the numerical values from the \"Parameter\" column (e.g., B2:B100, excluding headers).\n2. Right-click the selected range and choose \"Format Cells...\" (or press Ctrl+1) to open the Format Cells dialog.\n3. In the \"Numbers\" tab, select \"Custom\" from the Category list on the left.\n4. In the \"Format code\" input field, clear any existing text and type: `0.0\" M\"`\n5. Click \"OK\" to apply the format. The numbers in Column B should now display as values divided by 1,000,000, rounded to one decimal place, with a space and \"M\" suffix (e.g., 1.5 M). *Note: If the values appear as the original large numbers followed by \" M\", you must first divide the original values by 1,000,000 in a new column or helper column before applying this format, or use a formula like `=TEXT(B2/1000000, \"0.0\") & \" M\"`.* Given the instruction implies formatting representation, assuming the underlying values need to be scaled or the format code handles the division is ambiguous in standard Calc without helper columns. However, standard \"Format Cells\" does not change value magnitude. Therefore, the robust approach is:\n   *   **Alternative Robust Path (Formula-based):**\n   1. Insert a new temporary column next to Parameter or overwrite Column B/C if allowed.\n   2. In the first cell of Column B (e.g., B2), enter the formula: `=ROUND(Parameter_Cells/1000000, 1) & \" M\"` (Replace Parameter_Cells with the actual cell reference, e.g., A2).\n   3. Drag the fill handle down to apply the formula to all relevant rows in Column B.\n   4. Select the range of cells in Column C.\n   5. In the first cell of Column C (e.g., C2), enter the formula: `=ROUND(Parameter_Cells/1000000000, 1) & \" B\"` (Replace Parameter_Cells with the actual cell reference, e.g., A2).\n   6. Drag the fill handle down to apply the formula to",
+  "retrieved_page_ranges": [
+    [
+      51,
+      51
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      71,
+      71
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      95,
+      96
+    ]
+  ],
+  "first_screen_image_path": null
+}

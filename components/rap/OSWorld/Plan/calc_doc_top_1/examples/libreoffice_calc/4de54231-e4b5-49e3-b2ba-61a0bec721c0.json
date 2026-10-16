@@ -1,0 +1,93 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\n**Relevant procedure**\n\n1. **Select the formula range for Column B:**\n   - Click on cell **B2** (which contains your existing formula).\n   - Click on the **Name Box** (currently showing `C1:C1048576`), type `B2:B30` (or the last row of your data), and press **Enter**.\n   - Press **Ctrl + D** to fill the formula down to the bottom of the selected range.\n\n2. **Select the formula range for Column D:**\n   - Click on cell **D2**.\n   - Click on the **Name Box**, type `D2:D30`, and press **Enter**.\n   - Press **Ctrl + D** to fill the formula down to the bottom of the selected range.\n\n3. **Create the \"Combined Data\" Header:**\n   - Click on cell **E1**.\n   - Type `Combined Data`.\n   - Press **Enter**.\n\n4. **Create the Concatenation Formula with 2 Decimals:**\n   - Click on cell **E2**.\n   - Type the following formula exactly:\n     `=TEXT(A2,\"0.00\")&\", \"&TEXT(B2,\"0.00\")&\", \"&TEXT(C2,\"0.00\")&\", \"&TEXT(D2,\"0.00\")`\n   - *Note: This formula formats each number to 2 decimal places using `TEXT` and combines them with commas.*\n   - Press **Enter**.\n\n5. **Fill the Concatenated Data:**\n   - Click on cell **E2** again to select it.\n   - Click on the **Name Box**, type `E2:E30`, and press **Enter**.\n   - Press **Ctrl + D** to apply the formula to all rows.\n\n6. **(Optional) Convert Formulas to Values:**\n   - If you want static text instead of formulas: Select range `E2:E30`, press **Ctrl+C**, then right-click on the same selection and choose **Paste Special > Values only**.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "**Relevant procedure**\n\n1. **Select the formula range for Column B:**\n   - Click on cell **B2** (which contains your existing formula).\n   - Click on the **Name Box** (currently showing `C1:C1048576`), type `B2:B30` (or the last row of your data), and press **Enter**.\n   - Press **Ctrl + D** to fill the formula down to the bottom of the selected range.\n\n2. **Select the formula range for Column D:**\n   - Click on cell **D2**.\n   - Click on the **Name Box**, type `D2:D30`, and press **Enter**.\n   - Press **Ctrl + D** to fill the formula down to the bottom of the selected range.\n\n3. **Create the \"Combined Data\" Header:**\n   - Click on cell **E1**.\n   - Type `Combined Data`.\n   - Press **Enter**.\n\n4. **Create the Concatenation Formula with 2 Decimals:**\n   - Click on cell **E2**.\n   - Type the following formula exactly:\n     `=TEXT(A2,\"0.00\")&\", \"&TEXT(B2,\"0.00\")&\", \"&TEXT(C2,\"0.00\")&\", \"&TEXT(D2,\"0.00\")`\n   - *Note: This formula formats each number to 2 decimal places using `TEXT` and combines them with commas.*\n   - Press **Enter**.\n\n5. **Fill the Concatenated Data:**\n   - Click on cell **E2** again to select it.\n   - Click on the **Name Box**, type `E2:E30`, and press **Enter**.\n   - Press **Ctrl + D** to apply the formula to all rows.\n\n6. **(Optional) Convert Formulas to Values:**\n   - If you want static text instead of formulas: Select range `E2:E30`, press **Ctrl+C**, then right-click on the same selection and choose **Paste Special > Values only**.",
+  "retrieved_page_ranges": [
+    [
+      55,
+      55
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/step_1.png"
+}

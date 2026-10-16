@@ -1,0 +1,101 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nBased on the screenshot and the task instruction, here is the procedure to extract unique names while preserving the order of their first occurrences:\n\n**Relevant procedure**\n\n1.  Click on cell **C2** (the first empty cell under the \"Names\" header) to select it.\n2.  Type the following formula exactly: `=IF(COUNTIF(B$2:B2, B2)=1, B2, \"\")`\n    *   *Note: Ensure dollar signs ($) are included before the `2`s in `B$2:B2` to lock the top of the range.*\n3.  Press **Enter** on your keyboard to apply the formula in cell C2.\n4.  Click on cell **C2** again to ensure it is selected.\n5.  Locate the **fill handle** (the small green/orange square) at the bottom-right corner of cell C2's selection border.\n6.  Click and hold the fill handle, then **drag it down** to row **18** (to cover all rows containing data in column B). Alternatively, double-click the fill handle to auto-fill down to the last contiguous row in column B.\n7.  Verify that column C now contains the unique names in their original order.\n8.  If you wish to remove the formulas and keep only the text values:\n    a. Select the range **C2:C18**.\n    b. Press **Ctrl+C** to copy.\n    c. Right-click on cell **C2** and choose **Paste Special** > **Values and Formatting** (or just **Values** depending on UI version) from the context menu, then click **OK**.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the screenshot and the task instruction, here is the procedure to extract unique names while preserving the order of their first occurrences:\n\n**Relevant procedure**\n\n1.  Click on cell **C2** (the first empty cell under the \"Names\" header) to select it.\n2.  Type the following formula exactly: `=IF(COUNTIF(B$2:B2, B2)=1, B2, \"\")`\n    *   *Note: Ensure dollar signs ($) are included before the `2`s in `B$2:B2` to lock the top of the range.*\n3.  Press **Enter** on your keyboard to apply the formula in cell C2.\n4.  Click on cell **C2** again to ensure it is selected.\n5.  Locate the **fill handle** (the small green/orange square) at the bottom-right corner of cell C2's selection border.\n6.  Click and hold the fill handle, then **drag it down** to row **18** (to cover all rows containing data in column B). Alternatively, double-click the fill handle to auto-fill down to the last contiguous row in column B.\n7.  Verify that column C now contains the unique names in their original order.\n8.  If you wish to remove the formulas and keep only the text values:\n    a. Select the range **C2:C18**.\n    b. Press **Ctrl+C** to copy.\n    c. Right-click on cell **C2** and choose **Paste Special** > **Values and Formatting** (or just **Values** depending on UI version) from the context menu, then click **OK**.",
+  "retrieved_page_ranges": [
+    [
+      234,
+      234
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      375,
+      376
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/step_1.png"
+}

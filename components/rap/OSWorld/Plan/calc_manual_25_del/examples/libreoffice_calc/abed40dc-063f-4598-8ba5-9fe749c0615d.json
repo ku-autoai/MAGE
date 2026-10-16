@@ -1,0 +1,109 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell A2 (the first name under \"Names with duplicates\").\n2. Select the entire column A by clicking the column header \"A\" at the top of the sheet.\n3. Copy the selected data by pressing `Ctrl+C` (or right-click and select \"Copy\").\n4. Click on cell B2 (the first empty cell under \"Unique Names\").\n5. Right-click on cell B2 and select \"Paste Special...\" from the context menu.\n6. In the \"Paste Special\" dialog, select the \"Data\" tab.\n7. Check the box for \"No duplicates\" (or \"Unique values\" depending on the specific LibreOffice version interface, usually found under \"All\" or specific filters if available; if not available via Paste Special, use the Data menu method below instead).\n   *Alternative robust method if Paste Special > No Duplicates is not visible:*\n   a. Instead of steps 5-7 above: With Column A still selected (or re-select A2 down to the last name), go to the menu bar and click **Data**.\n   b. Select **More Filters** > **AutoFilter** (or just **AutoFilter**) to show dropdown arrows in headers.\n   c. Click the dropdown arrow in the \"Names with duplicates\" header.\n   d. Uncheck \"Select All\", then manually check only the unique names? No, this doesn't filter duplicates automatically.\n   *Correct Robust Method for LibreOffice Calc:*\n   a. Select the range of names in Column A (e.g., A2:A20).\n   b. Go to **Data** > **More Filters** > **Advanced Filter**.\n   c. In the Advanced Filter dialog, check the box **\"No duplicate records\"**.\n   d. In the **\"Copy to\"** section, enter the destination range starting with `B2` (or click the cell B2 icon to select it).\n   e. Click **OK**.\n8. Verify that the unique names appear in Column B in their original order.\n9. Click on any other cell to deselect the filtered/copied range.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell A2 (the first name under \"Names with duplicates\").\n2. Select the entire column A by clicking the column header \"A\" at the top of the sheet.\n3. Copy the selected data by pressing `Ctrl+C` (or right-click and select \"Copy\").\n4. Click on cell B2 (the first empty cell under \"Unique Names\").\n5. Right-click on cell B2 and select \"Paste Special...\" from the context menu.\n6. In the \"Paste Special\" dialog, select the \"Data\" tab.\n7. Check the box for \"No duplicates\" (or \"Unique values\" depending on the specific LibreOffice version interface, usually found under \"All\" or specific filters if available; if not available via Paste Special, use the Data menu method below instead).\n   *Alternative robust method if Paste Special > No Duplicates is not visible:*\n   a. Instead of steps 5-7 above: With Column A still selected (or re-select A2 down to the last name), go to the menu bar and click **Data**.\n   b. Select **More Filters** > **AutoFilter** (or just **AutoFilter**) to show dropdown arrows in headers.\n   c. Click the dropdown arrow in the \"Names with duplicates\" header.\n   d. Uncheck \"Select All\", then manually check only the unique names? No, this doesn't filter duplicates automatically.\n   *Correct Robust Method for LibreOffice Calc:*\n   a. Select the range of names in Column A (e.g., A2:A20).\n   b. Go to **Data** > **More Filters** > **Advanced Filter**.\n   c. In the Advanced Filter dialog, check the box **\"No duplicate records\"**.\n   d. In the **\"Copy to\"** section, enter the destination range starting with `B2` (or click the cell B2 icon to select it).\n   e. Click **OK**.\n8. Verify that the unique names appear in Column B in their original order.\n9. Click on any other cell to deselect the filtered/copied range.",
+  "retrieved_page_ranges": [
+    [
+      234,
+      234
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      95,
+      96
+    ]
+  ],
+  "first_screen_image_path": null
+}

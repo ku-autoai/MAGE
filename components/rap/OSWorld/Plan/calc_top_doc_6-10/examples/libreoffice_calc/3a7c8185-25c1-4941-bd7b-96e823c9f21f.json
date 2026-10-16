@@ -1,0 +1,117 @@
+{
+  "id": "3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Sort the data according to column A in an ascending order and then create a line chart with the \"Date Time\" column on the X-axis and quantity on the Y-axis.\n\nRelevant procedure\n1. Click the header of column A (where the column label \"A\" is located above \"Date Time\") to select the entire column.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"Sort...\" from the dropdown menu.\n4. In the Sort dialog, ensure the first key is set to \"Column A\" and the order is \"Ascending\".\n5. Click \"OK\" to perform the sort.\n6. Click and drag to select the range starting from cell A1 (\"Date Time\"), extending down to the last row of data, and across to column E (\"Quantity\").\n7. Click the \"Insert\" menu at the top.\n8. Select \"Chart...\" from the dropdown menu.\n9. In the Chart Wizard, click the \"Chart Type\" tab if not already selected.\n10. Select the \"Line\" chart type in the left pane.\n11. In the right pane under \"Sub type\", select \"Lines and Points\" or \"Points and Lines\".\n12. Click the \"Data Range\" tab.\n13. Verify that the first column is used for categories (X-axis) and the last selected column is used for values (Y-axis). If necessary, click \"Data series in columns\" and ensure \"First column as label\" and \"First row as label\" are selected appropriately for your data structure.\n14. Click the \"Data Series\" tab.\n15. Ensure the \"Categories\" box contains the reference to the \"Date Time\" column (e.g., $A$2:$A$37).\n16. Ensure the \"Y-Values\" box contains the reference to the \"Quantity\" column (e.g., $E$2:$E$37).\n17. Click \"Finish\" to create the chart.",
+  "source": "SheetCopilot@5",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3a7c8185-25c1-4941-bd7b-96e823c9f21f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/6_BoomerangSales_gt1.xlsx",
+      "dest": "6_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the header of column A (where the column label \"A\" is located above \"Date Time\") to select the entire column.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"Sort...\" from the dropdown menu.\n4. In the Sort dialog, ensure the first key is set to \"Column A\" and the order is \"Ascending\".\n5. Click \"OK\" to perform the sort.\n6. Click and drag to select the range starting from cell A1 (\"Date Time\"), extending down to the last row of data, and across to column E (\"Quantity\").\n7. Click the \"Insert\" menu at the top.\n8. Select \"Chart...\" from the dropdown menu.\n9. In the Chart Wizard, click the \"Chart Type\" tab if not already selected.\n10. Select the \"Line\" chart type in the left pane.\n11. In the right pane under \"Sub type\", select \"Lines and Points\" or \"Points and Lines\".\n12. Click the \"Data Range\" tab.\n13. Verify that the first column is used for categories (X-axis) and the last selected column is used for values (Y-axis). If necessary, click \"Data series in columns\" and ensure \"First column as label\" and \"First row as label\" are selected appropriately for your data structure.\n14. Click the \"Data Series\" tab.\n15. Ensure the \"Categories\" box contains the reference to the \"Date Time\" column (e.g., $A$2:$A$37).\n16. Ensure the \"Y-Values\" box contains the reference to the \"Quantity\" column (e.g., $E$2:$E$37).\n17. Click \"Finish\" to create the chart.",
+  "retrieved_page_ranges": [
+    [
+      125,
+      126
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      175,
+      176
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/3a7c8185-25c1-4941-bd7b-96e823c9f21f/step_1.png"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Help me fill in the Gross profit column by subtracting all the available expenses including discounts, allowances, material and labor charges, and overhead from the actual sale, i.e., the sales after deducting the returns. Then under column A named \"Year_Profit\" in a new sheet \"Sheet2\", display the Year Column in Sheet 1 as text appended by a \"_\" with the corresponding integer digits of Gross Profit value.\n\nRelevant procedure\n\n1.  **Identify Column Headers**: Locate the column for \"Actual Sale\" (sales after returns) and the columns for expenses (\"Discounts\", \"Allowances\", \"Material\", \"Labor\", \"Overhead\") in Sheet1. Assume they are in columns B, C, D, E, F, G, and H respectively for this procedure, starting at row 2. Identify the column for \"Year\" (e.g., Column A).\n2.  **Select Gross Profit Header**: Click the cell in the header row corresponding to the new \"Gross profit\" column (e.g., cell I1).\n3.  **Label Gross Profit Column**: Type `Gross profit` and press Enter.\n4.  **Enter Gross Profit Formula**: Click the first data cell for Gross Profit (e.g., cell I2).\n5.  **Type Formula**: Enter the formula `=B2-SUM(C2:H2)` (adjusting B2 to the Actual Sale cell and C2:H2 to cover all expense columns: Discounts, Allowances, Material, Labor, Overhead). Press Enter.\n6.  **Fill Down Formula**: Click cell I2. Drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to apply the calculation to all entries.\n7.  **Create New Sheet**: Click the **New Sheet** button (green plus icon) next to the existing sheet tabs at the bottom of the window.\n8.  **Rename Sheet**: Double-click the new sheet tab (likely named \"Sheet2\"). Type `Sheet2` and press Enter.\n9.  **Select Year_Profit Header**: In Sheet2, click cell A1.\n10. **Label Year_Profit Column**: Type `Year_Profit` and press Enter.\n11. **Enter Concatenation Formula**: Click cell A2.\n12. **Type Concatenation Formula**: Enter the formula `=Sheet1.A2&\"_\"&INT(Sheet1.I2)`. This appends the Year from Sheet1 Column A, an underscore, and the integer part of the Gross Profit from Sheet1 Column I. Adjust column references (A2, I2) if your Year and Gross Profit columns differ.\n13. **Fill Down Formula**: Click cell A2 in Sheet2. Drag the fill handle down to match the number of rows in Sheet1",
+  "source": "SheetCopilot@92",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/IncomeStatement2.xlsx",
+            "path": "/home/user/IncomeStatement2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/IncomeStatement2.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/035f41ba-6653-43ab-aa63-c86d449d62e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "IncomeStatement2.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/035f41ba-6653-43ab-aa63-c86d449d62e5/5_IncomeStatement2_gt1.xlsx",
+      "dest": "5_IncomeStatement2_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/IncomeStatement2.xlsx",
+      "dest": "IncomeStatement2.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1"
+        },
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  **Identify Column Headers**: Locate the column for \"Actual Sale\" (sales after returns) and the columns for expenses (\"Discounts\", \"Allowances\", \"Material\", \"Labor\", \"Overhead\") in Sheet1. Assume they are in columns B, C, D, E, F, G, and H respectively for this procedure, starting at row 2. Identify the column for \"Year\" (e.g., Column A).\n2.  **Select Gross Profit Header**: Click the cell in the header row corresponding to the new \"Gross profit\" column (e.g., cell I1).\n3.  **Label Gross Profit Column**: Type `Gross profit` and press Enter.\n4.  **Enter Gross Profit Formula**: Click the first data cell for Gross Profit (e.g., cell I2).\n5.  **Type Formula**: Enter the formula `=B2-SUM(C2:H2)` (adjusting B2 to the Actual Sale cell and C2:H2 to cover all expense columns: Discounts, Allowances, Material, Labor, Overhead). Press Enter.\n6.  **Fill Down Formula**: Click cell I2. Drag the fill handle (small square at the bottom-right corner of the cell) down to the last row of data to apply the calculation to all entries.\n7.  **Create New Sheet**: Click the **New Sheet** button (green plus icon) next to the existing sheet tabs at the bottom of the window.\n8.  **Rename Sheet**: Double-click the new sheet tab (likely named \"Sheet2\"). Type `Sheet2` and press Enter.\n9.  **Select Year_Profit Header**: In Sheet2, click cell A1.\n10. **Label Year_Profit Column**: Type `Year_Profit` and press Enter.\n11. **Enter Concatenation Formula**: Click cell A2.\n12. **Type Concatenation Formula**: Enter the formula `=Sheet1.A2&\"_\"&INT(Sheet1.I2)`. This appends the Year from Sheet1 Column A, an underscore, and the integer part of the Gross Profit from Sheet1 Column I. Adjust column references (A2, I2) if your Year and Gross Profit columns differ.\n13. **Fill Down Formula**: Click cell A2 in Sheet2. Drag the fill handle down to match the number of rows in Sheet1",
+  "retrieved_page_ranges": [
+    [
+      85,
+      85
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      523,
+      523
+    ],
+    [
+      51,
+      51
+    ],
+    [
+      84,
+      85
+    ]
+  ],
+  "first_screen_image_path": null
+}

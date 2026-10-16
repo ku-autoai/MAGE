@@ -1,0 +1,114 @@
+{
+  "id": "88fe4b2d-3040-4c70-9a70-546a47764b48",
+  "snapshot": "libreoffice_writer",
+  "instruction": "I am making a guideline for students of my course and would like to separate each sentence in the the first paragraph to improve readability. Please separate each sentence by creating one empty line space after each of them, as I am having hard time separating them one by one.\n\nRelevant procedure:\n\n1. Press `Ctrl+H` to open the Find and Replace dialog box.\n\n2. In the \"Find\" field, type: `\\. ` (period followed by a space) - this will find the end of each sentence.\n\n3. In the \"Replace\" field, type: `.\\n` (period followed by newline character) - this will replace the period+space with period+newline+space.\n\n   Note: If `\\n` doesn't work as newline, try using `Ctrl+J` to insert a newline character in the Replace field.\n\n4. Check the \"Regular expressions\" checkbox in the Find and Replace dialog if it's not already checked.\n\n5. Click \"Replace All\" to apply the changes to all sentences in the first paragraph.\n\n6. Close the Find and Replace dialog.\n\n7. Review the document to ensure each sentence is now on its own line with proper spacing.",
+  "source": "https://stackoverflow.com/questions/56554555/libreoffice-writer-how-to-create-empty-line-space-after-every-period-in-a-par",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/88fe4b2d-3040-4c70-9a70-546a47764b48/CCCH9003_Tutorial_guidelines.docx",
+            "path": "/home/user/Desktop/CCCH9003_Tutorial_guidelines.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/CCCH9003_Tutorial_guidelines.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "CCCH9003_Tutorial_guidelines.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": [
+      "compare_docx_files",
+      "compare_docx_files",
+      "compare_docx_files"
+    ],
+    "conj": "or",
+    "expected": [
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/88fe4b2d-3040-4c70-9a70-546a47764b48/CCCH9003_Tutorial_guidelines_Gold_1.docx",
+        "dest": "CCCH9003_Tutorial_guidelines_Gold_1.docx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/88fe4b2d-3040-4c70-9a70-546a47764b48/CCCH9003_Tutorial_guidelines_Gold_2.docx",
+        "dest": "CCCH9003_Tutorial_guidelines_Gold_2.docx"
+      },
+      {
+        "type": "cloud_file",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/88fe4b2d-3040-4c70-9a70-546a47764b48/CCCH9003_Tutorial_guidelines_Gold_3.docx",
+        "dest": "CCCH9003_Tutorial_guidelines_Gold_3.docx"
+      }
+    ],
+    "result": [
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/CCCH9003_Tutorial_guidelines.docx",
+        "dest": "CCCH9003_Tutorial_guidelines.docx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/CCCH9003_Tutorial_guidelines.docx",
+        "dest": "CCCH9003_Tutorial_guidelines.docx"
+      },
+      {
+        "type": "vm_file",
+        "path": "/home/user/Desktop/CCCH9003_Tutorial_guidelines.docx",
+        "dest": "CCCH9003_Tutorial_guidelines.docx"
+      }
+    ],
+    "options": [
+      {
+        "ignore_blanks": false
+      },
+      {
+        "ignore_blanks": false
+      },
+      {
+        "ignore_blanks": false
+      }
+    ]
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure:\n\n1. Press `Ctrl+H` to open the Find and Replace dialog box.\n\n2. In the \"Find\" field, type: `\\. ` (period followed by a space) - this will find the end of each sentence.\n\n3. In the \"Replace\" field, type: `.\\n` (period followed by newline character) - this will replace the period+space with period+newline+space.\n\n   Note: If `\\n` doesn't work as newline, try using `Ctrl+J` to insert a newline character in the Replace field.\n\n4. Check the \"Regular expressions\" checkbox in the Find and Replace dialog if it's not already checked.\n\n5. Click \"Replace All\" to apply the changes to all sentences in the first paragraph.\n\n6. Close the Find and Replace dialog.\n\n7. Review the document to ensure each sentence is now on its own line with proper spacing.",
+  "instruction_with_evidence": "I am making a guideline for students of my course and would like to separate each sentence in the the first paragraph to improve readability. Please separate each sentence by creating one empty line space after each of them, as I am having hard time separating them one by one.\n\nRelevant procedure:\n\n1. Press `Ctrl+H` to open the Find and Replace dialog box.\n\n2. In the \"Find\" field, type: `\\. ` (period followed by a space) - this will find the end of each sentence.\n\n3. In the \"Replace\" field, type: `.\\n` (period followed by newline character) - this will replace the period+space with period+newline+space.\n\n   Note: If `\\n` doesn't work as newline, try using `Ctrl+J` to insert a newline character in the Replace field.\n\n4. Check the \"Regular expressions\" checkbox in the Find and Replace dialog if it's not already checked.\n\n5. Click \"Replace All\" to apply the changes to all sentences in the first paragraph.\n\n6. Close the Find and Replace dialog.\n\n7. Review the document to ensure each sentence is now on its own line with proper spacing."
+}

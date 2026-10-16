@@ -1,0 +1,109 @@
+{
+  "id": "01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill all the blank cells in B1:E30 with the value in the cell above it. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell B2.\n2. Type the formula `=IF(B1<>\"\",B1,\"\")`.\n3. Press Enter to apply the formula to cell B2.\n4. Click on cell B2 to select it.\n5. Click and drag the fill handle (small square at the bottom-right corner of the cell) down to row 30 in column B.\n6. Click on cell C2.\n7. Type the formula `=IF(C1<>\"\",C1,\"\")`.\n8. Press Enter to apply the formula to cell C2.\n9. Click on cell C2 to select it.\n10. Click and drag the fill handle down to row 30 in column C.\n11. Click on cell D2.\n12. Type the formula `=IF(D1<>\"\",D1,\"\")`.\n13. Press Enter to apply the formula to cell D2.\n14. Click on cell D2 to select it.\n15. Click and drag the fill handle down to row 30 in column D.\n16. Click on cell E2.\n17. Type the formula `=IF(E1<>\"\",E1,\"\")`.\n18. Press Enter to apply the formula to cell E2.\n19. Click on cell E2 to select it.\n20. Click and drag the fill handle down to row 30 in column E.",
+  "source": "https://www.youtube.com/shorts/VrUzPTIwQ04",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank.xlsx",
+            "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Student_Level_Fill_Blank.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank_gold.xlsx",
+      "dest": "Student_Level_Fill_Blank_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Student_Level_Fill_Blank.xlsx",
+      "dest": "Student_Level_Fill_Blank.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell B2.\n2. Type the formula `=IF(B1<>\"\",B1,\"\")`.\n3. Press Enter to apply the formula to cell B2.\n4. Click on cell B2 to select it.\n5. Click and drag the fill handle (small square at the bottom-right corner of the cell) down to row 30 in column B.\n6. Click on cell C2.\n7. Type the formula `=IF(C1<>\"\",C1,\"\")`.\n8. Press Enter to apply the formula to cell C2.\n9. Click on cell C2 to select it.\n10. Click and drag the fill handle down to row 30 in column C.\n11. Click on cell D2.\n12. Type the formula `=IF(D1<>\"\",D1,\"\")`.\n13. Press Enter to apply the formula to cell D2.\n14. Click on cell D2 to select it.\n15. Click and drag the fill handle down to row 30 in column D.\n16. Click on cell E2.\n17. Type the formula `=IF(E1<>\"\",E1,\"\")`.\n18. Press Enter to apply the formula to cell E2.\n19. Click on cell E2 to select it.\n20. Click and drag the fill handle down to row 30 in column E.",
+  "retrieved_page_ranges": [
+    [
+      456,
+      458
+    ],
+    [
+      9,
+      9
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      129,
+      130
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/step_1.png"
+}

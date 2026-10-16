@@ -1,0 +1,168 @@
+{
+  "id": "bf4e9888-f10f-47af-8dba-76413038b73c",
+  "snapshot": "libreoffice_impress",
+  "instruction": "I have a series of .png images named pic1.png to pic6.png saved on the Desktop. I want to create a new presentation with six blank slides(which means no textbox or any other stuff on the page), and insert one image per slide in order—pic1.png on the first slide, pic2.png on the second, and so on—following the numerical order. The goal is to prepare a presentation suitable for continuous playback in a kiosk or multimedia show. Could you help me with that?\n\nRelevant procedure\n1. Open LibreOffice Impress.\n2. If a template selection dialog appears, select \"Blank Presentation\" and click \"Create\".\n3. Ensure the left sidebar (Slides pane) is visible; if not, go to **View** > **Normal** or click the \"Slides\" icon in the sidebar tabs.\n4. With Slide 1 selected, right-click in the main slide area (ensure no placeholder boxes are selected) and choose **Text and Object Placeholders** > **None** to remove any default text boxes. Alternatively, if there are placeholder boxes, select each one by clicking its border and press **Delete**.\n5. Go to **Insert** > **Image** (or **Insert** > **Picture** depending on version) from the top menu.\n6. In the file browser, navigate to the **Desktop** folder.\n7. Select **pic1.png** and click **Open**.\n8. Adjust the image size and position if necessary to cover the slide or fit as desired.\n9. In the Slides pane on the left, right-click Slide 1 and select **Duplicate Slide** (or use **Edit** > **Duplicate Slide**). Repeat this process until you have 6 slides total.\n10. Click on Slide 2 in the Slides pane to select it.\n11. Select the image on Slide 2 and press **Delete**.\n12. Go to **Insert** > **Image**.\n13. Navigate to the **Desktop**, select **pic2.png**, and click **Open**.\n14. Click on Slide 3 in the Slides pane.\n15. Select the image on Slide 3 and press **Delete**.\n16. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic3.png**, and click **Open**.\n17. Click on Slide 4 in the Slides pane.\n18. Select the image on Slide 4 and press **Delete**.\n19. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic4.png**, and click **Open**.\n20. Click on Slide 5 in the Slides pane.\n21. Select the image on Slide 5 and press **Delete**.\n22. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic5.png**, and click **Open**.\n23. Click",
+  "source": "https://help.libreoffice.org/6.4/en-US/text/simpress/guide/photo_album.html?DbPAR=IMPRESS",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/4.3-Template_4.29.2016.pptx",
+            "path": "/home/user/Desktop/4.3-Template_4.29.2016.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/4.3-Template_4.29.2016.pptx"
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic1.png",
+            "path": "/home/user/Desktop/pic1.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic2.png",
+            "path": "/home/user/Desktop/pic2.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic3.png",
+            "path": "/home/user/Desktop/pic3.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic4.png",
+            "path": "/home/user/Desktop/pic4.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic5.png",
+            "path": "/home/user/Desktop/pic5.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/pic6.png",
+            "path": "/home/user/Desktop/pic6.png"
+          }
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "4.3-Template_4.29.2016.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/bf4e9888-f10f-47af-8dba-76413038b73c/4.3-Template_4.29.2016_Gold.pptx",
+      "dest": "4.3-Template_4.29.2016_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/4.3-Template_4.29.2016.pptx",
+      "dest": "4.3-Template_4.29.2016.pptx"
+    },
+    "options": {
+      "examine_shape": false
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Open LibreOffice Impress.\n2. If a template selection dialog appears, select \"Blank Presentation\" and click \"Create\".\n3. Ensure the left sidebar (Slides pane) is visible; if not, go to **View** > **Normal** or click the \"Slides\" icon in the sidebar tabs.\n4. With Slide 1 selected, right-click in the main slide area (ensure no placeholder boxes are selected) and choose **Text and Object Placeholders** > **None** to remove any default text boxes. Alternatively, if there are placeholder boxes, select each one by clicking its border and press **Delete**.\n5. Go to **Insert** > **Image** (or **Insert** > **Picture** depending on version) from the top menu.\n6. In the file browser, navigate to the **Desktop** folder.\n7. Select **pic1.png** and click **Open**.\n8. Adjust the image size and position if necessary to cover the slide or fit as desired.\n9. In the Slides pane on the left, right-click Slide 1 and select **Duplicate Slide** (or use **Edit** > **Duplicate Slide**). Repeat this process until you have 6 slides total.\n10. Click on Slide 2 in the Slides pane to select it.\n11. Select the image on Slide 2 and press **Delete**.\n12. Go to **Insert** > **Image**.\n13. Navigate to the **Desktop**, select **pic2.png**, and click **Open**.\n14. Click on Slide 3 in the Slides pane.\n15. Select the image on Slide 3 and press **Delete**.\n16. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic3.png**, and click **Open**.\n17. Click on Slide 4 in the Slides pane.\n18. Select the image on Slide 4 and press **Delete**.\n19. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic4.png**, and click **Open**.\n20. Click on Slide 5 in the Slides pane.\n21. Select the image on Slide 5 and press **Delete**.\n22. Go to **Insert** > **Image**, navigate to **Desktop**, select **pic5.png**, and click **Open**.\n23. Click",
+  "retrieved_page_ranges": [
+    [
+      29,
+      37
+    ],
+    [
+      300,
+      311
+    ],
+    [
+      350,
+      354
+    ],
+    [
+      346,
+      350
+    ],
+    [
+      42,
+      60
+    ]
+  ]
+}

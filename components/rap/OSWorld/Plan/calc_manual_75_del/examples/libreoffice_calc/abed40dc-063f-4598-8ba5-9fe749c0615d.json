@@ -1,0 +1,109 @@
+{
+  "id": "abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Check the names in column \"Names with duplicates\" and put the unique ones in column \"Unique Names\". Keep the original order of the first occurrences. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n\n1. Click on cell **B2** (the first data cell under \"Names with duplicates\").\n2. Type the formula `=IF(COUNTIF($B$2:B2,B2)=1,B2,\"\")` and press **Enter**.\n3. Click on cell **C2** (the first data cell under \"Unique Names\").\n4. Type the formula `=IF(B2<>\"\",B2,\"\")` and press **Enter**.\n5. Click on cell **C2** again to select it.\n6. Hover over the bottom-right corner of the cell until the cursor changes to a crosshair (fill handle), then click and drag down to copy the formula to all rows containing data in column B.\n7. Stop dragging when you reach the last row of data. Do not modify any other cells.",
+  "source": "https://help.libreoffice.org/7.6/ro/text/scalc/guide/remove_duplicates.html?&DbPAR=SHARED&System=UNIX",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique.xlsx",
+            "path": "/home/user/Names_Duplicate_Unique.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Names_Duplicate_Unique.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/abed40dc-063f-4598-8ba5-9fe749c0615d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Names_Duplicate_Unique.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/abed40dc-063f-4598-8ba5-9fe749c0615d/Names_Duplicate_Unique_gold.xlsx",
+      "dest": "Names_Duplicate_Unique_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Names_Duplicate_Unique.xlsx",
+      "dest": "Names_Duplicate_Unique.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **B2** (the first data cell under \"Names with duplicates\").\n2. Type the formula `=IF(COUNTIF($B$2:B2,B2)=1,B2,\"\")` and press **Enter**.\n3. Click on cell **C2** (the first data cell under \"Unique Names\").\n4. Type the formula `=IF(B2<>\"\",B2,\"\")` and press **Enter**.\n5. Click on cell **C2** again to select it.\n6. Hover over the bottom-right corner of the cell until the cursor changes to a crosshair (fill handle), then click and drag down to copy the formula to all rows containing data in column B.\n7. Stop dragging when you reach the last row of data. Do not modify any other cells.",
+  "retrieved_page_ranges": [
+    [
+      95,
+      96
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      63,
+      64
+    ],
+    [
+      320,
+      320
+    ]
+  ],
+  "first_screen_image_path": null
+}

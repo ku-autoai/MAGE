@@ -1,0 +1,117 @@
+{
+  "id": "21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the period rate for my data in a new column with header \"Period Rate (%)\", convert the results as number type, and highlight the highest result with green (#00ff00) font.\n\nRelevant procedure\n\n1. Click the empty cell in the header row immediately to the right of the last existing data column (e.g., cell C1).\n2. Type `Period Rate (%)` and press Enter.\n3. Click the first data cell in the new column (e.g., cell C2).\n4. Enter a formula to calculate the period rate based on the adjacent data columns (e.g., `=(B2-A2)/A2*100`), assuming the previous period is in column A and the current period is in column B. Adjust column references to match your actual data structure.\n5. Press Enter to confirm the formula.\n6. Select the cell containing the formula (e.g., C2).\n7. Drag the fill handle (small square at the bottom-right corner of the cell) down to apply the formula to all rows with data.\n8. Select the entire range of calculated results in the \"Period Rate (%)\" column.\n9. Right-click the selection and choose **Format Cells** (or press Ctrl+1).\n10. In the **Numbers** tab, select **Number** from the Category list to ensure the results are treated as number type. Set decimal places if necessary, then click OK.\n11. With the calculated cells still selected, go to the menu bar and click **Format** > **Conditional** > **Condition**.\n12. In the Conditional Formatting dialog:\n    - In the first dropdown (Cell value), keep the default (e.g., **Cell value**).\n    - In the second dropdown (Operator), select **is equal to**.\n    - In the third input field, enter a formula referencing the maximum value of the selected range. For example, if the data is in C2:C10, type `=MAX($C$2:$C$10)`.\n13. In the **Style** dropdown, select **New Style** (or an existing style if one is available for editing).\n14. In the Cell Style dialog that appears:\n    - Click the **Font** tab.\n    - Click the **Color** button and select the green color `#00ff00` (you may need to enter the RGB values or Hex code if the exact color isn't in the palette).\n    - Click OK to save the style.\n15. Back in the Conditional Formatting dialog, ensure the new style is applied and",
+  "source": "SheetCopilot@124",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/PeriodRate.xlsx",
+            "path": "/home/user/PeriodRate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/PeriodRate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/21ab7b40-77c2-4ae6-8321-e00d3a086c73",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "PeriodRate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/21ab7b40-77c2-4ae6-8321-e00d3a086c73/1_PeriodRate_gt1.xlsx",
+      "dest": "1_PeriodRate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/PeriodRate.xlsx",
+      "dest": "PeriodRate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "font_color"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the empty cell in the header row immediately to the right of the last existing data column (e.g., cell C1).\n2. Type `Period Rate (%)` and press Enter.\n3. Click the first data cell in the new column (e.g., cell C2).\n4. Enter a formula to calculate the period rate based on the adjacent data columns (e.g., `=(B2-A2)/A2*100`), assuming the previous period is in column A and the current period is in column B. Adjust column references to match your actual data structure.\n5. Press Enter to confirm the formula.\n6. Select the cell containing the formula (e.g., C2).\n7. Drag the fill handle (small square at the bottom-right corner of the cell) down to apply the formula to all rows with data.\n8. Select the entire range of calculated results in the \"Period Rate (%)\" column.\n9. Right-click the selection and choose **Format Cells** (or press Ctrl+1).\n10. In the **Numbers** tab, select **Number** from the Category list to ensure the results are treated as number type. Set decimal places if necessary, then click OK.\n11. With the calculated cells still selected, go to the menu bar and click **Format** > **Conditional** > **Condition**.\n12. In the Conditional Formatting dialog:\n    - In the first dropdown (Cell value), keep the default (e.g., **Cell value**).\n    - In the second dropdown (Operator), select **is equal to**.\n    - In the third input field, enter a formula referencing the maximum value of the selected range. For example, if the data is in C2:C10, type `=MAX($C$2:$C$10)`.\n13. In the **Style** dropdown, select **New Style** (or an existing style if one is available for editing).\n14. In the Cell Style dialog that appears:\n    - Click the **Font** tab.\n    - Click the **Color** button and select the green color `#00ff00` (you may need to enter the RGB values or Hex code if the exact color isn't in the palette).\n    - Click OK to save the style.\n15. Back in the Conditional Formatting dialog, ensure the new style is applied and",
+  "retrieved_page_ranges": [
+    [
+      78,
+      78
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      82,
+      83
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      150,
+      150
+    ]
+  ],
+  "first_screen_image_path": null
+}

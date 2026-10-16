@@ -1,0 +1,109 @@
+{
+  "id": "04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In a new sheet (\"Sheet2\") with 4 headers \"Year\", \"CA changes\", \"FA changes\", and \"OA changes\", calculate the percentage annual changes compared to last year in 2015 to 2019 for the Current Assets, Fixed Assets, and Other Assets columns.\n\nRelevant procedure\n1. Click the green plus icon (+) located at the bottom left of the window next to the sheet tabs to insert a new sheet.\n2. Right-click the newly created sheet tab (e.g., \"Sheet2\") and select \"Rename Sheet\" from the context menu.\n3. Type \"Sheet2\" in the dialog box and click \"OK\".\n4. Select cell A1. Type \"Year\" and press Enter.\n5. Select cell B1. Type \"CA changes\" and press Enter.\n6. Select cell C1. Type \"FA changes\" and press Enter.\n7. Select cell D1. Type \"OA changes\" and press Enter.\n8. Switch to the source data sheet (likely named \"Sheet1\" or containing the asset data).\n9. Identify the columns for Current Assets, Fixed Assets, and Other Assets, and the rows for years 2014 through 2019. (Note: To calculate 2015-2019 changes, 2014 data is required as the base). Let's assume Source Sheet is 'Sheet1', Years are in Column A, CA in B, FA in C, OA in D, and 2014 is in row 5, 2015 in row 6, etc. Adjust row numbers based on actual screenshot.\n10. Switch back to \"Sheet2\".\n11. Click cell A2. Type \"2015\" and press Enter.\n12. Click cell A3. Type \"2016\" and press Enter. Repeat for A4 (2017), A5 (2018), and A6 (2019).\n13. Select cell B2 (CA changes for 2015). Enter the formula `=(Sheet1.B6-Sheet1.B5)/Sheet1.B5`. (Adjust cell references B6/B5 to match the actual cells for 2015/2014 Current Assets in Sheet1).\n14. Press Enter. Select cell B2. Go to the Format menu, select \"Cells\" (or right-click > Format Cells), choose the \"Percent\" category, and click \"OK\" to format as percentage.\n15. Select cell C2 (FA changes for 2015). Enter the formula `=(Sheet1.C6-Sheet",
+  "source": "SheetCopilot@168",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/SmallBalanceSheet.xlsx",
+            "path": "/home/user/SmallBalanceSheet.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SmallBalanceSheet.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SmallBalanceSheet.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/4_SmallBalanceSheet_gt1.xlsx",
+      "dest": "4_SmallBalanceSheet_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SmallBalanceSheet.xlsx",
+      "dest": "SmallBalanceSheet.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the green plus icon (+) located at the bottom left of the window next to the sheet tabs to insert a new sheet.\n2. Right-click the newly created sheet tab (e.g., \"Sheet2\") and select \"Rename Sheet\" from the context menu.\n3. Type \"Sheet2\" in the dialog box and click \"OK\".\n4. Select cell A1. Type \"Year\" and press Enter.\n5. Select cell B1. Type \"CA changes\" and press Enter.\n6. Select cell C1. Type \"FA changes\" and press Enter.\n7. Select cell D1. Type \"OA changes\" and press Enter.\n8. Switch to the source data sheet (likely named \"Sheet1\" or containing the asset data).\n9. Identify the columns for Current Assets, Fixed Assets, and Other Assets, and the rows for years 2014 through 2019. (Note: To calculate 2015-2019 changes, 2014 data is required as the base). Let's assume Source Sheet is 'Sheet1', Years are in Column A, CA in B, FA in C, OA in D, and 2014 is in row 5, 2015 in row 6, etc. Adjust row numbers based on actual screenshot.\n10. Switch back to \"Sheet2\".\n11. Click cell A2. Type \"2015\" and press Enter.\n12. Click cell A3. Type \"2016\" and press Enter. Repeat for A4 (2017), A5 (2018), and A6 (2019).\n13. Select cell B2 (CA changes for 2015). Enter the formula `=(Sheet1.B6-Sheet1.B5)/Sheet1.B5`. (Adjust cell references B6/B5 to match the actual cells for 2015/2014 Current Assets in Sheet1).\n14. Press Enter. Select cell B2. Go to the Format menu, select \"Cells\" (or right-click > Format Cells), choose the \"Percent\" category, and click \"OK\" to format as percentage.\n15. Select cell C2 (FA changes for 2015). Enter the formula `=(Sheet1.C6-Sheet",
+  "retrieved_page_ranges": [
+    [
+      375,
+      376
+    ],
+    [
+      78,
+      78
+    ],
+    [
+      184,
+      185
+    ],
+    [
+      313,
+      313
+    ],
+    [
+      313,
+      314
+    ]
+  ],
+  "first_screen_image_path": null
+}

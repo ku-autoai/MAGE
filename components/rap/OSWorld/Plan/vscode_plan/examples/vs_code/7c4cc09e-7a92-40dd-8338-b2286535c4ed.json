@@ -1,0 +1,56 @@
+{
+  "id": "7c4cc09e-7a92-40dd-8338-b2286535c4ed",
+  "snapshot": "vscode",
+  "instruction": "Please help me change the display language of VS Code to \"Arabic\" without using any extensions.\n\nRelevant procedure:\n1. Click the settings search bar located at the top of the Settings panel.\n2. Clear any existing text and type \"display language\" to search for the relevant setting.\n3. Look for the section titled \"Configuration Display Language\" in the search results.\n4. Click the dropdown menu currently set to \"English (default)\" (labeled \"Configuration Display Language\").\n5. Select \"Arabic\" from the list of available languages.\n6. Click the \"Change Language and Restart\" button that appears to apply the change and restart the application.",
+  "source": "",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the settings search bar located at the top of the Settings panel.\n2. Clear any existing text and type \"display language\" to search for the relevant setting.\n3. Look for the section titled \"Configuration Display Language\" in the search results.\n4. Click the dropdown menu currently set to \"English (default)\" (labeled \"Configuration Display Language\").\n5. Select \"Arabic\" from the list of available languages.\n6. Click the \"Change Language and Restart\" button that appears to apply the change and restart the application.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/7c4cc09e-7a92-40dd-8338-b2286535c4ed/step_1.png"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Fill all the blank cells in B1:E30 with the value in the cell above it. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select the cell range B1:E30 by clicking cell B1 and dragging to cell E30, or by typing \"B1:E30\" in the Name Box and pressing Enter.\n2. With the range selected, press F5 to open the \"Go To\" dialog.\n3. In the \"Go To\" dialog, click the \"Special...\" button.\n4. In the \"Go To Special\" dialog, select the \"Blanks\" option and click \"OK\". This selects only the empty cells within the previously selected range.\n5. Click on the first cell of the top row that contains data for the corresponding column (e.g., if B2 is blank and B1 has data, click B1). If the blanks are contiguous starting from row 2, simply ensure the active cell is the one directly above the first blank cell (e.g., click B1 if B2:B30 are blank). *Note: You may need to repeat this step for each column if the \"above\" cell varies, but typically pressing Up once after selecting blanks sets the reference relative to each blank.*\n6. Type \"=\" to start a formula referencing the cell above.\n7. Press Ctrl+Enter to fill all selected blank cells with the value from the cell directly above them.",
+  "source": "https://www.youtube.com/shorts/VrUzPTIwQ04",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank.xlsx",
+            "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Student_Level_Fill_Blank.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/01b269ae-2111-4a07-81fd-3fcd711993b0",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Student_Level_Fill_Blank.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/01b269ae-2111-4a07-81fd-3fcd711993b0/Student_Level_Fill_Blank_gold.xlsx",
+      "dest": "Student_Level_Fill_Blank_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Student_Level_Fill_Blank.xlsx",
+      "dest": "Student_Level_Fill_Blank.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select the cell range B1:E30 by clicking cell B1 and dragging to cell E30, or by typing \"B1:E30\" in the Name Box and pressing Enter.\n2. With the range selected, press F5 to open the \"Go To\" dialog.\n3. In the \"Go To\" dialog, click the \"Special...\" button.\n4. In the \"Go To Special\" dialog, select the \"Blanks\" option and click \"OK\". This selects only the empty cells within the previously selected range.\n5. Click on the first cell of the top row that contains data for the corresponding column (e.g., if B2 is blank and B1 has data, click B1). If the blanks are contiguous starting from row 2, simply ensure the active cell is the one directly above the first blank cell (e.g., click B1 if B2:B30 are blank). *Note: You may need to repeat this step for each column if the \"above\" cell varies, but typically pressing Up once after selecting blanks sets the reference relative to each blank.*\n6. Type \"=\" to start a formula referencing the cell above.\n7. Press Ctrl+Enter to fill all selected blank cells with the value from the cell directly above them.",
+  "retrieved_page_ranges": [
+    [
+      85,
+      85
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      68,
+      68
+    ]
+  ],
+  "first_screen_image_path": null
+}

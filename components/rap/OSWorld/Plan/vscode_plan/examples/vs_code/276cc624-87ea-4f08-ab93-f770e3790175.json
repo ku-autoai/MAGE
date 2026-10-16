@@ -1,0 +1,69 @@
+{
+  "id": "276cc624-87ea-4f08-ab93-f770e3790175",
+  "snapshot": "vscode",
+  "instruction": "Please help me set the current user's line length for code wrapping to 50 characters in VS Code.\n\nRelevant procedure\n1. Click on the search input field located at the top center of the Settings tab (currently containing \"workspace trust enabled\").\n2. Press `Ctrl` + `A` to select the existing text, then type `editor.wordWrapColumn` to filter the settings.\n3. Locate the setting named **Editor: Word Wrap Column** in the list below the search bar.\n4. Click inside the number input box next to the setting label (default value is likely 80).\n5. Type `50` to update the value.",
+  "source": "https://www.quora.com/unanswered/How-do-you-set-the-line-length-in-Visual-Studio-Code",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_settings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "editor.wordWrapColumn": 50
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/settings.json",
+      "dest": "settings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the search input field located at the top center of the Settings tab (currently containing \"workspace trust enabled\").\n2. Press `Ctrl` + `A` to select the existing text, then type `editor.wordWrapColumn` to filter the settings.\n3. Locate the setting named **Editor: Word Wrap Column** in the list below the search bar.\n4. Click inside the number input box next to the setting label (default value is likely 80).\n5. Type `50` to update the value.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/276cc624-87ea-4f08-ab93-f770e3790175/step_1.png"
+}

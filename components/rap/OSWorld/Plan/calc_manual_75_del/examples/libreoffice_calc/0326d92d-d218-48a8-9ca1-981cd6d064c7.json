@@ -1,0 +1,118 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the month-on-month growth percentage for Feb to Jun in another row called \"Growth\" and show them in a line chart (Jan should be omitted in the chart as well). Set the chart titles as the two row headers respectively.\n\nRelevant procedure\n1. Click cell A7 and type \"Total\".\n2. Click cell B7 and enter the formula `=SUM(B2:B6)` to calculate the total sales for January. Press Enter.\n3. Drag the fill handle of cell B7 to the right across to cell F7 to calculate totals for Feb through Jun.\n4. Click cell A8 and type \"Growth\".\n5. Click cell C8 (corresponding to Feb) and enter the formula `=(C7-B7)/B7` to calculate the month-on-month growth percentage. Press Enter.\n6. Format cell C8 as a Percentage if it is not already (e.g., via Format > Cells > Numbers > Percentage).\n7. Drag the fill handle of cell C8 to the right across to cell F8 to calculate growth for Mar through Jun. Leave cell B8 empty to omit Jan from the chart.\n8. Select the data range A6:F7 (the \"Total\" row and headers).\n9. Go to the Insert menu and select Chart.\n10. In the Chart Wizard, select Column chart as the chart type. Click Next.\n11. Ensure the Data Series are correct (Categories are Jan-Jun on X-axis, Total values on Y-axis). Click Next.\n12. In the Chart Elements step, click on the Title tab and enter \"Total\" as the Chart Title. Click Finish.\n13. Select the data range A7:F8 (the \"Growth\" row and headers). Note: Depending on software behavior, you may need to select A1:F1 and A8:F8 to ensure headers map correctly, or just A8:F8 if headers are handled separately. A safer selection for the line chart excluding Jan data point is B8:F8 with categories from B7:F7. Let's assume standard selection: Select B1:F1 and B8:F8.\n14. Go to the Insert menu and select Chart.\n15. In the Chart Wizard, select Line chart as the chart type. Select the \"Lines Only\" or \"Points and Lines\" variant. Click Next.\n16. In the Data Series tab, ensure the X-axis labels correspond to Feb-Jun. If Jan is included, remove the first category or adjust the range to B1:B1 and B8:F8. Click Next.\n17. In the Chart Elements step, click on the Title tab and",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/2_SalesRep_gt1.xlsx",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell A7 and type \"Total\".\n2. Click cell B7 and enter the formula `=SUM(B2:B6)` to calculate the total sales for January. Press Enter.\n3. Drag the fill handle of cell B7 to the right across to cell F7 to calculate totals for Feb through Jun.\n4. Click cell A8 and type \"Growth\".\n5. Click cell C8 (corresponding to Feb) and enter the formula `=(C7-B7)/B7` to calculate the month-on-month growth percentage. Press Enter.\n6. Format cell C8 as a Percentage if it is not already (e.g., via Format > Cells > Numbers > Percentage).\n7. Drag the fill handle of cell C8 to the right across to cell F8 to calculate growth for Mar through Jun. Leave cell B8 empty to omit Jan from the chart.\n8. Select the data range A6:F7 (the \"Total\" row and headers).\n9. Go to the Insert menu and select Chart.\n10. In the Chart Wizard, select Column chart as the chart type. Click Next.\n11. Ensure the Data Series are correct (Categories are Jan-Jun on X-axis, Total values on Y-axis). Click Next.\n12. In the Chart Elements step, click on the Title tab and enter \"Total\" as the Chart Title. Click Finish.\n13. Select the data range A7:F8 (the \"Growth\" row and headers). Note: Depending on software behavior, you may need to select A1:F1 and A8:F8 to ensure headers map correctly, or just A8:F8 if headers are handled separately. A safer selection for the line chart excluding Jan data point is B8:F8 with categories from B7:F7. Let's assume standard selection: Select B1:F1 and B8:F8.\n14. Go to the Insert menu and select Chart.\n15. In the Chart Wizard, select Line chart as the chart type. Select the \"Lines Only\" or \"Points and Lines\" variant. Click Next.\n16. In the Data Series tab, ensure the X-axis labels correspond to Feb-Jun. If Jan is included, remove the first category or adjust the range to B1:B1 and B8:F8. Click Next.\n17. In the Chart Elements step, click on the Title tab and",
+  "retrieved_page_ranges": [
+    [
+      164,
+      165
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      165,
+      166
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": null
+}

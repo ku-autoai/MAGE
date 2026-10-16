@@ -1,0 +1,109 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on any cell within the data table (e.g., cell A1) to ensure the range is active.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"Sort...\" from the dropdown menu to open the Sort dialog.\n4. In the Sort dialog, click the \"Options\" button to ensure correct sort settings if necessary, or proceed directly if defaults are acceptable.\n5. To reorder columns manually (since standard sort sorts values, not column positions), close the Sort dialog if opened. Instead, click the column header letter (e.g., 'A') of the first column to select the entire column.\n6. Right-click the selected column header and choose \"Cut\".\n7. Right-click the column header where you want to move this column to (e.g., between other columns) and choose \"Insert Cut Cells\".\n8. Repeat steps 5-7 for each column until the order is \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".\n   - *Alternative Drag-and-Drop Method*: Click the column header to select the column. Hover the mouse over the border of the selected column until the cursor changes to a four-way arrow. Click and drag the column to the desired position among other columns, then release.\n9. Once the columns are in the correct order, click anywhere outside the table or press Enter to finish.",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on any cell within the data table (e.g., cell A1) to ensure the range is active.\n2. Click the \"Data\" menu in the top menu bar.\n3. Select \"Sort...\" from the dropdown menu to open the Sort dialog.\n4. In the Sort dialog, click the \"Options\" button to ensure correct sort settings if necessary, or proceed directly if defaults are acceptable.\n5. To reorder columns manually (since standard sort sorts values, not column positions), close the Sort dialog if opened. Instead, click the column header letter (e.g., 'A') of the first column to select the entire column.\n6. Right-click the selected column header and choose \"Cut\".\n7. Right-click the column header where you want to move this column to (e.g., between other columns) and choose \"Insert Cut Cells\".\n8. Repeat steps 5-7 for each column until the order is \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\".\n   - *Alternative Drag-and-Drop Method*: Click the column header to select the column. Hover the mouse over the border of the selected column until the cursor changes to a four-way arrow. Click and drag the column to the desired position among other columns, then release.\n9. Once the columns are in the correct order, click anywhere outside the table or press Enter to finish.",
+  "retrieved_page_ranges": [
+    [
+      95,
+      96
+    ],
+    [
+      265,
+      265
+    ],
+    [
+      316,
+      317
+    ],
+    [
+      396,
+      396
+    ],
+    [
+      298,
+      302
+    ]
+  ],
+  "first_screen_image_path": null
+}

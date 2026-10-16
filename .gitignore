@@ -1,0 +1,33 @@
+# Local credentials and machine-specific settings
+.env
+.env.local
+*.local
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Generated outputs
+components/Episode_generator/test/
+components/Model_trainer/output/
+components/rap/**/outputs/
+components/rap/OSWorld/first_screen_images/
+osworld/results/
+osworld/logs/
+osworld/cache/
+osworld/experiment_plan/
+
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+**/.vscode/
+**/.idea/
+
+# Paper drafts (link the arXiv version instead)
+assets/*.pdf

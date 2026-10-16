@@ -1,0 +1,115 @@
+{
+  "id": "51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate revenue in a new column according to the Retail Price sheet (consider product price and quantity and discount), and generate a Pivot Table in a new sheet (Sheet2) that summarizes the revenue of each product.\n\nRelevant procedure\n1. Click the \"Retail Price\" tab at the bottom of the window to switch to that sheet.\n2. Scroll right to locate the columns for Product, Price, and any necessary fields from the Retail Price sheet.\n3. Switch back to \"Sheet1\" by clicking its tab at the bottom.\n4. Click cell G1 to select it.\n5. Type \"Revenue\" into cell G1.\n6. Press Enter to move to cell G2.\n7. Create a formula in G2 to calculate revenue. Based on typical spreadsheet structure, this likely involves Product price (from Retail Price sheet, via VLOOKUP), Quantity (column E), and Discount (column F). Type: =VLOOKUP(C2,'Retail Price'!$A$2:$B$100,2,FALSE)*E2*(1-F2).\n8. Press Enter to confirm the formula.\n9. Click cell G2 to select it again.\n10. Drag the fill handle (small square at bottom-right of cell G2) down to the last row with data (row 36).\n11. Select the entire data range by clicking cell A1, then Shift+Clicking cell G36.\n12. Go to the Insert menu and click \"Pivot Table...\".\n13. In the Create Pivot Table dialog, ensure \"Create new sheet\" is selected and click OK.\n14. In the Pivot Table Fields pane that appears on the right:\n15. Drag \"Product\" to the Row Fields area.\n16. Drag \"Revenue\" to the Data Fields area.\n17. If the aggregation for Revenue is not SUM, double-click the Revenue field in Data Fields, select Sum, and click OK.\n18. Click outside the Pivot Table to finish.",
+  "source": "SheetCopilot@7",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/8_BoomerangSales_gt1.xlsx",
+      "dest": "8_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Retail Price\" tab at the bottom of the window to switch to that sheet.\n2. Scroll right to locate the columns for Product, Price, and any necessary fields from the Retail Price sheet.\n3. Switch back to \"Sheet1\" by clicking its tab at the bottom.\n4. Click cell G1 to select it.\n5. Type \"Revenue\" into cell G1.\n6. Press Enter to move to cell G2.\n7. Create a formula in G2 to calculate revenue. Based on typical spreadsheet structure, this likely involves Product price (from Retail Price sheet, via VLOOKUP), Quantity (column E), and Discount (column F). Type: =VLOOKUP(C2,'Retail Price'!$A$2:$B$100,2,FALSE)*E2*(1-F2).\n8. Press Enter to confirm the formula.\n9. Click cell G2 to select it again.\n10. Drag the fill handle (small square at bottom-right of cell G2) down to the last row with data (row 36).\n11. Select the entire data range by clicking cell A1, then Shift+Clicking cell G36.\n12. Go to the Insert menu and click \"Pivot Table...\".\n13. In the Create Pivot Table dialog, ensure \"Create new sheet\" is selected and click OK.\n14. In the Pivot Table Fields pane that appears on the right:\n15. Drag \"Product\" to the Row Fields area.\n16. Drag \"Revenue\" to the Data Fields area.\n17. If the aggregation for Revenue is not SUM, double-click the Revenue field in Data Fields, select Sum, and click OK.\n18. Click outside the Pivot Table to finish.",
+  "retrieved_page_ranges": [
+    [
+      140,
+      141
+    ],
+    [
+      278,
+      279
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      334,
+      335
+    ],
+    [
+      195,
+      196
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/step_1.png"
+}

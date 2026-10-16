@@ -1,0 +1,137 @@
+{
+  "id": "0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Work out the monthly total sales in a new row called \"Total\" and then create a line chart to show the results (x-axis be Months).\n\nRelevant procedure\n\n1. Click on cell **A11** (the first empty row below the data table).\n2. Type **Total** into cell **A11** and press **Enter**.\n3. Click on cell **B11**.\n4. In the formula bar or directly in the cell, type **=SUM(B2:B10)** and press **Enter**.\n5. With cell **B11** still selected, click and drag the fill handle (small square at the bottom-right corner of the cell) to the right until you reach cell **G11**. This will copy the formula to sum Jan through Jun.\n6. Click on cell **A1** to select the header row, hold **Shift**, and click on cell **G11** to select the entire data range (A1:G11) including the new Total row.\n7. Click the **Insert** menu in the top menu bar.\n8. Select **Chart...** from the dropdown menu.\n9. In the Chart Wizard, ensure the **Chart type** is set to **Line**. If necessary, select the **Line** tab and choose a variant like \"Lines Only\" or \"Points and Lines\".\n10. Ensure the **Data series** are in **Rows** and that **First row as label** and **First column as label** are checked (this ensures Months are on the X-axis).\n11. Click **Finish** to create the chart.",
+  "source": "SheetCopilot@154",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0326d92d-d218-48a8-9ca1-981cd6d064c7/SalesRep.xlsx",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0a2e43bf-b26c-4631-a966-af9dfa12c9e5",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/5_SalesRep_gt1.xlsx",
+      "dest": "5_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click on cell **A11** (the first empty row below the data table).\n2. Type **Total** into cell **A11** and press **Enter**.\n3. Click on cell **B11**.\n4. In the formula bar or directly in the cell, type **=SUM(B2:B10)** and press **Enter**.\n5. With cell **B11** still selected, click and drag the fill handle (small square at the bottom-right corner of the cell) to the right until you reach cell **G11**. This will copy the formula to sum Jan through Jun.\n6. Click on cell **A1** to select the header row, hold **Shift**, and click on cell **G11** to select the entire data range (A1:G11) including the new Total row.\n7. Click the **Insert** menu in the top menu bar.\n8. Select **Chart...** from the dropdown menu.\n9. In the Chart Wizard, ensure the **Chart type** is set to **Line**. If necessary, select the **Line** tab and choose a variant like \"Lines Only\" or \"Points and Lines\".\n10. Ensure the **Data series** are in **Rows** and that **First row as label** and **First column as label** are checked (this ensures Months are on the X-axis).\n11. Click **Finish** to create the chart.",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      169,
+      169
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      150,
+      150
+    ],
+    [
+      151,
+      151
+    ],
+    [
+      174,
+      175
+    ],
+    [
+      168,
+      169
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/0a2e43bf-b26c-4631-a966-af9dfa12c9e5/step_1.png"
+}

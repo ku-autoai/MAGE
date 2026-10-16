@@ -1,0 +1,137 @@
+{
+  "id": "6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Some data are missed by now and are filled by 'N/A' temporarily. Please hide them in the table for now. Do not delete any cells and filter is not needed.\n\nTo hide rows containing 'N/A' without deleting cells or using filters, we can use the Group and Outline feature to collapse those rows. Here’s the procedure:\n\n1. Select all rows containing 'N/A' in the 'Actual' column (e.g., rows 3, 6, 9, 12, 14, 18, 20, 24, 27, 32, 33). You can do this by clicking on the row numbers while holding down the Ctrl key.\n2. Go to the 'Data' menu at the top of the screen.\n3. Select 'Group and Outline' from the dropdown menu.\n4. Choose 'Group' from the submenu.\n5. In the dialog that appears, select 'Rows' and click 'OK'.\n6. The selected rows will now be grouped, and a minus sign (-) will appear next to the group indicator on the left side of the spreadsheet.\n7. Click the minus sign (-) to collapse the grouped rows, effectively hiding them.\n\nThis method allows you to hide the 'N/A' entries temporarily while keeping the data intact and easily accessible when needed.",
+  "source": "https://www.youtube.com/shorts/JTbZ8sRxkdU",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA.xlsx",
+            "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Date_Budget_Variance_HideNA.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/6054afcb-5bab-4702-90a0-b259b5d3217c",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Date_Budget_Variance_HideNA.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/Date_Budget_Variance_HideNA_gold.xlsx",
+      "dest": "Date_Budget_Variance_HideNA_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Date_Budget_Variance_HideNA.xlsx",
+      "dest": "Date_Budget_Variance_HideNA.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "row_props",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "hidden"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "To hide rows containing 'N/A' without deleting cells or using filters, we can use the Group and Outline feature to collapse those rows. Here’s the procedure:\n\n1. Select all rows containing 'N/A' in the 'Actual' column (e.g., rows 3, 6, 9, 12, 14, 18, 20, 24, 27, 32, 33). You can do this by clicking on the row numbers while holding down the Ctrl key.\n2. Go to the 'Data' menu at the top of the screen.\n3. Select 'Group and Outline' from the dropdown menu.\n4. Choose 'Group' from the submenu.\n5. In the dialog that appears, select 'Rows' and click 'OK'.\n6. The selected rows will now be grouped, and a minus sign (-) will appear next to the group indicator on the left side of the spreadsheet.\n7. Click the minus sign (-) to collapse the grouped rows, effectively hiding them.\n\nThis method allows you to hide the 'N/A' entries temporarily while keeping the data intact and easily accessible when needed.",
+  "retrieved_page_ranges": [
+    [
+      293,
+      295
+    ],
+    [
+      311,
+      313
+    ],
+    [
+      313,
+      313
+    ],
+    [
+      90,
+      92
+    ],
+    [
+      302,
+      302
+    ],
+    [
+      90,
+      90
+    ],
+    [
+      313,
+      314
+    ],
+    [
+      86,
+      86
+    ],
+    [
+      89,
+      90
+    ],
+    [
+      86,
+      88
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/6054afcb-5bab-4702-90a0-b259b5d3217c/step_1.png"
+}

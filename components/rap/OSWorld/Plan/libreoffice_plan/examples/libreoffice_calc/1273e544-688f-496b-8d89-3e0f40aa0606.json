@@ -1,0 +1,108 @@
+{
+  "id": "1273e544-688f-496b-8d89-3e0f40aa0606",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Copy the \"Revenue\" column along with the header to a new sheet named \"Sheet2\".\n\nRelevant procedure\n1. Click on the column header \"A\" to select the entire \"Revenue\" column, including the header and data.\n2. Press `Ctrl+C` to copy the selected column.\n3. Right-click on the \"Sheet1\" tab at the bottom of the window.\n4. Select \"Insert Sheet...\" from the context menu.\n5. In the \"Insert Sheet\" dialog, type \"Sheet2\" in the \"Name\" field.\n6. Click \"OK\" to create the new sheet.\n7. On the new \"Sheet2\", click on cell \"A1\" to select it.\n8. Press `Ctrl+V` to paste the copied \"Revenue\" column data into the new sheet.",
+  "source": "SheetCopilot@123",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1273e544-688f-496b-8d89-3e0f40aa0606/NetIncome.xlsx",
+            "path": "/home/user/NetIncome.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/NetIncome.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/1273e544-688f-496b-8d89-3e0f40aa0606",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "NetIncome.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1273e544-688f-496b-8d89-3e0f40aa0606/3_NetIncome_gt1.xlsx",
+      "dest": "3_NetIncome_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/NetIncome.xlsx",
+      "dest": "NetIncome.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the column header \"A\" to select the entire \"Revenue\" column, including the header and data.\n2. Press `Ctrl+C` to copy the selected column.\n3. Right-click on the \"Sheet1\" tab at the bottom of the window.\n4. Select \"Insert Sheet...\" from the context menu.\n5. In the \"Insert Sheet\" dialog, type \"Sheet2\" in the \"Name\" field.\n6. Click \"OK\" to create the new sheet.\n7. On the new \"Sheet2\", click on cell \"A1\" to select it.\n8. Press `Ctrl+V` to paste the copied \"Revenue\" column data into the new sheet.",
+  "retrieved_page_ranges": [
+    [
+      36,
+      36
+    ],
+    [
+      375,
+      376
+    ],
+    [
+      374,
+      375
+    ],
+    [
+      36,
+      37
+    ],
+    [
+      35,
+      36
+    ]
+  ]
+}

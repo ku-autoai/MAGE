@@ -1,0 +1,81 @@
+{
+  "id": "7b7617bd-57cc-468e-9c91-40c4ec2bcb3d",
+  "snapshot": "gimp",
+  "instruction": "Set the minimum number of undo steps to 100.\n\nRelevant procedure\n1. In the GIMP menu bar, click Edit.\n2. From the dropdown menu, select Preferences.\n3. In the Preferences dialog, locate and expand the System Resources section in the left sidebar.\n4. Within the Resource Consumption options, find the \"Minimal number of undo levels\" field.\n5. Change the value in the \"Minimal number of undo levels\" field to 100.\n6. Click the \"Close\" button to save the preferences and close the dialog.",
+  "source": "https://www.youtube.com/watch?v=G_PjQAy0iiU",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"ctrl\", \"q\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "check_config_status",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type:": "key-value",
+        "key": "undo-levels",
+        "value": "100"
+      }
+    },
+    "result": {
+      "type": "gimp_config_file",
+      "file_name": "gimprc",
+      "dest": "gimprc"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. In the GIMP menu bar, click Edit.\n2. From the dropdown menu, select Preferences.\n3. In the Preferences dialog, locate and expand the System Resources section in the left sidebar.\n4. Within the Resource Consumption options, find the \"Minimal number of undo levels\" field.\n5. Change the value in the \"Minimal number of undo levels\" field to 100.\n6. Click the \"Close\" button to save the preferences and close the dialog.",
+  "retrieved_page_ranges": [
+    [
+      "6.2. System Resources",
+      "6.2. System Resources"
+    ],
+    [
+      "3.4. Undo History",
+      "3.4. Undo History"
+    ],
+    [
+      "7.20. Lower Layers",
+      "7.20. Lower Layers"
+    ],
+    [
+      "6.20. Canvas Interaction Snapping Behavior",
+      "6.20. Canvas Interaction Snapping Behavior"
+    ],
+    [
+      "3.2. Undo",
+      "3.2. Undo"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/7b7617bd-57cc-468e-9c91-40c4ec2bcb3d/step_1.png"
+}

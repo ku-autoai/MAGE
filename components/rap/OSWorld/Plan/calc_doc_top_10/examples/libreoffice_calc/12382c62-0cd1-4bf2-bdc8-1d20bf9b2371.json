@@ -1,0 +1,133 @@
+{
+  "id": "12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Create a clustered column chart showing the Sales and COGS data for each week in a new sheet named \"Sheet2\". Set the chart title as \"Sales & COGS\".\n\nRelevant procedure\n1. Click the \"Sheet2\" tab located at the bottom of the window to switch to the empty sheet where the chart will be placed.\n2. Click the \"Sheet1\" tab to navigate back to the sheet containing the source data.\n3. Click on cell **A1** (or the top-left cell containing the header \"Week\").\n4. Select the data range covering \"Week\", \"Sales\", and \"COGS\" headers and their corresponding data values (e.g., click **A1**, hold **Shift**, and click the bottom-right cell of the data set, or drag to select the range).\n5. With the data selected, click the **Insert** menu in the top menu bar.\n6. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n7. In the Chart Wizard dialog, ensure the **Column** chart type is selected in the list.\n8. Click the **Normal** variant (side-by-side columns) in the preview area to set a clustered column chart.\n9. Click the **Titles** tab in the Chart Wizard dialog.\n10. In the **Chart title** text field, type `Sales & COGS`.\n11. Click the **Finish** button to insert the chart into the currently active sheet (ensure you are on Sheet2 before finishing, or move the chart afterward).\n12. If the chart is inserted on Sheet1: Right-click the chart, select **Move Chart**, choose **New sheet**, type `Sheet2` if prompted for a name, and click **OK**. (Alternatively, if already on Sheet2 when clicking Finish, the chart is placed there directly).",
+  "source": "SheetCopilot@210",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1e8df695-bd1b-45b3-b557-e7d599cf7597/WeeklySales.xlsx",
+            "path": "/home/user/WeeklySales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/WeeklySales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "WeeklySales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371/13_WeeklySales_gt1.xlsx",
+      "dest": "13_WeeklySales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/WeeklySales.xlsx",
+      "dest": "WeeklySales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "chart",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet2\" tab located at the bottom of the window to switch to the empty sheet where the chart will be placed.\n2. Click the \"Sheet1\" tab to navigate back to the sheet containing the source data.\n3. Click on cell **A1** (or the top-left cell containing the header \"Week\").\n4. Select the data range covering \"Week\", \"Sales\", and \"COGS\" headers and their corresponding data values (e.g., click **A1**, hold **Shift**, and click the bottom-right cell of the data set, or drag to select the range).\n5. With the data selected, click the **Insert** menu in the top menu bar.\n6. Select **Chart...** from the dropdown menu to open the Chart Wizard.\n7. In the Chart Wizard dialog, ensure the **Column** chart type is selected in the list.\n8. Click the **Normal** variant (side-by-side columns) in the preview area to set a clustered column chart.\n9. Click the **Titles** tab in the Chart Wizard dialog.\n10. In the **Chart title** text field, type `Sales & COGS`.\n11. Click the **Finish** button to insert the chart into the currently active sheet (ensure you are on Sheet2 before finishing, or move the chart afterward).\n12. If the chart is inserted on Sheet1: Right-click the chart, select **Move Chart**, choose **New sheet**, type `Sheet2` if prompted for a name, and click **OK**. (Alternatively, if already on Sheet2 when clicking Finish, the chart is placed there directly).",
+  "retrieved_page_ranges": [
+    [
+      180,
+      181
+    ],
+    [
+      103,
+      104
+    ],
+    [
+      104,
+      105
+    ],
+    [
+      102,
+      103
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      102,
+      102
+    ],
+    [
+      181,
+      181
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      105,
+      106
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/12382c62-0cd1-4bf2-bdc8-1d20bf9b2371/step_1.png"
+}

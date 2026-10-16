@@ -1,0 +1,41 @@
+{
+  "id": "fbb548ca-c2a6-4601-9204-e39a2efc507b",
+  "snapshot": "gimp",
+  "instruction": "Blue is my favorite color, so could you help me change the color theme of GIMP to \"Blue\"?\n\nRelevant procedure\n1. Click on the GIMP icon in the left sidebar to open the application.\n2. Once GIMP is open, click on the \"Edit\" menu at the top of the window.\n3. Select \"Preferences\" from the dropdown menu.\n4. In the Preferences window, look for the \"Interface\" section in the left sidebar and click on it.\n5. Under the \"Interface\" section, click on \"Theme\".\n6. In the \"Select Theme\" list, find and click on the \"Blue\" theme option.\n7. Click \"OK\" at the bottom of the Preferences window to apply the new theme.",
+  "source": "",
+  "config": [],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the GIMP icon in the left sidebar to open the application.\n2. Once GIMP is open, click on the \"Edit\" menu at the top of the window.\n3. Select \"Preferences\" from the dropdown menu.\n4. In the Preferences window, look for the \"Interface\" section in the left sidebar and click on it.\n5. Under the \"Interface\" section, click on \"Theme\".\n6. In the \"Select Theme\" list, find and click on the \"Blue\" theme option.\n7. Click \"OK\" at the bottom of the Preferences window to apply the new theme.",
+  "retrieved_page_ranges": [
+    [
+      "6.11. Theme",
+      "6.11. Theme"
+    ],
+    [
+      "3.2. Brushes Dialog",
+      "3.2. Brushes Dialog"
+    ],
+    [
+      "6.12. Icon Theme",
+      "6.12. Icon Theme"
+    ],
+    [
+      "14. Tools",
+      "14. Tools"
+    ],
+    [
+      "6.12. Icon Theme",
+      "6.12. Icon Theme"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/fbb548ca-c2a6-4601-9204-e39a2efc507b/step_1.png"
+}

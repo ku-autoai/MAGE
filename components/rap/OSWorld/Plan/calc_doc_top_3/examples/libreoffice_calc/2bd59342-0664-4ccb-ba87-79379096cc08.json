@@ -1,0 +1,51 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n\n1. Click cell **G2** to select the first cell in the \"Chart\" column.\n2. Click the **Insert** menu in the top menu bar.\n3. Select **Sparklines** from the dropdown menu.\n4. In the Sparklines dialog, ensure **Line** is selected under Chart type.\n5. Click in the **Data Range** input box, then select cells **D2:F2** (the \"Jan\" through \"Mar\" data) in the spreadsheet.\n6. Ensure the **Location** box displays **Sheet1.$G$2**.\n7. Click **OK**.\n8. Click cell **G2** again to select the newly created sparkline.\n9. Move the cursor to the bottom-right corner of the cell until it turns into a small black cross (fill handle).\n10. Click and drag the fill handle down to cell **G23** to copy the sparkline to all rows containing data.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click cell **G2** to select the first cell in the \"Chart\" column.\n2. Click the **Insert** menu in the top menu bar.\n3. Select **Sparklines** from the dropdown menu.\n4. In the Sparklines dialog, ensure **Line** is selected under Chart type.\n5. Click in the **Data Range** input box, then select cells **D2:F2** (the \"Jan\" through \"Mar\" data) in the spreadsheet.\n6. Ensure the **Location** box displays **Sheet1.$G$2**.\n7. Click **OK**.\n8. Click cell **G2** again to select the newly created sparkline.\n9. Move the cursor to the bottom-right corner of the cell until it turns into a small black cross (fill handle).\n10. Click and drag the fill handle down to cell **G23** to copy the sparkline to all rows containing data.",
+  "retrieved_page_ranges": [
+    [
+      125,
+      126
+    ],
+    [
+      172,
+      173
+    ],
+    [
+      177,
+      180
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/step_1.png"
+}

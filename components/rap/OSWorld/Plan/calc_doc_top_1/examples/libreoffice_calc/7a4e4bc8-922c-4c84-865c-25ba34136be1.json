@@ -1,0 +1,93 @@
+{
+  "id": "7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Reorder the columns to be \"Date\", \"First Name\", \"Last Name\", \"Order ID\", \"Sales\". Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the column header **E** (labeled \"Date\") to select the entire column.\n2. Right-click on the selected column header **E**.\n3. Select **Cut** from the context menu (or press Ctrl+X).\n4. Click the column header **A** (labeled \"First Name\") to select the entire column.\n5. Right-click on the selected column header **A**.\n6. Select **Insert Columns Before** from the context menu.\n7. Right-click on the newly created empty column **A**.\n8. Select **Paste** from the context menu (or press Ctrl+V) to insert the Date column.\n9. Click the column header **C** (currently labeled \"Order ID\") to select the entire column.\n10. Right-click on the selected column header **C**.\n11. Select **Cut** from the context menu (or press Ctrl+X).\n12. Click the column header **E** (currently labeled \"Last Name\") to select the entire column.\n13. Right-click on the selected column header **E**.\n14. Select **Delete Columns** from the context menu (this removes the placeholder space created by the previous insert, effectively shifting columns). \n    *Correction*: The standard Cut/Paste method is safer. \n    *Revised Step 12*: Click the empty column **D** header (if it exists) or the target location. Let's stick to the most reliable method: Insert Cut Columns.\n    \n    *Alternative reliable path for remaining columns*:\n    1. Click column **C** header (\"Order ID\"). Right-click -> **Cut**.\n    2. Click column **E** header (\"Last Name\"). Right-click -> **Insert Cut Columns**. (Note: In LibreOffice, this inserts the cut columns *before* the clicked column).\n       - Current order: A(Date), B(FName), C(OrderID-cut), D(LName), E(Sales).\n       - Inserting Cut Columns at E moves OrderID to D, shifts LName to E, Sales to F.\n       - We need: Date, FName, LName, OrderID, Sales.\n    \n    *Let's re-evaluate the current state after step 8:*\n    - Col A: Date\n    - Col B: First Name\n    - Col C: Order ID\n    - Col D: Last",
+  "source": "https://www.youtube.com/shorts/bvUhr1AHs44",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column.xlsx",
+            "path": "/home/user/Name_Order_Id_move_column.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Name_Order_Id_move_column.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/7a4e4bc8-922c-4c84-865c-25ba34136be1",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Name_Order_Id_move_column.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/Name_Order_Id_move_column_gold.xlsx",
+      "dest": "Name_Order_Id_move_column_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Name_Order_Id_move_column.xlsx",
+      "dest": "Name_Order_Id_move_column.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column header **E** (labeled \"Date\") to select the entire column.\n2. Right-click on the selected column header **E**.\n3. Select **Cut** from the context menu (or press Ctrl+X).\n4. Click the column header **A** (labeled \"First Name\") to select the entire column.\n5. Right-click on the selected column header **A**.\n6. Select **Insert Columns Before** from the context menu.\n7. Right-click on the newly created empty column **A**.\n8. Select **Paste** from the context menu (or press Ctrl+V) to insert the Date column.\n9. Click the column header **C** (currently labeled \"Order ID\") to select the entire column.\n10. Right-click on the selected column header **C**.\n11. Select **Cut** from the context menu (or press Ctrl+X).\n12. Click the column header **E** (currently labeled \"Last Name\") to select the entire column.\n13. Right-click on the selected column header **E**.\n14. Select **Delete Columns** from the context menu (this removes the placeholder space created by the previous insert, effectively shifting columns). \n    *Correction*: The standard Cut/Paste method is safer. \n    *Revised Step 12*: Click the empty column **D** header (if it exists) or the target location. Let's stick to the most reliable method: Insert Cut Columns.\n    \n    *Alternative reliable path for remaining columns*:\n    1. Click column **C** header (\"Order ID\"). Right-click -> **Cut**.\n    2. Click column **E** header (\"Last Name\"). Right-click -> **Insert Cut Columns**. (Note: In LibreOffice, this inserts the cut columns *before* the clicked column).\n       - Current order: A(Date), B(FName), C(OrderID-cut), D(LName), E(Sales).\n       - Inserting Cut Columns at E moves OrderID to D, shifts LName to E, Sales to F.\n       - We need: Date, FName, LName, OrderID, Sales.\n    \n    *Let's re-evaluate the current state after step 8:*\n    - Col A: Date\n    - Col B: First Name\n    - Col C: Order ID\n    - Col D: Last",
+  "retrieved_page_ranges": [
+    [
+      309,
+      310
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/7a4e4bc8-922c-4c84-865c-25ba34136be1/step_1.png"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "snapshot": "libreoffice_calc",
+  "instruction": "In a new sheet (\"Sheet2\") with 4 headers \"Year\", \"CA changes\", \"FA changes\", and \"OA changes\", calculate the percentage annual changes compared to last year in 2015 to 2019 for the Current Assets, Fixed Assets, and Other Assets columns.\n\nRelevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the spreadsheet to activate it.\n2. Click cell A1 in Sheet2.\n3. Type \"Year\", then press Enter.\n4. Type \"CA changes\", then press Enter.\n5. Type \"FA changes\", then press Enter.\n6. Type \"OA changes\", then press Tab to move to cell B2.\n7. Click the \"Sheet1\" tab at the bottom of the spreadsheet to switch back.\n8. Enter the formula: =(B5-B4)/B4 then press Enter (assuming Current Assets data is in column B of Sheet1, starting from row 4 with header in row 1, and first data year in row 4).\n9. Enter the formula: =(C5-C4)/C4 then press Enter (assuming Fixed Assets data is in column C).\n10. Enter the formula: =(D5-D4)/D4 then press Enter (assuming Other Assets data is in column D).\n11. Select cells B2:D2 by clicking and dragging from B2 to D2.\n12. Click and drag the fill handle (small square at the bottom-right corner of the selection) down to row 6 to copy the formulas for years 2015-2019.\n13. Click the \"Sheet2\" tab to return to Sheet2 if needed.",
+  "source": "SheetCopilot@168",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/SmallBalanceSheet.xlsx",
+            "path": "/home/user/SmallBalanceSheet.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SmallBalanceSheet.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SmallBalanceSheet.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/4_SmallBalanceSheet_gt1.xlsx",
+      "dest": "4_SmallBalanceSheet_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SmallBalanceSheet.xlsx",
+      "dest": "SmallBalanceSheet.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"Sheet2\" tab at the bottom of the spreadsheet to activate it.\n2. Click cell A1 in Sheet2.\n3. Type \"Year\", then press Enter.\n4. Type \"CA changes\", then press Enter.\n5. Type \"FA changes\", then press Enter.\n6. Type \"OA changes\", then press Tab to move to cell B2.\n7. Click the \"Sheet1\" tab at the bottom of the spreadsheet to switch back.\n8. Enter the formula: =(B5-B4)/B4 then press Enter (assuming Current Assets data is in column B of Sheet1, starting from row 4 with header in row 1, and first data year in row 4).\n9. Enter the formula: =(C5-C4)/C4 then press Enter (assuming Fixed Assets data is in column C).\n10. Enter the formula: =(D5-D4)/D4 then press Enter (assuming Other Assets data is in column D).\n11. Select cells B2:D2 by clicking and dragging from B2 to D2.\n12. Click and drag the fill handle (small square at the bottom-right corner of the selection) down to row 6 to copy the formulas for years 2015-2019.\n13. Click the \"Sheet2\" tab to return to Sheet2 if needed.",
+  "retrieved_page_ranges": [
+    [
+      321,
+      321
+    ],
+    [
+      447,
+      447
+    ],
+    [
+      253,
+      253
+    ],
+    [
+      518,
+      518
+    ],
+    [
+      338,
+      340
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/04d9aeaf-7bed-4024-bedb-e10e6f00eb7f/step_1.png"
+}

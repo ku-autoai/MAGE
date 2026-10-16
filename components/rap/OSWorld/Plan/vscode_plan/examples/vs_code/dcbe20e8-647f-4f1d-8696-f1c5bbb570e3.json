@@ -1,0 +1,56 @@
+{
+  "id": "dcbe20e8-647f-4f1d-8696-f1c5bbb570e3",
+  "snapshot": "vscode",
+  "instruction": "Please help me change the background of VS Code to the photo in Downloads.\n\nBased on the current screenshot and the task, here is the procedure to change the VS Code background to a photo from the Downloads folder.\n\n**Relevant procedure**\n\n1.  Click on the **Extensions** icon in the Activity Bar on the left side (the icon consisting of four squares, located below the Source Control icon).\n2.  In the Extensions search bar at the top of the sidebar, type `background` and press Enter.\n3.  Locate the **Background** extension (by Shamil) in the search results. If it is not installed, click the **Install** button.\n4.  After installation, click the **Manage** icon (gear icon) at the bottom-left corner of the VS Code window.\n5.  Select **Command Palette...** from the menu.\n6.  In the Command Palette input, type `Preferences: Open User Settings (JSON)` and select it.\n7.  Inside the `settings.json` file, add the following configuration inside the curly braces `{}`. Replace `/path/to/your/image.jpg` with the actual path to your photo in the Downloads folder (e.g., `file:///home/username/Downloads/your_image.jpg`):\n    ```json\n    \"update.enableWindowsBackgroundUpdates\": true,\n    \"background.customImages\": [\n        \"file:///path/to/your/image.jpg\"\n    ],\n    \"background.style\": {\n        \"content\": \"''\",\n        \"pointer-events\": \"none\",\n        \"position\": \"absolute\",\n        \"z-index\": \"99999\",\n        \"width\": \"100%\",\n        \"height\": \"100%\",\n        \"background-position\": \"center\",\n        \"background-repeat\": \"no-repeat\",\n        \"background-size\": \"cover\",\n        \"opacity\": 0.5\n    },\n    \"background.useFront\": true,\n    \"background.useDefault\": false\n    ```\n8.  Save the `settings.json` file (Ctrl+S).\n9.  Restart Visual Studio Code. If the background does not appear immediately, close the window and reopen it.\n10. If the background still does not show, right-click on the VS Code icon in the system launcher, select **Open Terminal**, and run `code --disable-gpu` to see if it loads without hardware acceleration, or ensure you have administrator privileges if required by the extension.",
+  "source": "",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Based on the current screenshot and the task, here is the procedure to change the VS Code background to a photo from the Downloads folder.\n\n**Relevant procedure**\n\n1.  Click on the **Extensions** icon in the Activity Bar on the left side (the icon consisting of four squares, located below the Source Control icon).\n2.  In the Extensions search bar at the top of the sidebar, type `background` and press Enter.\n3.  Locate the **Background** extension (by Shamil) in the search results. If it is not installed, click the **Install** button.\n4.  After installation, click the **Manage** icon (gear icon) at the bottom-left corner of the VS Code window.\n5.  Select **Command Palette...** from the menu.\n6.  In the Command Palette input, type `Preferences: Open User Settings (JSON)` and select it.\n7.  Inside the `settings.json` file, add the following configuration inside the curly braces `{}`. Replace `/path/to/your/image.jpg` with the actual path to your photo in the Downloads folder (e.g., `file:///home/username/Downloads/your_image.jpg`):\n    ```json\n    \"update.enableWindowsBackgroundUpdates\": true,\n    \"background.customImages\": [\n        \"file:///path/to/your/image.jpg\"\n    ],\n    \"background.style\": {\n        \"content\": \"''\",\n        \"pointer-events\": \"none\",\n        \"position\": \"absolute\",\n        \"z-index\": \"99999\",\n        \"width\": \"100%\",\n        \"height\": \"100%\",\n        \"background-position\": \"center\",\n        \"background-repeat\": \"no-repeat\",\n        \"background-size\": \"cover\",\n        \"opacity\": 0.5\n    },\n    \"background.useFront\": true,\n    \"background.useDefault\": false\n    ```\n8.  Save the `settings.json` file (Ctrl+S).\n9.  Restart Visual Studio Code. If the background does not appear immediately, close the window and reopen it.\n10. If the background still does not show, right-click on the VS Code icon in the system launcher, select **Open Terminal**, and run `code --disable-gpu` to see if it loads without hardware acceleration, or ensure you have administrator privileges if required by the extension.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/dcbe20e8-647f-4f1d-8696-f1c5bbb570e3/step_1.png"
+}

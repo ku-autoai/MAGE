@@ -1,0 +1,14 @@
+# Core runtime
+Pillow>=9.2.0
+tqdm>=4.66.0
+transformers>=4.51.0
+torch>=2.1.0
+
+# Retrieval / embeddings
+langchain-community>=0.2.0
+langchain-huggingface>=0.0.3
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# Required by balanced multi-GPU model placement
+accelerate

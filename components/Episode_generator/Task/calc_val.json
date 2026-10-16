@@ -1,0 +1,285 @@
+[
+    {
+        "id": 15,
+        "setup_task": "(Setup) Create text in two adjacent cells for a merge exercise",
+        "setup_steps": [
+            "Click cell A1.",
+            "Type 1 and press Enter.",
+            "Click cell B1.",
+            "Type 2 and press Enter."
+        ],
+        "main_task": "Merge cells A1 and B1, keeping the contents of the hidden cells",
+        "main_steps": [
+            "Drag from cell A1 to cell B1 to select both cells.",
+            "Click Format.",
+            "Point to Merge Cells.",
+            "Click Merge Cells.",
+            "In the Merge Cells dialog, select Keep the contents of the hidden cells.",
+            "Click OK."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Select cells A1 and B1.  \n2) Go to Format > Merge Cells > Merge Cells or Merge and Center Cells.  \n3) In the Merge Cells dialog, choose the option to hide the contents of the hidden cells.  \n4) Click OK."
+    },
+    {
+        "id": 41,
+        "setup_task": "(Setup) Create and format a 4x4 cell range for a new AutoFormat",
+        "setup_steps": [
+            "Click cell A1.",
+            "Type 1 and press Enter.",
+            "Type 2 and press Enter.",
+            "Type 3 and press Enter.",
+            "Type 4 and press Enter.",
+            "Click cell B1.",
+            "Type 5 and press Enter.",
+            "Type 6 and press Enter.",
+            "Type 7 and press Enter.",
+            "Type 8 and press Enter.",
+            "Click cell C1.",
+            "Type 9 and press Enter.",
+            "Type 10 and press Enter.",
+            "Type 11 and press Enter.",
+            "Type 12 and press Enter.",
+            "Click cell D1.",
+            "Type 13 and press Enter.",
+            "Type 14 and press Enter.",
+            "Type 15 and press Enter.",
+            "Type 16 and press Enter.",
+            "Drag from cell A1 to cell D4.",
+            "Click Format in the menu bar.",
+            "Click Cells.",
+            "Click the Font tab.",
+            "Select a larger font size than the default.",
+            "Click the Background tab.",
+            "Select a background color.",
+            "Click the Borders tab.",
+            "Select a border preset.",
+            "Click OK."
+        ],
+        "main_task": "Define a new AutoFormat named MyFormat from the formatted 4x4 range",
+        "main_steps": [
+            "Drag from cell A1 to cell D4.",
+            "Click Format in the menu bar.",
+            "Click AutoFormat Styles.",
+            "Click Add.",
+            "Type MyFormat in the Name box.",
+            "Click OK.",
+            "Verify that MyFormat appears in the Format list.",
+            "Click OK."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Select a cell range of at least 4x4 cells.  \n2) Go to Format > AutoFormat Styles to open the AutoFormat dialog.  \n3) Click Add.  \n4) In the Name box of the Add AutoFormat dialog, type \"MyFormat\".  \n5) Click OK.  \n6) Click OK to close the AutoFormat dialog."
+    },
+    {
+        "id": 69,
+        "setup_task": "(Setup) Create sample data for a standard filter with column labels",
+        "setup_steps": [
+            "Click cell A1.",
+            "Type \"Item\" and press Tab.",
+            "Type \"Qty\" and press Enter.",
+            "Type \"Pen\" and press Tab.",
+            "Type \"5\" and press Enter.",
+            "Type \"Pencil\" and press Tab.",
+            "Type \"12\" and press Enter.",
+            "Type \"Eraser\" and press Tab.",
+            "Type \"20\" and press Enter.",
+            "Type \"Marker\" and press Tab.",
+            "Type \"8\" and press Enter."
+        ],
+        "main_task": "Apply a standard filter to show only rows where Qty is greater than 10",
+        "main_steps": [
+            "Select cells A1:B5.",
+            "Click Data.",
+            "Click More Filters.",
+            "Click Standard Filter.",
+            "Open the Field name list in the first filter row.",
+            "Select \"Qty\".",
+            "Open the Condition list in the first filter row.",
+            "Select \">\".",
+            "Click the Value box in the first filter row.",
+            "Type \"10\".",
+            "Check \"Range contains column labels\".",
+            "Click OK."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1. Select a cell within the data range containing the Qty column.  \n2. Go to Data > More Filters > Standard Filter.  \n3. In the Standard Filter dialog, under Field name, select the column that contains the Qty field.  \n4. Under Condition, choose \"greater than\" (or \">\", if available).  \n5. In the Value field, enter 10.  \n6. Click OK to apply the filter and display only rows where Qty is greater than 10."
+    },
+    {
+        "id": 95,
+        "setup_task": "(Setup) Create sample data and a chart with a title",
+        "setup_steps": [
+            "Type \"Month\" in cell A1.",
+            "Type \"Sales\" in cell B1.",
+            "Type \"Jan\" in cell A2.",
+            "Type \"10\" in cell B2.",
+            "Type \"Feb\" in cell A3.",
+            "Type \"15\" in cell B3.",
+            "Type \"Mar\" in cell A4.",
+            "Type \"12\" in cell B4.",
+            "Select cells A1:B4.",
+            "Open the Insert menu.",
+            "Click Chart.",
+            "Complete the chart creation so a chart appears in the sheet."
+        ],
+        "main_task": "Move the chart title to a different position",
+        "main_steps": [
+            "Double-click the chart to enter edit mode.",
+            "Click the chart title to select it.",
+            "Press and hold the left mouse button on the selected title.",
+            "Drag the title to a different location within the chart.",
+            "Release the mouse button."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Click on the chart title to select it.  \n2) Press and hold the mouse button. The cursor changes to a move icon.  \n3) Drag the title to the desired position.  \n4) Release the mouse button when the title is in the desired location.  \n5) Click outside the chart to exit selection mode."
+    },
+    {
+        "id": 124,
+        "setup_task": "(Setup) Create a chart with one data series for single data label practice",
+        "setup_steps": [
+            "Type “Month” in cell A1.",
+            "Type “Sales” in cell B1.",
+            "Type “Jan” in cell A2.",
+            "Type “10” in cell B2.",
+            "Type “Feb” in cell A3.",
+            "Type “20” in cell B3.",
+            "Type “Mar” in cell A4.",
+            "Type “15” in cell B4.",
+            "Drag to select cells A1:B4.",
+            "Click Insert on the menu bar.",
+            "Click Chart."
+        ],
+        "main_task": "Insert a data label for only the Feb data point",
+        "main_steps": [
+            "Double-click the chart.",
+            "Click the data point for Feb once.",
+            "Pause briefly.",
+            "Click the same data point again.",
+            "Right-click the selected data point.",
+            "Click Insert Single Data Label.",
+            "Click outside the chart."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Double-click the chart to enter edit mode. The chart should now be surrounded by a gray border.  \n2) Click the Feb data point once, pause, then click again to select it.  \n3) Right-click on the selected data point and choose Insert Single Data Label from the context menu.  \n4) If desired, click outside the chart to leave edit mode."
+    },
+    {
+        "id": 149,
+        "setup_task": "(Setup) Create a chart that can be resized",
+        "setup_steps": [
+            "Type “Month” in cell A1.",
+            "Type “Sales” in cell B1.",
+            "Type “Jan” in cell A2.",
+            "Type “10” in cell B2.",
+            "Type “Feb” in cell A3.",
+            "Type “20” in cell B3.",
+            "Type “Mar” in cell A4.",
+            "Type “15” in cell B4.",
+            "Select cells A1:B4.",
+            "Insert a chart using the default chart option.",
+            "Finish the chart so it appears on the sheet."
+        ],
+        "main_task": "Resize the chart interactively by dragging a corner handle",
+        "main_steps": [
+            "Click once on the chart.",
+            "Drag a corner selection handle outward to make the chart larger.",
+            "Release the mouse button.",
+            "Click outside the chart."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Click once on the chart to select it.  \n2) Click and drag one of the corner selection handles until the chart reaches the desired size.  \n3) When finished, click outside the chart to leave selection mode."
+    },
+    {
+        "id": 176,
+        "setup_task": "(Setup) Create a cell with text and apply direct formatting",
+        "setup_steps": [
+            "Click cell A1.",
+            "Type Test.",
+            "Press Enter.",
+            "Click cell A1.",
+            "Click the Bold button on the toolbar."
+        ],
+        "main_task": "Clear the direct formatting from the formatted cell using the Format menu",
+        "main_steps": [
+            "Click cell A1.",
+            "Click Format on the menu bar.",
+            "Click Clear Direct Formatting."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Select the formatted cell or range of cells.  \n2) Choose Format > Clear Direct Formatting from the Menu bar."
+    },
+    {
+        "id": 205,
+        "main_task": "Open the Templates dialog with the keyboard shortcut",
+        "main_steps": [
+            "Press Ctrl+Shift+N."
+        ],
+        "relevant_procedure": "Relevant procedure:\nPress Ctrl+Shift+N to open the Templates dialog."
+    },
+    {
+        "id": 232,
+        "setup_task": "(Setup) Create a named print range in the sheet",
+        "setup_steps": [
+            "Type \"Item\" in cell A1.",
+            "Type \"Qty\" in cell B1.",
+            "Type \"Pen\" in cell A2.",
+            "Type \"10\" in cell B2.",
+            "Type \"Notebook\" in cell A3.",
+            "Type \"5\" in cell B3.",
+            "Select cells A1:B3.",
+            "Open the Sheet menu.",
+            "Click Named Ranges and Expressions.",
+            "Click Define.",
+            "Type \"Test_Named_Print_Range\" in the name field.",
+            "Open the Scope drop-down list.",
+            "Select \"Document (Global)\".",
+            "Open the Range Options list.",
+            "Select \"Print range\".",
+            "Click Add."
+        ],
+        "main_task": "Select the named print range for printing and show it in print preview",
+        "main_steps": [
+            "Open the Format menu.",
+            "Click Print Ranges.",
+            "Click Edit.",
+            "Open the Print Range drop-down list.",
+            "Select \"Test_Named_Print_Range\".",
+            "Click OK.",
+            "Open the File menu.",
+            "Click Print."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1) Go to Format > Print Ranges > Edit on the Menu bar to open the Edit Print Ranges dialog.  \n2) Select the named print range from the Print Range drop-down list.  \n3) Click OK to close the dialog.  \n4) Open the Print dialog by choosing File > Print on the Menu bar or pressing Ctrl+P.  \n5) The print preview will display only the named range. Click Print to proceed."
+    },
+    {
+        "id": 259,
+        "setup_task": "(Setup) Create sample values for an error-checking spreadsheet",
+        "setup_steps": [
+            "Type “A” in cell A1.",
+            "Type “B” in cell B1.",
+            "Type “C” in cell C1.",
+            "Type “0.43” in cell A2.",
+            "Type “0.23” in cell B2.",
+            "Type “0.75” in cell C2.",
+            "Type “0.91” in cell A3.",
+            "Type “0.57” in cell B3.",
+            "Type “0.59” in cell C3.",
+            "Type “0.07” in cell A4.",
+            "Type “0.07” in cell B4.",
+            "Type “0.45” in cell C4."
+        ],
+        "main_task": "Create row totals and column totals, then show the difference between them",
+        "main_steps": [
+            "Type “Row Sums” in cell E1.",
+            "Click cell E2.",
+            "Type “=A2+B2+C2” and press Enter.",
+            "Click cell E3.",
+            "Type “=A3+B3+C3” and press Enter.",
+            "Click cell E4.",
+            "Type “=A4+B4+C4” and press Enter.",
+            "Type “Column Sums” in cell A6.",
+            "Click cell A7.",
+            "Type “=SUM(A2:A4)” and press Enter.",
+            "Click cell B7.",
+            "Type “=SUM(B2:B4)” and press Enter.",
+            "Click cell C7.",
+            "Type “=SUM(C2:C4)” and press Enter.",
+            "Click cell C8.",
+            "Type “=A7+B7+C7” and press Enter.",
+            "Click cell E8.",
+            "Type “=SUM(E2:E4)” and press Enter.",
+            "Click cell F8.",
+            "Type “=E8-C8” and press Enter."
+        ],
+        "relevant_procedure": "Relevant procedure:\n1. Open the spreadsheet containing the data.  \n2. Select the range of data to include in the pivot table.  \n3. Go to the 'Insert' menu and choose 'Pivot Table'.  \n4. In the Pivot Table dialog, confirm the data range and click 'OK'.  \n5. In the Pivot Table field list, drag the row fields to the 'Rows' area.  \n6. Drag the column fields to the 'Columns' area.  \n7. Drag the values field to the 'Values' area.  \n8. In the 'Values' area, click the dropdown arrow next to the value field and select 'Sum' to calculate row and column totals.  \n9. Check the 'Show row totals' and 'Show column totals' options in the Pivot Table settings.  \n10. To show the difference between row and column totals, create a new calculated field:  \n    - Click on the 'Values' area, then click 'Add Calculated Field'.  \n    - Enter a formula such as `Row Total - Column Total` (using the appropriate field names).  \n    - Click 'OK' to add the difference field.  \n11. The difference between row and column totals will now appear in the pivot table."
+    }
+]

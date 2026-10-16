@@ -1,0 +1,74 @@
+{
+  "id": "e246f6d8-78d7-44ac-b668-fcf47946cb50",
+  "snapshot": "libreoffice_writer",
+  "instruction": "I found Italic font very hard to discern from the normal text for me, as it is also dark black with the same size. Current font size is 12 and I want to change the font size of italicized words to 14 to make it more discernible. Can you help me on this?\n\nRelevant procedure\n\n1. Select all italicized text by using the Format > Character menu option.\n2. In the Character dialog box, click on the \"Font Effects\" tab.\n3. Under \"Style,\" select \"Italic.\"\n4. Click \"OK\" to close the dialog box and highlight all italicized text in the document.\n5. With the italicized text selected, go to the toolbar and click the font size dropdown (currently set to \"12 pt\").\n6. Select \"14 pt\" from the dropdown menu to change the font size of the italicized text to 14.\n7. Verify the changes by reviewing the document to ensure the italicized text is now more discernible.",
+  "source": "https://ask.libreoffice.org/t/how-to-change-text-size-color-of-italic-font/77712",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/e246f6d8-78d7-44ac-b668-fcf47946cb50/Y22-2119-assign4.docx",
+            "path": "/home/user/Desktop/Y22-2119-assign4.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Y22-2119-assign4.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Y22-2119-assign4.docx - LibreOffice Writer",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5); "
+          ]
+        }
+      }
+    ],
+    "func": "check_italic_font_size_14",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/e246f6d8-78d7-44ac-b668-fcf47946cb50/Y22-2119-assign4_Gold.docx",
+      "dest": "Y22-2119-assign4.docx_Gold.docx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/Y22-2119-assign4.docx",
+      "dest": "Y22-2119-assign4.docx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure\n\n1. Select all italicized text by using the Format > Character menu option.\n2. In the Character dialog box, click on the \"Font Effects\" tab.\n3. Under \"Style,\" select \"Italic.\"\n4. Click \"OK\" to close the dialog box and highlight all italicized text in the document.\n5. With the italicized text selected, go to the toolbar and click the font size dropdown (currently set to \"12 pt\").\n6. Select \"14 pt\" from the dropdown menu to change the font size of the italicized text to 14.\n7. Verify the changes by reviewing the document to ensure the italicized text is now more discernible.",
+  "instruction_with_evidence": "I found Italic font very hard to discern from the normal text for me, as it is also dark black with the same size. Current font size is 12 and I want to change the font size of italicized words to 14 to make it more discernible. Can you help me on this?\n\nRelevant procedure\n\n1. Select all italicized text by using the Format > Character menu option.\n2. In the Character dialog box, click on the \"Font Effects\" tab.\n3. Under \"Style,\" select \"Italic.\"\n4. Click \"OK\" to close the dialog box and highlight all italicized text in the document.\n5. With the italicized text selected, go to the toolbar and click the font size dropdown (currently set to \"12 pt\").\n6. Select \"14 pt\" from the dropdown menu to change the font size of the italicized text to 14.\n7. Verify the changes by reviewing the document to ensure the italicized text is now more discernible."
+}

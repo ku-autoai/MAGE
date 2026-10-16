@@ -1,0 +1,73 @@
+{
+  "id": "eabc805a-bfcf-4460-b250-ac92135819f6",
+  "snapshot": "vscode",
+  "instruction": "Please help me install the extension Python in VS Code.\n\nRelevant procedure:\n1. Click the Extensions icon in the left sidebar (the icon resembling four squares, typically located below the Source Control icon).\n2. Locate the search input field at the top of the Extensions view (labeled \"Search Extensions in Marketplace\").\n3. Type \"Python\" into the search field.\n4. Locate the official \"Python\" extension published by \"Microsoft\" in the search results list.\n5. Click the blue \"Install\" button associated with the Microsoft Python extension.",
+  "source": "https://www.youtube.com/watch?v=VqCgcpAypFQ",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/eabc805a-bfcf-4460-b250-ac92135819f6",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "is_extension_installed",
+    "result": {
+      "type": "vm_command_line",
+      "command": [
+        "code",
+        "--list-extensions",
+        "|",
+        "grep",
+        "ms-python.python"
+      ]
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type": "contain",
+        "expected": "ms-python.python"
+      }
+    }
+  },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the Extensions icon in the left sidebar (the icon resembling four squares, typically located below the Source Control icon).\n2. Locate the search input field at the top of the Extensions view (labeled \"Search Extensions in Marketplace\").\n3. Type \"Python\" into the search field.\n4. Locate the official \"Python\" extension published by \"Microsoft\" in the search results list.\n5. Click the blue \"Install\" button associated with the Microsoft Python extension.",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/eabc805a-bfcf-4460-b250-ac92135819f6/step_1.png"
+}

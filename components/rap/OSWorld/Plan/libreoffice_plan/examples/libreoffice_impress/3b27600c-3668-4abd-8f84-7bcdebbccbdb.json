@@ -1,0 +1,109 @@
+{
+  "id": "3b27600c-3668-4abd-8f84-7bcdebbccbdb",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Please make the background blue on all my slides. I was stuck by finding the entrance to do that for a while...\n\nRelevant procedure\n\n1. Click the **View** menu in the top menu bar.\n2. Select **Master Slide** from the dropdown menu to enter Master Slide editing mode.\n3. In the left-hand **Slides** pane, ensure the main master slide (usually the top one) is selected.\n4. Right-click on any empty area of the slide workspace in the center.\n5. Select **Slide Properties** from the context menu.\n6. In the dialog box, click the **Background** tab.\n7. Under the \"Background type\" section, select **Color**.\n8. Click the color picker box next to \"Color\" and select **Blue** from the palette.\n9. Click **OK** to apply the blue background to the master slide.\n10. Click the **Normal** view button in the top toolbar (or go to **View** > **Normal**) to exit Master Slide mode and return to your presentation.",
+  "source": "https://www.libreofficehelp.com/change-slide-background-impress/#All_Slides",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/3b27600c-3668-4abd-8f84-7bcdebbccbdb/lec17-gui-events.pptx",
+            "path": "/home/user/Desktop/lec17-gui-events.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/lec17-gui-events.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "lec17-gui-events.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "evaluate_presentation_fill_to_rgb_distance",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "rgb": [
+          0,
+          0,
+          255
+        ],
+        "original_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/lec17-gui-events.pptx",
+      "dest": "lec17-gui-events.pptx"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **View** menu in the top menu bar.\n2. Select **Master Slide** from the dropdown menu to enter Master Slide editing mode.\n3. In the left-hand **Slides** pane, ensure the main master slide (usually the top one) is selected.\n4. Right-click on any empty area of the slide workspace in the center.\n5. Select **Slide Properties** from the context menu.\n6. In the dialog box, click the **Background** tab.\n7. Under the \"Background type\" section, select **Color**.\n8. Click the color picker box next to \"Color\" and select **Blue** from the palette.\n9. Click **OK** to apply the blue background to the master slide.\n10. Click the **Normal** view button in the top toolbar (or go to **View** > **Normal**) to exit Master Slide mode and return to your presentation.",
+  "retrieved_page_ranges": [
+    [
+      194,
+      197
+    ],
+    [
+      256,
+      262
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      42,
+      60
+    ],
+    [
+      42,
+      60
+    ]
+  ]
+}

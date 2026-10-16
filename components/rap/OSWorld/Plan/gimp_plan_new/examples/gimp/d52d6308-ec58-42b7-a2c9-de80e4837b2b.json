@@ -1,0 +1,81 @@
+{
+  "id": "d52d6308-ec58-42b7-a2c9-de80e4837b2b",
+  "snapshot": "gimp",
+  "instruction": "Could you help me remove the dock on the left side of the screen in the GIMP?\n\nRelevant procedure:\n1. Click the \"Windows\" menu in the top menu bar.\n2. In the dropdown menu, click on \"Hide Docks\".",
+  "source": "https://superuser.com/questions/1447106/how-to-get-rid-of-the-gimp-tool-options-box",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import pyautogui; pyautogui.hotkey([\"ctrl\", \"q\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "check_config_status",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type:": "key-value",
+        "key": "hide-docks",
+        "value": "yes"
+      }
+    },
+    "result": {
+      "type": "gimp_config_file",
+      "file_name": "sessionrc",
+      "dest": "sessionrc"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the \"Windows\" menu in the top menu bar.\n2. In the dropdown menu, click on \"Hide Docks\".",
+  "retrieved_page_ranges": [
+    [
+      "5.10. Move to Screen",
+      "5.10. Move to Screen"
+    ],
+    [
+      "11. The “ Windows ” Menu",
+      "11. The “ Windows ” Menu"
+    ],
+    [
+      "5.10. Move to Screen",
+      "5.10. Move to Screen"
+    ],
+    [
+      "11. The “ Windows ” Menu",
+      "11. The “ Windows ” Menu"
+    ],
+    [
+      "12.5. Tip of the Day",
+      "12.5. Tip of the Day"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/d52d6308-ec58-42b7-a2c9-de80e4837b2b/step_1.png"
+}

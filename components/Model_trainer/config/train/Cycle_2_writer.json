@@ -1,0 +1,30 @@
+{
+  "env": {
+    "PYTORCH_CUDA_ALLOC_CONF": "max_split_size_mb:64,expandable_segments:True"
+  },
+  "launcher": {
+    "type": "deepspeed",
+    "master_port": 29505,
+    "include": "localhost:0,1,2"
+  },
+  "args": {
+    "model_path": "ByteDance-Seed/UI-TARS-1.5-7B",
+    "engine": "deepspeed",
+    "seed": 2,
+    "output_dir": "output/grpo/model/Writer/final_experiment/Cycle_2",
+    "data_root": "${DATA_ROOT}/episode/3_write/train/cycle_1_train",
+    "resume_path": "${OUTPUT_ROOT}/grpo/model/Writer/final_experiment/Cycle_1/20260503_125341/latest/epoch_1",
+    "epochs": 2,
+    "ds_config": "Model_trainer/config/ds_config.json",
+    "use_lora": true,
+    "use_adaptive_kl": false,
+    "use_kl": true,
+    "beta": 0.1,
+    "num_workers": 0,
+    "micro_batch_size_per_gpu": 2,
+    "uniform_sampling": true,
+    "include_failed_trajectories": true,
+    "div_traj_len": true,
+    "eval_subset_size": 1
+  }
+}

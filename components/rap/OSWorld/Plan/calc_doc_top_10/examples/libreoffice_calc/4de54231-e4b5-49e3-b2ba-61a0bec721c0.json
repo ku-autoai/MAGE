@@ -1,0 +1,129 @@
+{
+  "id": "4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I have compute the acceleration in row 2 and I want you to fill out other rows for column B and D. Next concatenate the values from columns A to D, including their headers (the pattern is \"Header: cell value, ..., Header: cell value\"), into a new column named \"Combined Data\" for all rows. In the new column, only keep 2 decimal digits.\n\nRelevant procedure\n\n1.  Click on cell **B2** to select it.\n2.  Hover the mouse over the bottom-right corner of the cell until the cursor changes to a black crosshair (Fill Handle), then click and drag down to the last row containing data in column A (e.g., row 30) to copy the formula down the column.\n3.  Click on cell **D2** to select it.\n4.  Hover the mouse over the bottom-right corner of cell D2 until the cursor changes to a black crosshair, then click and drag down to the same last row used in Step 2 to copy the formula down column D.\n5.  Click on cell **E1** to select it.\n6.  Type `Combined Data` and press **Enter**.\n7.  Click on cell **E2** to select it.\n8.  Type the following formula exactly: `=TEXT(A2;\"0.00\") & \", \" & TEXT(B2;\"0.00\") & \", \" & TEXT(C2;\"0.00\") & \", \" & TEXT(D2;\"0.00\")`\n9.  Press **Enter** to confirm the formula.\n10. Click on cell **E2** again to ensure it is selected.\n11. Hover the mouse over the bottom-right corner of the cell until the cursor changes to a black crosshair, then click and drag down to the same last row used in previous steps to fill the combined data for all rows.",
+  "source": "SheetCopilot@147",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/RampUpAndDown.xlsx",
+            "path": "/home/user/RampUpAndDown.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/RampUpAndDown.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4de54231-e4b5-49e3-b2ba-61a0bec721c0",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "RampUpAndDown.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/3_RampUpAndDown_gt1.xlsx",
+      "dest": "3_RampUpAndDown_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/RampUpAndDown.xlsx",
+      "dest": "RampUpAndDown.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1.  Click on cell **B2** to select it.\n2.  Hover the mouse over the bottom-right corner of the cell until the cursor changes to a black crosshair (Fill Handle), then click and drag down to the last row containing data in column A (e.g., row 30) to copy the formula down the column.\n3.  Click on cell **D2** to select it.\n4.  Hover the mouse over the bottom-right corner of cell D2 until the cursor changes to a black crosshair, then click and drag down to the same last row used in Step 2 to copy the formula down column D.\n5.  Click on cell **E1** to select it.\n6.  Type `Combined Data` and press **Enter**.\n7.  Click on cell **E2** to select it.\n8.  Type the following formula exactly: `=TEXT(A2;\"0.00\") & \", \" & TEXT(B2;\"0.00\") & \", \" & TEXT(C2;\"0.00\") & \", \" & TEXT(D2;\"0.00\")`\n9.  Press **Enter** to confirm the formula.\n10. Click on cell **E2** again to ensure it is selected.\n11. Hover the mouse over the bottom-right corner of the cell until the cursor changes to a black crosshair, then click and drag down to the same last row used in previous steps to fill the combined data for all rows.",
+  "retrieved_page_ranges": [
+    [
+      55,
+      55
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      277,
+      277
+    ],
+    [
+      59,
+      59
+    ],
+    [
+      58,
+      59
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      51,
+      51
+    ],
+    [
+      277,
+      278
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      259,
+      260
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4de54231-e4b5-49e3-b2ba-61a0bec721c0/step_1.png"
+}

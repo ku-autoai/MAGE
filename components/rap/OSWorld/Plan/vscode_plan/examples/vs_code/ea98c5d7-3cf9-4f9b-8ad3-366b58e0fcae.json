@@ -1,0 +1,74 @@
+{
+  "id": "ea98c5d7-3cf9-4f9b-8ad3-366b58e0fcae",
+  "snapshot": "vscode",
+  "instruction": "Please help me remove the shortcut \"ctrl+f\" for Tree view Find (Explorer search) in VS Code Explorer view to avoid shortcut conflict.\n\nRelevant procedure\n\n1. Open the Command Palette by clicking \"View\" in the top menu bar and selecting \"Command Palette\", or by pressing **Ctrl+Shift+P**.\n2. Type **Preferences: Open Keyboard Shortcuts** in the search bar and press Enter to open the Keyboard Shortcuts editor.\n3. In the Keyboard Shortcuts editor, locate the search bar at the top (currently labeled \"Search by key binding or command\") and click inside it.\n4. Clear the existing text and type **workbench.explorer.fileView.find** (or **explorer.find**).\n5. In the list of results, locate the row for **Find in Tree View** (associated with the Explorer view).\n6. Click the **Delete/Remove icon** (a circle with an 'X' or a trash can icon) located on the right side of that row to remove the shortcut. Alternatively, double-click the row and press the **Delete** key while the current keybinding is highlighted.\n7. Verify that the keybinding field next to the command is now empty or says \"Not set\".",
+  "source": [
+    "https://superuser.com/questions/1748097/vs-code-disable-tree-view-find-explorer-search",
+    "https://superuser.com/questions/1417361/how-to-disable-file-filtering-in-vs-code-sidebar-explorer?rq=1"
+  ],
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "check_json_keybindings",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": {
+          "key": "ctrl+f",
+          "command": "-list.find",
+          "when": "listFocus && listSupportsFind"
+        }
+      }
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/Code/User/keybindings.json",
+      "dest": "keybindings.json"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Open the Command Palette by clicking \"View\" in the top menu bar and selecting \"Command Palette\", or by pressing **Ctrl+Shift+P**.\n2. Type **Preferences: Open Keyboard Shortcuts** in the search bar and press Enter to open the Keyboard Shortcuts editor.\n3. In the Keyboard Shortcuts editor, locate the search bar at the top (currently labeled \"Search by key binding or command\") and click inside it.\n4. Clear the existing text and type **workbench.explorer.fileView.find** (or **explorer.find**).\n5. In the list of results, locate the row for **Find in Tree View** (associated with the Explorer view).\n6. Click the **Delete/Remove icon** (a circle with an 'X' or a trash can icon) located on the right side of that row to remove the shortcut. Alternatively, double-click the row and press the **Delete** key while the current keybinding is highlighted.\n7. Verify that the keybinding field next to the command is now empty or says \"Not set\".",
+  "retrieved_page_ranges": [
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/vs_code/ea98c5d7-3cf9-4f9b-8ad3-366b58e0fcae/step_1.png"
+}

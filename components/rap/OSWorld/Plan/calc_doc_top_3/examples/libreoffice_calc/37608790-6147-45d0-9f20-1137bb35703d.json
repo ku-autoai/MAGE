@@ -1,0 +1,101 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click on cell **B2** to position the cursor at the start of the \"First Name\" column.\n2. Type the formula `=LEFT(A2,FIND(\" \",A2)-1)` to extract the first name from the data in cell A2.\n3. Press **Enter** to confirm the entry.\n4. Click on the formula bar to ensure the cursor is back in the cell reference field or simply click on cell **C2**.\n5. Type the formula `=MID(A2,FIND(\" \",A2)+1,FIND(\"  \",SUBSTITUTE(A2,\" \",\" \",2))-FIND(\" \",A2)-1)` to extract the last name.\n6. Press **Enter**.\n7. Click on cell **D2**.\n8. Type the formula `=TRIM(RIGHT(SUBSTITUTE(A2,\" \",REPT(\" \",100)),100))` to extract the rank (the last word).\n9. Press **Enter**.\n10. Select the range **B2:D2** by clicking B2 and dragging to D2.\n11. Hover over the small square handle at the bottom-right corner of the selection until the cursor changes to a cross.\n12. Click and drag the handle down to row **22** (where \"Selena Stopmez Clerk\" is located) to fill the formulas for all rows.\n13. Select the range **B2:D22**.\n14. Press **Ctrl+C** to copy the filled data.\n15. Click on cell **B2** to select the destination.\n16. Press **Ctrl+Shift+V** (or go to Edit > Paste Special) and select **Values only** (ensure the option to paste only values is selected) to convert formulas to static text.\n17. Click **OK** to apply the paste.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell **B2** to position the cursor at the start of the \"First Name\" column.\n2. Type the formula `=LEFT(A2,FIND(\" \",A2)-1)` to extract the first name from the data in cell A2.\n3. Press **Enter** to confirm the entry.\n4. Click on the formula bar to ensure the cursor is back in the cell reference field or simply click on cell **C2**.\n5. Type the formula `=MID(A2,FIND(\" \",A2)+1,FIND(\"  \",SUBSTITUTE(A2,\" \",\" \",2))-FIND(\" \",A2)-1)` to extract the last name.\n6. Press **Enter**.\n7. Click on cell **D2**.\n8. Type the formula `=TRIM(RIGHT(SUBSTITUTE(A2,\" \",REPT(\" \",100)),100))` to extract the rank (the last word).\n9. Press **Enter**.\n10. Select the range **B2:D2** by clicking B2 and dragging to D2.\n11. Hover over the small square handle at the bottom-right corner of the selection until the cursor changes to a cross.\n12. Click and drag the handle down to row **22** (where \"Selena Stopmez Clerk\" is located) to fill the formulas for all rows.\n13. Select the range **B2:D22**.\n14. Press **Ctrl+C** to copy the filled data.\n15. Click on cell **B2** to select the destination.\n16. Press **Ctrl+Shift+V** (or go to Edit > Paste Special) and select **Values only** (ensure the option to paste only values is selected) to convert formulas to static text.\n17. Click **OK** to apply the paste.",
+  "retrieved_page_ranges": [
+    [
+      58,
+      59
+    ],
+    [
+      59,
+      59
+    ],
+    [
+      302,
+      302
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

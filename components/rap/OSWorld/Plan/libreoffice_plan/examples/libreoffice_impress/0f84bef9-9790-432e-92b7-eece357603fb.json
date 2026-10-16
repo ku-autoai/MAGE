@@ -1,0 +1,63 @@
+{
+  "id": "0f84bef9-9790-432e-92b7-eece357603fb",
+  "snapshot": "libreoffice_impress",
+  "instruction": "On it Whenever I launch a LibreOffice Impress, it uses both screens, one for current slide and next slide and another for actual presentation. What I want is to use only one monitor which shows presentation. I dont want the screen with Current slide and Next slide so that it can be used for other purposes. How should I achieve this?\n\nRelevant procedure\n1. Open LibreOffice Impress.\n2. Click the \"Slide Show\" menu in the top menu bar.\n3. Select \"Slide Show Settings\" from the dropdown menu.\n4. In the \"Presentation display\" dropdown list, select the option labeled \"All\" (or the specific monitor name corresponding to your main screen) to ensure the presentation fills a single screen.\n5. Uncheck the box labeled \"Enable Presenter Console\" to disable the view showing the current slide, next slide, and notes.\n6. Click \"OK\" to save the settings.",
+  "source": "https://stackoverflow.com/questions/29036788/how-to-disable-libreoffice-impress-to-use-multiple-display",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/0f84bef9-9790-432e-92b7-eece357603fb/multimedia_classroom_podium-2020.pptx",
+            "path": "/home/user/Desktop/multimedia_classroom_podium-2020.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/multimedia_classroom_podium-2020.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "func": "check_presenter_console_disable",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/.config/libreoffice/4/user/registrymodifications.xcu",
+      "dest": "registrymodifications.xcu"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Open LibreOffice Impress.\n2. Click the \"Slide Show\" menu in the top menu bar.\n3. Select \"Slide Show Settings\" from the dropdown menu.\n4. In the \"Presentation display\" dropdown list, select the option labeled \"All\" (or the specific monitor name corresponding to your main screen) to ensure the presentation fills a single screen.\n5. Uncheck the box labeled \"Enable Presenter Console\" to disable the view showing the current slide, next slide, and notes.\n6. Click \"OK\" to save the settings.",
+  "retrieved_page_ranges": [
+    [
+      37,
+      40
+    ],
+    [
+      289,
+      293
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      29,
+      37
+    ],
+    [
+      300,
+      311
+    ]
+  ]
+}

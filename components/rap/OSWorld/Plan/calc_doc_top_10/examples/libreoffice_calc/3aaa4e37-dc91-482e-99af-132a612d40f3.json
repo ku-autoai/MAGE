@@ -1,0 +1,89 @@
+{
+  "id": "3aaa4e37-dc91-482e-99af-132a612d40f3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Could you help me to export the current sheet to a csv file? Export the contents just as they are shown on the screen. Just keep the other options untouched. A default csv format is ok. The csv should share the file name with the original xlsx.\n\nRelevant procedure:\n1. Click the \"File\" menu in the top-left menu bar of LibreOffice Calc.\n2. Click \"Save As...\" in the dropdown menu (or press Ctrl+Shift+S).\n3. In the \"Save As\" dialog window that appears, locate the file type dropdown menu (usually at the bottom, currently showing \"Excel 2007-365 (.xlsx)\").\n4. Click the file type dropdown and select \"Text CSV (.csv)\" from the list.\n5. Verify or edit the file name in the \"Name\" field to ensure it matches the original filename (e.g., `Export_Calc_to_CSV`) without adding extra extensions.\n6. Click the \"Save\" button to proceed.\n7. If a \"Export Text File\" options dialog appears, keep the default settings (e.g., Character encoding: System, Field delimiter settings) and click \"OK\" to confirm and finish exporting.",
+  "source": "https://www.quora.com/How-can-you-import-export-CSV-files-with-LibreOffice-Calc-or-OpenOffice",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3aaa4e37-dc91-482e-99af-132a612d40f3/Export_Calc_to_CSV.xlsx",
+            "path": "/home/user/Export_Calc_to_CSV.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Export_Calc_to_CSV.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/3aaa4e37-dc91-482e-99af-132a612d40f3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "compare_csv",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Export_Calc_to_CSV.csv",
+      "dest": "Export_Calc_to_CSV.csv"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/3aaa4e37-dc91-482e-99af-132a612d40f3/Export_Calc_to_CSV.csv",
+      "dest": "Export_Calc_to_CSV_gold.csv"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure:\n1. Click the \"File\" menu in the top-left menu bar of LibreOffice Calc.\n2. Click \"Save As...\" in the dropdown menu (or press Ctrl+Shift+S).\n3. In the \"Save As\" dialog window that appears, locate the file type dropdown menu (usually at the bottom, currently showing \"Excel 2007-365 (.xlsx)\").\n4. Click the file type dropdown and select \"Text CSV (.csv)\" from the list.\n5. Verify or edit the file name in the \"Name\" field to ensure it matches the original filename (e.g., `Export_Calc_to_CSV`) without adding extra extensions.\n6. Click the \"Save\" button to proceed.\n7. If a \"Export Text File\" options dialog appears, keep the default settings (e.g., Character encoding: System, Field delimiter settings) and click \"OK\" to confirm and finish exporting.",
+  "retrieved_page_ranges": [
+    [
+      241,
+      241
+    ],
+    [
+      86,
+      86
+    ],
+    [
+      86,
+      88
+    ],
+    [
+      230,
+      230
+    ],
+    [
+      88,
+      89
+    ],
+    [
+      88,
+      88
+    ],
+    [
+      240,
+      241
+    ],
+    [
+      230,
+      231
+    ],
+    [
+      371,
+      371
+    ],
+    [
+      238,
+      240
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/3aaa4e37-dc91-482e-99af-132a612d40f3/step_1.png"
+}

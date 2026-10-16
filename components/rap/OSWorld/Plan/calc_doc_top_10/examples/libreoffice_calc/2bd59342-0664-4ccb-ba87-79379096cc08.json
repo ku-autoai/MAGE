@@ -1,0 +1,79 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nTo create sparklines for each order using the data from January to March in the \"Chart\" column (Column F):\n\n1. Click on the cell `F2` in the \"Chart\" column to begin entering the sparkline for the first order.\n2. Navigate to the menu bar and select **Insert**.\n3. From the dropdown menu, click on **Sparkline**. This will open the Sparkline dialog box.\n4. In the **Sparkline range** input field, verify that `F2` is selected. If not, click inside the field and select cell `F2` on the sheet.\n5. In the **Data range** input field, select the cells containing the data for the first order (January to March). You can type `D2:F2` or use the mouse to highlight cells **D2** through **F2** on the spreadsheet.\n6. In the **Options** section of the dialog, ensure **Sparkline type** is set to your preferred style (default is usually Line).\n7. Click **OK**. A sparkline chart should now appear in cell F2.\n8. Select cell **F2** again.\n9. Move your mouse to the bottom-right corner of cell F2 until the cursor changes to a small cross (Fill Handle).\n10. Click and drag the Fill Handle downwards to fill the sparkline formula for the rest of the orders (down to row 23).\n11. Release the mouse to complete the task.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "To create sparklines for each order using the data from January to March in the \"Chart\" column (Column F):\n\n1. Click on the cell `F2` in the \"Chart\" column to begin entering the sparkline for the first order.\n2. Navigate to the menu bar and select **Insert**.\n3. From the dropdown menu, click on **Sparkline**. This will open the Sparkline dialog box.\n4. In the **Sparkline range** input field, verify that `F2` is selected. If not, click inside the field and select cell `F2` on the sheet.\n5. In the **Data range** input field, select the cells containing the data for the first order (January to March). You can type `D2:F2` or use the mouse to highlight cells **D2** through **F2** on the spreadsheet.\n6. In the **Options** section of the dialog, ensure **Sparkline type** is set to your preferred style (default is usually Line).\n7. Click **OK**. A sparkline chart should now appear in cell F2.\n8. Select cell **F2** again.\n9. Move your mouse to the bottom-right corner of cell F2 until the cursor changes to a small cross (Fill Handle).\n10. Click and drag the Fill Handle downwards to fill the sparkline formula for the rest of the orders (down to row 23).\n11. Release the mouse to complete the task.",
+  "retrieved_page_ranges": [
+    [
+      125,
+      126
+    ],
+    [
+      172,
+      173
+    ],
+    [
+      177,
+      180
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      169,
+      169
+    ],
+    [
+      169,
+      171
+    ],
+    [
+      173,
+      174
+    ],
+    [
+      164,
+      165
+    ],
+    [
+      103,
+      104
+    ],
+    [
+      181,
+      181
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/step_1.png"
+}

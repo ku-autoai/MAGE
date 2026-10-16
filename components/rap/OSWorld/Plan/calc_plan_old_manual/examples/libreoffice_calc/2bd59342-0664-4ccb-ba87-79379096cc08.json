@@ -1,0 +1,59 @@
+{
+  "id": "2bd59342-0664-4ccb-ba87-79379096cc08",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Make sparkline charts for each order id with the data from Jan to Mar in the \"Chart\" column.\n\nRelevant procedure\n1) Select cell F2.\n2) Click the \"Insert\" menu at the top of the window.\n3) From the dropdown menu, click \"Sparkline\".\n4) In the Sparkline dialog, set the \"Data range\" to C2:D2:E2.\n5) Set the \"Location range\" to F2.\n6) Click OK to insert the sparkline for the first row.\n7) Click on cell F2 to select it.\n8) Copy the cell by pressing Ctrl+C.\n9) Select the range F3:F23.\n10) Paste by pressing Ctrl+V to apply the sparkline to all rows.",
+  "source": "https://www.youtube.com/shorts/L3Z-F1QTQFY",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/OrderId_Month_Chart.xlsx",
+            "path": "/home/user/OrderId_Month_Chart.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/OrderId_Month_Chart.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/2bd59342-0664-4ccb-ba87-79379096cc08",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1) Select cell F2.\n2) Click the \"Insert\" menu at the top of the window.\n3) From the dropdown menu, click \"Sparkline\".\n4) In the Sparkline dialog, set the \"Data range\" to C2:D2:E2.\n5) Set the \"Location range\" to F2.\n6) Click OK to insert the sparkline for the first row.\n7) Click on cell F2 to select it.\n8) Copy the cell by pressing Ctrl+C.\n9) Select the range F3:F23.\n10) Paste by pressing Ctrl+V to apply the sparkline to all rows.",
+  "retrieved_page_ranges": [
+    [
+      5,
+      5
+    ],
+    [
+      35,
+      35
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      36,
+      38
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/2bd59342-0664-4ccb-ba87-79379096cc08/step_1.png"
+}

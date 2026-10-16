@@ -1,0 +1,129 @@
+{
+  "id": "37608790-6147-45d0-9f20-1137bb35703d",
+  "snapshot": "libreoffice_calc",
+  "instruction": "The information are mixed in one field. Help me split them and fill in the columns of First Name, Last Name and Rank. Finish the work and don't touch the original data.\n\nRelevant procedure\n1. Click on the 'Data' menu in the top menu bar to open the data manipulation options.\n2. Select 'Text to Columns...' from the dropdown menu.\n3. Ensure 'Separated' is selected under the 'Original data type' section.\n4. Check the 'Space' box under the 'Separators' section to split text based on spaces.\n5. Click the 'OK' button to execute the split, filling the adjacent columns (B, C, D) with the separated data.\n6. Scroll to the bottom of the data list (approx row 22) and verify that the columns 'First Name', 'Last Name', and 'Rank' contain the correct data for all entries.",
+  "source": "https://www.youtube.com/shorts/uzPo_CPCHH8",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks.xlsx",
+            "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Roles_and_Ranks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/37608790-6147-45d0-9f20-1137bb35703d",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Roles_and_Ranks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/Employee_Roles_and_Ranks_gold.xlsx",
+      "dest": "Employee_Roles_and_Ranks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Roles_and_Ranks.xlsx",
+      "dest": "Employee_Roles_and_Ranks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on the 'Data' menu in the top menu bar to open the data manipulation options.\n2. Select 'Text to Columns...' from the dropdown menu.\n3. Ensure 'Separated' is selected under the 'Original data type' section.\n4. Check the 'Space' box under the 'Separators' section to split text based on spaces.\n5. Click the 'OK' button to execute the split, filling the adjacent columns (B, C, D) with the separated data.\n6. Scroll to the bottom of the data list (approx row 22) and verify that the columns 'First Name', 'Last Name', and 'Rank' contain the correct data for all entries.",
+  "retrieved_page_ranges": [
+    [
+      58,
+      59
+    ],
+    [
+      59,
+      59
+    ],
+    [
+      302,
+      302
+    ],
+    [
+      310,
+      310
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      93,
+      93
+    ],
+    [
+      302,
+      303
+    ],
+    [
+      96,
+      97
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      309,
+      310
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/37608790-6147-45d0-9f20-1137bb35703d/step_1.png"
+}

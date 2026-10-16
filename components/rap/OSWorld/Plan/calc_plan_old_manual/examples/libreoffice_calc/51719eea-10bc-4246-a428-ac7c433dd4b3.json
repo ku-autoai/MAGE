@@ -1,0 +1,115 @@
+{
+  "id": "51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate revenue in a new column according to the Retail Price sheet (consider product price and quantity and discount), and generate a Pivot Table in a new sheet (Sheet2) that summarizes the revenue of each product.\n\nRelevant procedure\n1. Click the column \"H\" header to select the entire column.\n2. Right-click the selected column header and choose \"Insert Columns Before\" from the context menu.\n3. Click cell H1 and type \"Revenue\", then press Enter.\n4. Click cell H2 and enter the formula: =VLOOKUP(C2,'Retail Price'.A:B,2,FALSE)*E2*(1-F2), then press Enter.\n5. Click cell H2, then click and drag the fill handle (small square at bottom-right of the cell) down to row 36 to copy the formula to all data rows.\n6. Click cell A1 to start selecting the data range.\n7. Hold Shift and click cell H36 to select the entire data range A1:H36.\n8. Go to the \"Insert\" menu in the top menu bar and click \"Pivot Table\".\n9. In the \"Create Pivot Table\" dialog, ensure \"New Sheet\" is selected, then click \"OK\".\n10. In the Pivot Table Layout dialog, drag \"Product\" from the available fields list to the \"Row Fields\" area.\n11. Drag \"Revenue\" from the available fields list to the \"Data Fields\" area.\n12. Verify that the \"Data Field\" settings show Revenue as the sum operation (default).\n13. Click \"OK\" to create the pivot table in the new sheet.",
+  "source": "SheetCopilot@7",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/BoomerangSales.xlsx",
+            "path": "/home/user/BoomerangSales.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/BoomerangSales.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/51719eea-10bc-4246-a428-ac7c433dd4b3",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "BoomerangSales.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/8_BoomerangSales_gt1.xlsx",
+      "dest": "8_BoomerangSales_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/BoomerangSales.xlsx",
+      "dest": "BoomerangSales.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "pivot_table",
+          "sheet_idx0": "RNSheet2",
+          "sheet_idx1": "ENSheet2",
+          "pivot_props": [
+            "col_fields",
+            "filter",
+            "row_fields",
+            "data_fields"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the column \"H\" header to select the entire column.\n2. Right-click the selected column header and choose \"Insert Columns Before\" from the context menu.\n3. Click cell H1 and type \"Revenue\", then press Enter.\n4. Click cell H2 and enter the formula: =VLOOKUP(C2,'Retail Price'.A:B,2,FALSE)*E2*(1-F2), then press Enter.\n5. Click cell H2, then click and drag the fill handle (small square at bottom-right of the cell) down to row 36 to copy the formula to all data rows.\n6. Click cell A1 to start selecting the data range.\n7. Hold Shift and click cell H36 to select the entire data range A1:H36.\n8. Go to the \"Insert\" menu in the top menu bar and click \"Pivot Table\".\n9. In the \"Create Pivot Table\" dialog, ensure \"New Sheet\" is selected, then click \"OK\".\n10. In the Pivot Table Layout dialog, drag \"Product\" from the available fields list to the \"Row Fields\" area.\n11. Drag \"Revenue\" from the available fields list to the \"Data Fields\" area.\n12. Verify that the \"Data Field\" settings show Revenue as the sum operation (default).\n13. Click \"OK\" to create the pivot table in the new sheet.",
+  "retrieved_page_ranges": [
+    [
+      5,
+      5
+    ],
+    [
+      16,
+      16
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/51719eea-10bc-4246-a428-ac7c433dd4b3/step_1.png"
+}

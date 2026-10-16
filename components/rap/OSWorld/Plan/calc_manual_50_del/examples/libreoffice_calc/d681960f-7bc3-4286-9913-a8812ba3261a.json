@@ -1,0 +1,109 @@
+{
+  "id": "d681960f-7bc3-4286-9913-a8812ba3261a",
+  "snapshot": "libreoffice_calc",
+  "instruction": "According to the scale table shown above, calculate and give each student a grade in the table below. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click the first empty cell in the \"Grade\" column corresponding to the first student (e.g., if scores are in B2 and grades start in C2, click cell C2).\n2. Type an `IF` formula that references the scale table (e.g., `=$G$2:$H$10`) and the student's score cell (e.g., `B2`) to determine the correct grade. A typical nested IF or VLOOKUP structure is: `=IF(B2>=G2,\"A\",IF(B2>=G3,\"B\",IF(B2>=G4,\"C\",IF(B2>=G5,\"D\",\"F\"))))`. Adjust the cell references `G2:G5` and grades `\"A\":\"F\"` to match the specific values and labels in the visible scale table.\n3. Press Enter to confirm the formula.\n4. Click the cell containing the newly created formula to select it.\n5. Drag the fill handle (small square at the bottom-right corner of the cell border) down to cover all remaining students in the list, copying the formula to calculate grades for everyone.\n6. Verify that grades have been generated for all students and do not interact with any other parts of the spreadsheet.",
+  "source": "https://www.youtube.com/shorts/d7U1S_IsTVM",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/d681960f-7bc3-4286-9913-a8812ba3261a/Student_Grades_and_Remarks.xlsx",
+            "path": "/home/user/Student_Grades_and_Remarks.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Student_Grades_and_Remarks.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/d681960f-7bc3-4286-9913-a8812ba3261a",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Student_Grades_and_Remarks.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/d681960f-7bc3-4286-9913-a8812ba3261a/Student_Grades_and_Remarks_gold.xlsx",
+      "dest": "Student_Grades_and_Remarks_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Student_Grades_and_Remarks.xlsx",
+      "dest": "Student_Grades_and_Remarks.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the first empty cell in the \"Grade\" column corresponding to the first student (e.g., if scores are in B2 and grades start in C2, click cell C2).\n2. Type an `IF` formula that references the scale table (e.g., `=$G$2:$H$10`) and the student's score cell (e.g., `B2`) to determine the correct grade. A typical nested IF or VLOOKUP structure is: `=IF(B2>=G2,\"A\",IF(B2>=G3,\"B\",IF(B2>=G4,\"C\",IF(B2>=G5,\"D\",\"F\"))))`. Adjust the cell references `G2:G5` and grades `\"A\":\"F\"` to match the specific values and labels in the visible scale table.\n3. Press Enter to confirm the formula.\n4. Click the cell containing the newly created formula to select it.\n5. Drag the fill handle (small square at the bottom-right corner of the cell border) down to cover all remaining students in the list, copying the formula to calculate grades for everyone.\n6. Verify that grades have been generated for all students and do not interact with any other parts of the spreadsheet.",
+  "retrieved_page_ranges": [
+    [
+      265,
+      265
+    ],
+    [
+      131,
+      132
+    ],
+    [
+      85,
+      85
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      78,
+      78
+    ]
+  ],
+  "first_screen_image_path": null
+}

@@ -1,0 +1,109 @@
+{
+  "id": "4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I want to work out the maturity date for all the loans. Please do it for me in a new column with header \"Maturity Date\".\n\nRelevant procedure\n1. Click cell C1 to select it.\n2. Type \"Maturity Date\" and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula: =A2+B2\n5. Press Enter to apply the formula.\n6. Click cell C2 again to select it.\n7. Right-click and select \"Copy\" or press Ctrl+C.\n8. Select the range C3:C10 by clicking C3 and dragging down to C10.\n9. Right-click and select \"Paste\" or press Ctrl+V.\n10. Select column C by clicking the column header \"C\".\n11. Right-click the selected column and choose \"Format Cells...\" from the context menu.\n12. In the Format Cells dialog, select the \"Numbers\" tab.\n13. Under Category, click \"Date\".\n14. Choose a date format that matches the input (e.g., DD/MM/YY) and click OK.",
+  "source": "SheetCopilot@113",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/MaturityDate.xlsx",
+            "path": "/home/user/MaturityDate.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/MaturityDate.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4172ea6e-6b77-4edb-a9cc-c0014bd1603b",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "MaturityDate.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/1_MaturityDate_gt1.xlsx",
+      "dest": "1_MaturityDate_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/MaturityDate.xlsx",
+      "dest": "MaturityDate.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click cell C1 to select it.\n2. Type \"Maturity Date\" and press Enter.\n3. Click cell C2 to select it.\n4. Type the formula: =A2+B2\n5. Press Enter to apply the formula.\n6. Click cell C2 again to select it.\n7. Right-click and select \"Copy\" or press Ctrl+C.\n8. Select the range C3:C10 by clicking C3 and dragging down to C10.\n9. Right-click and select \"Paste\" or press Ctrl+V.\n10. Select column C by clicking the column header \"C\".\n11. Right-click the selected column and choose \"Format Cells...\" from the context menu.\n12. In the Format Cells dialog, select the \"Numbers\" tab.\n13. Under Category, click \"Date\".\n14. Choose a date format that matches the input (e.g., DD/MM/YY) and click OK.",
+  "retrieved_page_ranges": [
+    [
+      5,
+      5
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      35,
+      35
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4172ea6e-6b77-4edb-a9cc-c0014bd1603b/step_1.png"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Given a partial calendar, please highlight all the weekends (Satureday & Sunday) by setting the cell background as red (#ff0000). Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Select cell B3 (containing \"6/1/2022\").\n2. Hold Ctrl and click cell C3 (containing \"7/1/2022\") to add it to the selection.\n3. With the two cells selected, click the \"Format\" menu in the top menu bar.\n4. Choose \"Conditional Formatting\" from the Format menu.\n5. Select \"New Rule\" from the submenu to open the Condition dialog.\n6. In the Condition dialog, set the condition type to \"Formula is\".\n7. In the Formula field, enter: =WEEKDAY($B3,2)>5\n8. Click the \"Format\" button in the dialog to open the Format Cells window.\n9. In the Format Cells dialog, go to the \"Background\" tab.\n10. Click on the color palette and select red.\n11. In the Color field, type #ff0000 and confirm by pressing Enter.\n12. Click \"OK\" in the Format Cells dialog to return to the Condition dialog.\n13. Click \"OK\" in the Condition dialog to apply the formatting rule.\n14. Select cells B3:C3 again.\n15. Copy these cells using Ctrl+C.\n16. Select cells B4:F33 (the remaining date ranges in columns B through F).\n17. Paste the formatting using Ctrl+Alt+V or right-click \"Paste Special\" and select \"Formats only\".",
+  "source": "https://www.youtube.com/shorts/Hbcwu6IQ1ns",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days.xlsx",
+            "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Calendar_Highlight_Weekend_Days.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/Calendar_Highlight_Weekend_Days_gold.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Calendar_Highlight_Weekend_Days.xlsx",
+      "dest": "Calendar_Highlight_Weekend_Days.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "style",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "props": [
+            "bgcolor"
+          ]
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Select cell B3 (containing \"6/1/2022\").\n2. Hold Ctrl and click cell C3 (containing \"7/1/2022\") to add it to the selection.\n3. With the two cells selected, click the \"Format\" menu in the top menu bar.\n4. Choose \"Conditional Formatting\" from the Format menu.\n5. Select \"New Rule\" from the submenu to open the Condition dialog.\n6. In the Condition dialog, set the condition type to \"Formula is\".\n7. In the Formula field, enter: =WEEKDAY($B3,2)>5\n8. Click the \"Format\" button in the dialog to open the Format Cells window.\n9. In the Format Cells dialog, go to the \"Background\" tab.\n10. Click on the color palette and select red.\n11. In the Color field, type #ff0000 and confirm by pressing Enter.\n12. Click \"OK\" in the Format Cells dialog to return to the Condition dialog.\n13. Click \"OK\" in the Condition dialog to apply the formatting rule.\n14. Select cells B3:C3 again.\n15. Copy these cells using Ctrl+C.\n16. Select cells B4:F33 (the remaining date ranges in columns B through F).\n17. Paste the formatting using Ctrl+Alt+V or right-click \"Paste Special\" and select \"Formats only\".",
+  "retrieved_page_ranges": [
+    [
+      33,
+      33
+    ],
+    [
+      31,
+      31
+    ],
+    [
+      31,
+      31
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      32,
+      33
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/8b1ce5f2-59d2-4dcc-b0b0-666a714b9a14/step_1.png"
+}

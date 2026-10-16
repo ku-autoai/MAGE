@@ -1,0 +1,3 @@
+# Local monitor configuration can contain machine-specific paths.
+.env
+!.env.example

@@ -1,0 +1,100 @@
+{
+  "id": "8979838c-54a5-4454-a2b8-3d135a1a5c8f",
+  "snapshot": "libreoffice_impress",
+  "instruction": "Give the slide a purple background color. Add the title to note.\n\nRelevant procedure\n\n1. Click the **Slide** menu in the top menu bar.\n2. Select **Slide Properties** from the dropdown menu.\n3. In the dialog box that appears, click the **Slide Background** tab.\n4. Click the **Background color** button (usually located near the top left of this tab).\n5. Select a **purple** color from the color palette.\n6. Click **OK** to apply the background change.\n7. Click the **View** menu in the top menu bar.\n8. Select **Notes** from the dropdown menu to display the notes pane below the slide.\n9. Click inside the notes area at the bottom of the window.\n10. Type the desired title text.",
+  "source": "https://arxiv.org/pdf/2311.01767.pdf",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/8979838c-54a5-4454-a2b8-3d135a1a5c8f/186_3.pptx",
+            "path": "/home/user/Desktop/186_3.pptx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/186_3.pptx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_impress"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "186_3.pptx - LibreOffice Impress",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_pptx_files",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/8979838c-54a5-4454-a2b8-3d135a1a5c8f/186_3_Gold.pptx",
+      "dest": "186_3_Gold.pptx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/186_3.pptx",
+      "dest": "186_3.pptx"
+    },
+    "options": {}
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n\n1. Click the **Slide** menu in the top menu bar.\n2. Select **Slide Properties** from the dropdown menu.\n3. In the dialog box that appears, click the **Slide Background** tab.\n4. Click the **Background color** button (usually located near the top left of this tab).\n5. Select a **purple** color from the color palette.\n6. Click **OK** to apply the background change.\n7. Click the **View** menu in the top menu bar.\n8. Select **Notes** from the dropdown menu to display the notes pane below the slide.\n9. Click inside the notes area at the bottom of the window.\n10. Type the desired title text.",
+  "retrieved_page_ranges": [
+    [
+      60,
+      65
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      273,
+      279
+    ],
+    [
+      194,
+      197
+    ],
+    [
+      327,
+      332
+    ]
+  ]
+}

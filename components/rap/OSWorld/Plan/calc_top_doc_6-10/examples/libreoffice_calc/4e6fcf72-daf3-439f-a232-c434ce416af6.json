@@ -1,0 +1,161 @@
+{
+  "id": "4e6fcf72-daf3-439f-a232-c434ce416af6",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please calculate the ages of the employees according to their birthday. Finish the work and don't touch irrelevant regions, even if they are blank.\n\nRelevant procedure\n1. Click on cell D2 to select it.\n2. Type the formula: `=IF(C2=\"\",\"\",(DATEDIF(C2,TODAY(),\"Y\")))`\n3. Press Enter to apply the formula in cell D2.\n4. Click on cell D2 to select it (if not already selected).\n5. Use the fill handle (the small square at the bottom-right corner of the selected cell) to drag the formula down to cell D34 (or the last row with employee data) to calculate ages for all employees.\n6. Release the fill handle to apply the formula to all selected cells.\n7. Verify that column D now contains calculated ages for all employees with valid birthdays.",
+  "source": "https://www.youtube.com/shorts/0uxJccNCKcE",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4e6fcf72-daf3-439f-a232-c434ce416af6/Employee_Age_By_Birthday.xlsx",
+            "path": "/home/user/Employee_Age_By_Birthday.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Employee_Age_By_Birthday.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/4e6fcf72-daf3-439f-a232-c434ce416af6",
+  "related_apps": [
+    "libreoffice calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Age_By_Birthday.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "download",
+        "parameters": {
+          "files": [
+            {
+              "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4e6fcf72-daf3-439f-a232-c434ce416af6/Employee_Age_By_Birthday_gold.xlsx",
+              "path": "/home/user/Employee_Age_By_Birthday_gold.xlsx"
+            }
+          ]
+        }
+      },
+      {
+        "type": "open",
+        "parameters": {
+          "path": "/home/user/Employee_Age_By_Birthday_gold.xlsx"
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 2
+        }
+      },
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "Employee_Age_By_Birthday_gold.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Age_By_Birthday_gold.xlsx",
+      "dest": "Employee_Age_By_Birthday_gold.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Employee_Age_By_Birthday.xlsx",
+      "dest": "Employee_Age_By_Birthday.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click on cell D2 to select it.\n2. Type the formula: `=IF(C2=\"\",\"\",(DATEDIF(C2,TODAY(),\"Y\")))`\n3. Press Enter to apply the formula in cell D2.\n4. Click on cell D2 to select it (if not already selected).\n5. Use the fill handle (the small square at the bottom-right corner of the selected cell) to drag the formula down to cell D34 (or the last row with employee data) to calculate ages for all employees.\n6. Release the fill handle to apply the formula to all selected cells.\n7. Verify that column D now contains calculated ages for all employees with valid birthdays.",
+  "retrieved_page_ranges": [
+    [
+      253,
+      253
+    ],
+    [
+      420,
+      420
+    ],
+    [
+      321,
+      321
+    ],
+    [
+      183,
+      183
+    ],
+    [
+      225,
+      225
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/libreoffice_calc/4e6fcf72-daf3-439f-a232-c434ce416af6/step_1.png"
+}

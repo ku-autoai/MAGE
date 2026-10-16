@@ -1,0 +1,16 @@
+llm:
+  target: pipeline.vlm.vlm_scheduler.GPT4oBatchScheduler
+  params:
+    max_batch_size: 1
+    max_wait_time: 0.05
+
+judge_qwen:
+  target: pipeline.vlm.vlm_scheduler.UITARSBatchScheduler_vlm
+  params:
+    max_batch_size: 1
+    max_wait_time: 0.05
+
+project_generator:
+  target: pipeline.project_generator.ProjectGenerator
+  params:
+    args: None

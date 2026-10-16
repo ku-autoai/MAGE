@@ -1,0 +1,93 @@
+{
+  "id": "b148e375-fe0b-4bec-90e7-38632b0d73c2",
+  "snapshot": "gimp",
+  "instruction": "Could you assist me in adding a new layer and naming it 'Square'?\n\nRelevant procedure\n1. Click the \"New Layer...\" option at the top of the currently open Layer menu dropdown.\n2. Type 'Square' into the \"Layer name\" text field in the \"Create a New Layer\" dialog that appears.\n3. Click the \"OK\" button in the dialog to confirm.",
+  "source": "https://www.quora.com/How-do-I-add-layers-in-GIMP",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/b148e375-fe0b-4bec-90e7-38632b0d73c2/white_background.xcf",
+            "path": "/home/user/Desktop/white_background.xcf"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "gimp",
+          "/home/user/Desktop/white_background.xcf"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"ctrl\", \"q\"]);"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "check_config_status",
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "type:": "key-value",
+        "key": "layer-new-name",
+        "value": "\"Square\""
+      }
+    },
+    "result": {
+      "type": "gimp_config_file",
+      "file_name": "gimprc",
+      "dest": "gimprc"
+    }
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "relevant_procedure": "Relevant procedure\n1. Click the \"New Layer...\" option at the top of the currently open Layer menu dropdown.\n2. Type 'Square' into the \"Layer name\" text field in the \"Create a New Layer\" dialog that appears.\n3. Click the \"OK\" button in the dialog to confirm.",
+  "retrieved_page_ranges": [
+    [
+      "7.2. New Layer",
+      "7.2. New Layer"
+    ],
+    [
+      "7.4. New Layer Group",
+      "7.4. New Layer Group"
+    ],
+    [
+      "7.2. New Layer",
+      "7.2. New Layer"
+    ],
+    [
+      "7.4. New Layer Group",
+      "7.4. New Layer Group"
+    ],
+    [
+      "3.10. Paste as",
+      "3.10. Paste as"
+    ]
+  ],
+  "first_screen_image_path": "first_screen_images/gimp/b148e375-fe0b-4bec-90e7-38632b0d73c2/step_1.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "bb8ccc78-479f-4a2f-a71e-d565e439436b",
+  "snapshot": "libreoffice_writer",
+  "instruction": "Share this document with my team and let us edit it together in real-time.\n\nRelevant procedure:\n1. In the currently opened File menu, click the \"Send\" option (which has a submenu arrow).\n2. From the submenu that appears, select the option to share online or collaborate (likely labeled something like \"Share to LibreOffice Online\" or \"Collaborate\").\n3. If prompted, sign in with your account credentials.\n4. Configure sharing settings (e.g., who can edit) and generate a shareable link or invite your team members.\n5. Send the link or invitations to your team so they can access and edit the document in real time.\n\n*Note: If the exact “Collaborate” option isn’t visible under Send, alternatively choose “Save Remote…” or “Save As” to upload the document to a cloud service (like Nextcloud or Google Drive), then use that platform’s sharing features.*",
+  "source": "https://ask.libreoffice.org/t/can-lo-be-used-for-collaboration-multi-person-real-time-document-editing/9392/6",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_writer/bb8ccc78-479f-4a2f-a71e-d565e439436b/The%20Wonders%20of%20Our%20Solar%20System.docx",
+            "path": "/home/user/Desktop/The Wonders of Our Solar System.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/The Wonders of Our Solar System.docx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
+  "program": "libreoffice_writer",
+  "_program": "libreoffice_writer",
+  "relevant_procedure": "Relevant procedure:\n1. In the currently opened File menu, click the \"Send\" option (which has a submenu arrow).\n2. From the submenu that appears, select the option to share online or collaborate (likely labeled something like \"Share to LibreOffice Online\" or \"Collaborate\").\n3. If prompted, sign in with your account credentials.\n4. Configure sharing settings (e.g., who can edit) and generate a shareable link or invite your team members.\n5. Send the link or invitations to your team so they can access and edit the document in real time.\n\n*Note: If the exact “Collaborate” option isn’t visible under Send, alternatively choose “Save Remote…” or “Save As” to upload the document to a cloud service (like Nextcloud or Google Drive), then use that platform’s sharing features.*",
+  "instruction_with_evidence": "Share this document with my team and let us edit it together in real-time.\n\nRelevant procedure:\n1. In the currently opened File menu, click the \"Send\" option (which has a submenu arrow).\n2. From the submenu that appears, select the option to share online or collaborate (likely labeled something like \"Share to LibreOffice Online\" or \"Collaborate\").\n3. If prompted, sign in with your account credentials.\n4. Configure sharing settings (e.g., who can edit) and generate a shareable link or invite your team members.\n5. Send the link or invitations to your team so they can access and edit the document in real time.\n\n*Note: If the exact “Collaborate” option isn’t visible under Send, alternatively choose “Save Remote…” or “Save As” to upload the document to a cloud service (like Nextcloud or Google Drive), then use that platform’s sharing features.*"
+}
